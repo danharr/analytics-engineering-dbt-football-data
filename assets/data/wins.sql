@@ -29,4 +29,4 @@ copy (
     group by team_abbr
     order by total_wins desc, team_abbr
 )
-to 'web/data/wins.csv' (header, delimiter ',');
+to 'assets/data/wins.csv' (header, delimiter ',');

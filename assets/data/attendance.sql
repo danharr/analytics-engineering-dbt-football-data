@@ -9,4 +9,4 @@ copy (
     group by season_label, home_team_abbr
     order by season_label, home_team_abbr
 )
-to 'web/data/attendance.csv' (header, delimiter ',');
+to 'assets/data/attendance.csv' (header, delimiter ',');

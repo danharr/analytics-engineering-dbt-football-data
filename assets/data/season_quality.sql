@@ -18,4 +18,4 @@ copy (
     group by m.season_label, tc.team_count
     order by min(m.kickoff_date)
 )
-to 'web/data/season_quality.csv' (header, delimiter ',');
+to 'assets/data/season_quality.csv' (header, delimiter ',');

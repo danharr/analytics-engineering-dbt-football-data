@@ -10,4 +10,4 @@ copy (
         (select sum(home_score + away_score) from fct_matches) as total_goals,
         current_date::varchar as last_updated
 )
-to 'web/data/stats.csv' (header, delimiter ',');
+to 'assets/data/stats.csv' (header, delimiter ',');

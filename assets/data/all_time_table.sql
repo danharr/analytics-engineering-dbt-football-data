@@ -32,4 +32,4 @@ copy (
     group by team_abbr
     order by points desc, team_abbr
 )
-to 'web/data/all_time_table.csv' (header, delimiter ',');
+to 'assets/data/all_time_table.csv' (header, delimiter ',');
