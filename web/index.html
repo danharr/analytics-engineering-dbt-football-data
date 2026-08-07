@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier League Insights</title>
+<link href="https://cdn.jsdelivr.net/npm/vuetify@3/dist/vuetify.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@7/css/materialdesignicons.min.css" rel="stylesheet">
+<style>
+  .chart-wrap { position: relative; }
+  .chart-wrap svg { display: block; }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #9e9e9e;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+  }
+  .axis text {
+    fill: #333;
+    font-size: 12px;
+  }
+  .dir-listing {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 14px;
+    line-height: 2;
+  }
+  .dir-listing .dir-header {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .dir-listing .dir-row {
+    display: flex;
+    align-items: baseline;
+    padding: 2px 0;
+  }
+  .dir-listing .dir-row:hover {
+    background: rgba(0, 0, 0, 0.04);
+  }
+  .dir-listing .dir-row a {
+    color: #1a56db;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .dir-listing .dir-row a:hover {
+    text-decoration: underline;
+  }
+  .dir-listing .dir-row .dots {
+    flex: 1;
+    margin: 0 8px;
+    border-bottom: 1px dotted #999;
+    transform: translateY(-4px);
+  }
+  .dir-listing .dir-row .path {
+    color: #999;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .stat-value {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+  .stat-label {
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+  }
+  .stat-card {
+    border-top: 4px solid #1a56db;
+  }
+  pre.code {
+    background: #0d1117;
+    color: #e6edf3;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <v-app>
+    <v-app-bar color="primary" density="compact">
+      <v-app-bar-title>
+        <router-link to="/" class="text-decoration-none">
+          <v-icon icon="mdi-trophy" class="mr-2"></v-icon>
+          <span class="text-white">Premier League Insights</span>
+        </router-link>
+      </v-app-bar-title>
+    </v-app-bar>
+
+    <v-navigation-drawer permanent>
+      <v-list>
+        <v-list-subheader>Charts</v-list-subheader>
+        <v-list-item
+          v-for="item in navItems"
+          :key="item.path"
+          :to="item.path"
+          :prepend-icon="item.icon"
+          :title="item.label"
+          link
+        ></v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-main>
+      <v-container fluid>
+        <router-view></router-view>
+      </v-container>
+    </v-main>
+  </v-app>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@3/dist/vuetify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-router@4/dist/vue-router.global.prod.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script>
+const { createApp, ref, onMounted, onBeforeUnmount, nextTick } = Vue;
+const { createRouter, createWebHistory } = VueRouter;
+const { createVuetify } = Vuetify;
+
+const navItems = [
+  { label: 'All-Time Table', path: '/all-time-table', icon: 'mdi-table-large' },
+  { label: 'Most Wins', path: '/most-wins', icon: 'mdi-chart-bar' },
+  { label: 'Data Quality', path: '/data-quality', icon: 'mdi-shield-check' },
+  { label: 'Attendances', path: '/attendances', icon: 'mdi-stadium' }
+];
+
+const HomeView = {
+  name: 'HomeView',
+  template: `
+    <v-row>
+      <v-col cols="12" md="8" offset-md="2">
+        <v-row>
+          <v-col cols="12" sm="4">
+            <v-card class="stat-card text-center pa-3">
+              <v-card-text>
+                <div class="stat-value" style="color: #1a56db;">{{ fmt(totalMatches) }}</div>
+                <div class="stat-label">Total Matches Analysed</div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4">
+            <v-card class="stat-card text-center pa-3">
+              <v-card-text>
+                <div class="stat-value" style="color: #0e9f6e;">{{ fmt(totalTeams) }}</div>
+                <div class="stat-label">Total Unique Teams</div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+          <v-col cols="12" sm="4">
+            <v-card class="stat-card text-center pa-3">
+              <v-card-text>
+                <div class="stat-value" style="color: #d97706;">{{ fmt(totalGoals) }}</div>
+                <div class="stat-label">Total Goals Scored</div>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-col>
+
+      <v-col cols="12" md="8" offset-md="2">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-cog-outline" class="mr-2"></v-icon>
+            How this site is built
+          </v-card-title>
+          <v-card-text>
+            <p class="mb-4">
+              Every chart on this site is generated from the Premier League's public API by a
+              repeatable pipeline — <strong>scrape → DuckDB → dbt → CSV → chart</strong>. When
+              data updates, <code>./update_all_charts.sh</code> rebuilds everything from source.
+            </p>
+            <v-list density="compact">
+              <v-list-item>
+                <v-list-item-title>
+                  <v-icon icon="mdi-download" size="small" class="mr-2"></v-icon>Scrape
+                </v-list-item-title>
+                <v-list-item-subtitle>curl the Pulselive API (competition=8) into matches/&lt;season&gt;/*.json</v-list-item-subtitle>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-icon icon="mdi-database" size="small" class="mr-2"></v-icon>Load
+                </v-list-item-title>
+                <v-list-item-subtitle>duckdb/load_*.sql read the JSON into the DuckDB <code>raw</code> schema</v-list-item-subtitle>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-icon icon="mdi-sitemap" size="small" class="mr-2"></v-icon>Model
+                </v-list-item-title>
+                <v-list-item-subtitle>dbt seed + run builds staging → core (int_matches) → marts (fct_matches)</v-list-item-subtitle>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-icon icon="mdi-file-delimited" size="small" class="mr-2"></v-icon>Chart data
+                </v-list-item-title>
+                <v-list-item-subtitle>web/data/*.sql are run against fct_matches to write web/data/*.csv</v-list-item-subtitle>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title>
+                  <v-icon icon="mdi-chart-line" size="small" class="mr-2"></v-icon>Serve
+                </v-list-item-title>
+                <v-list-item-subtitle>web/serve.py serves the Vuetify 3 + d3.js SPA from those CSVs</v-list-item-subtitle>
+              </v-list-item>
+            </v-list>
+
+            <v-divider class="my-4"></v-divider>
+
+            <div>
+              <v-icon icon="mdi-clock-outline" size="small" class="mr-2"></v-icon>
+              Last data update: <strong>{{ lastUpdated }}</strong>
+            </div>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="8" offset-md="2">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-folder-open-outline" class="mr-2"></v-icon>
+            Index of /charts
+          </v-card-title>
+          <v-card-text>
+            <div class="dir-listing">
+              <div class="dir-header">
+                Premier League data charts · select a page below
+              </div>
+              <div class="dir-row" v-for="entry in entries" :key="entry.path">
+                <router-link :to="entry.path">{{ entry.label }}</router-link>
+                <span class="dots"></span>
+                <span class="path">{{ entry.path }}</span>
+              </div>
+            </div>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  `,
+  setup() {
+    const entries = [
+      { label: 'All-Time Table', path: '/all-time-table' },
+      { label: 'Most Wins', path: '/most-wins' },
+      { label: 'Data Quality', path: '/data-quality' },
+      { label: 'Attendances', path: '/attendances' }
+    ];
+    const totalMatches = ref(0);
+    const totalTeams = ref(0);
+    const totalGoals = ref(0);
+    const lastUpdated = ref('');
+
+    const fmt = n => d3.format(',')(n || 0);
+
+    async function loadStats() {
+      try {
+        const rows = await d3.csv('data/stats.csv');
+        const s = rows[0] || {};
+        totalMatches.value = +s.total_matches;
+        totalTeams.value = +s.total_unique_teams;
+        totalGoals.value = +s.total_goals;
+        lastUpdated.value = s.last_updated || '';
+      } catch (e) {
+        lastUpdated.value = '';
+      }
+    }
+
+    onMounted(loadStats);
+
+    return { entries, totalMatches, totalTeams, totalGoals, lastUpdated, fmt };
+  }
+};
+
+const MostWinsView = {
+  name: 'MostWinsView',
+  template: `
+    <v-row>
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>Total Wins by Team</v-card-title>
+          <v-card-subtitle>All 33 seasons · most wins at top</v-card-subtitle>
+          <v-card-text>
+            <v-progress-linear v-if="loading" indeterminate color="primary" class="my-6"></v-progress-linear>
+            <div v-else class="chart-wrap" ref="chartEl"></div>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-database-search" class="mr-2"></v-icon>
+            SQL Query Used
+          </v-card-title>
+          <v-card-text>
+            <pre class="code"><code>{{ sqlQuery }}</code></pre>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  `,
+  setup() {
+    const chartEl = ref(null);
+    const sqlQuery = ref('');
+    const loading = ref(true);
+    let winsData = [];
+
+    async function load() {
+      const sqlRes = await fetch('data/wins.sql');
+      sqlQuery.value = await sqlRes.text();
+      winsData = await d3.csv('data/wins.csv', d => ({
+        team_abbr: d.team_abbr,
+        team_name: d.team_name,
+        home_wins: +d.home_wins,
+        away_wins: +d.away_wins,
+        total_wins: +d.total_wins
+      }));
+      winsData.sort((a, b) => b.total_wins - a.total_wins);
+      loading.value = false;
+      await nextTick();
+      renderChart();
+    }
+
+    function renderChart() {
+      const el = chartEl.value;
+      if (!el || !winsData.length) return;
+      el.innerHTML = '';
+
+      const data = winsData;
+      const width = el.clientWidth || 800;
+      const rowH = 26;
+      const margin = { top: 10, right: 56, bottom: 24, left: 84 };
+      const innerW = width - margin.left - margin.right;
+      const innerH = data.length * rowH;
+
+      const svg = d3.select(el)
+        .append('svg')
+        .attr('width', width)
+        .attr('height', innerH + margin.top + margin.bottom);
+
+      const chart = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+      const x = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.total_wins)])
+        .nice()
+        .range([0, innerW]);
+
+      const y = d3.scaleBand()
+        .domain(data.map(d => d.team_abbr))
+        .range([0, innerH])
+        .padding(0.3);
+
+      const color = d3.scaleSequential(d3.interpolateBlues)
+        .domain([0, d3.max(data, d => d.total_wins)]);
+
+      chart.append('g')
+        .call(d3.axisBottom(x).ticks(6).tickSizeOuter(0))
+        .attr('transform', `translate(0,${innerH})`);
+
+      chart.append('g')
+        .call(d3.axisLeft(y).tickSizeOuter(0));
+
+      const bars = chart.selectAll('rect')
+        .data(data)
+        .join('rect')
+        .attr('y', d => y(d.team_abbr))
+        .attr('height', y.bandwidth())
+        .attr('width', d => x(d.total_wins))
+        .attr('fill', d => color(d.total_wins))
+        .attr('rx', 3);
+
+      chart.selectAll('text.val')
+        .data(data)
+        .join('text')
+        .attr('class', 'val')
+        .attr('x', d => x(d.total_wins) + 6)
+        .attr('y', d => y(d.team_abbr) + y.bandwidth() / 2)
+        .attr('dy', '0.35em')
+        .attr('font-size', '12px')
+        .text(d => d.total_wins);
+
+      const tooltip = d3.select(el)
+        .append('div')
+        .style('position', 'absolute')
+        .style('opacity', 0)
+        .style('pointer-events', 'none')
+        .style('background', 'rgba(0,0,0,0.88)')
+        .style('color', '#fff')
+        .style('padding', '8px 12px')
+        .style('border-radius', '6px')
+        .style('font-size', '12px')
+        .style('z-index', 10);
+
+      bars
+        .on('mousemove', function (event, d) {
+          tooltip
+            .style('opacity', 1)
+            .html(
+              `<strong>${d.team_name}</strong><br>` +
+              `Home: ${d.home_wins} · Away: ${d.away_wins}<br>` +
+              `Total: ${d.total_wins}`
+            )
+            .style('left', (event.offsetX + 12) + 'px')
+            .style('top', (event.offsetY - 10) + 'px');
+        })
+        .on('mouseleave', () => tooltip.style('opacity', 0));
+    }
+
+    const onResize = () => renderChart();
+
+    onMounted(() => {
+      load();
+      window.addEventListener('resize', onResize);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', onResize);
+    });
+
+    return { chartEl, sqlQuery, loading };
+  }
+};
+
+const DataQualityView = {
+  name: 'DataQualityView',
+  template: `
+    <v-row>
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card color="secondary" variant="tonal">
+          <v-card-title>
+            <v-icon icon="mdi-shield-check" class="mr-2"></v-icon>
+            Data Quality
+          </v-card-title>
+          <v-card-subtitle>{{ seasonsProcessed }} seasons processed in the database</v-card-subtitle>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>Seasons · Teams · Matches per Team</v-card-title>
+          <v-card-text>
+            <v-progress-linear v-if="loading" indeterminate color="primary" class="my-6"></v-progress-linear>
+            <div v-else class="chart-wrap" ref="qualityChartEl"></div>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-table" class="mr-2"></v-icon>
+            Season Summary
+          </v-card-title>
+          <v-card-text>
+            <v-table v-if="!loading" density="compact">
+              <thead>
+                <tr>
+                  <th class="text-left">Season</th>
+                  <th class="text-right">Matches</th>
+                  <th class="text-right">Avg Matches/Team</th>
+                  <th class="text-right">Teams</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="row in qualityData" :key="row.season_label">
+                  <td>{{ row.season_label }}</td>
+                  <td class="text-right">{{ row.matches_played }}</td>
+                  <td class="text-right">{{ row.avg_matches_per_team.toFixed(1) }}</td>
+                  <td class="text-right">{{ row.team_count }}</td>
+                </tr>
+              </tbody>
+            </v-table>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-database-search" class="mr-2"></v-icon>
+            SQL Query Used
+          </v-card-title>
+          <v-card-text>
+            <pre class="code"><code>{{ sqlQuality }}</code></pre>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  `,
+  setup() {
+    const qualityChartEl = ref(null);
+    const sqlQuality = ref('');
+    const seasonsProcessed = ref(0);
+    const loading = ref(true);
+    const qualityData = ref([]);
+
+    async function load() {
+      const sqlRes = await fetch('data/season_quality.sql');
+      sqlQuality.value = await sqlRes.text();
+      qualityData.value = await d3.csv('data/season_quality.csv', d => ({
+        season_label: d.season_label,
+        team_count: +d.team_count,
+        matches_played: +d.matches_played,
+        avg_matches_per_team: +d.avg_matches_per_team
+      }));
+      seasonsProcessed.value = qualityData.value.length;
+      loading.value = false;
+      await nextTick();
+      renderChart();
+    }
+
+    function renderChart() {
+      const el = qualityChartEl.value;
+      if (!el || !qualityData.value.length) return;
+      el.innerHTML = '';
+
+      const data = qualityData.value;
+      const width = el.clientWidth || 800;
+      const margin = { top: 30, right: 24, bottom: 90, left: 50 };
+      const innerW = width - margin.left - margin.right;
+      const innerH = 340;
+
+      const svg = d3.select(el)
+        .append('svg')
+        .attr('width', width)
+        .attr('height', innerH + margin.top + margin.bottom);
+
+      const chart = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+      const yMax = d3.max(data, d => Math.max(d.team_count, d.avg_matches_per_team));
+      const y = d3.scaleLinear()
+        .domain([0, yMax * 1.15])
+        .nice()
+        .range([innerH, 0]);
+
+      const x = d3.scaleBand()
+        .domain(data.map(d => d.season_label))
+        .range([0, innerW])
+        .padding(0.3);
+
+      const xSub = d3.scaleBand()
+        .domain(['teams', 'avg'])
+        .range([0, x.bandwidth()])
+        .padding(0.1);
+
+      chart.append('line')
+        .attr('x1', 0)
+        .attr('x2', innerW)
+        .attr('y1', y(38))
+        .attr('y2', y(38))
+        .attr('stroke', '#e11d48')
+        .attr('stroke-width', 1)
+        .attr('stroke-dasharray', '5 4');
+
+      chart.append('text')
+        .attr('x', innerW)
+        .attr('y', y(38) - 6)
+        .attr('text-anchor', 'end')
+        .attr('font-size', '11px')
+        .attr('fill', '#e11d48')
+        .text('38 · typical 20-team season');
+
+      const groups = chart.selectAll('g.season')
+        .data(data)
+        .join('g')
+        .attr('class', 'season')
+        .attr('transform', d => `translate(${x(d.season_label)},0)`);
+
+      const barData = d => [
+        { key: 'teams', value: d.team_count, label: `${d.team_count} teams` },
+        { key: 'avg', value: d.avg_matches_per_team, label: `${d.avg_matches_per_team} matches per team` }
+      ];
+
+      groups.selectAll('rect')
+        .data(barData)
+        .join('rect')
+        .attr('x', d => xSub(d.key))
+        .attr('width', xSub.bandwidth())
+        .attr('y', d => y(d.value))
+        .attr('height', d => innerH - y(d.value))
+        .attr('rx', 3)
+        .attr('fill', d => d.key === 'teams' ? '#4f46e5' : '#10b981');
+
+      chart.append('g')
+        .attr('transform', `translate(0,${innerH})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0))
+        .selectAll('text')
+        .attr('transform', 'rotate(-45)')
+        .attr('text-anchor', 'end')
+        .attr('dx', '-0.6em')
+        .attr('dy', '0.3em');
+
+      chart.append('g')
+        .call(d3.axisLeft(y).ticks(6));
+
+      const legend = chart.append('g')
+        .attr('transform', 'translate(0,-6)');
+      legend.append('rect').attr('x', 0).attr('width', 12).attr('height', 12).attr('rx', 2).attr('fill', '#4f46e5');
+      legend.append('text').attr('x', 16).attr('y', 10).attr('font-size', '11px').text('Teams');
+      legend.append('rect').attr('x', 80).attr('width', 12).attr('height', 12).attr('rx', 2).attr('fill', '#10b981');
+      legend.append('text').attr('x', 96).attr('y', 10).attr('font-size', '11px').text('Avg matches / team');
+
+      const tooltip = d3.select(el)
+        .append('div')
+        .style('position', 'absolute')
+        .style('opacity', 0)
+        .style('pointer-events', 'none')
+        .style('background', 'rgba(0,0,0,0.88)')
+        .style('color', '#fff')
+        .style('padding', '8px 12px')
+        .style('border-radius', '6px')
+        .style('font-size', '12px')
+        .style('z-index', 10);
+
+      groups.selectAll('rect')
+        .on('mousemove', function (event, d) {
+          const season = d3.select(this.parentNode).datum();
+          const bounds = el.getBoundingClientRect();
+          tooltip
+            .style('opacity', 1)
+            .html(
+              `<strong>${season.season_label}</strong><br>` +
+              `${d.label}<br>` +
+              `${season.matches_played} matches played`
+            )
+            .style('left', (event.clientX - bounds.left + 12) + 'px')
+            .style('top', (event.clientY - bounds.top - 10) + 'px');
+        })
+        .on('mouseleave', () => tooltip.style('opacity', 0));
+    }
+
+    const onResize = () => renderChart();
+
+    onMounted(() => {
+      load();
+      window.addEventListener('resize', onResize);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', onResize);
+    });
+
+    return { qualityChartEl, sqlQuality, seasonsProcessed, loading, qualityData };
+  }
+};
+
+const AttendanceView = {
+  name: 'AttendanceView',
+  template: `
+    <v-row>
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-stadium" class="mr-2"></v-icon>
+            Average Home Attendance by Team
+          </v-card-title>
+          <v-card-subtitle>1992-93 to 2025-26 · season average across all home games</v-card-subtitle>
+          <v-card-text>
+            <v-progress-linear v-if="loading" indeterminate color="primary" class="my-6"></v-progress-linear>
+            <div v-else class="chart-wrap" ref="attendanceChartEl"></div>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-database-search" class="mr-2"></v-icon>
+            SQL Query Used
+          </v-card-title>
+          <v-card-text>
+            <pre class="code"><code>{{ sqlAttendance }}</code></pre>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  `,
+  setup() {
+    const attendanceChartEl = ref(null);
+    const sqlAttendance = ref('');
+    const loading = ref(true);
+    let attendanceData = [];
+
+    async function load() {
+      const sqlRes = await fetch('data/attendance.sql');
+      sqlAttendance.value = await sqlRes.text();
+      attendanceData = await d3.csv('data/attendance.csv', d => ({
+        season_label: d.season_label,
+        team_abbr: d.team_abbr,
+        team_name: d.team_name,
+        avg_home_attendance: +d.avg_home_attendance
+      }));
+      loading.value = false;
+      await nextTick();
+      renderChart();
+    }
+
+    function renderChart() {
+      const el = attendanceChartEl.value;
+      if (!el || !attendanceData.length) return;
+      el.innerHTML = '';
+
+      const rows = [...attendanceData]
+        .sort((a, b) => +a.season_label.slice(0, 4) - +b.season_label.slice(0, 4));
+      const seasons = [...new Set(rows.map(r => r.season_label))];
+      const teamAbbrs = [...new Set(rows.map(r => r.team_abbr))].sort();
+      const nameOf = abbr => rows.find(r => r.team_abbr === abbr).team_name;
+      const valOf = (abbr, season) => {
+        const r = rows.find(x => x.team_abbr === abbr && x.season_label === season);
+        return r ? r.avg_home_attendance : null;
+      };
+
+      const teams = teamAbbrs.map(abbr => ({
+        team_abbr: abbr,
+        team_name: nameOf(abbr),
+        points: seasons.map(s => {
+          const v = valOf(abbr, s);
+          return v === null ? null : { season: s, value: v };
+        })
+      }));
+
+      const width = el.clientWidth || 800;
+      const margin = { top: 30, right: 20, bottom: 52, left: 64 };
+      const innerW = width - margin.left - margin.right;
+      const innerH = 380;
+
+      const x = d3.scalePoint()
+        .domain(seasons)
+        .range([0, innerW])
+        .padding(0.5);
+
+      const yMax = d3.max(rows, r => r.avg_home_attendance);
+      const y = d3.scaleLinear()
+        .domain([0, yMax * 1.05])
+        .nice()
+        .range([innerH, 0]);
+
+      const color = d3.scaleOrdinal(d3.schemeTableau10);
+
+      const svg = d3.select(el)
+        .append('svg')
+        .attr('width', width)
+        .attr('height', innerH + margin.top + margin.bottom);
+
+      const chart = svg.append('g')
+        .attr('transform', `translate(${margin.left},${margin.top})`);
+
+      const lineGen = d3.line()
+        .defined(p => p !== null)
+        .x(d => x(d.season))
+        .y(d => y(d.value));
+
+      chart.selectAll('path.line')
+        .data(teams)
+        .join('path')
+        .attr('class', 'line')
+        .attr('fill', 'none')
+        .attr('stroke', d => color(d.team_abbr))
+        .attr('stroke-width', 2)
+        .attr('opacity', 1)
+        .attr('d', d => lineGen(d.points));
+
+      const points = chart.selectAll('g.point')
+        .data(teams)
+        .join('g')
+        .attr('class', 'point')
+        .selectAll('circle')
+        .data(d => d.points.map(p => ({ ...p, team_abbr: d.team_abbr, team_name: d.team_name })))
+        .join('circle')
+        .attr('cx', d => x(d.season))
+        .attr('cy', d => y(d.value))
+        .attr('r', 3)
+        .attr('fill', d => color(d.team_abbr))
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 1);
+
+      chart.append('g')
+        .attr('class', 'axis')
+        .attr('transform', `translate(0,${innerH})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0).tickValues(seasons.filter((_, i) => i % 2 === 0)));
+
+      chart.append('g')
+        .attr('class', 'axis')
+        .call(d3.axisLeft(y).ticks(5).tickFormat(d => (d / 1000) + 'k'));
+
+      chart.append('text')
+        .attr('x', innerW / 2)
+        .attr('y', innerH + 36)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '13px')
+        .attr('fill', '#555')
+        .text('Season');
+
+      chart.append('text')
+        .attr('transform', 'rotate(-90)')
+        .attr('x', -innerH / 2)
+        .attr('y', -40)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '13px')
+        .attr('fill', '#555')
+        .text('Avg Home Attendance');
+
+      const tooltip = d3.select(el)
+        .append('div')
+        .style('position', 'absolute')
+        .style('opacity', 0)
+        .style('pointer-events', 'none')
+        .style('background', 'rgba(0,0,0,0.88)')
+        .style('color', '#fff')
+        .style('padding', '8px 12px')
+        .style('border-radius', '6px')
+        .style('font-size', '12px')
+        .style('z-index', 10);
+
+      function highlight(abbr) {
+        chart.selectAll('path.line')
+          .attr('opacity', d => !abbr || d.team_abbr === abbr ? 1 : 0.1);
+      }
+
+      points
+        .on('mousemove', function (event, d) {
+          highlight(d.team_abbr);
+          tooltip
+            .style('opacity', 1)
+            .html(
+              `<strong>${d.team_name} (${d.team_abbr})</strong><br>` +
+              `${d.season} · avg ${d3.format(',')(d.value)}`
+            )
+            .style('left', (event.offsetX + 12) + 'px')
+            .style('top', (event.offsetY - 10) + 'px');
+        })
+        .on('mouseleave', () => {
+          highlight(null);
+          tooltip.style('opacity', 0);
+        });
+
+      const legend = d3.select(el)
+        .append('div')
+        .style('display', 'flex')
+        .style('flex-wrap', 'wrap')
+        .style('gap', '6px')
+        .style('margin-top', '10px');
+
+      legend.selectAll('span')
+        .data(teams)
+        .join('span')
+        .style('color', d => color(d.team_abbr))
+        .style('cursor', 'pointer')
+        .style('font-size', '12px')
+        .style('border', '1px solid #ccc')
+        .style('border-radius', '4px')
+        .style('padding', '2px 7px')
+        .text(d => d.team_abbr)
+        .on('mouseenter', (event, d) => highlight(d.team_abbr))
+        .on('mouseleave', () => highlight(null));
+    }
+
+    const onResize = () => renderChart();
+
+    onMounted(() => {
+      load();
+      window.addEventListener('resize', onResize);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener('resize', onResize);
+    });
+
+    return { attendanceChartEl, sqlAttendance, loading };
+  }
+};
+
+const AllTimeTableView = {
+  name: 'AllTimeTableView',
+  template: `
+    <v-row>
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-table-large" class="mr-2"></v-icon>
+            All-Time Premier League Table
+          </v-card-title>
+          <v-card-subtitle>All 33 seasons · every team's all-time record, sorted by points</v-card-subtitle>
+          <v-card-text>
+            <v-progress-linear v-if="loading" indeterminate color="primary" class="my-6"></v-progress-linear>
+            <v-table v-else density="compact">
+              <thead>
+                <tr>
+                  <th class="text-left">Pos</th>
+                  <th class="text-left">Team</th>
+                  <th class="text-right">Played</th>
+                  <th class="text-right">W</th>
+                  <th class="text-right">D</th>
+                  <th class="text-right">L</th>
+                  <th class="text-right">Points</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="(row, i) in tableData" :key="row.team_abbr">
+                  <td>{{ i + 1 }}</td>
+                  <td>{{ row.team_name }}</td>
+                  <td class="text-right">{{ row.matches_played }}</td>
+                  <td class="text-right">{{ row.wins }}</td>
+                  <td class="text-right">{{ row.draws }}</td>
+                  <td class="text-right">{{ row.losses }}</td>
+                  <td class="text-right"><strong>{{ row.points }}</strong></td>
+                </tr>
+              </tbody>
+            </v-table>
+          </v-card-text>
+        </v-card>
+      </v-col>
+
+      <v-col cols="12" md="10" offset-md="1">
+        <v-card>
+          <v-card-title>
+            <v-icon icon="mdi-database-search" class="mr-2"></v-icon>
+            SQL Query Used
+          </v-card-title>
+          <v-card-text>
+            <pre class="code"><code>{{ sqlTable }}</code></pre>
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+  `,
+  setup() {
+    const sqlTable = ref('');
+    const loading = ref(true);
+    const tableData = ref([]);
+
+    async function load() {
+      const sqlRes = await fetch('data/all_time_table.sql');
+      sqlTable.value = await sqlRes.text();
+      tableData.value = await d3.csv('data/all_time_table.csv', d => ({
+        team_abbr: d.team_abbr,
+        team_name: d.team_name,
+        matches_played: +d.matches_played,
+        wins: +d.wins,
+        draws: +d.draws,
+        losses: +d.losses,
+        points: +d.points
+      }));
+      loading.value = false;
+    }
+
+    onMounted(load);
+
+    return { sqlTable, loading, tableData };
+  }
+};
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes: [
+    { path: '/', component: HomeView },
+    { path: '/most-wins', component: MostWinsView },
+    { path: '/data-quality', component: DataQualityView },
+    { path: '/attendances', component: AttendanceView },
+    { path: '/all-time-table', component: AllTimeTableView }
+  ]
+});
+
+createApp({
+  setup() {
+    return { navItems };
+  }
+})
+  .use(createVuetify())
+  .use(router)
+  .mount('#app');
+</script>
+</body>
+</html>
