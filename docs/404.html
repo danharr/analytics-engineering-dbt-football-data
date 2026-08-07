@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Premier League Insights</title>
+<script>
+  (function () {
+    var p = location.pathname.replace(/\/index\.html$/, '');
+    if (p && p !== '/') {
+      sessionStorage.setItem('pl_redirect', p + location.search);
+    }
+    location.replace('./');
+  })();
+</script>
+</head>
+<body>
+  <p>Redirecting to <a href="./">Premier League Insights</a>&hellip;</p>
+</body>
+</html>
