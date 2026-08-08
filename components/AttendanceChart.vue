@@ -11,6 +11,7 @@ const props = defineProps({
 })
 
 const el = ref(null)
+let resizeObserver = null
 
 function renderChart() {
   const target = el.value
@@ -36,7 +37,7 @@ function renderChart() {
     })
   }))
 
-  const width = target.clientWidth || 800
+  const width = target.getBoundingClientRect().width || target.clientWidth || 800
   const margin = { top: 30, right: 20, bottom: 52, left: 64 }
   const innerW = width - margin.left - margin.right
   const innerH = 380
@@ -132,6 +133,8 @@ function renderChart() {
   function highlight(abbr) {
     chart.selectAll('path.line')
       .attr('opacity', d => !abbr || d.team_abbr === abbr ? 1 : 0.1)
+    chart.selectAll('g.point circle')
+      .attr('opacity', d => !abbr || d.team_abbr === abbr ? 1 : 0.1)
   }
 
   points
@@ -176,10 +179,19 @@ const onResize = () => renderChart()
 
 onMounted(() => {
   renderChart()
-  window.addEventListener('resize', onResize)
+  if (typeof ResizeObserver !== 'undefined' && el.value) {
+    resizeObserver = new ResizeObserver(() => renderChart())
+    resizeObserver.observe(el.value)
+  } else {
+    window.addEventListener('resize', onResize)
+  }
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('resize', onResize)
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+  } else {
+    window.removeEventListener('resize', onResize)
+  }
 })
 </script>
