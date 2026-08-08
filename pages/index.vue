@@ -133,7 +133,8 @@ const entries = [
   { label: 'One-Nil Wins', path: '/one-nil-wins' },
   { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks' },
   { label: 'Comeback Kings', path: '/comeback-kings' },
-  { label: 'Most Comebacks in a Season', path: '/most-comebacks' }
+  { label: 'Most Comebacks in a Season', path: '/most-comebacks' },
+  { label: 'Most Manager Wins', path: '/manager-wins' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

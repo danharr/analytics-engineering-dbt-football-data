@@ -12,6 +12,7 @@ import oneNilWinsCsv from '~/assets/data/one_nil_wins.csv?raw'
 import htLeadNoWinStreaksCsv from '~/assets/data/ht_lead_no_win_streaks.csv?raw'
 import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
 import mostComebacksCsv from '~/assets/data/most_comebacks.csv?raw'
+import managerWinsCsv from '~/assets/data/manager_wins.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -24,6 +25,7 @@ import oneNilWinsSql from '~/assets/data/one_nil_wins.sql?raw'
 import htLeadNoWinStreaksSql from '~/assets/data/ht_lead_no_win_streaks.sql?raw'
 import comebackKingsSql from '~/assets/data/comeback_kings.sql?raw'
 import mostComebacksSql from '~/assets/data/most_comebacks.sql?raw'
+import managerWinsSql from '~/assets/data/manager_wins.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -146,6 +148,19 @@ export interface MostComebacksRow {
   team_abbr: string
   season_label: string
   comeback_count: number
+}
+
+export interface ManagerWinsRow {
+  rank: number
+  manager_name: string
+  wins: number
+  games: number
+  draws: number
+  losses: number
+  win_pct: number
+  points: number
+  goals_for: number
+  goals_against: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -309,6 +324,19 @@ export const mostComebacks = parse<MostComebacksRow>(mostComebacksCsv, d => ({
   comeback_count: toInt(d, 'comeback_count')
 }))
 
+export const managerWins = parse<ManagerWinsRow>(managerWinsCsv, d => ({
+  rank: toInt(d, 'rank'),
+  manager_name: d.manager_name,
+  wins: toInt(d, 'wins'),
+  games: toInt(d, 'games'),
+  draws: toInt(d, 'draws'),
+  losses: toInt(d, 'losses'),
+  win_pct: toFloat(d, 'win_pct'),
+  points: toInt(d, 'points'),
+  goals_for: toInt(d, 'goals_for'),
+  goals_against: toInt(d, 'goals_against')
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -321,5 +349,6 @@ export const sqlQueries = {
   oneNilWins: oneNilWinsSql,
   htLeadNoWinStreaks: htLeadNoWinStreaksSql,
   comebackKings: comebackKingsSql,
-  mostComebacks: mostComebacksSql
+  mostComebacks: mostComebacksSql,
+  managerWins: managerWinsSql
 }

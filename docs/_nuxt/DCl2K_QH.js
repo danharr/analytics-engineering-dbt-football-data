@@ -1,10 +1,10 @@
-import{a as N,m as g,c as L,d as We,e as x,V as K,f as Y,b as ae,R as z,g as we,h as ge,u as Le,i as Se,j as ve,k as Be,l as Ee,n as Me,o as He,p as ke,q as Re,r as Ne,s as Te,t as Oe,v as Ie,w as Ve,x as Pe,y as Fe,L as De,z as Qe,A as Ye,B as je}from"./DaMJu0sL.js";import{j as S,s as Ge,b as l,n as I,k as V,l as v,a as k,F as Z,t as J,I as O,p as qe,v as $e,x as xe,m as Ke,y as ze,z as Ze,q as Je,A as se,i as re,B as P,C as j}from"./BChyY97s.js";var X={},F={},D=34,R=10,Q=13;function oe(e){return new Function("d","return {"+e.map(function(t,n){return JSON.stringify(t)+": d["+n+'] || ""'}).join(",")+"}")}function Xe(e,t){var n=oe(e);return function(a,s){return t(n(a),s,e)}}function ee(e){var t=Object.create(null),n=[];return e.forEach(function(a){for(var s in a)s in t||n.push(t[s]=s)}),n}function C(e,t){var n=e+"",a=n.length;return a<t?new Array(t-a+1).join(0)+n:n}function en(e){return e<0?"-"+C(-e,6):e>9999?"+"+C(e,6):C(e,4)}function nn(e){var t=e.getUTCHours(),n=e.getUTCMinutes(),a=e.getUTCSeconds(),s=e.getUTCMilliseconds();return isNaN(e)?"Invalid Date":en(e.getUTCFullYear())+"-"+C(e.getUTCMonth()+1,2)+"-"+C(e.getUTCDate(),2)+(s?"T"+C(t,2)+":"+C(n,2)+":"+C(a,2)+"."+C(s,3)+"Z":a?"T"+C(t,2)+":"+C(n,2)+":"+C(a,2)+"Z":n||t?"T"+C(t,2)+":"+C(n,2)+"Z":"")}function tn(e){var t=new RegExp('["'+e+`
-\r]`),n=e.charCodeAt(0);function a(r,m){var U,_,h=s(r,function(b,p){if(U)return U(b,p-1);_=b,U=m?Xe(b,m):oe(b)});return h.columns=_||[],h}function s(r,m){var U=[],_=r.length,h=0,b=0,p,A=_<=0,u=!1;r.charCodeAt(_-1)===R&&--_,r.charCodeAt(_-1)===Q&&--_;function T(){if(A)return F;if(u)return u=!1,X;var M,H=h,w;if(r.charCodeAt(H)===D){for(;h++<_&&r.charCodeAt(h)!==D||r.charCodeAt(++h)===D;);return(M=h)>=_?A=!0:(w=r.charCodeAt(h++))===R?u=!0:w===Q&&(u=!0,r.charCodeAt(h)===R&&++h),r.slice(H+1,M-1).replace(/""/g,'"')}for(;h<_;){if((w=r.charCodeAt(M=h++))===R)u=!0;else if(w===Q)u=!0,r.charCodeAt(h)===R&&++h;else if(w!==n)continue;return r.slice(H,M)}return A=!0,r.slice(H,_)}for(;(p=T())!==F;){for(var E=[];p!==X&&p!==F;)E.push(p),p=T();m&&(E=m(E,b++))==null||U.push(E)}return U}function i(r,m){return r.map(function(U){return m.map(function(_){return B(U[_])}).join(e)})}function c(r,m){return m==null&&(m=ee(r)),[m.map(B).join(e)].concat(i(r,m)).join(`
-`)}function d(r,m){return m==null&&(m=ee(r)),i(r,m).join(`
-`)}function f(r){return r.map(W).join(`
-`)}function W(r){return r.map(B).join(e)}function B(r){return r==null?"":r instanceof Date?nn(r):t.test(r+="")?'"'+r.replace(/"/g,'""')+'"':r}return{parse:a,parseRows:s,format:c,formatBody:d,formatRows:f,formatRow:W,formatValue:B}}var an=tn(","),ie=an.parse;const sn=`total_matches,total_unique_teams,total_goals,last_updated
+import{a as T,m as W,c as S,d as wn,e as q,V as $,f as j,b as tn,R as x,g as Wn,h as Sn,u as Ln,i as vn,j as Mn,k as Bn,l as En,n as kn,o as Hn,p as Rn,q as Tn,r as Nn,s as On,t as In,v as Vn,w as Pn,x as Fn,y as Dn,L as Gn,z as Qn,A as jn,B as Yn}from"./CdUro70o.js";import{j as L,s as Jn,b as l,n as I,k as V,l as v,a as H,F as z,t as Z,I as O,p as Kn,v as qn,x as $n,m as xn,y as zn,z as Zn,q as Xn,A as sn,i as rn,B as P,C as Y}from"./DtiEahTA.js";var X={},D={},G=34,R=10,Q=13;function on(n){return new Function("d","return {"+n.map(function(a,e){return JSON.stringify(a)+": d["+e+'] || ""'}).join(",")+"}")}function ne(n,a){var e=on(n);return function(t,s){return a(e(t),s,n)}}function nn(n){var a=Object.create(null),e=[];return n.forEach(function(t){for(var s in t)s in a||e.push(a[s]=s)}),e}function y(n,a){var e=n+"",t=e.length;return t<a?new Array(a-t+1).join(0)+e:e}function ee(n){return n<0?"-"+y(-n,6):n>9999?"+"+y(n,6):y(n,4)}function ae(n){var a=n.getUTCHours(),e=n.getUTCMinutes(),t=n.getUTCSeconds(),s=n.getUTCMilliseconds();return isNaN(n)?"Invalid Date":ee(n.getUTCFullYear())+"-"+y(n.getUTCMonth()+1,2)+"-"+y(n.getUTCDate(),2)+(s?"T"+y(a,2)+":"+y(e,2)+":"+y(t,2)+"."+y(s,3)+"Z":t?"T"+y(a,2)+":"+y(e,2)+":"+y(t,2)+"Z":e||a?"T"+y(a,2)+":"+y(e,2)+"Z":"")}function te(n){var a=new RegExp('["'+n+`
+\r]`),e=n.charCodeAt(0);function t(o,m){var g,_,h=s(o,function(b,p){if(g)return g(b,p-1);_=b,g=m?ne(b,m):on(b)});return h.columns=_||[],h}function s(o,m){var g=[],_=o.length,h=0,b=0,p,A=_<=0,u=!1;o.charCodeAt(_-1)===R&&--_,o.charCodeAt(_-1)===Q&&--_;function N(){if(A)return D;if(u)return u=!1,X;var E,k=h,w;if(o.charCodeAt(k)===G){for(;h++<_&&o.charCodeAt(h)!==G||o.charCodeAt(++h)===G;);return(E=h)>=_?A=!0:(w=o.charCodeAt(h++))===R?u=!0:w===Q&&(u=!0,o.charCodeAt(h)===R&&++h),o.slice(k+1,E-1).replace(/""/g,'"')}for(;h<_;){if((w=o.charCodeAt(E=h++))===R)u=!0;else if(w===Q)u=!0,o.charCodeAt(h)===R&&++h;else if(w!==e)continue;return o.slice(k,E)}return A=!0,o.slice(k,_)}for(;(p=N())!==D;){for(var B=[];p!==X&&p!==D;)B.push(p),p=N();m&&(B=m(B,b++))==null||g.push(B)}return g}function i(o,m){return o.map(function(g){return m.map(function(_){return M(g[_])}).join(n)})}function c(o,m){return m==null&&(m=nn(o)),[m.map(M).join(n)].concat(i(o,m)).join(`
+`)}function d(o,m){return m==null&&(m=nn(o)),i(o,m).join(`
+`)}function f(o){return o.map(U).join(`
+`)}function U(o){return o.map(M).join(n)}function M(o){return o==null?"":o instanceof Date?ae(o):a.test(o+="")?'"'+o.replace(/"/g,'""')+'"':o}return{parse:t,parseRows:s,format:c,formatBody:d,formatRows:f,formatRow:U,formatValue:M}}var se=te(","),ln=se.parse;const re=`total_matches,total_unique_teams,total_goals,last_updated
 13166,51,35478,2026-08-08
-`,rn=`team_abbr,team_name,home_wins,away_wins,total_wins
+`,oe=`team_abbr,team_name,home_wins,away_wins,total_wins
 MUN,Manchester United,447,328,775
 ARS,Arsenal,423,296,719
 LIV,Liverpool,415,279,694
@@ -56,7 +56,7 @@ BAR,Barnsley,7,3,10
 BPL,Blackpool,5,5,10
 LUT,Luton Town,4,2,6
 SWI,Swindon Town,4,1,5
-`,on=`season_label,team_count,matches_played,avg_matches_per_team
+`,ie=`season_label,team_count,matches_played,avg_matches_per_team
 1992-93,22,462,42.0
 1993-94,22,462,42.0
 1994-95,22,462,42.0
@@ -91,7 +91,7 @@ SWI,Swindon Town,4,1,5
 2023-24,20,380,38.0
 2024-25,20,380,38.0
 2025-26,20,380,38.0
-`,ln=`season_label,team_abbr,team_name,avg_home_attendance
+`,le=`season_label,team_abbr,team_name,avg_home_attendance
 1992-93,ARS,Arsenal,24403.0
 1992-93,AVL,Aston Villa,29594.0
 1992-93,BLA,Blackburn Rovers,16247.0
@@ -748,7 +748,7 @@ SWI,Swindon Town,4,1,5
 2025-26,TOT,Tottenham Hotspur,61006.0
 2025-26,WHU,West Ham United,62347.0
 2025-26,WOL,Wolverhampton Wanderers,29835.0
-`,mn=`team_abbr,team_name,matches_played,wins,draws,losses,points
+`,me=`team_abbr,team_name,matches_played,wins,draws,losses,points
 MUN,Manchester United,1304,775,289,240,2614
 ARS,Arsenal,1304,719,316,269,2473
 LIV,Liverpool,1304,694,320,290,2402
@@ -800,7 +800,7 @@ BPL,Blackpool,38,10,9,19,39
 BAR,Barnsley,38,10,5,23,35
 SWI,Swindon Town,42,5,15,22,30
 LUT,Luton Town,38,6,8,24,26
-`,cn=`team_name,season_label,streak_start,streak_length,opponents
+`,ce=`team_name,season_label,streak_start,streak_length,opponents
 Arsenal,2025-26,2026-04-25,5,"Newcastle United, Fulham, West Ham United, Burnley, Crystal Palace"
 Manchester City,2025-26,2025-11-29,6,"Leeds United, Fulham, Sunderland, Crystal Palace, West Ham United, Nottingham Forest"
 Aston Villa,2025-26,2025-11-09,8,"Bournemouth, Leeds United, Wolverhampton Wanderers, Brighton and Hove Albion, Arsenal, West Ham United, Manchester United, Chelsea"
@@ -829,7 +829,7 @@ Middlesbrough,1995-96,1995-09-16,5,"Coventry City, Manchester City, Blackburn Ro
 Blackburn Rovers,1994-95,1994-10-29,7,"Nottingham Forest, Sheffield Wednesday, Tottenham Hotspur, Ipswich Town, Queens Park Rangers, Wimbledon, Southampton"
 Sheffield Wednesday,1992-93,1992-12-28,7,"Southampton, Norwich City, Tottenham Hotspur, Chelsea, Everton, Crystal Palace, Manchester City"
 Norwich City,1992-93,1992-08-29,5,"Crystal Palace, Nottingham Forest, Southampton, Chelsea, Sheffield Wednesday"
-`,dn=`streak_id,team_name,season_label,streak_length,match_date,opponent_abbr,opponent_name,score
+`,de=`streak_id,team_name,season_label,streak_length,match_date,opponent_abbr,opponent_name,score
 1,Manchester City,2017-18,18,2017-08-26,BOU,Bournemouth,2-1
 1,Manchester City,2017-18,18,2017-09-09,LIV,Liverpool,5-0
 1,Manchester City,2017-18,18,2017-09-16,WAT,Watford,6-0
@@ -978,7 +978,7 @@ Norwich City,1992-93,1992-08-29,5,"Crystal Palace, Nottingham Forest, Southampto
 11,Liverpool,2013-14,11,2014-04-06,WHU,West Ham United,2-1
 11,Liverpool,2013-14,11,2014-04-13,MCI,Manchester City,3-2
 11,Liverpool,2013-14,11,2014-04-20,NOR,Norwich City,3-2
-`,hn=`team_name,team_abbr,start_date,end_date,gap_days,matches_between
+`,he=`team_name,team_abbr,start_date,end_date,gap_days,matches_between
 Nottingham Forest,NFO,1999-05-16,2022-08-14,8491,1
 Ipswich Town,IPS,2002-04-24,2024-11-10,8236,12
 Leeds United,LEE,2004-04-10,2020-09-19,6006,7
@@ -1030,7 +1030,7 @@ Swindon Town,SWI,1994-02-05,1994-04-30,84,12
 Blackpool,BPL,2011-02-22,2011-05-14,81,9
 Luton Town,LUT,2024-01-30,2024-04-06,67,10
 Barnsley,BAR,1997-08-27,1997-10-20,54,6
-`,_n=`match_id,kickoff_date,season_label,home_team_name,home_team_abbr,home_score,home_red_cards,away_team_name,away_team_abbr,away_score,away_red_cards,total_goals,total_red_cards,goals_points,red_points,chaos_score
+`,_e=`match_id,kickoff_date,season_label,home_team_name,home_team_abbr,home_score,home_red_cards,away_team_name,away_team_abbr,away_score,away_red_cards,total_goals,total_red_cards,goals_points,red_points,chaos_score
 128511,2007-09-29,2007-08,Portsmouth,POR,7,0,Reading,REA,4,0,11,0,33,0,33
 360493,2011-08-28,2011-12,Manchester United,MUN,8,0,Arsenal,ARS,2,1,10,1,30,2,32
 2128500,2021-02-02,2020-21,Manchester United,MUN,9,0,Southampton,SOU,0,2,9,2,27,4,31
@@ -1081,7 +1081,7 @@ Barnsley,BAR,1997-08-27,1997-10-20,54,6
 13858,1995-02-22,1994-95,Aston Villa,AVL,4,0,Leicester City,LEI,4,0,8,0,24,0,24
 17384,1995-04-01,1994-95,Sheffield Wednesday,SHW,1,0,Nottingham Forest,NFO,7,0,8,0,24,0,24
 16268,1995-12-16,1995-96,Sheffield Wednesday,SHW,6,0,Leeds United,LEE,2,0,8,0,24,0,24
-`,un=`team_name,team_abbr,total_wins,home_1_0_wins,away_1_0_wins,one_nil_wins,pct_one_nil
+`,ue=`team_name,team_abbr,total_wins,home_1_0_wins,away_1_0_wins,one_nil_wins,pct_one_nil
 Sheffield United,SHU,56,15,7,22,39.3
 Wigan Athletic,WIG,85,21,12,33,38.8
 West Bromwich Albion,WBA,117,24,17,41,35.0
@@ -1125,7 +1125,7 @@ Manchester United,MUN,775,75,76,151,19.5
 Manchester City,MCI,573,54,47,101,17.6
 Liverpool,LIV,694,62,53,115,16.6
 Brentford,BRE,68,3,3,6,8.8
-`,Cn=`team_name,team_abbr,run_length,seasons,start_date,end_date,opponents
+`,ye=`team_name,team_abbr,run_length,seasons,start_date,end_date,opponents
 Crystal Palace,CRY,3,2018-19,2019-01-12,2019-01-30,"Watford, Liverpool, Southampton"
 Manchester City,MCI,3,1992-93,1993-04-09,1993-04-18,"Sheffield United, Liverpool, Aston Villa"
 Newcastle United,NEW,3,1999-00,1999-08-15,1999-08-25,"Southampton, Wimbledon, Sunderland"
@@ -1177,7 +1177,7 @@ Oldham Athletic,OLD,1,1992-93,1992-08-19,1992-08-19,Crystal Palace
 Portsmouth,POR,1,2004-05,2004-10-02,2004-10-02,Norwich City
 Swindon Town,SWI,1,1993-94,1993-12-29,1993-12-29,Sheffield Wednesday
 Watford,WAT,1,1999-00,1999-11-06,1999-11-06,Sheffield Wednesday
-`,yn=`team_name,team_abbr,run_length,seasons,start_date,end_date,opponents
+`,Ce=`team_name,team_abbr,run_length,seasons,start_date,end_date,opponents
 Arsenal,ARS,2,2001-02,2001-12-26,2001-12-29,"Chelsea, Middlesbrough"
 Aston Villa,AVL,2,2024-25,2024-09-14,2024-09-21,"Everton, Wolverhampton Wanderers"
 Brighton and Hove Albion,BHA,2,2024-25,2025-05-19,2025-05-25,"Liverpool, Tottenham Hotspur"
@@ -1222,7 +1222,7 @@ West Bromwich Albion,WBA,1,2010-11,2010-09-18,2010-09-18,Birmingham City
 West Ham United,WHU,1,1995-96,1995-12-16,1995-12-16,Southampton
 Wigan Athletic,WIG,1,2009-10,2010-04-18,2010-04-18,Arsenal
 Wimbledon,WIM,1,1993-94,1994-03-29,1994-03-29,Blackburn Rovers
-`,bn=`team_name,team_abbr,season_label,comeback_count
+`,be=`team_name,team_abbr,season_label,comeback_count
 Fulham,FUL,2024-25,5
 Manchester City,MCI,2023-24,5
 Manchester United,MUN,2020-21,5
@@ -1233,7 +1233,293 @@ Arsenal,ARS,2007-08,4
 Chelsea,CHE,2002-03,4
 Arsenal,ARS,2001-02,4
 Queens Park Rangers,QPR,1992-93,4
-`,fn=`-- Total wins by team across all seasons (home/away split)
+`,fe=`rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
+1,Alex Ferguson,528,810,168,114,65.2,1752,1627,703
+2,Arsène Wenger,476,828,199,153,57.5,1627,1561,807
+3,David Moyes,290,754,199,265,38.5,1069,1016,983
+4,Pep Guardiola,269,380,58,53,70.8,865,904,328
+5,Harry Redknapp,236,642,167,239,36.8,875,819,849
+6,José Mourinho,217,363,84,62,59.8,735,625,305
+7,Jürgen Klopp,209,334,78,47,62.6,705,714,331
+8,Sam Allardyce,178,541,146,217,32.9,680,636,759
+9,Rafael Benítez,173,359,86,100,48.2,605,543,350
+10,Mark Hughes,157,465,127,181,33.8,598,568,640
+11,Mauricio Pochettino,150,294,70,74,51.0,520,522,335
+12,Mikel Arteta,149,248,48,51,60.1,495,467,241
+13,Eddie Howe,140,369,81,148,37.9,501,547,565
+14,Brendan Rodgers,139,312,71,102,44.6,488,529,410
+15,Roy Hodgson,136,416,102,178,32.7,510,481,586
+16,Steve Bruce,133,476,132,211,27.9,531,496,654
+17,Martin O'Neill,130,360,115,115,36.1,505,475,449
+18,Kevin Keegan,116,267,65,86,43.4,413,409,317
+19,Kenny Dalglish,115,238,60,63,48.3,405,362,239
+20,David O'Leary,112,259,68,79,43.2,404,364,304
+21,Claudio Ranieri,109,238,59,70,45.8,386,385,283
+22,Alan Pardew,109,321,69,143,34.0,396,391,481
+23,Alan Curbishley,108,328,85,135,32.9,409,381,472
+24,Gérard Houllier,106,234,61,67,45.3,379,370,256
+25,George Graham,102,288,92,94,35.4,398,341,300
+26,Tony Pulis,99,324,94,131,30.6,391,321,416
+27,Sean Dyche,99,351,95,157,28.2,392,343,492
+28,Unai Emery,98,190,42,50,51.6,336,321,257
+29,Joe Kinnear,97,302,92,113,32.1,383,369,436
+30,Graeme Souness,94,280,78,108,33.6,360,376,380
+31,Manuel Pellegrini,90,171,32,49,52.6,302,329,203
+32,Marco Silva,90,247,50,107,36.4,320,334,372
+33,Glenn Hoddle,88,256,70,98,34.4,334,314,352
+34,Antonio Conte,83,132,19,30,62.9,268,259,135
+35,Roberto Mancini,83,134,27,24,61.9,276,259,114
+36,Roy Evans,83,172,46,43,48.3,295,280,173
+37,Bobby Robson,83,188,51,54,44.1,300,294,235
+38,Nuno Espírito Santo,83,219,54,82,37.9,303,278,294
+39,Gordon Strachan,82,271,80,109,30.3,326,308,360
+40,Roberto Martínez,81,265,77,107,30.6,320,331,419
+41,Gerry Francis,79,217,64,74,36.4,301,295,283
+42,Martin Jol,75,202,51,76,37.1,276,277,281
+43,Peter Reid,74,227,60,93,32.6,282,260,316
+44,Carlo Ancelotti,73,134,27,34,54.5,246,243,140
+45,Steve McClaren,70,218,56,92,32.1,266,256,300
+46,Howard Wilkinson,66,189,57,66,34.9,255,241,238
+47,Ron Atkinson,66,203,58,79,32.5,256,228,267
+48,Joe Royle,66,219,64,89,30.1,262,282,323
+49,John Gregory,64,162,48,50,39.5,240,211,183
+50,Thomas Frank,61,178,46,71,34.3,229,264,261
+51,Bryan Robson,61,232,71,100,26.3,254,255,340
+52,Jim Smith,60,197,58,79,30.5,238,223,280
+53,Ole Gunnar Solskjær,59,127,32,36,46.5,209,212,168
+54,Ronald Koeman,55,123,27,41,44.7,192,182,136
+55,Brian Little,53,144,39,52,36.8,198,173,162
+56,Chris Coleman,50,152,39,63,32.9,189,192,220
+57,Ralph Hasenhüttl,47,151,36,68,31.1,177,185,255
+58,Graham Potter,47,165,56,62,28.5,197,180,206
+59,Gianluca Vialli,45,94,29,20,47.9,164,136,87
+60,Erik ten Hag,44,85,14,27,51.8,146,123,112
+61,Glenn Roeder,44,126,30,52,34.9,162,151,176
+61,Trevor Francis,44,126,42,40,34.9,174,180,162
+63,Arne Slot,42,76,18,16,55.3,144,149,94
+64,André Villas-Boas,42,81,19,20,51.9,145,128,99
+65,Steve Coppell,42,146,37,67,28.8,163,164,221
+66,Chris Hughton,42,170,50,78,24.7,176,169,264
+67,Ruud Gullit,41,104,26,37,39.4,149,164,148
+68,Andoni Iraola,41,114,38,35,36.0,161,170,167
+69,Walter Smith,41,143,42,60,28.7,165,173,190
+70,David Pleat,40,124,33,51,32.3,153,162,194
+71,Louis van Gaal,39,76,19,18,51.3,136,111,72
+72,Paul Lambert,39,155,44,72,25.2,161,162,251
+73,Frank Clark,38,97,31,28,39.2,145,136,126
+74,Frank Lampard,38,104,21,45,36.5,135,145,153
+75,Dave Jones,38,136,31,67,27.9,145,151,233
+76,Mike Walker,37,96,25,34,38.5,136,126,143
+77,Thomas Tuchel,35,63,17,11,55.6,122,109,55
+78,Avram Grant,34,93,26,33,36.6,128,123,131
+79,Dean Smith,34,122,24,64,27.9,126,139,207
+80,Paul Jewell,34,138,28,76,24.6,130,135,235
+81,George Burley,33,98,17,48,33.7,116,114,159
+82,Stuart Pearce,33,104,26,45,31.7,125,101,122
+83,Owen Coyle,33,116,24,59,28.4,123,136,204
+84,Alex McLeish,33,138,52,53,23.9,151,145,198
+85,Ange Postecoglou,31,81,12,38,38.3,105,139,136
+86,Oliver Glasner,31,90,30,29,34.4,123,122,117
+87,Claude Puel,31,94,23,40,33.0,116,117,132
+88,Slaven Bilić,31,100,30,39,31.0,123,133,164
+89,Fabian Hürzeler,30,76,24,22,39.5,114,118,105
+90,Howard Kendall,30,97,24,43,30.9,114,113,134
+91,Gary Megson,30,134,37,67,22.4,127,134,211
+92,Roberto De Zerbi,29,77,21,27,37.7,108,124,117
+93,Gareth Southgate,29,114,33,52,25.4,120,115,159
+94,Enzo Maresca,28,57,15,14,49.1,99,96,64
+95,Danny Wilson,28,105,18,59,26.7,102,105,180
+96,Alan Ball,27,97,33,37,27.8,114,119,151
+97,Neil Warnock,27,112,23,62,24.1,104,103,184
+98,Dave Bassett,27,131,43,61,20.6,124,133,196
+99,Mick McCarthy,27,138,28,83,19.6,109,127,241
+100,Gary O'Neil,25,88,16,47,28.4,91,109,160
+101,Garry Monk,24,67,16,27,35.8,88,85,90
+102,John Lyall,24,101,34,43,23.8,106,101,146
+103,Marcelo Bielsa,23,64,13,28,35.9,82,91,114
+104,Ray Wilkins,23,67,11,33,34.3,80,79,93
+105,Maurizio Sarri,21,38,9,8,55.3,72,63,39
+106,Javi Gracia,21,67,14,32,31.3,77,80,115
+107,Brian Horton,21,79,29,29,26.6,92,89,107
+108,Graham Taylor,21,89,19,49,23.6,82,92,143
+109,Jean Tigana,20,71,22,29,28.2,82,71,90
+110,Gianfranco Zola,20,72,20,32,27.8,80,81,103
+111,Chris Wilder,20,90,19,51,22.2,79,79,149
+112,Guus Hiddink,19,35,12,4,54.3,69,65,36
+113,Tim Sherwood,19,45,5,21,42.2,62,68,70
+114,Roberto Di Matteo,19,48,11,18,39.6,68,73,75
+115,Colin Todd,19,69,16,34,27.5,73,70,114
+116,Ray Harford,18,48,11,19,37.5,65,67,61
+117,Phil Neal,18,59,18,23,30.5,72,57,79
+118,Nigel Pearson,18,60,13,29,30.0,67,72,89
+119,Ian Branfoot,18,66,14,34,27.3,68,77,97
+120,Bruce Rioch,17,38,12,9,44.7,63,49,32
+121,Terry Venables,17,52,14,21,32.7,65,62,59
+122,Steve Clarke,17,54,13,24,31.5,64,71,83
+123,Michael Laudrup,17,62,19,26,27.4,70,76,86
+124,Patrick Vieira,17,65,24,24,26.2,75,71,80
+125,Daniel Farke,17,87,22,48,19.5,73,80,157
+126,Doug Livermore,16,42,11,15,38.1,59,60,66
+127,Bruno Lage,16,46,9,21,34.8,57,41,52
+128,Bobby Gould,16,53,19,18,30.2,67,65,68
+129,Ossie Ardiles,16,54,14,24,29.6,62,75,83
+130,Sven-Göran Eriksson,15,38,10,13,39.5,55,45,53
+131,Julen Lopetegui,15,43,9,19,34.9,54,47,73
+132,Peter Taylor,15,46,8,23,32.6,53,44,68
+133,Ruben Amorim,15,47,13,19,31.9,58,66,72
+134,Roy Keane,15,53,9,29,28.3,54,49,83
+135,Phil Thompson,14,24,7,3,58.3,49,41,18
+136,Luiz Felipe Scolari,14,25,7,4,56.0,49,44,15
+137,Keith Andrews,14,38,11,13,36.8,53,55,52
+137,Régis Le Bris,14,38,12,12,36.8,54,42,48
+139,Vítor Pereira,14,44,10,20,31.8,52,60,64
+140,Gus Poyet,14,60,21,25,23.3,63,59,87
+141,Steve Cooper,14,67,20,33,20.9,62,70,121
+142,Michael Carrick,13,19,4,2,68.4,43,37,21
+143,Billy Bonds,13,42,13,16,31.0,52,47,58
+144,Quique Sánchez Flores,13,48,13,22,27.1,52,47,70
+145,Steve Kean,13,59,14,32,22.0,53,72,110
+146,Phil Brown,13,67,20,34,19.4,59,66,125
+147,Scott Parker,13,86,21,52,15.1,60,71,155
+148,Paul Clement,12,37,5,20,32.4,41,34,51
+149,Steven Gerrard,12,38,8,18,31.6,44,45,50
+150,John Deehan,12,61,23,26,19.7,59,66,89
+151,Walter Mazzarri,11,38,7,20,28.9,40,40,68
+152,Lennie Lawrence,11,42,11,20,26.2,44,54,75
+152,Alan Smith,11,42,12,19,26.2,45,34,49
+154,Ian Holloway,11,46,9,26,23.9,42,61,95
+155,David Wagner,11,60,15,34,18.3,48,41,95
+156,Ralf Rangnick,10,24,7,7,41.7,37,33,33
+157,Juande Ramos,10,36,11,15,27.8,41,54,52
+158,Brian Clough,10,42,10,22,23.8,40,41,62
+159,Iain Dowie,10,59,17,32,16.9,47,57,94
+160,Francesco Guidolin,9,24,5,10,37.5,32,29,34
+161,Christian Gross,9,26,7,10,34.6,34,35,40
+162,Tony Parkes,9,28,11,8,32.1,38,36,29
+163,Ian Porterfield,9,29,10,10,31.0,37,32,36
+164,Dave Merrington,9,38,11,18,23.7,38,34,52
+164,Alex Neil,9,38,7,22,23.7,34,39,67
+166,Rob Edwards,9,65,17,39,13.8,44,72,128
+167,Craig Shakespeare,8,21,5,8,38.1,29,34,33
+168,Jesse Marsch,8,32,9,15,25.0,33,39,53
+169,Tony Mowbray,8,38,8,22,21.1,32,36,67
+170,Egil Olsen,7,36,11,18,19.4,32,44,70
+171,Nigel Worthington,7,38,12,19,18.4,33,42,77
+172,Micky Adams,7,43,18,18,16.3,39,54,74
+173,Ryan Mason,6,12,1,5,50.0,19,26,20
+174,Stewart Houston,6,18,4,8,33.3,22,29,24
+175,Brian Kidd,6,25,11,8,24.0,29,28,31
+176,Eddie Gray,6,26,7,13,23.1,25,29,48
+177,Paul Hart,6,27,6,15,22.2,24,23,35
+178,Nigel Adkins,6,30,9,15,20.0,27,38,56
+179,Paul Sturrock,5,13,2,6,38.5,17,20,22
+179,David Webb,5,13,4,4,38.5,19,19,18
+179,Liam Rosenior,5,13,2,6,38.5,17,19,21
+182,Carlos Carvalhal,5,18,5,8,27.8,20,17,25
+183,Ricky Sbragia,5,23,6,12,21.7,21,21,30
+184,Ruud van Nistelrooy,5,27,4,18,18.5,19,21,54
+185,Brian McDermott,5,29,8,16,17.2,23,35,56
+186,Mauricio Pellegrino,5,30,13,12,16.7,28,29,44
+187,Aidy Boothroyd,5,38,13,20,13.2,28,29,59
+187,Vincent Kompany,5,38,9,24,13.2,24,41,78
+189,John Gorman,5,42,15,22,11.9,30,47,100
+190,Peter Shreeves,4,10,1,5,40.0,13,16,14
+191,Malky Mackay,4,18,5,9,22.2,17,13,28
+192,Alan Irvine,4,19,5,10,21.1,17,18,28
+192,John Carver,4,19,3,12,21.1,15,18,32
+192,Stuart Gray,4,19,4,11,21.1,16,11,28
+195,Alain Perrin,4,20,6,10,20.0,18,21,28
+196,Paul Heckingbottom,4,24,2,18,16.7,14,15,57
+196,Jim Jefferies,4,24,7,13,16.7,19,25,48
+198,Aitor Karanka,4,27,10,13,14.8,22,19,30
+199,Kieran McKenna,4,38,10,24,10.5,22,36,82
+200,Pat Rice,3,3,0,0,100.0,9,8,1
+201,Darren Moore,3,6,2,1,50.0,11,6,5
+201,David Unsworth,3,6,1,2,50.0,10,13,10
+203,Kevin MacDonald,3,7,1,3,42.9,10,9,13
+204,Jacques Santini,3,11,4,4,27.3,13,6,8
+205,Mike Jackson,3,12,4,5,25.0,13,13,16
+205,Felix Magath,3,12,3,6,25.0,12,14,27
+207,René Meulensteen,3,13,1,9,23.1,10,15,34
+208,Chris Ramsey,3,15,2,10,20.0,11,18,31
+209,Paul Ince,3,17,4,10,17.6,13,17,34
+209,Dick Advocaat,3,17,6,8,17.6,15,16,28
+211,Brian Laws,3,18,1,14,16.7,10,20,42
+211,Pepe Mel,3,18,6,9,16.7,15,20,32
+213,Mike Phelan,3,20,4,13,15.0,13,17,44
+214,Lawrie Sanchez,3,22,8,11,13.6,17,22,36
+215,Mark McGhee,3,24,7,14,12.5,16,26,47
+215,Chris Hutchings,3,24,6,15,12.5,15,15,38
+217,Trevor Brooking,2,3,1,0,66.7,7,4,2
+218,Ryan Giggs,2,4,1,1,50.0,7,8,3
+219,Gary McAllister,2,5,2,1,40.0,8,6,5
+220,Tomas Brolin,2,7,0,5,28.6,6,8,16
+220,Xisco Muñoz,2,7,1,4,28.6,7,7,10
+222,Bob Bradley,2,11,2,7,18.2,8,15,29
+223,Paolo Di Canio,2,12,3,7,16.7,9,11,22
+224,Velimir Zajec,2,13,2,9,15.4,8,10,24
+225,Tony Adams,2,16,5,9,12.5,11,16,28
+225,Rubén Sellés,2,16,4,10,12.5,10,18,33
+227,Rémi Garde,2,21,6,13,9.5,12,13,41
+228,Roy McFarland,2,22,4,16,9.1,10,21,44
+229,Jim Barron,1,1,0,0,100.0,3,4,3
+230,Michael Appleton,1,2,1,0,50.0,4,5,4
+230,Aaron Danks,1,2,0,1,50.0,3,4,4
+232,Mike Stowell,1,3,0,2,33.3,3,3,4
+233,Duncan Ferguson,1,4,2,1,25.0,5,4,3
+233,Cristian Stellini,1,4,1,2,25.0,4,6,11
+235,Keith Downing,1,5,3,1,20.0,6,6,6
+235,Freddie Ljungberg,1,5,2,2,20.0,5,6,8
+237,Calum McFarlane,1,6,2,3,16.7,5,7,10
+237,Ray Lewington,1,6,3,2,16.7,6,9,15
+239,Dave Watson,1,7,3,3,14.3,6,7,12
+239,Steve Davis,1,7,1,5,14.3,4,5,15
+239,Les Reed,1,7,1,5,14.3,4,4,15
+239,Alan Curtis,1,7,2,4,14.3,5,5,11
+243,Jimmy Gabriel,1,8,1,6,12.5,4,3,12
+243,Alan Shearer,1,8,2,5,12.5,5,4,10
+243,Nathan Jones,1,8,0,7,12.5,3,6,16
+246,Steve Agnew,1,11,3,7,9.1,6,8,23
+246,Sammy Lee,1,11,3,7,9.1,6,12,19
+248,Kevin Ball,1,12,2,9,8.3,5,9,23
+248,Slaviša Jokanović,1,12,2,9,8.3,5,11,31
+250,Ivan Jurić,1,14,1,12,7.1,4,12,38
+250,Billy Davies,1,14,3,10,7.1,6,5,33
+252,Jan Siewert,1,15,2,12,6.7,5,9,36
+252,Russell Martin,1,15,2,12,6.7,5,11,31
+254,Steve Wigley,1,16,8,7,6.3,11,16,24
+255,Terry Connor,0,13,4,9,0.0,4,12,33
+256,Simon Rusk,0,9,3,6,0.0,3,3,17
+257,Eric Black,0,8,1,7,0.0,1,5,20
+258,Keith Millen,0,7,3,4,0.0,3,2,9
+259,Igor Tudor,0,5,1,4,0.0,1,4,13
+259,Neil Adams,0,5,1,4,0.0,1,2,10
+261,Frank de Boer,0,4,0,4,0.0,0,0,7
+261,Hayden Mullins,0,4,1,3,0.0,1,2,9
+263,Kevin Keen,0,3,0,3,0.0,0,4,9
+263,Graeme Jones,0,3,2,1,0.0,2,2,5
+263,John Wark,0,3,2,1,0.0,2,4,7
+263,Michael Skubala,0,3,1,2,0.0,1,2,5
+267,Frank Burrows,0,2,1,1,0.0,1,3,6
+267,Stuart McCall,0,2,0,2,0.0,0,0,3
+267,Terry Burton,0,2,1,1,0.0,1,2,4
+267,Joe Jordan,0,2,0,2,0.0,0,0,5
+267,David Kerslake,0,2,1,1,0.0,1,2,4
+267,Billy McEwan,0,2,0,2,0.0,0,1,4
+267,Frank Barlow,0,2,0,2,0.0,0,0,6
+267,Leon Britton,0,2,1,1,0.0,1,1,6
+275,Ben Dawson,0,1,0,1,0.0,0,1,4
+275,Terry McDermott,0,1,1,0,0.0,1,2,2
+275,James Collins,0,1,0,1,0.0,0,0,3
+275,Paddy McCarthy,0,1,0,1,0.0,0,1,4
+275,Kelvin Davis,0,1,0,1,0.0,0,1,3
+275,Archie Knox,0,1,0,1,0.0,0,0,2
+275,Mark Hudson,0,1,0,1,0.0,0,0,3
+275,Tony Book,0,1,1,0,0.0,1,1,1
+275,Steve Perryman,0,1,0,1,0.0,0,0,2
+275,Bruno Saltor,0,1,1,0,0.0,1,0,0
+275,Darren Fletcher,0,1,1,0,0.0,1,2,2
+`,ge=`-- Total wins by team across all seasons (home/away split)
 copy (
     select
         team_abbr,
@@ -1245,7 +1531,7 @@ copy (
     group by team_abbr
     order by total_wins desc, team_abbr
 )
-to 'assets/data/wins.csv' (header, delimiter ',')`,Un=`-- Season-by-season team counts and matches per team
+to 'assets/data/wins.csv' (header, delimiter ',')`,pe=`-- Season-by-season team counts and matches per team
 copy (
     with team_counts as (
         select season_label, count(distinct team_id) as team_count
@@ -1266,7 +1552,7 @@ copy (
     group by m.season_label, tc.team_count
     order by min(m.kickoff_date)
 )
-to 'assets/data/season_quality.csv' (header, delimiter ',')`,pn=`-- Average home attendance by team per season
+to 'assets/data/season_quality.csv' (header, delimiter ',')`,Ae=`-- Average home attendance by team per season
 copy (
     select
         season_label,
@@ -1278,7 +1564,7 @@ copy (
     group by season_label, team_abbr
     order by season_label, team_abbr
 )
-to 'assets/data/attendance.csv' (header, delimiter ',')`,An=`-- All-time Premier League table (P/W/D/L/points)
+to 'assets/data/attendance.csv' (header, delimiter ',')`,Ue=`-- All-time Premier League table (P/W/D/L/points)
 copy (
     select
         team_abbr,
@@ -1292,7 +1578,7 @@ copy (
     group by team_abbr
     order by points desc, team_abbr
 )
-to 'assets/data/all_time_table.csv' (header, delimiter ',')`,Wn=`-- Most recent run of 5+ consecutive wins within a single season, per team
+to 'assets/data/all_time_table.csv' (header, delimiter ',')`,we=`-- Most recent run of 5+ consecutive wins within a single season, per team
 copy (
     with team_games as (
         select
@@ -1372,7 +1658,7 @@ copy (
     where rn = 1
     order by streak_start desc, team_name
 )
-to 'assets/data/five_game_streaks.csv' (header, delimiter ',')`,wn=`-- Longest winning streaks within a single season (11+ wins), one row per win game
+to 'assets/data/five_game_streaks.csv' (header, delimiter ',')`,We=`-- Longest winning streaks within a single season (11+ wins), one row per win game
 copy (
     with team_games as (
         select
@@ -1456,7 +1742,7 @@ copy (
        and w.grp = rs.grp
     order by rs.streak_id, w.kickoff_at, w.match_id
 )
-to 'assets/data/big_win_streaks.csv' (header, delimiter ',')`,gn=`-- Longest calendar gap each team went between consecutive wins, across all seasons
+to 'assets/data/big_win_streaks.csv' (header, delimiter ',')`,Se=`-- Longest calendar gap each team went between consecutive wins, across all seasons
 copy (
     with team_games as (
         select
@@ -1539,7 +1825,7 @@ copy (
     where rn = 1
     order by gap_days desc, team_name
 )
-to 'assets/data/longest_winless_gaps.csv' (header, delimiter ',')`,Ln=`-- Most chaotic matches: 3 points per goal + 2 points per red card, top 50
+to 'assets/data/longest_winless_gaps.csv' (header, delimiter ',')`,Le=`-- Most chaotic matches: 3 points per goal + 2 points per red card, top 50
 copy (
     select
         match_id,
@@ -1562,7 +1848,7 @@ copy (
     order by chaos_score desc, kickoff_date, match_id
     limit 50
 )
-to 'assets/data/most_chaotic_matches.csv' (header, delimiter ',')`,Sn=`-- Share of each club's Premier League wins that finished 1-0 (home or away), clubs with 30+ wins
+to 'assets/data/most_chaotic_matches.csv' (header, delimiter ',')`,ve=`-- Share of each club's Premier League wins that finished 1-0 (home or away), clubs with 30+ wins
 copy (
     select
         min(team_name) as team_name,
@@ -1577,7 +1863,7 @@ copy (
     having count(*) filter (where result = 'win') >= 30
     order by pct_one_nil desc, total_wins desc
 )
-to 'assets/data/one_nil_wins.csv' (header, delimiter ',')`,vn=`-- Longest consecutive run of matches where each team led at half-time but failed to win
+to 'assets/data/one_nil_wins.csv' (header, delimiter ',')`,Me=`-- Longest consecutive run of matches where each team led at half-time but failed to win
 copy (
     with team_games as (
         select
@@ -1668,7 +1954,7 @@ copy (
     from final f
     order by f.run_length desc, f.team_name
 )
-to 'assets/data/ht_lead_no_win_streaks.csv' (header, delimiter ',')`,Bn=`-- Longest consecutive run of matches where each team was losing at half-time but came back to win
+to 'assets/data/ht_lead_no_win_streaks.csv' (header, delimiter ',')`,Be=`-- Longest consecutive run of matches where each team was losing at half-time but came back to win
 copy (
     with team_games as (
         select
@@ -1759,7 +2045,7 @@ copy (
     from final f
     order by f.run_length desc, f.team_name
 )
-to 'assets/data/comeback_kings.csv' (header, delimiter ',')`,En=`-- Teams with the most half-time comebacks (trailing at HT, then winning) in a single season, top 10
+to 'assets/data/comeback_kings.csv' (header, delimiter ',')`,Ee=`-- Teams with the most half-time comebacks (trailing at HT, then winning) in a single season, top 10
 copy (
     with team_games as (
         select
@@ -1809,4 +2095,35 @@ copy (
     where rn <= 10
     order by comeback_count desc, season_label desc, team_name
 )
-to 'assets/data/most_comebacks.csv' (header, delimiter ',')`;function Zn(e,t){const n=new Date(e+"T00:00:00Z"),a=new Date(t+"T00:00:00Z");let s=a.getUTCFullYear()-n.getUTCFullYear();const i=new Date(n);i.setUTCFullYear(n.getUTCFullYear()+s),i>a&&(s-=1,i.setUTCFullYear(i.getUTCFullYear()-1));const c=Math.round((a.getTime()-i.getTime())/864e5);let d;return s>0&&c>0?d=`${s} ${s===1?"year":"years"} and ${c} ${c===1?"day":"days"}`:s>0?d=`${s} ${s===1?"year":"years"}`:d=`${c} ${c===1?"day":"days"}`,{label:d,years:s,days:c}}function o(e,t){return+(e[t]??0)}function G(e,t){return+(e[t]??0)}function y(e,t){return ie(e,t)}const Jn=(()=>{const t=ie(sn)[0];return{total_matches:+t.total_matches,total_unique_teams:+t.total_unique_teams,total_goals:+t.total_goals,last_updated:t.last_updated}})(),Xn=y(rn,e=>({team_abbr:e.team_abbr,team_name:e.team_name,home_wins:o(e,"home_wins"),away_wins:o(e,"away_wins"),total_wins:o(e,"total_wins")})),e0=y(on,e=>({season_label:e.season_label,team_count:o(e,"team_count"),matches_played:o(e,"matches_played"),avg_matches_per_team:G(e,"avg_matches_per_team")})),n0=y(ln,e=>({season_label:e.season_label,team_abbr:e.team_abbr,team_name:e.team_name,avg_home_attendance:G(e,"avg_home_attendance")})),t0=y(mn,e=>({team_abbr:e.team_abbr,team_name:e.team_name,matches_played:o(e,"matches_played"),wins:o(e,"wins"),draws:o(e,"draws"),losses:o(e,"losses"),points:o(e,"points")})),a0=y(cn,e=>({team_name:e.team_name,season_label:e.season_label,streak_start:e.streak_start,streak_length:o(e,"streak_length"),opponents:e.opponents})),s0=y(dn,e=>({streak_id:o(e,"streak_id"),team_name:e.team_name,season_label:e.season_label,streak_length:o(e,"streak_length"),match_date:e.match_date,opponent_abbr:e.opponent_abbr,opponent_name:e.opponent_name,score:e.score})),r0=y(hn,e=>({team_name:e.team_name,team_abbr:e.team_abbr,start_date:e.start_date,end_date:e.end_date,gap_days:o(e,"gap_days"),matches_between:o(e,"matches_between")})),o0=y(_n,e=>({match_id:o(e,"match_id"),kickoff_date:e.kickoff_date,season_label:e.season_label,home_team_name:e.home_team_name,home_team_abbr:e.home_team_abbr,home_score:o(e,"home_score"),home_red_cards:o(e,"home_red_cards"),away_team_name:e.away_team_name,away_team_abbr:e.away_team_abbr,away_score:o(e,"away_score"),away_red_cards:o(e,"away_red_cards"),total_goals:o(e,"total_goals"),total_red_cards:o(e,"total_red_cards"),goals_points:o(e,"goals_points"),red_points:o(e,"red_points"),chaos_score:o(e,"chaos_score")})),i0=y(un,e=>({team_name:e.team_name,team_abbr:e.team_abbr,total_wins:o(e,"total_wins"),home_1_0_wins:o(e,"home_1_0_wins"),away_1_0_wins:o(e,"away_1_0_wins"),one_nil_wins:o(e,"one_nil_wins"),pct_one_nil:G(e,"pct_one_nil")})),l0=y(Cn,e=>({team_name:e.team_name,team_abbr:e.team_abbr,run_length:o(e,"run_length"),seasons:e.seasons,start_date:e.start_date,end_date:e.end_date,opponents:e.opponents})),m0=y(yn,e=>({team_name:e.team_name,team_abbr:e.team_abbr,run_length:o(e,"run_length"),seasons:e.seasons,start_date:e.start_date,end_date:e.end_date,opponents:e.opponents})),c0=y(bn,e=>({team_name:e.team_name,team_abbr:e.team_abbr,season_label:e.season_label,comeback_count:o(e,"comeback_count")})),d0={wins:fn,quality:Un,attendance:pn,allTimeTable:An,fiveGameStreaks:Wn,bigWinStreaks:wn,longestWinlessGaps:gn,mostChaoticMatches:Ln,oneNilWins:Sn,htLeadNoWinStreaks:vn,comebackKings:Bn,mostComebacks:En},Mn=v({...L(),...g()},"VCardActions"),Hn=S()({name:"VCardActions",props:Mn(),setup(e,t){let{slots:n}=t;return Ge({VBtn:{slim:!0,variant:"text"}}),N(()=>l(e.tag,{class:V(["v-card-actions",e.class]),style:I(e.style)},n)),{}}}),kn=v({opacity:[Number,String],...L(),...g()},"VCardSubtitle"),Rn=S()({name:"VCardSubtitle",props:kn(),setup(e,t){let{slots:n}=t;return N(()=>l(e.tag,{class:V(["v-card-subtitle",e.class]),style:I([{"--v-card-subtitle-opacity":e.opacity},e.style])},n)),{}}}),Nn=We("v-card-title"),Tn=v({appendAvatar:String,appendIcon:O,prependAvatar:String,prependIcon:O,subtitle:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...L(),...ae(),...g()},"VCardItem"),On=S()({name:"VCardItem",props:Tn(),setup(e,t){let{slots:n}=t;return N(()=>{const a=!!(e.prependAvatar||e.prependIcon),s=!!(a||n.prepend),i=!!(e.appendAvatar||e.appendIcon),c=!!(i||n.append),d=!!(e.title!=null||n.title),f=!!(e.subtitle!=null||n.subtitle);return l(e.tag,{class:V(["v-card-item",e.class]),style:I(e.style)},{default:()=>[s&&k("div",{key:"prepend",class:"v-card-item__prepend"},[n.prepend?l(Y,{key:"prepend-defaults",disabled:!a,defaults:{VAvatar:{density:e.density,image:e.prependAvatar},VIcon:{density:e.density,icon:e.prependIcon}}},n.prepend):k(Z,null,[e.prependAvatar&&l(x,{key:"prepend-avatar",density:e.density,image:e.prependAvatar},null),e.prependIcon&&l(K,{key:"prepend-icon",density:e.density,icon:e.prependIcon},null)])]),k("div",{class:"v-card-item__content"},[d&&l(Nn,{key:"title"},{default:()=>[n.title?.()??J(e.title)]}),f&&l(Rn,{key:"subtitle"},{default:()=>[n.subtitle?.()??J(e.subtitle)]}),n.default?.()]),c&&k("div",{key:"append",class:"v-card-item__append"},[n.append?l(Y,{key:"append-defaults",disabled:!i,defaults:{VAvatar:{density:e.density,image:e.appendAvatar},VIcon:{density:e.density,icon:e.appendIcon}}},n.append):k(Z,null,[e.appendIcon&&l(K,{key:"append-icon",density:e.density,icon:e.appendIcon},null),e.appendAvatar&&l(x,{key:"append-avatar",density:e.density,image:e.appendAvatar},null)])])]})}),{}}}),In=v({opacity:[Number,String],...L(),...g()},"VCardText"),Vn=S()({name:"VCardText",props:In(),setup(e,t){let{slots:n}=t;return N(()=>l(e.tag,{class:V(["v-card-text",e.class]),style:I([{"--v-card-text-opacity":e.opacity},e.style])},n)),{}}}),Pn=v({appendAvatar:String,appendIcon:O,disabled:Boolean,flat:Boolean,hover:Boolean,image:String,link:{type:Boolean,default:void 0},prependAvatar:String,prependIcon:O,ripple:{type:[Boolean,Object],default:!0},subtitle:{type:[String,Number,Boolean],default:void 0},text:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...Pe(),...L(),...ae(),...Ve(),...Ie(),...Oe(),...Te(),...Ne(),...Re(),...ke(),...g(),...Ke(),...He({variant:"elevated"})},"VCard"),h0=S()({name:"VCard",directives:{vRipple:z},props:Pn(),setup(e,t){let{attrs:n,slots:a}=t;const{themeClasses:s}=qe(e),{borderClasses:i}=we(e),{colorClasses:c,colorStyles:d,variantClasses:f}=ge(e),{densityClasses:W}=Le(e),{dimensionStyles:B}=Ye(e),{elevationClasses:r}=je(e),{loaderClasses:m}=Se(e),{locationStyles:U}=ve(e),{positionClasses:_}=Be(e),{roundedClasses:h}=Ee(e),b=Me(e,n),p=xe(void 0);return $e(()=>e.loading,(A,u)=>{p.value=!A&&typeof u=="string"?u:typeof A=="boolean"?void 0:A},{immediate:!0}),N(()=>{const A=e.link!==!1&&b.isLink.value,u=!e.disabled&&e.link!==!1&&(e.link||b.isClickable.value),T=A?"a":e.tag,E=!!(a.title||e.title!=null),M=!!(a.subtitle||e.subtitle!=null),H=E||M,w=!!(a.append||e.appendAvatar||e.appendIcon),fe=!!(a.prepend||e.prependAvatar||e.prependIcon),Ue=!!(a.image||e.image),pe=H||fe||w,Ae=!!(a.text||e.text!=null);return ze(l(T,Ze(b.linkProps,{class:["v-card",{"v-card--disabled":e.disabled,"v-card--flat":e.flat,"v-card--hover":e.hover&&!(e.disabled||e.flat),"v-card--link":u},s.value,i.value,c.value,W.value,r.value,m.value,_.value,h.value,f.value,e.class],style:[d.value,B.value,U.value,{"--v-card-height":Je(e.height)},e.style],onClick:u&&b.navigate.value,tabindex:e.disabled?-1:void 0}),{default:()=>[Ue&&k("div",{key:"image",class:"v-card__image"},[a.image?l(Y,{key:"image-defaults",disabled:!e.image,defaults:{VImg:{cover:!0,src:e.image}}},a.image):l(Fe,{key:"image-img",cover:!0,src:e.image},null)]),l(De,{name:"v-card",active:!!e.loading,color:p.value},{default:a.loader}),pe&&l(On,{key:"item",prependAvatar:e.prependAvatar,prependIcon:e.prependIcon,title:e.title,subtitle:e.subtitle,appendAvatar:e.appendAvatar,appendIcon:e.appendIcon},{default:a.item,prepend:a.prepend,title:a.title,subtitle:a.subtitle,append:a.append}),Ae&&l(Vn,{key:"text"},{default:()=>[a.text?.()??e.text]}),a.default?.(),a.actions&&l(Hn,null,{default:a.actions}),Qe(u,"v-card")]}),[[z,u&&e.ripple]])}),{}}}),le=P.reduce((e,t)=>(e[t]={type:[Boolean,String,Number],default:!1},e),{}),me=P.reduce((e,t)=>{const n="offset"+j(t);return e[n]={type:[String,Number],default:null},e},{}),ce=P.reduce((e,t)=>{const n="order"+j(t);return e[n]={type:[String,Number],default:null},e},{}),ne={col:Object.keys(le),offset:Object.keys(me),order:Object.keys(ce)};function Fn(e,t,n){let a=e;if(!(n==null||n===!1)){if(t){const s=t.replace(e,"");a+=`-${s}`}return e==="col"&&(a="v-"+a),e==="col"&&(n===""||n===!0)||(a+=`-${n}`),a.toLowerCase()}}const Dn=["auto","start","end","center","baseline","stretch"],Qn=v({cols:{type:[Boolean,String,Number],default:!1},...le,offset:{type:[String,Number],default:null},...me,order:{type:[String,Number],default:null},...ce,alignSelf:{type:String,default:null,validator:e=>Dn.includes(e)},...L(),...g()},"VCol"),_0=S()({name:"VCol",props:Qn(),setup(e,t){let{slots:n}=t;const a=re(()=>{const s=[];let i;for(i in ne)ne[i].forEach(d=>{const f=e[d],W=Fn(i,d,f);W&&s.push(W)});const c=s.some(d=>d.startsWith("v-col-"));return s.push({"v-col":!c||!e.cols,[`v-col-${e.cols}`]:e.cols,[`offset-${e.offset}`]:e.offset,[`order-${e.order}`]:e.order,[`align-self-${e.alignSelf}`]:e.alignSelf}),s});return()=>se(e.tag,{class:[a.value,e.class],style:e.style},n.default?.())}}),q=["start","end","center"],de=["space-between","space-around","space-evenly"];function $(e,t){return P.reduce((n,a)=>{const s=e+j(a);return n[s]=t(),n},{})}const Yn=[...q,"baseline","stretch"],he=e=>Yn.includes(e),_e=$("align",()=>({type:String,default:null,validator:he})),jn=[...q,...de],ue=e=>jn.includes(e),Ce=$("justify",()=>({type:String,default:null,validator:ue})),Gn=[...q,...de,"stretch"],ye=e=>Gn.includes(e),be=$("alignContent",()=>({type:String,default:null,validator:ye})),te={align:Object.keys(_e),justify:Object.keys(Ce),alignContent:Object.keys(be)},qn={align:"align",justify:"justify",alignContent:"align-content"};function $n(e,t,n){let a=qn[e];if(n!=null){if(t){const s=t.replace(e,"");a+=`-${s}`}return a+=`-${n}`,a.toLowerCase()}}const xn=v({dense:Boolean,noGutters:Boolean,align:{type:String,default:null,validator:he},..._e,justify:{type:String,default:null,validator:ue},...Ce,alignContent:{type:String,default:null,validator:ye},...be,...L(),...g()},"VRow"),u0=S()({name:"VRow",props:xn(),setup(e,t){let{slots:n}=t;const a=re(()=>{const s=[];let i;for(i in te)te[i].forEach(c=>{const d=e[c],f=$n(i,c,d);f&&s.push(f)});return s.push({"v-row--no-gutters":e.noGutters,"v-row--dense":e.dense,[`align-${e.align}`]:e.align,[`justify-${e.justify}`]:e.justify,[`align-content-${e.alignContent}`]:e.alignContent}),s});return()=>se(e.tag,{class:["v-row",a.value,e.class],style:e.style},n.default?.())}});export{u0 as V,_0 as a,h0 as b,Vn as c,Nn as d,Rn as e,d0 as f,n0 as g,t0 as h,m0 as i,s0 as j,a0 as k,Zn as l,c0 as m,r0 as n,i0 as o,o0 as p,e0 as q,l0 as r,Jn as s,Xn as w};
+to 'assets/data/most_comebacks.csv' (header, delimiter ',')`,ke=`-- Managers with the most Premier League wins, aggregated across all their spells
+-- (permanent + caretaker), from the Wikipedia managers list joined to match results.
+copy (
+    select
+        rank() over (order by wins desc, win_pct desc, games desc) as rank,
+        manager_name,
+        wins,
+        games,
+        draws,
+        losses,
+        win_pct,
+        points,
+        goals_for,
+        goals_against
+    from (
+        select
+            manager_name,
+            count(*) as games,
+            sum(is_win) as wins,
+            sum(case when result = 'draw' then 1 else 0 end) as draws,
+            sum(case when result = 'loss' then 1 else 0 end) as losses,
+            round(100.0 * sum(is_win) / count(*), 1) as win_pct,
+            sum(points) as points,
+            sum(goals_for) as goals_for,
+            sum(goals_against) as goals_against
+        from "premier_league"."main"."fct_manager_matches"
+        where manager_name is not null
+        group by manager_name
+    )
+    order by wins desc, win_pct desc, games desc
+)
+to 'assets/data/manager_wins.csv' (header, delimiter ',')`;function Xe(n,a){const e=new Date(n+"T00:00:00Z"),t=new Date(a+"T00:00:00Z");let s=t.getUTCFullYear()-e.getUTCFullYear();const i=new Date(e);i.setUTCFullYear(e.getUTCFullYear()+s),i>t&&(s-=1,i.setUTCFullYear(i.getUTCFullYear()-1));const c=Math.round((t.getTime()-i.getTime())/864e5);let d;return s>0&&c>0?d=`${s} ${s===1?"year":"years"} and ${c} ${c===1?"day":"days"}`:s>0?d=`${s} ${s===1?"year":"years"}`:d=`${c} ${c===1?"day":"days"}`,{label:d,years:s,days:c}}function r(n,a){return+(n[a]??0)}function F(n,a){return+(n[a]??0)}function C(n,a){return ln(n,a)}const n0=(()=>{const a=ln(re)[0];return{total_matches:+a.total_matches,total_unique_teams:+a.total_unique_teams,total_goals:+a.total_goals,last_updated:a.last_updated}})(),e0=C(oe,n=>({team_abbr:n.team_abbr,team_name:n.team_name,home_wins:r(n,"home_wins"),away_wins:r(n,"away_wins"),total_wins:r(n,"total_wins")})),a0=C(ie,n=>({season_label:n.season_label,team_count:r(n,"team_count"),matches_played:r(n,"matches_played"),avg_matches_per_team:F(n,"avg_matches_per_team")})),t0=C(le,n=>({season_label:n.season_label,team_abbr:n.team_abbr,team_name:n.team_name,avg_home_attendance:F(n,"avg_home_attendance")})),s0=C(me,n=>({team_abbr:n.team_abbr,team_name:n.team_name,matches_played:r(n,"matches_played"),wins:r(n,"wins"),draws:r(n,"draws"),losses:r(n,"losses"),points:r(n,"points")})),r0=C(ce,n=>({team_name:n.team_name,season_label:n.season_label,streak_start:n.streak_start,streak_length:r(n,"streak_length"),opponents:n.opponents})),o0=C(de,n=>({streak_id:r(n,"streak_id"),team_name:n.team_name,season_label:n.season_label,streak_length:r(n,"streak_length"),match_date:n.match_date,opponent_abbr:n.opponent_abbr,opponent_name:n.opponent_name,score:n.score})),i0=C(he,n=>({team_name:n.team_name,team_abbr:n.team_abbr,start_date:n.start_date,end_date:n.end_date,gap_days:r(n,"gap_days"),matches_between:r(n,"matches_between")})),l0=C(_e,n=>({match_id:r(n,"match_id"),kickoff_date:n.kickoff_date,season_label:n.season_label,home_team_name:n.home_team_name,home_team_abbr:n.home_team_abbr,home_score:r(n,"home_score"),home_red_cards:r(n,"home_red_cards"),away_team_name:n.away_team_name,away_team_abbr:n.away_team_abbr,away_score:r(n,"away_score"),away_red_cards:r(n,"away_red_cards"),total_goals:r(n,"total_goals"),total_red_cards:r(n,"total_red_cards"),goals_points:r(n,"goals_points"),red_points:r(n,"red_points"),chaos_score:r(n,"chaos_score")})),m0=C(ue,n=>({team_name:n.team_name,team_abbr:n.team_abbr,total_wins:r(n,"total_wins"),home_1_0_wins:r(n,"home_1_0_wins"),away_1_0_wins:r(n,"away_1_0_wins"),one_nil_wins:r(n,"one_nil_wins"),pct_one_nil:F(n,"pct_one_nil")})),c0=C(ye,n=>({team_name:n.team_name,team_abbr:n.team_abbr,run_length:r(n,"run_length"),seasons:n.seasons,start_date:n.start_date,end_date:n.end_date,opponents:n.opponents})),d0=C(Ce,n=>({team_name:n.team_name,team_abbr:n.team_abbr,run_length:r(n,"run_length"),seasons:n.seasons,start_date:n.start_date,end_date:n.end_date,opponents:n.opponents})),h0=C(be,n=>({team_name:n.team_name,team_abbr:n.team_abbr,season_label:n.season_label,comeback_count:r(n,"comeback_count")})),_0=C(fe,n=>({rank:r(n,"rank"),manager_name:n.manager_name,wins:r(n,"wins"),games:r(n,"games"),draws:r(n,"draws"),losses:r(n,"losses"),win_pct:F(n,"win_pct"),points:r(n,"points"),goals_for:r(n,"goals_for"),goals_against:r(n,"goals_against")})),u0={wins:ge,quality:pe,attendance:Ae,allTimeTable:Ue,fiveGameStreaks:we,bigWinStreaks:We,longestWinlessGaps:Se,mostChaoticMatches:Le,oneNilWins:ve,htLeadNoWinStreaks:Me,comebackKings:Be,mostComebacks:Ee,managerWins:ke},He=v({...S(),...W()},"VCardActions"),Re=L()({name:"VCardActions",props:He(),setup(n,a){let{slots:e}=a;return Jn({VBtn:{slim:!0,variant:"text"}}),T(()=>l(n.tag,{class:V(["v-card-actions",n.class]),style:I(n.style)},e)),{}}}),Te=v({opacity:[Number,String],...S(),...W()},"VCardSubtitle"),Ne=L()({name:"VCardSubtitle",props:Te(),setup(n,a){let{slots:e}=a;return T(()=>l(n.tag,{class:V(["v-card-subtitle",n.class]),style:I([{"--v-card-subtitle-opacity":n.opacity},n.style])},e)),{}}}),Oe=wn("v-card-title"),Ie=v({appendAvatar:String,appendIcon:O,prependAvatar:String,prependIcon:O,subtitle:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...S(),...tn(),...W()},"VCardItem"),Ve=L()({name:"VCardItem",props:Ie(),setup(n,a){let{slots:e}=a;return T(()=>{const t=!!(n.prependAvatar||n.prependIcon),s=!!(t||e.prepend),i=!!(n.appendAvatar||n.appendIcon),c=!!(i||e.append),d=!!(n.title!=null||e.title),f=!!(n.subtitle!=null||e.subtitle);return l(n.tag,{class:V(["v-card-item",n.class]),style:I(n.style)},{default:()=>[s&&H("div",{key:"prepend",class:"v-card-item__prepend"},[e.prepend?l(j,{key:"prepend-defaults",disabled:!t,defaults:{VAvatar:{density:n.density,image:n.prependAvatar},VIcon:{density:n.density,icon:n.prependIcon}}},e.prepend):H(z,null,[n.prependAvatar&&l(q,{key:"prepend-avatar",density:n.density,image:n.prependAvatar},null),n.prependIcon&&l($,{key:"prepend-icon",density:n.density,icon:n.prependIcon},null)])]),H("div",{class:"v-card-item__content"},[d&&l(Oe,{key:"title"},{default:()=>[e.title?.()??Z(n.title)]}),f&&l(Ne,{key:"subtitle"},{default:()=>[e.subtitle?.()??Z(n.subtitle)]}),e.default?.()]),c&&H("div",{key:"append",class:"v-card-item__append"},[e.append?l(j,{key:"append-defaults",disabled:!i,defaults:{VAvatar:{density:n.density,image:n.appendAvatar},VIcon:{density:n.density,icon:n.appendIcon}}},e.append):H(z,null,[n.appendIcon&&l($,{key:"append-icon",density:n.density,icon:n.appendIcon},null),n.appendAvatar&&l(q,{key:"append-avatar",density:n.density,image:n.appendAvatar},null)])])]})}),{}}}),Pe=v({opacity:[Number,String],...S(),...W()},"VCardText"),Fe=L()({name:"VCardText",props:Pe(),setup(n,a){let{slots:e}=a;return T(()=>l(n.tag,{class:V(["v-card-text",n.class]),style:I([{"--v-card-text-opacity":n.opacity},n.style])},e)),{}}}),De=v({appendAvatar:String,appendIcon:O,disabled:Boolean,flat:Boolean,hover:Boolean,image:String,link:{type:Boolean,default:void 0},prependAvatar:String,prependIcon:O,ripple:{type:[Boolean,Object],default:!0},subtitle:{type:[String,Number,Boolean],default:void 0},text:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...Fn(),...S(),...tn(),...Pn(),...Vn(),...In(),...On(),...Nn(),...Tn(),...Rn(),...W(),...xn(),...Hn({variant:"elevated"})},"VCard"),y0=L()({name:"VCard",directives:{vRipple:x},props:De(),setup(n,a){let{attrs:e,slots:t}=a;const{themeClasses:s}=Kn(n),{borderClasses:i}=Wn(n),{colorClasses:c,colorStyles:d,variantClasses:f}=Sn(n),{densityClasses:U}=Ln(n),{dimensionStyles:M}=jn(n),{elevationClasses:o}=Yn(n),{loaderClasses:m}=vn(n),{locationStyles:g}=Mn(n),{positionClasses:_}=Bn(n),{roundedClasses:h}=En(n),b=kn(n,e),p=$n(void 0);return qn(()=>n.loading,(A,u)=>{p.value=!A&&typeof u=="string"?u:typeof A=="boolean"?void 0:A},{immediate:!0}),T(()=>{const A=n.link!==!1&&b.isLink.value,u=!n.disabled&&n.link!==!1&&(n.link||b.isClickable.value),N=A?"a":n.tag,B=!!(t.title||n.title!=null),E=!!(t.subtitle||n.subtitle!=null),k=B||E,w=!!(t.append||n.appendAvatar||n.appendIcon),gn=!!(t.prepend||n.prependAvatar||n.prependIcon),pn=!!(t.image||n.image),An=k||gn||w,Un=!!(t.text||n.text!=null);return zn(l(N,Zn(b.linkProps,{class:["v-card",{"v-card--disabled":n.disabled,"v-card--flat":n.flat,"v-card--hover":n.hover&&!(n.disabled||n.flat),"v-card--link":u},s.value,i.value,c.value,U.value,o.value,m.value,_.value,h.value,f.value,n.class],style:[d.value,M.value,g.value,{"--v-card-height":Xn(n.height)},n.style],onClick:u&&b.navigate.value,tabindex:n.disabled?-1:void 0}),{default:()=>[pn&&H("div",{key:"image",class:"v-card__image"},[t.image?l(j,{key:"image-defaults",disabled:!n.image,defaults:{VImg:{cover:!0,src:n.image}}},t.image):l(Dn,{key:"image-img",cover:!0,src:n.image},null)]),l(Gn,{name:"v-card",active:!!n.loading,color:p.value},{default:t.loader}),An&&l(Ve,{key:"item",prependAvatar:n.prependAvatar,prependIcon:n.prependIcon,title:n.title,subtitle:n.subtitle,appendAvatar:n.appendAvatar,appendIcon:n.appendIcon},{default:t.item,prepend:t.prepend,title:t.title,subtitle:t.subtitle,append:t.append}),Un&&l(Fe,{key:"text"},{default:()=>[t.text?.()??n.text]}),t.default?.(),t.actions&&l(Re,null,{default:t.actions}),Qn(u,"v-card")]}),[[x,u&&n.ripple]])}),{}}}),mn=P.reduce((n,a)=>(n[a]={type:[Boolean,String,Number],default:!1},n),{}),cn=P.reduce((n,a)=>{const e="offset"+Y(a);return n[e]={type:[String,Number],default:null},n},{}),dn=P.reduce((n,a)=>{const e="order"+Y(a);return n[e]={type:[String,Number],default:null},n},{}),en={col:Object.keys(mn),offset:Object.keys(cn),order:Object.keys(dn)};function Ge(n,a,e){let t=n;if(!(e==null||e===!1)){if(a){const s=a.replace(n,"");t+=`-${s}`}return n==="col"&&(t="v-"+t),n==="col"&&(e===""||e===!0)||(t+=`-${e}`),t.toLowerCase()}}const Qe=["auto","start","end","center","baseline","stretch"],je=v({cols:{type:[Boolean,String,Number],default:!1},...mn,offset:{type:[String,Number],default:null},...cn,order:{type:[String,Number],default:null},...dn,alignSelf:{type:String,default:null,validator:n=>Qe.includes(n)},...S(),...W()},"VCol"),C0=L()({name:"VCol",props:je(),setup(n,a){let{slots:e}=a;const t=rn(()=>{const s=[];let i;for(i in en)en[i].forEach(d=>{const f=n[d],U=Ge(i,d,f);U&&s.push(U)});const c=s.some(d=>d.startsWith("v-col-"));return s.push({"v-col":!c||!n.cols,[`v-col-${n.cols}`]:n.cols,[`offset-${n.offset}`]:n.offset,[`order-${n.order}`]:n.order,[`align-self-${n.alignSelf}`]:n.alignSelf}),s});return()=>sn(n.tag,{class:[t.value,n.class],style:n.style},e.default?.())}}),J=["start","end","center"],hn=["space-between","space-around","space-evenly"];function K(n,a){return P.reduce((e,t)=>{const s=n+Y(t);return e[s]=a(),e},{})}const Ye=[...J,"baseline","stretch"],_n=n=>Ye.includes(n),un=K("align",()=>({type:String,default:null,validator:_n})),Je=[...J,...hn],yn=n=>Je.includes(n),Cn=K("justify",()=>({type:String,default:null,validator:yn})),Ke=[...J,...hn,"stretch"],bn=n=>Ke.includes(n),fn=K("alignContent",()=>({type:String,default:null,validator:bn})),an={align:Object.keys(un),justify:Object.keys(Cn),alignContent:Object.keys(fn)},qe={align:"align",justify:"justify",alignContent:"align-content"};function $e(n,a,e){let t=qe[n];if(e!=null){if(a){const s=a.replace(n,"");t+=`-${s}`}return t+=`-${e}`,t.toLowerCase()}}const xe=v({dense:Boolean,noGutters:Boolean,align:{type:String,default:null,validator:_n},...un,justify:{type:String,default:null,validator:yn},...Cn,alignContent:{type:String,default:null,validator:bn},...fn,...S(),...W()},"VRow"),b0=L()({name:"VRow",props:xe(),setup(n,a){let{slots:e}=a;const t=rn(()=>{const s=[];let i;for(i in an)an[i].forEach(c=>{const d=n[c],f=$e(i,c,d);f&&s.push(f)});return s.push({"v-row--no-gutters":n.noGutters,"v-row--dense":n.dense,[`align-${n.align}`]:n.align,[`justify-${n.justify}`]:n.justify,[`align-content-${n.alignContent}`]:n.alignContent}),s});return()=>sn(n.tag,{class:["v-row",t.value,n.class],style:n.style},e.default?.())}});export{b0 as V,C0 as a,y0 as b,Fe as c,Oe as d,Ne as e,u0 as f,t0 as g,s0 as h,d0 as i,h0 as j,o0 as k,r0 as l,_0 as m,Xe as n,m0 as o,i0 as p,a0 as q,l0 as r,n0 as s,c0 as t,e0 as w};

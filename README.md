@@ -18,6 +18,7 @@ An interactive dashboard of Premier League football history.
 - **Longest No-Win Streaks After HT Lead** — for every team, the longest consecutive run of matches where they led at half-time but failed to win
 - **Comeback Kings** — for every team, the longest consecutive run of matches where they were losing at half-time but came back to win
 - **Most Comebacks in a Season** — the top 10 team-seasons by half-time comebacks (trailing at HT, then winning)
+- **Most Manager Wins** — the top managers by all-time Premier League wins, from the Wikipedia managers list joined to match results
 
 ## Data
 
