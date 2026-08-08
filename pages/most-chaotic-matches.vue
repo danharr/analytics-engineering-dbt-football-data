@@ -1,0 +1,91 @@
+<template>
+  <v-row>
+    <v-col cols="12" md="10" offset-md="1">
+      <v-card color="secondary" variant="tonal">
+        <v-card-title>
+          <v-icon icon="mdi-fire" class="mr-2"></v-icon>
+          Most Chaotic Matches
+        </v-card-title>
+        <v-card-subtitle>
+          A chaos score for every match: 3 points per goal + 2 points per red card
+        </v-card-subtitle>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="10" offset-md="1">
+      <v-card>
+        <v-card-title>Top 50 Chaos Scores</v-card-title>
+        <v-card-subtitle>
+          Stacked bars · blue = goals, red = red cards · longest bar at top
+        </v-card-subtitle>
+        <v-card-text>
+          <MostChaoticMatchesChart :data="mostChaoticMatches" />
+        </v-card-text>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="10" offset-md="1">
+      <v-card>
+        <v-card-title>
+          <v-icon icon="mdi-table" class="mr-2"></v-icon>
+          Chaos Leaderboard
+        </v-card-title>
+        <v-card-text>
+          <v-table density="compact">
+            <thead>
+              <tr>
+                <th class="text-left">#</th>
+                <th class="text-left">Date</th>
+                <th class="text-left">Season</th>
+                <th class="text-left">Match</th>
+                <th class="text-right">Goals</th>
+                <th class="text-right">Reds</th>
+                <th class="text-right">Goals pts</th>
+                <th class="text-right">Red pts</th>
+                <th class="text-right">Chaos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="(m, i) in rows" :key="m.match_id">
+                <td>{{ i + 1 }}</td>
+                <td>{{ fmtDate(m.kickoff_date) }}</td>
+                <td>{{ m.season_label }}</td>
+                <td>{{ match(m) }}</td>
+                <td class="text-right">{{ m.total_goals }}</td>
+                <td class="text-right">{{ m.total_red_cards }}</td>
+                <td class="text-right">{{ m.goals_points }}</td>
+                <td class="text-right">{{ m.red_points }}</td>
+                <td class="text-right"><strong>{{ m.chaos_score }}</strong></td>
+              </tr>
+            </tbody>
+          </v-table>
+        </v-card-text>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="10" offset-md="1">
+      <ChartCode :sql="sqlQueries.mostChaoticMatches" />
+    </v-col>
+  </v-row>
+</template>
+
+<script setup>
+import * as d3 from 'd3'
+import { mostChaoticMatches, sqlQueries } from '~/composables/useData'
+
+useHead({
+  title: 'Most Chaotic Matches',
+  meta: [
+    {
+      name: 'description',
+      content: 'The most chaotic Premier League matches ever, ranked by a chaos score of 3 points per goal plus 2 points per red card.'
+    }
+  ]
+})
+
+const rows = [...mostChaoticMatches].sort((a, b) =>
+  b.chaos_score - a.chaos_score || (a.kickoff_date < b.kickoff_date ? -1 : 1)
+)
+const fmtDate = s => d3.timeFormat('%d %b %Y')(new Date(s + 'T00:00:00Z'))
+const match = m => `${m.home_team_name} ${m.home_score}-${m.away_score} ${m.away_team_name}`
+</script>

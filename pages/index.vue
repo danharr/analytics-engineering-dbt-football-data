@@ -32,6 +32,27 @@
     <v-col cols="12" md="8" offset-md="2">
       <v-card>
         <v-card-title>
+          <v-icon icon="mdi-folder-open-outline" class="mr-2"></v-icon>
+          Index of /charts
+        </v-card-title>
+        <v-card-text>
+          <div class="dir-listing">
+            <div class="dir-header">
+              Premier League data charts · select a page below
+            </div>
+            <div class="dir-row" v-for="entry in entries" :key="entry.path">
+              <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
+              <span class="dots"></span>
+              <span class="path">{{ entry.path }}</span>
+            </div>
+          </div>
+        </v-card-text>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="8" offset-md="2">
+      <v-card>
+        <v-card-title>
           <v-icon icon="mdi-cog-outline" class="mr-2"></v-icon>
           How this site is built
         </v-card-title>
@@ -83,27 +104,6 @@
         </v-card-text>
       </v-card>
     </v-col>
-
-    <v-col cols="12" md="8" offset-md="2">
-      <v-card>
-        <v-card-title>
-          <v-icon icon="mdi-folder-open-outline" class="mr-2"></v-icon>
-          Index of /charts
-        </v-card-title>
-        <v-card-text>
-          <div class="dir-listing">
-            <div class="dir-header">
-              Premier League data charts · select a page below
-            </div>
-            <div class="dir-row" v-for="entry in entries" :key="entry.path">
-              <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
-              <span class="dots"></span>
-              <span class="path">{{ entry.path }}</span>
-            </div>
-          </div>
-        </v-card-text>
-      </v-card>
-    </v-col>
   </v-row>
 </template>
 
@@ -116,7 +116,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Premier League statistics built from the official API — all-time table, most wins, attendances, and data quality across 34 seasons.'
+      content: 'Premier League statistics built from the official API — all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
     }
   ]
 })
@@ -128,7 +128,8 @@ const entries = [
   { label: 'Attendances', path: '/attendances' },
   { label: 'Five-Game Streaks', path: '/five-game-streaks' },
   { label: 'Big Win Streaks', path: '/big-win-streaks' },
-  { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps' }
+  { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps' },
+  { label: 'Most Chaotic Matches', path: '/most-chaotic-matches' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

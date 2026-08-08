@@ -7,6 +7,7 @@ import allTimeCsv from '~/assets/data/all_time_table.csv?raw'
 import fiveGameStreaksCsv from '~/assets/data/five_game_streaks.csv?raw'
 import bigWinStreaksCsv from '~/assets/data/big_win_streaks.csv?raw'
 import longestWinlessGapsCsv from '~/assets/data/longest_winless_gaps.csv?raw'
+import mostChaoticMatchesCsv from '~/assets/data/most_chaotic_matches.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -14,6 +15,7 @@ import allTimeSql from '~/assets/data/all_time_table.sql?raw'
 import fiveGameStreaksSql from '~/assets/data/five_game_streaks.sql?raw'
 import bigWinStreaksSql from '~/assets/data/big_win_streaks.sql?raw'
 import longestWinlessGapsSql from '~/assets/data/longest_winless_gaps.sql?raw'
+import mostChaoticMatchesSql from '~/assets/data/most_chaotic_matches.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -80,6 +82,25 @@ export interface LongestWinlessGapRow {
   end_date: string
   gap_days: number
   matches_between: number
+}
+
+export interface MostChaoticMatchRow {
+  match_id: number
+  kickoff_date: string
+  season_label: string
+  home_team_name: string
+  home_team_abbr: string
+  home_score: number
+  home_red_cards: number
+  away_team_name: string
+  away_team_abbr: string
+  away_score: number
+  away_red_cards: number
+  total_goals: number
+  total_red_cards: number
+  goals_points: number
+  red_points: number
+  chaos_score: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -187,6 +208,25 @@ export const longestWinlessGaps = parse<LongestWinlessGapRow>(longestWinlessGaps
   matches_between: toInt(d, 'matches_between')
 }))
 
+export const mostChaoticMatches = parse<MostChaoticMatchRow>(mostChaoticMatchesCsv, d => ({
+  match_id: toInt(d, 'match_id'),
+  kickoff_date: d.kickoff_date,
+  season_label: d.season_label,
+  home_team_name: d.home_team_name,
+  home_team_abbr: d.home_team_abbr,
+  home_score: toInt(d, 'home_score'),
+  home_red_cards: toInt(d, 'home_red_cards'),
+  away_team_name: d.away_team_name,
+  away_team_abbr: d.away_team_abbr,
+  away_score: toInt(d, 'away_score'),
+  away_red_cards: toInt(d, 'away_red_cards'),
+  total_goals: toInt(d, 'total_goals'),
+  total_red_cards: toInt(d, 'total_red_cards'),
+  goals_points: toInt(d, 'goals_points'),
+  red_points: toInt(d, 'red_points'),
+  chaos_score: toInt(d, 'chaos_score')
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -194,5 +234,6 @@ export const sqlQueries = {
   allTimeTable: allTimeSql,
   fiveGameStreaks: fiveGameStreaksSql,
   bigWinStreaks: bigWinStreaksSql,
-  longestWinlessGaps: longestWinlessGapsSql
+  longestWinlessGaps: longestWinlessGapsSql,
+  mostChaoticMatches: mostChaoticMatchesSql
 }
