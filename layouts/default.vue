@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-app-bar color="primary" density="compact">
+      <v-app-bar-nav-icon @click.stop="toggleNav"></v-app-bar-nav-icon>
       <v-app-bar-title>
         <NuxtLink to="/" class="text-decoration-none">
           <v-icon icon="mdi-trophy" class="mr-2"></v-icon>
@@ -9,7 +10,13 @@
       </v-app-bar-title>
     </v-app-bar>
 
-    <v-navigation-drawer permanent>
+    <v-navigation-drawer
+      v-model="drawer"
+      :permanent="!isMobile"
+      :temporary="isMobile"
+      :rail="rail && !isMobile"
+      :expand-on-hover="rail && !isMobile"
+    >
       <v-list>
         <v-list-subheader>Charts</v-list-subheader>
         <v-list-item
@@ -32,5 +39,20 @@
 </template>
 
 <script setup>
+import { ref, computed } from 'vue'
+import { useDisplay } from 'vuetify'
 import { navItems } from '~/composables/navItems'
+
+const drawer = ref(false)
+const rail = ref(false)
+const { mobile } = useDisplay()
+const isMobile = computed(() => mobile.value)
+
+function toggleNav() {
+  if (isMobile.value) {
+    drawer.value = !drawer.value
+  } else {
+    rail.value = !rail.value
+  }
+}
 </script>

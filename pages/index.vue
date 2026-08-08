@@ -112,7 +112,7 @@ import * as d3 from 'd3'
 import { stats } from '~/composables/useData'
 
 useHead({
-  title: 'Premier League Insights',
+  title: 'Football started in 1992',
   meta: [
     {
       name: 'description',
