@@ -9,6 +9,17 @@
         <v-card-subtitle>
           For each team, the longest time between two consecutive wins — spanning seasons, not games
         </v-card-subtitle>
+        <v-card-text class="pt-0">
+          <p class="mb-0">
+            Nottingham Forest hold the longest wait of all: 8,491 days, over 23 years, between
+            a win at Southampton in May 1999 and their next Premier League victory in August
+            2022. Forest spent almost all of that time outside the division, and that story
+            repeats down the list — Ipswich (8,236 days) and Leeds (6,006) fill the top spots
+            after long stretches in the Football League. The chart ranks every team by the
+            calendar time between consecutive wins, so even clubs that never left the top
+            flight put in a far more modest appearance at the bottom.
+          </p>
+        </v-card-text>
       </v-card>
     </v-col>
 

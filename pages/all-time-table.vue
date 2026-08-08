@@ -6,8 +6,15 @@
           <v-icon icon="mdi-table-large" class="mr-2"></v-icon>
           All-Time Premier League Table
         </v-card-title>
-        <v-card-subtitle>All 33 seasons · every team's all-time record, sorted by points</v-card-subtitle>
+        <v-card-subtitle>All 34 seasons · every team's all-time record, sorted by points</v-card-subtitle>
         <v-card-text>
+          <p class="mb-4">
+            Manchester United sit top of the all-time Premier League table with 2,614 points
+            from 1,304 matches, a clear 141 ahead of Arsenal (2,473) and Liverpool (2,402).
+            Every team that has ever played in the division is here — 51 in total — ranked by
+            points across all 34 seasons from 1992-93 to 2025-26, with United's 775 wins a
+            record nobody else has come close to.
+          </p>
           <v-table density="compact">
             <thead>
               <tr>

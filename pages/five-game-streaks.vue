@@ -9,6 +9,15 @@
         <v-card-subtitle>
           The last time each team won 5+ games in a row within a single season
         </v-card-subtitle>
+        <v-card-text class="pt-0">
+          <p class="mb-0">
+            Aston Villa are the team of the moment here, winning eight in a row in the 2025-26
+            season — the best streak of the current campaign and one that has carried them to
+            the top of the list. Each row shows the most recent run of five or more consecutive
+            wins for every team in Premier League history, with Leicester's eight-game stretch
+            in 2019-20 the other stand-out of recent years.
+          </p>
+        </v-card-text>
       </v-card>
     </v-col>
 

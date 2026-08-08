@@ -9,6 +9,16 @@
         <v-card-subtitle>
           The longest winning streaks within a single season (11+ wins in a row)
         </v-card-subtitle>
+        <v-card-text class="pt-0">
+          <p class="mb-0">
+            Six runs of 13 or more consecutive wins have ever happened in the Premier League,
+            and half of them belong to Manchester City. Their 18 in a row in 2017-18 remains
+            the record, a feat Liverpool matched during their title-winning 2019-20 campaign.
+            Each square in the chart is a single win — date, opponent and score — so you can
+            trace exactly who these monster runs cut down, from City's 5-0 thrashing of
+            Liverpool to Arsenal's 13 straight to close out the 2001-02 title.
+          </p>
+        </v-card-text>
       </v-card>
     </v-col>
 

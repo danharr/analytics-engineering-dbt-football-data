@@ -9,6 +9,15 @@
         <v-card-subtitle>
           For each team, the longest consecutive run of league matches where they were losing at half-time but came back to win
         </v-card-subtitle>
+        <v-card-text class="pt-0">
+          <p class="mb-0">
+            No team has ever come from behind at half-time to win more than two league matches
+            in a row, and only 11 have even managed that double. The most recent are Aston
+            Villa, who recovered to beat Everton and then Wolves in September 2024. The chart
+            shows every club's best run of half-time comebacks, from Arsenal's festive pair in
+            2001-02 to Brighton's two late-season rescues in 2024-25.
+          </p>
+        </v-card-text>
       </v-card>
     </v-col>
 

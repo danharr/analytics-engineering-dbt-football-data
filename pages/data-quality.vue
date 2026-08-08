@@ -7,6 +7,15 @@
           Data Quality
         </v-card-title>
         <v-card-subtitle>{{ quality.length }} seasons processed in the database</v-card-subtitle>
+        <v-card-text class="pt-0">
+          <p class="mb-0">
+            This page is about the dataset behind every other chart on the site. All 34 seasons
+            are accounted for here, from the 22-team opening campaign in 1992-93 through to the
+            20-team format that has been standard since 1995-96. In total the database holds
+            13,166 matches across 51 teams, and this page verifies that each season is complete
+            before the rest of the site is built from it.
+          </p>
+        </v-card-text>
       </v-card>
     </v-col>
 

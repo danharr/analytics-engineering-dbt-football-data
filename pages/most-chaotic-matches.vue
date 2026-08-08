@@ -9,6 +9,15 @@
         <v-card-subtitle>
           A chaos score for every match: 3 points per goal + 2 points per red card
         </v-card-subtitle>
+        <v-card-text class="pt-0">
+          <p class="mb-0">
+            Portsmouth's 7-4 win over Reading in September 2007 remains the most chaotic match
+            in Premier League history — 11 goals and a chaos score of 33. Manchester United's
+            8-2 demolition of Arsenal in 2011 and their 9-0 win over Southampton in 2021 round
+            out the top three. Every one of the 50 most chaotic games is plotted here, with the
+            bars split into goals and the red cards that sent a game over the edge.
+          </p>
+        </v-card-text>
       </v-card>
     </v-col>
 
