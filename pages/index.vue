@@ -129,7 +129,8 @@ const entries = [
   { label: 'Five-Game Streaks', path: '/five-game-streaks' },
   { label: 'Big Win Streaks', path: '/big-win-streaks' },
   { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps' },
-  { label: 'Most Chaotic Matches', path: '/most-chaotic-matches' }
+  { label: 'Most Chaotic Matches', path: '/most-chaotic-matches' },
+  { label: 'One-Nil Wins', path: '/one-nil-wins' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

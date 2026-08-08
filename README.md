@@ -14,6 +14,7 @@ An interactive dashboard of Premier League football history.
 - **Big Win Streaks** — the longest winning streaks within a single season (11+ wins), with date, opponent and score of every win
 - **Longest Gap Between Wins** — for every team, the longest time between two consecutive wins, shown in years and days
 - **Most Chaotic Matches** — the top 50 matches ranked by a chaos score of 3 points per goal + 2 points per red card
+- **One-Nil Wins** — which club's wins most often finish 1-0, by share of total wins (clubs with 30+ wins)
 
 ## Data
 

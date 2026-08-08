@@ -8,6 +8,7 @@ import fiveGameStreaksCsv from '~/assets/data/five_game_streaks.csv?raw'
 import bigWinStreaksCsv from '~/assets/data/big_win_streaks.csv?raw'
 import longestWinlessGapsCsv from '~/assets/data/longest_winless_gaps.csv?raw'
 import mostChaoticMatchesCsv from '~/assets/data/most_chaotic_matches.csv?raw'
+import oneNilWinsCsv from '~/assets/data/one_nil_wins.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -16,6 +17,7 @@ import fiveGameStreaksSql from '~/assets/data/five_game_streaks.sql?raw'
 import bigWinStreaksSql from '~/assets/data/big_win_streaks.sql?raw'
 import longestWinlessGapsSql from '~/assets/data/longest_winless_gaps.sql?raw'
 import mostChaoticMatchesSql from '~/assets/data/most_chaotic_matches.sql?raw'
+import oneNilWinsSql from '~/assets/data/one_nil_wins.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -101,6 +103,16 @@ export interface MostChaoticMatchRow {
   goals_points: number
   red_points: number
   chaos_score: number
+}
+
+export interface OneNilWinRow {
+  team_name: string
+  team_abbr: string
+  total_wins: number
+  home_1_0_wins: number
+  away_1_0_wins: number
+  one_nil_wins: number
+  pct_one_nil: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -227,6 +239,16 @@ export const mostChaoticMatches = parse<MostChaoticMatchRow>(mostChaoticMatchesC
   chaos_score: toInt(d, 'chaos_score')
 }))
 
+export const oneNilWins = parse<OneNilWinRow>(oneNilWinsCsv, d => ({
+  team_name: d.team_name,
+  team_abbr: d.team_abbr,
+  total_wins: toInt(d, 'total_wins'),
+  home_1_0_wins: toInt(d, 'home_1_0_wins'),
+  away_1_0_wins: toInt(d, 'away_1_0_wins'),
+  one_nil_wins: toInt(d, 'one_nil_wins'),
+  pct_one_nil: toFloat(d, 'pct_one_nil')
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -235,5 +257,6 @@ export const sqlQueries = {
   fiveGameStreaks: fiveGameStreaksSql,
   bigWinStreaks: bigWinStreaksSql,
   longestWinlessGaps: longestWinlessGapsSql,
-  mostChaoticMatches: mostChaoticMatchesSql
+  mostChaoticMatches: mostChaoticMatchesSql,
+  oneNilWins: oneNilWinsSql
 }
