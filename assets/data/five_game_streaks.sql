@@ -1,3 +1,4 @@
+-- Most recent run of 5+ consecutive wins within a single season, per team
 copy (
     with team_games as (
         select
@@ -9,7 +10,7 @@ copy (
             away_team_abbr as opponent_abbr,
             away_team_name as opponent_name,
             result = 'home_win' as is_win
-        from fct_matches
+        from "premier_league"."main"."fct_matches"
         union all
         select
             match_id,
@@ -20,7 +21,7 @@ copy (
             home_team_abbr as opponent_abbr,
             home_team_name as opponent_name,
             result = 'away_win' as is_win
-        from fct_matches
+        from "premier_league"."main"."fct_matches"
     ),
     games_ranked as (
         select
@@ -77,4 +78,4 @@ copy (
     where rn = 1
     order by streak_start desc, team_name
 )
-to 'assets/data/five_game_streaks.csv' (header, delimiter ',');
+to 'assets/data/five_game_streaks.csv' (header, delimiter ',')

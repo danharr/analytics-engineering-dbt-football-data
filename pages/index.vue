@@ -64,7 +64,7 @@
               <v-list-item-title>
                 <v-icon icon="mdi-file-delimited" size="small" class="mr-2"></v-icon>Chart data
               </v-list-item-title>
-              <v-list-item-subtitle>assets/data/*.sql are run against fct_matches to write assets/data/*.csv</v-list-item-subtitle>
+              <v-list-item-subtitle>dbt analyses (dbt/analyses/chart_*.sql) run against fct_matches to write assets/data/*.csv</v-list-item-subtitle>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>

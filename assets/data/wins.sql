@@ -1,3 +1,4 @@
+-- Total wins by team across all seasons (home/away split)
 copy (
     with matches as (
         select
@@ -6,7 +7,7 @@ copy (
             home_team_name as team_name,
             'home' as side,
             result
-        from fct_matches
+        from "premier_league"."main"."fct_matches"
         union all
         select
             match_id,
@@ -14,7 +15,7 @@ copy (
             away_team_name as team_name,
             'away' as side,
             result
-        from fct_matches
+        from "premier_league"."main"."fct_matches"
     )
     select
         team_abbr,
@@ -29,4 +30,4 @@ copy (
     group by team_abbr
     order by total_wins desc, team_abbr
 )
-to 'assets/data/wins.csv' (header, delimiter ',');
+to 'assets/data/wins.csv' (header, delimiter ',')

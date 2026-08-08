@@ -23,7 +23,7 @@ An interactive dashboard of Premier League football history, built from the Prem
 
 1. **Scrape** the Pulselive API (`competition=8`) into per-season JSON
 2. **Load** into DuckDB and model with dbt
-3. **Export** chart data as CSVs (see `assets/data/*.sql`)
+3. **Export** chart data as CSVs from dbt analyses (see `dbt/analyses/chart_*.sql`)
 4. **Generate** a static Nuxt 3 site (Vuetify 3 + d3.js) that bakes the data into HTML for SEO
 
 `./update_all_charts.sh` reruns the whole pipeline and rebuilds the static site in `docs/` (which is what GitHub Pages serves).
