@@ -5,7 +5,7 @@
       <v-app-bar-title>
         <NuxtLink to="/" class="text-decoration-none">
           <v-icon icon="mdi-trophy" class="mr-2"></v-icon>
-          <span class="text-white">Football Started in 1992</span>
+          <span class="text-white site-title">Football Started in 1992</span>
         </NuxtLink>
       </v-app-bar-title>
     </v-app-bar>

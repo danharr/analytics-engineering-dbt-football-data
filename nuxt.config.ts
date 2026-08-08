@@ -31,6 +31,21 @@ export default defineNuxtConfig({
     baseURL: '/',
     head: {
       htmlAttrs: { lang: 'en' },
+      link: [
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.googleapis.com'
+        },
+        {
+          rel: 'preconnect',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: ''
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Tourney:wght@500;600;700&display=swap'
+        }
+      ],
       script: [
         {
           src: 'https://www.googletagmanager.com/gtag/js?id=G-HRJ1G6XTG1',
@@ -66,7 +81,7 @@ gtag('config', 'G-HRJ1G6XTG1');`
     },
     prerender: {
       crawlLinks: false,
-      routes: ['/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/one-nil-wins']
+      routes: ['/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/one-nil-wins', '/ht-lead-no-win-streaks']
     }
   }
 })
