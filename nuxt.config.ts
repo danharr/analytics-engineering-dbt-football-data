@@ -42,7 +42,7 @@ export default defineNuxtConfig({
     },
     prerender: {
       crawlLinks: false,
-      routes: ['/', '/most-wins', '/data-quality', '/attendances', '/all-time-table']
+      routes: ['/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks']
     }
   }
 })

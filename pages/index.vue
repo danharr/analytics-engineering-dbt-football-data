@@ -125,7 +125,8 @@ const entries = [
   { label: 'All-Time Table', path: '/all-time-table' },
   { label: 'Most Wins', path: '/most-wins' },
   { label: 'Data Quality', path: '/data-quality' },
-  { label: 'Attendances', path: '/attendances' }
+  { label: 'Attendances', path: '/attendances' },
+  { label: 'Five-Game Streaks', path: '/five-game-streaks' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

@@ -4,10 +4,12 @@ import winsCsv from '~/assets/data/wins.csv?raw'
 import qualityCsv from '~/assets/data/season_quality.csv?raw'
 import attendanceCsv from '~/assets/data/attendance.csv?raw'
 import allTimeCsv from '~/assets/data/all_time_table.csv?raw'
+import fiveGameStreaksCsv from '~/assets/data/five_game_streaks.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
 import allTimeSql from '~/assets/data/all_time_table.sql?raw'
+import fiveGameStreaksSql from '~/assets/data/five_game_streaks.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -46,6 +48,14 @@ export interface AllTimeRow {
   draws: number
   losses: number
   points: number
+}
+
+export interface FiveGameStreakRow {
+  team_name: string
+  season_label: string
+  streak_start: string
+  streak_length: number
+  opponents: string
 }
 
 function toInt(d: Record<string, string>, key: string): number {
@@ -103,9 +113,18 @@ export const allTime = parse<AllTimeRow>(allTimeCsv, d => ({
   points: toInt(d, 'points')
 }))
 
+export const fiveGameStreaks = parse<FiveGameStreakRow>(fiveGameStreaksCsv, d => ({
+  team_name: d.team_name,
+  season_label: d.season_label,
+  streak_start: d.streak_start,
+  streak_length: toInt(d, 'streak_length'),
+  opponents: d.opponents
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
   attendance: attendanceSql,
-  allTimeTable: allTimeSql
+  allTimeTable: allTimeSql,
+  fiveGameStreaks: fiveGameStreaksSql
 }
