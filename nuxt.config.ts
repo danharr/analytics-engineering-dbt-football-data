@@ -30,7 +30,19 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/',
     head: {
-      htmlAttrs: { lang: 'en' }
+      htmlAttrs: { lang: 'en' },
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-HRJ1G6XTG1',
+          async: true
+        },
+        {
+          innerHTML: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HRJ1G6XTG1');`
+        }
+      ]
     }
   },
 
