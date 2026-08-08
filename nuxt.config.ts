@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://footballstartedin1992.com',
     name: 'Football Started in 1992',
-    description: 'Premier League statistics built from the official API — all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
+    description: 'Premier League statistics built from the official API, covering the all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
   },
 
   sitemap: {

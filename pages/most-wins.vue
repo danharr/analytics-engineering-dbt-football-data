@@ -7,7 +7,7 @@
         <v-card-text>
           <p class="mb-4">
             Manchester United are the only club in Premier League history to pass 700 wins,
-            sitting on 775 — 447 of them at home, the most any team has managed. Arsenal (719)
+            sitting on 775, 447 of them at home, the most any team has managed. Arsenal (719)
             and Liverpool (694) make up the chasing pack, with Chelsea (681) just behind.
             Each bar splits a club's record into home and away, so you can see which sides
             built their success at home and which travelled well.

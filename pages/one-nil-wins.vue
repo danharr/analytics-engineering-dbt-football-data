@@ -12,7 +12,7 @@
         <v-card-text class="pt-0">
           <p class="mb-0">
             Sheffield United are the most efficient grinders in Premier League history, with
-            22 of their 56 wins — 39.3% — finishing 1-0. They sit ahead of Wigan (38.8%) and
+            22 of their 56 wins (39.3%) finishing 1-0. They sit ahead of Wigan (38.8%) and
             West Brom (35%) in a leaderboard dominated by well-organised sides that rarely won
             big. At the other end sit the free-scoring big four: Arsenal, Manchester United,
             City and Liverpool all finish 1-0 in under a fifth of their wins.

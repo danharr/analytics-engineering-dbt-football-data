@@ -7,11 +7,11 @@
           Most Comebacks in a Season
         </v-card-title>
         <v-card-subtitle>
-          Top 10 team-seasons by half-time comebacks — matches where they were losing at half-time but came back to win
+          Top 10 team-seasons by half-time comebacks, counting matches where they were losing at half-time but came back to win
         </v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            Fulham's 2024-25 campaign stands alone at the top — five half-time comebacks, more
+            Fulham's 2024-25 campaign stands alone at the top with five half-time comebacks, more
             than any other team in a single Premier League season. Manchester City (2023-24)
             and Manchester United (2020-21) also managed five, while the list stretches all the
             way back to QPR in the very first season of 1992-93 and forward to Aston Villa's
@@ -76,7 +76,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'The top 10 team-seasons by half-time comebacks — matches where a Premier League team was losing at half-time but came back to win.'
+      content: 'The top 10 team-seasons by half-time comebacks, counting matches where a Premier League team was losing at half-time but came back to win.'
     }
   ]
 })

@@ -14,7 +14,7 @@
             Six runs of 13 or more consecutive wins have ever happened in the Premier League,
             and half of them belong to Manchester City. Their 18 in a row in 2017-18 remains
             the record, a feat Liverpool matched during their title-winning 2019-20 campaign.
-            Each square in the chart is a single win — date, opponent and score — so you can
+            Each square in the chart is a single win, with its date, opponent and score, so you can
             trace exactly who these monster runs cut down, from City's 5-0 thrashing of
             Liverpool to Arsenal's 13 straight to close out the 2001-02 title.
           </p>
@@ -26,7 +26,7 @@
       <v-card>
         <v-card-title>11+ Game Winning Streaks</v-card-title>
         <v-card-subtitle>
-          Each square is one win — date, opponent and score · longest streak at top
+          Each square is one win, with date, opponent and score · longest streak at top
         </v-card-subtitle>
         <v-card-text>
           <BigWinStreaksChart :data="bigWinStreaks" />

@@ -59,7 +59,7 @@
         <v-card-text>
           <p class="mb-4">
             Every chart on this site is generated from the Premier League's public API by a
-            repeatable pipeline — <strong>scrape → DuckDB → dbt → CSV → static site</strong>. When
+            repeatable pipeline, <strong>scrape → DuckDB → dbt → CSV → static site</strong>. When
             data updates, <code>./update_all_charts.sh</code> rebuilds everything from source.
           </p>
           <v-list density="compact">
@@ -116,7 +116,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Premier League statistics built from the official API — all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
+      content: 'Premier League statistics built from the official API, covering the all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
     }
   ]
 })
