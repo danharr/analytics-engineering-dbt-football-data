@@ -21,7 +21,7 @@ import { computed } from 'vue'
 import { wins, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Most Wins by Team — Premier League Insights',
+  title: 'Most Wins by Team',
   meta: [
     {
       name: 'description',

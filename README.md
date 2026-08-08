@@ -1,6 +1,6 @@
-# Premier League Insights
+# Football Started in 1992
 
-An interactive dashboard of Premier League football history, built from the Premier League's public API.
+An interactive dashboard of Premier League football history.
 
 **Live site:** [https://footballstartedin1992.com/](https://footballstartedin1992.com/)
 
@@ -22,7 +22,7 @@ An interactive dashboard of Premier League football history, built from the Prem
 
 ## How it's built
 
-1. **Scrape** the Pulselive API (`competition=8`) into per-season JSON
+1. **Scrape** the results into per-season JSON
 2. **Load** into DuckDB and model with dbt
 3. **Export** chart data as CSVs from dbt analyses (see `dbt/analyses/chart_*.sql`)
 4. **Generate** a static Nuxt 3 site (Vuetify 3 + d3.js) that bakes the data into HTML for SEO

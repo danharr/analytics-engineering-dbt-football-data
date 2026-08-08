@@ -58,7 +58,7 @@
 import { quality, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Data Quality by Season — Premier League Insights',
+  title: 'Data Quality by Season',
   meta: [
     {
       name: 'description',
