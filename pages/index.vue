@@ -131,7 +131,8 @@ const entries = [
   { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps' },
   { label: 'Most Chaotic Matches', path: '/most-chaotic-matches' },
   { label: 'One-Nil Wins', path: '/one-nil-wins' },
-  { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks' }
+  { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks' },
+  { label: 'Comeback Kings', path: '/comeback-kings' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

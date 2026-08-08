@@ -10,6 +10,7 @@ import longestWinlessGapsCsv from '~/assets/data/longest_winless_gaps.csv?raw'
 import mostChaoticMatchesCsv from '~/assets/data/most_chaotic_matches.csv?raw'
 import oneNilWinsCsv from '~/assets/data/one_nil_wins.csv?raw'
 import htLeadNoWinStreaksCsv from '~/assets/data/ht_lead_no_win_streaks.csv?raw'
+import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -20,6 +21,7 @@ import longestWinlessGapsSql from '~/assets/data/longest_winless_gaps.sql?raw'
 import mostChaoticMatchesSql from '~/assets/data/most_chaotic_matches.sql?raw'
 import oneNilWinsSql from '~/assets/data/one_nil_wins.sql?raw'
 import htLeadNoWinStreaksSql from '~/assets/data/ht_lead_no_win_streaks.sql?raw'
+import comebackKingsSql from '~/assets/data/comeback_kings.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -118,6 +120,16 @@ export interface OneNilWinRow {
 }
 
 export interface HtLeadNoWinStreakRow {
+  team_name: string
+  team_abbr: string
+  run_length: number
+  seasons: string
+  start_date: string
+  end_date: string
+  opponents: string
+}
+
+export interface ComebackKingRow {
   team_name: string
   team_abbr: string
   run_length: number
@@ -271,6 +283,16 @@ export const htLeadNoWinStreaks = parse<HtLeadNoWinStreakRow>(htLeadNoWinStreaks
   opponents: d.opponents
 }))
 
+export const comebackKings = parse<ComebackKingRow>(comebackKingsCsv, d => ({
+  team_name: d.team_name,
+  team_abbr: d.team_abbr,
+  run_length: toInt(d, 'run_length'),
+  seasons: d.seasons,
+  start_date: d.start_date,
+  end_date: d.end_date,
+  opponents: d.opponents
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -281,5 +303,6 @@ export const sqlQueries = {
   longestWinlessGaps: longestWinlessGapsSql,
   mostChaoticMatches: mostChaoticMatchesSql,
   oneNilWins: oneNilWinsSql,
-  htLeadNoWinStreaks: htLeadNoWinStreaksSql
+  htLeadNoWinStreaks: htLeadNoWinStreaksSql,
+  comebackKings: comebackKingsSql
 }

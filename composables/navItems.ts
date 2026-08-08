@@ -8,5 +8,6 @@ export const navItems = [
   { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps', icon: 'mdi-timer-sand' },
   { label: 'Most Chaotic Matches', path: '/most-chaotic-matches', icon: 'mdi-fire' },
   { label: 'One-Nil Wins', path: '/one-nil-wins', icon: 'mdi-numeric-1-box-outline' },
-  { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks', icon: 'mdi-flag-checkered' }
+  { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks', icon: 'mdi-flag-checkered' },
+  { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' }
 ]
