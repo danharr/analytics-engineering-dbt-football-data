@@ -9,5 +9,6 @@ export const navItems = [
   { label: 'Most Chaotic Matches', path: '/most-chaotic-matches', icon: 'mdi-fire' },
   { label: 'One-Nil Wins', path: '/one-nil-wins', icon: 'mdi-numeric-1-box-outline' },
   { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks', icon: 'mdi-flag-checkered' },
-  { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' }
+  { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' },
+  { label: 'Most Comebacks in a Season', path: '/most-comebacks', icon: 'mdi-trophy-variant-outline' }
 ]

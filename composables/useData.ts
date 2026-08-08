@@ -11,6 +11,7 @@ import mostChaoticMatchesCsv from '~/assets/data/most_chaotic_matches.csv?raw'
 import oneNilWinsCsv from '~/assets/data/one_nil_wins.csv?raw'
 import htLeadNoWinStreaksCsv from '~/assets/data/ht_lead_no_win_streaks.csv?raw'
 import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
+import mostComebacksCsv from '~/assets/data/most_comebacks.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -22,6 +23,7 @@ import mostChaoticMatchesSql from '~/assets/data/most_chaotic_matches.sql?raw'
 import oneNilWinsSql from '~/assets/data/one_nil_wins.sql?raw'
 import htLeadNoWinStreaksSql from '~/assets/data/ht_lead_no_win_streaks.sql?raw'
 import comebackKingsSql from '~/assets/data/comeback_kings.sql?raw'
+import mostComebacksSql from '~/assets/data/most_comebacks.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -137,6 +139,13 @@ export interface ComebackKingRow {
   start_date: string
   end_date: string
   opponents: string
+}
+
+export interface MostComebacksRow {
+  team_name: string
+  team_abbr: string
+  season_label: string
+  comeback_count: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -293,6 +302,13 @@ export const comebackKings = parse<ComebackKingRow>(comebackKingsCsv, d => ({
   opponents: d.opponents
 }))
 
+export const mostComebacks = parse<MostComebacksRow>(mostComebacksCsv, d => ({
+  team_name: d.team_name,
+  team_abbr: d.team_abbr,
+  season_label: d.season_label,
+  comeback_count: toInt(d, 'comeback_count')
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -304,5 +320,6 @@ export const sqlQueries = {
   mostChaoticMatches: mostChaoticMatchesSql,
   oneNilWins: oneNilWinsSql,
   htLeadNoWinStreaks: htLeadNoWinStreaksSql,
-  comebackKings: comebackKingsSql
+  comebackKings: comebackKingsSql,
+  mostComebacks: mostComebacksSql
 }

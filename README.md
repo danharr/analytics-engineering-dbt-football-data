@@ -17,6 +17,7 @@ An interactive dashboard of Premier League football history.
 - **One-Nil Wins** — which club's wins most often finish 1-0, by share of total wins (clubs with 30+ wins)
 - **Longest No-Win Streaks After HT Lead** — for every team, the longest consecutive run of matches where they led at half-time but failed to win
 - **Comeback Kings** — for every team, the longest consecutive run of matches where they were losing at half-time but came back to win
+- **Most Comebacks in a Season** — the top 10 team-seasons by half-time comebacks (trailing at HT, then winning)
 
 ## Data
 
