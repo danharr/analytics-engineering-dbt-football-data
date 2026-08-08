@@ -1,8 +1,8 @@
-import{a as V,m as v,c as p,d as Le,e as $,V as x,f as Y,b as te,R as z,g as ve,h as pe,u as Se,i as Ee,j as Me,k as ge,l as we,n as Be,o as He,p as Ne,q as Te,r as Ve,s as Re,t as Ie,v as ke,w as Oe,x as Pe,y as Fe,L as De,z as je,A as Ye,B as Qe}from"./BDLP0Pbw.js";import{j as S,s as Ge,b as o,n as k,k as O,l as E,a as H,F as K,t as Z,I,p as qe,v as $e,x as xe,m as ze,y as Ke,z as Ze,q as Je,A as ae,i as se,B as P,C as Q}from"./BJQTRgpb.js";var J={},F={},D=34,T=10,j=13;function re(e){return new Function("d","return {"+e.map(function(t,n){return JSON.stringify(t)+": d["+n+'] || ""'}).join(",")+"}")}function Xe(e,t){var n=re(e);return function(a,r){return t(n(a),r,e)}}function X(e){var t=Object.create(null),n=[];return e.forEach(function(a){for(var r in a)r in t||n.push(t[r]=r)}),n}function h(e,t){var n=e+"",a=n.length;return a<t?new Array(t-a+1).join(0)+n:n}function en(e){return e<0?"-"+h(-e,6):e>9999?"+"+h(e,6):h(e,4)}function nn(e){var t=e.getUTCHours(),n=e.getUTCMinutes(),a=e.getUTCSeconds(),r=e.getUTCMilliseconds();return isNaN(e)?"Invalid Date":en(e.getUTCFullYear())+"-"+h(e.getUTCMonth()+1,2)+"-"+h(e.getUTCDate(),2)+(r?"T"+h(t,2)+":"+h(n,2)+":"+h(a,2)+"."+h(r,3)+"Z":a?"T"+h(t,2)+":"+h(n,2)+":"+h(a,2)+"Z":n||t?"T"+h(t,2)+":"+h(n,2)+"Z":"")}function tn(e){var t=new RegExp('["'+e+`
-\r]`),n=e.charCodeAt(0);function a(s,i){var A,d,l=r(s,function(y,b){if(A)return A(y,b-1);d=y,A=i?Xe(y,i):re(y)});return l.columns=d||[],l}function r(s,i){var A=[],d=s.length,l=0,y=0,b,f=d<=0,m=!1;s.charCodeAt(d-1)===T&&--d,s.charCodeAt(d-1)===j&&--d;function R(){if(f)return F;if(m)return m=!1,J;var w,B=l,L;if(s.charCodeAt(B)===D){for(;l++<d&&s.charCodeAt(l)!==D||s.charCodeAt(++l)===D;);return(w=l)>=d?f=!0:(L=s.charCodeAt(l++))===T?m=!0:L===j&&(m=!0,s.charCodeAt(l)===T&&++l),s.slice(B+1,w-1).replace(/""/g,'"')}for(;l<d;){if((L=s.charCodeAt(w=l++))===T)m=!0;else if(L===j)m=!0,s.charCodeAt(l)===T&&++l;else if(L!==n)continue;return s.slice(B,w)}return f=!0,s.slice(B,d)}for(;(b=R())!==F;){for(var g=[];b!==J&&b!==F;)g.push(b),b=R();i&&(g=i(g,y++))==null||A.push(g)}return A}function c(s,i){return s.map(function(A){return i.map(function(d){return M(A[d])}).join(e)})}function _(s,i){return i==null&&(i=X(s)),[i.map(M).join(e)].concat(c(s,i)).join(`
-`)}function C(s,i){return i==null&&(i=X(s)),c(s,i).join(`
-`)}function U(s){return s.map(W).join(`
-`)}function W(s){return s.map(M).join(e)}function M(s){return s==null?"":s instanceof Date?nn(s):t.test(s+="")?'"'+s.replace(/"/g,'""')+'"':s}return{parse:a,parseRows:r,format:_,formatBody:C,formatRows:U,formatRow:W,formatValue:M}}var an=tn(","),oe=an.parse;const sn=`total_matches,total_unique_teams,total_goals,last_updated
+import{a as N,m as v,c as L,d as pe,e as q,V as x,f as Y,b as te,R as z,g as ve,h as Le,u as Se,i as ge,j as we,k as Ee,l as Me,n as Be,o as He,p as Te,q as ke,r as Ne,s as Re,t as Ve,v as Ie,w as Oe,x as Pe,y as Fe,L as De,z as je,A as Ye,B as Ge}from"./BocM6a8c.js";import{j as S,s as Qe,b as i,n as I,k as O,l as g,a as T,F as Z,t as K,I as V,p as $e,v as qe,x as xe,m as ze,y as Ze,z as Ke,q as Je,A as ae,i as se,B as P,C as G}from"./BQJTb8cN.js";var J={},F={},D=34,k=10,j=13;function re(e){return new Function("d","return {"+e.map(function(t,n){return JSON.stringify(t)+": d["+n+'] || ""'}).join(",")+"}")}function Xe(e,t){var n=re(e);return function(a,s){return t(n(a),s,e)}}function X(e){var t=Object.create(null),n=[];return e.forEach(function(a){for(var s in a)s in t||n.push(t[s]=s)}),n}function y(e,t){var n=e+"",a=n.length;return a<t?new Array(t-a+1).join(0)+n:n}function en(e){return e<0?"-"+y(-e,6):e>9999?"+"+y(e,6):y(e,4)}function nn(e){var t=e.getUTCHours(),n=e.getUTCMinutes(),a=e.getUTCSeconds(),s=e.getUTCMilliseconds();return isNaN(e)?"Invalid Date":en(e.getUTCFullYear())+"-"+y(e.getUTCMonth()+1,2)+"-"+y(e.getUTCDate(),2)+(s?"T"+y(t,2)+":"+y(n,2)+":"+y(a,2)+"."+y(s,3)+"Z":a?"T"+y(t,2)+":"+y(n,2)+":"+y(a,2)+"Z":n||t?"T"+y(t,2)+":"+y(n,2)+"Z":"")}function tn(e){var t=new RegExp('["'+e+`
+\r]`),n=e.charCodeAt(0);function a(r,l){var b,h,m=s(r,function(_,f){if(b)return b(_,f-1);h=_,b=l?Xe(_,l):re(_)});return m.columns=h||[],m}function s(r,l){var b=[],h=r.length,m=0,_=0,f,A=h<=0,C=!1;r.charCodeAt(h-1)===k&&--h,r.charCodeAt(h-1)===j&&--h;function R(){if(A)return F;if(C)return C=!1,J;var B,H=m,p;if(r.charCodeAt(H)===D){for(;m++<h&&r.charCodeAt(m)!==D||r.charCodeAt(++m)===D;);return(B=m)>=h?A=!0:(p=r.charCodeAt(m++))===k?C=!0:p===j&&(C=!0,r.charCodeAt(m)===k&&++m),r.slice(H+1,B-1).replace(/""/g,'"')}for(;m<h;){if((p=r.charCodeAt(B=m++))===k)C=!0;else if(p===j)C=!0,r.charCodeAt(m)===k&&++m;else if(p!==n)continue;return r.slice(H,B)}return A=!0,r.slice(H,h)}for(;(f=R())!==F;){for(var M=[];f!==J&&f!==F;)M.push(f),f=R();l&&(M=l(M,_++))==null||b.push(M)}return b}function o(r,l){return r.map(function(b){return l.map(function(h){return E(b[h])}).join(e)})}function d(r,l){return l==null&&(l=X(r)),[l.map(E).join(e)].concat(o(r,l)).join(`
+`)}function c(r,l){return l==null&&(l=X(r)),o(r,l).join(`
+`)}function U(r){return r.map(W).join(`
+`)}function W(r){return r.map(E).join(e)}function E(r){return r==null?"":r instanceof Date?nn(r):t.test(r+="")?'"'+r.replace(/"/g,'""')+'"':r}return{parse:a,parseRows:s,format:d,formatBody:c,formatRows:U,formatRow:W,formatValue:E}}var an=tn(","),oe=an.parse;const sn=`total_matches,total_unique_teams,total_goals,last_updated
 13166,51,35478,2026-08-08
 `,rn=`team_abbr,team_name,home_wins,away_wins,total_wins
 MUN,Manchester United,447,328,775
@@ -898,7 +898,59 @@ Norwich City,1992-93,1992-08-29,5,"Crystal Palace, Nottingham Forest, Southampto
 11,Liverpool,2013-14,11,2014-04-06,WHU,West Ham United,2-1
 11,Liverpool,2013-14,11,2014-04-13,MCI,Manchester City,3-2
 11,Liverpool,2013-14,11,2014-04-20,NOR,Norwich City,3-2
-`,hn=`-- Total wins by team across all seasons (home/away split)
+`,hn=`team_name,team_abbr,start_date,end_date,gap_days,matches_between
+Nottingham Forest,NFO,1999-05-16,2022-08-14,8491,1
+Ipswich Town,IPS,2002-04-24,2024-11-10,8236,12
+Leeds United,LEE,2004-04-10,2020-09-19,6006,7
+Queens Park Rangers,QPR,1996-04-27,2011-08-20,5593,2
+Sheffield United,SHU,1994-04-30,2006-09-30,4536,8
+Leicester City,LEI,2004-05-08,2014-09-13,3780,4
+Norwich City,NOR,1995-03-20,2004-11-20,3533,21
+Crystal Palace,CRY,2005-04-23,2013-08-31,3052,5
+Watford,WAT,2007-05-05,2015-09-12,3052,5
+Sunderland,SUN,2017-05-06,2025-08-16,3024,3
+Southampton,SOU,2005-04-30,2012-09-22,2702,6
+Middlesbrough,MID,2009-04-11,2016-08-21,2689,7
+Wolverhampton Wanderers,WOL,2012-02-04,2018-09-01,2401,17
+Derby County,DER,2002-03-16,2007-09-17,2011,13
+Cardiff City,CAR,2014-04-12,2018-10-20,1652,12
+Reading,REA,2008-05-11,2012-11-17,1651,10
+Burnley,BUR,2010-05-09,2014-11-08,1644,10
+Fulham,FUL,2014-04-12,2018-08-26,1597,6
+Manchester City,MCI,1996-04-27,2000-08-23,1579,2
+Aston Villa,AVL,2016-02-06,2019-08-23,1294,15
+Hull City,HUL,2010-03-27,2013-08-24,1246,8
+Bolton Wanderers,BOL,1998-05-02,2001-08-18,1204,1
+West Bromwich Albion,WBA,2006-02-04,2008-09-13,952,16
+Blackburn Rovers,BLA,1999-03-20,2001-08-25,889,10
+West Ham United,WHU,2003-05-03,2005-08-13,833,1
+Bournemouth,BOU,2020-07-26,2022-08-06,741,0
+Birmingham City,BIR,2006-04-19,2007-08-25,493,6
+Charlton Athletic,CHA,1999-05-08,2000-08-19,469,1
+Newcastle United,NEW,2016-05-15,2017-08-26,468,2
+Huddersfield Town,HUD,2018-04-14,2018-11-05,205,14
+Everton,EVE,1994-05-07,1994-11-01,178,12
+Tottenham Hotspur,TOT,2008-05-03,2008-10-26,176,9
+Brighton and Hove Albion,BHA,2019-12-28,2020-06-20,175,9
+Stoke City,STO,2012-04-07,2012-09-29,175,11
+Wimbledon,WIM,1999-03-03,1999-08-07,157,11
+Liverpool,LIV,2012-05-08,2012-09-29,144,6
+Portsmouth,POR,2008-04-08,2008-08-30,144,7
+Coventry City,COV,1996-04-27,1996-09-14,140,6
+Sheffield Wednesday,SHW,1999-05-16,1999-10-02,139,9
+Arsenal,ARS,2006-05-07,2006-09-17,133,3
+Wigan Athletic,WIG,2010-04-18,2010-08-28,132,5
+Manchester United,MUN,2014-05-06,2014-09-14,131,4
+Chelsea,CHE,1996-04-13,1996-08-21,130,4
+Swansea City,SWA,2013-05-07,2013-09-01,117,4
+Brentford,BRE,2025-05-10,2025-08-23,105,3
+Bradford City,BRA,2001-01-01,2001-04-13,102,10
+Oldham Athletic,OLD,1993-05-08,1993-08-18,102,1
+Swindon Town,SWI,1994-02-05,1994-04-30,84,12
+Blackpool,BPL,2011-02-22,2011-05-14,81,9
+Luton Town,LUT,2024-01-30,2024-04-06,67,10
+Barnsley,BAR,1997-08-27,1997-10-20,54,6
+`,un=`-- Total wins by team across all seasons (home/away split)
 copy (
     with matches as (
         select
@@ -930,7 +982,7 @@ copy (
     group by team_abbr
     order by total_wins desc, team_abbr
 )
-to 'assets/data/wins.csv' (header, delimiter ',')`,un=`-- Season-by-season team counts and matches per team
+to 'assets/data/wins.csv' (header, delimiter ',')`,Cn=`-- Season-by-season team counts and matches per team
 copy (
     with team_counts as (
         select season_label, count(distinct team_id) as team_count
@@ -951,7 +1003,7 @@ copy (
     group by m.season_label, tc.team_count
     order by min(m.kickoff_date)
 )
-to 'assets/data/season_quality.csv' (header, delimiter ',')`,Cn=`-- Average home attendance by team per season
+to 'assets/data/season_quality.csv' (header, delimiter ',')`,yn=`-- Average home attendance by team per season
 copy (
     select
         season_label,
@@ -963,7 +1015,7 @@ copy (
     group by season_label, home_team_abbr
     order by season_label, home_team_abbr
 )
-to 'assets/data/attendance.csv' (header, delimiter ',')`,yn=`-- All-time Premier League table (P/W/D/L/points)
+to 'assets/data/attendance.csv' (header, delimiter ',')`,_n=`-- All-time Premier League table (P/W/D/L/points)
 copy (
     with appearances as (
         select
@@ -998,7 +1050,7 @@ copy (
     group by team_abbr
     order by points desc, team_abbr
 )
-to 'assets/data/all_time_table.csv' (header, delimiter ',')`,_n=`-- Most recent run of 5+ consecutive wins within a single season, per team
+to 'assets/data/all_time_table.csv' (header, delimiter ',')`,Un=`-- Most recent run of 5+ consecutive wins within a single season, per team
 copy (
     with team_games as (
         select
@@ -1078,7 +1130,7 @@ copy (
     where rn = 1
     order by streak_start desc, team_name
 )
-to 'assets/data/five_game_streaks.csv' (header, delimiter ',')`,Un=`-- Longest winning streaks within a single season (11+ wins), one row per win game
+to 'assets/data/five_game_streaks.csv' (header, delimiter ',')`,bn=`-- Longest winning streaks within a single season (11+ wins), one row per win game
 copy (
     with team_games as (
         select
@@ -1162,4 +1214,87 @@ copy (
        and w.grp = rs.grp
     order by rs.streak_id, w.kickoff_at, w.match_id
 )
-to 'assets/data/big_win_streaks.csv' (header, delimiter ',')`;function u(e,t){return+(e[t]??0)}function ie(e,t){return+(e[t]??0)}function N(e,t){return oe(e,t)}const Pn=(()=>{const t=oe(sn)[0];return{total_matches:+t.total_matches,total_unique_teams:+t.total_unique_teams,total_goals:+t.total_goals,last_updated:t.last_updated}})(),Fn=N(rn,e=>({team_abbr:e.team_abbr,team_name:e.team_name,home_wins:u(e,"home_wins"),away_wins:u(e,"away_wins"),total_wins:u(e,"total_wins")})),Dn=N(on,e=>({season_label:e.season_label,team_count:u(e,"team_count"),matches_played:u(e,"matches_played"),avg_matches_per_team:ie(e,"avg_matches_per_team")})),jn=N(ln,e=>({season_label:e.season_label,team_abbr:e.team_abbr,team_name:e.team_name,avg_home_attendance:ie(e,"avg_home_attendance")})),Yn=N(dn,e=>({team_abbr:e.team_abbr,team_name:e.team_name,matches_played:u(e,"matches_played"),wins:u(e,"wins"),draws:u(e,"draws"),losses:u(e,"losses"),points:u(e,"points")})),Qn=N(cn,e=>({team_name:e.team_name,season_label:e.season_label,streak_start:e.streak_start,streak_length:u(e,"streak_length"),opponents:e.opponents})),Gn=N(mn,e=>({streak_id:u(e,"streak_id"),team_name:e.team_name,season_label:e.season_label,streak_length:u(e,"streak_length"),match_date:e.match_date,opponent_abbr:e.opponent_abbr,opponent_name:e.opponent_name,score:e.score})),qn={wins:hn,quality:un,attendance:Cn,allTimeTable:yn,fiveGameStreaks:_n,bigWinStreaks:Un},An=E({...p(),...v()},"VCardActions"),bn=S()({name:"VCardActions",props:An(),setup(e,t){let{slots:n}=t;return Ge({VBtn:{slim:!0,variant:"text"}}),V(()=>o(e.tag,{class:O(["v-card-actions",e.class]),style:k(e.style)},n)),{}}}),fn=E({opacity:[Number,String],...p(),...v()},"VCardSubtitle"),Wn=S()({name:"VCardSubtitle",props:fn(),setup(e,t){let{slots:n}=t;return V(()=>o(e.tag,{class:O(["v-card-subtitle",e.class]),style:k([{"--v-card-subtitle-opacity":e.opacity},e.style])},n)),{}}}),Ln=Le("v-card-title"),vn=E({appendAvatar:String,appendIcon:I,prependAvatar:String,prependIcon:I,subtitle:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...p(),...te(),...v()},"VCardItem"),pn=S()({name:"VCardItem",props:vn(),setup(e,t){let{slots:n}=t;return V(()=>{const a=!!(e.prependAvatar||e.prependIcon),r=!!(a||n.prepend),c=!!(e.appendAvatar||e.appendIcon),_=!!(c||n.append),C=!!(e.title!=null||n.title),U=!!(e.subtitle!=null||n.subtitle);return o(e.tag,{class:O(["v-card-item",e.class]),style:k(e.style)},{default:()=>[r&&H("div",{key:"prepend",class:"v-card-item__prepend"},[n.prepend?o(Y,{key:"prepend-defaults",disabled:!a,defaults:{VAvatar:{density:e.density,image:e.prependAvatar},VIcon:{density:e.density,icon:e.prependIcon}}},n.prepend):H(K,null,[e.prependAvatar&&o($,{key:"prepend-avatar",density:e.density,image:e.prependAvatar},null),e.prependIcon&&o(x,{key:"prepend-icon",density:e.density,icon:e.prependIcon},null)])]),H("div",{class:"v-card-item__content"},[C&&o(Ln,{key:"title"},{default:()=>[n.title?.()??Z(e.title)]}),U&&o(Wn,{key:"subtitle"},{default:()=>[n.subtitle?.()??Z(e.subtitle)]}),n.default?.()]),_&&H("div",{key:"append",class:"v-card-item__append"},[n.append?o(Y,{key:"append-defaults",disabled:!c,defaults:{VAvatar:{density:e.density,image:e.appendAvatar},VIcon:{density:e.density,icon:e.appendIcon}}},n.append):H(K,null,[e.appendIcon&&o(x,{key:"append-icon",density:e.density,icon:e.appendIcon},null),e.appendAvatar&&o($,{key:"append-avatar",density:e.density,image:e.appendAvatar},null)])])]})}),{}}}),Sn=E({opacity:[Number,String],...p(),...v()},"VCardText"),En=S()({name:"VCardText",props:Sn(),setup(e,t){let{slots:n}=t;return V(()=>o(e.tag,{class:O(["v-card-text",e.class]),style:k([{"--v-card-text-opacity":e.opacity},e.style])},n)),{}}}),Mn=E({appendAvatar:String,appendIcon:I,disabled:Boolean,flat:Boolean,hover:Boolean,image:String,link:{type:Boolean,default:void 0},prependAvatar:String,prependIcon:I,ripple:{type:[Boolean,Object],default:!0},subtitle:{type:[String,Number,Boolean],default:void 0},text:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...Pe(),...p(),...te(),...Oe(),...ke(),...Ie(),...Re(),...Ve(),...Te(),...Ne(),...v(),...ze(),...He({variant:"elevated"})},"VCard"),$n=S()({name:"VCard",directives:{vRipple:z},props:Mn(),setup(e,t){let{attrs:n,slots:a}=t;const{themeClasses:r}=qe(e),{borderClasses:c}=ve(e),{colorClasses:_,colorStyles:C,variantClasses:U}=pe(e),{densityClasses:W}=Se(e),{dimensionStyles:M}=Ye(e),{elevationClasses:s}=Qe(e),{loaderClasses:i}=Ee(e),{locationStyles:A}=Me(e),{positionClasses:d}=ge(e),{roundedClasses:l}=we(e),y=Be(e,n),b=xe(void 0);return $e(()=>e.loading,(f,m)=>{b.value=!f&&typeof m=="string"?m:typeof f=="boolean"?void 0:f},{immediate:!0}),V(()=>{const f=e.link!==!1&&y.isLink.value,m=!e.disabled&&e.link!==!1&&(e.link||y.isClickable.value),R=f?"a":e.tag,g=!!(a.title||e.title!=null),w=!!(a.subtitle||e.subtitle!=null),B=g||w,L=!!(a.append||e.appendAvatar||e.appendIcon),Ae=!!(a.prepend||e.prependAvatar||e.prependIcon),be=!!(a.image||e.image),fe=B||Ae||L,We=!!(a.text||e.text!=null);return Ke(o(R,Ze(y.linkProps,{class:["v-card",{"v-card--disabled":e.disabled,"v-card--flat":e.flat,"v-card--hover":e.hover&&!(e.disabled||e.flat),"v-card--link":m},r.value,c.value,_.value,W.value,s.value,i.value,d.value,l.value,U.value,e.class],style:[C.value,M.value,A.value,{"--v-card-height":Je(e.height)},e.style],onClick:m&&y.navigate.value,tabindex:e.disabled?-1:void 0}),{default:()=>[be&&H("div",{key:"image",class:"v-card__image"},[a.image?o(Y,{key:"image-defaults",disabled:!e.image,defaults:{VImg:{cover:!0,src:e.image}}},a.image):o(Fe,{key:"image-img",cover:!0,src:e.image},null)]),o(De,{name:"v-card",active:!!e.loading,color:b.value},{default:a.loader}),fe&&o(pn,{key:"item",prependAvatar:e.prependAvatar,prependIcon:e.prependIcon,title:e.title,subtitle:e.subtitle,appendAvatar:e.appendAvatar,appendIcon:e.appendIcon},{default:a.item,prepend:a.prepend,title:a.title,subtitle:a.subtitle,append:a.append}),We&&o(En,{key:"text"},{default:()=>[a.text?.()??e.text]}),a.default?.(),a.actions&&o(bn,null,{default:a.actions}),je(m,"v-card")]}),[[z,m&&e.ripple]])}),{}}}),le=P.reduce((e,t)=>(e[t]={type:[Boolean,String,Number],default:!1},e),{}),de=P.reduce((e,t)=>{const n="offset"+Q(t);return e[n]={type:[String,Number],default:null},e},{}),ce=P.reduce((e,t)=>{const n="order"+Q(t);return e[n]={type:[String,Number],default:null},e},{}),ee={col:Object.keys(le),offset:Object.keys(de),order:Object.keys(ce)};function gn(e,t,n){let a=e;if(!(n==null||n===!1)){if(t){const r=t.replace(e,"");a+=`-${r}`}return e==="col"&&(a="v-"+a),e==="col"&&(n===""||n===!0)||(a+=`-${n}`),a.toLowerCase()}}const wn=["auto","start","end","center","baseline","stretch"],Bn=E({cols:{type:[Boolean,String,Number],default:!1},...le,offset:{type:[String,Number],default:null},...de,order:{type:[String,Number],default:null},...ce,alignSelf:{type:String,default:null,validator:e=>wn.includes(e)},...p(),...v()},"VCol"),xn=S()({name:"VCol",props:Bn(),setup(e,t){let{slots:n}=t;const a=se(()=>{const r=[];let c;for(c in ee)ee[c].forEach(C=>{const U=e[C],W=gn(c,C,U);W&&r.push(W)});const _=r.some(C=>C.startsWith("v-col-"));return r.push({"v-col":!_||!e.cols,[`v-col-${e.cols}`]:e.cols,[`offset-${e.offset}`]:e.offset,[`order-${e.order}`]:e.order,[`align-self-${e.alignSelf}`]:e.alignSelf}),r});return()=>ae(e.tag,{class:[a.value,e.class],style:e.style},n.default?.())}}),G=["start","end","center"],me=["space-between","space-around","space-evenly"];function q(e,t){return P.reduce((n,a)=>{const r=e+Q(a);return n[r]=t(),n},{})}const Hn=[...G,"baseline","stretch"],he=e=>Hn.includes(e),ue=q("align",()=>({type:String,default:null,validator:he})),Nn=[...G,...me],Ce=e=>Nn.includes(e),ye=q("justify",()=>({type:String,default:null,validator:Ce})),Tn=[...G,...me,"stretch"],_e=e=>Tn.includes(e),Ue=q("alignContent",()=>({type:String,default:null,validator:_e})),ne={align:Object.keys(ue),justify:Object.keys(ye),alignContent:Object.keys(Ue)},Vn={align:"align",justify:"justify",alignContent:"align-content"};function Rn(e,t,n){let a=Vn[e];if(n!=null){if(t){const r=t.replace(e,"");a+=`-${r}`}return a+=`-${n}`,a.toLowerCase()}}const In=E({dense:Boolean,noGutters:Boolean,align:{type:String,default:null,validator:he},...ue,justify:{type:String,default:null,validator:Ce},...ye,alignContent:{type:String,default:null,validator:_e},...Ue,...p(),...v()},"VRow"),zn=S()({name:"VRow",props:In(),setup(e,t){let{slots:n}=t;const a=se(()=>{const r=[];let c;for(c in ne)ne[c].forEach(_=>{const C=e[_],U=Rn(c,_,C);U&&r.push(U)});return r.push({"v-row--no-gutters":e.noGutters,"v-row--dense":e.dense,[`align-${e.align}`]:e.align,[`justify-${e.justify}`]:e.justify,[`align-content-${e.alignContent}`]:e.alignContent}),r});return()=>ae(e.tag,{class:["v-row",a.value,e.class],style:e.style},n.default?.())}});export{zn as V,xn as a,$n as b,En as c,Ln as d,Wn as e,qn as f,jn as g,Yn as h,Gn as i,Qn as j,Dn as q,Pn as s,Fn as w};
+to 'assets/data/big_win_streaks.csv' (header, delimiter ',')`,fn=`-- Longest calendar gap each team went between consecutive wins, across all seasons
+copy (
+    with team_games as (
+        select
+            match_id,
+            kickoff_at,
+            kickoff_date,
+            home_team_id as team_id,
+            home_team_name as team_name,
+            home_team_abbr as team_abbr,
+            result = 'home_win' as is_win
+        from "premier_league"."main"."fct_matches"
+        union all
+        select
+            match_id,
+            kickoff_at,
+            kickoff_date,
+            away_team_id as team_id,
+            away_team_name as team_name,
+            away_team_abbr as team_abbr,
+            result = 'away_win' as is_win
+        from "premier_league"."main"."fct_matches"
+    ),
+    games_ranked as (
+        select
+            *,
+            row_number() over (
+                partition by team_id
+                order by kickoff_at, match_id
+            ) as game_rank
+        from team_games
+    ),
+    wins as (
+        select
+            *,
+            lag(game_rank) over (
+                partition by team_id
+                order by kickoff_at, match_id
+            ) as prev_win_game_rank,
+            lag(kickoff_date) over (
+                partition by team_id
+                order by kickoff_at, match_id
+            ) as prev_win_date
+        from games_ranked
+        where is_win
+    ),
+    gaps as (
+        select
+            team_id,
+            min(team_name) as team_name,
+            min(team_abbr) as team_abbr,
+            prev_win_date as start_date,
+            kickoff_date as end_date,
+            datediff('day', prev_win_date, kickoff_date) as gap_days,
+            game_rank - prev_win_game_rank - 1 as matches_between
+        from wins
+        where prev_win_date is not null
+        group by
+            team_id,
+            prev_win_date,
+            kickoff_date,
+            game_rank - prev_win_game_rank - 1
+    ),
+    ranked as (
+        select
+            *,
+            row_number() over (
+                partition by team_id
+                order by gap_days desc, end_date desc
+            ) as rn
+        from gaps
+    )
+    select
+        team_name,
+        team_abbr,
+        start_date,
+        end_date,
+        gap_days,
+        matches_between
+    from ranked
+    where rn = 1
+    order by gap_days desc, team_name
+)
+to 'assets/data/longest_winless_gaps.csv' (header, delimiter ',')`;function Dn(e,t){const n=new Date(e+"T00:00:00Z"),a=new Date(t+"T00:00:00Z");let s=a.getUTCFullYear()-n.getUTCFullYear();const o=new Date(n);o.setUTCFullYear(n.getUTCFullYear()+s),o>a&&(s-=1,o.setUTCFullYear(o.getUTCFullYear()-1));const d=Math.round((a.getTime()-o.getTime())/864e5);let c;return s>0&&d>0?c=`${s} ${s===1?"year":"years"} and ${d} ${d===1?"day":"days"}`:s>0?c=`${s} ${s===1?"year":"years"}`:c=`${d} ${d===1?"day":"days"}`,{label:c,years:s,days:d}}function u(e,t){return+(e[t]??0)}function ie(e,t){return+(e[t]??0)}function w(e,t){return oe(e,t)}const jn=(()=>{const t=oe(sn)[0];return{total_matches:+t.total_matches,total_unique_teams:+t.total_unique_teams,total_goals:+t.total_goals,last_updated:t.last_updated}})(),Yn=w(rn,e=>({team_abbr:e.team_abbr,team_name:e.team_name,home_wins:u(e,"home_wins"),away_wins:u(e,"away_wins"),total_wins:u(e,"total_wins")})),Gn=w(on,e=>({season_label:e.season_label,team_count:u(e,"team_count"),matches_played:u(e,"matches_played"),avg_matches_per_team:ie(e,"avg_matches_per_team")})),Qn=w(ln,e=>({season_label:e.season_label,team_abbr:e.team_abbr,team_name:e.team_name,avg_home_attendance:ie(e,"avg_home_attendance")})),$n=w(dn,e=>({team_abbr:e.team_abbr,team_name:e.team_name,matches_played:u(e,"matches_played"),wins:u(e,"wins"),draws:u(e,"draws"),losses:u(e,"losses"),points:u(e,"points")})),qn=w(cn,e=>({team_name:e.team_name,season_label:e.season_label,streak_start:e.streak_start,streak_length:u(e,"streak_length"),opponents:e.opponents})),xn=w(mn,e=>({streak_id:u(e,"streak_id"),team_name:e.team_name,season_label:e.season_label,streak_length:u(e,"streak_length"),match_date:e.match_date,opponent_abbr:e.opponent_abbr,opponent_name:e.opponent_name,score:e.score})),zn=w(hn,e=>({team_name:e.team_name,team_abbr:e.team_abbr,start_date:e.start_date,end_date:e.end_date,gap_days:u(e,"gap_days"),matches_between:u(e,"matches_between")})),Zn={wins:un,quality:Cn,attendance:yn,allTimeTable:_n,fiveGameStreaks:Un,bigWinStreaks:bn,longestWinlessGaps:fn},An=g({...L(),...v()},"VCardActions"),Wn=S()({name:"VCardActions",props:An(),setup(e,t){let{slots:n}=t;return Qe({VBtn:{slim:!0,variant:"text"}}),N(()=>i(e.tag,{class:O(["v-card-actions",e.class]),style:I(e.style)},n)),{}}}),pn=g({opacity:[Number,String],...L(),...v()},"VCardSubtitle"),vn=S()({name:"VCardSubtitle",props:pn(),setup(e,t){let{slots:n}=t;return N(()=>i(e.tag,{class:O(["v-card-subtitle",e.class]),style:I([{"--v-card-subtitle-opacity":e.opacity},e.style])},n)),{}}}),Ln=pe("v-card-title"),Sn=g({appendAvatar:String,appendIcon:V,prependAvatar:String,prependIcon:V,subtitle:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...L(),...te(),...v()},"VCardItem"),gn=S()({name:"VCardItem",props:Sn(),setup(e,t){let{slots:n}=t;return N(()=>{const a=!!(e.prependAvatar||e.prependIcon),s=!!(a||n.prepend),o=!!(e.appendAvatar||e.appendIcon),d=!!(o||n.append),c=!!(e.title!=null||n.title),U=!!(e.subtitle!=null||n.subtitle);return i(e.tag,{class:O(["v-card-item",e.class]),style:I(e.style)},{default:()=>[s&&T("div",{key:"prepend",class:"v-card-item__prepend"},[n.prepend?i(Y,{key:"prepend-defaults",disabled:!a,defaults:{VAvatar:{density:e.density,image:e.prependAvatar},VIcon:{density:e.density,icon:e.prependIcon}}},n.prepend):T(Z,null,[e.prependAvatar&&i(q,{key:"prepend-avatar",density:e.density,image:e.prependAvatar},null),e.prependIcon&&i(x,{key:"prepend-icon",density:e.density,icon:e.prependIcon},null)])]),T("div",{class:"v-card-item__content"},[c&&i(Ln,{key:"title"},{default:()=>[n.title?.()??K(e.title)]}),U&&i(vn,{key:"subtitle"},{default:()=>[n.subtitle?.()??K(e.subtitle)]}),n.default?.()]),d&&T("div",{key:"append",class:"v-card-item__append"},[n.append?i(Y,{key:"append-defaults",disabled:!o,defaults:{VAvatar:{density:e.density,image:e.appendAvatar},VIcon:{density:e.density,icon:e.appendIcon}}},n.append):T(Z,null,[e.appendIcon&&i(x,{key:"append-icon",density:e.density,icon:e.appendIcon},null),e.appendAvatar&&i(q,{key:"append-avatar",density:e.density,image:e.appendAvatar},null)])])]})}),{}}}),wn=g({opacity:[Number,String],...L(),...v()},"VCardText"),En=S()({name:"VCardText",props:wn(),setup(e,t){let{slots:n}=t;return N(()=>i(e.tag,{class:O(["v-card-text",e.class]),style:I([{"--v-card-text-opacity":e.opacity},e.style])},n)),{}}}),Mn=g({appendAvatar:String,appendIcon:V,disabled:Boolean,flat:Boolean,hover:Boolean,image:String,link:{type:Boolean,default:void 0},prependAvatar:String,prependIcon:V,ripple:{type:[Boolean,Object],default:!0},subtitle:{type:[String,Number,Boolean],default:void 0},text:{type:[String,Number,Boolean],default:void 0},title:{type:[String,Number,Boolean],default:void 0},...Pe(),...L(),...te(),...Oe(),...Ie(),...Ve(),...Re(),...Ne(),...ke(),...Te(),...v(),...ze(),...He({variant:"elevated"})},"VCard"),Kn=S()({name:"VCard",directives:{vRipple:z},props:Mn(),setup(e,t){let{attrs:n,slots:a}=t;const{themeClasses:s}=$e(e),{borderClasses:o}=ve(e),{colorClasses:d,colorStyles:c,variantClasses:U}=Le(e),{densityClasses:W}=Se(e),{dimensionStyles:E}=Ye(e),{elevationClasses:r}=Ge(e),{loaderClasses:l}=ge(e),{locationStyles:b}=we(e),{positionClasses:h}=Ee(e),{roundedClasses:m}=Me(e),_=Be(e,n),f=xe(void 0);return qe(()=>e.loading,(A,C)=>{f.value=!A&&typeof C=="string"?C:typeof A=="boolean"?void 0:A},{immediate:!0}),N(()=>{const A=e.link!==!1&&_.isLink.value,C=!e.disabled&&e.link!==!1&&(e.link||_.isClickable.value),R=A?"a":e.tag,M=!!(a.title||e.title!=null),B=!!(a.subtitle||e.subtitle!=null),H=M||B,p=!!(a.append||e.appendAvatar||e.appendIcon),be=!!(a.prepend||e.prependAvatar||e.prependIcon),fe=!!(a.image||e.image),Ae=H||be||p,We=!!(a.text||e.text!=null);return Ze(i(R,Ke(_.linkProps,{class:["v-card",{"v-card--disabled":e.disabled,"v-card--flat":e.flat,"v-card--hover":e.hover&&!(e.disabled||e.flat),"v-card--link":C},s.value,o.value,d.value,W.value,r.value,l.value,h.value,m.value,U.value,e.class],style:[c.value,E.value,b.value,{"--v-card-height":Je(e.height)},e.style],onClick:C&&_.navigate.value,tabindex:e.disabled?-1:void 0}),{default:()=>[fe&&T("div",{key:"image",class:"v-card__image"},[a.image?i(Y,{key:"image-defaults",disabled:!e.image,defaults:{VImg:{cover:!0,src:e.image}}},a.image):i(Fe,{key:"image-img",cover:!0,src:e.image},null)]),i(De,{name:"v-card",active:!!e.loading,color:f.value},{default:a.loader}),Ae&&i(gn,{key:"item",prependAvatar:e.prependAvatar,prependIcon:e.prependIcon,title:e.title,subtitle:e.subtitle,appendAvatar:e.appendAvatar,appendIcon:e.appendIcon},{default:a.item,prepend:a.prepend,title:a.title,subtitle:a.subtitle,append:a.append}),We&&i(En,{key:"text"},{default:()=>[a.text?.()??e.text]}),a.default?.(),a.actions&&i(Wn,null,{default:a.actions}),je(C,"v-card")]}),[[z,C&&e.ripple]])}),{}}}),le=P.reduce((e,t)=>(e[t]={type:[Boolean,String,Number],default:!1},e),{}),de=P.reduce((e,t)=>{const n="offset"+G(t);return e[n]={type:[String,Number],default:null},e},{}),ce=P.reduce((e,t)=>{const n="order"+G(t);return e[n]={type:[String,Number],default:null},e},{}),ee={col:Object.keys(le),offset:Object.keys(de),order:Object.keys(ce)};function Bn(e,t,n){let a=e;if(!(n==null||n===!1)){if(t){const s=t.replace(e,"");a+=`-${s}`}return e==="col"&&(a="v-"+a),e==="col"&&(n===""||n===!0)||(a+=`-${n}`),a.toLowerCase()}}const Hn=["auto","start","end","center","baseline","stretch"],Tn=g({cols:{type:[Boolean,String,Number],default:!1},...le,offset:{type:[String,Number],default:null},...de,order:{type:[String,Number],default:null},...ce,alignSelf:{type:String,default:null,validator:e=>Hn.includes(e)},...L(),...v()},"VCol"),Jn=S()({name:"VCol",props:Tn(),setup(e,t){let{slots:n}=t;const a=se(()=>{const s=[];let o;for(o in ee)ee[o].forEach(c=>{const U=e[c],W=Bn(o,c,U);W&&s.push(W)});const d=s.some(c=>c.startsWith("v-col-"));return s.push({"v-col":!d||!e.cols,[`v-col-${e.cols}`]:e.cols,[`offset-${e.offset}`]:e.offset,[`order-${e.order}`]:e.order,[`align-self-${e.alignSelf}`]:e.alignSelf}),s});return()=>ae(e.tag,{class:[a.value,e.class],style:e.style},n.default?.())}}),Q=["start","end","center"],me=["space-between","space-around","space-evenly"];function $(e,t){return P.reduce((n,a)=>{const s=e+G(a);return n[s]=t(),n},{})}const kn=[...Q,"baseline","stretch"],he=e=>kn.includes(e),ue=$("align",()=>({type:String,default:null,validator:he})),Nn=[...Q,...me],Ce=e=>Nn.includes(e),ye=$("justify",()=>({type:String,default:null,validator:Ce})),Rn=[...Q,...me,"stretch"],_e=e=>Rn.includes(e),Ue=$("alignContent",()=>({type:String,default:null,validator:_e})),ne={align:Object.keys(ue),justify:Object.keys(ye),alignContent:Object.keys(Ue)},Vn={align:"align",justify:"justify",alignContent:"align-content"};function In(e,t,n){let a=Vn[e];if(n!=null){if(t){const s=t.replace(e,"");a+=`-${s}`}return a+=`-${n}`,a.toLowerCase()}}const On=g({dense:Boolean,noGutters:Boolean,align:{type:String,default:null,validator:he},...ue,justify:{type:String,default:null,validator:Ce},...ye,alignContent:{type:String,default:null,validator:_e},...Ue,...L(),...v()},"VRow"),Xn=S()({name:"VRow",props:On(),setup(e,t){let{slots:n}=t;const a=se(()=>{const s=[];let o;for(o in ne)ne[o].forEach(d=>{const c=e[d],U=In(o,d,c);U&&s.push(U)});return s.push({"v-row--no-gutters":e.noGutters,"v-row--dense":e.dense,[`align-${e.align}`]:e.align,[`justify-${e.justify}`]:e.justify,[`align-content-${e.alignContent}`]:e.alignContent}),s});return()=>ae(e.tag,{class:["v-row",a.value,e.class],style:e.style},n.default?.())}});export{Xn as V,Jn as a,Kn as b,En as c,Ln as d,vn as e,Zn as f,Qn as g,$n as h,xn as i,qn as j,Dn as k,zn as l,Gn as q,jn as s,Yn as w};

@@ -127,7 +127,8 @@ const entries = [
   { label: 'Data Quality', path: '/data-quality' },
   { label: 'Attendances', path: '/attendances' },
   { label: 'Five-Game Streaks', path: '/five-game-streaks' },
-  { label: 'Big Win Streaks', path: '/big-win-streaks' }
+  { label: 'Big Win Streaks', path: '/big-win-streaks' },
+  { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

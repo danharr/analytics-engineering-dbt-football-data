@@ -12,6 +12,7 @@ An interactive dashboard of Premier League football history.
 - **Attendances** — average home attendance by team per season
 - **Five-Game Streaks** — the last time each team won 5+ games in a row within a single season
 - **Big Win Streaks** — the longest winning streaks within a single season (11+ wins), with date, opponent and score of every win
+- **Longest Gap Between Wins** — for every team, the longest time between two consecutive wins, shown in years and days
 
 ## Data
 

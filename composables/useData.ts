@@ -6,12 +6,14 @@ import attendanceCsv from '~/assets/data/attendance.csv?raw'
 import allTimeCsv from '~/assets/data/all_time_table.csv?raw'
 import fiveGameStreaksCsv from '~/assets/data/five_game_streaks.csv?raw'
 import bigWinStreaksCsv from '~/assets/data/big_win_streaks.csv?raw'
+import longestWinlessGapsCsv from '~/assets/data/longest_winless_gaps.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
 import allTimeSql from '~/assets/data/all_time_table.sql?raw'
 import fiveGameStreaksSql from '~/assets/data/five_game_streaks.sql?raw'
 import bigWinStreaksSql from '~/assets/data/big_win_streaks.sql?raw'
+import longestWinlessGapsSql from '~/assets/data/longest_winless_gaps.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -69,6 +71,37 @@ export interface BigWinStreakGame {
   opponent_abbr: string
   opponent_name: string
   score: string
+}
+
+export interface LongestWinlessGapRow {
+  team_name: string
+  team_abbr: string
+  start_date: string
+  end_date: string
+  gap_days: number
+  matches_between: number
+}
+
+export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
+  const s = new Date(start + 'T00:00:00Z')
+  const e = new Date(end + 'T00:00:00Z')
+  let years = e.getUTCFullYear() - s.getUTCFullYear()
+  const anniv = new Date(s)
+  anniv.setUTCFullYear(s.getUTCFullYear() + years)
+  if (anniv > e) {
+    years -= 1
+    anniv.setUTCFullYear(anniv.getUTCFullYear() - 1)
+  }
+  const days = Math.round((e.getTime() - anniv.getTime()) / 86400000)
+  let label: string
+  if (years > 0 && days > 0) {
+    label = `${years} ${years === 1 ? 'year' : 'years'} and ${days} ${days === 1 ? 'day' : 'days'}`
+  } else if (years > 0) {
+    label = `${years} ${years === 1 ? 'year' : 'years'}`
+  } else {
+    label = `${days} ${days === 1 ? 'day' : 'days'}`
+  }
+  return { label, years, days }
 }
 
 function toInt(d: Record<string, string>, key: string): number {
@@ -145,11 +178,21 @@ export const bigWinStreaks = parse<BigWinStreakGame>(bigWinStreaksCsv, d => ({
   score: d.score
 }))
 
+export const longestWinlessGaps = parse<LongestWinlessGapRow>(longestWinlessGapsCsv, d => ({
+  team_name: d.team_name,
+  team_abbr: d.team_abbr,
+  start_date: d.start_date,
+  end_date: d.end_date,
+  gap_days: toInt(d, 'gap_days'),
+  matches_between: toInt(d, 'matches_between')
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
   attendance: attendanceSql,
   allTimeTable: allTimeSql,
   fiveGameStreaks: fiveGameStreaksSql,
-  bigWinStreaks: bigWinStreaksSql
+  bigWinStreaks: bigWinStreaksSql,
+  longestWinlessGaps: longestWinlessGapsSql
 }
