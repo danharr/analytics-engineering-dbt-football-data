@@ -292,7 +292,7 @@
         
         <div class="container">
           <div class="header">
-            <h1>undefined</h1>
+            <h1>Football Started in 1992</h1>
             <div class="header-meta">
               
               <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &gt; 0">
