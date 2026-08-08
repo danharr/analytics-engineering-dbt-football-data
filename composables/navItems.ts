@@ -3,5 +3,6 @@ export const navItems = [
   { label: 'Most Wins', path: '/most-wins', icon: 'mdi-chart-bar' },
   { label: 'Data Quality', path: '/data-quality', icon: 'mdi-shield-check' },
   { label: 'Attendances', path: '/attendances', icon: 'mdi-stadium' },
-  { label: 'Five-Game Streaks', path: '/five-game-streaks', icon: 'mdi-run-fast' }
+  { label: 'Five-Game Streaks', path: '/five-game-streaks', icon: 'mdi-run-fast' },
+  { label: 'Big Win Streaks', path: '/big-win-streaks', icon: 'mdi-format-list-numbered' }
 ]

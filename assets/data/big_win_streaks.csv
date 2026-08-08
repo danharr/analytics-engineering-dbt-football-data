@@ -1,0 +1,149 @@
+streak_id,team_name,season_label,streak_length,match_date,opponent_abbr,opponent_name,score
+1,Manchester City,2017-18,18,2017-08-26,BOU,Bournemouth,2-1
+1,Manchester City,2017-18,18,2017-09-09,LIV,Liverpool,5-0
+1,Manchester City,2017-18,18,2017-09-16,WAT,Watford,6-0
+1,Manchester City,2017-18,18,2017-09-23,CRY,Crystal Palace,5-0
+1,Manchester City,2017-18,18,2017-09-30,CHE,Chelsea,1-0
+1,Manchester City,2017-18,18,2017-10-14,STO,Stoke City,7-2
+1,Manchester City,2017-18,18,2017-10-21,BUR,Burnley,3-0
+1,Manchester City,2017-18,18,2017-10-28,WBA,West Bromwich Albion,3-2
+1,Manchester City,2017-18,18,2017-11-05,ARS,Arsenal,3-1
+1,Manchester City,2017-18,18,2017-11-18,LEI,Leicester City,2-0
+1,Manchester City,2017-18,18,2017-11-26,HUD,Huddersfield Town,2-1
+1,Manchester City,2017-18,18,2017-11-29,SOU,Southampton,2-1
+1,Manchester City,2017-18,18,2017-12-03,WHU,West Ham United,2-1
+1,Manchester City,2017-18,18,2017-12-10,MUN,Manchester United,2-1
+1,Manchester City,2017-18,18,2017-12-13,SWA,Swansea City,4-0
+1,Manchester City,2017-18,18,2017-12-16,TOT,Tottenham Hotspur,4-1
+1,Manchester City,2017-18,18,2017-12-23,BOU,Bournemouth,4-0
+1,Manchester City,2017-18,18,2017-12-27,NEW,Newcastle United,1-0
+2,Liverpool,2019-20,18,2019-10-27,TOT,Tottenham Hotspur,2-1
+2,Liverpool,2019-20,18,2019-11-02,AVL,Aston Villa,2-1
+2,Liverpool,2019-20,18,2019-11-10,MCI,Manchester City,3-1
+2,Liverpool,2019-20,18,2019-11-23,CRY,Crystal Palace,2-1
+2,Liverpool,2019-20,18,2019-11-30,BHA,Brighton and Hove Albion,2-1
+2,Liverpool,2019-20,18,2019-12-04,EVE,Everton,5-2
+2,Liverpool,2019-20,18,2019-12-07,BOU,Bournemouth,3-0
+2,Liverpool,2019-20,18,2019-12-14,WAT,Watford,2-0
+2,Liverpool,2019-20,18,2019-12-26,LEI,Leicester City,4-0
+2,Liverpool,2019-20,18,2019-12-29,WOL,Wolverhampton Wanderers,1-0
+2,Liverpool,2019-20,18,2020-01-02,SHU,Sheffield United,2-0
+2,Liverpool,2019-20,18,2020-01-11,TOT,Tottenham Hotspur,1-0
+2,Liverpool,2019-20,18,2020-01-19,MUN,Manchester United,2-0
+2,Liverpool,2019-20,18,2020-01-23,WOL,Wolverhampton Wanderers,2-1
+2,Liverpool,2019-20,18,2020-01-29,WHU,West Ham United,2-0
+2,Liverpool,2019-20,18,2020-02-01,SOU,Southampton,4-0
+2,Liverpool,2019-20,18,2020-02-15,NOR,Norwich City,1-0
+2,Liverpool,2019-20,18,2020-02-24,WHU,West Ham United,3-2
+3,Manchester City,2020-21,15,2020-12-19,SOU,Southampton,1-0
+3,Manchester City,2020-21,15,2020-12-26,NEW,Newcastle United,2-0
+3,Manchester City,2020-21,15,2021-01-03,CHE,Chelsea,3-1
+3,Manchester City,2020-21,15,2021-01-13,BHA,Brighton and Hove Albion,1-0
+3,Manchester City,2020-21,15,2021-01-17,CRY,Crystal Palace,4-0
+3,Manchester City,2020-21,15,2021-01-20,AVL,Aston Villa,2-0
+3,Manchester City,2020-21,15,2021-01-26,WBA,West Bromwich Albion,5-0
+3,Manchester City,2020-21,15,2021-01-30,SHU,Sheffield United,1-0
+3,Manchester City,2020-21,15,2021-02-03,BUR,Burnley,2-0
+3,Manchester City,2020-21,15,2021-02-07,LIV,Liverpool,4-1
+3,Manchester City,2020-21,15,2021-02-13,TOT,Tottenham Hotspur,3-0
+3,Manchester City,2020-21,15,2021-02-17,EVE,Everton,3-1
+3,Manchester City,2020-21,15,2021-02-21,ARS,Arsenal,1-0
+3,Manchester City,2020-21,15,2021-02-27,WHU,West Ham United,2-1
+3,Manchester City,2020-21,15,2021-03-02,WOL,Wolverhampton Wanderers,4-1
+4,Manchester City,2018-19,14,2019-02-03,ARS,Arsenal,3-1
+4,Manchester City,2018-19,14,2019-02-06,EVE,Everton,2-0
+4,Manchester City,2018-19,14,2019-02-10,CHE,Chelsea,6-0
+4,Manchester City,2018-19,14,2019-02-27,WHU,West Ham United,1-0
+4,Manchester City,2018-19,14,2019-03-02,BOU,Bournemouth,1-0
+4,Manchester City,2018-19,14,2019-03-09,WAT,Watford,3-1
+4,Manchester City,2018-19,14,2019-03-30,FUL,Fulham,2-0
+4,Manchester City,2018-19,14,2019-04-03,CAR,Cardiff City,2-0
+4,Manchester City,2018-19,14,2019-04-14,CRY,Crystal Palace,3-1
+4,Manchester City,2018-19,14,2019-04-20,TOT,Tottenham Hotspur,1-0
+4,Manchester City,2018-19,14,2019-04-24,MUN,Manchester United,2-0
+4,Manchester City,2018-19,14,2019-04-28,BUR,Burnley,1-0
+4,Manchester City,2018-19,14,2019-05-06,LEI,Leicester City,1-0
+4,Manchester City,2018-19,14,2019-05-12,BHA,Brighton and Hove Albion,4-1
+5,Arsenal,2001-02,13,2002-02-10,EVE,Everton,1-0
+5,Arsenal,2001-02,13,2002-02-23,FUL,Fulham,4-1
+5,Arsenal,2001-02,13,2002-03-02,NEW,Newcastle United,2-0
+5,Arsenal,2001-02,13,2002-03-05,DER,Derby County,1-0
+5,Arsenal,2001-02,13,2002-03-17,AVL,Aston Villa,2-1
+5,Arsenal,2001-02,13,2002-03-30,SUN,Sunderland,3-0
+5,Arsenal,2001-02,13,2002-04-01,CHA,Charlton Athletic,3-0
+5,Arsenal,2001-02,13,2002-04-06,TOT,Tottenham Hotspur,2-1
+5,Arsenal,2001-02,13,2002-04-21,IPS,Ipswich Town,2-0
+5,Arsenal,2001-02,13,2002-04-24,WHU,West Ham United,2-0
+5,Arsenal,2001-02,13,2002-04-29,BOL,Bolton Wanderers,2-0
+5,Arsenal,2001-02,13,2002-05-08,MUN,Manchester United,1-0
+5,Arsenal,2001-02,13,2002-05-11,EVE,Everton,4-3
+6,Chelsea,2016-17,13,2016-10-01,HUL,Hull City,2-0
+6,Chelsea,2016-17,13,2016-10-15,LEI,Leicester City,3-0
+6,Chelsea,2016-17,13,2016-10-23,MUN,Manchester United,4-0
+6,Chelsea,2016-17,13,2016-10-30,SOU,Southampton,2-0
+6,Chelsea,2016-17,13,2016-11-05,EVE,Everton,5-0
+6,Chelsea,2016-17,13,2016-11-20,MID,Middlesbrough,1-0
+6,Chelsea,2016-17,13,2016-11-26,TOT,Tottenham Hotspur,2-1
+6,Chelsea,2016-17,13,2016-12-03,MCI,Manchester City,3-1
+6,Chelsea,2016-17,13,2016-12-11,WBA,West Bromwich Albion,1-0
+6,Chelsea,2016-17,13,2016-12-14,SUN,Sunderland,1-0
+6,Chelsea,2016-17,13,2016-12-17,CRY,Crystal Palace,1-0
+6,Chelsea,2016-17,13,2016-12-26,BOU,Bournemouth,3-0
+6,Chelsea,2016-17,13,2016-12-31,STO,Stoke City,4-2
+7,Manchester City,2021-22,12,2021-11-06,MUN,Manchester United,2-0
+7,Manchester City,2021-22,12,2021-11-21,EVE,Everton,3-0
+7,Manchester City,2021-22,12,2021-11-28,WHU,West Ham United,2-1
+7,Manchester City,2021-22,12,2021-12-01,AVL,Aston Villa,2-1
+7,Manchester City,2021-22,12,2021-12-04,WAT,Watford,3-1
+7,Manchester City,2021-22,12,2021-12-11,WOL,Wolverhampton Wanderers,1-0
+7,Manchester City,2021-22,12,2021-12-14,LEE,Leeds United,7-0
+7,Manchester City,2021-22,12,2021-12-19,NEW,Newcastle United,4-0
+7,Manchester City,2021-22,12,2021-12-26,LEI,Leicester City,6-3
+7,Manchester City,2021-22,12,2021-12-29,BRE,Brentford,1-0
+7,Manchester City,2021-22,12,2022-01-01,ARS,Arsenal,2-1
+7,Manchester City,2021-22,12,2022-01-15,CHE,Chelsea,1-0
+8,Manchester City,2022-23,12,2023-02-25,BOU,Bournemouth,4-1
+8,Manchester City,2022-23,12,2023-03-04,NEW,Newcastle United,2-0
+8,Manchester City,2022-23,12,2023-03-11,CRY,Crystal Palace,1-0
+8,Manchester City,2022-23,12,2023-04-01,LIV,Liverpool,4-1
+8,Manchester City,2022-23,12,2023-04-08,SOU,Southampton,4-1
+8,Manchester City,2022-23,12,2023-04-15,LEI,Leicester City,3-1
+8,Manchester City,2022-23,12,2023-04-26,ARS,Arsenal,4-1
+8,Manchester City,2022-23,12,2023-04-30,FUL,Fulham,2-1
+8,Manchester City,2022-23,12,2023-05-03,WHU,West Ham United,3-0
+8,Manchester City,2022-23,12,2023-05-06,LEE,Leeds United,2-1
+8,Manchester City,2022-23,12,2023-05-14,EVE,Everton,3-0
+8,Manchester City,2022-23,12,2023-05-21,CHE,Chelsea,1-0
+9,Manchester United,1999-00,11,2000-03-11,DER,Derby County,3-1
+9,Manchester United,1999-00,11,2000-03-18,LEI,Leicester City,2-0
+9,Manchester United,1999-00,11,2000-03-25,BRA,Bradford City,4-0
+9,Manchester United,1999-00,11,2000-04-01,WHU,West Ham United,7-1
+9,Manchester United,1999-00,11,2000-04-10,MID,Middlesbrough,4-3
+9,Manchester United,1999-00,11,2000-04-15,SUN,Sunderland,4-0
+9,Manchester United,1999-00,11,2000-04-22,SOU,Southampton,3-1
+9,Manchester United,1999-00,11,2000-04-24,CHE,Chelsea,3-2
+9,Manchester United,1999-00,11,2000-04-29,WAT,Watford,3-2
+9,Manchester United,1999-00,11,2000-05-06,TOT,Tottenham Hotspur,3-1
+9,Manchester United,1999-00,11,2000-05-14,AVL,Aston Villa,1-0
+10,Manchester United,2008-09,11,2008-12-26,STO,Stoke City,1-0
+10,Manchester United,2008-09,11,2008-12-29,MID,Middlesbrough,1-0
+10,Manchester United,2008-09,11,2009-01-11,CHE,Chelsea,3-0
+10,Manchester United,2008-09,11,2009-01-14,WIG,Wigan Athletic,1-0
+10,Manchester United,2008-09,11,2009-01-17,BOL,Bolton Wanderers,1-0
+10,Manchester United,2008-09,11,2009-01-27,WBA,West Bromwich Albion,5-0
+10,Manchester United,2008-09,11,2009-01-31,EVE,Everton,1-0
+10,Manchester United,2008-09,11,2009-02-08,WHU,West Ham United,1-0
+10,Manchester United,2008-09,11,2009-02-18,FUL,Fulham,3-0
+10,Manchester United,2008-09,11,2009-02-21,BLA,Blackburn Rovers,2-1
+10,Manchester United,2008-09,11,2009-03-04,NEW,Newcastle United,2-1
+11,Liverpool,2013-14,11,2014-02-08,ARS,Arsenal,5-1
+11,Liverpool,2013-14,11,2014-02-12,FUL,Fulham,3-2
+11,Liverpool,2013-14,11,2014-02-23,SWA,Swansea City,4-3
+11,Liverpool,2013-14,11,2014-03-01,SOU,Southampton,3-0
+11,Liverpool,2013-14,11,2014-03-16,MUN,Manchester United,3-0
+11,Liverpool,2013-14,11,2014-03-22,CAR,Cardiff City,6-3
+11,Liverpool,2013-14,11,2014-03-26,SUN,Sunderland,2-1
+11,Liverpool,2013-14,11,2014-03-30,TOT,Tottenham Hotspur,4-0
+11,Liverpool,2013-14,11,2014-04-06,WHU,West Ham United,2-1
+11,Liverpool,2013-14,11,2014-04-13,MCI,Manchester City,3-2
+11,Liverpool,2013-14,11,2014-04-20,NOR,Norwich City,3-2
