@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/sitemap'],
 
   site: {
-    url: 'https://danharr.github.io'
+    url: 'https://footballstartedin1992.com'
   },
 
   sitemap: {
@@ -16,7 +16,7 @@ export default defineNuxtConfig({
   },
 
   app: {
-    baseURL: '/analytics-engineering-dbt-football-data/',
+    baseURL: '/',
     head: {
       htmlAttrs: { lang: 'en' }
     }

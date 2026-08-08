@@ -2,7 +2,7 @@
 
 An interactive dashboard of Premier League football history, built from the Premier League's public API.
 
-**Live site:** [https://danharr.github.io/analytics-engineering-dbt-football-data/](https://danharr.github.io/analytics-engineering-dbt-football-data/)
+**Live site:** [https://footballstartedin1992.com/](https://footballstartedin1992.com/)
 
 ## Charts
 
