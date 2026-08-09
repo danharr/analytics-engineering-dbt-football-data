@@ -1,0 +1,80 @@
+const teamColoursMap: Record<string, string> = {
+  Arsenal: '#EF0107',
+  'Aston Villa': '#670E36',
+  Barnsley: '#B01E32',
+  'Birmingham City': '#1B48B0',
+  'Blackburn Rovers': '#009BE1',
+  Blackpool: '#F28C28',
+  'Bolton Wanderers': '#1E1E28',
+  Bournemouth: '#DA291C',
+  'Bradford City': '#C8102E',
+  Brentford: '#E30613',
+  'Brighton and Hove Albion': '#0057B8',
+  Burnley: '#6C1D45',
+  'Cardiff City': '#0070B5',
+  'Charlton Athletic': '#C4122E',
+  Chelsea: '#034694',
+  'Coventry City': '#6FB3D2',
+  'Crystal Palace': '#1B458F',
+  'Derby County': '#2B2B2B',
+  Everton: '#003399',
+  Fulham: '#111111',
+  'Huddersfield Town': '#0E63AD',
+  'Hull City': '#F5971D',
+  'Ipswich Town': '#0033A0',
+  'Leeds United': '#1D4489',
+  'Leicester City': '#003090',
+  Liverpool: '#C8102E',
+  'Luton Town': '#F78F1E',
+  'Manchester City': '#6CABDD',
+  'Manchester United': '#DA291C',
+  Middlesbrough: '#E11A22',
+  'Newcastle United': '#241F20',
+  'Norwich City': '#EFD500',
+  'Nottingham Forest': '#DD0000',
+  'Oldham Athletic': '#1E4E9E',
+  Portsmouth: '#0060A9',
+  'Queens Park Rangers': '#1E5AA8',
+  Reading: '#00308B',
+  'Sheffield United': '#D80000',
+  'Sheffield Wednesday': '#00489B',
+  Southampton: '#D71920',
+  'Stoke City': '#C8102E',
+  Sunderland: '#EB172B',
+  'Swansea City': '#1B1B1B',
+  'Swindon Town': '#E4002B',
+  'Tottenham Hotspur': '#132257',
+  Watford: '#FBEE23',
+  'West Bromwich Albion': '#1A2A54',
+  'West Ham United': '#7A263A',
+  'Wigan Athletic': '#005CB9',
+  Wimbledon: '#12326E',
+  'Wolverhampton Wanderers': '#FDB913'
+}
+
+const fallbackPalette = [
+  '#7c3aed', '#059669', '#dc2626', '#2563eb', '#d97706',
+  '#0d9488', '#be185d', '#4f46e5', '#b45309', '#15803d',
+  '#9333ea', '#334155'
+]
+
+function hashCode(str: string): number {
+  let h = 0
+  for (let i = 0; i < str.length; i++) {
+    h = ((h << 5) - h + str.charCodeAt(i)) | 0
+  }
+  return Math.abs(h)
+}
+
+export function teamColour(teamName: string): string {
+  return teamColoursMap[teamName] ?? fallbackPalette[hashCode(teamName) % fallbackPalette.length]
+}
+
+export function readableTextOn(bg: string): string {
+  const hex = bg.replace('#', '')
+  const r = parseInt(hex.slice(0, 2), 16)
+  const g = parseInt(hex.slice(2, 4), 16)
+  const b = parseInt(hex.slice(4, 6), 16)
+  const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255
+  return lum > 0.55 ? '#111111' : '#ffffff'
+}

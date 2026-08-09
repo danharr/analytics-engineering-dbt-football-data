@@ -13,6 +13,7 @@ import htLeadNoWinStreaksCsv from '~/assets/data/ht_lead_no_win_streaks.csv?raw'
 import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
 import mostComebacksCsv from '~/assets/data/most_comebacks.csv?raw'
 import managerWinsCsv from '~/assets/data/manager_wins.csv?raw'
+import managerTimelineCsv from '~/assets/data/manager_timeline.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -26,6 +27,7 @@ import htLeadNoWinStreaksSql from '~/assets/data/ht_lead_no_win_streaks.sql?raw'
 import comebackKingsSql from '~/assets/data/comeback_kings.sql?raw'
 import mostComebacksSql from '~/assets/data/most_comebacks.sql?raw'
 import managerWinsSql from '~/assets/data/manager_wins.sql?raw'
+import managerTimelineSql from '~/assets/data/manager_timeline.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -161,6 +163,15 @@ export interface ManagerWinsRow {
   points: number
   goals_for: number
   goals_against: number
+}
+
+export interface ManagerTimelineRow {
+  team_name: string
+  manager_name: string
+  from_date: string
+  until_date: string
+  present: number
+  role: string
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -337,6 +348,15 @@ export const managerWins = parse<ManagerWinsRow>(managerWinsCsv, d => ({
   goals_against: toInt(d, 'goals_against')
 }))
 
+export const managerTimeline = parse<ManagerTimelineRow>(managerTimelineCsv, d => ({
+  team_name: d.team_name,
+  manager_name: d.manager_name,
+  from_date: d.from_date,
+  until_date: d.until_date,
+  present: toInt(d, 'present'),
+  role: d.role
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -350,5 +370,6 @@ export const sqlQueries = {
   htLeadNoWinStreaks: htLeadNoWinStreaksSql,
   comebackKings: comebackKingsSql,
   mostComebacks: mostComebacksSql,
-  managerWins: managerWinsSql
+  managerWins: managerWinsSql,
+  managerTimeline: managerTimelineSql
 }

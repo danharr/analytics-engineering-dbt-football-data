@@ -27,6 +27,6 @@ copy (
         where manager_name is not null
         group by manager_name
     )
-    order by wins desc, win_pct desc, games desc
+    order by wins desc, win_pct desc, games desc, manager_name
 )
 to 'assets/data/manager_wins.csv' (header, delimiter ',')

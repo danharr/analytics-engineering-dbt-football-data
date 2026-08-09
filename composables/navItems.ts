@@ -11,5 +11,6 @@ export const navItems = [
   { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks', icon: 'mdi-flag-checkered' },
   { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks', icon: 'mdi-trophy-variant-outline' },
-  { label: 'Most Manager Wins', path: '/manager-wins', icon: 'mdi-whistle-outline' }
+  { label: 'Most Manager Wins', path: '/manager-wins', icon: 'mdi-whistle-outline' },
+  { label: 'Manager Timeline', path: '/manager-timeline', icon: 'mdi-chart-gantt' }
 ]

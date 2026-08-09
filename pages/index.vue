@@ -134,7 +134,8 @@ const entries = [
   { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks' },
   { label: 'Comeback Kings', path: '/comeback-kings' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks' },
-  { label: 'Most Manager Wins', path: '/manager-wins' }
+  { label: 'Most Manager Wins', path: '/manager-wins' },
+  { label: 'Manager Timeline', path: '/manager-timeline' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)
