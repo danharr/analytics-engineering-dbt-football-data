@@ -45,6 +45,14 @@
               <span class="dots"></span>
               <span class="path">{{ entry.path }}</span>
             </div>
+            <div class="dir-header mt-4">
+              Team pages · one club's record
+            </div>
+            <div class="dir-row" v-for="entry in teamEntries" :key="entry.path">
+              <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
+              <span class="dots"></span>
+              <span class="path">{{ entry.path }}</span>
+            </div>
           </div>
         </v-card-text>
       </v-card>
@@ -136,6 +144,14 @@ const entries = [
   { label: 'Most Comebacks in a Season', path: '/most-comebacks' },
   { label: 'Most Manager Wins', path: '/manager-wins' },
   { label: 'Manager Timeline', path: '/manager-timeline' }
+]
+
+const teamEntries = [
+  { label: 'Arsenal', path: '/arsenal' },
+  { label: 'Manchester United', path: '/manchester-united' },
+  { label: 'Liverpool', path: '/liverpool' },
+  { label: 'Tottenham Hotspur', path: '/tottenham' },
+  { label: 'West Ham United', path: '/west-ham' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

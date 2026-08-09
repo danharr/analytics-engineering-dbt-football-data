@@ -12,5 +12,10 @@ export const navItems = [
   { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks', icon: 'mdi-trophy-variant-outline' },
   { label: 'Most Manager Wins', path: '/manager-wins', icon: 'mdi-whistle-outline' },
-  { label: 'Manager Timeline', path: '/manager-timeline', icon: 'mdi-chart-gantt' }
+  { label: 'Manager Timeline', path: '/manager-timeline', icon: 'mdi-chart-gantt' },
+  { label: 'Arsenal', path: '/arsenal', icon: 'mdi-shield-outline' },
+  { label: 'Manchester United', path: '/manchester-united', icon: 'mdi-shield-outline' },
+  { label: 'Liverpool', path: '/liverpool', icon: 'mdi-shield-outline' },
+  { label: 'Tottenham Hotspur', path: '/tottenham', icon: 'mdi-shield-outline' },
+  { label: 'West Ham United', path: '/west-ham', icon: 'mdi-shield-outline' }
 ]
