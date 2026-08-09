@@ -54,6 +54,7 @@ function renderChart() {
 
   const teams = [...new Set(props.data.map(d => d.team_name))].sort()
   const byTeam = new Map(teams.map(t => [t, []]))
+  const clubsByManager = new Map()
   for (const d of props.data) {
     byTeam.get(d.team_name).push({
       manager: d.manager_name,
@@ -62,6 +63,8 @@ function renderChart() {
       from: new Date(d.from_date + 'T00:00:00Z'),
       until: new Date(d.until_date + 'T00:00:00Z')
     })
+    if (!clubsByManager.has(d.manager_name)) clubsByManager.set(d.manager_name, new Set())
+    clubsByManager.get(d.manager_name).add(d.team_name)
   }
 
   const maxUntil = d3.max(props.data, d => new Date(d.until_date + 'T00:00:00Z'))
@@ -110,6 +113,8 @@ function renderChart() {
     .style('font-size', '12px')
     .style('z-index', 10)
 
+  const baseOpacity = d => d.role === 'caretaker' ? 0.55 : 1
+
   const teamRows = chart.selectAll('g.team')
     .data(teams)
     .join('g')
@@ -118,31 +123,48 @@ function renderChart() {
 
   teamRows.each(function (team) {
     const spells = byTeam.get(team).map(s => ({ ...s }))
-    const trackCount = assignTracks(spells)
     const rowGroup = d3.select(this)
     const band = y.bandwidth()
     const gap = 1.5
-    const barH = (band - gap * (trackCount + 1)) / trackCount
+
+    const permTracks = assignTracks(spells.filter(s => s.role !== 'caretaker'))
+    const careTracks = assignTracks(spells.filter(s => s.role === 'caretaker'))
+
+    const permH = (band - gap * (permTracks + 1)) / permTracks
+    const careZone = band * 0.6
+    const careGap = 1
+    const careH = careTracks === 1 ? careZone : (careZone - careGap * (careTracks - 1)) / careTracks
+    const careZoneTop = (band - (careTracks * careH + careGap * (careTracks - 1))) / 2
+
+    const rectData = []
+    for (const s of spells) {
+      const isCare = s.role === 'caretaker'
+      rectData.push({
+        ...s,
+        h: isCare ? careH : permH,
+        yy: isCare ? careZoneTop + s.track * (careH + careGap) : gap + s.track * (permH + gap)
+      })
+    }
 
     const rects = rowGroup.selectAll('rect')
-      .data(spells, d => d.manager + d.from.getTime())
+      .data(rectData, d => d.manager + d.from.getTime())
       .join('rect')
       .attr('x', d => Math.max(0, x(Math.max(d.from, PL_START))))
-      .attr('y', d => gap + d.track * (barH + gap))
+      .attr('y', d => d.yy)
       .attr('width', d => {
         const x1 = Math.max(0, x(Math.max(d.from, PL_START)))
         const x2 = x(d.until)
         return Math.max(0, x2 - x1)
       })
-      .attr('height', barH)
+      .attr('height', d => d.h)
       .attr('rx', 2)
       .attr('fill', teamColour(team))
       .attr('stroke', '#fff')
       .attr('stroke-width', 1.5)
-      .attr('opacity', d => d.role === 'caretaker' ? 0.55 : 1)
+      .attr('opacity', baseOpacity)
 
-    const labels = rowGroup.selectAll('text.cell')
-      .data(spells, d => d.manager + d.from.getTime())
+    rowGroup.selectAll('text.cell')
+      .data(rectData, d => d.manager + d.from.getTime())
       .join('text')
       .attr('class', 'cell')
       .attr('x', d => {
@@ -150,7 +172,7 @@ function renderChart() {
         const x2 = x(d.until)
         return x1 + (x2 - x1) / 2
       })
-      .attr('y', d => gap + d.track * (barH + gap) + barH / 2)
+      .attr('y', d => d.yy + d.h / 2)
       .attr('dy', '0.32em')
       .attr('font-size', '10.5px')
       .attr('font-weight', 600)
@@ -161,10 +183,9 @@ function renderChart() {
       .each(function (d) {
         const x1 = Math.max(0, x(Math.max(d.from, PL_START)))
         const x2 = x(d.until)
-        const t = this
         const bw = x2 - x1
-        if (t.getComputedTextLength() > bw - 10) {
-          t.setAttribute('visibility', 'hidden')
+        if (d.h < 14 || this.getComputedTextLength() > bw - 10) {
+          this.setAttribute('visibility', 'hidden')
         }
       })
 
@@ -172,26 +193,44 @@ function renderChart() {
       .on('mousemove', function (event, d) {
         const endLabel = d.present ? 'present' : d3.utcFormat('%e %b %Y')(d.until).trim()
         const roleLabel = d.role === 'caretaker' ? ' · caretaker' : d.role === 'incumbent' ? ' · incumbent' : ''
+        const otherClubs = [...(clubsByManager.get(d.manager) || new Set())].filter(c => c !== team)
+        const otherLine = otherClubs.length
+          ? '<br>Also managed: ' + otherClubs.map(c => `<span style="color:${teamColour(c)}">${c}</span>`).join(', ')
+          : ''
         tooltip
           .style('opacity', 1)
           .html(
             `<strong>${d.manager}</strong>${roleLabel}<br>` +
             `<span style="color:${teamColour(team)}">${team}</span><br>` +
             `${d3.utcFormat('%e %b %Y')(d.from).trim()} – ${endLabel}<br>` +
-            `${fmtDuration(d.from, d.present ? maxUntil : d.until)} in charge`
+            `${fmtDuration(d.from, d.present ? maxUntil : d.until)} in charge` +
+            otherLine
           )
           .style('left', (event.offsetX + 12) + 'px')
           .style('top', (event.offsetY - 10) + 'px')
-        d3.select(this).attr('stroke', '#333')
+        highlight(d.manager)
       })
-      .on('mouseleave', function () {
-        tooltip.style('opacity', 0)
-        d3.select(this).attr('stroke', '#fff')
-      })
-
-    rects.raise()
-    labels.raise()
+      .on('mouseleave', reset)
   })
+
+  function highlight(manager) {
+    chart.selectAll('g.team rect')
+      .attr('opacity', d => d.manager === manager ? baseOpacity(d) : 0.12)
+      .attr('stroke', d => d.manager === manager ? '#333' : '#fff')
+      .attr('stroke-width', d => d.manager === manager ? 2 : 1.5)
+    chart.selectAll('g.team text.cell')
+      .attr('opacity', d => d.manager === manager ? 1 : 0.12)
+  }
+
+  function reset() {
+    chart.selectAll('g.team rect')
+      .attr('opacity', baseOpacity)
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 1.5)
+    chart.selectAll('g.team text.cell')
+      .attr('opacity', 1)
+    tooltip.style('opacity', 0)
+  }
 }
 
 const onResize = () => renderChart()
