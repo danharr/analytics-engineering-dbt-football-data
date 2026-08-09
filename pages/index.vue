@@ -151,7 +151,14 @@ const teamEntries = [
   { label: 'Manchester United', path: '/manchester-united' },
   { label: 'Liverpool', path: '/liverpool' },
   { label: 'Tottenham Hotspur', path: '/tottenham' },
-  { label: 'West Ham United', path: '/west-ham' }
+  { label: 'West Ham United', path: '/west-ham' },
+  { label: 'Manchester City', path: '/manchester-city' },
+  { label: 'Newcastle United', path: '/newcastle' },
+  { label: 'Sunderland', path: '/sunderland' },
+  { label: 'Leeds United', path: '/leeds' },
+  { label: 'Aston Villa', path: '/aston-villa' },
+  { label: 'Brentford', path: '/brentford' },
+  { label: 'Chelsea', path: '/chelsea' }
 ]
 
 const fmt = n => d3.format(',')(n || 0)

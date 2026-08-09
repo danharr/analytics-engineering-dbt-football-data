@@ -17,5 +17,12 @@ export const navItems = [
   { label: 'Manchester United', path: '/manchester-united', icon: 'mdi-shield-outline' },
   { label: 'Liverpool', path: '/liverpool', icon: 'mdi-shield-outline' },
   { label: 'Tottenham Hotspur', path: '/tottenham', icon: 'mdi-shield-outline' },
-  { label: 'West Ham United', path: '/west-ham', icon: 'mdi-shield-outline' }
+  { label: 'West Ham United', path: '/west-ham', icon: 'mdi-shield-outline' },
+  { label: 'Manchester City', path: '/manchester-city', icon: 'mdi-shield-outline' },
+  { label: 'Newcastle United', path: '/newcastle', icon: 'mdi-shield-outline' },
+  { label: 'Sunderland', path: '/sunderland', icon: 'mdi-shield-outline' },
+  { label: 'Leeds United', path: '/leeds', icon: 'mdi-shield-outline' },
+  { label: 'Aston Villa', path: '/aston-villa', icon: 'mdi-shield-outline' },
+  { label: 'Brentford', path: '/brentford', icon: 'mdi-shield-outline' },
+  { label: 'Chelsea', path: '/chelsea', icon: 'mdi-shield-outline' }
 ]

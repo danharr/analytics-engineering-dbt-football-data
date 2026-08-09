@@ -16,7 +16,7 @@ copy (
         red_cards,
         attendance
     from "premier_league"."main"."fct_team_matches"
-    where team_abbr in ('ARS', 'MUN', 'LIV', 'TOT', 'WHU')
+    where team_abbr in ('ARS', 'MUN', 'LIV', 'TOT', 'WHU', 'MCI', 'NEW', 'SUN', 'LEE', 'AVL', 'BRE', 'CHE')
     order by team_abbr, kickoff_date, match_id
 )
 to 'assets/data/team_matches.csv' (header, delimiter ',')

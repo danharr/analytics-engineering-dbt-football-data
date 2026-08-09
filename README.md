@@ -20,7 +20,7 @@ An interactive dashboard of Premier League football history.
 - **Most Comebacks in a Season** — the top 10 team-seasons by half-time comebacks (trailing at HT, then winning)
 - **Most Manager Wins** — the top managers by all-time Premier League wins, from the Wikipedia managers list joined to match results
 - **Manager Timeline** — a Gantt chart of every Premier League club's managers since 1992, coloured by club with hover tooltips
-- **Team Pages** — one page per big club (Arsenal, Manchester United, Liverpool, Tottenham Hotspur, West Ham United) with their top-5 biggest wins/defeats, most red cards, biggest home attendances, the all-time table with their row highlighted, and their manager timeline
+- **Team Pages** — one page per club (Arsenal, Manchester United, Liverpool, Tottenham Hotspur, West Ham United, Manchester City, Newcastle United, Sunderland, Leeds United, Aston Villa, Brentford, Chelsea) with their top-5 biggest wins/defeats, most red cards, biggest home attendances, the all-time table with their row highlighted, and their manager timeline
 
 ## Data
 
