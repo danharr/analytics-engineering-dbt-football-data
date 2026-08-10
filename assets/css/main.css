@@ -57,6 +57,11 @@
   font-size: 12px;
   white-space: nowrap;
 }
+@media (max-width: 1263.98px) {
+  .dir-listing .path {
+    display: none;
+  }
+}
 .stat-value {
   font-size: 2.4rem;
   font-weight: 800;

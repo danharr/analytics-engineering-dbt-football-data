@@ -40,19 +40,32 @@
             <div class="dir-header">
               Premier League data charts · select a page below
             </div>
-            <div class="dir-row" v-for="entry in entries" :key="entry.path">
-              <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
-              <span class="dots"></span>
-              <span class="path">{{ entry.path }}</span>
-            </div>
-            <div class="dir-header mt-4">
-              Team pages · one club's record
-            </div>
-            <div class="dir-row" v-for="entry in teamEntries" :key="entry.path">
-              <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
-              <span class="dots"></span>
-              <span class="path">{{ entry.path }}</span>
-            </div>
+            <v-row>
+              <v-col cols="12" md="4">
+                <div class="dir-header mt-3">By team</div>
+                <div class="dir-row" v-for="entry in teamEntries" :key="entry.path">
+                  <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
+                  <span class="dots"></span>
+                  <span class="path">{{ entry.path }}</span>
+                </div>
+              </v-col>
+              <v-col cols="12" md="4">
+                <div class="dir-header mt-3">By manager</div>
+                <div class="dir-row" v-for="entry in managerEntries" :key="entry.path">
+                  <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
+                  <span class="dots"></span>
+                  <span class="path">{{ entry.path }}</span>
+                </div>
+              </v-col>
+              <v-col cols="12" md="4">
+                <div class="dir-header mt-3">Other</div>
+                <div class="dir-row" v-for="entry in otherEntries" :key="entry.path">
+                  <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
+                  <span class="dots"></span>
+                  <span class="path">{{ entry.path }}</span>
+                </div>
+              </v-col>
+            </v-row>
           </div>
         </v-card-text>
       </v-card>
@@ -129,7 +142,7 @@ useHead({
   ]
 })
 
-const entries = [
+const otherEntries = [
   { label: 'All-Time Table', path: '/all-time-table' },
   { label: 'Most Wins', path: '/most-wins' },
   { label: 'Data Quality', path: '/data-quality' },
@@ -143,7 +156,10 @@ const entries = [
   { label: 'Comeback Kings', path: '/comeback-kings' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks' },
   { label: 'Most Manager Wins', path: '/manager-wins' },
-  { label: 'Manager Timeline', path: '/manager-timeline' },
+  { label: 'Manager Timeline', path: '/manager-timeline' }
+]
+
+const managerEntries = [
   { label: 'Arsène Wenger', path: '/wenger' },
   { label: 'Alex Ferguson', path: '/ferguson' },
   { label: 'David Moyes', path: '/moyes' }
