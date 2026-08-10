@@ -143,7 +143,10 @@ const entries = [
   { label: 'Comeback Kings', path: '/comeback-kings' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks' },
   { label: 'Most Manager Wins', path: '/manager-wins' },
-  { label: 'Manager Timeline', path: '/manager-timeline' }
+  { label: 'Manager Timeline', path: '/manager-timeline' },
+  { label: 'Arsène Wenger', path: '/wenger' },
+  { label: 'Alex Ferguson', path: '/ferguson' },
+  { label: 'David Moyes', path: '/moyes' }
 ]
 
 const teamEntries = [

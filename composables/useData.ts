@@ -14,6 +14,8 @@ import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
 import mostComebacksCsv from '~/assets/data/most_comebacks.csv?raw'
 import managerWinsCsv from '~/assets/data/manager_wins.csv?raw'
 import managerTimelineCsv from '~/assets/data/manager_timeline.csv?raw'
+import managerMatchesCsv from '~/assets/data/manager_matches.csv?raw'
+import managerClubRecordsCsv from '~/assets/data/manager_club_records.csv?raw'
 import teamMatchesCsv from '~/assets/data/team_matches.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
@@ -167,14 +169,39 @@ export interface ManagerWinsRow {
   goals_against: number
 }
 
-export interface ManagerTimelineRow {
-  team_name: string
+export interface ManagerMatchRow {
   manager_name: string
-  from_date: string
-  until_date: string
-  present: number
-  role: string
+  team_id: string
+  kickoff_date: string
+  season_label: string
+  is_home: number
+  opponent_id: string
+  goals_for: number
+  goals_against: number
+  goal_diff: number
+  result: string
+  match_id: string
 }
+
+export interface ManagerClubRecordRow {
+  manager_name: string
+  team_id: string
+  games: number
+  wins: number
+  draws: number
+  losses: number
+  win_pct: number
+}
+
+export interface ManagerTimelineRow {
+    team_name: string
+    manager_name: string
+    from_date: string
+    until_date: string
+    present: number
+    role: string
+}
+
 
 export interface TeamMatchRow {
   team_abbr: string
@@ -362,6 +389,30 @@ export const managerWins = parse<ManagerWinsRow>(managerWinsCsv, d => ({
   points: toInt(d, 'points'),
   goals_for: toInt(d, 'goals_for'),
   goals_against: toInt(d, 'goals_against')
+}))
+
+export const managerMatches = parse<ManagerMatchRow>(managerMatchesCsv, d => ({
+  manager_name: d.manager_name,
+  team_id: d.team_id,
+  kickoff_date: d.kickoff_date,
+  season_label: d.season_label,
+  is_home: toInt(d, 'is_home'),
+  opponent_id: d.opponent_id,
+  goals_for: toInt(d, 'goals_for'),
+  goals_against: toInt(d, 'goals_against'),
+  goal_diff: toInt(d, 'goal_diff'),
+  result: d.result,
+  match_id: d.match_id,
+}))
+
+export const managerClubRecords = parse<ManagerClubRecordRow>(managerClubRecordsCsv, d => ({
+  manager_name: d.manager_name,
+  team_id: d.team_id,
+  games: toInt(d, 'games'),
+  wins: toInt(d, 'wins'),
+  draws: toInt(d, 'draws'),
+  losses: toInt(d, 'losses'),
+  win_pct: toFloat(d, 'win_pct'),
 }))
 
 export const managerTimeline = parse<ManagerTimelineRow>(managerTimelineCsv, d => ({
