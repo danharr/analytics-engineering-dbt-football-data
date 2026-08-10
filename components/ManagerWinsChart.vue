@@ -7,7 +7,8 @@ import * as d3 from 'd3'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const props = defineProps({
-  data: { type: Array, required: true }
+  data: { type: Array, required: true },
+  highlight: { type: String, default: null }
 })
 
 const el = ref(null)
@@ -75,7 +76,7 @@ function renderChart() {
     .attr('width', d => x(d.wins))
     .attr('height', y.bandwidth())
     .attr('rx', 3)
-    .attr('fill', '#1a56db')
+    .attr('fill', d => d.manager_name === props.highlight ? '#d97706' : '#1a56db')
     .attr('opacity', 0.85)
     .on('mousemove', function (event, d) {
       tooltip
@@ -110,7 +111,7 @@ function renderChart() {
       } else {
         t.setAttribute('x', bw + 6)
         t.setAttribute('text-anchor', 'start')
-        t.setAttribute('fill', '#1a56db')
+        t.setAttribute('fill', d.manager_name === props.highlight ? '#d97706' : '#1a56db')
       }
     })
 }

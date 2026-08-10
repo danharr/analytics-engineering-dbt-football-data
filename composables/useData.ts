@@ -172,10 +172,12 @@ export interface ManagerWinsRow {
 export interface ManagerMatchRow {
   manager_name: string
   team_id: string
+  team_name: string
   kickoff_date: string
   season_label: string
   is_home: number
   opponent_id: string
+  opponent_name: string
   goals_for: number
   goals_against: number
   goal_diff: number
@@ -186,6 +188,7 @@ export interface ManagerMatchRow {
 export interface ManagerClubRecordRow {
   manager_name: string
   team_id: string
+  team_name: string
   games: number
   wins: number
   draws: number
@@ -394,10 +397,12 @@ export const managerWins = parse<ManagerWinsRow>(managerWinsCsv, d => ({
 export const managerMatches = parse<ManagerMatchRow>(managerMatchesCsv, d => ({
   manager_name: d.manager_name,
   team_id: d.team_id,
+  team_name: d.team_name,
   kickoff_date: d.kickoff_date,
   season_label: d.season_label,
   is_home: toInt(d, 'is_home'),
   opponent_id: d.opponent_id,
+  opponent_name: d.opponent_name,
   goals_for: toInt(d, 'goals_for'),
   goals_against: toInt(d, 'goals_against'),
   goal_diff: toInt(d, 'goal_diff'),
@@ -408,6 +413,7 @@ export const managerMatches = parse<ManagerMatchRow>(managerMatchesCsv, d => ({
 export const managerClubRecords = parse<ManagerClubRecordRow>(managerClubRecordsCsv, d => ({
   manager_name: d.manager_name,
   team_id: d.team_id,
+  team_name: d.team_name,
   games: toInt(d, 'games'),
   wins: toInt(d, 'wins'),
   draws: toInt(d, 'draws'),

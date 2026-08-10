@@ -14,10 +14,10 @@
         <ManagerWinsChart :data="managerWins" :highlight="'Alex Ferguson'" />
       </v-col>
       <v-col cols="12" md="10" offset-md="1">
-        <ManagerResultsTable :matches="managerMatches" />
+        <ManagerResultsTable :matches="managerMatchesFiltered" />
       </v-col>
       <v-col cols="12" md="10" offset-md="1">
-        <ManagerClubsTable :clubRecords="managerClubRecords" />
+        <ManagerClubsTable :clubRecords="managerClubRecordsFiltered" />
       </v-col>
       <v-col cols="12" md="10" offset-md="1">
         <ChartCode :sql="sqlQueries.managerWins" />
@@ -32,7 +32,6 @@ import ManagerResultsTable from '~/components/ManagerResultsTable.vue'
 import ManagerClubsTable from '~/components/ManagerClubsTable.vue'
 import ChartCode from '~/components/ChartCode.vue'
 const thisManager = 'Alex Ferguson'
-const managerWinsFiltered = managerWins
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({

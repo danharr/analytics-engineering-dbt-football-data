@@ -19,7 +19,7 @@
         </thead>
         <tbody>
           <tr v-for="row in clubRecords" :key="row.team_id">
-            <td>{{ row.team_id }}</td>
+            <td>{{ row.team_name }}</td>
             <td class="text-right">{{ row.games }}</td>
             <td class="text-right">{{ row.wins }}</td>
             <td class="text-right">{{ row.draws }}</td>

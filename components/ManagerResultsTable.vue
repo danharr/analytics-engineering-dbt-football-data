@@ -25,9 +25,9 @@
               <td>{{ row.kickoff_date }}</td>
               <td>{{ row.season_label }}</td>
               <td>{{ row.is_home ? 'H' : 'A' }}</td>
-              <td>{{ row.opponent_id }}</td>
+              <td>{{ row.opponent_name }}</td>
               <td class="text-right"><strong>{{ row.goals_for }}–{{ row.goals_against }}</strong></td>
-              <td class="text-right">{{ row.team_id }}</td>
+              <td class="text-right">{{ row.team_name }}</td>
             </tr>
           </tbody>
         </v-table>
@@ -59,9 +59,9 @@
               <td>{{ row.kickoff_date }}</td>
               <td>{{ row.season_label }}</td>
               <td>{{ row.is_home ? 'H' : 'A' }}</td>
-              <td>{{ row.opponent_id }}</td>
+              <td>{{ row.opponent_name }}</td>
               <td class="text-right"><strong>{{ row.goals_for }}–{{ row.goals_against }}</strong></td>
-              <td class="text-right">{{ row.team_id }}</td>
+              <td class="text-right">{{ row.team_name }}</td>
             </tr>
           </tbody>
         </v-table>
