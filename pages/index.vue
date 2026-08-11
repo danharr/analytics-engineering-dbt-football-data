@@ -41,7 +41,7 @@
               Premier League data charts · select a page below
             </div>
             <v-row>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="3">
                 <div class="dir-header mt-3">By team</div>
                 <div class="dir-row" v-for="entry in teamEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -49,7 +49,7 @@
                   <span class="path">{{ entry.path }}</span>
                 </div>
               </v-col>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="3">
                 <div class="dir-header mt-3">By manager</div>
                 <div class="dir-row" v-for="entry in managerEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -57,7 +57,15 @@
                   <span class="path">{{ entry.path }}</span>
                 </div>
               </v-col>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="3">
+                <div class="dir-header mt-3">By season</div>
+                <div class="dir-row" v-for="entry in seasonEntries" :key="entry.path">
+                  <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
+                  <span class="dots"></span>
+                  <span class="path">{{ entry.path }}</span>
+                </div>
+              </v-col>
+              <v-col cols="12" md="3">
                 <div class="dir-header mt-3">Other</div>
                 <div class="dir-row" v-for="entry in otherEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -180,6 +188,11 @@ const managerEntries = [
   { label: 'Kevin Keegan', path: '/keegan' },
   { label: 'Kenny Dalglish', path: '/dalglish' },
   { label: "David O'Leary", path: '/o-leary' }
+]
+
+const seasonEntries = [
+  { label: '1992-93 Season', path: '/epl-1992-93-season-stats' },
+  { label: '1993-94 Season', path: '/epl-1993-94-season-stats' }
 ]
 
 const teamEntries = [

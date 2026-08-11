@@ -44,5 +44,7 @@ export const navItems = [
   { label: 'Leeds United', path: '/leeds', icon: 'mdi-shield-outline' },
   { label: 'Aston Villa', path: '/aston-villa', icon: 'mdi-shield-outline' },
   { label: 'Brentford', path: '/brentford', icon: 'mdi-shield-outline' },
-  { label: 'Chelsea', path: '/chelsea', icon: 'mdi-shield-outline' }
+  { label: 'Chelsea', path: '/chelsea', icon: 'mdi-shield-outline' },
+  { label: '1992-93 Season', path: '/epl-1992-93-season-stats', icon: 'mdi-calendar' },
+  { label: '1993-94 Season', path: '/epl-1993-94-season-stats', icon: 'mdi-calendar' }
 ]

@@ -17,6 +17,7 @@ import managerTimelineCsv from '~/assets/data/manager_timeline.csv?raw'
 import managerMatchesCsv from '~/assets/data/manager_matches.csv?raw'
 import managerClubRecordsCsv from '~/assets/data/manager_club_records.csv?raw'
 import teamMatchesCsv from '~/assets/data/team_matches.csv?raw'
+import seasonTableCsv from '~/assets/data/season_table.csv?raw'
 import winsSql from '~/assets/data/wins.sql?raw'
 import qualitySql from '~/assets/data/season_quality.sql?raw'
 import attendanceSql from '~/assets/data/attendance.sql?raw'
@@ -32,6 +33,7 @@ import mostComebacksSql from '~/assets/data/most_comebacks.sql?raw'
 import managerWinsSql from '~/assets/data/manager_wins.sql?raw'
 import managerTimelineSql from '~/assets/data/manager_timeline.sql?raw'
 import teamMatchesSql from '~/assets/data/team_matches.sql?raw'
+import seasonTableSql from '~/assets/data/season_table.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -218,6 +220,21 @@ export interface TeamMatchRow {
   goal_diff: number
   red_cards: number
   attendance: number | null
+}
+
+export interface SeasonTableRow {
+  season_label: string
+  position: number
+  team_abbr: string
+  team_name: string
+  played: number
+  won: number
+  drawn: number
+  lost: number
+  goals_for: number
+  goals_against: number
+  goal_diff: number
+  points: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -444,6 +461,21 @@ export const teamMatches = parse<TeamMatchRow>(teamMatchesCsv, d => ({
   attendance: d.attendance === '' ? null : toInt(d, 'attendance')
 }))
 
+export const seasonTable = parse<SeasonTableRow>(seasonTableCsv, d => ({
+  season_label: d.season_label,
+  position: toInt(d, 'position'),
+  team_abbr: d.team_abbr,
+  team_name: d.team_name,
+  played: toInt(d, 'played'),
+  won: toInt(d, 'won'),
+  drawn: toInt(d, 'drawn'),
+  lost: toInt(d, 'lost'),
+  goals_for: toInt(d, 'goals_for'),
+  goals_against: toInt(d, 'goals_against'),
+  goal_diff: toInt(d, 'goal_diff'),
+  points: toInt(d, 'points')
+}))
+
 export const sqlQueries = {
   wins: winsSql,
   quality: qualitySql,
@@ -459,5 +491,6 @@ export const sqlQueries = {
   mostComebacks: mostComebacksSql,
   managerWins: managerWinsSql,
   managerTimeline: managerTimelineSql,
-  teamMatches: teamMatchesSql
+  teamMatches: teamMatchesSql,
+  seasonTable: seasonTableSql
 }
