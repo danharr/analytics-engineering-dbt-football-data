@@ -81,7 +81,7 @@ gtag('config', 'G-HRJ1G6XTG1');`
     },
     prerender: {
       crawlLinks: false,
-      routes: ['/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/one-nil-wins', '/ht-lead-no-win-streaks', '/comeback-kings', '/most-comebacks', '/manager-wins', '/manager-timeline', '/arsenal', '/manchester-united', '/liverpool', '/tottenham', '/west-ham', '/manchester-city', '/newcastle', '/sunderland', '/leeds', '/aston-villa', '/brentford', '/chelsea', '/wenger', '/ferguson', '/moyes']
+      routes: ['/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/one-nil-wins', '/ht-lead-no-win-streaks', '/comeback-kings', '/most-comebacks', '/manager-wins', '/manager-timeline', '/arsenal', '/manchester-united', '/liverpool', '/tottenham', '/west-ham', '/manchester-city', '/newcastle', '/sunderland', '/leeds', '/aston-villa', '/brentford', '/chelsea', '/wenger', '/ferguson', '/moyes', '/guardiola', '/redknapp', '/mourinho', '/klopp', '/allardyce', '/benitez', '/hughes', '/pochettino', '/arteta', '/howe', '/rodgers', '/hodgson', '/bruce', '/o-neill', '/keegan', '/dalglish', '/o-leary']
     }
   }
 })

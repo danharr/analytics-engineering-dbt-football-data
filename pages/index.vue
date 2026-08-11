@@ -162,7 +162,24 @@ const otherEntries = [
 const managerEntries = [
   { label: 'Arsène Wenger', path: '/wenger' },
   { label: 'Alex Ferguson', path: '/ferguson' },
-  { label: 'David Moyes', path: '/moyes' }
+  { label: 'David Moyes', path: '/moyes' },
+  { label: 'Pep Guardiola', path: '/guardiola' },
+  { label: 'Harry Redknapp', path: '/redknapp' },
+  { label: 'José Mourinho', path: '/mourinho' },
+  { label: 'Jürgen Klopp', path: '/klopp' },
+  { label: 'Sam Allardyce', path: '/allardyce' },
+  { label: 'Rafael Benítez', path: '/benitez' },
+  { label: 'Mark Hughes', path: '/hughes' },
+  { label: 'Mauricio Pochettino', path: '/pochettino' },
+  { label: 'Mikel Arteta', path: '/arteta' },
+  { label: 'Eddie Howe', path: '/howe' },
+  { label: 'Brendan Rodgers', path: '/rodgers' },
+  { label: 'Roy Hodgson', path: '/hodgson' },
+  { label: 'Steve Bruce', path: '/bruce' },
+  { label: "Martin O'Neill", path: '/o-neill' },
+  { label: 'Kevin Keegan', path: '/keegan' },
+  { label: 'Kenny Dalglish', path: '/dalglish' },
+  { label: "David O'Leary", path: '/o-leary' }
 ]
 
 const teamEntries = [
