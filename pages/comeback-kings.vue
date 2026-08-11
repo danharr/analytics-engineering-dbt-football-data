@@ -79,7 +79,7 @@ import * as d3 from 'd3'
 import { comebackKings, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Comeback Kings',
+  title: 'Most Premier League Half-Time Comeback Wins',
   meta: [
     {
       name: 'description',

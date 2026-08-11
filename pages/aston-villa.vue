@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('aston-villa')
 
 useHead({
-  title: 'Aston Villa Premier League Stats, Records & History | Football Started in 1992',
+  title: 'Aston Villa Premier League All-Time Record & Stats',
   meta: [
     {
       name: 'description',

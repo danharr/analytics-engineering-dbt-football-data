@@ -78,7 +78,7 @@ import { computed } from 'vue'
 import { fiveGameStreaks, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Five-Game Win Streaks',
+  title: 'Longest Winning Streaks in Premier League History',
   meta: [
     {
       name: 'description',

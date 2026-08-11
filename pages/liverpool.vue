@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('liverpool')
 
 useHead({
-  title: 'Liverpool Premier League Stats, Records & History | Football Started in 1992',
+  title: 'Liverpool Premier League All-Time Record & Stats',
   meta: [
     {
       name: 'description',

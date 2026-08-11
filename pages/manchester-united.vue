@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('manchester-united')
 
 useHead({
-  title: 'Manchester United Premier League Stats, Records & History | Football Started in 1992',
+  title: 'Manchester United Premier League All-Time Record & Stats',
   meta: [
     {
       name: 'description',

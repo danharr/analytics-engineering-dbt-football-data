@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('newcastle')
 
 useHead({
-  title: 'Newcastle United Premier League Stats, Records & History | Football Started in 1992',
+  title: 'Newcastle Premier League All-Time Record & Stats',
   meta: [
     {
       name: 'description',

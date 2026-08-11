@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('brentford')
 
 useHead({
-  title: 'Brentford Premier League Stats, Records & History | Football Started in 1992',
+  title: 'Brentford Premier League All-Time Record & Stats',
   meta: [
     {
       name: 'description',
