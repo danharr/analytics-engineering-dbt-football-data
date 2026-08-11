@@ -18,15 +18,16 @@
       :expand-on-hover="rail && !isMobile"
     >
       <v-list>
-        <v-list-subheader>Charts</v-list-subheader>
-        <v-list-item
-          v-for="item in navItems"
-          :key="item.path"
-          :to="item.path"
-          :prepend-icon="item.icon"
-          :title="item.label"
-          link
-        ></v-list-item>
+        <template v-for="item in navItems" :key="item.header || item.path">
+          <v-list-subheader v-if="item.header">{{ item.header }}</v-list-subheader>
+          <v-list-item
+            v-else
+            :to="item.path"
+            :prepend-icon="item.icon"
+            :title="item.label"
+            link
+          ></v-list-item>
+        </template>
       </v-list>
     </v-navigation-drawer>
 

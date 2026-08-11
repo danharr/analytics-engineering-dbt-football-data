@@ -41,7 +41,7 @@
               Premier League data charts · select a page below
             </div>
             <v-row>
-              <v-col cols="12" md="3">
+              <v-col cols="12" md="6">
                 <div class="dir-header mt-3">By team</div>
                 <div class="dir-row" v-for="entry in teamEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -49,7 +49,7 @@
                   <span class="path">{{ entry.path }}</span>
                 </div>
               </v-col>
-              <v-col cols="12" md="3">
+              <v-col cols="12" md="6">
                 <div class="dir-header mt-3">By manager</div>
                 <div class="dir-row" v-for="entry in managerEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -57,7 +57,7 @@
                   <span class="path">{{ entry.path }}</span>
                 </div>
               </v-col>
-              <v-col cols="12" md="3">
+              <v-col cols="12" md="6">
                 <div class="dir-header mt-3">By season</div>
                 <div class="dir-row" v-for="entry in seasonEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -65,7 +65,7 @@
                   <span class="path">{{ entry.path }}</span>
                 </div>
               </v-col>
-              <v-col cols="12" md="3">
+              <v-col cols="12" md="6">
                 <div class="dir-header mt-3">Other</div>
                 <div class="dir-row" v-for="entry in otherEntries" :key="entry.path">
                   <NuxtLink :to="entry.path">{{ entry.label }}</NuxtLink>
@@ -192,7 +192,39 @@ const managerEntries = [
 
 const seasonEntries = [
   { label: '1992-93 Season', path: '/epl-1992-93-season-stats' },
-  { label: '1993-94 Season', path: '/epl-1993-94-season-stats' }
+  { label: '1993-94 Season', path: '/epl-1993-94-season-stats' },
+  { label: '1994-95 Season', path: '/epl-1994-95-season-stats' },
+  { label: '1995-96 Season', path: '/epl-1995-96-season-stats' },
+  { label: '1996-97 Season', path: '/epl-1996-97-season-stats' },
+  { label: '1997-98 Season', path: '/epl-1997-98-season-stats' },
+  { label: '1998-99 Season', path: '/epl-1998-99-season-stats' },
+  { label: '1999-00 Season', path: '/epl-1999-00-season-stats' },
+  { label: '2000-01 Season', path: '/epl-2000-01-season-stats' },
+  { label: '2001-02 Season', path: '/epl-2001-02-season-stats' },
+  { label: '2002-03 Season', path: '/epl-2002-03-season-stats' },
+  { label: '2003-04 Season', path: '/epl-2003-04-season-stats' },
+  { label: '2004-05 Season', path: '/epl-2004-05-season-stats' },
+  { label: '2005-06 Season', path: '/epl-2005-06-season-stats' },
+  { label: '2006-07 Season', path: '/epl-2006-07-season-stats' },
+  { label: '2007-08 Season', path: '/epl-2007-08-season-stats' },
+  { label: '2008-09 Season', path: '/epl-2008-09-season-stats' },
+  { label: '2009-10 Season', path: '/epl-2009-10-season-stats' },
+  { label: '2010-11 Season', path: '/epl-2010-11-season-stats' },
+  { label: '2011-12 Season', path: '/epl-2011-12-season-stats' },
+  { label: '2012-13 Season', path: '/epl-2012-13-season-stats' },
+  { label: '2013-14 Season', path: '/epl-2013-14-season-stats' },
+  { label: '2014-15 Season', path: '/epl-2014-15-season-stats' },
+  { label: '2015-16 Season', path: '/epl-2015-16-season-stats' },
+  { label: '2016-17 Season', path: '/epl-2016-17-season-stats' },
+  { label: '2017-18 Season', path: '/epl-2017-18-season-stats' },
+  { label: '2018-19 Season', path: '/epl-2018-19-season-stats' },
+  { label: '2019-20 Season', path: '/epl-2019-20-season-stats' },
+  { label: '2020-21 Season', path: '/epl-2020-21-season-stats' },
+  { label: '2021-22 Season', path: '/epl-2021-22-season-stats' },
+  { label: '2022-23 Season', path: '/epl-2022-23-season-stats' },
+  { label: '2023-24 Season', path: '/epl-2023-24-season-stats' },
+  { label: '2024-25 Season', path: '/epl-2024-25-season-stats' },
+  { label: '2025-26 Season', path: '/epl-2025-26-season-stats' }
 ]
 
 const teamEntries = [
