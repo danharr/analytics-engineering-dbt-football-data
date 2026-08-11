@@ -494,3 +494,40 @@ export const sqlQueries = {
   teamMatches: teamMatchesSql,
   seasonTable: seasonTableSql
 }
+
+export const SITE_URL = 'https://footballstartedin1992.com'
+
+const PL_TEMPORAL_COVERAGE = '1992-08-15/2026-05-25'
+
+export interface DatasetLdOptions {
+  name: string
+  description: string
+  path: string
+  csv?: string
+  keywords?: string[]
+}
+
+export function datasetLd({ name, description, path, csv, keywords }: DatasetLdOptions): Record<string, unknown> {
+  const dataset: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name,
+    description,
+    url: `${SITE_URL}${path}`,
+    creator: {
+      '@type': 'Organization',
+      name: 'Football Started in 1992'
+    },
+    isAccessibleForFree: true,
+    keywords: ['Premier League', 'football statistics', 'match results', ...(keywords ?? [])],
+    temporalCoverage: PL_TEMPORAL_COVERAGE
+  }
+  if (csv) {
+    dataset.distribution = {
+      '@type': 'DataDownload',
+      contentUrl: `${SITE_URL}/data/${csv}`,
+      encodingFormat: 'text/csv'
+    }
+  }
+  return dataset
+}

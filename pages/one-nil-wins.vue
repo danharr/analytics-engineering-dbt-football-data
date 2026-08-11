@@ -76,7 +76,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { oneNilWins, sqlQueries } from '~/composables/useData'
+import { oneNilWins, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Clubs That Win Most Often 1-0',
@@ -84,6 +84,18 @@ useHead({
     {
       name: 'description',
       content: 'Which Premier League club wins most often by a 1-0 scoreline? Share of each club\'s wins that finished 1-0, home or away, for clubs with 30 or more wins.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League One-Nil Wins Dataset',
+        description: 'Share of each Premier League club\'s wins that finished 1-0, split by home and away, for clubs with 30 or more all-time wins.',
+        path: '/one-nil-wins',
+        csv: 'one_nil_wins.csv',
+        keywords: ['one-nil', 'scorelines', '1-0 wins']
+      }))
     }
   ]
 })

@@ -77,7 +77,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { htLeadNoWinStreaks, sqlQueries } from '~/composables/useData'
+import { htLeadNoWinStreaks, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Teams That Failed to Win After Leading at Half-Time',
@@ -85,6 +85,18 @@ useHead({
     {
       name: 'description',
       content: 'For every Premier League team, the longest consecutive run of matches where they led at half-time but failed to win.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League No-Win Streaks After Half-Time Lead Dataset',
+        description: 'For every Premier League team, the longest consecutive run of matches where they led at half-time but failed to win, with the seasons and opponents involved.',
+        path: '/ht-lead-no-win-streaks',
+        csv: 'ht_lead_no_win_streaks.csv',
+        keywords: ['half-time leads', 'no-win streaks']
+      }))
     }
   ]
 })

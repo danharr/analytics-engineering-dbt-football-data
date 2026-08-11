@@ -78,7 +78,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { longestWinlessGaps, formatGap, sqlQueries } from '~/composables/useData'
+import { longestWinlessGaps, formatGap, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Longest Time Between Wins in Premier League History',
@@ -86,6 +86,18 @@ useHead({
     {
       name: 'description',
       content: 'For every Premier League team, the longest time between two consecutive wins, spanning seasons and shown in years and days rather than matches.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Longest Time Between Wins Dataset',
+        description: 'For every Premier League team, the longest time between two consecutive wins across all seasons, given in years and days with the last and next win dates.',
+        path: '/longest-winless-gaps',
+        csv: 'longest_winless_gaps.csv',
+        keywords: ['gap between wins', 'winless spells']
+      }))
     }
   ]
 })

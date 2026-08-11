@@ -64,7 +64,7 @@
 </template>
 
 <script setup>
-import { quality, sqlQueries } from '~/composables/useData'
+import { quality, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Data Coverage by Season',
@@ -72,6 +72,18 @@ useHead({
     {
       name: 'description',
       content: 'Season-by-season team counts and matches per team for the Premier League dataset, showing coverage across every season.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Season Coverage Dataset',
+        description: 'Season-by-season data coverage for the Premier League dataset: number of teams and matches per team in each season from 1992-93 to 2025-26.',
+        path: '/data-quality',
+        csv: 'season_quality.csv',
+        keywords: ['data quality', 'season coverage']
+      }))
     }
   ]
 })

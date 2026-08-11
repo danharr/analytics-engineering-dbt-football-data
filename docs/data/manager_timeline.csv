@@ -1,0 +1,520 @@
+team_name,manager_name,from_date,until_date,present,role
+Arsenal,George Graham,1986-05-14,1995-02-21,0,permanent
+Arsenal,Stewart Houston,1995-02-22,1995-06-08,0,caretaker
+Arsenal,Bruce Rioch,1995-06-08,1996-08-12,0,permanent
+Arsenal,Stewart Houston,1996-08-12,1996-09-13,0,caretaker
+Arsenal,Pat Rice,1996-09-13,1996-09-30,0,caretaker
+Arsenal,Arsène Wenger,1996-10-01,2018-05-13,0,permanent
+Arsenal,Unai Emery,2018-05-23,2019-11-29,0,permanent
+Arsenal,Freddie Ljungberg,2019-11-29,2019-12-21,0,caretaker
+Arsenal,Mikel Arteta,2019-12-22,2026-08-11,1,incumbent
+Aston Villa,Ron Atkinson,1991-06-07,1994-11-10,0,permanent
+Aston Villa,Jim Barron,1994-11-11,1994-11-24,0,caretaker
+Aston Villa,Brian Little,1994-11-25,1998-02-24,0,permanent
+Aston Villa,John Gregory,1998-02-25,2002-01-24,0,permanent
+Aston Villa,John Deehan,2002-01-24,2002-02-05,0,caretaker
+Aston Villa,Stuart Gray,2002-01-24,2002-02-05,0,caretaker
+Aston Villa,Graham Taylor,2002-02-05,2003-05-14,0,permanent
+Aston Villa,David O'Leary,2003-05-20,2006-07-19,0,permanent
+Aston Villa,Martin O'Neill,2006-08-05,2010-08-09,0,permanent
+Aston Villa,Kevin MacDonald,2010-08-09,2010-09-08,0,caretaker
+Aston Villa,Gérard Houllier,2010-09-08,2011-06-01,0,permanent
+Aston Villa,Gary McAllister,2011-04-23,2011-05-22,0,caretaker
+Aston Villa,Alex McLeish,2011-06-17,2012-05-14,0,permanent
+Aston Villa,Paul Lambert,2012-06-02,2015-02-11,0,permanent
+Aston Villa,Scott Marshall,2015-02-11,2015-02-14,0,caretaker
+Aston Villa,Tim Sherwood,2015-02-14,2015-10-25,0,permanent
+Aston Villa,Kevin MacDonald,2015-10-25,2015-11-02,0,caretaker
+Aston Villa,Rémi Garde,2015-11-02,2016-03-29,0,permanent
+Aston Villa,Eric Black,2016-03-29,2016-06-02,0,caretaker
+Aston Villa,Dean Smith,2018-10-10,2021-11-07,0,permanent
+Aston Villa,Steven Gerrard,2021-11-11,2022-10-20,0,permanent
+Aston Villa,Aaron Danks,2022-10-21,2022-10-31,0,caretaker
+Aston Villa,Unai Emery,2022-11-01,2026-08-11,1,incumbent
+Barnsley,Danny Wilson,1994-06-02,1998-07-07,0,permanent
+Birmingham City,Steve Bruce,2001-12-12,2007-11-23,0,permanent
+Birmingham City,Eric Black,2007-11-23,2007-11-27,0,caretaker
+Birmingham City,Alex McLeish,2007-11-28,2011-06-12,0,permanent
+Blackburn Rovers,Kenny Dalglish,1991-10-12,1995-06-21,0,permanent
+Blackburn Rovers,Ray Harford,1995-06-25,1996-10-25,0,permanent
+Blackburn Rovers,Tony Parkes,1996-10-25,1997-06-01,0,permanent
+Blackburn Rovers,Roy Hodgson,1997-06-01,1998-11-21,0,permanent
+Blackburn Rovers,Brian Kidd,1998-12-04,1999-11-03,0,permanent
+Blackburn Rovers,Graeme Souness,2000-03-14,2004-09-06,0,permanent
+Blackburn Rovers,Mark Hughes,2004-09-15,2008-06-03,0,permanent
+Blackburn Rovers,Paul Ince,2008-06-22,2008-12-16,0,permanent
+Blackburn Rovers,Sam Allardyce,2008-12-17,2010-12-13,0,permanent
+Blackburn Rovers,Steve Kean,2010-12-13,2012-09-28,0,permanent
+Blackpool,Ian Holloway,2009-05-21,2012-11-03,0,permanent
+Bolton Wanderers,Roy McFarland,1995-06-20,1996-01-02,0,permanent
+Bolton Wanderers,Colin Todd,1996-01-02,1999-09-22,0,permanent
+Bolton Wanderers,Sam Allardyce,1999-10-19,2007-04-29,0,permanent
+Bolton Wanderers,Sammy Lee,2007-04-30,2007-10-07,0,permanent
+Bolton Wanderers,Archie Knox,2007-10-17,2007-10-25,0,caretaker
+Bolton Wanderers,Gary Megson,2007-10-25,2009-12-30,0,permanent
+Bolton Wanderers,Owen Coyle,2010-01-08,2012-10-09,0,permanent
+Bournemouth,Eddie Howe,2012-10-12,2020-08-01,0,permanent
+Bournemouth,Scott Parker,2021-06-28,2022-08-30,0,permanent
+Bournemouth,Gary O'Neil,2022-08-30,2023-06-19,0,permanent
+Bournemouth,Andoni Iraola,2023-06-19,2026-05-24,0,permanent
+Bournemouth,Marco Rose,2026-06-01,2026-08-11,1,incumbent
+Bradford City,Paul Jewell,1998-01-06,2000-06-18,0,permanent
+Bradford City,Chris Hutchings,2000-06-18,2000-11-06,0,permanent
+Bradford City,Stuart McCall,2000-11-06,2000-11-20,0,caretaker
+Bradford City,Jim Jefferies,2000-11-20,2001-12-24,0,permanent
+Brentford,Thomas Frank,2018-10-16,2025-06-12,0,permanent
+Brentford,Keith Andrews,2025-06-27,2026-08-11,1,incumbent
+Brighton and Hove Albion,Chris Hughton,2014-12-31,2019-05-13,0,permanent
+Brighton and Hove Albion,Graham Potter,2019-05-20,2022-09-08,0,permanent
+Brighton and Hove Albion,Roberto De Zerbi,2022-09-18,2024-05-19,0,permanent
+Brighton and Hove Albion,Fabian Hürzeler,2024-07-02,2026-08-11,1,incumbent
+Burnley,Owen Coyle,2007-11-27,2010-01-05,0,permanent
+Burnley,Brian Laws,2010-01-13,2010-12-29,0,permanent
+Burnley,Sean Dyche,2012-10-30,2022-04-15,0,permanent
+Burnley,Mike Jackson,2022-04-15,2022-05-22,0,caretaker
+Burnley,Vincent Kompany,2022-06-14,2024-05-29,0,permanent
+Burnley,Scott Parker,2024-07-05,2026-04-30,0,permanent
+Burnley,Mike Jackson,2026-04-30,2026-05-24,0,caretaker
+Cardiff City,Malky Mackay,2011-06-17,2013-12-27,0,permanent
+Cardiff City,David Kerslake,2013-12-27,2014-01-02,0,caretaker
+Cardiff City,Ole Gunnar Solskjær,2014-01-02,2014-09-18,0,permanent
+Cardiff City,Neil Warnock,2016-10-05,2019-11-11,0,permanent
+Charlton Athletic,Alan Curbishley,1991-07-24,2006-05-08,0,permanent
+Charlton Athletic,Iain Dowie,2006-05-30,2006-11-13,0,permanent
+Charlton Athletic,Les Reed,2006-11-14,2006-12-24,0,permanent
+Charlton Athletic,Alan Pardew,2006-12-24,2008-11-22,0,permanent
+Chelsea,Ian Porterfield,1991-06-11,1993-02-15,0,permanent
+Chelsea,David Webb,1993-02-15,1993-05-11,0,caretaker
+Chelsea,Glenn Hoddle,1993-06-04,1996-05-10,0,permanent
+Chelsea,Ruud Gullit,1996-05-10,1998-02-12,0,permanent
+Chelsea,Gianluca Vialli,1998-02-12,2000-09-12,0,permanent
+Chelsea,Graham Rix,2000-09-13,2000-09-17,0,caretaker
+Chelsea,Ray Wilkins,2000-09-13,2000-09-17,0,caretaker
+Chelsea,Claudio Ranieri,2000-09-18,2004-05-31,0,permanent
+Chelsea,José Mourinho,2004-06-02,2007-09-20,0,permanent
+Chelsea,Avram Grant,2007-09-20,2008-05-24,0,permanent
+Chelsea,Luiz Felipe Scolari,2008-07-01,2009-02-09,0,permanent
+Chelsea,Ray Wilkins,2009-02-09,2009-02-16,0,caretaker
+Chelsea,Guus Hiddink,2009-02-16,2009-05-31,0,caretaker
+Chelsea,Carlo Ancelotti,2009-07-01,2011-05-22,0,permanent
+Chelsea,André Villas-Boas,2011-06-22,2012-03-04,0,permanent
+Chelsea,Roberto Di Matteo,2012-03-04,2012-11-21,0,permanent
+Chelsea,Rafael Benítez,2012-11-21,2013-05-27,0,caretaker
+Chelsea,José Mourinho,2013-06-03,2015-12-17,0,permanent
+Chelsea,Steve Holland,2015-12-17,2015-12-19,0,caretaker
+Chelsea,Guus Hiddink,2015-12-19,2016-05-15,0,caretaker
+Chelsea,Antonio Conte,2016-07-03,2018-07-13,0,permanent
+Chelsea,Maurizio Sarri,2018-07-14,2019-06-16,0,permanent
+Chelsea,Frank Lampard,2019-07-04,2021-01-25,0,permanent
+Chelsea,Thomas Tuchel,2021-01-26,2022-09-07,0,permanent
+Chelsea,Graham Potter,2022-09-08,2023-04-02,0,permanent
+Chelsea,Bruno Saltor,2023-04-02,2023-04-06,0,caretaker
+Chelsea,Frank Lampard,2023-04-06,2023-05-28,0,caretaker
+Chelsea,Mauricio Pochettino,2023-07-01,2024-05-21,0,permanent
+Chelsea,Enzo Maresca,2024-07-01,2026-01-01,0,permanent
+Chelsea,Calum McFarlane,2026-01-01,2026-01-08,0,caretaker
+Chelsea,Liam Rosenior,2026-01-08,2026-04-22,0,permanent
+Chelsea,Calum McFarlane,2026-04-22,2026-06-01,0,caretaker
+Chelsea,Xabi Alonso,2026-07-01,2026-08-11,1,incumbent
+Coventry City,Bobby Gould,1992-06-24,1993-10-23,0,permanent
+Coventry City,Phil Neal,1993-10-23,1995-02-14,0,permanent
+Coventry City,Ron Atkinson,1995-02-15,1996-11-05,0,permanent
+Coventry City,Gordon Strachan,1996-11-05,2001-09-10,0,permanent
+Coventry City,Frank Lampard,2024-11-28,2026-08-11,1,incumbent
+Crystal Palace,Steve Coppell,1984-06-03,1993-05-17,0,permanent
+Crystal Palace,Alan Smith,1993-06-03,1995-05-15,0,permanent
+Crystal Palace,Steve Coppell,1997-02-27,1998-03-13,0,permanent
+Crystal Palace,Attilio Lombardo,1998-03-13,1998-04-29,0,caretaker
+Crystal Palace,Tomas Brolin,1998-03-13,1998-04-29,0,caretaker
+Crystal Palace,Ron Noades,1998-04-29,1998-05-10,0,caretaker
+Crystal Palace,Ray Lewington,1998-04-29,1998-05-10,0,caretaker
+Crystal Palace,Iain Dowie,2003-12-22,2006-05-22,0,permanent
+Crystal Palace,Ian Holloway,2012-11-03,2013-10-23,0,permanent
+Crystal Palace,Keith Millen,2013-10-23,2013-11-23,0,caretaker
+Crystal Palace,Tony Pulis,2013-11-23,2014-08-14,0,permanent
+Crystal Palace,Keith Millen,2014-08-14,2014-08-27,0,caretaker
+Crystal Palace,Neil Warnock,2014-08-27,2014-12-27,0,permanent
+Crystal Palace,Keith Millen,2014-12-27,2015-01-02,0,caretaker
+Crystal Palace,Alan Pardew,2015-01-02,2016-12-22,0,permanent
+Crystal Palace,Sam Allardyce,2016-12-23,2017-05-23,0,permanent
+Crystal Palace,Frank de Boer,2017-06-26,2017-09-11,0,permanent
+Crystal Palace,Roy Hodgson,2017-09-12,2021-05-24,0,permanent
+Crystal Palace,Patrick Vieira,2021-07-04,2023-03-17,0,permanent
+Crystal Palace,Paddy McCarthy,2023-03-17,2023-03-21,0,caretaker
+Crystal Palace,Roy Hodgson,2023-03-21,2024-02-19,0,permanent
+Crystal Palace,Paddy McCarthy,2024-02-19,2024-02-19,0,caretaker
+Crystal Palace,Oliver Glasner,2024-02-19,2026-05-27,0,permanent
+Crystal Palace,Pierre Sage,2026-06-15,2026-08-11,1,incumbent
+Derby County,Jim Smith,1995-06-15,2001-10-07,0,permanent
+Derby County,Colin Todd,2001-10-08,2002-01-14,0,permanent
+Derby County,Billy McEwan,2002-01-14,2002-01-30,0,caretaker
+Derby County,John Gregory,2002-01-30,2003-03-21,0,permanent
+Derby County,Billy Davies,2006-06-02,2007-11-26,0,permanent
+Derby County,Paul Jewell,2007-11-28,2008-12-29,0,permanent
+Everton,Howard Kendall,1990-11-05,1993-12-04,0,permanent
+Everton,Jimmy Gabriel,1993-12-04,1994-01-07,0,caretaker
+Everton,Mike Walker,1994-01-07,1994-11-08,0,permanent
+Everton,Joe Royle,1994-11-10,1997-03-27,0,permanent
+Everton,Dave Watson,1997-04-01,1997-05-31,0,caretaker
+Everton,Howard Kendall,1997-06-27,1998-06-25,0,permanent
+Everton,Walter Smith,1998-07-01,2002-03-13,0,permanent
+Everton,David Moyes,2002-03-15,2013-06-01,0,permanent
+Everton,Roberto Martínez,2013-06-05,2016-05-12,0,permanent
+Everton,David Unsworth,2016-05-12,2016-06-14,0,caretaker
+Everton,Ronald Koeman,2016-06-14,2017-10-23,0,permanent
+Everton,David Unsworth,2017-10-23,2017-11-30,0,caretaker
+Everton,Sam Allardyce,2017-11-30,2018-05-16,0,permanent
+Everton,Marco Silva,2018-05-31,2019-12-05,0,permanent
+Everton,Duncan Ferguson,2019-12-05,2019-12-21,0,caretaker
+Everton,Carlo Ancelotti,2019-12-22,2021-06-01,0,permanent
+Everton,Rafael Benítez,2021-06-30,2022-01-16,0,permanent
+Everton,Duncan Ferguson,2022-01-18,2022-01-31,0,caretaker
+Everton,Frank Lampard,2022-01-31,2023-01-23,0,permanent
+Everton,Sean Dyche,2023-01-30,2025-01-09,0,permanent
+Everton,Leighton Baines,2025-01-09,2025-01-11,0,caretaker
+Everton,David Moyes,2025-01-11,2026-08-11,1,incumbent
+Fulham,Jean Tigana,2000-07-01,2003-04-17,0,permanent
+Fulham,Chris Coleman,2003-04-17,2007-04-11,0,permanent
+Fulham,Lawrie Sanchez,2007-04-11,2007-12-21,0,permanent
+Fulham,Ray Lewington,2007-12-21,2007-12-30,0,caretaker
+Fulham,Roy Hodgson,2007-12-30,2010-06-30,0,permanent
+Fulham,Ray Lewington,2010-07-01,2010-07-29,0,caretaker
+Fulham,Mark Hughes,2010-07-29,2011-06-01,0,permanent
+Fulham,Martin Jol,2011-06-07,2013-12-01,0,permanent
+Fulham,René Meulensteen,2013-12-01,2014-02-14,0,permanent
+Fulham,Felix Magath,2014-02-14,2014-09-18,0,permanent
+Fulham,Slaviša Jokanović,2015-12-27,2018-11-14,0,permanent
+Fulham,Claudio Ranieri,2018-11-14,2019-02-28,0,permanent
+Fulham,Scott Parker,2019-02-28,2021-06-28,0,permanent
+Fulham,Marco Silva,2021-07-01,2026-06-02,0,permanent
+Fulham,Álvaro Arbeloa,2026-07-07,2026-08-11,1,incumbent
+Huddersfield Town,David Wagner,2015-11-09,2019-01-14,0,permanent
+Huddersfield Town,Mark Hudson,2019-01-14,2019-01-21,0,caretaker
+Huddersfield Town,Jan Siewert,2019-01-21,2019-08-16,0,permanent
+Hull City,Phil Brown,2006-12-04,2010-03-15,0,permanent
+Hull City,Iain Dowie,2010-03-17,2010-05-09,0,permanent
+Hull City,Steve Bruce,2012-06-08,2016-07-22,0,permanent
+Hull City,Mike Phelan,2016-07-22,2017-01-03,0,permanent
+Hull City,Marco Silva,2017-01-05,2017-05-25,0,permanent
+Hull City,Sergej Jakirović,2025-06-11,2026-08-11,1,incumbent
+Ipswich Town,John Lyall,1990-05-11,1994-12-05,0,permanent
+Ipswich Town,Paul Goddard,1994-12-06,1994-12-27,0,caretaker
+Ipswich Town,John Wark,1994-12-06,1994-12-27,0,caretaker
+Ipswich Town,George Burley,1994-12-28,2002-10-11,0,permanent
+Ipswich Town,Kieran McKenna,2021-12-16,2026-06-10,0,permanent
+Ipswich Town,Gary O'Neil,2026-06-23,2026-08-11,1,incumbent
+Leeds United,Howard Wilkinson,1988-10-10,1996-09-10,0,permanent
+Leeds United,George Graham,1996-09-10,1998-10-01,0,permanent
+Leeds United,David O'Leary,1998-10-01,2002-06-27,0,permanent
+Leeds United,Terry Venables,2002-07-08,2003-03-21,0,permanent
+Leeds United,Peter Reid,2003-03-21,2003-11-10,0,permanent
+Leeds United,Eddie Gray,2003-11-10,2004-05-21,0,caretaker
+Leeds United,Marcelo Bielsa,2018-06-15,2022-02-27,0,permanent
+Leeds United,Jesse Marsch,2022-02-28,2023-02-06,0,permanent
+Leeds United,Michael Skubala,2023-02-06,2023-02-21,0,caretaker
+Leeds United,Javi Gracia,2023-02-21,2023-05-03,0,permanent
+Leeds United,Sam Allardyce,2023-05-03,2023-06-02,0,permanent
+Leeds United,Daniel Farke,2023-07-04,2026-08-11,1,incumbent
+Leicester City,Brian Little,1991-05-30,1994-11-22,0,permanent
+Leicester City,Kevin MacDonald,1994-11-22,1994-12-14,0,caretaker
+Leicester City,Mark McGhee,1994-12-14,1995-12-07,0,permanent
+Leicester City,Martin O'Neill,1995-12-21,2000-06-01,0,permanent
+Leicester City,Peter Taylor,2000-06-12,2001-09-30,0,permanent
+Leicester City,Dave Bassett,2001-10-10,2002-04-06,0,permanent
+Leicester City,Micky Adams,2002-04-07,2004-10-11,0,permanent
+Leicester City,Nigel Pearson,2011-11-15,2015-06-30,0,permanent
+Leicester City,Claudio Ranieri,2015-07-13,2017-02-23,0,permanent
+Leicester City,Craig Shakespeare,2017-02-23,2017-10-17,0,permanent
+Leicester City,Michael Appleton,2017-10-17,2017-10-25,0,caretaker
+Leicester City,Claude Puel,2017-10-25,2019-02-24,0,permanent
+Leicester City,Adam Sadler,2019-02-24,2019-02-26,0,caretaker
+Leicester City,Mike Stowell,2019-02-24,2019-02-26,0,caretaker
+Leicester City,Brendan Rodgers,2019-02-27,2023-04-02,0,permanent
+Leicester City,Adam Sadler,2023-04-02,2023-04-10,0,caretaker
+Leicester City,Mike Stowell,2023-04-02,2023-04-10,0,caretaker
+Leicester City,Dean Smith,2023-04-10,2023-06-16,0,permanent
+Leicester City,Steve Cooper,2024-06-20,2024-11-24,0,permanent
+Leicester City,Ben Dawson,2024-11-24,2024-12-01,0,caretaker
+Leicester City,Ruud van Nistelrooy,2024-12-01,2025-06-27,0,permanent
+Liverpool,Graeme Souness,1991-04-16,1994-01-28,0,permanent
+Liverpool,Roy Evans,1994-01-28,1998-11-12,0,permanent
+Liverpool,Gérard Houllier,1998-07-01,2001-10-14,0,permanent
+Liverpool,Phil Thompson,2001-10-14,2002-03-16,0,caretaker
+Liverpool,Gérard Houllier,2002-03-17,2004-05-24,0,permanent
+Liverpool,Rafael Benítez,2004-06-16,2010-06-03,0,permanent
+Liverpool,Roy Hodgson,2010-07-01,2011-01-08,0,permanent
+Liverpool,Kenny Dalglish,2011-01-08,2012-05-16,0,permanent
+Liverpool,Brendan Rodgers,2012-06-01,2015-10-04,0,permanent
+Liverpool,Jürgen Klopp,2015-10-08,2024-05-19,0,permanent
+Liverpool,Arne Slot,2024-06-01,2026-05-30,0,permanent
+Liverpool,Andoni Iraola,2026-06-04,2026-08-11,1,incumbent
+Luton Town,Rob Edwards,2022-11-17,2025-01-09,0,permanent
+Manchester City,Peter Reid,1990-11-11,1993-08-26,0,permanent
+Manchester City,Tony Book,1993-08-26,1993-08-28,0,caretaker
+Manchester City,Brian Horton,1993-08-28,1995-05-16,0,permanent
+Manchester City,Alan Ball,1995-06-30,1996-08-26,0,permanent
+Manchester City,Joe Royle,1998-02-18,2001-05-21,0,permanent
+Manchester City,Kevin Keegan,2001-05-24,2005-03-11,0,permanent
+Manchester City,Stuart Pearce,2005-03-21,2007-05-14,0,permanent
+Manchester City,Sven-Göran Eriksson,2007-07-06,2008-06-02,0,permanent
+Manchester City,Mark Hughes,2008-06-04,2009-12-19,0,permanent
+Manchester City,Roberto Mancini,2009-12-19,2013-05-13,0,permanent
+Manchester City,Brian Kidd,2013-05-13,2013-06-14,0,caretaker
+Manchester City,Manuel Pellegrini,2013-06-14,2016-06-30,0,permanent
+Manchester City,Pep Guardiola,2016-07-01,2026-05-24,0,permanent
+Manchester City,Enzo Maresca,2026-06-29,2026-08-11,1,incumbent
+Manchester United,Alex Ferguson,1986-11-06,2013-06-01,0,permanent
+Manchester United,David Moyes,2013-07-01,2014-04-22,0,permanent
+Manchester United,Ryan Giggs,2014-04-22,2014-05-11,0,caretaker
+Manchester United,Louis van Gaal,2014-07-14,2016-05-23,0,permanent
+Manchester United,José Mourinho,2016-05-27,2018-12-18,0,permanent
+Manchester United,Ole Gunnar Solskjær,2018-12-19,2021-11-21,0,permanent
+Manchester United,Michael Carrick,2021-11-21,2021-12-02,0,caretaker
+Manchester United,Ralf Rangnick,2021-12-03,2022-05-22,0,caretaker
+Manchester United,Erik ten Hag,2022-06-01,2024-10-28,0,permanent
+Manchester United,Ruud van Nistelrooy,2024-10-28,2024-11-11,0,caretaker
+Manchester United,Ruben Amorim,2024-11-11,2026-01-05,0,permanent
+Manchester United,Darren Fletcher,2026-01-05,2026-01-13,0,caretaker
+Manchester United,Michael Carrick,2026-01-13,2026-08-11,1,incumbent
+Middlesbrough,Lennie Lawrence,1991-07-10,1994-05-19,0,permanent
+Middlesbrough,Bryan Robson,1994-05-31,2000-12-06,0,permanent
+Middlesbrough,Terry Venables,2000-12-06,2001-06-12,0,permanent
+Middlesbrough,Steve McClaren,2001-06-12,2006-05-11,0,permanent
+Middlesbrough,Gareth Southgate,2006-06-07,2009-10-20,0,permanent
+Middlesbrough,Aitor Karanka,2013-11-13,2017-03-16,0,permanent
+Middlesbrough,Steve Agnew,2017-03-16,2017-06-09,0,caretaker
+Newcastle United,Kevin Keegan,1992-02-05,1997-01-08,0,permanent
+Newcastle United,Terry McDermott,1997-01-08,1997-01-14,0,caretaker
+Newcastle United,Kenny Dalglish,1997-01-14,1998-08-27,0,permanent
+Newcastle United,Ruud Gullit,1998-08-28,1999-08-28,0,permanent
+Newcastle United,Steve Clarke,1999-08-28,1999-09-02,0,caretaker
+Newcastle United,Bobby Robson,1999-09-02,2004-08-30,0,permanent
+Newcastle United,John Carver,2004-09-11,2004-09-13,0,caretaker
+Newcastle United,Graeme Souness,2004-09-13,2006-02-02,0,permanent
+Newcastle United,Glenn Roeder,2006-02-02,2007-05-06,0,permanent
+Newcastle United,Nigel Pearson,2007-05-06,2007-05-15,0,caretaker
+Newcastle United,Sam Allardyce,2007-05-15,2008-01-09,0,permanent
+Newcastle United,Nigel Pearson,2008-01-09,2008-01-16,0,caretaker
+Newcastle United,Kevin Keegan,2008-01-16,2008-09-04,0,permanent
+Newcastle United,Chris Hughton,2008-09-08,2008-09-28,0,caretaker
+Newcastle United,Joe Kinnear,2008-09-29,2009-04-01,0,permanent
+Newcastle United,Alan Shearer,2009-04-01,2009-05-24,0,permanent
+Newcastle United,Chris Hughton,2009-06-01,2010-12-06,0,permanent
+Newcastle United,Alan Pardew,2010-12-09,2015-01-02,0,permanent
+Newcastle United,John Carver,2015-01-02,2015-06-10,0,permanent
+Newcastle United,Steve McClaren,2015-06-10,2016-03-11,0,permanent
+Newcastle United,Rafael Benítez,2016-03-11,2019-06-30,0,permanent
+Newcastle United,Steve Bruce,2019-07-17,2021-10-20,0,permanent
+Newcastle United,Graeme Jones,2021-10-20,2021-11-08,0,caretaker
+Newcastle United,Eddie Howe,2021-11-08,2026-07-30,0,permanent
+Newcastle United,Matthias Jaissle,2026-08-05,2026-08-11,1,incumbent
+Norwich City,Mike Walker,1992-06-01,1994-01-06,0,permanent
+Norwich City,John Deehan,1994-01-12,1995-07-31,0,permanent
+Norwich City,Nigel Worthington,2000-12-04,2006-10-02,0,permanent
+Norwich City,Paul Lambert,2009-08-18,2012-06-02,0,permanent
+Norwich City,Chris Hughton,2012-06-07,2014-04-06,0,permanent
+Norwich City,Neil Adams,2014-04-06,2015-01-05,0,permanent
+Norwich City,Alex Neil,2015-01-09,2017-03-10,0,permanent
+Norwich City,Daniel Farke,2017-05-25,2021-11-06,0,permanent
+Norwich City,Dean Smith,2021-11-15,2022-12-27,0,permanent
+Nottingham Forest,Brian Clough,1975-01-06,1993-05-08,0,permanent
+Nottingham Forest,Frank Clark,1993-05-12,1996-12-19,0,permanent
+Nottingham Forest,Stuart Pearce,1996-12-20,1997-05-08,0,caretaker
+Nottingham Forest,Dave Bassett,1997-05-08,1999-01-05,0,permanent
+Nottingham Forest,Micky Adams,1999-01-05,1999-01-11,0,caretaker
+Nottingham Forest,Ron Atkinson,1999-01-11,1999-05-16,0,permanent
+Nottingham Forest,Steve Cooper,2021-09-21,2023-12-19,0,permanent
+Nottingham Forest,Nuno Espírito Santo,2023-12-20,2025-09-09,0,permanent
+Nottingham Forest,Ange Postecoglou,2025-09-09,2025-10-18,0,permanent
+Nottingham Forest,Sean Dyche,2025-10-21,2026-02-12,0,permanent
+Nottingham Forest,Vítor Pereira,2026-02-15,2026-07-02,0,permanent
+Nottingham Forest,Oliver Glasner,2026-07-06,2026-08-11,1,incumbent
+Oldham Athletic,Joe Royle,1982-07-14,1994-11-10,0,permanent
+Portsmouth,Harry Redknapp,2002-03-25,2004-11-24,0,permanent
+Portsmouth,Velimir Zajec,2004-12-24,2005-04-07,0,permanent
+Portsmouth,Alain Perrin,2005-04-07,2005-11-24,0,permanent
+Portsmouth,Joe Jordan,2005-11-24,2005-12-07,0,caretaker
+Portsmouth,Harry Redknapp,2005-12-07,2008-10-25,0,permanent
+Portsmouth,Joe Jordan,2008-10-25,2008-10-28,0,caretaker
+Portsmouth,Tony Adams,2008-10-25,2009-02-09,0,permanent
+Portsmouth,Paul Hart,2009-02-09,2009-11-24,0,permanent
+Portsmouth,Avram Grant,2009-11-26,2010-05-21,0,permanent
+Queens Park Rangers,Gerry Francis,1991-06-01,1994-11-11,0,permanent
+Queens Park Rangers,Ray Wilkins,1994-11-15,1996-09-04,0,permanent
+Queens Park Rangers,Neil Warnock,2010-03-01,2012-01-08,0,permanent
+Queens Park Rangers,Mark Hughes,2012-01-10,2012-11-23,0,permanent
+Queens Park Rangers,Mark Bowen,2012-11-23,2012-11-24,0,caretaker
+Queens Park Rangers,Harry Redknapp,2012-11-24,2015-02-03,0,permanent
+Queens Park Rangers,Kevin Bond,2015-02-03,2015-02-12,0,caretaker
+Queens Park Rangers,Chris Ramsey,2015-02-03,2015-11-04,0,permanent
+Reading,Steve Coppell,2003-10-09,2009-05-12,0,permanent
+Reading,Brian McDermott,2009-12-17,2013-03-11,0,permanent
+Reading,Nigel Adkins,2013-03-26,2014-12-15,0,permanent
+Sheffield United,Dave Bassett,1988-01-02,1995-12-12,0,permanent
+Sheffield United,Neil Warnock,1999-12-02,2007-05-16,0,permanent
+Sheffield United,Chris Wilder,2016-05-12,2021-03-13,0,permanent
+Sheffield United,Paul Heckingbottom,2021-03-13,2021-05-27,0,caretaker
+Sheffield United,Paul Heckingbottom,2021-11-25,2023-12-05,0,permanent
+Sheffield United,Chris Wilder,2023-12-05,2025-06-18,0,permanent
+Sheffield Wednesday,Trevor Francis,1991-06-07,1995-05-20,0,permanent
+Sheffield Wednesday,David Pleat,1995-06-14,1997-11-03,0,permanent
+Sheffield Wednesday,Peter Shreeves,1997-11-03,1997-11-14,0,caretaker
+Sheffield Wednesday,Ron Atkinson,1997-11-14,1998-05-17,0,permanent
+Sheffield Wednesday,Danny Wilson,1998-07-06,2000-03-21,0,permanent
+Sheffield Wednesday,Peter Shreeves,2000-03-21,2000-06-21,0,caretaker
+Southampton,Ian Branfoot,1991-06-11,1994-01-10,0,permanent
+Southampton,Alan Ball,1994-01-20,1995-07-02,0,permanent
+Southampton,Dave Merrington,1995-07-14,1996-06-14,0,permanent
+Southampton,Graeme Souness,1996-07-03,1997-06-01,0,permanent
+Southampton,Dave Jones,1997-06-23,2000-01-27,0,permanent
+Southampton,Glenn Hoddle,2000-01-28,2001-03-28,0,permanent
+Southampton,Stuart Gray,2001-03-30,2001-10-21,0,permanent
+Southampton,Gordon Strachan,2001-10-22,2004-02-13,0,permanent
+Southampton,Steve Wigley,2004-02-13,2004-03-04,0,caretaker
+Southampton,Paul Sturrock,2004-03-04,2004-08-23,0,permanent
+Southampton,Steve Wigley,2004-08-23,2004-12-10,0,permanent
+Southampton,Harry Redknapp,2004-12-08,2005-12-02,0,permanent
+Southampton,Nigel Adkins,2010-09-12,2013-01-18,0,permanent
+Southampton,Mauricio Pochettino,2013-01-18,2014-05-27,0,permanent
+Southampton,Ronald Koeman,2014-06-16,2016-06-14,0,permanent
+Southampton,Claude Puel,2016-06-30,2017-06-14,0,permanent
+Southampton,Mauricio Pellegrino,2017-06-23,2018-03-12,0,permanent
+Southampton,Mark Hughes,2018-03-14,2018-12-03,0,permanent
+Southampton,Kelvin Davis,2018-12-03,2018-12-05,0,caretaker
+Southampton,Ralph Hasenhüttl,2018-12-06,2022-11-07,0,permanent
+Southampton,Rubén Sellés,2022-11-07,2022-11-10,0,caretaker
+Southampton,Nathan Jones,2022-11-10,2023-02-12,0,permanent
+Southampton,Rubén Sellés,2023-02-12,2023-05-28,0,permanent
+Southampton,Russell Martin,2023-06-21,2024-12-15,0,permanent
+Southampton,Simon Rusk,2024-12-15,2024-12-23,0,caretaker
+Southampton,Ivan Jurić,2024-12-23,2025-04-07,0,permanent
+Southampton,Simon Rusk,2025-04-07,2025-05-25,0,caretaker
+Stoke City,Tony Pulis,2006-06-15,2013-05-21,0,permanent
+Stoke City,Mark Hughes,2013-05-30,2018-01-06,0,permanent
+Stoke City,Eddie Niedzwiecki,2018-01-08,2018-01-15,0,caretaker
+Stoke City,Paul Lambert,2018-01-15,2018-05-18,0,permanent
+Sunderland,Peter Reid,1995-03-29,2002-10-07,0,permanent
+Sunderland,Howard Wilkinson,2002-10-10,2003-03-10,0,permanent
+Sunderland,Mick McCarthy,2003-03-12,2006-03-06,0,permanent
+Sunderland,Kevin Ball,2006-03-07,2006-05-31,0,caretaker
+Sunderland,Roy Keane,2006-08-30,2008-12-04,0,permanent
+Sunderland,Ricky Sbragia,2008-12-04,2009-05-24,0,permanent
+Sunderland,Steve Bruce,2009-06-03,2011-11-30,0,permanent
+Sunderland,Martin O'Neill,2011-12-03,2013-03-30,0,permanent
+Sunderland,Paolo Di Canio,2013-03-31,2013-09-22,0,permanent
+Sunderland,Kevin Ball,2013-09-22,2013-10-08,0,caretaker
+Sunderland,Gus Poyet,2013-10-08,2015-03-16,0,permanent
+Sunderland,Dick Advocaat,2015-03-17,2015-10-04,0,permanent
+Sunderland,Sam Allardyce,2015-10-09,2016-07-22,0,permanent
+Sunderland,David Moyes,2016-07-23,2017-05-22,0,permanent
+Sunderland,Régis Le Bris,2024-07-01,2026-08-11,1,incumbent
+Swansea City,Brendan Rodgers,2010-07-16,2012-06-01,0,permanent
+Swansea City,Michael Laudrup,2012-06-15,2014-02-04,0,permanent
+Swansea City,Garry Monk,2014-02-04,2015-12-09,0,permanent
+Swansea City,Alan Curtis,2015-12-09,2016-01-18,0,caretaker
+Swansea City,Francesco Guidolin,2016-01-18,2016-10-03,0,permanent
+Swansea City,Bob Bradley,2016-10-03,2016-12-27,0,permanent
+Swansea City,Alan Curtis,2016-12-27,2017-01-03,0,caretaker
+Swansea City,Paul Clement,2017-01-03,2017-12-20,0,permanent
+Swansea City,Leon Britton,2017-12-20,2017-12-28,0,caretaker
+Swansea City,Carlos Carvalhal,2017-12-28,2018-05-18,0,permanent
+Swindon Town,John Gorman,1993-06-04,1994-11-21,0,permanent
+Tottenham Hotspur,Doug Livermore,1992-05-27,1993-06-19,0,permanent
+Tottenham Hotspur,Ossie Ardiles,1993-06-19,1994-11-01,0,permanent
+Tottenham Hotspur,Steve Perryman,1994-11-01,1994-11-15,0,caretaker
+Tottenham Hotspur,Gerry Francis,1994-11-15,1997-11-19,0,permanent
+Tottenham Hotspur,Christian Gross,1997-11-25,1998-09-05,0,permanent
+Tottenham Hotspur,David Pleat,1998-08-30,1998-10-03,0,caretaker
+Tottenham Hotspur,Chris Hughton,1998-09-07,1998-10-01,0,caretaker
+Tottenham Hotspur,George Graham,1998-10-05,2001-03-16,0,permanent
+Tottenham Hotspur,David Pleat,2001-03-16,2001-04-02,0,caretaker
+Tottenham Hotspur,Glenn Hoddle,2001-04-02,2003-09-21,0,permanent
+Tottenham Hotspur,David Pleat,2003-09-21,2004-06-03,0,caretaker
+Tottenham Hotspur,Jacques Santini,2004-06-03,2004-11-05,0,permanent
+Tottenham Hotspur,Martin Jol,2004-11-05,2007-10-25,0,permanent
+Tottenham Hotspur,Clive Allen,2007-10-25,2007-10-29,0,caretaker
+Tottenham Hotspur,Alex Inglethorpe,2007-10-25,2007-10-29,0,caretaker
+Tottenham Hotspur,Juande Ramos,2007-10-27,2008-10-25,0,permanent
+Tottenham Hotspur,Clive Allen,2008-10-25,2008-10-26,0,caretaker
+Tottenham Hotspur,Harry Redknapp,2008-10-26,2012-06-13,0,permanent
+Tottenham Hotspur,André Villas-Boas,2012-07-06,2013-12-16,0,permanent
+Tottenham Hotspur,Tim Sherwood,2013-12-16,2014-05-13,0,permanent
+Tottenham Hotspur,Mauricio Pochettino,2014-05-27,2019-11-19,0,permanent
+Tottenham Hotspur,José Mourinho,2019-11-20,2021-04-19,0,permanent
+Tottenham Hotspur,Ryan Mason,2021-04-19,2021-06-30,0,caretaker
+Tottenham Hotspur,Nuno Espírito Santo,2021-06-30,2021-11-01,0,permanent
+Tottenham Hotspur,Antonio Conte,2021-11-02,2023-03-26,0,permanent
+Tottenham Hotspur,Cristian Stellini,2023-03-26,2023-04-24,0,caretaker
+Tottenham Hotspur,Ryan Mason,2023-04-24,2023-05-28,0,caretaker
+Tottenham Hotspur,Ange Postecoglou,2023-06-06,2025-06-06,0,permanent
+Tottenham Hotspur,Thomas Frank,2025-06-12,2026-02-11,0,permanent
+Tottenham Hotspur,Igor Tudor,2026-02-14,2026-03-29,0,permanent
+Tottenham Hotspur,Roberto De Zerbi,2026-03-31,2026-08-11,1,incumbent
+Watford,Graham Taylor,1996-02-21,2001-06-01,0,permanent
+Watford,Aidy Boothroyd,2005-03-29,2008-11-03,0,permanent
+Watford,Quique Sánchez Flores,2015-06-05,2016-05-15,0,permanent
+Watford,Walter Mazzarri,2016-07-01,2017-05-21,0,permanent
+Watford,Marco Silva,2017-05-27,2018-01-21,0,permanent
+Watford,Javi Gracia,2018-01-21,2019-09-07,0,permanent
+Watford,Quique Sánchez Flores,2019-09-07,2019-12-01,0,permanent
+Watford,Hayden Mullins,2019-12-02,2019-12-07,0,caretaker
+Watford,Nigel Pearson,2019-12-08,2020-07-19,0,permanent
+Watford,Hayden Mullins,2020-07-19,2020-08-15,0,caretaker
+Watford,Xisco Muñoz,2020-12-20,2021-10-03,0,permanent
+Watford,Claudio Ranieri,2021-10-04,2022-01-24,0,permanent
+Watford,Roy Hodgson,2022-01-25,2022-05-22,0,permanent
+West Bromwich Albion,Gary Megson,2000-03-09,2004-10-26,0,permanent
+West Bromwich Albion,Frank Burrows,2004-10-27,2004-11-08,0,caretaker
+West Bromwich Albion,Bryan Robson,2004-11-09,2006-09-18,0,permanent
+West Bromwich Albion,Tony Mowbray,2006-10-18,2009-06-16,0,permanent
+West Bromwich Albion,Roberto Di Matteo,2009-06-30,2011-02-06,0,permanent
+West Bromwich Albion,Michael Appleton,2011-02-06,2011-02-14,0,caretaker
+West Bromwich Albion,Roy Hodgson,2011-02-14,2012-05-13,0,permanent
+West Bromwich Albion,Steve Clarke,2012-06-08,2013-12-14,0,permanent
+West Bromwich Albion,Keith Downing,2013-12-14,2014-01-09,0,caretaker
+West Bromwich Albion,Pepe Mel,2014-01-09,2014-05-12,0,permanent
+West Bromwich Albion,Alan Irvine,2014-06-14,2014-12-29,0,permanent
+West Bromwich Albion,Rob Kelly,2014-12-29,2015-01-01,0,caretaker
+West Bromwich Albion,Tony Pulis,2015-01-01,2017-11-20,0,permanent
+West Bromwich Albion,Gary Megson,2017-11-20,2017-11-29,0,caretaker
+West Bromwich Albion,Alan Pardew,2017-11-29,2018-04-02,0,permanent
+West Bromwich Albion,Darren Moore,2018-04-02,2019-03-09,0,permanent
+West Bromwich Albion,Slaven Bilić,2019-06-13,2020-12-16,0,permanent
+West Bromwich Albion,Sam Allardyce,2020-12-16,2021-05-23,0,permanent
+West Ham United,Billy Bonds,1990-02-23,1994-08-10,0,permanent
+West Ham United,Harry Redknapp,1994-08-10,2001-05-09,0,permanent
+West Ham United,Glenn Roeder,2001-05-09,2003-04-24,0,permanent
+West Ham United,Trevor Brooking,2003-04-24,2003-05-12,0,caretaker
+West Ham United,Alan Pardew,2003-10-20,2006-12-11,0,permanent
+West Ham United,Alan Curbishley,2006-12-13,2008-09-03,0,permanent
+West Ham United,Kevin Keen,2008-09-03,2008-09-15,0,caretaker
+West Ham United,Gianfranco Zola,2008-09-15,2010-05-11,0,permanent
+West Ham United,Avram Grant,2010-06-03,2011-05-15,0,permanent
+West Ham United,Kevin Keen,2011-05-15,2011-06-01,0,caretaker
+West Ham United,Sam Allardyce,2011-06-01,2015-05-24,0,permanent
+West Ham United,Slaven Bilić,2015-06-09,2017-11-06,0,permanent
+West Ham United,David Moyes,2017-11-07,2018-05-16,0,permanent
+West Ham United,Manuel Pellegrini,2018-05-22,2019-12-28,0,permanent
+West Ham United,David Moyes,2019-12-29,2024-05-19,0,permanent
+West Ham United,Julen Lopetegui,2024-07-01,2025-01-08,0,permanent
+West Ham United,Graham Potter,2025-01-09,2025-09-27,0,permanent
+West Ham United,Nuno Espírito Santo,2025-09-27,2026-08-11,1,incumbent
+Wigan Athletic,Paul Jewell,2001-06-12,2007-05-14,0,permanent
+Wigan Athletic,Chris Hutchings,2007-05-14,2007-11-05,0,permanent
+Wigan Athletic,Frank Barlow,2007-11-05,2007-11-26,0,caretaker
+Wigan Athletic,Steve Bruce,2007-11-26,2009-06-03,0,permanent
+Wigan Athletic,Roberto Martínez,2009-06-15,2013-05-28,0,permanent
+Wimbledon,Joe Kinnear,1992-01-19,1999-06-09,0,permanent
+Wimbledon,Egil Olsen,1999-06-09,2000-05-01,0,permanent
+Wimbledon,Terry Burton,2000-05-01,2002-04-25,0,permanent
+Wolverhampton Wanderers,Dave Jones,2001-01-03,2004-11-11,0,permanent
+Wolverhampton Wanderers,Mick McCarthy,2006-08-05,2012-02-14,0,permanent
+Wolverhampton Wanderers,Terry Connor,2012-02-24,2012-06-30,0,permanent
+Wolverhampton Wanderers,Nuno Espírito Santo,2017-05-31,2021-05-23,0,permanent
+Wolverhampton Wanderers,Bruno Lage,2021-06-09,2022-10-02,0,permanent
+Wolverhampton Wanderers,Steve Davis,2022-10-03,2022-11-13,0,caretaker
+Wolverhampton Wanderers,Julen Lopetegui,2022-11-14,2023-08-08,0,permanent
+Wolverhampton Wanderers,Gary O'Neil,2023-08-09,2024-12-15,0,permanent
+Wolverhampton Wanderers,Vítor Pereira,2024-12-19,2025-11-02,0,permanent
+Wolverhampton Wanderers,James Collins,2025-11-02,2025-11-12,0,caretaker
+Wolverhampton Wanderers,Rob Edwards,2025-11-12,2026-06-11,0,permanent

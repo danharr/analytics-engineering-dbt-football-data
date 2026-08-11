@@ -1,0 +1,657 @@
+season_label,team_abbr,team_name,avg_home_attendance
+1992-93,ARS,Arsenal,24403.0
+1992-93,AVL,Aston Villa,29594.0
+1992-93,BLA,Blackburn Rovers,16247.0
+1992-93,CHE,Chelsea,18754.0
+1992-93,COV,Coventry City,15024.0
+1992-93,CRY,Crystal Palace,15726.0
+1992-93,EVE,Everton,20457.0
+1992-93,IPS,Ipswich Town,18185.0
+1992-93,LEE,Leeds United,29229.0
+1992-93,LIV,Liverpool,37009.0
+1992-93,MCI,Manchester City,24698.0
+1992-93,MID,Middlesbrough,16722.0
+1992-93,MUN,Manchester United,35132.0
+1992-93,NFO,Nottingham Forest,21957.0
+1992-93,NOR,Norwich City,16253.0
+1992-93,OLD,Oldham Athletic,12862.0
+1992-93,QPR,Queens Park Rangers,14999.0
+1992-93,SHU,Sheffield United,18799.0
+1992-93,SHW,Sheffield Wednesday,27264.0
+1992-93,SOU,Southampton,15934.0
+1992-93,TOT,Tottenham Hotspur,27878.0
+1992-93,WIM,Wimbledon,8353.0
+1993-94,ARS,Arsenal,30492.0
+1993-94,AVL,Aston Villa,29065.0
+1993-94,BLA,Blackburn Rovers,17332.0
+1993-94,CHE,Chelsea,19211.0
+1993-94,COV,Coventry City,13312.0
+1993-94,EVE,Everton,23104.0
+1993-94,IPS,Ipswich Town,16574.0
+1993-94,LEE,Leeds United,34506.0
+1993-94,LIV,Liverpool,38508.0
+1993-94,MCI,Manchester City,26684.0
+1993-94,MUN,Manchester United,44244.0
+1993-94,NEW,Newcastle United,33792.0
+1993-94,NOR,Norwich City,18179.0
+1993-94,OLD,Oldham Athletic,12572.0
+1993-94,QPR,Queens Park Rangers,14228.0
+1993-94,SHU,Sheffield United,19562.0
+1993-94,SHW,Sheffield Wednesday,27181.0
+1993-94,SOU,Southampton,14756.0
+1993-94,SWI,Swindon Town,15011.0
+1993-94,TOT,Tottenham Hotspur,27251.0
+1993-94,WHU,West Ham United,20598.0
+1993-94,WIM,Wimbledon,10442.0
+1994-95,ARS,Arsenal,35330.0
+1994-95,AVL,Aston Villa,29761.0
+1994-95,BLA,Blackburn Rovers,25271.0
+1994-95,CHE,Chelsea,21062.0
+1994-95,COV,Coventry City,15955.0
+1994-95,CRY,Crystal Palace,14802.0
+1994-95,EVE,Everton,31035.0
+1994-95,IPS,Ipswich Town,16918.0
+1994-95,LEE,Leeds United,32852.0
+1994-95,LEI,Leicester City,20882.0
+1994-95,LIV,Liverpool,33805.0
+1994-95,MCI,Manchester City,21883.0
+1994-95,MUN,Manchester United,42763.0
+1994-95,NEW,Newcastle United,34552.0
+1994-95,NFO,Nottingham Forest,24136.0
+1994-95,NOR,Norwich City,20079.0
+1994-95,QPR,Queens Park Rangers,15830.0
+1994-95,SHW,Sheffield Wednesday,26451.0
+1994-95,SOU,Southampton,15978.0
+1994-95,TOT,Tottenham Hotspur,26245.0
+1994-95,WHU,West Ham United,20406.0
+1994-95,WIM,Wimbledon,12359.0
+1995-96,ARS,Arsenal,37568.0
+1995-96,AVL,Aston Villa,32772.0
+1995-96,BLA,Blackburn Rovers,27552.0
+1995-96,BOL,Bolton Wanderers,18823.0
+1995-96,CHE,Chelsea,25581.0
+1995-96,COV,Coventry City,18528.0
+1995-96,EVE,Everton,35424.0
+1995-96,LEE,Leeds United,32629.0
+1995-96,LIV,Liverpool,39553.0
+1995-96,MCI,Manchester City,27941.0
+1995-96,MID,Middlesbrough,29257.0
+1995-96,MUN,Manchester United,41681.0
+1995-96,NEW,Newcastle United,36505.0
+1995-96,NFO,Nottingham Forest,25916.0
+1995-96,QPR,Queens Park Rangers,15672.0
+1995-96,SHW,Sheffield Wednesday,24877.0
+1995-96,SOU,Southampton,14822.0
+1995-96,TOT,Tottenham Hotspur,30548.0
+1995-96,WHU,West Ham United,22317.0
+1995-96,WIM,Wimbledon,13230.0
+1996-97,ARS,Arsenal,37826.0
+1996-97,AVL,Aston Villa,36027.0
+1996-97,BLA,Blackburn Rovers,24966.0
+1996-97,CHE,Chelsea,27617.0
+1996-97,COV,Coventry City,19613.0
+1996-97,DER,Derby County,17889.0
+1996-97,EVE,Everton,36188.0
+1996-97,LEE,Leeds United,32118.0
+1996-97,LEI,Leicester City,20184.0
+1996-97,LIV,Liverpool,39774.0
+1996-97,MID,Middlesbrough,29871.0
+1996-97,MUN,Manchester United,55081.0
+1996-97,NEW,Newcastle United,36414.0
+1996-97,NFO,Nottingham Forest,24588.0
+1996-97,SHW,Sheffield Wednesday,25714.0
+1996-97,SOU,Southampton,15105.0
+1996-97,SUN,Sunderland,20974.0
+1996-97,TOT,Tottenham Hotspur,31067.0
+1996-97,WHU,West Ham United,23209.0
+1996-97,WIM,Wimbledon,15138.0
+1997-98,ARS,Arsenal,38053.0
+1997-98,AVL,Aston Villa,36031.0
+1997-98,BAR,Barnsley,18443.0
+1997-98,BLA,Blackburn Rovers,25253.0
+1997-98,BOL,Bolton Wanderers,24352.0
+1997-98,CHE,Chelsea,33387.0
+1997-98,COV,Coventry City,19723.0
+1997-98,CRY,Crystal Palace,21983.0
+1997-98,DER,Derby County,29105.0
+1997-98,EVE,Everton,35355.0
+1997-98,LEE,Leeds United,34642.0
+1997-98,LEI,Leicester City,20615.0
+1997-98,LIV,Liverpool,40628.0
+1997-98,MUN,Manchester United,55166.0
+1997-98,NEW,Newcastle United,36671.0
+1997-98,SHW,Sheffield Wednesday,28706.0
+1997-98,SOU,Southampton,15159.0
+1997-98,TOT,Tottenham Hotspur,29144.0
+1997-98,WHU,West Ham United,25075.0
+1997-98,WIM,Wimbledon,16666.0
+1998-99,ARS,Arsenal,38024.0
+1998-99,AVL,Aston Villa,36937.0
+1998-99,BLA,Blackburn Rovers,25761.0
+1998-99,CHA,Charlton Athletic,19816.0
+1998-99,CHE,Chelsea,34754.0
+1998-99,COV,Coventry City,20773.0
+1998-99,DER,Derby County,29193.0
+1998-99,EVE,Everton,36202.0
+1998-99,LEE,Leeds United,35807.0
+1998-99,LEI,Leicester City,20469.0
+1998-99,LIV,Liverpool,43321.0
+1998-99,MID,Middlesbrough,34386.0
+1998-99,MUN,Manchester United,55188.0
+1998-99,NEW,Newcastle United,36692.0
+1998-99,NFO,Nottingham Forest,24415.0
+1998-99,SHW,Sheffield Wednesday,26745.0
+1998-99,SOU,Southampton,15140.0
+1998-99,TOT,Tottenham Hotspur,34152.0
+1998-99,WHU,West Ham United,25639.0
+1998-99,WIM,Wimbledon,18243.0
+1999-00,ARS,Arsenal,38033.0
+1999-00,AVL,Aston Villa,29952.0
+1999-00,BRA,Bradford City,18030.0
+1999-00,CHE,Chelsea,34532.0
+1999-00,COV,Coventry City,20804.0
+1999-00,DER,Derby County,29351.0
+1999-00,EVE,Everton,32185.0
+1999-00,LEE,Leeds United,39022.0
+1999-00,LEI,Leicester City,20489.0
+1999-00,LIV,Liverpool,43268.0
+1999-00,MID,Middlesbrough,32518.0
+1999-00,MUN,Manchester United,53689.0
+1999-00,NEW,Newcastle United,36163.0
+1999-00,SHW,Sheffield Wednesday,24568.0
+1999-00,SOU,Southampton,15340.0
+1999-00,SUN,Sunderland,40540.0
+1999-00,TOT,Tottenham Hotspur,34928.0
+1999-00,WAT,Watford,19276.0
+1999-00,WHU,West Ham United,25510.0
+1999-00,WIM,Wimbledon,18266.0
+2000-01,ARS,Arsenal,37974.0
+2000-01,AVL,Aston Villa,31521.0
+2000-01,BRA,Bradford City,18511.0
+2000-01,CHA,Charlton Athletic,20021.0
+2000-01,CHE,Chelsea,34700.0
+2000-01,COV,Coventry City,20582.0
+2000-01,DER,Derby County,28551.0
+2000-01,EVE,Everton,34131.0
+2000-01,IPS,Ipswich Town,22459.0
+2000-01,LEE,Leeds United,38974.0
+2000-01,LEI,Leicester City,20452.0
+2000-01,LIV,Liverpool,43699.0
+2000-01,MCI,Manchester City,34058.0
+2000-01,MID,Middlesbrough,30748.0
+2000-01,MUN,Manchester United,67490.0
+2000-01,NEW,Newcastle United,51309.0
+2000-01,SOU,Southampton,15115.0
+2000-01,SUN,Sunderland,46831.0
+2000-01,TOT,Tottenham Hotspur,35195.0
+2000-01,WHU,West Ham United,26223.0
+2001-02,ARS,Arsenal,38055.0
+2001-02,AVL,Aston Villa,35012.0
+2001-02,BLA,Blackburn Rovers,25976.0
+2001-02,BOL,Bolton Wanderers,25098.0
+2001-02,CHA,Charlton Athletic,24165.0
+2001-02,CHE,Chelsea,39030.0
+2001-02,DER,Derby County,29816.0
+2001-02,EVE,Everton,33582.0
+2001-02,FUL,Fulham,19343.0
+2001-02,IPS,Ipswich Town,24420.0
+2001-02,LEE,Leeds United,39789.0
+2001-02,LEI,Leicester City,19913.0
+2001-02,LIV,Liverpool,43389.0
+2001-02,MID,Middlesbrough,28461.0
+2001-02,MUN,Manchester United,67558.0
+2001-02,NEW,Newcastle United,51373.0
+2001-02,SOU,Southampton,30633.0
+2001-02,SUN,Sunderland,46744.0
+2001-02,TOT,Tottenham Hotspur,35001.0
+2001-02,WHU,West Ham United,31569.0
+2002-03,ARS,Arsenal,38042.0
+2002-03,AVL,Aston Villa,34975.0
+2002-03,BIR,Birmingham City,28831.0
+2002-03,BLA,Blackburn Rovers,26226.0
+2002-03,BOL,Bolton Wanderers,25012.0
+2002-03,CHA,Charlton Athletic,26258.0
+2002-03,CHE,Chelsea,39784.0
+2002-03,EVE,Everton,38504.0
+2002-03,FUL,Fulham,15787.0
+2002-03,LEE,Leeds United,39120.0
+2002-03,LIV,Liverpool,43243.0
+2002-03,MCI,Manchester City,34565.0
+2002-03,MID,Middlesbrough,31025.0
+2002-03,MUN,Manchester United,67602.0
+2002-03,NEW,Newcastle United,51923.0
+2002-03,SOU,Southampton,30680.0
+2002-03,SUN,Sunderland,39698.0
+2002-03,TOT,Tottenham Hotspur,35897.0
+2002-03,WBA,West Bromwich Albion,26731.0
+2002-03,WHU,West Ham United,34432.0
+2003-04,ARS,Arsenal,38079.0
+2003-04,AVL,Aston Villa,36622.0
+2003-04,BIR,Birmingham City,29078.0
+2003-04,BLA,Blackburn Rovers,24376.0
+2003-04,BOL,Bolton Wanderers,26718.0
+2003-04,CHA,Charlton Athletic,26278.0
+2003-04,CHE,Chelsea,41272.0
+2003-04,EVE,Everton,38837.0
+2003-04,FUL,Fulham,16240.0
+2003-04,LEE,Leeds United,36666.0
+2003-04,LEI,Leicester City,30983.0
+2003-04,LIV,Liverpool,42677.0
+2003-04,MCI,Manchester City,46830.0
+2003-04,MID,Middlesbrough,30395.0
+2003-04,MUN,Manchester United,67641.0
+2003-04,NEW,Newcastle United,51966.0
+2003-04,POR,Portsmouth,20054.0
+2003-04,SOU,Southampton,31717.0
+2003-04,TOT,Tottenham Hotspur,34872.0
+2003-04,WOL,Wolverhampton Wanderers,28864.0
+2004-05,ARS,Arsenal,37979.0
+2004-05,AVL,Aston Villa,37354.0
+2004-05,BIR,Birmingham City,28760.0
+2004-05,BLA,Blackburn Rovers,22315.0
+2004-05,BOL,Bolton Wanderers,25953.0
+2004-05,CHA,Charlton Athletic,26384.0
+2004-05,CHE,Chelsea,41907.0
+2004-05,CRY,Crystal Palace,24192.0
+2004-05,EVE,Everton,36819.0
+2004-05,FUL,Fulham,19839.0
+2004-05,LIV,Liverpool,42550.0
+2004-05,MCI,Manchester City,45259.0
+2004-05,MID,Middlesbrough,31938.0
+2004-05,MUN,Manchester United,67871.0
+2004-05,NEW,Newcastle United,51846.0
+2004-05,NOR,Norwich City,24350.0
+2004-05,POR,Portsmouth,20087.0
+2004-05,SOU,Southampton,30610.0
+2004-05,TOT,Tottenham Hotspur,35931.0
+2004-05,WBA,West Bromwich Albion,26044.0
+2005-06,ARS,Arsenal,38184.0
+2005-06,AVL,Aston Villa,34112.0
+2005-06,BIR,Birmingham City,27390.0
+2005-06,BLA,Blackburn Rovers,21015.0
+2005-06,BOL,Bolton Wanderers,25201.0
+2005-06,CHA,Charlton Athletic,26171.0
+2005-06,CHE,Chelsea,41859.0
+2005-06,EVE,Everton,36857.0
+2005-06,FUL,Fulham,20662.0
+2005-06,LIV,Liverpool,44897.0
+2005-06,MCI,Manchester City,42856.0
+2005-06,MID,Middlesbrough,28467.0
+2005-06,MUN,Manchester United,68765.0
+2005-06,NEW,Newcastle United,52134.0
+2005-06,POR,Portsmouth,19868.0
+2005-06,SUN,Sunderland,33904.0
+2005-06,TOT,Tottenham Hotspur,36036.0
+2005-06,WBA,West Bromwich Albion,25203.0
+2005-06,WHU,West Ham United,33225.0
+2005-06,WIG,Wigan Athletic,20886.0
+2006-07,ARS,Arsenal,60046.0
+2006-07,AVL,Aston Villa,36238.0
+2006-07,BLA,Blackburn Rovers,21262.0
+2006-07,BOL,Bolton Wanderers,23586.0
+2006-07,CHA,Charlton Athletic,26195.0
+2006-07,CHE,Chelsea,41551.0
+2006-07,EVE,Everton,36739.0
+2006-07,FUL,Fulham,22241.0
+2006-07,LIV,Liverpool,44801.0
+2006-07,MCI,Manchester City,39988.0
+2006-07,MID,Middlesbrough,27729.0
+2006-07,MUN,Manchester United,75821.0
+2006-07,NEW,Newcastle United,50974.0
+2006-07,POR,Portsmouth,19843.0
+2006-07,REA,Reading,23764.0
+2006-07,SHU,Sheffield United,30680.0
+2006-07,TOT,Tottenham Hotspur,35803.0
+2006-07,WAT,Watford,18892.0
+2006-07,WHU,West Ham United,34586.0
+2006-07,WIG,Wigan Athletic,18437.0
+2007-08,ARS,Arsenal,60114.0
+2007-08,BIR,Birmingham City,27300.0
+2007-08,BLA,Blackburn Rovers,23212.0
+2007-08,CHE,Chelsea,41715.0
+2007-08,DER,Derby County,32844.0
+2007-08,FUL,Fulham,20340.0
+2007-08,MID,Middlesbrough,27613.0
+2007-08,MUN,Manchester United,75633.0
+2007-08,REA,Reading,24058.0
+2007-08,WHU,West Ham United,34909.0
+2008-09,ARS,Arsenal,60027.0
+2008-09,AVL,Aston Villa,40545.0
+2008-09,BLA,Blackburn Rovers,23521.0
+2008-09,BOL,Bolton Wanderers,22808.0
+2008-09,CHE,Chelsea,41604.0
+2008-09,EVE,Everton,36013.0
+2008-09,FUL,Fulham,24530.0
+2008-09,HUL,Hull City,24816.0
+2008-09,LIV,Liverpool,44031.0
+2008-09,MCI,Manchester City,43065.0
+2008-09,MID,Middlesbrough,28504.0
+2008-09,MUN,Manchester United,75268.0
+2008-09,NEW,Newcastle United,50177.0
+2008-09,POR,Portsmouth,19952.0
+2008-09,STO,Stoke City,26824.0
+2008-09,SUN,Sunderland,40491.0
+2008-09,TOT,Tottenham Hotspur,35945.0
+2008-09,WBA,West Bromwich Albion,25704.0
+2008-09,WHU,West Ham United,34415.0
+2008-09,WIG,Wigan Athletic,18697.0
+2009-10,ARS,Arsenal,59918.0
+2009-10,AVL,Aston Villa,38573.0
+2009-10,BIR,Birmingham City,25246.0
+2009-10,BLA,Blackburn Rovers,25428.0
+2009-10,BOL,Bolton Wanderers,21881.0
+2009-10,BUR,Burnley,20672.0
+2009-10,CHE,Chelsea,41423.0
+2009-10,EVE,Everton,36581.0
+2009-10,FUL,Fulham,23909.0
+2009-10,HUL,Hull City,24358.0
+2009-10,LIV,Liverpool,42864.0
+2009-10,MCI,Manchester City,45513.0
+2009-10,MUN,Manchester United,74864.0
+2009-10,POR,Portsmouth,18249.0
+2009-10,STO,Stoke City,27291.0
+2009-10,SUN,Sunderland,40510.0
+2009-10,TOT,Tottenham Hotspur,35794.0
+2009-10,WHU,West Ham United,33683.0
+2009-10,WIG,Wigan Athletic,18006.0
+2009-10,WOL,Wolverhampton Wanderers,28366.0
+2010-11,ARS,Arsenal,60025.0
+2010-11,AVL,Aston Villa,37194.0
+2010-11,BIR,Birmingham City,25462.0
+2010-11,BLA,Blackburn Rovers,25000.0
+2010-11,BOL,Bolton Wanderers,22870.0
+2010-11,BPL,Blackpool,15780.0
+2010-11,CHE,Chelsea,41435.0
+2010-11,EVE,Everton,36039.0
+2010-11,FUL,Fulham,25043.0
+2010-11,LIV,Liverpool,42820.0
+2010-11,MCI,Manchester City,45880.0
+2010-11,MUN,Manchester United,75109.0
+2010-11,NEW,Newcastle United,47718.0
+2010-11,STO,Stoke City,26858.0
+2010-11,SUN,Sunderland,40011.0
+2010-11,TOT,Tottenham Hotspur,35704.0
+2010-11,WBA,West Bromwich Albion,24683.0
+2010-11,WHU,West Ham United,33427.0
+2010-11,WIG,Wigan Athletic,16812.0
+2010-11,WOL,Wolverhampton Wanderers,27696.0
+2011-12,ARS,Arsenal,60000.0
+2011-12,AVL,Aston Villa,33873.0
+2011-12,BLA,Blackburn Rovers,22551.0
+2011-12,BOL,Bolton Wanderers,23670.0
+2011-12,CHE,Chelsea,41478.0
+2011-12,EVE,Everton,33228.0
+2011-12,FUL,Fulham,25293.0
+2011-12,LIV,Liverpool,44253.0
+2011-12,MCI,Manchester City,47045.0
+2011-12,MUN,Manchester United,75387.0
+2011-12,NEW,Newcastle United,49936.0
+2011-12,NOR,Norwich City,26606.0
+2011-12,QPR,Queens Park Rangers,17295.0
+2011-12,STO,Stoke City,27226.0
+2011-12,SUN,Sunderland,39095.0
+2011-12,SWA,Swansea City,19946.0
+2011-12,TOT,Tottenham Hotspur,36026.0
+2011-12,WBA,West Bromwich Albion,24798.0
+2011-12,WIG,Wigan Athletic,18634.0
+2011-12,WOL,Wolverhampton Wanderers,25682.0
+2012-13,ARS,Arsenal,60079.0
+2012-13,AVL,Aston Villa,35060.0
+2012-13,CHE,Chelsea,41462.0
+2012-13,EVE,Everton,36356.0
+2012-13,FUL,Fulham,25394.0
+2012-13,LIV,Liverpool,44749.0
+2012-13,MCI,Manchester City,46974.0
+2012-13,MUN,Manchester United,75530.0
+2012-13,NEW,Newcastle United,50517.0
+2012-13,NOR,Norwich City,26672.0
+2012-13,QPR,Queens Park Rangers,17779.0
+2012-13,REA,Reading,23862.0
+2012-13,SOU,Southampton,30874.0
+2012-13,STO,Stoke City,26732.0
+2012-13,SUN,Sunderland,40544.0
+2012-13,SWA,Swansea City,20370.0
+2012-13,TOT,Tottenham Hotspur,36030.0
+2012-13,WBA,West Bromwich Albion,25360.0
+2012-13,WHU,West Ham United,34720.0
+2012-13,WIG,Wigan Athletic,19359.0
+2013-14,ARS,Arsenal,60013.0
+2013-14,AVL,Aston Villa,36081.0
+2013-14,CAR,Cardiff City,27430.0
+2013-14,CHE,Chelsea,41482.0
+2013-14,CRY,Crystal Palace,24114.0
+2013-14,EVE,Everton,37732.0
+2013-14,FUL,Fulham,24977.0
+2013-14,HUL,Hull City,24117.0
+2013-14,LIV,Liverpool,44671.0
+2013-14,MCI,Manchester City,47080.0
+2013-14,MUN,Manchester United,75207.0
+2013-14,NEW,Newcastle United,50395.0
+2013-14,NOR,Norwich City,26805.0
+2013-14,SOU,Southampton,30212.0
+2013-14,STO,Stoke City,26137.0
+2013-14,SUN,Sunderland,41090.0
+2013-14,SWA,Swansea City,20407.0
+2013-14,TOT,Tottenham Hotspur,35808.0
+2013-14,WBA,West Bromwich Albion,25194.0
+2013-14,WHU,West Ham United,34197.0
+2014-15,ARS,Arsenal,59992.0
+2014-15,AVL,Aston Villa,34133.0
+2014-15,BUR,Burnley,19131.0
+2014-15,CHE,Chelsea,41546.0
+2014-15,CRY,Crystal Palace,24421.0
+2014-15,EVE,Everton,38406.0
+2014-15,HUL,Hull City,23557.0
+2014-15,LEI,Leicester City,31693.0
+2014-15,LIV,Liverpool,44659.0
+2014-15,MCI,Manchester City,45365.0
+2014-15,MUN,Manchester United,75335.0
+2014-15,NEW,Newcastle United,50359.0
+2014-15,QPR,Queens Park Rangers,17809.0
+2014-15,SOU,Southampton,30652.0
+2014-15,STO,Stoke City,27081.0
+2014-15,SUN,Sunderland,43157.0
+2014-15,SWA,Swansea City,20555.0
+2014-15,TOT,Tottenham Hotspur,35728.0
+2014-15,WBA,West Bromwich Albion,25064.0
+2014-15,WHU,West Ham United,34871.0
+2015-16,ARS,Arsenal,59944.0
+2015-16,AVL,Aston Villa,33690.0
+2015-16,BOU,Bournemouth,11189.0
+2015-16,CHE,Chelsea,41500.0
+2015-16,CRY,Crystal Palace,24636.0
+2015-16,EVE,Everton,38124.0
+2015-16,LEI,Leicester City,32021.0
+2015-16,LIV,Liverpool,43910.0
+2015-16,MCI,Manchester City,54041.0
+2015-16,MUN,Manchester United,75279.0
+2015-16,NEW,Newcastle United,49754.0
+2015-16,NOR,Norwich City,26972.0
+2015-16,SOU,Southampton,30751.0
+2015-16,STO,Stoke City,27534.0
+2015-16,SUN,Sunderland,43071.0
+2015-16,SWA,Swansea City,20711.0
+2015-16,TOT,Tottenham Hotspur,35776.0
+2015-16,WAT,Watford,20594.0
+2015-16,WBA,West Bromwich Albion,24631.0
+2015-16,WHU,West Ham United,34910.0
+2016-17,ARS,Arsenal,59957.0
+2016-17,BOU,Bournemouth,11182.0
+2016-17,BUR,Burnley,20558.0
+2016-17,CHE,Chelsea,41508.0
+2016-17,CRY,Crystal Palace,25161.0
+2016-17,EVE,Everton,39310.0
+2016-17,HUL,Hull City,20761.0
+2016-17,LEI,Leicester City,31893.0
+2016-17,LIV,Liverpool,53016.0
+2016-17,MCI,Manchester City,54019.0
+2016-17,MID,Middlesbrough,30449.0
+2016-17,MUN,Manchester United,75290.0
+2016-17,SOU,Southampton,30936.0
+2016-17,STO,Stoke City,27433.0
+2016-17,SUN,Sunderland,41287.0
+2016-17,SWA,Swansea City,20619.0
+2016-17,TOT,Tottenham Hotspur,31639.0
+2016-17,WAT,Watford,20571.0
+2016-17,WBA,West Bromwich Albion,23876.0
+2016-17,WHU,West Ham United,56972.0
+2017-18,ARS,Arsenal,59323.0
+2017-18,BHA,Brighton and Hove Albion,30403.0
+2017-18,BOU,Bournemouth,10641.0
+2017-18,BUR,Burnley,20688.0
+2017-18,CHE,Chelsea,41282.0
+2017-18,CRY,Crystal Palace,25063.0
+2017-18,EVE,Everton,38797.0
+2017-18,HUD,Huddersfield Town,24032.0
+2017-18,LEI,Leicester City,31636.0
+2017-18,LIV,Liverpool,53049.0
+2017-18,MCI,Manchester City,54070.0
+2017-18,MUN,Manchester United,74976.0
+2017-18,NEW,Newcastle United,51992.0
+2017-18,SOU,Southampton,30794.0
+2017-18,STO,Stoke City,29280.0
+2017-18,SWA,Swansea City,20623.0
+2017-18,TOT,Tottenham Hotspur,68052.0
+2017-18,WAT,Watford,20231.0
+2017-18,WBA,West Bromwich Albion,24520.0
+2017-18,WHU,West Ham United,56885.0
+2018-19,ARS,Arsenal,59899.0
+2018-19,BHA,Brighton and Hove Albion,30426.0
+2018-19,BOU,Bournemouth,10532.0
+2018-19,BUR,Burnley,20534.0
+2018-19,CAR,Cardiff City,31408.0
+2018-19,CHE,Chelsea,40441.0
+2018-19,CRY,Crystal Palace,25455.0
+2018-19,EVE,Everton,39043.0
+2018-19,FUL,Fulham,24371.0
+2018-19,HUD,Huddersfield Town,23203.0
+2018-19,LEI,Leicester City,31851.0
+2018-19,LIV,Liverpool,52983.0
+2018-19,MCI,Manchester City,54130.0
+2018-19,MUN,Manchester United,74498.0
+2018-19,NEW,Newcastle United,51121.0
+2018-19,SOU,Southampton,30139.0
+2018-19,TOT,Tottenham Hotspur,54216.0
+2018-19,WAT,Watford,20016.0
+2018-19,WHU,West Ham United,58336.0
+2018-19,WOL,Wolverhampton Wanderers,31030.0
+2019-20,ARS,Arsenal,60279.0
+2019-20,AVL,Aston Villa,41661.0
+2019-20,BHA,Brighton and Hove Albion,30358.0
+2019-20,BOU,Bournemouth,10510.0
+2019-20,BUR,Burnley,20260.0
+2019-20,CHE,Chelsea,40563.0
+2019-20,CRY,Crystal Palace,25060.0
+2019-20,EVE,Everton,39150.0
+2019-20,LEI,Leicester City,32061.0
+2019-20,LIV,Liverpool,53143.0
+2019-20,MCI,Manchester City,54219.0
+2019-20,MUN,Manchester United,72726.0
+2019-20,NEW,Newcastle United,48248.0
+2019-20,NOR,Norwich City,27025.0
+2019-20,SHU,Sheffield United,30869.0
+2019-20,SOU,Southampton,29675.0
+2019-20,TOT,Tottenham Hotspur,59384.0
+2019-20,WAT,Watford,20837.0
+2019-20,WHU,West Ham United,59896.0
+2019-20,WOL,Wolverhampton Wanderers,31360.0
+2021-22,ARS,Arsenal,59776.0
+2021-22,AVL,Aston Villa,41681.0
+2021-22,BHA,Brighton and Hove Albion,30943.0
+2021-22,BRE,Brentford,16912.0
+2021-22,BUR,Burnley,19353.0
+2021-22,CHE,Chelsea,37812.0
+2021-22,CRY,Crystal Palace,24282.0
+2021-22,EVE,Everton,38886.0
+2021-22,LEE,Leeds United,36308.0
+2021-22,LEI,Leicester City,31941.0
+2021-22,LIV,Liverpool,53023.0
+2021-22,MCI,Manchester City,52774.0
+2021-22,MUN,Manchester United,73150.0
+2021-22,NEW,Newcastle United,51487.0
+2021-22,NOR,Norwich City,26810.0
+2021-22,SOU,Southampton,30055.0
+2021-22,TOT,Tottenham Hotspur,56523.0
+2021-22,WAT,Watford,20598.0
+2021-22,WHU,West Ham United,58367.0
+2021-22,WOL,Wolverhampton Wanderers,30756.0
+2022-23,ARS,Arsenal,60186.0
+2022-23,AVL,Aston Villa,41707.0
+2022-23,BHA,Brighton and Hove Albion,31477.0
+2022-23,BOU,Bournemouth,10309.0
+2022-23,BRE,Brentford,17077.0
+2022-23,CHE,Chelsea,40002.0
+2022-23,CRY,Crystal Palace,24951.0
+2022-23,EVE,Everton,39237.0
+2022-23,FUL,Fulham,23913.0
+2022-23,LEE,Leeds United,36566.0
+2022-23,LEI,Leicester City,31887.0
+2022-23,LIV,Liverpool,53179.0
+2022-23,MCI,Manchester City,53249.0
+2022-23,MUN,Manchester United,73645.0
+2022-23,NEW,Newcastle United,52127.0
+2022-23,NFO,Nottingham Forest,29188.0
+2022-23,SOU,Southampton,30379.0
+2022-23,TOT,Tottenham Hotspur,61585.0
+2022-23,WHU,West Ham United,62462.0
+2022-23,WOL,Wolverhampton Wanderers,31508.0
+2023-24,ARS,Arsenal,60236.0
+2023-24,AVL,Aston Villa,41862.0
+2023-24,BHA,Brighton and Hove Albion,31543.0
+2023-24,BOU,Bournemouth,11104.0
+2023-24,BRE,Brentford,17082.0
+2023-24,BUR,Burnley,21153.0
+2023-24,CHE,Chelsea,39576.0
+2023-24,CRY,Crystal Palace,24941.0
+2023-24,EVE,Everton,39042.0
+2023-24,FUL,Fulham,24301.0
+2023-24,LIV,Liverpool,55809.0
+2023-24,LUT,Luton Town,11278.0
+2023-24,MCI,Manchester City,53399.0
+2023-24,MUN,Manchester United,73534.0
+2023-24,NEW,Newcastle United,52153.0
+2023-24,NFO,Nottingham Forest,29386.0
+2023-24,SHU,Sheffield United,30016.0
+2023-24,TOT,Tottenham Hotspur,61459.0
+2023-24,WHU,West Ham United,62575.0
+2023-24,WOL,Wolverhampton Wanderers,31007.0
+2024-25,ARS,Arsenal,60251.0
+2024-25,AVL,Aston Villa,41854.0
+2024-25,BHA,Brighton and Hove Albion,31999.0
+2024-25,BOU,Bournemouth,11213.0
+2024-25,BRE,Brentford,17094.0
+2024-25,CHE,Chelsea,39620.0
+2024-25,CRY,Crystal Palace,25067.0
+2024-25,EVE,Everton,39189.0
+2024-25,FUL,Fulham,26826.0
+2024-25,IPS,Ipswich Town,29742.0
+2024-25,LEI,Leicester City,31448.0
+2024-25,LIV,Liverpool,60330.0
+2024-25,MCI,Manchester City,52575.0
+2024-25,MUN,Manchester United,73747.0
+2024-25,NEW,Newcastle United,52187.0
+2024-25,NFO,Nottingham Forest,30059.0
+2024-25,SOU,Southampton,30865.0
+2024-25,TOT,Tottenham Hotspur,61127.0
+2024-25,WHU,West Ham United,62464.0
+2024-25,WOL,Wolverhampton Wanderers,30660.0
+2025-26,ARS,Arsenal,60217.0
+2025-26,AVL,Aston Villa,41977.0
+2025-26,BHA,Brighton and Hove Albion,31379.0
+2025-26,BOU,Bournemouth,11175.0
+2025-26,BRE,Brentford,17132.0
+2025-26,BUR,Burnley,21005.0
+2025-26,CHE,Chelsea,39602.0
+2025-26,CRY,Crystal Palace,25017.0
+2025-26,EVE,Everton,52132.0
+2025-26,FUL,Fulham,27228.0
+2025-26,LEE,Leeds United,36695.0
+2025-26,LIV,Liverpool,60389.0
+2025-26,MCI,Manchester City,52730.0
+2025-26,MUN,Manchester United,73975.0
+2025-26,NEW,Newcastle United,52161.0
+2025-26,NFO,Nottingham Forest,30425.0
+2025-26,SUN,Sunderland,46546.0
+2025-26,TOT,Tottenham Hotspur,61006.0
+2025-26,WHU,West Ham United,62347.0
+2025-26,WOL,Wolverhampton Wanderers,29835.0

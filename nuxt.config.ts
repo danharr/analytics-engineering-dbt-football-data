@@ -1,12 +1,16 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import vuetify from 'vite-plugin-vuetify'
-import { readFileSync } from 'node:fs'
+import type { Nitro } from 'nitropack'
+import { copyFileSync, mkdirSync, readdirSync, readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 const lastUpdatedFromStats = (): string => {
   const lines = readFileSync('assets/data/stats.csv', 'utf-8').trim().split('\n')
   const cols = lines[lines.length - 1].split(',')
   return cols[cols.length - 1].trim()
 }
+
+let outputPublicDir = ''
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -73,6 +77,22 @@ gtag('config', 'G-HRJ1G6XTG1');`
 
   vite: {
     plugins: [vuetify({ autoImport: true })]
+  },
+
+  hooks: {
+    'nitro:build:before'(nitro: Nitro) {
+      outputPublicDir = nitro.options.output.publicDir
+    },
+    'close'() {
+      const srcDir = join(process.cwd(), 'assets/data')
+      const dstDir = join(outputPublicDir, 'data')
+      mkdirSync(dstDir, { recursive: true })
+      for (const file of readdirSync(srcDir)) {
+        if (file.endsWith('.csv')) {
+          copyFileSync(join(srcDir, file), join(dstDir, file))
+        }
+      }
+    }
   },
 
   nitro: {

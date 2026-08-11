@@ -81,7 +81,7 @@
 </template>
 
 <script setup>
-import { managerWins, sqlQueries } from '~/composables/useData'
+import { managerWins, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Managers With the Most Wins',
@@ -89,6 +89,18 @@ useHead({
     {
       name: 'description',
       content: 'The managers with the most Premier League wins, from the Wikipedia managers list joined to 34 seasons of match results.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Manager Wins Dataset',
+        description: 'The managers with the most Premier League wins, from the Wikipedia managers list joined to 34 seasons of match results, including games, draws, losses, win percentage, points, goals for and against.',
+        path: '/manager-wins',
+        csv: 'manager_wins.csv',
+        keywords: ['manager wins', 'manager records']
+      }))
     }
   ]
 })

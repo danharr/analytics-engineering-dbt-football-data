@@ -25,7 +25,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { wins, sqlQueries } from '~/composables/useData'
+import { wins, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Teams With the Most Wins',
@@ -33,6 +33,18 @@ useHead({
     {
       name: 'description',
       content: 'All-time total wins by Premier League team, split by home and away, ranked most to least.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Total Wins by Team Dataset',
+        description: 'Total Premier League wins for every club since 1992, split by home and away, ranked most to least.',
+        path: '/most-wins',
+        csv: 'wins.csv',
+        keywords: ['wins', 'home and away']
+      }))
     }
   ]
 })

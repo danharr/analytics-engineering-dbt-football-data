@@ -80,7 +80,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { mostChaoticMatches, sqlQueries } from '~/composables/useData'
+import { mostChaoticMatches, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Highest-Scoring & Most Chaotic Premier League Matches',
@@ -88,6 +88,18 @@ useHead({
     {
       name: 'description',
       content: 'The most chaotic Premier League matches ever, ranked by a chaos score of 3 points per goal plus 2 points per red card.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Most Chaotic Matches Dataset',
+        description: 'The most chaotic Premier League matches ever, ranked by a chaos score of three points per goal plus two points per red card, from 1992-93 to 2025-26.',
+        path: '/most-chaotic-matches',
+        csv: 'most_chaotic_matches.csv',
+        keywords: ['chaos score', 'high-scoring matches', 'red cards']
+      }))
     }
   ]
 })

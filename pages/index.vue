@@ -138,7 +138,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { stats } from '~/composables/useData'
+import { stats, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Football Started in 1992 | Premier League Stats, Records & History',
@@ -146,6 +146,18 @@ useHead({
     {
       name: 'description',
       content: 'Premier League statistics built from the official API, covering the all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Football Started in 1992 — Premier League Statistics Dataset',
+        description: 'Complete Premier League statistics from the 1992-93 season to 2025-26, built from the league\'s official API. Includes the all-time table, every match result, total wins, attendances, winning streaks, comebacks, one-nil wins, manager records and per-season standings across 13,166 matches and 51 teams.',
+        path: '/',
+        csv: 'stats.csv',
+        keywords: ['all-time table', 'match results', 'records', 'attendances', 'winning streaks']
+      }))
     }
   ]
 })

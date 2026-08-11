@@ -75,7 +75,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { fiveGameStreaks, sqlQueries } from '~/composables/useData'
+import { fiveGameStreaks, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Longest Winning Streaks in Premier League History',
@@ -83,6 +83,18 @@ useHead({
     {
       name: 'description',
       content: 'The most recent run of five or more consecutive wins within a single season for every Premier League team, with the opponents beaten along the way.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Five-Game Winning Streaks Dataset',
+        description: 'The most recent run of five or more consecutive wins within a single season for every Premier League team, with the opponents beaten in each streak.',
+        path: '/five-game-streaks',
+        csv: 'five_game_streaks.csv',
+        keywords: ['winning streaks', 'five in a row']
+      }))
     }
   ]
 })

@@ -50,7 +50,7 @@
 </template>
 
 <script setup>
-import { allTime, sqlQueries } from '~/composables/useData'
+import { allTime, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League All-Time Table & Standings',
@@ -58,6 +58,18 @@ useHead({
     {
       name: 'description',
       content: 'The all-time Premier League table, with every team ranked by points across all seasons and matches played, wins, draws, losses and points.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League All-Time Table Dataset',
+        description: 'All-time Premier League standings for every club that has played in the division, with matches played, wins, draws, losses and points from 1992-93 to 2025-26, ordered by total points.',
+        path: '/all-time-table',
+        csv: 'all_time_table.csv',
+        keywords: ['all-time table', 'standings', 'points']
+      }))
     }
   ]
 })

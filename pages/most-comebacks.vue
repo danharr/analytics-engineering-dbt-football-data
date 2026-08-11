@@ -69,7 +69,7 @@
 </template>
 
 <script setup>
-import { mostComebacks, sqlQueries } from '~/composables/useData'
+import { mostComebacks, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Most Half-Time Comebacks in a Single Premier League Season',
@@ -77,6 +77,18 @@ useHead({
     {
       name: 'description',
       content: 'The top 10 team-seasons by half-time comebacks, counting matches where a Premier League team was losing at half-time but came back to win.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Most Comebacks in a Season Dataset',
+        description: 'The top 10 Premier League team-seasons by half-time comebacks, counting matches where a team was losing at half-time but came back to win.',
+        path: '/most-comebacks',
+        csv: 'most_comebacks.csv',
+        keywords: ['comebacks per season', 'most comebacks']
+      }))
     }
   ]
 })

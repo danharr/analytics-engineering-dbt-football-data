@@ -76,7 +76,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { comebackKings, sqlQueries } from '~/composables/useData'
+import { comebackKings, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Most Premier League Half-Time Comeback Wins',
@@ -84,6 +84,18 @@ useHead({
     {
       name: 'description',
       content: 'For every Premier League team, the longest consecutive run of matches where they were losing at half-time but came back to win.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Comeback Kings Dataset',
+        description: 'For every Premier League team, the longest consecutive run of matches where they were losing at half-time but came back to win, with seasons and opponents.',
+        path: '/comeback-kings',
+        csv: 'comeback_kings.csv',
+        keywords: ['comebacks', 'half-time deficits']
+      }))
     }
   ]
 })

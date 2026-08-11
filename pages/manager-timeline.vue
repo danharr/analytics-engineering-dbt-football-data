@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import { managerTimeline, sqlQueries } from '~/composables/useData'
+import { managerTimeline, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: "Every Premier League Manager's Timeline Since 1992",
@@ -49,6 +49,18 @@ useHead({
     {
       name: 'description',
       content: 'A Gantt chart of every Premier League club\u2019s managers since 1992, from the Wikipedia managers list, coloured by club with hover tooltips.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Manager Timeline Dataset',
+        description: 'Every managerial spell at every Premier League club since 1992, with start and end dates, taken from the Wikipedia managers list.',
+        path: '/manager-timeline',
+        csv: 'manager_timeline.csv',
+        keywords: ['manager timeline', 'managerial spells']
+      }))
     }
   ]
 })

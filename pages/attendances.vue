@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import { attendance, sqlQueries } from '~/composables/useData'
+import { attendance, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Highest Average Home Attendances in Premier League History',
@@ -37,6 +37,18 @@ useHead({
     {
       name: 'description',
       content: 'Average home attendances by Premier League team from 1992-93 to 2025-26.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Average Home Attendance Dataset',
+        description: 'Average home attendance per Premier League team in each season from 1992-93 to 2025-26, including the empty-stadium 2020-21 season.',
+        path: '/attendances',
+        csv: 'attendance.csv',
+        keywords: ['attendances', 'average home crowds']
+      }))
     }
   ]
 })

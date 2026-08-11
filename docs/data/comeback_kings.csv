@@ -1,0 +1,45 @@
+team_name,team_abbr,run_length,seasons,start_date,end_date,opponents
+Arsenal,ARS,2,2001-02,2001-12-26,2001-12-29,"Chelsea, Middlesbrough"
+Aston Villa,AVL,2,2024-25,2024-09-14,2024-09-21,"Everton, Wolverhampton Wanderers"
+Brighton and Hove Albion,BHA,2,2024-25,2025-05-19,2025-05-25,"Liverpool, Tottenham Hotspur"
+Liverpool,LIV,2,2008-09,2008-10-05,2008-10-18,"Manchester City, Wigan Athletic"
+Manchester United,MUN,2,1993-94,1993-10-30,1993-11-07,"Queens Park Rangers, Manchester City"
+Newcastle United,NEW,2,2001-02,2001-12-15,2001-12-18,"Blackburn Rovers, Arsenal"
+Norwich City,NOR,2,1992-93,1992-08-15,1992-08-19,"Arsenal, Chelsea"
+Reading,REA,2,2012-13,2013-01-12,2013-01-19,"West Bromwich Albion, Newcastle United"
+Sheffield United,SHU,2,1993-94,1994-03-28,1994-04-02,"West Ham United, Liverpool"
+Tottenham Hotspur,TOT,2,2010-11,2010-11-20,2010-11-28,"Arsenal, Liverpool"
+Wolverhampton Wanderers,WOL,2,2019-20,2019-12-21,2019-12-27,"Norwich City, Manchester City"
+Birmingham City,BIR,1,2002-03,2003-04-21,2003-04-21,Southampton
+Blackburn Rovers,BLA,1,1994-95,1994-10-15,1994-10-15,Liverpool
+Bolton Wanderers,BOL,1,2004-05,2005-05-15,2005-05-15,Everton
+Bournemouth,BOU,1,2016-17,2016-12-04,2016-12-04,Liverpool
+Brentford,BRE,1,2021-22,2021-12-10,2021-12-10,Watford
+Burnley,BUR,1,2009-10,2010-05-09,2010-05-09,Tottenham Hotspur
+Cardiff City,CAR,1,2013-14,2014-02-01,2014-02-01,Norwich City
+Charlton Athletic,CHA,1,1998-99,1998-10-24,1998-10-24,West Ham United
+Chelsea,CHE,1,1993-94,1994-05-07,1994-05-07,Sheffield United
+Coventry City,COV,1,1993-94,1993-08-18,1993-08-18,Newcastle United
+Crystal Palace,CRY,1,1992-93,1992-12-12,1992-12-12,Queens Park Rangers
+Derby County,DER,1,1996-97,1997-03-01,1997-03-01,Chelsea
+Everton,EVE,1,1992-93,1993-03-03,1993-03-03,Blackburn Rovers
+Fulham,FUL,1,2002-03,2002-09-11,2002-09-11,Tottenham Hotspur
+Hull City,HUL,1,2009-10,2009-11-08,2009-11-08,Stoke City
+Ipswich Town,IPS,1,1992-93,1992-12-12,1992-12-12,Manchester City
+Leeds United,LEE,1,1992-93,1993-01-09,1993-01-09,Southampton
+Leicester City,LEI,1,1999-00,1999-10-03,1999-10-03,Tottenham Hotspur
+Manchester City,MCI,1,1992-93,1992-11-21,1992-11-21,Coventry City
+Middlesbrough,MID,1,1992-93,1992-12-05,1992-12-05,Blackburn Rovers
+Nottingham Forest,NFO,1,1996-97,1997-01-19,1997-01-19,Tottenham Hotspur
+Portsmouth,POR,1,2004-05,2004-12-04,2004-12-04,West Bromwich Albion
+Queens Park Rangers,QPR,1,1992-93,1992-08-19,1992-08-19,Southampton
+Sheffield Wednesday,SHW,1,1996-97,1997-02-22,1997-02-22,Southampton
+Southampton,SOU,1,1992-93,1993-03-13,1993-03-13,Ipswich Town
+Stoke City,STO,1,2009-10,2010-02-20,2010-02-20,Portsmouth
+Sunderland,SUN,1,1999-00,1999-08-25,1999-08-25,Newcastle United
+Swansea City,SWA,1,2012-13,2013-05-07,2013-05-07,Wigan Athletic
+Watford,WAT,1,2017-18,2017-10-14,2017-10-14,Arsenal
+West Bromwich Albion,WBA,1,2010-11,2010-09-18,2010-09-18,Birmingham City
+West Ham United,WHU,1,1995-96,1995-12-16,1995-12-16,Southampton
+Wigan Athletic,WIG,1,2009-10,2010-04-18,2010-04-18,Arsenal
+Wimbledon,WIM,1,1993-94,1994-03-29,1994-03-29,Blackburn Rovers

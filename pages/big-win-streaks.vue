@@ -77,7 +77,7 @@
 
 <script setup>
 import { computed } from 'vue'
-import { bigWinStreaks, sqlQueries } from '~/composables/useData'
+import { bigWinStreaks, sqlQueries, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Longest Winning Streaks Within a Single Premier League Season',
@@ -85,6 +85,18 @@ useHead({
     {
       name: 'description',
       content: 'The longest winning streaks within a single Premier League season (11 or more wins in a row), with the date, opponent and score of every win.'
+    }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(datasetLd({
+        name: 'Premier League Big Win Streaks Dataset',
+        description: 'The longest winning streaks within a single Premier League season (11 or more wins in a row), with the date, opponent and score of every match in each streak.',
+        path: '/big-win-streaks',
+        csv: 'big_win_streaks.csv',
+        keywords: ['long winning streaks', '11 wins in a row']
+      }))
     }
   ]
 })
