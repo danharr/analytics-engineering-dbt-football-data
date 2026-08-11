@@ -238,10 +238,32 @@
           {{ team.name }} Manager Timeline
         </v-card-title>
         <v-card-subtitle>
-          Every {{ team.name }} manager since 1992 · faded = caretaker · hover for dates
+          Every {{ team.name }} manager since 1992<template v-if="isMobile"> · grey dot = caretaker</template><template v-else> · faded = caretaker · hover for dates</template>
         </v-card-subtitle>
         <v-card-text>
-          <ManagerTimelineChart :data="teamTimeline" />
+          <ManagerTimelineChart v-if="!isMobile" :data="teamTimeline" />
+          <v-timeline v-else align="start" side="end" density="compact">
+            <v-timeline-item
+              v-for="spell in timelineSpells"
+              :key="spell.manager_name + spell.from_date"
+              :dot-color="spell.role === 'caretaker' ? 'grey-lighten-1' : colour"
+              size="small"
+            >
+              <div>
+                <strong>
+                  <NuxtLink
+                    v-if="managerSlug(spell.manager_name)"
+                    :to="`/managers/${managerSlug(spell.manager_name)}`"
+                  >{{ spell.manager_name }}</NuxtLink>
+                  <span v-else>{{ spell.manager_name }}</span>
+                </strong>
+                <div class="text-body-small">
+                  {{ fmtMonth(spell.from_date) }} – {{ spell.present ? 'Present' : fmtMonth(spell.until_date) }}
+                  <span v-if="spell.role === 'caretaker'"> · caretaker</span>
+                </div>
+              </div>
+            </v-timeline-item>
+          </v-timeline>
         </v-card-text>
       </v-card>
     </v-col>
@@ -289,6 +311,7 @@
 <script setup>
 import * as d3 from 'd3'
 import { computed } from 'vue'
+import { useDisplay } from 'vuetify'
 import { teamMatches, allTime, seasonTable, managerTimeline, sqlQueries } from '~/composables/useData'
 import { teamColour } from '~/composables/teamColours'
 import { managerSlug } from '~/utils/managerPages'
@@ -299,6 +322,9 @@ const props = defineProps({
 
 const team = props.team
 const colour = teamColour(team.name)
+
+const { mobile } = useDisplay()
+const isMobile = computed(() => mobile.value)
 
 const matches = computed(() => teamMatches.filter(m => m.team_abbr === team.abbr))
 
@@ -334,6 +360,10 @@ const played = computed(() => allTime.find(r => r.team_abbr === team.abbr)?.matc
 
 const teamTimeline = computed(() => managerTimeline.filter(m => m.team_name === team.name))
 
+const timelineSpells = computed(() =>
+  [...teamTimeline.value].sort((a, b) => a.from_date.localeCompare(b.from_date))
+)
+
 const teamSeasons = computed(() => {
   const labels = [...new Set(matches.value.map(m => m.season_label))]
     .sort((a, b) => parseInt(a.split('-')[0]) - parseInt(b.split('-')[0]))
@@ -359,6 +389,10 @@ const managerHistory = computed(() => {
 })
 
 const fmt = d3.format(',')
+
+function fmtMonth(iso) {
+  return d3.utcFormat('%b %Y')(new Date(iso + 'T00:00:00Z'))
+}
 
 function ordinal(n) {
   const s = ['th', 'st', 'nd', 'rd']
