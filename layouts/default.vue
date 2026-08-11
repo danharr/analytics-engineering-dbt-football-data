@@ -32,6 +32,13 @@
     </v-navigation-drawer>
 
     <v-main>
+      <div v-if="crumbs.length > 1" class="breadcrumbs px-4 pt-3">
+        <template v-for="(crumb, i) in crumbs" :key="i">
+          <NuxtLink v-if="crumb.to" :to="crumb.to" class="breadcrumb-link">{{ crumb.label }}</NuxtLink>
+          <span v-else class="breadcrumb-current">{{ crumb.label }}</span>
+          <span v-if="i < crumbs.length - 1" class="breadcrumb-sep">/</span>
+        </template>
+      </div>
       <v-container fluid>
         <slot />
       </v-container>
@@ -43,7 +50,9 @@
 import { ref, computed } from 'vue'
 import { useDisplay } from 'vuetify'
 import { navItems } from '~/composables/navItems'
+import { useBreadcrumbs } from '~/composables/breadcrumbs'
 
+const crumbs = useBreadcrumbs()
 const drawer = ref(false)
 const rail = ref(false)
 const { mobile } = useDisplay()
@@ -57,3 +66,27 @@ function toggleNav() {
   }
 }
 </script>
+
+<style scoped>
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+.breadcrumb-link {
+  color: #1a56db;
+  text-decoration: none;
+  font-weight: 500;
+}
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+.breadcrumb-current {
+  color: #666;
+}
+.breadcrumb-sep {
+  color: #999;
+}
+</style>

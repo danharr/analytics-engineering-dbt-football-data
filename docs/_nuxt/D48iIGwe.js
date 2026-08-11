@@ -1,0 +1,1 @@
+const t={"Tottenham Hotspur":"tottenham","West Ham United":"west-ham","Newcastle United":"newcastle","Leeds United":"leeds"};function n(e){return t[e]?t[e]:e.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}export{n as t};

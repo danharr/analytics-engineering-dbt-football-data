@@ -19,7 +19,9 @@
         </thead>
         <tbody>
           <tr v-for="row in clubRecords" :key="row.team_id">
-            <td>{{ row.team_name }}</td>
+            <td>
+              <NuxtLink :to="`/teams/${teamSlug(row.team_name)}`">{{ row.team_name }}</NuxtLink>
+            </td>
             <td class="text-right">{{ row.games }}</td>
             <td class="text-right">{{ row.wins }}</td>
             <td class="text-right">{{ row.draws }}</td>
@@ -33,6 +35,8 @@
 </template>
 
 <script setup>
+import { teamSlug } from '~/utils/teamSlugs'
+
 const props = defineProps({
   clubRecords: { type: Array, required: true },
 })

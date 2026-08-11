@@ -28,7 +28,9 @@
             :class="{ 'champion-row': row.position === 1 }"
           >
             <td><strong>{{ row.position }}</strong></td>
-            <td>{{ row.team_name }}</td>
+            <td>
+              <NuxtLink :to="`/teams/${teamSlug(row.team_name)}`">{{ row.team_name }}</NuxtLink>
+            </td>
             <td class="text-right">{{ row.played }}</td>
             <td class="text-right">{{ row.won }}</td>
             <td class="text-right">{{ row.drawn }}</td>
@@ -45,6 +47,8 @@
 </template>
 
 <script setup>
+import { teamSlug } from '~/utils/teamSlugs'
+
 defineProps({
   rows: { type: Array, required: true }
 })

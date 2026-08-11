@@ -20,6 +20,34 @@
     <v-col cols="12" md="10" offset-md="1">
       <v-card>
         <v-card-title>
+          <v-icon icon="mdi-calendar" class="mr-2"></v-icon>
+          Seasons in the Premier League
+        </v-card-title>
+        <v-card-subtitle>Every {{ team.name }} season with their final position — one page per season</v-card-subtitle>
+        <v-card-text>
+          <v-table density="compact">
+            <thead>
+              <tr>
+                <th class="text-left">Season</th>
+                <th class="text-right">Final Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="row in teamSeasons" :key="row.label">
+                <td>
+                  <NuxtLink :to="`/seasons/${row.label}`">{{ row.label }} Season</NuxtLink>
+                </td>
+                <td class="text-right">{{ row.position ? ordinal(row.position) : '—' }}</td>
+              </tr>
+            </tbody>
+          </v-table>
+        </v-card-text>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="10" offset-md="1">
+      <v-card>
+        <v-card-title>
           <v-icon icon="mdi-trophy" class="mr-2"></v-icon>
           Top 5 Biggest Wins
         </v-card-title>
@@ -219,6 +247,40 @@
     </v-col>
 
     <v-col cols="12" md="10" offset-md="1">
+      <v-card>
+        <v-card-title>
+          <v-icon icon="mdi-account-tie-outline" class="mr-2"></v-icon>
+          Manager History
+        </v-card-title>
+        <v-card-subtitle>Every {{ team.name }} manager since 1992, linked to their page where one exists</v-card-subtitle>
+        <v-card-text>
+          <v-table density="compact">
+            <thead>
+              <tr>
+                <th class="text-left">Manager</th>
+                <th class="text-left">From</th>
+                <th class="text-left">Until</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="m in managerHistory" :key="m.manager_name">
+                <td>
+                  <NuxtLink
+                    v-if="managerSlug(m.manager_name)"
+                    :to="`/managers/${managerSlug(m.manager_name)}`"
+                  >{{ m.manager_name }}</NuxtLink>
+                  <span v-else>{{ m.manager_name }}</span>
+                </td>
+                <td>{{ m.from_date }}</td>
+                <td>{{ m.present ? 'Present' : m.until_date }}</td>
+              </tr>
+            </tbody>
+          </v-table>
+        </v-card-text>
+      </v-card>
+    </v-col>
+
+    <v-col cols="12" md="10" offset-md="1">
       <ChartCode :sql="sqlQueries.managerTimeline" />
     </v-col>
   </v-row>
@@ -227,8 +289,9 @@
 <script setup>
 import * as d3 from 'd3'
 import { computed } from 'vue'
-import { teamMatches, allTime, managerTimeline, sqlQueries } from '~/composables/useData'
+import { teamMatches, allTime, seasonTable, managerTimeline, sqlQueries } from '~/composables/useData'
 import { teamColour } from '~/composables/teamColours'
+import { managerSlug } from '~/utils/managerPages'
 
 const props = defineProps({
   team: { type: Object, required: true }
@@ -270,6 +333,30 @@ const points = computed(() => allTime.find(r => r.team_abbr === team.abbr)?.poin
 const played = computed(() => allTime.find(r => r.team_abbr === team.abbr)?.matches_played ?? 0)
 
 const teamTimeline = computed(() => managerTimeline.filter(m => m.team_name === team.name))
+
+const teamSeasons = computed(() => {
+  const labels = [...new Set(matches.value.map(m => m.season_label))]
+    .sort((a, b) => parseInt(a.split('-')[0]) - parseInt(b.split('-')[0]))
+  return labels.map(label => ({
+    label,
+    position: seasonTable.find(r => r.team_abbr === team.abbr && r.season_label === label)?.position ?? null
+  }))
+})
+
+const managerHistory = computed(() => {
+  const byManager = new Map()
+  for (const row of teamTimeline.value) {
+    const existing = byManager.get(row.manager_name)
+    if (!existing) {
+      byManager.set(row.manager_name, { ...row })
+    } else {
+      if (row.from_date < existing.from_date) existing.from_date = row.from_date
+      if (row.present) existing.present = 1
+      if (row.until_date > existing.until_date) existing.until_date = row.until_date
+    }
+  }
+  return [...byManager.values()].sort((a, b) => a.from_date.localeCompare(b.from_date))
+})
 
 const fmt = d3.format(',')
 
