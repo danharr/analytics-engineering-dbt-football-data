@@ -35,7 +35,7 @@ const thisManager = 'Mikel Arteta'
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({
-  title: 'Mikel Arteta',
+  title: 'Mikel Arteta Premier League Record, Wins & Stats',
   meta: [{
     name: 'description',
     content: "Premier League record for Mikel Arteta: total wins, five biggest wins and losses, club-by-club record."

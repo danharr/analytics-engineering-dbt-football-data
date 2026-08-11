@@ -79,7 +79,7 @@ import * as d3 from 'd3'
 import { oneNilWins, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'One-Nil Wins',
+  title: 'Premier League Clubs That Win Most Often 1-0',
   meta: [
     {
       name: 'description',

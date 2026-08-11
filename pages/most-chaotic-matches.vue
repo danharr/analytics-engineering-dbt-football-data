@@ -83,7 +83,7 @@ import * as d3 from 'd3'
 import { mostChaoticMatches, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Most Chaotic Matches',
+  title: 'Highest-Scoring & Most Chaotic Premier League Matches',
   meta: [
     {
       name: 'description',

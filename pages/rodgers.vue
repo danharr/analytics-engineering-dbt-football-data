@@ -35,7 +35,7 @@ const thisManager = 'Brendan Rodgers'
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({
-  title: 'Brendan Rodgers',
+  title: 'Brendan Rodgers Premier League Record, Wins & Stats',
   meta: [{
     name: 'description',
     content: "Premier League record for Brendan Rodgers: total wins, five biggest wins and losses, club-by-club record."

@@ -53,7 +53,7 @@
 import { allTime, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'All-Time Premier League Table',
+  title: 'Premier League All-Time Table & Standings',
   meta: [
     {
       name: 'description',

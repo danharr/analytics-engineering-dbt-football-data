@@ -84,7 +84,7 @@
 import { managerWins, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Most Manager Wins',
+  title: 'Premier League Managers With the Most Wins',
   meta: [
     {
       name: 'description',

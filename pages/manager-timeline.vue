@@ -44,7 +44,7 @@
 import { managerTimeline, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Manager Timeline',
+  title: "Every Premier League Manager's Timeline Since 1992",
   meta: [
     {
       name: 'description',

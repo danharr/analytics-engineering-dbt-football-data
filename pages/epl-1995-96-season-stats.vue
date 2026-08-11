@@ -25,7 +25,7 @@ import SeasonTableChart from '~/components/SeasonTableChart.vue'
 import ChartCode from '~/components/ChartCode.vue'
 const seasonRows = seasonTable.filter(r => r.season_label === '1995-96')
 useHead({
-  title: '1995-96 Season',
+  title: '1995-96 Premier League Final Table & Results',
   meta: [{
     name: 'description',
     content: 'The final 1995-96 Premier League table, with every club\'s record, points and goal difference.'

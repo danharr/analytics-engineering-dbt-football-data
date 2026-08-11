@@ -35,7 +35,7 @@ const thisManager = 'Kevin Keegan'
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({
-  title: 'Kevin Keegan',
+  title: 'Kevin Keegan Premier League Record, Wins & Stats',
   meta: [{
     name: 'description',
     content: "Premier League record for Kevin Keegan: total wins, five biggest wins and losses, club-by-club record."

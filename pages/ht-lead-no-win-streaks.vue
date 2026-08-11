@@ -80,7 +80,7 @@ import * as d3 from 'd3'
 import { htLeadNoWinStreaks, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Longest No-Win Streaks After HT Lead',
+  title: 'Premier League Teams That Failed to Win After Leading at Half-Time',
   meta: [
     {
       name: 'description',

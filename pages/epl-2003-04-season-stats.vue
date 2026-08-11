@@ -25,7 +25,7 @@ import SeasonTableChart from '~/components/SeasonTableChart.vue'
 import ChartCode from '~/components/ChartCode.vue'
 const seasonRows = seasonTable.filter(r => r.season_label === '2003-04')
 useHead({
-  title: '2003-04 Season',
+  title: '2003-04 Premier League Final Table & Results',
   meta: [{
     name: 'description',
     content: 'The final 2003-04 Premier League table, with every club\'s record, points and goal difference.'

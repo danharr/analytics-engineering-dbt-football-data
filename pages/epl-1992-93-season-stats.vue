@@ -25,7 +25,7 @@ import SeasonTableChart from '~/components/SeasonTableChart.vue'
 import ChartCode from '~/components/ChartCode.vue'
 const seasonRows = seasonTable.filter(r => r.season_label === '1992-93')
 useHead({
-  title: '1992-93 Season',
+  title: '1992-93 Premier League Final Table & Results',
   meta: [{
     name: 'description',
     content: 'The final 1992-93 Premier League table: Manchester United crowned champions, with every club\'s record, points and goal difference.'

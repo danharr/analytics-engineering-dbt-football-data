@@ -72,7 +72,7 @@
 import { mostComebacks, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Most Comebacks in a Season',
+  title: 'Most Half-Time Comebacks in a Single Premier League Season',
   meta: [
     {
       name: 'description',

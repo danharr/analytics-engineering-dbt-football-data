@@ -32,7 +32,7 @@
 import { attendance, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Average Home Attendance by Team',
+  title: 'Highest Average Home Attendances in Premier League History',
   meta: [
     {
       name: 'description',

@@ -25,7 +25,7 @@ import SeasonTableChart from '~/components/SeasonTableChart.vue'
 import ChartCode from '~/components/ChartCode.vue'
 const seasonRows = seasonTable.filter(r => r.season_label === '2014-15')
 useHead({
-  title: '2014-15 Season',
+  title: '2014-15 Premier League Final Table & Results',
   meta: [{
     name: 'description',
     content: 'The final 2014-15 Premier League table, with every club\'s record, points and goal difference.'

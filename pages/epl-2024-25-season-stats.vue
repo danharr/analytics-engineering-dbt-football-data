@@ -25,7 +25,7 @@ import SeasonTableChart from '~/components/SeasonTableChart.vue'
 import ChartCode from '~/components/ChartCode.vue'
 const seasonRows = seasonTable.filter(r => r.season_label === '2024-25')
 useHead({
-  title: '2024-25 Season',
+  title: '2024-25 Premier League Final Table & Results',
   meta: [{
     name: 'description',
     content: 'The final 2024-25 Premier League table, with every club\'s record, points and goal difference.'

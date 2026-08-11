@@ -81,7 +81,7 @@ import * as d3 from 'd3'
 import { longestWinlessGaps, formatGap, sqlQueries } from '~/composables/useData'
 
 useHead({
-  title: 'Longest Gap Between Wins',
+  title: 'Longest Time Between Wins in Premier League History',
   meta: [
     {
       name: 'description',

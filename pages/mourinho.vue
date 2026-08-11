@@ -35,7 +35,7 @@ const thisManager = 'José Mourinho'
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({
-  title: 'José Mourinho',
+  title: 'José Mourinho Premier League Record, Wins & Stats',
   meta: [{
     name: 'description',
     content: "Premier League record for José Mourinho: total wins, five biggest wins and losses, club-by-club record."

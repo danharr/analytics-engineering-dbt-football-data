@@ -35,7 +35,7 @@ const thisManager = "David O'Leary"
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({
-  title: "David O'Leary",
+  title: "David O'Leary Premier League Record, Wins & Stats",
   meta: [{
     name: 'description',
     content: "Premier League record for David O'Leary: total wins, five biggest wins and losses, club-by-club record."

@@ -35,7 +35,7 @@ const thisManager = 'Arsène Wenger'
 const managerMatchesFiltered = managerMatches.filter(r => r.manager_name === thisManager)
 const managerClubRecordsFiltered = managerClubRecords.filter(r => r.manager_name === thisManager)
 useHead({
-  title: 'Arsène Wenger',
+  title: 'Arsène Wenger Premier League Record, Wins & Stats',
   meta: [{
     name: 'description',
     content: "Premier League record for Arsène Wenger: total wins, five biggest wins and losses, club-by-club record."
