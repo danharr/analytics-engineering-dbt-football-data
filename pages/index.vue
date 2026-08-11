@@ -141,7 +141,7 @@ import * as d3 from 'd3'
 import { stats } from '~/composables/useData'
 
 useHead({
-  title: 'Football started in 1992',
+  title: 'Football Started in 1992 | Premier League Stats, Records & History',
   meta: [
     {
       name: 'description',

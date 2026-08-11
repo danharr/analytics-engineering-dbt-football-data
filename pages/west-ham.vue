@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('west-ham')
 
 useHead({
-  title: 'West Ham United',
+  title: 'West Ham United Premier League Stats, Records & History | Football Started in 1992',
   meta: [
     {
       name: 'description',

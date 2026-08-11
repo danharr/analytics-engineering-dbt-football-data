@@ -8,7 +8,7 @@ import { teamBySlug } from '~/composables/teamPages'
 const team = teamBySlug('arsenal')
 
 useHead({
-  title: 'Arsenal',
+  title: 'Arsenal Premier League Stats, Records & History | Football Started in 1992',
   meta: [
     {
       name: 'description',
