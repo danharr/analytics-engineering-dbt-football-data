@@ -400,7 +400,7 @@ export const managerMatches = parse<ManagerMatchRow>(managerMatchesCsv, d => ({
   team_name: d.team_name,
   kickoff_date: d.kickoff_date,
   season_label: d.season_label,
-  is_home: toInt(d, 'is_home'),
+  is_home: d.is_home === 'true' ? 1 : 0,
   opponent_id: d.opponent_id,
   opponent_name: d.opponent_name,
   goals_for: toInt(d, 'goals_for'),
