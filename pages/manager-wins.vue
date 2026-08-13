@@ -74,14 +74,11 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.managerWins" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { managerWins, sqlQueries, datasetLd } from '~/composables/useData'
+import { managerWins, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Managers With the Most Wins',

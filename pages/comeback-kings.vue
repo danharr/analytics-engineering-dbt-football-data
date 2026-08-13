@@ -68,15 +68,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.comebackKings" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import * as d3 from 'd3'
-import { comebackKings, sqlQueries, datasetLd } from '~/composables/useData'
+import { comebackKings, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Most Premier League Half-Time Comeback Wins',

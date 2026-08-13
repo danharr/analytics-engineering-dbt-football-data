@@ -43,14 +43,11 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.allTimeTable" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { allTime, sqlQueries, datasetLd } from '~/composables/useData'
+import { allTime, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League All-Time Table & Standings',

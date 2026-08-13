@@ -69,15 +69,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.bigWinStreaks" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import { computed } from 'vue'
-import { bigWinStreaks, sqlQueries, datasetLd } from '~/composables/useData'
+import { bigWinStreaks, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Longest Winning Streaks Within a Single Premier League Season',

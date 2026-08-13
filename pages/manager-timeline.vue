@@ -34,14 +34,11 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.managerTimeline" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { managerTimeline, sqlQueries, datasetLd } from '~/composables/useData'
+import { managerTimeline, datasetLd } from '~/composables/useData'
 
 useHead({
   title: "Every Premier League Manager's Timeline Since 1992",

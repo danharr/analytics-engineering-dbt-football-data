@@ -13,17 +13,13 @@
       <v-col cols="12" md="10" offset-md="1">
         <SeasonTableChart :rows="seasonRows" />
       </v-col>
-      <v-col cols="12" md="10" offset-md="1">
-        <ChartCode :sql="sqlQueries.seasonTable" />
-      </v-col>
     </v-row>
   </v-container>
 </template>
 <script setup>
 import { useRoute } from 'vue-router'
-import { seasonTable, sqlQueries } from '~/composables/useData'
+import { seasonTable } from '~/composables/useData'
 import SeasonTableChart from '~/components/SeasonTableChart.vue'
-import ChartCode from '~/components/ChartCode.vue'
 
 const SEASON_NOTES = {
   '1992-93': 'Final Premier League table · the inaugural season',

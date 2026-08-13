@@ -72,15 +72,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.mostChaoticMatches" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import * as d3 from 'd3'
-import { mostChaoticMatches, sqlQueries, datasetLd } from '~/composables/useData'
+import { mostChaoticMatches, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Highest-Scoring & Most Chaotic Premier League Matches',

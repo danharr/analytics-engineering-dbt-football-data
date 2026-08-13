@@ -57,14 +57,11 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.quality" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { quality, sqlQueries, datasetLd } from '~/composables/useData'
+import { quality, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Data Coverage by Season',

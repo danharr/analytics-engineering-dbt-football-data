@@ -183,9 +183,6 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.teamMatches" />
-    </v-col>
 
     <v-col cols="12" md="10" offset-md="1">
       <v-card>
@@ -227,9 +224,6 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.allTimeTable" />
-    </v-col>
 
     <v-col cols="12" md="10" offset-md="1">
       <v-card>
@@ -302,9 +296,6 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.managerTimeline" />
-    </v-col>
   </v-row>
 </template>
 
@@ -312,7 +303,7 @@
 import * as d3 from 'd3'
 import { computed } from 'vue'
 import { useDisplay } from 'vuetify'
-import { teamMatches, allTime, seasonTable, managerTimeline, sqlQueries } from '~/composables/useData'
+import { teamMatches, allTime, seasonTable, managerTimeline } from '~/composables/useData'
 import { teamColour } from '~/composables/teamColours'
 import { managerSlug } from '~/utils/managerPages'
 

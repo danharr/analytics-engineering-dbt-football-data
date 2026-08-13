@@ -22,14 +22,11 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.attendance" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { attendance, sqlQueries, datasetLd } from '~/composables/useData'
+import { attendance, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Highest Average Home Attendances in Premier League History',

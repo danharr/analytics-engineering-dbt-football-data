@@ -18,22 +18,6 @@ import managerMatchesCsv from '~/assets/data/manager_matches.csv?raw'
 import managerClubRecordsCsv from '~/assets/data/manager_club_records.csv?raw'
 import teamMatchesCsv from '~/assets/data/team_matches.csv?raw'
 import seasonTableCsv from '~/assets/data/season_table.csv?raw'
-import winsSql from '~/assets/data/wins.sql?raw'
-import qualitySql from '~/assets/data/season_quality.sql?raw'
-import attendanceSql from '~/assets/data/attendance.sql?raw'
-import allTimeSql from '~/assets/data/all_time_table.sql?raw'
-import fiveGameStreaksSql from '~/assets/data/five_game_streaks.sql?raw'
-import bigWinStreaksSql from '~/assets/data/big_win_streaks.sql?raw'
-import longestWinlessGapsSql from '~/assets/data/longest_winless_gaps.sql?raw'
-import mostChaoticMatchesSql from '~/assets/data/most_chaotic_matches.sql?raw'
-import oneNilWinsSql from '~/assets/data/one_nil_wins.sql?raw'
-import htLeadNoWinStreaksSql from '~/assets/data/ht_lead_no_win_streaks.sql?raw'
-import comebackKingsSql from '~/assets/data/comeback_kings.sql?raw'
-import mostComebacksSql from '~/assets/data/most_comebacks.sql?raw'
-import managerWinsSql from '~/assets/data/manager_wins.sql?raw'
-import managerTimelineSql from '~/assets/data/manager_timeline.sql?raw'
-import teamMatchesSql from '~/assets/data/team_matches.sql?raw'
-import seasonTableSql from '~/assets/data/season_table.sql?raw'
 
 export interface Stats {
   total_matches: number
@@ -475,25 +459,6 @@ export const seasonTable = parse<SeasonTableRow>(seasonTableCsv, d => ({
   goal_diff: toInt(d, 'goal_diff'),
   points: toInt(d, 'points')
 }))
-
-export const sqlQueries = {
-  wins: winsSql,
-  quality: qualitySql,
-  attendance: attendanceSql,
-  allTimeTable: allTimeSql,
-  fiveGameStreaks: fiveGameStreaksSql,
-  bigWinStreaks: bigWinStreaksSql,
-  longestWinlessGaps: longestWinlessGapsSql,
-  mostChaoticMatches: mostChaoticMatchesSql,
-  oneNilWins: oneNilWinsSql,
-  htLeadNoWinStreaks: htLeadNoWinStreaksSql,
-  comebackKings: comebackKingsSql,
-  mostComebacks: mostComebacksSql,
-  managerWins: managerWinsSql,
-  managerTimeline: managerTimelineSql,
-  teamMatches: teamMatchesSql,
-  seasonTable: seasonTableSql
-}
 
 export const SITE_URL = 'https://footballstartedin1992.com'
 

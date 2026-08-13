@@ -69,15 +69,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.htLeadNoWinStreaks" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import * as d3 from 'd3'
-import { htLeadNoWinStreaks, sqlQueries, datasetLd } from '~/composables/useData'
+import { htLeadNoWinStreaks, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Teams That Failed to Win After Leading at Half-Time',

@@ -68,15 +68,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.oneNilWins" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import * as d3 from 'd3'
-import { oneNilWins, sqlQueries, datasetLd } from '~/composables/useData'
+import { oneNilWins, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Clubs That Win Most Often 1-0',

@@ -17,15 +17,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.wins" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import { computed } from 'vue'
-import { wins, sqlQueries, datasetLd } from '~/composables/useData'
+import { wins, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Premier League Teams With the Most Wins',

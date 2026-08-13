@@ -62,14 +62,11 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.mostComebacks" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { mostComebacks, sqlQueries, datasetLd } from '~/composables/useData'
+import { mostComebacks, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Most Half-Time Comebacks in a Single Premier League Season',

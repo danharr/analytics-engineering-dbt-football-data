@@ -70,15 +70,12 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
-      <ChartCode :sql="sqlQueries.longestWinlessGaps" />
-    </v-col>
   </v-row>
 </template>
 
 <script setup>
 import * as d3 from 'd3'
-import { longestWinlessGaps, formatGap, sqlQueries, datasetLd } from '~/composables/useData'
+import { longestWinlessGaps, formatGap, datasetLd } from '~/composables/useData'
 
 useHead({
   title: 'Longest Time Between Wins in Premier League History',
