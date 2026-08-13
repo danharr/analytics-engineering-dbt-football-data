@@ -19,6 +19,8 @@ import managerMatchesCsv from '~/assets/data/manager_matches.csv?raw'
 import managerClubRecordsCsv from '~/assets/data/manager_club_records.csv?raw'
 import teamMatchesCsv from '~/assets/data/team_matches.csv?raw'
 import seasonTableCsv from '~/assets/data/season_table.csv?raw'
+import seasonPointsCsv from '~/assets/data/season_points.csv?raw'
+import seasonBiggestWinsCsv from '~/assets/data/season_biggest_wins.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -232,6 +234,29 @@ export interface SeasonTableRow {
   goals_against: number
   goal_diff: number
   points: number
+}
+
+export interface SeasonPointRow {
+  season_label: string
+  team_abbr: string
+  team_name: string
+  matchweek: number
+  points: number
+}
+
+export interface SeasonBiggestWinRow {
+  season_label: string
+  rank: number
+  team_name: string
+  team_abbr: string
+  opponent_name: string
+  opponent_abbr: string
+  home_away: string
+  goals_for: number
+  goals_against: number
+  score: string
+  goal_diff: number
+  kickoff_date: string
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -483,6 +508,29 @@ export const seasonTable = parse<SeasonTableRow>(seasonTableCsv, d => ({
   goals_against: toInt(d, 'goals_against'),
   goal_diff: toInt(d, 'goal_diff'),
   points: toInt(d, 'points')
+}))
+
+export const seasonPoints = parse<SeasonPointRow>(seasonPointsCsv, d => ({
+  season_label: d.season_label,
+  team_abbr: d.team_abbr,
+  team_name: d.team_name,
+  matchweek: toInt(d, 'matchweek'),
+  points: toInt(d, 'points')
+}))
+
+export const seasonBiggestWins = parse<SeasonBiggestWinRow>(seasonBiggestWinsCsv, d => ({
+  season_label: d.season_label,
+  rank: toInt(d, 'rank'),
+  team_name: d.team_name,
+  team_abbr: d.team_abbr,
+  opponent_name: d.opponent_name,
+  opponent_abbr: d.opponent_abbr,
+  home_away: d.home_away,
+  goals_for: toInt(d, 'goals_for'),
+  goals_against: toInt(d, 'goals_against'),
+  score: d.score,
+  goal_diff: toInt(d, 'goal_diff'),
+  kickoff_date: d.kickoff_date
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'

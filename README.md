@@ -23,7 +23,7 @@ An interactive dashboard of Premier League football history.
 - **Manager Timeline** — a Gantt chart of every Premier League club's managers since 1992, coloured by club with hover tooltips
 - **Individual Manager Pages** — profile pages at `/managers` for the top 20 managers by all-time Premier League wins (Wenger, Ferguson, Moyes, Guardiola, Redknapp, Mourinho, Klopp and more) showing their total wins (compared to all managers), biggest wins/losses, and club-by-club records
 - **Team Pages** — one page per club at `/teams` (all 51 teams) with their top-5 biggest wins/defeats, most red cards, biggest home attendances, every season they've played in, the all-time table with their row highlighted, and their manager history
-- **Season Pages** — the final league table (P/W/D/L/GF/GA/GD/points) for every season at `/seasons`, 1992-93 through 2025-26, ranked by points then goal difference then goals scored
+- **Season Pages** — the final league table (P/W/D/L/GF/GA/GD/points) for every season at `/seasons`, 1992-93 through 2025-26, ranked by points then goal difference then goals scored, plus the season's five biggest wins and a "points race" line chart of every team's cumulative points by matchweek
 
 ## Data
 
