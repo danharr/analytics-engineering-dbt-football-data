@@ -4,6 +4,7 @@ export const navItems = [
   { label: 'Most Wins', path: '/most-wins', icon: 'mdi-chart-bar' },
   { label: 'Data Quality', path: '/data-quality', icon: 'mdi-shield-check' },
   { label: 'Attendances', path: '/attendances', icon: 'mdi-stadium' },
+  { label: 'Scoring Trends', path: '/scoring-trends', icon: 'mdi-chart-line' },
   { label: 'Five-Game Streaks', path: '/five-game-streaks', icon: 'mdi-run-fast' },
   { label: 'Big Win Streaks', path: '/big-win-streaks', icon: 'mdi-format-list-numbered' },
   { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps', icon: 'mdi-timer-sand' },

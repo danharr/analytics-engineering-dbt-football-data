@@ -21,6 +21,7 @@ import teamMatchesCsv from '~/assets/data/team_matches.csv?raw'
 import seasonTableCsv from '~/assets/data/season_table.csv?raw'
 import seasonPointsCsv from '~/assets/data/season_points.csv?raw'
 import seasonBiggestWinsCsv from '~/assets/data/season_biggest_wins.csv?raw'
+import seasonScoringCsv from '~/assets/data/season_scoring.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -257,6 +258,23 @@ export interface SeasonBiggestWinRow {
   score: string
   goal_diff: number
   kickoff_date: string
+}
+
+export interface SeasonScoringRow {
+  season_label: string
+  matches: number
+  total_goals: number
+  goals_per_game: number
+  nil_nils: number
+  draws: number
+  draw_pct: number
+  red_cards: number
+  reds_per_game: number
+  goals_rank: number
+  nil_nils_rank: number
+  draw_rank: number
+  excitement_score: number
+  excitement_rank: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -531,6 +549,23 @@ export const seasonBiggestWins = parse<SeasonBiggestWinRow>(seasonBiggestWinsCsv
   score: d.score,
   goal_diff: toInt(d, 'goal_diff'),
   kickoff_date: d.kickoff_date
+}))
+
+export const seasonScoring = parse<SeasonScoringRow>(seasonScoringCsv, d => ({
+  season_label: d.season_label,
+  matches: toInt(d, 'matches'),
+  total_goals: toInt(d, 'total_goals'),
+  goals_per_game: toFloat(d, 'goals_per_game'),
+  nil_nils: toInt(d, 'nil_nils'),
+  draws: toInt(d, 'draws'),
+  draw_pct: toFloat(d, 'draw_pct'),
+  red_cards: toInt(d, 'red_cards'),
+  reds_per_game: toFloat(d, 'reds_per_game'),
+  goals_rank: toInt(d, 'goals_rank'),
+  nil_nils_rank: toInt(d, 'nil_nils_rank'),
+  draw_rank: toInt(d, 'draw_rank'),
+  excitement_score: toInt(d, 'excitement_score'),
+  excitement_rank: toInt(d, 'excitement_rank')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'

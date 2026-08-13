@@ -3,6 +3,7 @@ import {
   wins,
   quality,
   attendance,
+  seasonScoring,
   fiveGameStreaks,
   bigWinStreaks,
   longestWinlessGaps,
@@ -154,6 +155,17 @@ export const thumbnails: Thumbnail[] = [
     path: '/attendances',
     caption: 'Average home crowds, season by season.',
     preview: linesPreview
+  },
+  {
+    label: 'Scoring Trends',
+    path: '/scoring-trends',
+    caption: 'Goals, nil-nils and draws — the most exciting season.',
+    preview: toBars(
+      seasonScoring,
+      d => d.season_label,
+      d => d.goals_per_game,
+      d => d.goals_per_game.toFixed(2)
+    )
   },
   {
     label: 'Five-Game Streaks',
