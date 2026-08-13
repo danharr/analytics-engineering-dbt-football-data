@@ -29,6 +29,23 @@
       </v-row>
     </v-col>
 
+    <v-col cols="12" md="10" offset-md="1">
+      <div class="section-head">
+        <h2 class="text-h5 font-weight-bold mb-1">Explore the charts</h2>
+        <p class="text-body-2 text-grey-darken-1 mb-0">
+          Fourteen analyses, each generated from the same match-level data.
+        </p>
+      </div>
+    </v-col>
+
+    <v-col cols="12" md="10" offset-md="1">
+      <v-row dense>
+        <v-col v-for="t in thumbnails" :key="t.path" cols="12" sm="6" md="4" lg="3">
+          <ChartThumb :entry="t" />
+        </v-col>
+      </v-row>
+    </v-col>
+
     <v-col cols="12" md="8" offset-md="2">
       <v-card>
         <v-card-title>
@@ -138,6 +155,8 @@
 <script setup>
 import * as d3 from 'd3'
 import { stats, datasetLd } from '~/composables/useData'
+import { thumbnails } from '~/composables/thumbnails'
+import ChartThumb from '~/components/ChartThumb.vue'
 
 useHead({
   title: 'Football Started in 1992 | Premier League Stats, Records & History',
@@ -161,22 +180,7 @@ useHead({
   ]
 })
 
-const otherEntries = [
-  { label: 'All-Time Table', path: '/all-time-table' },
-  { label: 'Most Wins', path: '/most-wins' },
-  { label: 'Data Quality', path: '/data-quality' },
-  { label: 'Attendances', path: '/attendances' },
-  { label: 'Five-Game Streaks', path: '/five-game-streaks' },
-  { label: 'Big Win Streaks', path: '/big-win-streaks' },
-  { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps' },
-  { label: 'Most Chaotic Matches', path: '/most-chaotic-matches' },
-  { label: 'One-Nil Wins', path: '/one-nil-wins' },
-  { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks' },
-  { label: 'Comeback Kings', path: '/comeback-kings' },
-  { label: 'Most Comebacks in a Season', path: '/most-comebacks' },
-  { label: 'Most Manager Wins', path: '/manager-wins' },
-  { label: 'Manager Timeline', path: '/manager-timeline' }
-]
+const otherEntries = thumbnails.map(t => ({ label: t.label, path: t.path }))
 
 const managerEntries = [
   { label: 'All Managers', path: '/managers' }

@@ -78,6 +78,43 @@
 .stat-card {
   border-top: 4px solid #1a56db;
 }
+.thumb-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.thumb-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+.thumb-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.thumb-media {
+  aspect-ratio: 16 / 9;
+  background: #f4f6fb;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+.thumb-media svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.thumb-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.thumb-caption {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  flex: 1;
+}
 pre.code {
   background: #0d1117;
   color: #e6edf3;
