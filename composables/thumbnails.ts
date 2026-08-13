@@ -12,6 +12,7 @@ import {
   comebackKings,
   mostComebacks,
   managerWins,
+  managerDebuts,
   managerTimeline
 } from '~/composables/useData'
 
@@ -217,6 +218,17 @@ export const thumbnails: Thumbnail[] = [
     path: '/manager-wins',
     caption: 'Top managers by Premier League wins.',
     preview: toBars(managerWins, d => d.manager_name, d => d.wins, d => fmtInt(d.wins))
+  },
+  {
+    label: 'Manager Debuts',
+    path: '/manager-debuts',
+    caption: 'The best and worst first matches in charge.',
+    preview: toBars(
+      managerDebuts.filter(d => d.list === 'win'),
+      d => d.manager_name,
+      d => d.goal_diff,
+      d => `+${d.goal_diff}`
+    )
   },
   {
     label: 'Manager Timeline',

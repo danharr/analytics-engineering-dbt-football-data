@@ -1,0 +1,11 @@
+list,rank,manager_name,team_name,opponent_name,home_away,score,goal_diff,kickoff_date
+win,1,Sam Allardyce,Bolton Wanderers,Leicester City,A,5-0,5,2001-08-18
+win,2,Michael Laudrup,Swansea City,Queens Park Rangers,A,5-0,5,2012-08-18
+win,3,Mike Walker,Everton,Swindon Town,H,6-2,4,1994-01-15
+win,4,Ole Gunnar Solskjær,Manchester United,Cardiff City,A,5-1,4,2018-12-22
+win,5,Luiz Felipe Scolari,Chelsea,Portsmouth,H,4-0,4,2008-08-17
+defeat,1,Roberto Di Matteo,West Bromwich Albion,Chelsea,A,0-6,-6,2010-08-14
+defeat,2,Alan Smith,Crystal Palace,Liverpool,H,1-6,-5,1994-08-20
+defeat,3,Dave Bassett,Nottingham Forest,Newcastle United,A,0-5,-5,1997-05-11
+defeat,4,Chris Hughton,Norwich City,Fulham,A,0-5,-5,2012-08-18
+defeat,5,Claudio Ranieri,Watford,Liverpool,H,0-5,-5,2021-10-16

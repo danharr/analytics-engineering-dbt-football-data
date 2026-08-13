@@ -13,6 +13,7 @@ export const navItems = [
   { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks', icon: 'mdi-trophy-variant-outline' },
   { label: 'Most Manager Wins', path: '/manager-wins', icon: 'mdi-whistle-outline' },
+  { label: 'Manager Debuts', path: '/manager-debuts', icon: 'mdi-handshake' },
   { label: 'Manager Timeline', path: '/manager-timeline', icon: 'mdi-chart-gantt' },
 
   { header: 'Managers' },

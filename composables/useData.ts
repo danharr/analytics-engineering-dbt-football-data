@@ -13,6 +13,7 @@ import htLeadNoWinStreaksCsv from '~/assets/data/ht_lead_no_win_streaks.csv?raw'
 import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
 import mostComebacksCsv from '~/assets/data/most_comebacks.csv?raw'
 import managerWinsCsv from '~/assets/data/manager_wins.csv?raw'
+import managerDebutsCsv from '~/assets/data/manager_debuts.csv?raw'
 import managerTimelineCsv from '~/assets/data/manager_timeline.csv?raw'
 import managerMatchesCsv from '~/assets/data/manager_matches.csv?raw'
 import managerClubRecordsCsv from '~/assets/data/manager_club_records.csv?raw'
@@ -153,6 +154,18 @@ export interface ManagerWinsRow {
   points: number
   goals_for: number
   goals_against: number
+}
+
+export interface ManagerDebutRow {
+  list: string
+  rank: number
+  manager_name: string
+  team_name: string
+  opponent_name: string
+  home_away: string
+  score: string
+  goal_diff: number
+  kickoff_date: string
 }
 
 export interface ManagerMatchRow {
@@ -393,6 +406,18 @@ export const managerWins = parse<ManagerWinsRow>(managerWinsCsv, d => ({
   points: toInt(d, 'points'),
   goals_for: toInt(d, 'goals_for'),
   goals_against: toInt(d, 'goals_against')
+}))
+
+export const managerDebuts = parse<ManagerDebutRow>(managerDebutsCsv, d => ({
+  list: d.list,
+  rank: toInt(d, 'rank'),
+  manager_name: d.manager_name,
+  team_name: d.team_name,
+  opponent_name: d.opponent_name,
+  home_away: d.home_away,
+  score: d.score,
+  goal_diff: toInt(d, 'goal_diff'),
+  kickoff_date: d.kickoff_date
 }))
 
 export const managerMatches = parse<ManagerMatchRow>(managerMatchesCsv, d => ({
