@@ -22,6 +22,7 @@ import seasonTableCsv from '~/assets/data/season_table.csv?raw'
 import seasonPointsCsv from '~/assets/data/season_points.csv?raw'
 import seasonBiggestWinsCsv from '~/assets/data/season_biggest_wins.csv?raw'
 import seasonScoringCsv from '~/assets/data/season_scoring.csv?raw'
+import goalMinutesCsv from '~/assets/data/goal_minutes.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -275,6 +276,13 @@ export interface SeasonScoringRow {
   draw_rank: number
   excitement_score: number
   excitement_rank: number
+}
+
+export interface GoalMinuteRow {
+  team_name: string
+  minute: number
+  home_goals: number
+  away_goals: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -566,6 +574,13 @@ export const seasonScoring = parse<SeasonScoringRow>(seasonScoringCsv, d => ({
   draw_rank: toInt(d, 'draw_rank'),
   excitement_score: toInt(d, 'excitement_score'),
   excitement_rank: toInt(d, 'excitement_rank')
+}))
+
+export const goalMinutes = parse<GoalMinuteRow>(goalMinutesCsv, d => ({
+  team_name: d.team_name,
+  minute: toInt(d, 'minute'),
+  home_goals: toInt(d, 'home_goals'),
+  away_goals: toInt(d, 'away_goals')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'

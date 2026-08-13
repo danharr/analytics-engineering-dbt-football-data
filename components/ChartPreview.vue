@@ -182,6 +182,62 @@ function renderSquares(svg, rows) {
   })
 }
 
+function renderPyramid(svg, rows) {
+  const margin = { top: 10, right: 8, bottom: 8, left: 8 }
+  const innerW = W - margin.left - margin.right
+  const innerH = H - margin.top - margin.bottom
+  const centerX = innerW / 2
+  const gutter = 3
+  const max = Math.max(d3.max(rows, d => d.left) || 1, d3.max(rows, d => d.right) || 1)
+  const xLeft = d3.scaleLinear().domain([0, max]).range([centerX - gutter, 0])
+  const xRight = d3.scaleLinear().domain([0, max]).range([centerX + gutter, innerW])
+  const y = d3.scaleBand().domain(rows.map(d => d.label)).range([0, innerH]).padding(0.18)
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`)
+
+  g.selectAll('rect.left')
+    .data(rows)
+    .join('rect')
+    .attr('x', d => xLeft(d.left))
+    .attr('y', d => y(d.label))
+    .attr('width', d => Math.max(0, (centerX - gutter) - xLeft(d.left)))
+    .attr('height', y.bandwidth())
+    .attr('fill', '#c62828')
+    .attr('opacity', 0.9)
+
+  g.selectAll('rect.right')
+    .data(rows)
+    .join('rect')
+    .attr('x', centerX + gutter)
+    .attr('y', d => y(d.label))
+    .attr('width', d => Math.max(0, xRight(d.right) - (centerX + gutter)))
+    .attr('height', y.bandwidth())
+    .attr('fill', '#1e88e5')
+    .attr('opacity', 0.9)
+
+  g.append('line')
+    .attr('x1', centerX)
+    .attr('x2', centerX)
+    .attr('y1', 0)
+    .attr('y2', innerH)
+    .attr('stroke', '#bbb')
+
+  g.append('text')
+    .attr('x', 0)
+    .attr('y', -2)
+    .attr('font-size', '7px')
+    .attr('fill', '#c62828')
+    .text('H')
+
+  g.append('text')
+    .attr('x', innerW)
+    .attr('y', -2)
+    .attr('font-size', '7px')
+    .attr('fill', '#1e88e5')
+    .attr('text-anchor', 'end')
+    .text('A')
+}
+
 function renderGantt(svg, rows) {
   const margin = { top: 8, right: 8, bottom: 8, left: 6 }
   const labelW = 92
@@ -234,6 +290,7 @@ function render() {
   else if (p.kind === 'lines') renderLines(svg, p)
   else if (p.kind === 'squares') renderSquares(svg, p.rows)
   else if (p.kind === 'gantt') renderGantt(svg, p.rows)
+  else if (p.kind === 'pyramid') renderPyramid(svg, p.rows)
 }
 
 onMounted(render)

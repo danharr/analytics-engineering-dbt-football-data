@@ -1,7 +1,6 @@
--- Per-match results for the team pages (/arsenal, /manchester-united, /liverpool,
--- /tottenham, /west-ham): one row per match for each profiled team, used to derive the
--- top-5 biggest wins, biggest defeats, most red cards and biggest home attendances.
--- Add a team_abbr to the IN list to profile it too.
+-- Per-match results for the team pages (/teams/{slug}): one row per match for every
+-- Premier League team (all 51), used to derive the top-5 biggest wins, biggest defeats,
+-- most red cards and biggest home attendances on each team page.
 copy (
     select
         team_abbr,
@@ -16,7 +15,6 @@ copy (
         red_cards,
         attendance
     from "premier_league"."main"."fct_team_matches"
-    where team_abbr in ('ARS', 'MUN', 'LIV', 'TOT', 'WHU', 'MCI', 'NEW', 'SUN', 'LEE', 'AVL', 'BRE', 'CHE')
     order by team_abbr, kickoff_date, match_id
 )
 to 'assets/data/team_matches.csv' (header, delimiter ',')

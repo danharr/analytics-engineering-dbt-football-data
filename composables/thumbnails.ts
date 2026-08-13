@@ -14,7 +14,8 @@ import {
   mostComebacks,
   managerWins,
   managerDebuts,
-  managerTimeline
+  managerTimeline,
+  goalMinutes
 } from '~/composables/useData'
 
 interface BarRow {
@@ -29,6 +30,7 @@ export type ThumbnailPreview =
   | { kind: 'lines'; series: { name: string; points: (number | null)[] }[]; xLabels: string[] }
   | { kind: 'squares'; rows: { label: string; cells: string[] }[] }
   | { kind: 'gantt'; rows: { label: string; bars: { start: number; end: number }[] }[] }
+  | { kind: 'pyramid'; rows: { label: string; left: number; right: number }[] }
 
 export interface Thumbnail {
   label: string
@@ -124,6 +126,22 @@ const ganttPreview: ThumbnailPreview = {
   }))
 }
 
+const goalBins = Array.from({ length: 9 }, (_, i) => ({
+  label: `${i * 10 + 1}-${(i + 1) * 10}`,
+  left: 0,
+  right: 0
+}))
+for (const r of goalMinutes) {
+  const b = Math.min(8, Math.floor((r.minute - 1) / 10))
+  goalBins[b].left += r.home_goals
+  goalBins[b].right += r.away_goals
+}
+
+const pyramidPreview: ThumbnailPreview = {
+  kind: 'pyramid',
+  rows: goalBins
+}
+
 export const thumbnails: Thumbnail[] = [
   {
     label: 'All-Time Table',
@@ -166,6 +184,12 @@ export const thumbnails: Thumbnail[] = [
       d => d.goals_per_game,
       d => d.goals_per_game.toFixed(2)
     )
+  },
+  {
+    label: 'Goals by Minute',
+    path: '/goal-minutes',
+    caption: 'When Arsenal and West Ham score, minute by minute.',
+    preview: pyramidPreview
   },
   {
     label: 'Five-Game Streaks',
