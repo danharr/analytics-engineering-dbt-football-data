@@ -62,10 +62,27 @@
     display: none;
   }
 }
-.stat-value {
-  font-size: 2.4rem;
+.stat-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 8px 0;
+}
+.stat-circle-svg {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+.stat-ring {
+  fill: none;
+  stroke: #1a56db;
+  stroke-width: 6;
+}
+.stat-num {
+  fill: #1a56db;
+  font-size: 32px;
   font-weight: 800;
-  line-height: 1.1;
   letter-spacing: -0.02em;
 }
 .stat-label {
@@ -73,10 +90,7 @@
   color: #666;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-top: 4px;
-}
-.stat-card {
-  border-top: 4px solid #1a56db;
+  margin-top: 10px;
 }
 .thumb-card {
   height: 100%;

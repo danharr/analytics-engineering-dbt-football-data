@@ -3,28 +3,13 @@
     <v-col cols="12" md="8" offset-md="2">
       <v-row>
         <v-col cols="12" sm="4">
-          <v-card class="stat-card text-center pa-3">
-            <v-card-text>
-              <div class="stat-value" style="color: #1a56db;">{{ fmt(stats.total_matches) }}</div>
-              <div class="stat-label">Total Matches Analysed</div>
-            </v-card-text>
-          </v-card>
+          <StatCircle :value="stats.total_matches" label="Total Matches Analysed" />
         </v-col>
         <v-col cols="12" sm="4">
-          <v-card class="stat-card text-center pa-3">
-            <v-card-text>
-              <div class="stat-value" style="color: #0e9f6e;">{{ fmt(stats.total_unique_teams) }}</div>
-              <div class="stat-label">Total Unique Teams</div>
-            </v-card-text>
-          </v-card>
+          <StatCircle :value="stats.total_unique_teams" label="Total Unique Teams" />
         </v-col>
         <v-col cols="12" sm="4">
-          <v-card class="stat-card text-center pa-3">
-            <v-card-text>
-              <div class="stat-value" style="color: #d97706;">{{ fmt(stats.total_goals) }}</div>
-              <div class="stat-label">Total Goals Scored</div>
-            </v-card-text>
-          </v-card>
+          <StatCircle :value="stats.total_goals" label="Total Goals Scored" />
         </v-col>
       </v-row>
     </v-col>
@@ -153,10 +138,10 @@
 </template>
 
 <script setup>
-import * as d3 from 'd3'
 import { stats, datasetLd } from '~/composables/useData'
 import { thumbnails } from '~/composables/thumbnails'
 import ChartThumb from '~/components/ChartThumb.vue'
+import StatCircle from '~/components/StatCircle.vue'
 
 useHead({
   title: 'Football Started in 1992 | Premier League Stats, Records & History',
@@ -193,6 +178,4 @@ const seasonEntries = [
 const teamEntries = [
   { label: 'All Teams', path: '/teams' }
 ]
-
-const fmt = n => d3.format(',')(n || 0)
 </script>
