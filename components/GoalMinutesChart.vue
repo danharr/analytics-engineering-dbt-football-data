@@ -7,7 +7,8 @@ import * as d3 from 'd3'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const props = defineProps({
-  data: { type: Array, required: true }
+  data: { type: Array, required: true },
+  maxVal: { type: Number, default: null }
 })
 
 const el = ref(null)
@@ -44,7 +45,8 @@ function renderChart() {
     .range([0, innerH])
     .padding(0.15)
 
-  const maxVal = d3.max(data, d => Math.max(d.home_goals, d.away_goals)) || 1
+  const dataMax = d3.max(data, d => Math.max(d.home_goals, d.away_goals)) || 1
+  const maxVal = props.maxVal ?? dataMax
 
   const xLeft = d3.scaleLinear().domain([0, maxVal]).range([centerX - gutter, 0])
   const xRight = d3.scaleLinear().domain([0, maxVal]).range([centerX + gutter, innerW])

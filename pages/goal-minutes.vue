@@ -15,9 +15,10 @@
             Five population pyramids, one per club, charting every Premier League goal of the
             2025-26 season by the minute it was scored, clustered into five-minute intervals.
             Goals scored at home stretch to the left, goals scored away stretch to the right,
-            and the length of each bar is the number of goals in that interval. The central
-            column marks the minute, running from the 90th minute at the top down to the first
-            minute at the bottom.
+            and the length of each bar is the number of goals in that interval. All five charts
+            share the same axis scale, so bar lengths are directly comparable across clubs. The
+            central column marks the minute, running from the 90th minute at the top down to the
+            first minute at the bottom.
           </p>
         </v-card-text>
       </v-card>
@@ -27,8 +28,8 @@
       v-for="t in teamData"
       :key="t.name"
       cols="12"
-      md="10"
-      offset-md="1"
+      sm="6"
+      md="4"
     >
       <v-card>
         <v-card-title>
@@ -39,7 +40,7 @@
           Home goals on the left · away goals on the right
         </v-card-subtitle>
         <v-card-text>
-          <GoalMinutesChart :data="t.minutes.value" />
+          <GoalMinutesChart :data="t.minutes.value" :max-val="globalMax" />
           <p class="text-center text-body-2 text-grey-darken-1 mt-3 mb-0">
             {{ t.total.value }} Premier League goals — {{ t.home.value }} at home, {{ t.away.value }} away
           </p>
@@ -76,6 +77,10 @@ useHead({
 })
 
 const teamNames = ['Arsenal', 'West Ham United', 'Chelsea', 'Liverpool', 'Manchester United']
+
+const globalMax = computed(() =>
+  goalMinutes.reduce((m, d) => Math.max(m, d.home_goals, d.away_goals), 0)
+)
 
 const teamData = teamNames.map(name => {
   const minutes = computed(() =>
