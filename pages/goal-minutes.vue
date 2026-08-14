@@ -12,10 +12,11 @@
         <v-card-text class="pt-0">
           <p class="mb-0">
             Two population pyramids, one per club, charting every Premier League goal of the
-            2025-26 season by the minute it was scored. Goals scored at home stretch to the
-            left, goals scored away stretch to the right, and the length of each bar is the
-            number of goals in that minute. The central column marks the minute, from the
-            first minute at the top down to stoppage time at the bottom.
+            2025-26 season by the minute it was scored, clustered into five-minute intervals.
+            Goals scored at home stretch to the left, goals scored away stretch to the right,
+            and the length of each bar is the number of goals in that interval. The central
+            column marks the minute, running from the 90th minute at the top down to the first
+            minute at the bottom.
           </p>
         </v-card-text>
       </v-card>
@@ -68,7 +69,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Every Premier League goal scored by Arsenal and West Ham United in 2025-26, charted by minute as population pyramids with home and away goals split.'
+      content: 'Every Premier League goal scored by Arsenal and West Ham United in 2025-26, charted in five-minute intervals as population pyramids with home and away goals split.'
     }
   ],
   script: [
@@ -76,7 +77,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Goals by Minute Dataset',
-        description: 'Every Premier League goal scored by Arsenal and West Ham United in the 2025-26 season, bucketed by the minute it was scored and split into home and away goals.',
+        description: 'Every Premier League goal scored by Arsenal and West Ham United in the 2025-26 season, bucketed into five-minute intervals and split into home and away goals.',
         path: '/goal-minutes',
         csv: 'goal_minutes.csv',
         keywords: ['goals by minute', 'population pyramid', 'Arsenal', 'West Ham United']

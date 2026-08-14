@@ -126,20 +126,21 @@ const ganttPreview: ThumbnailPreview = {
   }))
 }
 
-const goalBins = Array.from({ length: 9 }, (_, i) => ({
-  label: `${i * 10 + 1}-${(i + 1) * 10}`,
-  left: 0,
-  right: 0
-}))
+const goalBinMap = new Map<number, { label: string; left: number; right: number }>()
 for (const r of goalMinutes) {
-  const b = Math.min(8, Math.floor((r.minute - 1) / 10))
-  goalBins[b].left += r.home_goals
-  goalBins[b].right += r.away_goals
+  if (!goalBinMap.has(r.minute)) {
+    goalBinMap.set(r.minute, { label: r.label, left: 0, right: 0 })
+  }
+  const b = goalBinMap.get(r.minute)!
+  b.left += r.home_goals
+  b.right += r.away_goals
 }
 
 const pyramidPreview: ThumbnailPreview = {
   kind: 'pyramid',
-  rows: goalBins
+  rows: [...goalBinMap.entries()]
+    .sort((a, b) => b[0] - a[0])
+    .map(([, v]) => v)
 }
 
 export const thumbnails: Thumbnail[] = [

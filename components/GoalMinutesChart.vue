@@ -20,12 +20,12 @@ function renderChart() {
   if (!target || !props.data.length) return
   target.innerHTML = ''
 
-  const data = [...props.data].sort((a, b) => a.minute - b.minute)
+  const data = [...props.data].sort((a, b) => b.minute - a.minute)
 
   const width = target.clientWidth || 900
   const margin = { top: 30, right: 36, bottom: 28, left: 36 }
   const innerW = width - margin.left - margin.right
-  const step = 6
+  const step = 18
   const innerH = data.length * step
 
   const svg = d3.select(target)
@@ -37,12 +37,12 @@ function renderChart() {
     .attr('transform', `translate(${margin.left},${margin.top})`)
 
   const centerX = innerW / 2
-  const gutter = 14
+  const gutter = 20
 
   const y = d3.scaleBand()
-    .domain(data.map(d => d.minute))
+    .domain(data.map(d => d.label))
     .range([0, innerH])
-    .padding(0.12)
+    .padding(0.15)
 
   const maxVal = d3.max(data, d => Math.max(d.home_goals, d.away_goals)) || 1
 
@@ -66,7 +66,7 @@ function renderChart() {
     .join('rect')
     .attr('class', 'home')
     .attr('x', d => xLeft(d.home_goals))
-    .attr('y', d => y(d.minute))
+    .attr('y', d => y(d.label))
     .attr('width', d => Math.max(0, (centerX - gutter) - xLeft(d.home_goals)))
     .attr('height', y.bandwidth())
     .attr('fill', HOME_COLOR)
@@ -74,7 +74,7 @@ function renderChart() {
     .on('mousemove', function (event, d) {
       tooltip
         .style('opacity', 1)
-        .html(`<strong>Minute ${d.minute}</strong><br>Home: ${d.home_goals} · Away: ${d.away_goals}`)
+        .html(`<strong>Minute ${d.label}</strong><br>Home: ${d.home_goals} · Away: ${d.away_goals}`)
         .style('left', (event.offsetX + 12) + 'px')
         .style('top', (event.offsetY - 10) + 'px')
     })
@@ -85,7 +85,7 @@ function renderChart() {
     .join('rect')
     .attr('class', 'away')
     .attr('x', centerX + gutter)
-    .attr('y', d => y(d.minute))
+    .attr('y', d => y(d.label))
     .attr('width', d => Math.max(0, xRight(d.away_goals) - (centerX + gutter)))
     .attr('height', y.bandwidth())
     .attr('fill', AWAY_COLOR)
@@ -93,7 +93,7 @@ function renderChart() {
     .on('mousemove', function (event, d) {
       tooltip
         .style('opacity', 1)
-        .html(`<strong>Minute ${d.minute}</strong><br>Home: ${d.home_goals} · Away: ${d.away_goals}`)
+        .html(`<strong>Minute ${d.label}</strong><br>Home: ${d.home_goals} · Away: ${d.away_goals}`)
         .style('left', (event.offsetX + 12) + 'px')
         .style('top', (event.offsetY - 10) + 'px')
     })
@@ -106,17 +106,17 @@ function renderChart() {
     .attr('y2', innerH)
     .attr('stroke', '#bbb')
 
-  ;[15, 30, 45, 60, 75, 90].forEach(m => {
-    chart.append('text')
-      .attr('x', centerX)
-      .attr('y', y(m) + y.bandwidth() / 2)
-      .attr('dy', '0.35em')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '10px')
-      .attr('font-weight', 600)
-      .attr('fill', '#777')
-      .text(m)
-  })
+  chart.selectAll('text.minlabel')
+    .data(data)
+    .join('text')
+    .attr('class', 'minlabel')
+    .attr('x', centerX)
+    .attr('y', d => y(d.label) + y.bandwidth() / 2)
+    .attr('dy', '0.35em')
+    .attr('text-anchor', 'middle')
+    .attr('font-size', '9px')
+    .attr('fill', '#777')
+    .text(d => d.label)
 
   chart.append('g')
     .attr('class', 'axis')

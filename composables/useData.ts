@@ -281,6 +281,7 @@ export interface SeasonScoringRow {
 export interface GoalMinuteRow {
   team_name: string
   minute: number
+  label: string
   home_goals: number
   away_goals: number
 }
@@ -579,6 +580,7 @@ export const seasonScoring = parse<SeasonScoringRow>(seasonScoringCsv, d => ({
 export const goalMinutes = parse<GoalMinuteRow>(goalMinutesCsv, d => ({
   team_name: d.team_name,
   minute: toInt(d, 'minute'),
+  label: d.label,
   home_goals: toInt(d, 'home_goals'),
   away_goals: toInt(d, 'away_goals')
 }))
