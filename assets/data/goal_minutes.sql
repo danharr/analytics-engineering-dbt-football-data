@@ -1,6 +1,7 @@
--- Premier League goals by 5-minute interval for Arsenal, West Ham United, Chelsea,
--- Liverpool and Manchester United (2025-26), split into home and away goals to back
--- the population-pyramid charts.
+-- Premier League goals by exact minute (1-90) for Arsenal, West Ham United, Chelsea,
+-- Liverpool and Manchester United (2025-26), split into home and away goals. The chart
+-- page aggregates these per-minute rows into five-minute buckets client-side, so a single
+-- dataset backs both the exact-minute and five-minute-bucket pyramid views.
 copy (
     with teams as (
         select 'Arsenal' as team_name
@@ -13,13 +14,13 @@ copy (
         union all
         select 'Manchester United' as team_name
     ),
-    buckets as (
-        select unnest(range(1, 19)) as bucket
+    minutes as (
+        select unnest(range(1, 91)) as minute
     ),
     goals as (
         select
             team_name,
-            cast(ceil(cast(split_part(replace(minute, '''', ''), '+', 1) as int) / 5.0) as int) as bucket,
+            cast(split_part(replace(minute, '''', ''), '+', 1) as int) as minute,
             (team_side = 'home')::int as is_home_goal,
             (team_side = 'away')::int as is_away_goal
         from "premier_league"."main"."fct_team_goal"
@@ -29,22 +30,22 @@ copy (
     agg as (
         select
             team_name,
-            bucket,
+            minute,
             sum(is_home_goal) as home_goals,
             sum(is_away_goal) as away_goals
         from goals
-        group by team_name, bucket
+        group by team_name, minute
     )
     select
         t.team_name,
-        m.bucket * 5 as minute,
-        (m.bucket * 5 - 4) || '-' || (m.bucket * 5) as label,
+        m.minute,
+        cast(m.minute as varchar) as label,
         coalesce(a.home_goals, 0) as home_goals,
         coalesce(a.away_goals, 0) as away_goals
     from teams t
-    cross join buckets m
+    cross join minutes m
     left join agg a
-        on a.team_name = t.team_name and a.bucket = m.bucket
-    order by t.team_name, m.bucket
+        on a.team_name = t.team_name and a.minute = m.minute
+    order by t.team_name, m.minute
 )
 to 'assets/data/goal_minutes.csv' (header, delimiter ',')

@@ -4,7 +4,7 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 
 const props = defineProps({
   data: { type: Array, required: true },
@@ -24,15 +24,17 @@ function renderChart() {
   const data = [...props.data].sort((a, b) => b.minute - a.minute)
 
   const width = target.clientWidth || 900
-  const margin = { top: 30, right: 36, bottom: 28, left: 36 }
+  const margin = { top: 30, right: 36, bottom: 40, left: 36 }
   const innerW = width - margin.left - margin.right
-  const step = 18
+  const step = data.length > 40 ? 10 : 18
   const innerH = data.length * step
+  const height = innerH + margin.top + margin.bottom
 
   const svg = d3.select(target)
     .append('svg')
     .attr('width', width)
-    .attr('height', innerH + margin.top + margin.bottom)
+    .attr('height', height)
+    .attr('viewBox', `0 0 ${width} ${height}`)
 
   const chart = svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`)
@@ -116,7 +118,7 @@ function renderChart() {
     .attr('y', d => y(d.label) + y.bandwidth() / 2)
     .attr('dy', '0.35em')
     .attr('text-anchor', 'middle')
-    .attr('font-size', '9px')
+    .attr('font-size', data.length > 40 ? '8px' : '9px')
     .attr('fill', '#777')
     .text(d => d.label)
 
@@ -125,16 +127,16 @@ function renderChart() {
     .attr('transform', `translate(0,${innerH})`)
     .call(d3.axisBottom(xLeft).tickSizeOuter(0).ticks(Math.min(maxVal, 5)))
     .selectAll('text')
-    .attr('font-size', '10px')
-    .attr('fill', '#888')
+    .style('font-size', '10px')
+    .style('fill', '#888')
 
   chart.append('g')
     .attr('class', 'axis')
     .attr('transform', `translate(0,${innerH})`)
     .call(d3.axisBottom(xRight).tickSizeOuter(0).ticks(Math.min(maxVal, 5)))
     .selectAll('text')
-    .attr('font-size', '10px')
-    .attr('fill', '#888')
+    .style('font-size', '10px')
+    .style('fill', '#888')
 
   chart.append('text')
     .attr('x', 0)
@@ -155,6 +157,8 @@ function renderChart() {
 }
 
 const onResize = () => renderChart()
+
+watch([() => props.data, () => props.maxVal], () => renderChart())
 
 onMounted(() => {
   renderChart()
