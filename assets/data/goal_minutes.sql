@@ -1,10 +1,17 @@
--- Premier League goals by 5-minute interval for Arsenal and West Ham United (2025-26),
--- split into home and away goals to back the population-pyramid charts.
+-- Premier League goals by 5-minute interval for Arsenal, West Ham United, Chelsea,
+-- Liverpool and Manchester United (2025-26), split into home and away goals to back
+-- the population-pyramid charts.
 copy (
     with teams as (
         select 'Arsenal' as team_name
         union all
         select 'West Ham United' as team_name
+        union all
+        select 'Chelsea' as team_name
+        union all
+        select 'Liverpool' as team_name
+        union all
+        select 'Manchester United' as team_name
     ),
     buckets as (
         select unnest(range(1, 19)) as bucket
@@ -17,6 +24,7 @@ copy (
             (team_side = 'away')::int as is_away_goal
         from "premier_league"."main"."fct_team_goal"
         where competition = 'Premier League'
+          and season_label = '2025-26'
     ),
     agg as (
         select

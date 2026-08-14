@@ -7,11 +7,12 @@
           Goals by Minute
         </v-card-title>
         <v-card-subtitle>
-          When Arsenal and West Ham United scored their Premier League goals in 2025-26
+          When Arsenal, West Ham United, Chelsea, Liverpool and Manchester United scored their
+          Premier League goals in 2025-26
         </v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            Two population pyramids, one per club, charting every Premier League goal of the
+            Five population pyramids, one per club, charting every Premier League goal of the
             2025-26 season by the minute it was scored, clustered into five-minute intervals.
             Goals scored at home stretch to the left, goals scored away stretch to the right,
             and the length of each bar is the number of goals in that interval. The central
@@ -22,37 +23,25 @@
       </v-card>
     </v-col>
 
-    <v-col cols="12" md="10" offset-md="1">
+    <v-col
+      v-for="t in teamData"
+      :key="t.name"
+      cols="12"
+      md="10"
+      offset-md="1"
+    >
       <v-card>
         <v-card-title>
           <v-icon icon="mdi-shield" class="mr-2"></v-icon>
-          Arsenal
+          {{ t.name }}
         </v-card-title>
         <v-card-subtitle>
           Home goals on the left · away goals on the right
         </v-card-subtitle>
         <v-card-text>
-          <GoalMinutesChart :data="arsenalMinutes" />
+          <GoalMinutesChart :data="t.minutes.value" />
           <p class="text-center text-body-2 text-grey-darken-1 mt-3 mb-0">
-            {{ arsenalTotal }} Premier League goals — {{ arsenalHome }} at home, {{ arsenalAway }} away
-          </p>
-        </v-card-text>
-      </v-card>
-    </v-col>
-
-    <v-col cols="12" md="10" offset-md="1">
-      <v-card>
-        <v-card-title>
-          <v-icon icon="mdi-shield" class="mr-2"></v-icon>
-          West Ham United
-        </v-card-title>
-        <v-card-subtitle>
-          Home goals on the left · away goals on the right
-        </v-card-subtitle>
-        <v-card-text>
-          <GoalMinutesChart :data="westHamMinutes" />
-          <p class="text-center text-body-2 text-grey-darken-1 mt-3 mb-0">
-            {{ westHamTotal }} Premier League goals — {{ westHamHome }} at home, {{ westHamAway }} away
+            {{ t.total.value }} Premier League goals — {{ t.home.value }} at home, {{ t.away.value }} away
           </p>
         </v-card-text>
       </v-card>
@@ -65,11 +54,11 @@ import { computed } from 'vue'
 import { goalMinutes, datasetLd } from '~/composables/useData'
 
 useHead({
-  title: 'Goals by Minute — Arsenal & West Ham United',
+  title: 'Goals by Minute',
   meta: [
     {
       name: 'description',
-      content: 'Every Premier League goal scored by Arsenal and West Ham United in 2025-26, charted in five-minute intervals as population pyramids with home and away goals split.'
+      content: 'Every Premier League goal scored by Arsenal, West Ham United, Chelsea, Liverpool and Manchester United in 2025-26, charted in five-minute intervals as population pyramids with home and away goals split.'
     }
   ],
   script: [
@@ -77,30 +66,28 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Goals by Minute Dataset',
-        description: 'Every Premier League goal scored by Arsenal and West Ham United in the 2025-26 season, bucketed into five-minute intervals and split into home and away goals.',
+        description: 'Every Premier League goal scored by Arsenal, West Ham United, Chelsea, Liverpool and Manchester United in the 2025-26 season, bucketed into five-minute intervals and split into home and away goals.',
         path: '/goal-minutes',
         csv: 'goal_minutes.csv',
-        keywords: ['goals by minute', 'population pyramid', 'Arsenal', 'West Ham United']
+        keywords: ['goals by minute', 'population pyramid', 'Arsenal', 'West Ham United', 'Chelsea', 'Liverpool', 'Manchester United']
       }))
     }
   ]
 })
 
-const arsenalMinutes = computed(() =>
-  goalMinutes.filter(d => d.team_name === 'Arsenal')
-)
+const teamNames = ['Arsenal', 'West Ham United', 'Chelsea', 'Liverpool', 'Manchester United']
 
-const westHamMinutes = computed(() =>
-  goalMinutes.filter(d => d.team_name === 'West Ham United')
-)
-
-const sum = (rows, key) => rows.reduce((acc, d) => acc + d[key], 0)
-
-const arsenalHome = computed(() => sum(arsenalMinutes.value, 'home_goals'))
-const arsenalAway = computed(() => sum(arsenalMinutes.value, 'away_goals'))
-const arsenalTotal = computed(() => arsenalHome.value + arsenalAway.value)
-
-const westHamHome = computed(() => sum(westHamMinutes.value, 'home_goals'))
-const westHamAway = computed(() => sum(westHamMinutes.value, 'away_goals'))
-const westHamTotal = computed(() => westHamHome.value + westHamAway.value)
+const teamData = teamNames.map(name => {
+  const minutes = computed(() =>
+    goalMinutes.filter(d => d.team_name === name)
+  )
+  const home = computed(() =>
+    minutes.value.reduce((acc, d) => acc + d.home_goals, 0)
+  )
+  const away = computed(() =>
+    minutes.value.reduce((acc, d) => acc + d.away_goals, 0)
+  )
+  const total = computed(() => home.value + away.value)
+  return { name, minutes, home, away, total }
+})
 </script>
