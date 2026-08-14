@@ -7,15 +7,14 @@
           Goals by Minute
         </v-card-title>
         <v-card-subtitle>
-          When Arsenal, West Ham United, Chelsea, Liverpool and Manchester United scored their
-          Premier League goals in 2025-26
+          When all 20 Premier League clubs scored their goals in 2025-26
         </v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            Five population pyramids, one per club, charting every Premier League goal of the
+            Twenty population pyramids, one per club, charting every Premier League goal of the
             2025-26 season by the minute it was scored. Goals scored at home stretch to the
             left, goals scored away stretch to the right, and the length of each bar is the
-            number of goals in that interval. All five charts share the same axis scale, so
+            number of goals in that interval. All twenty charts share the same axis scale, so
             bar lengths are directly comparable across clubs. Use the toggle to switch between
             five-minute buckets and individual minutes.
           </p>
@@ -68,7 +67,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Every Premier League goal scored by Arsenal, West Ham United, Chelsea, Liverpool and Manchester United in 2025-26, charted by the exact minute or in five-minute intervals as population pyramids with home and away goals split.'
+      content: 'Every Premier League goal scored by all 20 clubs in 2025-26, charted by the exact minute or in five-minute intervals as population pyramids with home and away goals split.'
     }
   ],
   script: [
@@ -76,10 +75,10 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Goals by Minute Dataset',
-        description: 'Every Premier League goal scored by Arsenal, West Ham United, Chelsea, Liverpool and Manchester United in the 2025-26 season, by the exact minute it was scored and split into home and away goals.',
+        description: 'Every Premier League goal scored by all 20 clubs in the 2025-26 season, by the exact minute it was scored and split into home and away goals.',
         path: '/goal-minutes',
         csv: 'goal_minutes.csv',
-        keywords: ['goals by minute', 'population pyramid', 'Arsenal', 'West Ham United', 'Chelsea', 'Liverpool', 'Manchester United']
+        keywords: ['goals by minute', 'population pyramid', 'Premier League', '2025-26']
       }))
     }
   ]
@@ -87,7 +86,28 @@ useHead({
 
 const granularity = ref('5min')
 
-const teamNames = ['Arsenal', 'West Ham United', 'Chelsea', 'Liverpool', 'Manchester United']
+const teamNames = [
+  'Arsenal',
+  'Aston Villa',
+  'Bournemouth',
+  'Brentford',
+  'Brighton & Hove Albion',
+  'Burnley',
+  'Chelsea',
+  'Crystal Palace',
+  'Everton',
+  'Fulham',
+  'Leeds United',
+  'Liverpool',
+  'Manchester City',
+  'Manchester United',
+  'Newcastle United',
+  'Nottingham Forest',
+  'Sunderland',
+  'Tottenham Hotspur',
+  'West Ham United',
+  'Wolverhampton Wanderers'
+]
 
 function toBuckets(rows) {
   const buckets = []

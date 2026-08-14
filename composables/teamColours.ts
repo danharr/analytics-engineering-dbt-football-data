@@ -10,6 +10,7 @@ const teamColoursMap: Record<string, string> = {
   'Bradford City': '#C8102E',
   Brentford: '#E30613',
   'Brighton and Hove Albion': '#0057B8',
+  'Brighton & Hove Albion': '#0057B8',
   Burnley: '#6C1D45',
   'Cardiff City': '#0070B5',
   'Charlton Athletic': '#C4122E',

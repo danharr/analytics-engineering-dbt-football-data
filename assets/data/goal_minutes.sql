@@ -1,18 +1,29 @@
--- Premier League goals by exact minute (1-90) for Arsenal, West Ham United, Chelsea,
--- Liverpool and Manchester United (2025-26), split into home and away goals. The chart
--- page aggregates these per-minute rows into five-minute buckets client-side, so a single
--- dataset backs both the exact-minute and five-minute-bucket pyramid views.
+-- Premier League goals by exact minute (1-90) for all 20 teams in 2025-26, split into
+-- home and away goals. The chart page aggregates these per-minute rows into five-minute
+-- buckets client-side, so a single dataset backs both the exact-minute and
+-- five-minute-bucket pyramid views.
 copy (
     with teams as (
         select 'Arsenal' as team_name
-        union all
-        select 'West Ham United' as team_name
-        union all
-        select 'Chelsea' as team_name
-        union all
-        select 'Liverpool' as team_name
-        union all
-        select 'Manchester United' as team_name
+        union all select 'Aston Villa'
+        union all select 'Bournemouth'
+        union all select 'Brentford'
+        union all select 'Brighton & Hove Albion'
+        union all select 'Burnley'
+        union all select 'Chelsea'
+        union all select 'Crystal Palace'
+        union all select 'Everton'
+        union all select 'Fulham'
+        union all select 'Leeds United'
+        union all select 'Liverpool'
+        union all select 'Manchester City'
+        union all select 'Manchester United'
+        union all select 'Newcastle United'
+        union all select 'Nottingham Forest'
+        union all select 'Sunderland'
+        union all select 'Tottenham Hotspur'
+        union all select 'West Ham United'
+        union all select 'Wolverhampton Wanderers'
     ),
     minutes as (
         select unnest(range(1, 91)) as minute
