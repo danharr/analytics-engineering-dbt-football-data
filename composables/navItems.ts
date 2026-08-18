@@ -6,6 +6,7 @@ export const navItems = [
   { label: 'Attendances', path: '/attendances', icon: 'mdi-stadium' },
   { label: 'Scoring Trends', path: '/scoring-trends', icon: 'mdi-chart-line' },
   { label: 'Goals by Minute', path: '/goal-minutes', icon: 'mdi-chart-timeline-variant' },
+  { label: 'Points Lost From Winning Positions', path: '/points-lost-from-winning-position/west-ham', icon: 'mdi-trending-down' },
   { label: 'Five-Game Streaks', path: '/five-game-streaks', icon: 'mdi-run-fast' },
   { label: 'Big Win Streaks', path: '/big-win-streaks', icon: 'mdi-format-list-numbered' },
   { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps', icon: 'mdi-timer-sand' },

@@ -23,6 +23,7 @@ import seasonPointsCsv from '~/assets/data/season_points.csv?raw'
 import seasonBiggestWinsCsv from '~/assets/data/season_biggest_wins.csv?raw'
 import seasonScoringCsv from '~/assets/data/season_scoring.csv?raw'
 import goalMinutesCsv from '~/assets/data/goal_minutes.csv?raw'
+import pointsLostFromWinningCsv from '~/assets/data/points_lost_from_winning.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -284,6 +285,16 @@ export interface GoalMinuteRow {
   label: string
   home_goals: number
   away_goals: number
+}
+
+export interface PointsLostFromWinningRow {
+  kickoff_date: string
+  opponent: string
+  venue: string
+  score: string
+  result: string
+  points_lost: number
+  led_by: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -583,6 +594,16 @@ export const goalMinutes = parse<GoalMinuteRow>(goalMinutesCsv, d => ({
   label: d.label,
   home_goals: toInt(d, 'home_goals'),
   away_goals: toInt(d, 'away_goals')
+}))
+
+export const pointsLostFromWinning = parse<PointsLostFromWinningRow>(pointsLostFromWinningCsv, d => ({
+  kickoff_date: d.kickoff_date,
+  opponent: d.opponent,
+  venue: d.venue,
+  score: d.score,
+  result: d.result,
+  points_lost: toInt(d, 'points_lost'),
+  led_by: toInt(d, 'led_by')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'

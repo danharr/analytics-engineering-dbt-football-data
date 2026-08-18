@@ -15,7 +15,8 @@ import {
   managerWins,
   managerDebuts,
   managerTimeline,
-  goalMinutes
+  goalMinutes,
+  pointsLostFromWinning
 } from '~/composables/useData'
 
 interface BarRow {
@@ -191,6 +192,17 @@ export const thumbnails: Thumbnail[] = [
     path: '/goal-minutes',
     caption: 'When Arsenal and West Ham score, minute by minute.',
     preview: pyramidPreview
+  },
+  {
+    label: 'Points Lost From Winning Positions',
+    path: '/points-lost-from-winning-position/west-ham',
+    caption: 'The points West Ham dropped after leading in 2025-26.',
+    preview: toBars(
+      pointsLostFromWinning,
+      d => `${d.opponent} ${d.score}`,
+      d => d.points_lost,
+      d => `${d.points_lost}`
+    )
   },
   {
     label: 'Five-Game Streaks',
