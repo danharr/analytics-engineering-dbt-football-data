@@ -18,6 +18,7 @@ import {
   goalMinutes,
   pointsLostFromWinning
 } from '~/composables/useData'
+import { POINTS_LOST_TEAMS } from '~/utils/pointsLostTeams'
 
 interface BarRow {
   label: string
@@ -144,6 +145,15 @@ const pyramidPreview: ThumbnailPreview = {
     .map(([, v]) => v)
 }
 
+const pointsLostTotals = POINTS_LOST_TEAMS
+  .map(t => ({
+    name: t.name,
+    pointsLost: pointsLostFromWinning
+      .filter(r => r.team_name === t.name)
+      .reduce((acc, r) => acc + r.points_lost, 0)
+  }))
+  .filter(t => t.pointsLost > 0)
+
 export const thumbnails: Thumbnail[] = [
   {
     label: 'All-Time Table',
@@ -195,13 +205,13 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Points Lost From Winning Positions',
-    path: '/points-lost-from-winning-position/west-ham',
-    caption: 'The points West Ham dropped after leading in 2025-26.',
+    path: '/points-lost-from-winning-position',
+    caption: 'The points every club threw away after leading in 2025-26.',
     preview: toBars(
-      pointsLostFromWinning,
-      d => `${d.opponent} ${d.score}`,
-      d => d.points_lost,
-      d => `${d.points_lost}`
+      pointsLostTotals,
+      d => d.name,
+      d => d.pointsLost,
+      d => `${d.pointsLost}`
     )
   },
   {

@@ -5,6 +5,7 @@ import { copyFileSync, mkdirSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { teamSlugsFromCsv } from './utils/teamSlugs'
 import { MANAGER_SLUGS } from './utils/managerPages'
+import { POINTS_LOST_TEAMS } from './utils/pointsLostTeams'
 
 const lastUpdatedFromStats = (): string => {
   const lines = readFileSync('assets/data/stats.csv', 'utf-8').trim().split('\n')
@@ -27,6 +28,11 @@ const seasonRoutes = (): string[] => {
   const labels = [...new Set(csv.trim().split('\n').slice(1).map(line => line.split(',')[0]))]
   return ['/seasons', ...labels.map(label => `/seasons/${label}`)]
 }
+
+const pointsLostRoutes = (): string[] => [
+  '/points-lost-from-winning-position',
+  ...POINTS_LOST_TEAMS.map(t => `/points-lost-from-winning-position/${t.slug}`)
+]
 
 let outputPublicDir = ''
 
@@ -135,10 +141,11 @@ gtag('config', 'G-HRJ1G6XTG1');`
     prerender: {
       crawlLinks: false,
       routes: [
-        '/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/one-nil-wins', '/ht-lead-no-win-streaks', '/comeback-kings', '/most-comebacks', '/manager-wins', '/manager-debuts', '/manager-timeline', '/scoring-trends', '/goal-minutes', '/points-lost-from-winning-position/west-ham',
+        '/', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/one-nil-wins', '/ht-lead-no-win-streaks', '/comeback-kings', '/most-comebacks', '/manager-wins', '/manager-debuts', '/manager-timeline', '/scoring-trends', '/goal-minutes',
         ...teamRoutes(),
         ...managerRoutes(),
         ...seasonRoutes(),
+        ...pointsLostRoutes(),
       ]
     }
   }

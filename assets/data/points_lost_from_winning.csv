@@ -1,9 +1,136 @@
-kickoff_date,opponent,venue,score,result,points_lost,led_by
-2025-08-22,Chelsea,home,1-5,loss,3,1
-2025-11-22,Bournemouth,away,2-2,draw,2,2
-2025-12-07,Brighton & Hove Albion,away,1-1,draw,2,1
-2025-12-14,Aston Villa,home,2-3,loss,3,1
-2025-12-30,Brighton & Hove Albion,home,2-2,draw,2,1
-2026-01-06,Nottingham Forest,home,1-2,loss,3,1
-2026-01-31,Chelsea,away,2-3,loss,3,2
-2026-02-10,Manchester United,home,1-1,draw,2,1
+team_name,kickoff_date,opponent,venue,score,result,points_lost,led_by
+Arsenal,2025-11-08,Sunderland,away,2-2,draw,2,1
+Arsenal,2026-01-25,Manchester United,home,2-3,loss,3,1
+Arsenal,2026-02-12,Brentford,away,1-1,draw,2,1
+Arsenal,2026-02-18,Wolverhampton Wanderers,away,2-2,draw,2,2
+Aston Villa,2025-09-21,Sunderland,away,1-1,draw,2,1
+Aston Villa,2026-02-07,Bournemouth,away,1-1,draw,2,1
+Aston Villa,2026-03-04,Chelsea,home,1-4,loss,3,1
+Aston Villa,2026-04-12,Nottingham Forest,away,1-1,draw,2,1
+Aston Villa,2026-05-10,Burnley,away,2-2,draw,2,1
+Bournemouth,2025-09-27,Leeds United,away,2-2,draw,2,1
+Bournemouth,2025-10-18,Crystal Palace,away,3-3,draw,2,2
+Bournemouth,2025-11-29,Sunderland,away,2-3,loss,3,2
+Bournemouth,2025-12-15,Manchester United,away,4-4,draw,2,1
+Bournemouth,2025-12-20,Burnley,home,1-1,draw,2,1
+Bournemouth,2025-12-30,Chelsea,away,2-2,draw,2,1
+Bournemouth,2026-01-03,Arsenal,home,2-3,loss,3,1
+Bournemouth,2026-01-19,Brighton & Hove Albion,away,1-1,draw,2,1
+Bournemouth,2026-04-22,Leeds United,home,2-2,draw,2,1
+Bournemouth,2026-05-19,Manchester City,home,1-1,draw,2,1
+Brentford,2025-08-30,Sunderland,away,1-2,loss,3,1
+Brentford,2025-09-13,Chelsea,home,2-2,draw,2,1
+Brentford,2025-09-20,Fulham,away,1-3,loss,3,1
+Brentford,2025-11-22,Brighton & Hove Albion,away,1-2,loss,3,1
+Brentford,2025-12-14,Leeds United,home,1-1,draw,2,1
+Brentford,2026-03-16,Wolverhampton Wanderers,home,2-2,draw,2,2
+Brentford,2026-04-11,Everton,home,2-2,draw,2,1
+Brighton & Hove Albion,2025-08-16,Fulham,home,1-1,draw,2,1
+Brighton & Hove Albion,2025-09-20,Tottenham Hotspur,home,2-2,draw,2,2
+Brighton & Hove Albion,2025-12-03,Aston Villa,home,3-4,loss,3,2
+Brighton & Hove Albion,2026-01-24,Fulham,away,1-2,loss,3,1
+Brighton & Hove Albion,2026-01-31,Everton,home,1-1,draw,2,1
+Burnley,2025-11-08,West Ham United,away,2-3,loss,3,1
+Burnley,2026-01-07,Manchester United,home,2-2,draw,2,1
+Burnley,2026-01-24,Tottenham Hotspur,home,2-2,draw,2,1
+Burnley,2026-03-21,Fulham,away,1-3,loss,3,1
+Burnley,2026-04-19,Nottingham Forest,away,1-4,loss,3,1
+Burnley,2026-05-10,Aston Villa,home,2-2,draw,2,1
+Chelsea,2025-09-13,Brentford,away,2-2,draw,2,1
+Chelsea,2025-09-27,Brighton & Hove Albion,home,1-3,loss,3,1
+Chelsea,2025-10-25,Sunderland,home,1-2,loss,3,1
+Chelsea,2025-11-30,Arsenal,home,1-1,draw,2,1
+Chelsea,2025-12-27,Aston Villa,home,1-2,loss,3,1
+Chelsea,2025-12-30,Bournemouth,home,2-2,draw,2,1
+Chelsea,2026-02-10,Leeds United,home,2-2,draw,2,2
+Chelsea,2026-02-21,Burnley,home,1-1,draw,2,1
+Crystal Palace,2025-08-24,Nottingham Forest,home,1-1,draw,2,1
+Crystal Palace,2025-10-05,Everton,away,1-2,loss,3,1
+Crystal Palace,2025-11-30,Manchester United,home,1-2,loss,3,1
+Crystal Palace,2026-01-01,Fulham,home,1-1,draw,2,1
+Crystal Palace,2026-01-17,Sunderland,away,1-2,loss,3,1
+Crystal Palace,2026-02-11,Burnley,home,2-3,loss,3,2
+Crystal Palace,2026-03-01,Manchester United,away,1-2,loss,3,1
+Crystal Palace,2026-05-17,Brentford,away,2-2,draw,2,1
+Everton,2025-09-29,West Ham United,home,1-1,draw,2,1
+Everton,2025-11-03,Sunderland,away,1-1,draw,2,1
+Everton,2026-01-07,Wolverhampton Wanderers,home,1-1,draw,2,1
+Everton,2026-02-10,Bournemouth,home,1-2,loss,3,1
+Everton,2026-05-04,Manchester City,home,3-3,draw,2,2
+Everton,2026-05-10,Crystal Palace,away,2-2,draw,2,1
+Everton,2026-05-17,Sunderland,home,1-3,loss,3,1
+Fulham,2025-09-28,Aston Villa,away,1-3,loss,3,1
+Fulham,2025-10-03,Bournemouth,away,1-3,loss,3,1
+Fulham,2026-01-04,Liverpool,home,2-2,draw,2,1
+Fulham,2026-02-07,Everton,home,1-2,loss,3,1
+Leeds United,2025-09-27,Bournemouth,home,2-2,draw,2,1
+Leeds United,2025-11-09,Nottingham Forest,away,1-3,loss,3,1
+Leeds United,2025-11-23,Aston Villa,home,1-2,loss,3,1
+Leeds United,2026-01-04,Manchester United,home,1-1,draw,2,1
+Leeds United,2026-01-07,Newcastle United,away,3-4,loss,3,1
+Leeds United,2026-01-26,Everton,away,1-1,draw,2,1
+Leeds United,2026-02-21,Aston Villa,away,1-1,draw,2,1
+Liverpool,2025-12-06,Leeds United,away,3-3,draw,2,2
+Liverpool,2026-01-04,Fulham,away,2-2,draw,2,1
+Liverpool,2026-01-17,Burnley,home,1-1,draw,2,1
+Liverpool,2026-02-08,Manchester City,home,1-2,loss,3,1
+Liverpool,2026-03-15,Tottenham Hotspur,home,1-1,draw,2,1
+Liverpool,2026-05-09,Chelsea,home,1-1,draw,2,1
+Liverpool,2026-05-24,Brentford,home,1-1,draw,2,1
+Manchester City,2025-08-31,Brighton & Hove Albion,away,1-2,loss,3,1
+Manchester City,2025-09-21,Arsenal,away,1-1,draw,2,1
+Manchester City,2026-01-04,Chelsea,home,1-1,draw,2,1
+Manchester City,2026-01-07,Brighton & Hove Albion,home,1-1,draw,2,1
+Manchester City,2026-02-01,Tottenham Hotspur,away,2-2,draw,2,2
+Manchester City,2026-03-04,Nottingham Forest,home,2-2,draw,2,1
+Manchester City,2026-03-14,West Ham United,away,1-1,draw,2,1
+Manchester City,2026-05-04,Everton,away,3-3,draw,2,1
+Manchester City,2026-05-24,Aston Villa,home,1-2,loss,3,1
+Manchester United,2025-08-24,Fulham,away,1-1,draw,2,1
+Manchester United,2025-11-01,Nottingham Forest,away,2-2,draw,2,1
+Manchester United,2025-11-08,Tottenham Hotspur,away,2-2,draw,2,1
+Manchester United,2025-12-04,West Ham United,home,1-1,draw,2,1
+Manchester United,2025-12-15,Bournemouth,home,4-4,draw,2,1
+Manchester United,2025-12-30,Wolverhampton Wanderers,home,1-1,draw,2,1
+Manchester United,2026-01-07,Burnley,away,2-2,draw,2,1
+Manchester United,2026-03-20,Bournemouth,away,2-2,draw,2,1
+Newcastle United,2025-09-28,Arsenal,home,1-2,loss,3,1
+Newcastle United,2025-11-02,West Ham United,away,1-3,loss,3,1
+Newcastle United,2025-11-09,Brentford,away,1-3,loss,3,1
+Newcastle United,2025-12-02,Tottenham Hotspur,home,2-2,draw,2,1
+Newcastle United,2025-12-20,Chelsea,home,2-2,draw,2,2
+Newcastle United,2026-01-31,Liverpool,away,1-4,loss,3,1
+Newcastle United,2026-02-07,Brentford,home,2-3,loss,3,1
+Newcastle United,2026-03-22,Sunderland,home,1-2,loss,3,1
+Newcastle United,2026-04-12,Crystal Palace,away,1-2,loss,3,1
+Newcastle United,2026-05-10,Nottingham Forest,away,1-1,draw,2,1
+Nottingham Forest,2025-09-20,Burnley,away,1-1,draw,2,1
+Nottingham Forest,2025-11-01,Manchester United,home,2-2,draw,2,1
+Nottingham Forest,2026-02-01,Crystal Palace,home,1-1,draw,2,1
+Nottingham Forest,2026-05-24,Bournemouth,home,1-1,draw,2,1
+Sunderland,2025-11-08,Arsenal,home,2-2,draw,2,1
+Sunderland,2025-12-03,Liverpool,away,1-1,draw,2,1
+Sunderland,2025-12-28,Leeds United,home,1-1,draw,2,1
+Sunderland,2026-02-28,Bournemouth,away,1-1,draw,2,1
+Sunderland,2026-05-02,Wolverhampton Wanderers,away,1-1,draw,2,1
+Tottenham Hotspur,2025-10-19,Aston Villa,home,1-2,loss,3,1
+Tottenham Hotspur,2025-11-08,Manchester United,home,2-2,draw,2,1
+Tottenham Hotspur,2026-01-04,Sunderland,home,1-1,draw,2,1
+Tottenham Hotspur,2026-01-07,Bournemouth,away,2-3,loss,3,1
+Tottenham Hotspur,2026-01-24,Burnley,away,2-2,draw,2,1
+Tottenham Hotspur,2026-03-05,Crystal Palace,home,1-3,loss,3,1
+Tottenham Hotspur,2026-04-18,Brighton & Hove Albion,home,2-2,draw,2,1
+Tottenham Hotspur,2026-05-11,Leeds United,home,1-1,draw,2,1
+West Ham United,2025-08-22,Chelsea,home,1-5,loss,3,1
+West Ham United,2025-11-22,Bournemouth,away,2-2,draw,2,2
+West Ham United,2025-12-07,Brighton & Hove Albion,away,1-1,draw,2,1
+West Ham United,2025-12-14,Aston Villa,home,2-3,loss,3,1
+West Ham United,2025-12-30,Brighton & Hove Albion,home,2-2,draw,2,1
+West Ham United,2026-01-06,Nottingham Forest,home,1-2,loss,3,1
+West Ham United,2026-01-31,Chelsea,away,2-3,loss,3,2
+West Ham United,2026-02-10,Manchester United,home,1-1,draw,2,1
+Wolverhampton Wanderers,2025-09-20,Leeds United,home,1-3,loss,3,1
+Wolverhampton Wanderers,2025-09-27,Tottenham Hotspur,away,1-1,draw,2,1
+Wolverhampton Wanderers,2025-10-05,Brighton & Hove Albion,home,1-1,draw,2,1
+Wolverhampton Wanderers,2026-05-17,Fulham,home,1-1,draw,2,1
+Wolverhampton Wanderers,2026-05-24,Burnley,away,1-1,draw,2,1

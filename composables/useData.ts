@@ -288,6 +288,7 @@ export interface GoalMinuteRow {
 }
 
 export interface PointsLostFromWinningRow {
+  team_name: string
   kickoff_date: string
   opponent: string
   venue: string
@@ -597,6 +598,7 @@ export const goalMinutes = parse<GoalMinuteRow>(goalMinutesCsv, d => ({
 }))
 
 export const pointsLostFromWinning = parse<PointsLostFromWinningRow>(pointsLostFromWinningCsv, d => ({
+  team_name: d.team_name,
   kickoff_date: d.kickoff_date,
   opponent: d.opponent,
   venue: d.venue,
