@@ -18,7 +18,7 @@ import {
   goalMinutes,
   pointsLostFromWinning
 } from '~/composables/useData'
-import { POINTS_LOST_TEAMS } from '~/utils/pointsLostTeams'
+import { SEASON_TEAMS } from '~/utils/seasonTeams'
 
 interface BarRow {
   label: string
@@ -145,7 +145,7 @@ const pyramidPreview: ThumbnailPreview = {
     .map(([, v]) => v)
 }
 
-const pointsLostTotals = POINTS_LOST_TEAMS
+const pointsLostTotals = SEASON_TEAMS
   .map(t => ({
     name: t.name,
     pointsLost: pointsLostFromWinning

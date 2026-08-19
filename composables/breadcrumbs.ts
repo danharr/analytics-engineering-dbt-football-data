@@ -36,11 +36,17 @@ export function useBreadcrumbs() {
 
     if (group === 'teams') {
       const team = teamBySlug(slug)
-      return [
+      const crumbs = [
         { label: 'Home', to: '/' },
         { label: 'Teams', to: '/teams' },
-        { label: team?.name ?? slug }
+        parts.length >= 3
+          ? { label: team?.name ?? slug, to: `/teams/${slug}` }
+          : { label: team?.name ?? slug }
       ]
+      if (parts.length >= 3) {
+        crumbs.push({ label: parts[2] })
+      }
+      return crumbs
     }
 
     if (group === 'managers') {

@@ -13,6 +13,17 @@
           <p class="mb-0">
             {{ team.name }} sit {{ ordinal(tablePosition) }} in the all-time Premier League table with {{ fmt(points) }} points from {{ fmt(played) }} matches. Their biggest win is a {{ topWins[0].goals_for }}–{{ topWins[0].goals_against }} win over {{ topWins[0].opponent_name }} in {{ topWins[0].season_label }}. Every number below comes from the league's own data, covering all 34 seasons from 1992-93.
           </p>
+          <v-btn
+            v-if="hasSeasonData"
+            class="mt-3"
+            color="primary"
+            variant="outlined"
+            size="small"
+            :to="`/teams/${team.slug}/2025-26`"
+          >
+            <v-icon icon="mdi-soccer" size="small" class="mr-1"></v-icon>
+            2025-26 player goals
+          </v-btn>
         </v-card-text>
       </v-card>
     </v-col>
@@ -306,6 +317,7 @@ import { useDisplay } from 'vuetify'
 import { teamMatches, allTime, seasonTable, managerTimeline } from '~/composables/useData'
 import { teamColour } from '~/composables/teamColours'
 import { managerSlug } from '~/utils/managerPages'
+import { seasonTeamBySlug } from '~/utils/seasonTeams'
 
 const props = defineProps({
   team: { type: Object, required: true }
@@ -313,6 +325,7 @@ const props = defineProps({
 
 const team = props.team
 const colour = teamColour(team.name)
+const hasSeasonData = seasonTeamBySlug(team.slug) !== undefined
 
 const { mobile } = useDisplay()
 const isMobile = computed(() => mobile.value)

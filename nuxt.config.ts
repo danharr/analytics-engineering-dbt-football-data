@@ -5,7 +5,7 @@ import { copyFileSync, mkdirSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { teamSlugsFromCsv } from './utils/teamSlugs'
 import { MANAGER_SLUGS } from './utils/managerPages'
-import { POINTS_LOST_TEAMS } from './utils/pointsLostTeams'
+import { SEASON_TEAMS } from './utils/seasonTeams'
 
 const lastUpdatedFromStats = (): string => {
   const lines = readFileSync('assets/data/stats.csv', 'utf-8').trim().split('\n')
@@ -31,8 +31,11 @@ const seasonRoutes = (): string[] => {
 
 const pointsLostRoutes = (): string[] => [
   '/points-lost-from-winning-position',
-  ...POINTS_LOST_TEAMS.map(t => `/points-lost-from-winning-position/${t.slug}`)
+  ...SEASON_TEAMS.map(t => `/points-lost-from-winning-position/${t.slug}`)
 ]
+
+const teamSeasonRoutes = (): string[] =>
+  SEASON_TEAMS.map(t => `/teams/${t.slug}/2025-26`)
 
 let outputPublicDir = ''
 
@@ -146,6 +149,7 @@ gtag('config', 'G-HRJ1G6XTG1');`
         ...managerRoutes(),
         ...seasonRoutes(),
         ...pointsLostRoutes(),
+        ...teamSeasonRoutes(),
       ]
     }
   }

@@ -71,11 +71,11 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { pointsLostFromWinning, datasetLd } from '~/composables/useData'
-import { pointsLostTeamBySlug } from '~/utils/pointsLostTeams'
+import { seasonTeamBySlug } from '~/utils/seasonTeams'
 import { teamColour } from '~/composables/teamColours'
 
 const route = useRoute()
-const team = pointsLostTeamBySlug(route.params.team)
+const team = seasonTeamBySlug(route.params.team)
 
 if (!team) {
   throw createError({ statusCode: 404, statusMessage: 'Team not found', fatal: true })

@@ -57,7 +57,7 @@
 
 <script setup>
 import { pointsLostFromWinning, datasetLd } from '~/composables/useData'
-import { POINTS_LOST_TEAMS } from '~/utils/pointsLostTeams'
+import { SEASON_TEAMS } from '~/utils/seasonTeams'
 import { teamColour } from '~/composables/teamColours'
 
 useHead({
@@ -82,7 +82,7 @@ useHead({
   ]
 })
 
-const rows = POINTS_LOST_TEAMS.map(t => {
+const rows = SEASON_TEAMS.map(t => {
   const games = pointsLostFromWinning.filter(r => r.team_name === t.name)
   return {
     slug: t.slug,
