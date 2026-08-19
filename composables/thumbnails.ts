@@ -16,7 +16,8 @@ import {
   managerDebuts,
   managerTimeline,
   goalMinutes,
-  pointsLostFromWinning
+  pointsLostFromWinning,
+  scoringRuns
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 
@@ -212,6 +213,17 @@ export const thumbnails: Thumbnail[] = [
       d => d.name,
       d => d.pointsLost,
       d => `${d.pointsLost}`
+    )
+  },
+  {
+    label: 'Scoring Runs',
+    path: '/scoring-runs',
+    caption: 'The longest scoreless droughts and scoring streaks.',
+    preview: toBars(
+      scoringRuns.filter(r => r.category === 'scoring'),
+      d => d.team_name,
+      d => d.run_length,
+      d => `${d.run_length}`
     )
   },
   {

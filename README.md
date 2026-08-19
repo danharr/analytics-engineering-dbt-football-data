@@ -12,6 +12,7 @@ An interactive dashboard of Premier League football history.
 - **Attendances** — average home attendance by team per season
 - **Scoring Trends** — goals per game, nil-nils, draw share and red cards in every season, ranked by an "excitement" score (2023-24 most exciting)
 - **Goals by Minute** — population pyramids charting every 2025-26 Premier League goal by Arsenal and West Ham United in five-minute intervals, home goals on the left and away goals on the right
+- **Scoring Runs** — the longest runs of consecutive games without scoring (goal droughts) and with scoring (scoring streaks) per team, top 5 in each category
 - **Points Lost From Winning Positions** — every 2025-26 Premier League club ranked by the points thrown away from winning positions (2 lost for a draw, 3 for a defeat), with a page per club listing each game where a lead was lost, reconstructed from per-minute goal data
 - **Five-Game Streaks** — the last time each team won 5+ games in a row within a single season
 - **Big Win Streaks** — the longest winning streaks within a single season (11+ wins), with date, opponent and score of every win
