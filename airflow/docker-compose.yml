@@ -1,0 +1,31 @@
+services:
+  # Single-container Airflow (webserver + scheduler + triggerer via
+  # `airflow standalone`, SQLite metadata DB in the airflow_home volume).
+  airflow:
+    build: .
+    container_name: pl-airflow
+    user: "0:0"
+    command: airflow standalone
+    environment:
+      - AIRFLOW_HOME=/opt/airflow
+      # DAGs live in the committed airflow/dags/ dir of the repo mount.
+      - AIRFLOW__CORE__DAGS_FOLDER=/workspace/airflow/dags
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      # Cosmos parses the dbt project at DAG-import time.
+      - AIRFLOW__CORE__DAGBAG_IMPORT_TIMEOUT=300
+      - AIRFLOW__WEBSERVER__EXPOSE_CONFIG=True
+      # NOTE: Airflow 3.3 auto-promotes any SequentialExecutor setting to
+      # LocalExecutor (it's deprecated), so serialization is enforced in the DAG
+      # itself via max_active_tasks=1 (see dags/premier_league_dbt_dag.py) —
+      # parallel dbt tasks would collide on the DuckDB single-writer lock.
+      # `docker exec` doesn't source the entrypoint (which appends this to
+      # PYTHONPATH as root), so set it here for CLI debugging (e.g. `airflow dags list`).
+      - PYTHONPATH=/home/airflow/.local/lib/python3.12/site-packages
+    volumes:
+      - ..:/workspace
+      - airflow_home:/opt/airflow
+    ports:
+      - "8080:8080"
+
+volumes:
+  airflow_home:

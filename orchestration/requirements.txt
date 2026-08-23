@@ -1,0 +1,4 @@
+dagster==1.13.17
+dagster-webserver==1.13.17
+dagster-dbt==0.29.17
+dbt-duckdb==1.10.*

@@ -211,6 +211,10 @@ season_label,team_name,player_name,competition,goals
 2025-26,Chelsea,F. Buonanotte,League Cup,1
 2025-26,Chelsea,J. Gittens,League Cup,1
 2025-26,Chelsea,Pedro Neto,League Cup,1
+2025-26,Chelsea,João Pedro,Other,3
+2025-26,Chelsea,D. Satpaev,Other,1
+2025-26,Chelsea,Dário Essugo,Other,1
+2025-26,Chelsea,J. Gittens,Other,1
 2025-26,Chelsea,João Pedro,Premier League,15
 2025-26,Chelsea,C. Palmer,Premier League,10
 2025-26,Chelsea,E. Fernández,Premier League,10
@@ -340,11 +344,15 @@ season_label,team_name,player_name,competition,goals
 2025-26,Liverpool,Own Goal,Champions League,1
 2025-26,Liverpool,R. Gravenberch,Champions League,1
 2025-26,Liverpool,C. Gakpo,Club Friendlies,2
+2025-26,Liverpool,R. Ngumoha,Club Friendlies,2
 2025-26,Liverpool,D. Núñez,Club Friendlies,1
+2025-26,Liverpool,D. Szoboszlai,Club Friendlies,1
+2025-26,Liverpool,F. Chiesa,Club Friendlies,1
 2025-26,Liverpool,H. Elliott,Club Friendlies,1
+2025-26,Liverpool,K. Morrison,Club Friendlies,1
+2025-26,Liverpool,L. Koumas,Club Friendlies,1
 2025-26,Liverpool,Mohamed Salah,Club Friendlies,1
 2025-26,Liverpool,Own Goal,Club Friendlies,1
-2025-26,Liverpool,R. Ngumoha,Club Friendlies,1
 2025-26,Liverpool,H. Ekitiké,Community Shield,1
 2025-26,Liverpool,J. Frimpong,Community Shield,1
 2025-26,Liverpool,C. Jones,FA Cup,2
@@ -419,7 +427,12 @@ season_label,team_name,player_name,competition,goals
 2025-26,Manchester City,Nico González,Premier League,1
 2025-26,Manchester City,Rodri,Premier League,1
 2025-26,Manchester City,Savinho,Premier League,1
+2025-26,Manchester United,E. Williams,Club Friendlies,1
+2025-26,Manchester United,H. Amass,Club Friendlies,1
+2025-26,Manchester United,J. Devaney,Club Friendlies,1
+2025-26,Manchester United,J. Zirkzee,Club Friendlies,1
 2025-26,Manchester United,Own Goal,Club Friendlies,1
+2025-26,Manchester United,S. Lacey,Club Friendlies,1
 2025-26,Manchester United,B. Šeško,FA Cup,1
 2025-26,Manchester United,B. Mbeumo,League Cup,1
 2025-26,Manchester United,H. Maguire,League Cup,1
@@ -451,7 +464,7 @@ season_label,team_name,player_name,competition,goals
 2025-26,Newcastle United,S. Botman,Champions League,1
 2025-26,Newcastle United,S. Tonali,Champions League,1
 2025-26,Newcastle United,Y. Wissa,Champions League,1
-2025-26,Newcastle United,H. Barnes,Club Friendlies,1
+2025-26,Newcastle United,H. Barnes,Club Friendlies,2
 2025-26,Newcastle United,J. Murphy,Club Friendlies,1
 2025-26,Newcastle United,M. Targett,Club Friendlies,1
 2025-26,Newcastle United,H. Barnes,FA Cup,3
@@ -510,6 +523,8 @@ season_label,team_name,player_name,competition,goals
 2025-26,Nottingham Forest,N. Domínguez,Premier League,1
 2025-26,Nottingham Forest,O. Hutchinson,Premier League,1
 2025-26,Nottingham Forest,Own Goal,Premier League,1
+2025-26,Sunderland,E. Le Fée,Club Friendlies,1
+2025-26,Sunderland,T. Tutierov,Club Friendlies,1
 2025-26,Sunderland,E. Le Fée,FA Cup,1
 2025-26,Sunderland,H. Diarra,FA Cup,1
 2025-26,Sunderland,Marc Guiu,League Cup,1
@@ -541,11 +556,15 @@ season_label,team_name,player_name,competition,goals
 2025-26,Tottenham Hotspur,Richarlison,Champions League,1
 2025-26,Tottenham Hotspur,W. Odobert,Champions League,1
 2025-26,Tottenham Hotspur,B. Johnson,Club Friendlies,1
+2025-26,Tottenham Hotspur,D. Scarlett,Club Friendlies,1
+2025-26,Tottenham Hotspur,Mateus Fernandes,Club Friendlies,1
+2025-26,Tottenham Hotspur,Richarlison,Club Friendlies,1
 2025-26,Tottenham Hotspur,W. Odobert,FA Cup,1
 2025-26,Tottenham Hotspur,B. Johnson,League Cup,1
 2025-26,Tottenham Hotspur,João Palhinha,League Cup,1
 2025-26,Tottenham Hotspur,Own Goal,League Cup,1
 2025-26,Tottenham Hotspur,C. Romero,Other,1
+2025-26,Tottenham Hotspur,M. Tel,Other,1
 2025-26,Tottenham Hotspur,M. van de Ven,Other,1
 2025-26,Tottenham Hotspur,Richarlison,Premier League,11
 2025-26,Tottenham Hotspur,João Palhinha,Premier League,5
@@ -626,15 +645,20 @@ season_label,team_name,player_name,competition,goals
 2026-27,Arsenal,M. Ødegaard,Premier League,1
 2026-27,Aston Villa,João Gomes,Club Friendlies,1
 2026-27,Aston Villa,B. Madjo,Other,1
+2026-27,Bournemouth,M. Tavernier,Premier League,1
 2026-27,Brentford,Igor Thiago,Club Friendlies,2
 2026-27,Brentford,K. Schade,Club Friendlies,2
 2026-27,Brentford,D. Ouattara,Club Friendlies,1
 2026-27,Brentford,K. Lewis-Potter,Club Friendlies,1
 2026-27,Brentford,M. Sangaré,Club Friendlies,1
 2026-27,Brentford,K. Lewis-Potter,Premier League,1
+2026-27,Brentford,M. Kayode,Premier League,1
 2026-27,Brentford,V. Janelt,Premier League,1
 2026-27,Brighton & Hove Albion,Y. Ayari,Club Friendlies,2
 2026-27,Brighton & Hove Albion,G. Rutter,Club Friendlies,1
+2026-27,Brighton & Hove Albion,J. Hinshelwood,Premier League,2
+2026-27,Brighton & Hove Albion,M. De Cuyper,Premier League,1
+2026-27,Brighton & Hove Albion,Own Goal,Premier League,1
 2026-27,Chelsea,João Pedro,Club Friendlies,4
 2026-27,Chelsea,L. Delap,Club Friendlies,2
 2026-27,Chelsea,M. Caicedo,Club Friendlies,1
@@ -657,16 +681,22 @@ season_label,team_name,player_name,competition,goals
 2026-27,Liverpool,C. Gakpo,Club Friendlies,1
 2026-27,Liverpool,J. Jacquet,Club Friendlies,1
 2026-27,Liverpool,L. Chambers,Club Friendlies,1
+2026-27,Liverpool,C. Gakpo,Premier League,1
+2026-27,Liverpool,D. Szoboszlai,Premier League,1
 2026-27,Manchester City,Omar Marmoush,Club Friendlies,2
 2026-27,Manchester City,D. Mubama,Club Friendlies,1
 2026-27,Manchester City,R. Aït-Nouri,Club Friendlies,1
 2026-27,Manchester City,D. Mubama,Other,1
 2026-27,Manchester City,R. Aït-Nouri,Other,1
 2026-27,Manchester City,T. Reijnders,Other,1
+2026-27,Manchester City,J. Gvardiol,Premier League,1
+2026-27,Manchester City,M. Guéhi,Premier League,1
 2026-27,Manchester United,B. Mbeumo,Club Friendlies,3
 2026-27,Manchester United,H. Maguire,Club Friendlies,1
 2026-27,Manchester United,J. Zirkzee,Club Friendlies,1
 2026-27,Manchester United,P. Dorgu,Club Friendlies,1
+2026-27,Newcastle United,A. Elanga,Premier League,1
+2026-27,Newcastle United,J. Willock,Premier League,1
 2026-27,Sunderland,N. Angulo,Premier League,1
 2026-27,Tottenham Hotspur,M. Moore,Club Friendlies,2
 2026-27,Tottenham Hotspur,B. Davies,Club Friendlies,1

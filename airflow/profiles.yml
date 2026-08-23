@@ -1,0 +1,10 @@
+# Container-friendly dbt profile used by the Airflow/Cosmos stack only. The
+# host's ~/.dbt/profiles.yml is left untouched. Paths are absolute inside the
+# container (the repo is mounted at /workspace).
+premier_league:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /workspace/duckdb/premier_league.duckdb
+      schema: main

@@ -1,0 +1,16 @@
+services:
+  dagster:
+    build: .
+    container_name: pl-dagster
+    command: dagster dev -f /workspace/orchestration/definitions.py -h 0.0.0.0 -p 3000
+    environment:
+      - DAGSTER_HOME=/dagster_home
+    volumes:
+      - ..:/workspace
+      - dagster_home:/dagster_home
+      - ./dagster.yaml:/dagster_home/dagster.yaml:ro
+    ports:
+      - "3000:3000"
+
+volumes:
+  dagster_home:

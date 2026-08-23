@@ -2008,6 +2008,7 @@ Andoni Iraola,91,Bournemouth,2026-05-03,2025-26,true,31,Crystal Palace,3,0,3,win
 Andoni Iraola,91,Bournemouth,2026-05-09,2025-26,false,54,Fulham,1,0,1,win,2562248
 Andoni Iraola,91,Bournemouth,2026-05-19,2025-26,true,43,Manchester City,1,1,0,draw,2562255
 Andoni Iraola,91,Bournemouth,2026-05-24,2025-26,false,17,Nottingham Forest,1,1,0,draw,2562271
+Andoni Iraola,14,Liverpool,2026-08-23,2026-27,false,4,Newcastle United,2,2,0,draw,2645203
 André Villas-Boas,8,Chelsea,2011-08-14,2011-12,false,110,Stoke City,0,0,0,draw,360475
 André Villas-Boas,8,Chelsea,2011-08-20,2011-12,true,35,West Bromwich Albion,2,1,1,win,360482
 André Villas-Boas,8,Chelsea,2011-08-27,2011-12,true,45,Norwich City,3,1,2,win,360491
@@ -8042,6 +8043,7 @@ Enzo Maresca,8,Chelsea,2025-12-13,2025-26,true,11,Everton,2,0,2,win,2562048
 Enzo Maresca,8,Chelsea,2025-12-20,2025-26,false,4,Newcastle United,2,2,0,draw,2562062
 Enzo Maresca,8,Chelsea,2025-12-27,2025-26,true,7,Aston Villa,1,2,-1,loss,2562068
 Enzo Maresca,8,Chelsea,2025-12-30,2025-26,true,91,Bournemouth,2,2,0,draw,2562078
+Enzo Maresca,43,Manchester City,2026-08-23,2026-27,true,91,Bournemouth,2,1,1,win,2645202
 Eric Black,41,Birmingham City,2007-11-24,2007-08,true,47,Portsmouth,0,2,-2,loss,128567
 Eric Black,7,Aston Villa,2016-04-02,2015-16,true,8,Chelsea,0,4,-4,loss,803472
 Eric Black,7,Aston Villa,2016-04-09,2015-16,true,91,Bournemouth,1,2,-1,loss,803483
@@ -8211,6 +8213,7 @@ Fabian Hürzeler,36,Brighton and Hove Albion,2026-05-02,2025-26,false,4,Newcastl
 Fabian Hürzeler,36,Brighton and Hove Albion,2026-05-09,2025-26,true,39,Wolverhampton Wanderers,3,0,3,win,2562245
 Fabian Hürzeler,36,Brighton and Hove Albion,2026-05-17,2025-26,false,2,Leeds United,0,1,-1,loss,2562261
 Fabian Hürzeler,36,Brighton and Hove Albion,2026-05-24,2025-26,true,1,Manchester United,0,3,-3,loss,2562265
+Fabian Hürzeler,36,Brighton and Hove Albion,2026-08-23,2026-27,true,7,Aston Villa,4,0,4,win,2645201
 Felix Magath,54,Fulham,2014-02-22,2013-14,false,35,West Bromwich Albion,1,1,0,draw,695168
 Felix Magath,54,Fulham,2014-03-01,2013-14,true,8,Chelsea,1,3,-2,loss,695173
 Felix Magath,54,Fulham,2014-03-08,2013-14,false,97,Cardiff City,1,3,-2,loss,695181
@@ -14462,6 +14465,7 @@ Keith Andrews,94,Brentford,2026-05-02,2025-26,true,21,West Ham United,3,0,3,win,
 Keith Andrews,94,Brentford,2026-05-09,2025-26,false,43,Manchester City,0,3,-3,loss,2562250
 Keith Andrews,94,Brentford,2026-05-17,2025-26,true,31,Crystal Palace,2,2,0,draw,2562258
 Keith Andrews,94,Brentford,2026-05-24,2025-26,false,14,Liverpool,1,1,0,draw,2562269
+Keith Andrews,94,Brentford,2026-08-22,2026-27,true,6,Tottenham Hotspur,3,0,3,win,2645196
 Keith Downing,35,West Bromwich Albion,2013-12-14,2013-14,false,97,Cardiff City,0,1,-1,loss,695052
 Keith Downing,35,West Bromwich Albion,2013-12-21,2013-14,true,88,Hull City,1,1,0,draw,695070
 Keith Downing,35,West Bromwich Albion,2013-12-26,2013-14,false,6,Tottenham Hotspur,1,1,0,draw,695079
@@ -15480,6 +15484,7 @@ Marcelo Bielsa,2,Leeds United,2022-02-12,2021-22,false,11,Everton,0,3,-3,loss,22
 Marcelo Bielsa,2,Leeds United,2022-02-20,2021-22,true,1,Manchester United,2,4,-2,loss,2210525
 Marcelo Bielsa,2,Leeds United,2022-02-23,2021-22,false,14,Liverpool,0,6,-6,loss,2210454
 Marcelo Bielsa,2,Leeds United,2022-02-26,2021-22,true,6,Tottenham Hotspur,0,4,-4,loss,2210537
+Marco Rose,91,Bournemouth,2026-08-23,2026-27,false,43,Manchester City,1,2,-1,loss,2645202
 Marco Silva,88,Hull City,2017-01-14,2016-17,true,91,Bournemouth,3,1,2,win,855374
 Marco Silva,88,Hull City,2017-01-22,2016-17,false,8,Chelsea,0,2,-2,loss,855384
 Marco Silva,88,Hull City,2017-02-01,2016-17,false,1,Manchester United,0,0,0,draw,855395
@@ -16779,6 +16784,7 @@ Martin O'Neill,56,Sunderland,2013-03-02,2012-13,true,54,Fulham,2,2,0,draw,442275
 Martin O'Neill,56,Sunderland,2013-03-09,2012-13,false,52,Queens Park Rangers,1,3,-2,loss,442285
 Martin O'Neill,56,Sunderland,2013-03-17,2012-13,true,45,Norwich City,1,1,0,draw,442295
 Martin O'Neill,56,Sunderland,2013-03-30,2012-13,true,1,Manchester United,0,1,-1,loss,442305
+Matthias Jaissle,4,Newcastle United,2026-08-23,2026-27,true,14,Liverpool,2,2,0,draw,2645203
 Mauricio Pellegrino,20,Southampton,2017-08-12,2017-18,true,80,Swansea City,0,0,0,draw,918900
 Mauricio Pellegrino,20,Southampton,2017-08-19,2017-18,true,21,West Ham United,3,2,1,win,919210
 Mauricio Pellegrino,20,Southampton,2017-08-26,2017-18,false,38,Huddersfield Town,0,0,0,draw,918916
@@ -20854,6 +20860,7 @@ Roberto De Zerbi,6,Tottenham Hotspur,2026-05-03,2025-26,false,7,Aston Villa,2,1,
 Roberto De Zerbi,6,Tottenham Hotspur,2026-05-11,2025-26,true,2,Leeds United,1,1,0,draw,2562253
 Roberto De Zerbi,6,Tottenham Hotspur,2026-05-19,2025-26,false,8,Chelsea,1,2,-1,loss,2562259
 Roberto De Zerbi,6,Tottenham Hotspur,2026-05-24,2025-26,true,11,Everton,1,0,1,win,2562273
+Roberto De Zerbi,6,Tottenham Hotspur,2026-08-22,2026-27,false,94,Brentford,0,3,-3,loss,2645196
 Roberto Di Matteo,35,West Bromwich Albion,2010-08-14,2010-11,false,8,Chelsea,0,6,-6,loss,321661
 Roberto Di Matteo,35,West Bromwich Albion,2010-08-21,2010-11,true,56,Sunderland,1,0,1,win,321674
 Roberto Di Matteo,35,West Bromwich Albion,2010-08-29,2010-11,false,14,Liverpool,0,1,-1,loss,321682
@@ -26047,6 +26054,7 @@ Unai Emery,7,Aston Villa,2026-05-03,2025-26,true,6,Tottenham Hotspur,1,2,-1,loss
 Unai Emery,7,Aston Villa,2026-05-10,2025-26,false,90,Burnley,2,2,0,draw,2562246
 Unai Emery,7,Aston Villa,2026-05-15,2025-26,true,14,Liverpool,4,2,2,win,2562257
 Unai Emery,7,Aston Villa,2026-05-24,2025-26,false,43,Manchester City,2,1,1,win,2562270
+Unai Emery,7,Aston Villa,2026-08-23,2026-27,false,36,Brighton and Hove Albion,0,4,-4,loss,2645201
 Velimir Zajec,47,Portsmouth,2004-12-26,2004-05,false,31,Crystal Palace,1,0,1,win,5963
 Velimir Zajec,47,Portsmouth,2004-12-28,2004-05,true,8,Chelsea,0,2,-2,loss,5977
 Velimir Zajec,47,Portsmouth,2005-01-01,2004-05,true,45,Norwich City,1,1,0,draw,5980

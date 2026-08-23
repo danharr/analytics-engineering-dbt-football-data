@@ -26,7 +26,7 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 25,George Graham,102,288,92,94,35.4,398,341,300
 26,Tony Pulis,99,324,94,131,30.6,391,321,416
 27,Sean Dyche,99,351,95,157,28.2,392,343,492
-28,Unai Emery,98,190,42,50,51.6,336,321,257
+28,Unai Emery,98,191,42,51,51.3,336,321,261
 29,Joe Kinnear,97,302,92,113,32.1,383,369,436
 30,Graeme Souness,94,280,78,108,33.6,360,376,380
 31,Manuel Pellegrini,90,171,32,49,52.6,302,329,203
@@ -66,7 +66,7 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 65,Steve Coppell,42,146,37,67,28.8,163,164,221
 66,Chris Hughton,42,170,50,78,24.7,176,169,264
 67,Ruud Gullit,41,104,26,37,39.4,149,164,148
-68,Andoni Iraola,41,114,38,35,36.0,161,170,167
+68,Andoni Iraola,41,115,39,35,35.7,162,172,169
 69,Walter Smith,41,143,42,60,28.7,165,173,190
 70,David Pleat,40,124,33,51,32.3,153,162,194
 71,Louis van Gaal,39,76,19,18,51.3,136,111,72
@@ -83,16 +83,16 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 82,Stuart Pearce,33,104,26,45,31.7,125,101,122
 83,Owen Coyle,33,116,24,59,28.4,123,136,204
 84,Alex McLeish,33,138,52,53,23.9,151,145,198
-85,Ange Postecoglou,31,81,12,38,38.3,105,139,136
-86,Oliver Glasner,31,91,30,30,34.1,123,122,118
-87,Claude Puel,31,94,23,40,33.0,116,117,132
-88,Slaven Bilić,31,100,30,39,31.0,123,133,164
-89,Fabian Hürzeler,30,76,24,22,39.5,114,118,105
+85,Fabian Hürzeler,31,77,24,22,40.3,117,122,105
+86,Ange Postecoglou,31,81,12,38,38.3,105,139,136
+87,Oliver Glasner,31,91,30,30,34.1,123,122,118
+88,Claude Puel,31,94,23,40,33.0,116,117,132
+89,Slaven Bilić,31,100,30,39,31.0,123,133,164
 90,Howard Kendall,30,97,24,43,30.9,114,113,134
 91,Gary Megson,30,134,37,67,22.4,127,134,211
-92,Roberto De Zerbi,29,77,21,27,37.7,108,124,117
-93,Gareth Southgate,29,114,33,52,25.4,120,115,159
-94,Enzo Maresca,28,57,15,14,49.1,99,96,64
+92,Enzo Maresca,29,58,15,14,50.0,102,98,65
+93,Roberto De Zerbi,29,78,21,28,37.2,108,124,120
+94,Gareth Southgate,29,114,33,52,25.4,120,115,159
 95,Danny Wilson,28,105,18,59,26.7,102,105,180
 96,Alan Ball,27,97,33,37,27.8,114,119,151
 97,Neil Warnock,27,112,23,62,24.1,104,103,184
@@ -129,13 +129,13 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 128,Bobby Gould,16,53,19,18,30.2,67,65,68
 129,Ossie Ardiles,16,54,14,24,29.6,62,75,83
 130,Sven-Göran Eriksson,15,38,10,13,39.5,55,45,53
-131,Julen Lopetegui,15,43,9,19,34.9,54,47,73
-132,Peter Taylor,15,46,8,23,32.6,53,44,68
-133,Ruben Amorim,15,47,13,19,31.9,58,66,72
-134,Roy Keane,15,53,9,29,28.3,54,49,83
-135,Phil Thompson,14,24,7,3,58.3,49,41,18
-136,Luiz Felipe Scolari,14,25,7,4,56.0,49,44,15
-137,Keith Andrews,14,38,11,13,36.8,53,55,52
+131,Keith Andrews,15,39,11,13,38.5,56,58,52
+132,Julen Lopetegui,15,43,9,19,34.9,54,47,73
+133,Peter Taylor,15,46,8,23,32.6,53,44,68
+134,Ruben Amorim,15,47,13,19,31.9,58,66,72
+135,Roy Keane,15,53,9,29,28.3,54,49,83
+136,Phil Thompson,14,24,7,3,58.3,49,41,18
+137,Luiz Felipe Scolari,14,25,7,4,56.0,49,44,15
 138,Régis Le Bris,14,39,12,13,35.9,54,43,50
 139,Vítor Pereira,14,44,10,20,31.8,52,60,64
 140,Gus Poyet,14,60,21,25,23.3,63,59,87
@@ -280,7 +280,9 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 276,Darren Fletcher,0,1,1,0,0.0,1,2,2
 276,James Collins,0,1,0,1,0.0,0,0,3
 276,Kelvin Davis,0,1,0,1,0.0,0,1,3
+276,Marco Rose,0,1,0,1,0.0,0,1,2
 276,Mark Hudson,0,1,0,1,0.0,0,0,3
+276,Matthias Jaissle,0,1,1,0,0.0,1,2,2
 276,Paddy McCarthy,0,1,0,1,0.0,0,1,4
 276,Pierre Sage,0,1,0,1,0.0,0,0,2
 276,Steve Perryman,0,1,0,1,0.0,0,0,2

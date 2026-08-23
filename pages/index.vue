@@ -97,7 +97,7 @@
               <v-list-item-title>
                 <v-icon icon="mdi-download" size="small" class="mr-2"></v-icon>Scrape
               </v-list-item-title>
-              <v-list-item-subtitle>curl the Pulselive API (competition=8) into matches/&lt;season&gt;/*.json</v-list-item-subtitle>
+              <v-list-item-subtitle>grab data into matches/&lt;season&gt;/*.json</v-list-item-subtitle>
             </v-list-item>
             <v-list-item>
               <v-list-item-title>
@@ -148,7 +148,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Premier League statistics built from the official API, covering the all-time table, most wins, attendances, streaks and data quality across 35 seasons.'
+      content: 'Premier League statistics covering the all-time table, most wins, attendances, streaks and data quality across 35 seasons.'
     }
   ],
   script: [
@@ -156,7 +156,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Football Started in 1992 — Premier League Statistics Dataset',
-        description: 'Complete Premier League statistics from the 1992-93 season to 2026-27, built from the league\'s official API. Includes the all-time table, every match result, total wins, attendances, winning streaks, comebacks, one-nil wins, manager records and per-season standings across 13,167 matches and 51 teams.',
+        description: 'Complete Premier League statistics from the 1992-93 season to 2026-27. Includes the all-time table, every match result, total wins, attendances, winning streaks, comebacks, one-nil wins, manager records and per-season standings across 13,167 matches and 51 teams.',
         path: '/',
         csv: 'stats.csv',
         keywords: ['all-time table', 'match results', 'records', 'attendances', 'winning streaks']
