@@ -1,30 +1,30 @@
 team_abbr,team_name,matches_played,wins,draws,losses,points
-MUN,Manchester United,1304,775,289,240,2614
-ARS,Arsenal,1304,719,316,269,2473
+MUN,Manchester United,1305,775,289,241,2614
+ARS,Arsenal,1305,720,316,269,2476
 LIV,Liverpool,1304,694,320,290,2402
 CHE,Chelsea,1304,681,323,300,2366
 TOT,Tottenham Hotspur,1304,561,309,434,1992
 MCI,Manchester City,1114,573,239,302,1958
-EVE,Everton,1304,463,366,475,1755
+EVE,Everton,1305,464,366,475,1758
 NEW,Newcastle United,1186,453,297,436,1656
 AVL,Aston Villa,1190,430,328,432,1618
 WHU,West Ham United,1148,381,289,478,1432
 SOU,Southampton,962,282,254,426,1100
 BLA,Blackburn Rovers,696,262,184,250,970
-LEE,Leeds United,620,234,165,221,867
+LEE,Leeds United,621,235,165,221,870
 LEI,Leicester City,688,224,174,290,846
 FUL,Fulham,722,220,185,317,845
-CRY,Crystal Palace,654,193,177,284,756
-SUN,Sunderland,646,167,171,308,672
+CRY,Crystal Palace,655,193,177,285,756
+SUN,Sunderland,647,167,171,309,672
 MID,Middlesbrough,574,165,169,240,664
 BOL,Bolton Wanderers,494,149,128,217,575
 WOL,Wolverhampton Wanderers,456,129,110,217,497
 WBA,West Bromwich Albion,494,117,139,238,490
 STO,Stoke City,380,116,109,155,457
 BHA,Brighton and Hove Albion,342,108,109,125,433
-NFO,Nottingham Forest,350,108,98,144,422
+NFO,Nottingham Forest,351,108,98,145,422
 BOU,Bournemouth,342,108,87,147,411
-COV,Coventry City,354,99,112,143,409
+COV,Coventry City,355,99,112,144,409
 NOR,Norwich City,392,99,105,188,402
 SHW,Sheffield Wednesday,316,101,89,126,392
 WIM,Wimbledon,316,99,94,123,391
@@ -38,9 +38,9 @@ BIR,Birmingham City,266,73,82,111,301
 WAT,Watford,304,73,66,165,285
 DER,Derby County,266,68,70,128,274
 BRE,Brentford,190,68,49,73,253
-IPS,Ipswich Town,240,61,63,116,246
+IPS,Ipswich Town,241,62,63,116,249
 SHU,Sheffield United,236,56,57,123,225
-HUL,Hull City,190,41,48,101,171
+HUL,Hull City,191,42,48,101,174
 REA,Reading,114,32,23,59,119
 OLD,Oldham Athletic,84,22,23,39,89
 CAR,Cardiff City,76,17,13,46,64

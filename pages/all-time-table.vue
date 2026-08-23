@@ -6,13 +6,13 @@
           <v-icon icon="mdi-table-large" class="mr-2"></v-icon>
           All-Time Premier League Table
         </v-card-title>
-        <v-card-subtitle>All 34 seasons · every team's all-time record, sorted by points</v-card-subtitle>
+        <v-card-subtitle>All 35 seasons · every team's all-time record, sorted by points</v-card-subtitle>
         <v-card-text>
           <p class="mb-4">
             Manchester United sit top of the all-time Premier League table with 2,614 points
-            from 1,304 matches, a clear 141 ahead of Arsenal (2,473) and Liverpool (2,402).
+            from 1,304 matches, a clear 138 ahead of Arsenal (2,476) and Liverpool (2,402).
             Every team that has ever played in the division is here, 51 in total, ranked by
-            points across all 34 seasons from 1992-93 to 2025-26. United's 775 wins are a
+            points across all 35 seasons from 1992-93 to 2026-27. United's 775 wins are a
             record nobody else has come close to.
           </p>
           <v-table density="compact">
@@ -62,7 +62,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League All-Time Table Dataset',
-        description: 'All-time Premier League standings for every club that has played in the division, with matches played, wins, draws, losses and points from 1992-93 to 2025-26, ordered by total points.',
+        description: 'All-time Premier League standings for every club that has played in the division, with matches played, wins, draws, losses and points from 1992-93 to 2026-27, ordered by total points.',
         path: '/all-time-table',
         csv: 'all_time_table.csv',
         keywords: ['all-time table', 'standings', 'points']

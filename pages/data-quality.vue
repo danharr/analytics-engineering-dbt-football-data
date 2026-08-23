@@ -9,10 +9,10 @@
         <v-card-subtitle>{{ quality.length }} seasons processed in the database</v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            This page is about the dataset behind every other chart on the site. All 34 seasons
+            This page is about the dataset behind every other chart on the site. All 35 seasons
             are accounted for here, from the 22-team opening campaign in 1992-93 through to the
             20-team format that has been standard since 1995-96. In total the database holds
-            13,166 matches across 51 teams, and this page verifies that each season is complete
+            13,167 matches across 51 teams, and this page verifies that each season is complete
             before the rest of the site is built from it.
           </p>
         </v-card-text>
@@ -76,7 +76,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Season Coverage Dataset',
-        description: 'Season-by-season data coverage for the Premier League dataset: number of teams and matches per team in each season from 1992-93 to 2025-26.',
+        description: 'Season-by-season data coverage for the Premier League dataset: number of teams and matches per team in each season from 1992-93 to 2026-27.',
         path: '/data-quality',
         csv: 'season_quality.csv',
         keywords: ['data quality', 'season coverage']

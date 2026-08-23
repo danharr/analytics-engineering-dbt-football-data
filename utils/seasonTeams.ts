@@ -28,6 +28,36 @@ export const SEASON_TEAMS: SeasonTeam[] = [
   { slug: 'wolverhampton-wanderers', name: 'Wolverhampton Wanderers' }
 ]
 
-export function seasonTeamBySlug(slug: string): SeasonTeam | undefined {
-  return SEASON_TEAMS.find(t => t.slug === slug)
+// The 20 Premier League teams in the 2026-27 BBC match-events feed. Coventry City,
+// Ipswich Town and Hull City are the three promoted clubs, replacing West Ham United,
+// Wolverhampton Wanderers and Burnley.
+export const SEASON_TEAMS_2026_27: SeasonTeam[] = [
+  { slug: 'arsenal', name: 'Arsenal' },
+  { slug: 'aston-villa', name: 'Aston Villa' },
+  { slug: 'bournemouth', name: 'Bournemouth' },
+  { slug: 'brentford', name: 'Brentford' },
+  { slug: 'brighton-and-hove-albion', name: 'Brighton & Hove Albion' },
+  { slug: 'chelsea', name: 'Chelsea' },
+  { slug: 'coventry-city', name: 'Coventry City' },
+  { slug: 'crystal-palace', name: 'Crystal Palace' },
+  { slug: 'everton', name: 'Everton' },
+  { slug: 'fulham', name: 'Fulham' },
+  { slug: 'hull-city', name: 'Hull City' },
+  { slug: 'ipswich-town', name: 'Ipswich Town' },
+  { slug: 'leeds', name: 'Leeds United' },
+  { slug: 'liverpool', name: 'Liverpool' },
+  { slug: 'manchester-city', name: 'Manchester City' },
+  { slug: 'manchester-united', name: 'Manchester United' },
+  { slug: 'newcastle', name: 'Newcastle United' },
+  { slug: 'nottingham-forest', name: 'Nottingham Forest' },
+  { slug: 'sunderland', name: 'Sunderland' },
+  { slug: 'tottenham', name: 'Tottenham Hotspur' }
+]
+
+export function seasonTeamsForSeason(seasonLabel: string): SeasonTeam[] {
+  return seasonLabel === '2026-27' ? SEASON_TEAMS_2026_27 : SEASON_TEAMS
+}
+
+export function seasonTeamBySlug(slug: string, seasonLabel = '2025-26'): SeasonTeam | undefined {
+  return seasonTeamsForSeason(seasonLabel).find(t => t.slug === slug)
 }

@@ -5,7 +5,7 @@ import { copyFileSync, mkdirSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { teamSlugsFromCsv } from './utils/teamSlugs'
 import { MANAGER_SLUGS } from './utils/managerPages'
-import { SEASON_TEAMS } from './utils/seasonTeams'
+import { SEASON_TEAMS, SEASON_TEAMS_2026_27 } from './utils/seasonTeams'
 
 const lastUpdatedFromStats = (): string => {
   const lines = readFileSync('assets/data/stats.csv', 'utf-8').trim().split('\n')
@@ -34,8 +34,15 @@ const pointsLostRoutes = (): string[] => [
   ...SEASON_TEAMS.map(t => `/points-lost-from-winning-position/${t.slug}`)
 ]
 
-const teamSeasonRoutes = (): string[] =>
-  SEASON_TEAMS.map(t => `/teams/${t.slug}/2025-26`)
+const teamSeasonRoutes = (): string[] => [
+  ...SEASON_TEAMS.map(t => `/teams/${t.slug}/2025-26-goals-by-player`),
+  ...SEASON_TEAMS_2026_27.map(t => `/teams/${t.slug}/2026-27-goals-by-player`)
+]
+
+const teamPointsRaceRoutes = (): string[] => {
+  const csv = readFileSync('assets/data/all_time_table.csv', 'utf-8')
+  return teamSlugsFromCsv(csv).map(t => `/teams/${t.slug}/cumulative-points-per-season`)
+}
 
 let outputPublicDir = ''
 
@@ -48,7 +55,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://footballstartedin1992.com',
     name: 'Football Started in 1992',
-    description: 'Premier League statistics built from match data, covering the all-time table, most wins, attendances, streaks and data quality across 34 seasons.'
+    description: 'Premier League statistics built from match data, covering the all-time table, most wins, attendances, streaks and data quality across 35 seasons.'
   },
 
   sitemap: {
@@ -150,6 +157,7 @@ gtag('config', 'G-HRJ1G6XTG1');`
         ...seasonRoutes(),
         ...pointsLostRoutes(),
         ...teamSeasonRoutes(),
+        ...teamPointsRaceRoutes(),
       ]
     }
   }

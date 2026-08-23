@@ -85,7 +85,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'The managers with the most Premier League wins, from the Wikipedia managers list joined to 34 seasons of match results.'
+      content: 'The managers with the most Premier League wins, from the Wikipedia managers list joined to 35 seasons of match results.'
     }
   ],
   script: [
@@ -93,7 +93,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Manager Wins Dataset',
-        description: 'The managers with the most Premier League wins, from the Wikipedia managers list joined to 34 seasons of match results, including games, draws, losses, win percentage, points, goals for and against.',
+        description: 'The managers with the most Premier League wins, from the Wikipedia managers list joined to 35 seasons of match results, including games, draws, losses, win percentage, points, goals for and against.',
         path: '/manager-wins',
         csv: 'manager_wins.csv',
         keywords: ['manager wins', 'manager records']

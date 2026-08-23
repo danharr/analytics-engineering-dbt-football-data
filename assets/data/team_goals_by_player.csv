@@ -1,612 +1,677 @@
-team_name,player_name,competition,goals
-Arsenal,Gabriel Martinelli,Champions League,6
-Arsenal,V. Gyökeres,Champions League,5
-Arsenal,K. Havertz,Champions League,4
-Arsenal,B. Saka,Champions League,3
-Arsenal,N. Madueke,Champions League,3
-Arsenal,Gabriel Jesus,Champions League,2
-Arsenal,Mikel Merino,Champions League,2
-Arsenal,D. Rice,Champions League,1
-Arsenal,E. Eze,Champions League,1
-Arsenal,Gabriel Magalhães,Champions League,1
-Arsenal,J. Timber,Champions League,1
-Arsenal,L. Trossard,Champions League,1
-Arsenal,C. Nørgaard,Club Friendlies,1
-Arsenal,M. Ødegaard,Club Friendlies,1
-Arsenal,Gabriel Martinelli,FA Cup,4
-Arsenal,N. Madueke,FA Cup,2
-Arsenal,Own Goal,FA Cup,2
-Arsenal,E. Eze,FA Cup,1
-Arsenal,Gabriel Jesus,FA Cup,1
-Arsenal,V. Gyökeres,FA Cup,1
-Arsenal,B. Saka,League Cup,1
-Arsenal,B. White,League Cup,1
-Arsenal,E. Eze,League Cup,1
-Arsenal,E. Nwaneri,League Cup,1
-Arsenal,K. Havertz,League Cup,1
-Arsenal,L. Trossard,League Cup,1
-Arsenal,Martín Zubimendi,League Cup,1
-Arsenal,Own Goal,League Cup,1
-Arsenal,V. Gyökeres,League Cup,1
-Arsenal,B. Saka,Other,1
-Arsenal,K. Havertz,Other,1
-Arsenal,V. Gyökeres,Other,1
-Arsenal,V. Gyökeres,Premier League,14
-Arsenal,B. Saka,Premier League,7
-Arsenal,E. Eze,Premier League,7
-Arsenal,L. Trossard,Premier League,6
-Arsenal,Martín Zubimendi,Premier League,5
-Arsenal,D. Rice,Premier League,4
-Arsenal,Mikel Merino,Premier League,4
-Arsenal,Own Goal,Premier League,4
-Arsenal,Gabriel Jesus,Premier League,3
-Arsenal,Gabriel Magalhães,Premier League,3
-Arsenal,J. Timber,Premier League,3
-Arsenal,N. Madueke,Premier League,3
-Arsenal,K. Havertz,Premier League,2
-Arsenal,Gabriel Martinelli,Premier League,1
-Arsenal,M. Dowman,Premier League,1
-Arsenal,M. Ødegaard,Premier League,1
-Arsenal,P. Hincapié,Premier League,1
-Arsenal,R. Calafiori,Premier League,1
-Arsenal,W. Saliba,Premier League,1
-Aston Villa,D. Malen,Club Friendlies,1
-Aston Villa,E. Buendía,Club Friendlies,1
-Aston Villa,J. Ramsey,Club Friendlies,1
-Aston Villa,O. Watkins,Club Friendlies,1
-Aston Villa,J. McGinn,Europa League,5
-Aston Villa,O. Watkins,Europa League,5
-Aston Villa,E. Buendía,Europa League,4
-Aston Villa,D. Malen,Europa League,3
-Aston Villa,M. Rogers,Europa League,3
-Aston Villa,E. Guessand,Europa League,2
-Aston Villa,E. Konsa,Europa League,2
-Aston Villa,Y. Tielemans,Europa League,2
-Aston Villa,I. Maatsen,Europa League,1
-Aston Villa,J. Jimoh-Aloba,Europa League,1
-Aston Villa,J. Sancho,Europa League,1
-Aston Villa,L. Bailey,Europa League,1
-Aston Villa,T. Mings,Europa League,1
-Aston Villa,E. Buendía,FA Cup,1
-Aston Villa,M. Rogers,FA Cup,1
-Aston Villa,T. Abraham,FA Cup,1
-Aston Villa,H. Elliott,League Cup,1
-Aston Villa,O. Watkins,Premier League,16
-Aston Villa,M. Rogers,Premier League,10
-Aston Villa,E. Buendía,Premier League,6
-Aston Villa,J. McGinn,Premier League,5
-Aston Villa,D. Malen,Premier League,4
-Aston Villa,M. Cash,Premier League,3
-Aston Villa,Own Goal,Premier League,3
-Aston Villa,R. Barkley,Premier League,3
-Aston Villa,A. Onana,Premier League,2
-Aston Villa,T. Abraham,Premier League,2
-Aston Villa,B. Kamara,Premier League,1
-Aston Villa,Douglas Luiz,Premier League,1
-Bournemouth,A. Scott,FA Cup,1
-Bournemouth,D. Brooks,FA Cup,1
-Bournemouth,M. Tavernier,FA Cup,1
-Bournemouth,J. Kroupi,Premier League,13
-Bournemouth,A. Semenyo,Premier League,10
-Bournemouth,M. Tavernier,Premier League,7
-Bournemouth,Evanilson,Premier League,6
-Bournemouth,Rayan,Premier League,5
-Bournemouth,A. Adli,Premier League,3
-Bournemouth,A. Scott,Premier League,3
-Bournemouth,J. Kluivert,Premier League,2
-Bournemouth,R. Christie,Premier League,2
-Bournemouth,T. Adams,Premier League,2
-Bournemouth,A. Truffert,Premier League,1
-Bournemouth,D. Brooks,Premier League,1
-Bournemouth,E. Ünal,Premier League,1
-Bournemouth,Own Goal,Premier League,1
-Bournemouth,Álex Jiménez,Premier League,1
-Brentford,Fábio Carvalho,Club Friendlies,1
-Brentford,M. Damsgaard,Club Friendlies,1
-Brentford,N. Collins,Club Friendlies,1
-Brentford,Igor Thiago,FA Cup,2
-Brentford,K. Lewis-Potter,FA Cup,1
-Brentford,M. Jensen,FA Cup,1
-Brentford,Own Goal,FA Cup,1
-Brentford,Fábio Carvalho,League Cup,2
-Brentford,A. Hickey,League Cup,1
-Brentford,Igor Thiago,League Cup,1
-Brentford,K. Lewis-Potter,League Cup,1
-Brentford,M. Jensen,League Cup,1
-Brentford,N. Collins,League Cup,1
-Brentford,R. Nelson,League Cup,1
-Brentford,Igor Thiago,Premier League,22
-Brentford,K. Schade,Premier League,8
-Brentford,D. Ouattara,Premier League,7
-Brentford,M. Damsgaard,Premier League,4
-Brentford,K. Lewis-Potter,Premier League,3
-Brentford,M. Jensen,Premier League,3
-Brentford,Own Goal,Premier League,2
-Brentford,Fábio Carvalho,Premier League,1
-Brentford,J. Henderson,Premier League,1
-Brentford,M. Kayode,Premier League,1
-Brentford,N. Collins,Premier League,1
-Brentford,V. Janelt,Premier League,1
-Brentford,Y. Yarmoliuk,Premier League,1
-Brighton & Hove Albion,B. Gruda,FA Cup,1
-Brighton & Hove Albion,D. Welbeck,FA Cup,1
-Brighton & Hove Albion,D. Gómez,League Cup,5
-Brighton & Hove Albion,S. Tzimas,League Cup,2
-Brighton & Hove Albion,B. Gruda,League Cup,1
-Brighton & Hove Albion,H. Howell,League Cup,1
-Brighton & Hove Albion,O. Boscagli,League Cup,1
-Brighton & Hove Albion,T. Watson,League Cup,1
-Brighton & Hove Albion,Y. Ayari,League Cup,1
-Brighton & Hove Albion,D. Welbeck,Premier League,13
-Brighton & Hove Albion,D. Gómez,Premier League,5
-Brighton & Hove Albion,J. Hinshelwood,Premier League,4
-Brighton & Hove Albion,G. Rutter,Premier League,3
-Brighton & Hove Albion,J. van Hecke,Premier League,3
-Brighton & Hove Albion,K. Mitoma,Premier League,3
-Brighton & Hove Albion,Y. Ayari,Premier League,3
-Brighton & Hove Albion,Y. Minteh,Premier League,3
-Brighton & Hove Albion,C. Kostoulas,Premier League,2
-Brighton & Hove Albion,M. De Cuyper,Premier League,2
-Brighton & Hove Albion,M. Wieffer,Premier League,2
-Brighton & Hove Albion,B. Gruda,Premier League,1
-Brighton & Hove Albion,F. Kadıoğlu,Premier League,1
-Brighton & Hove Albion,J. Milner,Premier League,1
-Brighton & Hove Albion,J. Veltman,Premier League,1
-Brighton & Hove Albion,L. Dunk,Premier League,1
-Brighton & Hove Albion,M. O'Riley,Premier League,1
-Brighton & Hove Albion,Own Goal,Premier League,1
-Brighton & Hove Albion,P. Groß,Premier League,1
-Brighton & Hove Albion,S. Tzimas,Premier League,1
-Burnley,A. Barnes,FA Cup,2
-Burnley,J. Anthony,FA Cup,1
-Burnley,J. Banel,FA Cup,1
-Burnley,J. Laurent,FA Cup,1
-Burnley,L. Tchaouna,FA Cup,1
-Burnley,A. Ramsey,League Cup,1
-Burnley,O. Sonne,League Cup,1
-Burnley,Z. Flemming,League Cup,1
-Burnley,Z. Flemming,Premier League,11
-Burnley,J. Anthony,Premier League,8
-Burnley,L. Foster,Premier League,3
-Burnley,L. Ugochukwu,Premier League,3
-Burnley,Own Goal,Premier League,3
-Burnley,J. Cullen,Premier League,2
-Burnley,L. Tchaouna,Premier League,2
-Burnley,A. Broja,Premier League,1
-Burnley,A. Tuanzebe,Premier League,1
-Burnley,H. Mejbri,Premier League,1
-Burnley,J. Laurent,Premier League,1
-Burnley,M. Edwards,Premier League,1
-Burnley,O. Sonne,Premier League,1
-Chelsea,E. Fernández,Champions League,3
-Chelsea,Estêvão,Champions League,3
-Chelsea,João Pedro,Champions League,3
-Chelsea,M. Caicedo,Champions League,2
-Chelsea,Own Goal,Champions League,2
-Chelsea,A. Garnacho,Champions League,1
-Chelsea,C. Palmer,Champions League,1
-Chelsea,L. Delap,Champions League,1
-Chelsea,M. Gusto,Champions League,1
-Chelsea,Marc Guiu,Champions League,1
-Chelsea,T. George,Champions League,1
-Chelsea,João Pedro,Club Friendlies,2
-Chelsea,L. Delap,Club Friendlies,2
-Chelsea,Estêvão,Club Friendlies,1
-Chelsea,Own Goal,Club Friendlies,1
-Chelsea,Pedro Neto,FA Cup,4
-Chelsea,A. Garnacho,FA Cup,2
-Chelsea,E. Fernández,FA Cup,2
-Chelsea,Estêvão,FA Cup,2
-Chelsea,J. Hato,FA Cup,2
-Chelsea,João Pedro,FA Cup,2
-Chelsea,Own Goal,FA Cup,2
-Chelsea,T. Adarabioyo,FA Cup,2
-Chelsea,Andrey Santos,FA Cup,1
-Chelsea,J. Acheampong,FA Cup,1
-Chelsea,Marc Guiu,FA Cup,1
-Chelsea,A. Garnacho,League Cup,4
-Chelsea,T. George,League Cup,2
-Chelsea,Andrey Santos,League Cup,1
-Chelsea,Estêvão,League Cup,1
-Chelsea,F. Buonanotte,League Cup,1
-Chelsea,J. Gittens,League Cup,1
-Chelsea,Pedro Neto,League Cup,1
-Chelsea,João Pedro,Premier League,15
-Chelsea,C. Palmer,Premier League,10
-Chelsea,E. Fernández,Premier League,10
-Chelsea,Pedro Neto,Premier League,5
-Chelsea,M. Caicedo,Premier League,3
-Chelsea,T. Chalobah,Premier League,3
-Chelsea,Estêvão,Premier League,2
-Chelsea,M. Gusto,Premier League,2
-Chelsea,R. James,Premier League,2
-Chelsea,A. Garnacho,Premier League,1
-Chelsea,Andrey Santos,Premier League,1
-Chelsea,J. Acheampong,Premier League,1
-Chelsea,L. Delap,Premier League,1
-Chelsea,Marc Cucurella,Premier League,1
-Chelsea,Own Goal,Premier League,1
-Crystal Palace,J. Mateta,Club Friendlies,2
-Crystal Palace,E. Eze,Club Friendlies,1
-Crystal Palace,I. Sarr,Community Shield,1
-Crystal Palace,J. Mateta,Community Shield,1
-Crystal Palace,I. Sarr,Conference League,9
-Crystal Palace,J. Mateta,Conference League,3
-Crystal Palace,C. Uche,Conference League,2
-Crystal Palace,E. Nketiah,Conference League,2
-Crystal Palace,M. Lacroix,Conference League,2
-Crystal Palace,T. Mitchell,Conference League,2
-Crystal Palace,D. Kamada,Conference League,1
-Crystal Palace,D. Muñoz,Conference League,1
-Crystal Palace,E. Guessand,Conference League,1
-Crystal Palace,J. Devenny,Conference League,1
-Crystal Palace,J. Strand Larsen,Conference League,1
-Crystal Palace,Own Goal,Conference League,1
-Crystal Palace,Yéremy Pino,Conference League,1
-Crystal Palace,Yéremy Pino,FA Cup,1
-Crystal Palace,I. Sarr,League Cup,2
-Crystal Palace,C. Richards,League Cup,1
-Crystal Palace,M. Guéhi,League Cup,1
-Crystal Palace,Yéremy Pino,League Cup,1
-Crystal Palace,J. Mateta,Premier League,12
-Crystal Palace,I. Sarr,Premier League,9
-Crystal Palace,D. Muñoz,Premier League,4
-Crystal Palace,J. Strand Larsen,Premier League,3
-Crystal Palace,E. Nketiah,Premier League,2
-Crystal Palace,M. Guéhi,Premier League,2
-Crystal Palace,Yéremy Pino,Premier League,2
-Crystal Palace,A. Wharton,Premier League,1
-Crystal Palace,C. Richards,Premier League,1
-Crystal Palace,E. Guessand,Premier League,1
-Crystal Palace,J. Devenny,Premier League,1
-Crystal Palace,M. Lacroix,Premier League,1
-Crystal Palace,Own Goal,Premier League,1
-Crystal Palace,T. Mitchell,Premier League,1
-Everton,J. Garner,FA Cup,1
-Everton,Beto,League Cup,1
-Everton,C. Alcaraz,League Cup,1
-Everton,Beto,Premier League,9
-Everton,K. Dewsbury-Hall,Premier League,8
-Everton,T. Barry,Premier League,8
-Everton,I. Ndiaye,Premier League,6
-Everton,M. Keane,Premier League,3
-Everton,I. Gueye,Premier League,2
-Everton,J. Garner,Premier League,2
-Everton,J. Grealish,Premier League,2
-Everton,J. Tarkowski,Premier League,2
-Everton,Own Goal,Premier League,2
-Everton,J. Branthwaite,Premier League,1
-Everton,J. O'Brien,Premier League,1
-Everton,M. Röhl,Premier League,1
-Fulham,Kevin,FA Cup,2
-Fulham,E. Smith Rowe,FA Cup,1
-Fulham,H. Reed,FA Cup,1
-Fulham,H. Wilson,FA Cup,1
-Fulham,E. Smith Rowe,League Cup,1
-Fulham,J. King,League Cup,1
-Fulham,Own Goal,League Cup,1
-Fulham,R. Jiménez,League Cup,1
-Fulham,S. Lukić,League Cup,1
-Fulham,H. Wilson,Premier League,10
-Fulham,R. Jiménez,Premier League,9
-Fulham,A. Iwobi,Premier League,4
-Fulham,Own Goal,Premier League,4
-Fulham,E. Smith Rowe,Premier League,3
-Fulham,R. Sessegnon,Premier League,3
-Fulham,S. Chukwueze,Premier League,3
-Fulham,T. Cairney,Premier League,2
-Fulham,A. Robinson,Premier League,1
-Fulham,C. Bassey,Premier League,1
-Fulham,H. Reed,Premier League,1
-Fulham,I. Diop,Premier League,1
-Fulham,J. King,Premier League,1
-Fulham,K. Tete,Premier League,1
-Fulham,Kevin,Premier League,1
-Fulham,Rodrigo Muniz,Premier League,1
-Fulham,S. Lukić,Premier League,1
-Leeds United,A. Stach,Club Friendlies,1
-Leeds United,A. Tanaka,FA Cup,2
-Leeds United,D. Calvert-Lewin,FA Cup,1
-Leeds United,G. Gudmundsson,FA Cup,1
-Leeds United,J. Justin,FA Cup,1
-Leeds United,J. Piroe,FA Cup,1
-Leeds United,L. Nmecha,FA Cup,1
-Leeds United,S. Longstaff,FA Cup,1
-Leeds United,W. Gnonto,FA Cup,1
-Leeds United,J. Bogle,League Cup,1
-Leeds United,D. Calvert-Lewin,Premier League,14
-Leeds United,N. Okafor,Premier League,8
-Leeds United,L. Nmecha,Premier League,6
-Leeds United,A. Stach,Premier League,5
-Leeds United,B. Aaronson,Premier League,4
-Leeds United,A. Tanaka,Premier League,2
-Leeds United,J. Justin,Premier League,2
-Leeds United,J. Rodon,Premier League,2
-Leeds United,S. Longstaff,Premier League,2
-Leeds United,E. Ampadu,Premier League,1
-Leeds United,J. Bijol,Premier League,1
-Leeds United,J. Bogle,Premier League,1
-Leeds United,Own Goal,Premier League,1
-Liverpool,D. Szoboszlai,Champions League,5
-Liverpool,A. Mac Allister,Champions League,3
-Liverpool,H. Ekitiké,Champions League,3
-Liverpool,Mohamed Salah,Champions League,3
-Liverpool,C. Gakpo,Champions League,2
-Liverpool,V. van Dijk,Champions League,2
-Liverpool,A. Robertson,Champions League,1
-Liverpool,F. Chiesa,Champions League,1
-Liverpool,F. Wirtz,Champions League,1
-Liverpool,I. Konaté,Champions League,1
-Liverpool,Own Goal,Champions League,1
-Liverpool,R. Gravenberch,Champions League,1
-Liverpool,C. Gakpo,Club Friendlies,2
-Liverpool,D. Núñez,Club Friendlies,1
-Liverpool,H. Elliott,Club Friendlies,1
-Liverpool,Mohamed Salah,Club Friendlies,1
-Liverpool,Own Goal,Club Friendlies,1
-Liverpool,R. Ngumoha,Club Friendlies,1
-Liverpool,H. Ekitiké,Community Shield,1
-Liverpool,J. Frimpong,Community Shield,1
-Liverpool,C. Jones,FA Cup,2
-Liverpool,D. Szoboszlai,FA Cup,2
-Liverpool,Mohamed Salah,FA Cup,2
-Liverpool,A. Robertson,FA Cup,1
-Liverpool,F. Wirtz,FA Cup,1
-Liverpool,H. Ekitiké,FA Cup,1
-Liverpool,J. Frimpong,FA Cup,1
-Liverpool,A. Isak,League Cup,1
-Liverpool,H. Ekitiké,League Cup,1
-Liverpool,H. Ekitiké,Premier League,11
-Liverpool,C. Gakpo,Premier League,7
-Liverpool,Mohamed Salah,Premier League,7
-Liverpool,D. Szoboszlai,Premier League,6
-Liverpool,V. van Dijk,Premier League,6
-Liverpool,F. Wirtz,Premier League,5
-Liverpool,R. Gravenberch,Premier League,5
-Liverpool,A. Isak,Premier League,3
-Liverpool,A. Mac Allister,Premier League,2
-Liverpool,F. Chiesa,Premier League,2
-Liverpool,M. Kerkez,Premier League,2
-Liverpool,Own Goal,Premier League,2
-Liverpool,R. Ngumoha,Premier League,2
-Liverpool,A. Robertson,Premier League,1
-Liverpool,C. Jones,Premier League,1
-Liverpool,I. Konaté,Premier League,1
-Manchester City,E. Haaland,Champions League,8
-Manchester City,R. Cherki,Champions League,3
-Manchester City,P. Foden,Champions League,2
-Manchester City,Bernardo Silva,Champions League,1
-Manchester City,J. Doku,Champions League,1
-Manchester City,N. O'Reilly,Champions League,1
-Manchester City,T. Reijnders,Club Friendlies,2
-Manchester City,E. Haaland,Club Friendlies,1
-Manchester City,A. Semenyo,FA Cup,3
-Manchester City,E. Haaland,FA Cup,3
-Manchester City,Own Goal,FA Cup,3
-Manchester City,Omar Marmoush,FA Cup,2
-Manchester City,R. Lewis,FA Cup,2
-Manchester City,J. Doku,FA Cup,1
-Manchester City,M. Alleyne,FA Cup,1
-Manchester City,M. Guéhi,FA Cup,1
-Manchester City,N. O'Reilly,FA Cup,1
-Manchester City,Nico González,FA Cup,1
-Manchester City,R. McAidoo,FA Cup,1
-Manchester City,Rodri,FA Cup,1
-Manchester City,Savinho,FA Cup,1
-Manchester City,T. Reijnders,FA Cup,1
-Manchester City,Omar Marmoush,League Cup,3
-Manchester City,R. Cherki,League Cup,3
-Manchester City,N. O'Reilly,League Cup,2
-Manchester City,Savinho,League Cup,2
-Manchester City,A. Semenyo,League Cup,1
-Manchester City,J. Doku,League Cup,1
-Manchester City,P. Foden,League Cup,1
-Manchester City,T. Reijnders,League Cup,1
-Manchester City,E. Haaland,Premier League,27
-Manchester City,A. Semenyo,Premier League,7
-Manchester City,P. Foden,Premier League,7
-Manchester City,J. Doku,Premier League,5
-Manchester City,N. O'Reilly,Premier League,5
-Manchester City,T. Reijnders,Premier League,5
-Manchester City,R. Cherki,Premier League,4
-Manchester City,Omar Marmoush,Premier League,3
-Manchester City,Own Goal,Premier League,3
-Manchester City,Bernardo Silva,Premier League,2
-Manchester City,J. Gvardiol,Premier League,2
-Manchester City,Rúben Dias,Premier League,2
-Manchester City,M. Guéhi,Premier League,1
-Manchester City,Matheus Nunes,Premier League,1
-Manchester City,Nico González,Premier League,1
-Manchester City,Rodri,Premier League,1
-Manchester City,Savinho,Premier League,1
-Manchester United,Own Goal,Club Friendlies,1
-Manchester United,B. Šeško,FA Cup,1
-Manchester United,B. Mbeumo,League Cup,1
-Manchester United,H. Maguire,League Cup,1
-Manchester United,B. Mbeumo,Premier League,11
-Manchester United,B. Šeško,Premier League,11
-Manchester United,Matheus Cunha,Premier League,10
-Manchester United,Bruno Fernandes,Premier League,9
-Manchester United,Casemiro,Premier League,9
-Manchester United,P. Dorgu,Premier League,4
-Manchester United,M. Mount,Premier League,3
-Manchester United,Own Goal,Premier League,3
-Manchester United,A. Diallo,Premier League,2
-Manchester United,J. Zirkzee,Premier League,2
-Manchester United,Diogo Dalot,Premier League,1
-Manchester United,H. Maguire,Premier League,1
-Manchester United,K. Mainoo,Premier League,1
-Manchester United,L. Shaw,Premier League,1
-Manchester United,M. de Ligt,Premier League,1
-Newcastle United,A. Gordon,Champions League,10
-Newcastle United,H. Barnes,Champions League,6
-Newcastle United,A. Elanga,Champions League,2
-Newcastle United,Joelinton,Champions League,2
-Newcastle United,D. Burn,Champions League,1
-Newcastle United,J. Murphy,Champions League,1
-Newcastle United,J. Willock,Champions League,1
-Newcastle United,L. Miley,Champions League,1
-Newcastle United,M. Thiaw,Champions League,1
-Newcastle United,N. Woltemade,Champions League,1
-Newcastle United,S. Botman,Champions League,1
-Newcastle United,S. Tonali,Champions League,1
-Newcastle United,Y. Wissa,Champions League,1
-Newcastle United,H. Barnes,Club Friendlies,1
-Newcastle United,J. Murphy,Club Friendlies,1
-Newcastle United,M. Targett,Club Friendlies,1
-Newcastle United,H. Barnes,FA Cup,3
-Newcastle United,S. Tonali,FA Cup,2
-Newcastle United,A. Gordon,FA Cup,1
-Newcastle United,N. Woltemade,FA Cup,1
-Newcastle United,Joelinton,League Cup,2
-Newcastle United,W. Osula,League Cup,2
-Newcastle United,A. Elanga,League Cup,1
-Newcastle United,F. Schär,League Cup,1
-Newcastle United,L. Miley,League Cup,1
-Newcastle United,N. Woltemade,League Cup,1
-Newcastle United,Y. Wissa,League Cup,1
-Newcastle United,Bruno Guimarães,Premier League,9
-Newcastle United,N. Woltemade,Premier League,8
-Newcastle United,H. Barnes,Premier League,7
-Newcastle United,W. Osula,Premier League,7
-Newcastle United,A. Gordon,Premier League,6
-Newcastle United,M. Thiaw,Premier League,4
-Newcastle United,J. Murphy,Premier League,3
-Newcastle United,J. Ramsey,Premier League,2
-Newcastle United,Joelinton,Premier League,2
-Newcastle United,D. Burn,Premier League,1
-Newcastle United,L. Hall,Premier League,1
-Newcastle United,L. Miley,Premier League,1
-Newcastle United,S. Botman,Premier League,1
-Newcastle United,Y. Wissa,Premier League,1
-Nottingham Forest,Igor Jesus,Europa League,7
-Nottingham Forest,M. Gibbs-White,Europa League,3
-Nottingham Forest,A. Kalimuendo,Europa League,2
-Nottingham Forest,C. Wood,Europa League,2
-Nottingham Forest,Own Goal,Europa League,2
-Nottingham Forest,R. Yates,Europa League,2
-Nottingham Forest,C. Hudson-Odoi,Europa League,1
-Nottingham Forest,D. Ndoye,Europa League,1
-Nottingham Forest,J. McAtee,Europa League,1
-Nottingham Forest,Murillo,Europa League,1
-Nottingham Forest,N. Domínguez,Europa League,1
-Nottingham Forest,N. Milenković,Europa League,1
-Nottingham Forest,C. Hudson-Odoi,FA Cup,2
-Nottingham Forest,Igor Jesus,FA Cup,1
-Nottingham Forest,Igor Jesus,League Cup,2
-Nottingham Forest,M. Gibbs-White,Premier League,15
-Nottingham Forest,Igor Jesus,Premier League,6
-Nottingham Forest,E. Anderson,Premier League,4
-Nottingham Forest,T. Awoniyi,Premier League,4
-Nottingham Forest,C. Hudson-Odoi,Premier League,3
-Nottingham Forest,C. Wood,Premier League,3
-Nottingham Forest,I. Sangaré,Premier League,2
-Nottingham Forest,N. Savona,Premier League,2
-Nottingham Forest,N. Williams,Premier League,2
-Nottingham Forest,D. Ndoye,Premier League,1
-Nottingham Forest,L. Lucca,Premier League,1
-Nottingham Forest,Morato,Premier League,1
-Nottingham Forest,Murillo,Premier League,1
-Nottingham Forest,N. Domínguez,Premier League,1
-Nottingham Forest,O. Hutchinson,Premier League,1
-Nottingham Forest,Own Goal,Premier League,1
-Sunderland,E. Le Fée,FA Cup,1
-Sunderland,H. Diarra,FA Cup,1
-Sunderland,Marc Guiu,League Cup,1
-Sunderland,B. Brobbey,Premier League,7
-Sunderland,W. Isidor,Premier League,6
-Sunderland,E. Le Fée,Premier League,5
-Sunderland,C. Talbi,Premier League,4
-Sunderland,Own Goal,Premier League,4
-Sunderland,N. Mukiele,Premier League,3
-Sunderland,D. Ballard,Premier League,2
-Sunderland,Eliezer Mayenda,Premier League,2
-Sunderland,H. Diarra,Premier League,2
-Sunderland,T. Hume,Premier League,2
-Sunderland,B. Traoré,Premier League,1
-Sunderland,C. Rigg,Premier League,1
-Sunderland,G. Xhaka,Premier League,1
-Sunderland,O. Alderete,Premier League,1
-Sunderland,S. Adingra,Premier League,1
-Tottenham Hotspur,R. Kolo Muani,Champions League,4
-Tottenham Hotspur,D. Solanke,Champions League,3
-Tottenham Hotspur,Own Goal,Champions League,3
-Tottenham Hotspur,X. Simons,Champions League,3
-Tottenham Hotspur,M. van de Ven,Champions League,2
-Tottenham Hotspur,B. Johnson,Champions League,1
-Tottenham Hotspur,C. Romero,Champions League,1
-Tottenham Hotspur,João Palhinha,Champions League,1
-Tottenham Hotspur,M. Kudus,Champions League,1
-Tottenham Hotspur,Pedro Porro,Champions League,1
-Tottenham Hotspur,Richarlison,Champions League,1
-Tottenham Hotspur,W. Odobert,Champions League,1
-Tottenham Hotspur,B. Johnson,Club Friendlies,1
-Tottenham Hotspur,W. Odobert,FA Cup,1
-Tottenham Hotspur,B. Johnson,League Cup,1
-Tottenham Hotspur,João Palhinha,League Cup,1
-Tottenham Hotspur,Own Goal,League Cup,1
-Tottenham Hotspur,C. Romero,Other,1
-Tottenham Hotspur,M. van de Ven,Other,1
-Tottenham Hotspur,Richarlison,Premier League,11
-Tottenham Hotspur,João Palhinha,Premier League,5
-Tottenham Hotspur,C. Romero,Premier League,4
-Tottenham Hotspur,M. Tel,Premier League,4
-Tottenham Hotspur,M. van de Ven,Premier League,4
-Tottenham Hotspur,D. Solanke,Premier League,3
-Tottenham Hotspur,A. Gray,Premier League,2
-Tottenham Hotspur,B. Johnson,Premier League,2
-Tottenham Hotspur,M. Kudus,Premier League,2
-Tottenham Hotspur,P. Sarr,Premier League,2
-Tottenham Hotspur,X. Simons,Premier League,2
-Tottenham Hotspur,B. Davies,Premier League,1
-Tottenham Hotspur,C. Gallagher,Premier League,1
-Tottenham Hotspur,L. Bergvall,Premier League,1
-Tottenham Hotspur,Own Goal,Premier League,1
-Tottenham Hotspur,Pedro Porro,Premier League,1
-Tottenham Hotspur,R. Bentancur,Premier League,1
-Tottenham Hotspur,R. Kolo Muani,Premier League,1
-West Ham United,C. Summerville,FA Cup,2
-West Ham United,J. Bowen,FA Cup,2
-West Ham United,A. Disasi,FA Cup,1
-West Ham United,Mateus Fernandes,FA Cup,1
-West Ham United,V. Castellanos,FA Cup,1
-West Ham United,Lucas Paquetá,League Cup,1
-West Ham United,T. Souček,League Cup,1
-West Ham United,J. Bowen,Premier League,9
-West Ham United,C. Wilson,Premier League,7
-West Ham United,V. Castellanos,Premier League,6
-West Ham United,C. Summerville,Premier League,5
-West Ham United,T. Souček,Premier League,5
-West Ham United,Lucas Paquetá,Premier League,4
-West Ham United,K. Mavropanos,Premier League,3
-West Ham United,Mateus Fernandes,Premier League,3
-West Ham United,Own Goal,Premier League,2
-West Ham United,K. Walker-Peters,Premier League,1
-West Ham United,S. Magassa,Premier League,1
-Wolverhampton Wanderers,J. Strand Larsen,FA Cup,3
-Wolverhampton Wanderers,Hwang Hee-Chan,FA Cup,1
-Wolverhampton Wanderers,J. Arias,FA Cup,1
-Wolverhampton Wanderers,Rodrigo Gomes,FA Cup,1
-Wolverhampton Wanderers,S. Bueno,FA Cup,1
-Wolverhampton Wanderers,T. Arokodare,FA Cup,1
-Wolverhampton Wanderers,D. Møller Wolfe,League Cup,2
-Wolverhampton Wanderers,J. Strand Larsen,League Cup,2
-Wolverhampton Wanderers,T. Arokodare,League Cup,2
-Wolverhampton Wanderers,M. Munetsi,League Cup,1
-Wolverhampton Wanderers,Rodrigo Gomes,League Cup,1
-Wolverhampton Wanderers,Mateus Mané,Premier League,3
-Wolverhampton Wanderers,Rodrigo Gomes,Premier League,3
-Wolverhampton Wanderers,S. Bueno,Premier League,3
-Wolverhampton Wanderers,T. Arokodare,Premier League,3
-Wolverhampton Wanderers,A. Armstrong,Premier League,2
-Wolverhampton Wanderers,Hwang Hee-Chan,Premier League,2
-Wolverhampton Wanderers,L. Krejčí,Premier League,2
-Wolverhampton Wanderers,André,Premier League,1
-Wolverhampton Wanderers,Hugo Bueno,Premier League,1
-Wolverhampton Wanderers,J. Arias,Premier League,1
-Wolverhampton Wanderers,J. Bellegarde,Premier League,1
-Wolverhampton Wanderers,J. Strand Larsen,Premier League,1
-Wolverhampton Wanderers,João Gomes,Premier League,1
-Wolverhampton Wanderers,M. Munetsi,Premier League,1
-Wolverhampton Wanderers,Own Goal,Premier League,1
-Wolverhampton Wanderers,T. Edozie,Premier League,1
+season_label,team_name,player_name,competition,goals
+2025-26,Arsenal,Gabriel Martinelli,Champions League,6
+2025-26,Arsenal,V. Gyökeres,Champions League,5
+2025-26,Arsenal,K. Havertz,Champions League,4
+2025-26,Arsenal,B. Saka,Champions League,3
+2025-26,Arsenal,N. Madueke,Champions League,3
+2025-26,Arsenal,Gabriel Jesus,Champions League,2
+2025-26,Arsenal,Mikel Merino,Champions League,2
+2025-26,Arsenal,D. Rice,Champions League,1
+2025-26,Arsenal,E. Eze,Champions League,1
+2025-26,Arsenal,Gabriel Magalhães,Champions League,1
+2025-26,Arsenal,J. Timber,Champions League,1
+2025-26,Arsenal,L. Trossard,Champions League,1
+2025-26,Arsenal,C. Nørgaard,Club Friendlies,1
+2025-26,Arsenal,M. Ødegaard,Club Friendlies,1
+2025-26,Arsenal,Gabriel Martinelli,FA Cup,4
+2025-26,Arsenal,N. Madueke,FA Cup,2
+2025-26,Arsenal,Own Goal,FA Cup,2
+2025-26,Arsenal,E. Eze,FA Cup,1
+2025-26,Arsenal,Gabriel Jesus,FA Cup,1
+2025-26,Arsenal,V. Gyökeres,FA Cup,1
+2025-26,Arsenal,B. Saka,League Cup,1
+2025-26,Arsenal,B. White,League Cup,1
+2025-26,Arsenal,E. Eze,League Cup,1
+2025-26,Arsenal,E. Nwaneri,League Cup,1
+2025-26,Arsenal,K. Havertz,League Cup,1
+2025-26,Arsenal,L. Trossard,League Cup,1
+2025-26,Arsenal,Martín Zubimendi,League Cup,1
+2025-26,Arsenal,Own Goal,League Cup,1
+2025-26,Arsenal,V. Gyökeres,League Cup,1
+2025-26,Arsenal,B. Saka,Other,1
+2025-26,Arsenal,K. Havertz,Other,1
+2025-26,Arsenal,V. Gyökeres,Other,1
+2025-26,Arsenal,V. Gyökeres,Premier League,14
+2025-26,Arsenal,B. Saka,Premier League,7
+2025-26,Arsenal,E. Eze,Premier League,7
+2025-26,Arsenal,L. Trossard,Premier League,6
+2025-26,Arsenal,Martín Zubimendi,Premier League,5
+2025-26,Arsenal,D. Rice,Premier League,4
+2025-26,Arsenal,Mikel Merino,Premier League,4
+2025-26,Arsenal,Own Goal,Premier League,4
+2025-26,Arsenal,Gabriel Jesus,Premier League,3
+2025-26,Arsenal,Gabriel Magalhães,Premier League,3
+2025-26,Arsenal,J. Timber,Premier League,3
+2025-26,Arsenal,N. Madueke,Premier League,3
+2025-26,Arsenal,K. Havertz,Premier League,2
+2025-26,Arsenal,Gabriel Martinelli,Premier League,1
+2025-26,Arsenal,M. Dowman,Premier League,1
+2025-26,Arsenal,M. Ødegaard,Premier League,1
+2025-26,Arsenal,P. Hincapié,Premier League,1
+2025-26,Arsenal,R. Calafiori,Premier League,1
+2025-26,Arsenal,W. Saliba,Premier League,1
+2025-26,Aston Villa,D. Malen,Club Friendlies,1
+2025-26,Aston Villa,E. Buendía,Club Friendlies,1
+2025-26,Aston Villa,J. Ramsey,Club Friendlies,1
+2025-26,Aston Villa,O. Watkins,Club Friendlies,1
+2025-26,Aston Villa,J. McGinn,Europa League,5
+2025-26,Aston Villa,O. Watkins,Europa League,5
+2025-26,Aston Villa,E. Buendía,Europa League,4
+2025-26,Aston Villa,D. Malen,Europa League,3
+2025-26,Aston Villa,M. Rogers,Europa League,3
+2025-26,Aston Villa,E. Guessand,Europa League,2
+2025-26,Aston Villa,E. Konsa,Europa League,2
+2025-26,Aston Villa,Y. Tielemans,Europa League,2
+2025-26,Aston Villa,I. Maatsen,Europa League,1
+2025-26,Aston Villa,J. Jimoh-Aloba,Europa League,1
+2025-26,Aston Villa,J. Sancho,Europa League,1
+2025-26,Aston Villa,L. Bailey,Europa League,1
+2025-26,Aston Villa,T. Mings,Europa League,1
+2025-26,Aston Villa,E. Buendía,FA Cup,1
+2025-26,Aston Villa,M. Rogers,FA Cup,1
+2025-26,Aston Villa,T. Abraham,FA Cup,1
+2025-26,Aston Villa,H. Elliott,League Cup,1
+2025-26,Aston Villa,O. Watkins,Premier League,16
+2025-26,Aston Villa,M. Rogers,Premier League,10
+2025-26,Aston Villa,E. Buendía,Premier League,6
+2025-26,Aston Villa,J. McGinn,Premier League,5
+2025-26,Aston Villa,D. Malen,Premier League,4
+2025-26,Aston Villa,M. Cash,Premier League,3
+2025-26,Aston Villa,Own Goal,Premier League,3
+2025-26,Aston Villa,R. Barkley,Premier League,3
+2025-26,Aston Villa,A. Onana,Premier League,2
+2025-26,Aston Villa,T. Abraham,Premier League,2
+2025-26,Aston Villa,B. Kamara,Premier League,1
+2025-26,Aston Villa,Douglas Luiz,Premier League,1
+2025-26,Bournemouth,A. Scott,FA Cup,1
+2025-26,Bournemouth,D. Brooks,FA Cup,1
+2025-26,Bournemouth,M. Tavernier,FA Cup,1
+2025-26,Bournemouth,J. Kroupi,Premier League,13
+2025-26,Bournemouth,A. Semenyo,Premier League,10
+2025-26,Bournemouth,M. Tavernier,Premier League,7
+2025-26,Bournemouth,Evanilson,Premier League,6
+2025-26,Bournemouth,Rayan,Premier League,5
+2025-26,Bournemouth,A. Adli,Premier League,3
+2025-26,Bournemouth,A. Scott,Premier League,3
+2025-26,Bournemouth,J. Kluivert,Premier League,2
+2025-26,Bournemouth,R. Christie,Premier League,2
+2025-26,Bournemouth,T. Adams,Premier League,2
+2025-26,Bournemouth,A. Truffert,Premier League,1
+2025-26,Bournemouth,D. Brooks,Premier League,1
+2025-26,Bournemouth,E. Ünal,Premier League,1
+2025-26,Bournemouth,Own Goal,Premier League,1
+2025-26,Bournemouth,Álex Jiménez,Premier League,1
+2025-26,Brentford,Fábio Carvalho,Club Friendlies,1
+2025-26,Brentford,M. Damsgaard,Club Friendlies,1
+2025-26,Brentford,N. Collins,Club Friendlies,1
+2025-26,Brentford,Igor Thiago,FA Cup,2
+2025-26,Brentford,K. Lewis-Potter,FA Cup,1
+2025-26,Brentford,M. Jensen,FA Cup,1
+2025-26,Brentford,Own Goal,FA Cup,1
+2025-26,Brentford,Fábio Carvalho,League Cup,2
+2025-26,Brentford,A. Hickey,League Cup,1
+2025-26,Brentford,Igor Thiago,League Cup,1
+2025-26,Brentford,K. Lewis-Potter,League Cup,1
+2025-26,Brentford,M. Jensen,League Cup,1
+2025-26,Brentford,N. Collins,League Cup,1
+2025-26,Brentford,R. Nelson,League Cup,1
+2025-26,Brentford,Igor Thiago,Premier League,22
+2025-26,Brentford,K. Schade,Premier League,8
+2025-26,Brentford,D. Ouattara,Premier League,7
+2025-26,Brentford,M. Damsgaard,Premier League,4
+2025-26,Brentford,K. Lewis-Potter,Premier League,3
+2025-26,Brentford,M. Jensen,Premier League,3
+2025-26,Brentford,Own Goal,Premier League,2
+2025-26,Brentford,Fábio Carvalho,Premier League,1
+2025-26,Brentford,J. Henderson,Premier League,1
+2025-26,Brentford,M. Kayode,Premier League,1
+2025-26,Brentford,N. Collins,Premier League,1
+2025-26,Brentford,V. Janelt,Premier League,1
+2025-26,Brentford,Y. Yarmoliuk,Premier League,1
+2025-26,Brighton & Hove Albion,B. Gruda,FA Cup,1
+2025-26,Brighton & Hove Albion,D. Welbeck,FA Cup,1
+2025-26,Brighton & Hove Albion,D. Gómez,League Cup,5
+2025-26,Brighton & Hove Albion,S. Tzimas,League Cup,2
+2025-26,Brighton & Hove Albion,B. Gruda,League Cup,1
+2025-26,Brighton & Hove Albion,H. Howell,League Cup,1
+2025-26,Brighton & Hove Albion,O. Boscagli,League Cup,1
+2025-26,Brighton & Hove Albion,T. Watson,League Cup,1
+2025-26,Brighton & Hove Albion,Y. Ayari,League Cup,1
+2025-26,Brighton & Hove Albion,D. Welbeck,Premier League,13
+2025-26,Brighton & Hove Albion,D. Gómez,Premier League,5
+2025-26,Brighton & Hove Albion,J. Hinshelwood,Premier League,4
+2025-26,Brighton & Hove Albion,G. Rutter,Premier League,3
+2025-26,Brighton & Hove Albion,J. van Hecke,Premier League,3
+2025-26,Brighton & Hove Albion,K. Mitoma,Premier League,3
+2025-26,Brighton & Hove Albion,Y. Ayari,Premier League,3
+2025-26,Brighton & Hove Albion,Y. Minteh,Premier League,3
+2025-26,Brighton & Hove Albion,C. Kostoulas,Premier League,2
+2025-26,Brighton & Hove Albion,M. De Cuyper,Premier League,2
+2025-26,Brighton & Hove Albion,M. Wieffer,Premier League,2
+2025-26,Brighton & Hove Albion,B. Gruda,Premier League,1
+2025-26,Brighton & Hove Albion,F. Kadıoğlu,Premier League,1
+2025-26,Brighton & Hove Albion,J. Milner,Premier League,1
+2025-26,Brighton & Hove Albion,J. Veltman,Premier League,1
+2025-26,Brighton & Hove Albion,L. Dunk,Premier League,1
+2025-26,Brighton & Hove Albion,M. O'Riley,Premier League,1
+2025-26,Brighton & Hove Albion,Own Goal,Premier League,1
+2025-26,Brighton & Hove Albion,P. Groß,Premier League,1
+2025-26,Brighton & Hove Albion,S. Tzimas,Premier League,1
+2025-26,Burnley,A. Barnes,FA Cup,2
+2025-26,Burnley,J. Anthony,FA Cup,1
+2025-26,Burnley,J. Banel,FA Cup,1
+2025-26,Burnley,J. Laurent,FA Cup,1
+2025-26,Burnley,L. Tchaouna,FA Cup,1
+2025-26,Burnley,A. Ramsey,League Cup,1
+2025-26,Burnley,O. Sonne,League Cup,1
+2025-26,Burnley,Z. Flemming,League Cup,1
+2025-26,Burnley,Z. Flemming,Premier League,11
+2025-26,Burnley,J. Anthony,Premier League,8
+2025-26,Burnley,L. Foster,Premier League,3
+2025-26,Burnley,L. Ugochukwu,Premier League,3
+2025-26,Burnley,Own Goal,Premier League,3
+2025-26,Burnley,J. Cullen,Premier League,2
+2025-26,Burnley,L. Tchaouna,Premier League,2
+2025-26,Burnley,A. Broja,Premier League,1
+2025-26,Burnley,A. Tuanzebe,Premier League,1
+2025-26,Burnley,H. Mejbri,Premier League,1
+2025-26,Burnley,J. Laurent,Premier League,1
+2025-26,Burnley,M. Edwards,Premier League,1
+2025-26,Burnley,O. Sonne,Premier League,1
+2025-26,Chelsea,E. Fernández,Champions League,3
+2025-26,Chelsea,Estêvão,Champions League,3
+2025-26,Chelsea,João Pedro,Champions League,3
+2025-26,Chelsea,M. Caicedo,Champions League,2
+2025-26,Chelsea,Own Goal,Champions League,2
+2025-26,Chelsea,A. Garnacho,Champions League,1
+2025-26,Chelsea,C. Palmer,Champions League,1
+2025-26,Chelsea,L. Delap,Champions League,1
+2025-26,Chelsea,M. Gusto,Champions League,1
+2025-26,Chelsea,Marc Guiu,Champions League,1
+2025-26,Chelsea,T. George,Champions League,1
+2025-26,Chelsea,João Pedro,Club Friendlies,2
+2025-26,Chelsea,L. Delap,Club Friendlies,2
+2025-26,Chelsea,Estêvão,Club Friendlies,1
+2025-26,Chelsea,Own Goal,Club Friendlies,1
+2025-26,Chelsea,Pedro Neto,FA Cup,4
+2025-26,Chelsea,A. Garnacho,FA Cup,2
+2025-26,Chelsea,E. Fernández,FA Cup,2
+2025-26,Chelsea,Estêvão,FA Cup,2
+2025-26,Chelsea,J. Hato,FA Cup,2
+2025-26,Chelsea,João Pedro,FA Cup,2
+2025-26,Chelsea,Own Goal,FA Cup,2
+2025-26,Chelsea,T. Adarabioyo,FA Cup,2
+2025-26,Chelsea,Andrey Santos,FA Cup,1
+2025-26,Chelsea,J. Acheampong,FA Cup,1
+2025-26,Chelsea,Marc Guiu,FA Cup,1
+2025-26,Chelsea,A. Garnacho,League Cup,4
+2025-26,Chelsea,T. George,League Cup,2
+2025-26,Chelsea,Andrey Santos,League Cup,1
+2025-26,Chelsea,Estêvão,League Cup,1
+2025-26,Chelsea,F. Buonanotte,League Cup,1
+2025-26,Chelsea,J. Gittens,League Cup,1
+2025-26,Chelsea,Pedro Neto,League Cup,1
+2025-26,Chelsea,João Pedro,Premier League,15
+2025-26,Chelsea,C. Palmer,Premier League,10
+2025-26,Chelsea,E. Fernández,Premier League,10
+2025-26,Chelsea,Pedro Neto,Premier League,5
+2025-26,Chelsea,M. Caicedo,Premier League,3
+2025-26,Chelsea,T. Chalobah,Premier League,3
+2025-26,Chelsea,Estêvão,Premier League,2
+2025-26,Chelsea,M. Gusto,Premier League,2
+2025-26,Chelsea,R. James,Premier League,2
+2025-26,Chelsea,A. Garnacho,Premier League,1
+2025-26,Chelsea,Andrey Santos,Premier League,1
+2025-26,Chelsea,J. Acheampong,Premier League,1
+2025-26,Chelsea,L. Delap,Premier League,1
+2025-26,Chelsea,Marc Cucurella,Premier League,1
+2025-26,Chelsea,Own Goal,Premier League,1
+2025-26,Crystal Palace,J. Mateta,Club Friendlies,2
+2025-26,Crystal Palace,E. Eze,Club Friendlies,1
+2025-26,Crystal Palace,I. Sarr,Community Shield,1
+2025-26,Crystal Palace,J. Mateta,Community Shield,1
+2025-26,Crystal Palace,I. Sarr,Conference League,9
+2025-26,Crystal Palace,J. Mateta,Conference League,3
+2025-26,Crystal Palace,C. Uche,Conference League,2
+2025-26,Crystal Palace,E. Nketiah,Conference League,2
+2025-26,Crystal Palace,M. Lacroix,Conference League,2
+2025-26,Crystal Palace,T. Mitchell,Conference League,2
+2025-26,Crystal Palace,D. Kamada,Conference League,1
+2025-26,Crystal Palace,D. Muñoz,Conference League,1
+2025-26,Crystal Palace,E. Guessand,Conference League,1
+2025-26,Crystal Palace,J. Devenny,Conference League,1
+2025-26,Crystal Palace,J. Strand Larsen,Conference League,1
+2025-26,Crystal Palace,Own Goal,Conference League,1
+2025-26,Crystal Palace,Yéremy Pino,Conference League,1
+2025-26,Crystal Palace,Yéremy Pino,FA Cup,1
+2025-26,Crystal Palace,I. Sarr,League Cup,2
+2025-26,Crystal Palace,C. Richards,League Cup,1
+2025-26,Crystal Palace,M. Guéhi,League Cup,1
+2025-26,Crystal Palace,Yéremy Pino,League Cup,1
+2025-26,Crystal Palace,J. Mateta,Premier League,12
+2025-26,Crystal Palace,I. Sarr,Premier League,9
+2025-26,Crystal Palace,D. Muñoz,Premier League,4
+2025-26,Crystal Palace,J. Strand Larsen,Premier League,3
+2025-26,Crystal Palace,E. Nketiah,Premier League,2
+2025-26,Crystal Palace,M. Guéhi,Premier League,2
+2025-26,Crystal Palace,Yéremy Pino,Premier League,2
+2025-26,Crystal Palace,A. Wharton,Premier League,1
+2025-26,Crystal Palace,C. Richards,Premier League,1
+2025-26,Crystal Palace,E. Guessand,Premier League,1
+2025-26,Crystal Palace,J. Devenny,Premier League,1
+2025-26,Crystal Palace,M. Lacroix,Premier League,1
+2025-26,Crystal Palace,Own Goal,Premier League,1
+2025-26,Crystal Palace,T. Mitchell,Premier League,1
+2025-26,Everton,J. Garner,FA Cup,1
+2025-26,Everton,Beto,League Cup,1
+2025-26,Everton,C. Alcaraz,League Cup,1
+2025-26,Everton,Beto,Premier League,9
+2025-26,Everton,K. Dewsbury-Hall,Premier League,8
+2025-26,Everton,T. Barry,Premier League,8
+2025-26,Everton,I. Ndiaye,Premier League,6
+2025-26,Everton,M. Keane,Premier League,3
+2025-26,Everton,I. Gueye,Premier League,2
+2025-26,Everton,J. Garner,Premier League,2
+2025-26,Everton,J. Grealish,Premier League,2
+2025-26,Everton,J. Tarkowski,Premier League,2
+2025-26,Everton,Own Goal,Premier League,2
+2025-26,Everton,J. Branthwaite,Premier League,1
+2025-26,Everton,J. O'Brien,Premier League,1
+2025-26,Everton,M. Röhl,Premier League,1
+2025-26,Fulham,Kevin,FA Cup,2
+2025-26,Fulham,E. Smith Rowe,FA Cup,1
+2025-26,Fulham,H. Reed,FA Cup,1
+2025-26,Fulham,H. Wilson,FA Cup,1
+2025-26,Fulham,E. Smith Rowe,League Cup,1
+2025-26,Fulham,J. King,League Cup,1
+2025-26,Fulham,Own Goal,League Cup,1
+2025-26,Fulham,R. Jiménez,League Cup,1
+2025-26,Fulham,S. Lukić,League Cup,1
+2025-26,Fulham,H. Wilson,Premier League,10
+2025-26,Fulham,R. Jiménez,Premier League,9
+2025-26,Fulham,A. Iwobi,Premier League,4
+2025-26,Fulham,Own Goal,Premier League,4
+2025-26,Fulham,E. Smith Rowe,Premier League,3
+2025-26,Fulham,R. Sessegnon,Premier League,3
+2025-26,Fulham,S. Chukwueze,Premier League,3
+2025-26,Fulham,T. Cairney,Premier League,2
+2025-26,Fulham,A. Robinson,Premier League,1
+2025-26,Fulham,C. Bassey,Premier League,1
+2025-26,Fulham,H. Reed,Premier League,1
+2025-26,Fulham,I. Diop,Premier League,1
+2025-26,Fulham,J. King,Premier League,1
+2025-26,Fulham,K. Tete,Premier League,1
+2025-26,Fulham,Kevin,Premier League,1
+2025-26,Fulham,Rodrigo Muniz,Premier League,1
+2025-26,Fulham,S. Lukić,Premier League,1
+2025-26,Leeds United,A. Stach,Club Friendlies,1
+2025-26,Leeds United,A. Tanaka,FA Cup,2
+2025-26,Leeds United,D. Calvert-Lewin,FA Cup,1
+2025-26,Leeds United,G. Gudmundsson,FA Cup,1
+2025-26,Leeds United,J. Justin,FA Cup,1
+2025-26,Leeds United,J. Piroe,FA Cup,1
+2025-26,Leeds United,L. Nmecha,FA Cup,1
+2025-26,Leeds United,S. Longstaff,FA Cup,1
+2025-26,Leeds United,W. Gnonto,FA Cup,1
+2025-26,Leeds United,J. Bogle,League Cup,1
+2025-26,Leeds United,D. Calvert-Lewin,Premier League,14
+2025-26,Leeds United,N. Okafor,Premier League,8
+2025-26,Leeds United,L. Nmecha,Premier League,6
+2025-26,Leeds United,A. Stach,Premier League,5
+2025-26,Leeds United,B. Aaronson,Premier League,4
+2025-26,Leeds United,A. Tanaka,Premier League,2
+2025-26,Leeds United,J. Justin,Premier League,2
+2025-26,Leeds United,J. Rodon,Premier League,2
+2025-26,Leeds United,S. Longstaff,Premier League,2
+2025-26,Leeds United,E. Ampadu,Premier League,1
+2025-26,Leeds United,J. Bijol,Premier League,1
+2025-26,Leeds United,J. Bogle,Premier League,1
+2025-26,Leeds United,Own Goal,Premier League,1
+2025-26,Liverpool,D. Szoboszlai,Champions League,5
+2025-26,Liverpool,A. Mac Allister,Champions League,3
+2025-26,Liverpool,H. Ekitiké,Champions League,3
+2025-26,Liverpool,Mohamed Salah,Champions League,3
+2025-26,Liverpool,C. Gakpo,Champions League,2
+2025-26,Liverpool,V. van Dijk,Champions League,2
+2025-26,Liverpool,A. Robertson,Champions League,1
+2025-26,Liverpool,F. Chiesa,Champions League,1
+2025-26,Liverpool,F. Wirtz,Champions League,1
+2025-26,Liverpool,I. Konaté,Champions League,1
+2025-26,Liverpool,Own Goal,Champions League,1
+2025-26,Liverpool,R. Gravenberch,Champions League,1
+2025-26,Liverpool,C. Gakpo,Club Friendlies,2
+2025-26,Liverpool,D. Núñez,Club Friendlies,1
+2025-26,Liverpool,H. Elliott,Club Friendlies,1
+2025-26,Liverpool,Mohamed Salah,Club Friendlies,1
+2025-26,Liverpool,Own Goal,Club Friendlies,1
+2025-26,Liverpool,R. Ngumoha,Club Friendlies,1
+2025-26,Liverpool,H. Ekitiké,Community Shield,1
+2025-26,Liverpool,J. Frimpong,Community Shield,1
+2025-26,Liverpool,C. Jones,FA Cup,2
+2025-26,Liverpool,D. Szoboszlai,FA Cup,2
+2025-26,Liverpool,Mohamed Salah,FA Cup,2
+2025-26,Liverpool,A. Robertson,FA Cup,1
+2025-26,Liverpool,F. Wirtz,FA Cup,1
+2025-26,Liverpool,H. Ekitiké,FA Cup,1
+2025-26,Liverpool,J. Frimpong,FA Cup,1
+2025-26,Liverpool,A. Isak,League Cup,1
+2025-26,Liverpool,H. Ekitiké,League Cup,1
+2025-26,Liverpool,H. Ekitiké,Premier League,11
+2025-26,Liverpool,C. Gakpo,Premier League,7
+2025-26,Liverpool,Mohamed Salah,Premier League,7
+2025-26,Liverpool,D. Szoboszlai,Premier League,6
+2025-26,Liverpool,V. van Dijk,Premier League,6
+2025-26,Liverpool,F. Wirtz,Premier League,5
+2025-26,Liverpool,R. Gravenberch,Premier League,5
+2025-26,Liverpool,A. Isak,Premier League,3
+2025-26,Liverpool,A. Mac Allister,Premier League,2
+2025-26,Liverpool,F. Chiesa,Premier League,2
+2025-26,Liverpool,M. Kerkez,Premier League,2
+2025-26,Liverpool,Own Goal,Premier League,2
+2025-26,Liverpool,R. Ngumoha,Premier League,2
+2025-26,Liverpool,A. Robertson,Premier League,1
+2025-26,Liverpool,C. Jones,Premier League,1
+2025-26,Liverpool,I. Konaté,Premier League,1
+2025-26,Manchester City,E. Haaland,Champions League,8
+2025-26,Manchester City,R. Cherki,Champions League,3
+2025-26,Manchester City,P. Foden,Champions League,2
+2025-26,Manchester City,Bernardo Silva,Champions League,1
+2025-26,Manchester City,J. Doku,Champions League,1
+2025-26,Manchester City,N. O'Reilly,Champions League,1
+2025-26,Manchester City,T. Reijnders,Club Friendlies,2
+2025-26,Manchester City,E. Haaland,Club Friendlies,1
+2025-26,Manchester City,A. Semenyo,FA Cup,3
+2025-26,Manchester City,E. Haaland,FA Cup,3
+2025-26,Manchester City,Own Goal,FA Cup,3
+2025-26,Manchester City,Omar Marmoush,FA Cup,2
+2025-26,Manchester City,R. Lewis,FA Cup,2
+2025-26,Manchester City,J. Doku,FA Cup,1
+2025-26,Manchester City,M. Alleyne,FA Cup,1
+2025-26,Manchester City,M. Guéhi,FA Cup,1
+2025-26,Manchester City,N. O'Reilly,FA Cup,1
+2025-26,Manchester City,Nico González,FA Cup,1
+2025-26,Manchester City,R. McAidoo,FA Cup,1
+2025-26,Manchester City,Rodri,FA Cup,1
+2025-26,Manchester City,Savinho,FA Cup,1
+2025-26,Manchester City,T. Reijnders,FA Cup,1
+2025-26,Manchester City,Omar Marmoush,League Cup,3
+2025-26,Manchester City,R. Cherki,League Cup,3
+2025-26,Manchester City,N. O'Reilly,League Cup,2
+2025-26,Manchester City,Savinho,League Cup,2
+2025-26,Manchester City,A. Semenyo,League Cup,1
+2025-26,Manchester City,J. Doku,League Cup,1
+2025-26,Manchester City,P. Foden,League Cup,1
+2025-26,Manchester City,T. Reijnders,League Cup,1
+2025-26,Manchester City,E. Haaland,Premier League,27
+2025-26,Manchester City,A. Semenyo,Premier League,7
+2025-26,Manchester City,P. Foden,Premier League,7
+2025-26,Manchester City,J. Doku,Premier League,5
+2025-26,Manchester City,N. O'Reilly,Premier League,5
+2025-26,Manchester City,T. Reijnders,Premier League,5
+2025-26,Manchester City,R. Cherki,Premier League,4
+2025-26,Manchester City,Omar Marmoush,Premier League,3
+2025-26,Manchester City,Own Goal,Premier League,3
+2025-26,Manchester City,Bernardo Silva,Premier League,2
+2025-26,Manchester City,J. Gvardiol,Premier League,2
+2025-26,Manchester City,Rúben Dias,Premier League,2
+2025-26,Manchester City,M. Guéhi,Premier League,1
+2025-26,Manchester City,Matheus Nunes,Premier League,1
+2025-26,Manchester City,Nico González,Premier League,1
+2025-26,Manchester City,Rodri,Premier League,1
+2025-26,Manchester City,Savinho,Premier League,1
+2025-26,Manchester United,Own Goal,Club Friendlies,1
+2025-26,Manchester United,B. Šeško,FA Cup,1
+2025-26,Manchester United,B. Mbeumo,League Cup,1
+2025-26,Manchester United,H. Maguire,League Cup,1
+2025-26,Manchester United,B. Mbeumo,Premier League,11
+2025-26,Manchester United,B. Šeško,Premier League,11
+2025-26,Manchester United,Matheus Cunha,Premier League,10
+2025-26,Manchester United,Bruno Fernandes,Premier League,9
+2025-26,Manchester United,Casemiro,Premier League,9
+2025-26,Manchester United,P. Dorgu,Premier League,4
+2025-26,Manchester United,M. Mount,Premier League,3
+2025-26,Manchester United,Own Goal,Premier League,3
+2025-26,Manchester United,A. Diallo,Premier League,2
+2025-26,Manchester United,J. Zirkzee,Premier League,2
+2025-26,Manchester United,Diogo Dalot,Premier League,1
+2025-26,Manchester United,H. Maguire,Premier League,1
+2025-26,Manchester United,K. Mainoo,Premier League,1
+2025-26,Manchester United,L. Shaw,Premier League,1
+2025-26,Manchester United,M. de Ligt,Premier League,1
+2025-26,Newcastle United,A. Gordon,Champions League,10
+2025-26,Newcastle United,H. Barnes,Champions League,6
+2025-26,Newcastle United,A. Elanga,Champions League,2
+2025-26,Newcastle United,Joelinton,Champions League,2
+2025-26,Newcastle United,D. Burn,Champions League,1
+2025-26,Newcastle United,J. Murphy,Champions League,1
+2025-26,Newcastle United,J. Willock,Champions League,1
+2025-26,Newcastle United,L. Miley,Champions League,1
+2025-26,Newcastle United,M. Thiaw,Champions League,1
+2025-26,Newcastle United,N. Woltemade,Champions League,1
+2025-26,Newcastle United,S. Botman,Champions League,1
+2025-26,Newcastle United,S. Tonali,Champions League,1
+2025-26,Newcastle United,Y. Wissa,Champions League,1
+2025-26,Newcastle United,H. Barnes,Club Friendlies,1
+2025-26,Newcastle United,J. Murphy,Club Friendlies,1
+2025-26,Newcastle United,M. Targett,Club Friendlies,1
+2025-26,Newcastle United,H. Barnes,FA Cup,3
+2025-26,Newcastle United,S. Tonali,FA Cup,2
+2025-26,Newcastle United,A. Gordon,FA Cup,1
+2025-26,Newcastle United,N. Woltemade,FA Cup,1
+2025-26,Newcastle United,Joelinton,League Cup,2
+2025-26,Newcastle United,W. Osula,League Cup,2
+2025-26,Newcastle United,A. Elanga,League Cup,1
+2025-26,Newcastle United,F. Schär,League Cup,1
+2025-26,Newcastle United,L. Miley,League Cup,1
+2025-26,Newcastle United,N. Woltemade,League Cup,1
+2025-26,Newcastle United,Y. Wissa,League Cup,1
+2025-26,Newcastle United,Bruno Guimarães,Premier League,9
+2025-26,Newcastle United,N. Woltemade,Premier League,8
+2025-26,Newcastle United,H. Barnes,Premier League,7
+2025-26,Newcastle United,W. Osula,Premier League,7
+2025-26,Newcastle United,A. Gordon,Premier League,6
+2025-26,Newcastle United,M. Thiaw,Premier League,4
+2025-26,Newcastle United,J. Murphy,Premier League,3
+2025-26,Newcastle United,J. Ramsey,Premier League,2
+2025-26,Newcastle United,Joelinton,Premier League,2
+2025-26,Newcastle United,D. Burn,Premier League,1
+2025-26,Newcastle United,L. Hall,Premier League,1
+2025-26,Newcastle United,L. Miley,Premier League,1
+2025-26,Newcastle United,S. Botman,Premier League,1
+2025-26,Newcastle United,Y. Wissa,Premier League,1
+2025-26,Nottingham Forest,Igor Jesus,Europa League,7
+2025-26,Nottingham Forest,M. Gibbs-White,Europa League,3
+2025-26,Nottingham Forest,A. Kalimuendo,Europa League,2
+2025-26,Nottingham Forest,C. Wood,Europa League,2
+2025-26,Nottingham Forest,Own Goal,Europa League,2
+2025-26,Nottingham Forest,R. Yates,Europa League,2
+2025-26,Nottingham Forest,C. Hudson-Odoi,Europa League,1
+2025-26,Nottingham Forest,D. Ndoye,Europa League,1
+2025-26,Nottingham Forest,J. McAtee,Europa League,1
+2025-26,Nottingham Forest,Murillo,Europa League,1
+2025-26,Nottingham Forest,N. Domínguez,Europa League,1
+2025-26,Nottingham Forest,N. Milenković,Europa League,1
+2025-26,Nottingham Forest,C. Hudson-Odoi,FA Cup,2
+2025-26,Nottingham Forest,Igor Jesus,FA Cup,1
+2025-26,Nottingham Forest,Igor Jesus,League Cup,2
+2025-26,Nottingham Forest,M. Gibbs-White,Premier League,15
+2025-26,Nottingham Forest,Igor Jesus,Premier League,6
+2025-26,Nottingham Forest,E. Anderson,Premier League,4
+2025-26,Nottingham Forest,T. Awoniyi,Premier League,4
+2025-26,Nottingham Forest,C. Hudson-Odoi,Premier League,3
+2025-26,Nottingham Forest,C. Wood,Premier League,3
+2025-26,Nottingham Forest,I. Sangaré,Premier League,2
+2025-26,Nottingham Forest,N. Savona,Premier League,2
+2025-26,Nottingham Forest,N. Williams,Premier League,2
+2025-26,Nottingham Forest,D. Ndoye,Premier League,1
+2025-26,Nottingham Forest,L. Lucca,Premier League,1
+2025-26,Nottingham Forest,Morato,Premier League,1
+2025-26,Nottingham Forest,Murillo,Premier League,1
+2025-26,Nottingham Forest,N. Domínguez,Premier League,1
+2025-26,Nottingham Forest,O. Hutchinson,Premier League,1
+2025-26,Nottingham Forest,Own Goal,Premier League,1
+2025-26,Sunderland,E. Le Fée,FA Cup,1
+2025-26,Sunderland,H. Diarra,FA Cup,1
+2025-26,Sunderland,Marc Guiu,League Cup,1
+2025-26,Sunderland,B. Brobbey,Premier League,7
+2025-26,Sunderland,W. Isidor,Premier League,6
+2025-26,Sunderland,E. Le Fée,Premier League,5
+2025-26,Sunderland,C. Talbi,Premier League,4
+2025-26,Sunderland,Own Goal,Premier League,4
+2025-26,Sunderland,N. Mukiele,Premier League,3
+2025-26,Sunderland,D. Ballard,Premier League,2
+2025-26,Sunderland,Eliezer Mayenda,Premier League,2
+2025-26,Sunderland,H. Diarra,Premier League,2
+2025-26,Sunderland,T. Hume,Premier League,2
+2025-26,Sunderland,B. Traoré,Premier League,1
+2025-26,Sunderland,C. Rigg,Premier League,1
+2025-26,Sunderland,G. Xhaka,Premier League,1
+2025-26,Sunderland,O. Alderete,Premier League,1
+2025-26,Sunderland,S. Adingra,Premier League,1
+2025-26,Tottenham Hotspur,R. Kolo Muani,Champions League,4
+2025-26,Tottenham Hotspur,D. Solanke,Champions League,3
+2025-26,Tottenham Hotspur,Own Goal,Champions League,3
+2025-26,Tottenham Hotspur,X. Simons,Champions League,3
+2025-26,Tottenham Hotspur,M. van de Ven,Champions League,2
+2025-26,Tottenham Hotspur,B. Johnson,Champions League,1
+2025-26,Tottenham Hotspur,C. Romero,Champions League,1
+2025-26,Tottenham Hotspur,João Palhinha,Champions League,1
+2025-26,Tottenham Hotspur,M. Kudus,Champions League,1
+2025-26,Tottenham Hotspur,Pedro Porro,Champions League,1
+2025-26,Tottenham Hotspur,Richarlison,Champions League,1
+2025-26,Tottenham Hotspur,W. Odobert,Champions League,1
+2025-26,Tottenham Hotspur,B. Johnson,Club Friendlies,1
+2025-26,Tottenham Hotspur,W. Odobert,FA Cup,1
+2025-26,Tottenham Hotspur,B. Johnson,League Cup,1
+2025-26,Tottenham Hotspur,João Palhinha,League Cup,1
+2025-26,Tottenham Hotspur,Own Goal,League Cup,1
+2025-26,Tottenham Hotspur,C. Romero,Other,1
+2025-26,Tottenham Hotspur,M. van de Ven,Other,1
+2025-26,Tottenham Hotspur,Richarlison,Premier League,11
+2025-26,Tottenham Hotspur,João Palhinha,Premier League,5
+2025-26,Tottenham Hotspur,C. Romero,Premier League,4
+2025-26,Tottenham Hotspur,M. Tel,Premier League,4
+2025-26,Tottenham Hotspur,M. van de Ven,Premier League,4
+2025-26,Tottenham Hotspur,D. Solanke,Premier League,3
+2025-26,Tottenham Hotspur,A. Gray,Premier League,2
+2025-26,Tottenham Hotspur,B. Johnson,Premier League,2
+2025-26,Tottenham Hotspur,M. Kudus,Premier League,2
+2025-26,Tottenham Hotspur,P. Sarr,Premier League,2
+2025-26,Tottenham Hotspur,X. Simons,Premier League,2
+2025-26,Tottenham Hotspur,B. Davies,Premier League,1
+2025-26,Tottenham Hotspur,C. Gallagher,Premier League,1
+2025-26,Tottenham Hotspur,L. Bergvall,Premier League,1
+2025-26,Tottenham Hotspur,Own Goal,Premier League,1
+2025-26,Tottenham Hotspur,Pedro Porro,Premier League,1
+2025-26,Tottenham Hotspur,R. Bentancur,Premier League,1
+2025-26,Tottenham Hotspur,R. Kolo Muani,Premier League,1
+2025-26,West Ham United,C. Summerville,FA Cup,2
+2025-26,West Ham United,J. Bowen,FA Cup,2
+2025-26,West Ham United,A. Disasi,FA Cup,1
+2025-26,West Ham United,Mateus Fernandes,FA Cup,1
+2025-26,West Ham United,V. Castellanos,FA Cup,1
+2025-26,West Ham United,Lucas Paquetá,League Cup,1
+2025-26,West Ham United,T. Souček,League Cup,1
+2025-26,West Ham United,J. Bowen,Premier League,9
+2025-26,West Ham United,C. Wilson,Premier League,7
+2025-26,West Ham United,V. Castellanos,Premier League,6
+2025-26,West Ham United,C. Summerville,Premier League,5
+2025-26,West Ham United,T. Souček,Premier League,5
+2025-26,West Ham United,Lucas Paquetá,Premier League,4
+2025-26,West Ham United,K. Mavropanos,Premier League,3
+2025-26,West Ham United,Mateus Fernandes,Premier League,3
+2025-26,West Ham United,Own Goal,Premier League,2
+2025-26,West Ham United,K. Walker-Peters,Premier League,1
+2025-26,West Ham United,S. Magassa,Premier League,1
+2025-26,Wolverhampton Wanderers,J. Strand Larsen,FA Cup,3
+2025-26,Wolverhampton Wanderers,Hwang Hee-Chan,FA Cup,1
+2025-26,Wolverhampton Wanderers,J. Arias,FA Cup,1
+2025-26,Wolverhampton Wanderers,Rodrigo Gomes,FA Cup,1
+2025-26,Wolverhampton Wanderers,S. Bueno,FA Cup,1
+2025-26,Wolverhampton Wanderers,T. Arokodare,FA Cup,1
+2025-26,Wolverhampton Wanderers,D. Møller Wolfe,League Cup,2
+2025-26,Wolverhampton Wanderers,J. Strand Larsen,League Cup,2
+2025-26,Wolverhampton Wanderers,T. Arokodare,League Cup,2
+2025-26,Wolverhampton Wanderers,M. Munetsi,League Cup,1
+2025-26,Wolverhampton Wanderers,Rodrigo Gomes,League Cup,1
+2025-26,Wolverhampton Wanderers,Mateus Mané,Premier League,3
+2025-26,Wolverhampton Wanderers,Rodrigo Gomes,Premier League,3
+2025-26,Wolverhampton Wanderers,S. Bueno,Premier League,3
+2025-26,Wolverhampton Wanderers,T. Arokodare,Premier League,3
+2025-26,Wolverhampton Wanderers,A. Armstrong,Premier League,2
+2025-26,Wolverhampton Wanderers,Hwang Hee-Chan,Premier League,2
+2025-26,Wolverhampton Wanderers,L. Krejčí,Premier League,2
+2025-26,Wolverhampton Wanderers,André,Premier League,1
+2025-26,Wolverhampton Wanderers,Hugo Bueno,Premier League,1
+2025-26,Wolverhampton Wanderers,J. Arias,Premier League,1
+2025-26,Wolverhampton Wanderers,J. Bellegarde,Premier League,1
+2025-26,Wolverhampton Wanderers,J. Strand Larsen,Premier League,1
+2025-26,Wolverhampton Wanderers,João Gomes,Premier League,1
+2025-26,Wolverhampton Wanderers,M. Munetsi,Premier League,1
+2025-26,Wolverhampton Wanderers,Own Goal,Premier League,1
+2025-26,Wolverhampton Wanderers,T. Edozie,Premier League,1
+2026-27,Arsenal,C. Tzolis,Club Friendlies,1
+2026-27,Arsenal,Gabriel Jesus,Club Friendlies,1
+2026-27,Arsenal,K. Havertz,Club Friendlies,1
+2026-27,Arsenal,M. Dowman,Club Friendlies,1
+2026-27,Arsenal,M. Lewis-Skelly,Club Friendlies,1
+2026-27,Arsenal,P. Hincapié,Club Friendlies,1
+2026-27,Arsenal,K. Havertz,Community Shield,1
+2026-27,Arsenal,M. Ødegaard,Community Shield,1
+2026-27,Arsenal,R. Calafiori,Community Shield,1
+2026-27,Arsenal,E. Nwaneri,Other,1
+2026-27,Arsenal,V. Gyökeres,Other,1
+2026-27,Arsenal,B. Saka,Premier League,1
+2026-27,Arsenal,K. Havertz,Premier League,1
+2026-27,Arsenal,M. Ødegaard,Premier League,1
+2026-27,Aston Villa,João Gomes,Club Friendlies,1
+2026-27,Aston Villa,B. Madjo,Other,1
+2026-27,Brentford,Igor Thiago,Club Friendlies,2
+2026-27,Brentford,K. Schade,Club Friendlies,2
+2026-27,Brentford,D. Ouattara,Club Friendlies,1
+2026-27,Brentford,K. Lewis-Potter,Club Friendlies,1
+2026-27,Brentford,M. Sangaré,Club Friendlies,1
+2026-27,Brentford,K. Lewis-Potter,Premier League,1
+2026-27,Brentford,V. Janelt,Premier League,1
+2026-27,Brighton & Hove Albion,Y. Ayari,Club Friendlies,2
+2026-27,Brighton & Hove Albion,G. Rutter,Club Friendlies,1
+2026-27,Chelsea,João Pedro,Club Friendlies,4
+2026-27,Chelsea,L. Delap,Club Friendlies,2
+2026-27,Chelsea,M. Caicedo,Club Friendlies,1
+2026-27,Chelsea,M. Rogers,Club Friendlies,1
+2026-27,Chelsea,Own Goal,Club Friendlies,1
+2026-27,Chelsea,Estêvão,Other,1
+2026-27,Everton,K. Dewsbury-Hall,Premier League,1
+2026-27,Everton,T. Barry,Premier League,1
+2026-27,Hull City,N. Mendy,Premier League,1
+2026-27,Hull City,S. Ajayi,Premier League,1
+2026-27,Ipswich Town,Emersonn,Premier League,1
+2026-27,Ipswich Town,J. Clarke,Premier League,1
+2026-27,Leeds United,D. Calvert-Lewin,Club Friendlies,3
+2026-27,Leeds United,B. Aaronson,Club Friendlies,2
+2026-27,Leeds United,L. Nmecha,Club Friendlies,1
+2026-27,Leeds United,S. Longstaff,Club Friendlies,1
+2026-27,Leeds United,A. Stach,Premier League,1
+2026-27,Liverpool,F. Wirtz,Club Friendlies,2
+2026-27,Liverpool,A. Isak,Club Friendlies,1
+2026-27,Liverpool,C. Gakpo,Club Friendlies,1
+2026-27,Liverpool,J. Jacquet,Club Friendlies,1
+2026-27,Liverpool,L. Chambers,Club Friendlies,1
+2026-27,Manchester City,Omar Marmoush,Club Friendlies,2
+2026-27,Manchester City,D. Mubama,Club Friendlies,1
+2026-27,Manchester City,R. Aït-Nouri,Club Friendlies,1
+2026-27,Manchester City,D. Mubama,Other,1
+2026-27,Manchester City,R. Aït-Nouri,Other,1
+2026-27,Manchester City,T. Reijnders,Other,1
+2026-27,Manchester United,B. Mbeumo,Club Friendlies,3
+2026-27,Manchester United,H. Maguire,Club Friendlies,1
+2026-27,Manchester United,J. Zirkzee,Club Friendlies,1
+2026-27,Manchester United,P. Dorgu,Club Friendlies,1
+2026-27,Sunderland,N. Angulo,Premier League,1
+2026-27,Tottenham Hotspur,M. Moore,Club Friendlies,2
+2026-27,Tottenham Hotspur,B. Davies,Club Friendlies,1
+2026-27,Tottenham Hotspur,C. Gallagher,Club Friendlies,1
+2026-27,Tottenham Hotspur,L. Williams-Barnett,Club Friendlies,1
+2026-27,Tottenham Hotspur,Richarlison,Club Friendlies,1
+2026-27,Tottenham Hotspur,Richarlison,Other,1
+2026-27,Tottenham Hotspur,S. Tonali,Other,1

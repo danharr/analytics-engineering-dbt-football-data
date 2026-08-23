@@ -29,7 +29,7 @@
           Goals per Game by Season
         </v-card-title>
         <v-card-subtitle>
-          Average goals per match across all 34 seasons · the most exciting season is highlighted
+          Average goals per match across all 35 seasons · the most exciting season is highlighted
         </v-card-subtitle>
         <v-card-text>
           <ScoringTrendsChart :data="seasonScoring" />

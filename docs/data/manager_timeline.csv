@@ -7,7 +7,7 @@ Arsenal,Pat Rice,1996-09-13,1996-09-30,0,caretaker
 Arsenal,Arsène Wenger,1996-10-01,2018-05-13,0,permanent
 Arsenal,Unai Emery,2018-05-23,2019-11-29,0,permanent
 Arsenal,Freddie Ljungberg,2019-11-29,2019-12-21,0,caretaker
-Arsenal,Mikel Arteta,2019-12-22,2026-08-19,1,incumbent
+Arsenal,Mikel Arteta,2019-12-22,2026-08-23,1,incumbent
 Aston Villa,Ron Atkinson,1991-06-07,1994-11-10,0,permanent
 Aston Villa,Jim Barron,1994-11-11,1994-11-24,0,caretaker
 Aston Villa,Brian Little,1994-11-25,1998-02-24,0,permanent
@@ -30,7 +30,7 @@ Aston Villa,Eric Black,2016-03-29,2016-06-02,0,caretaker
 Aston Villa,Dean Smith,2018-10-10,2021-11-07,0,permanent
 Aston Villa,Steven Gerrard,2021-11-11,2022-10-20,0,permanent
 Aston Villa,Aaron Danks,2022-10-21,2022-10-31,0,caretaker
-Aston Villa,Unai Emery,2022-11-01,2026-08-19,1,incumbent
+Aston Villa,Unai Emery,2022-11-01,2026-08-23,1,incumbent
 Barnsley,Danny Wilson,1994-06-02,1998-07-07,0,permanent
 Birmingham City,Steve Bruce,2001-12-12,2007-11-23,0,permanent
 Birmingham City,Eric Black,2007-11-23,2007-11-27,0,caretaker
@@ -57,17 +57,17 @@ Bournemouth,Eddie Howe,2012-10-12,2020-08-01,0,permanent
 Bournemouth,Scott Parker,2021-06-28,2022-08-30,0,permanent
 Bournemouth,Gary O'Neil,2022-08-30,2023-06-19,0,permanent
 Bournemouth,Andoni Iraola,2023-06-19,2026-05-24,0,permanent
-Bournemouth,Marco Rose,2026-06-01,2026-08-19,1,incumbent
+Bournemouth,Marco Rose,2026-06-01,2026-08-23,1,incumbent
 Bradford City,Paul Jewell,1998-01-06,2000-06-18,0,permanent
 Bradford City,Chris Hutchings,2000-06-18,2000-11-06,0,permanent
 Bradford City,Stuart McCall,2000-11-06,2000-11-20,0,caretaker
 Bradford City,Jim Jefferies,2000-11-20,2001-12-24,0,permanent
 Brentford,Thomas Frank,2018-10-16,2025-06-12,0,permanent
-Brentford,Keith Andrews,2025-06-27,2026-08-19,1,incumbent
+Brentford,Keith Andrews,2025-06-27,2026-08-23,1,incumbent
 Brighton and Hove Albion,Chris Hughton,2014-12-31,2019-05-13,0,permanent
 Brighton and Hove Albion,Graham Potter,2019-05-20,2022-09-08,0,permanent
 Brighton and Hove Albion,Roberto De Zerbi,2022-09-18,2024-05-19,0,permanent
-Brighton and Hove Albion,Fabian Hürzeler,2024-07-02,2026-08-19,1,incumbent
+Brighton and Hove Albion,Fabian Hürzeler,2024-07-02,2026-08-23,1,incumbent
 Burnley,Owen Coyle,2007-11-27,2010-01-05,0,permanent
 Burnley,Brian Laws,2010-01-13,2010-12-29,0,permanent
 Burnley,Sean Dyche,2012-10-30,2022-04-15,0,permanent
@@ -115,12 +115,12 @@ Chelsea,Enzo Maresca,2024-07-01,2026-01-01,0,permanent
 Chelsea,Calum McFarlane,2026-01-01,2026-01-08,0,caretaker
 Chelsea,Liam Rosenior,2026-01-08,2026-04-22,0,permanent
 Chelsea,Calum McFarlane,2026-04-22,2026-06-01,0,caretaker
-Chelsea,Xabi Alonso,2026-07-01,2026-08-19,1,incumbent
+Chelsea,Xabi Alonso,2026-07-01,2026-08-23,1,incumbent
 Coventry City,Bobby Gould,1992-06-24,1993-10-23,0,permanent
 Coventry City,Phil Neal,1993-10-23,1995-02-14,0,permanent
 Coventry City,Ron Atkinson,1995-02-15,1996-11-05,0,permanent
 Coventry City,Gordon Strachan,1996-11-05,2001-09-10,0,permanent
-Coventry City,Frank Lampard,2024-11-28,2026-08-19,1,incumbent
+Coventry City,Frank Lampard,2024-11-28,2026-08-23,1,incumbent
 Crystal Palace,Steve Coppell,1984-06-03,1993-05-17,0,permanent
 Crystal Palace,Alan Smith,1993-06-03,1995-05-15,0,permanent
 Crystal Palace,Steve Coppell,1997-02-27,1998-03-13,0,permanent
@@ -144,7 +144,7 @@ Crystal Palace,Paddy McCarthy,2023-03-17,2023-03-21,0,caretaker
 Crystal Palace,Roy Hodgson,2023-03-21,2024-02-19,0,permanent
 Crystal Palace,Paddy McCarthy,2024-02-19,2024-02-19,0,caretaker
 Crystal Palace,Oliver Glasner,2024-02-19,2026-05-27,0,permanent
-Crystal Palace,Pierre Sage,2026-06-15,2026-08-19,1,incumbent
+Crystal Palace,Pierre Sage,2026-06-15,2026-08-23,1,incumbent
 Derby County,Jim Smith,1995-06-15,2001-10-07,0,permanent
 Derby County,Colin Todd,2001-10-08,2002-01-14,0,permanent
 Derby County,Billy McEwan,2002-01-14,2002-01-30,0,caretaker
@@ -172,7 +172,7 @@ Everton,Duncan Ferguson,2022-01-18,2022-01-31,0,caretaker
 Everton,Frank Lampard,2022-01-31,2023-01-23,0,permanent
 Everton,Sean Dyche,2023-01-30,2025-01-09,0,permanent
 Everton,Leighton Baines,2025-01-09,2025-01-11,0,caretaker
-Everton,David Moyes,2025-01-11,2026-08-19,1,incumbent
+Everton,David Moyes,2025-01-11,2026-08-23,1,incumbent
 Fulham,Jean Tigana,2000-07-01,2003-04-17,0,permanent
 Fulham,Chris Coleman,2003-04-17,2007-04-11,0,permanent
 Fulham,Lawrie Sanchez,2007-04-11,2007-12-21,0,permanent
@@ -187,7 +187,7 @@ Fulham,Slaviša Jokanović,2015-12-27,2018-11-14,0,permanent
 Fulham,Claudio Ranieri,2018-11-14,2019-02-28,0,permanent
 Fulham,Scott Parker,2019-02-28,2021-06-28,0,permanent
 Fulham,Marco Silva,2021-07-01,2026-06-02,0,permanent
-Fulham,Álvaro Arbeloa,2026-07-07,2026-08-19,1,incumbent
+Fulham,Álvaro Arbeloa,2026-07-07,2026-08-23,1,incumbent
 Huddersfield Town,David Wagner,2015-11-09,2019-01-14,0,permanent
 Huddersfield Town,Mark Hudson,2019-01-14,2019-01-21,0,caretaker
 Huddersfield Town,Jan Siewert,2019-01-21,2019-08-16,0,permanent
@@ -196,13 +196,13 @@ Hull City,Iain Dowie,2010-03-17,2010-05-09,0,permanent
 Hull City,Steve Bruce,2012-06-08,2016-07-22,0,permanent
 Hull City,Mike Phelan,2016-07-22,2017-01-03,0,permanent
 Hull City,Marco Silva,2017-01-05,2017-05-25,0,permanent
-Hull City,Sergej Jakirović,2025-06-11,2026-08-19,1,incumbent
+Hull City,Sergej Jakirović,2025-06-11,2026-08-23,1,incumbent
 Ipswich Town,John Lyall,1990-05-11,1994-12-05,0,permanent
 Ipswich Town,Paul Goddard,1994-12-06,1994-12-27,0,caretaker
 Ipswich Town,John Wark,1994-12-06,1994-12-27,0,caretaker
 Ipswich Town,George Burley,1994-12-28,2002-10-11,0,permanent
 Ipswich Town,Kieran McKenna,2021-12-16,2026-06-10,0,permanent
-Ipswich Town,Gary O'Neil,2026-06-23,2026-08-19,1,incumbent
+Ipswich Town,Gary O'Neil,2026-06-23,2026-08-23,1,incumbent
 Leeds United,Howard Wilkinson,1988-10-10,1996-09-10,0,permanent
 Leeds United,George Graham,1996-09-10,1998-10-01,0,permanent
 Leeds United,David O'Leary,1998-10-01,2002-06-27,0,permanent
@@ -214,7 +214,7 @@ Leeds United,Jesse Marsch,2022-02-28,2023-02-06,0,permanent
 Leeds United,Michael Skubala,2023-02-06,2023-02-21,0,caretaker
 Leeds United,Javi Gracia,2023-02-21,2023-05-03,0,permanent
 Leeds United,Sam Allardyce,2023-05-03,2023-06-02,0,permanent
-Leeds United,Daniel Farke,2023-07-04,2026-08-19,1,incumbent
+Leeds United,Daniel Farke,2023-07-04,2026-08-23,1,incumbent
 Leicester City,Brian Little,1991-05-30,1994-11-22,0,permanent
 Leicester City,Kevin MacDonald,1994-11-22,1994-12-14,0,caretaker
 Leicester City,Mark McGhee,1994-12-14,1995-12-07,0,permanent
@@ -247,7 +247,7 @@ Liverpool,Kenny Dalglish,2011-01-08,2012-05-16,0,permanent
 Liverpool,Brendan Rodgers,2012-06-01,2015-10-04,0,permanent
 Liverpool,Jürgen Klopp,2015-10-08,2024-05-19,0,permanent
 Liverpool,Arne Slot,2024-06-01,2026-05-30,0,permanent
-Liverpool,Andoni Iraola,2026-06-04,2026-08-19,1,incumbent
+Liverpool,Andoni Iraola,2026-06-04,2026-08-23,1,incumbent
 Luton Town,Rob Edwards,2022-11-17,2025-01-09,0,permanent
 Manchester City,Peter Reid,1990-11-11,1993-08-26,0,permanent
 Manchester City,Tony Book,1993-08-26,1993-08-28,0,caretaker
@@ -262,7 +262,7 @@ Manchester City,Roberto Mancini,2009-12-19,2013-05-13,0,permanent
 Manchester City,Brian Kidd,2013-05-13,2013-06-14,0,caretaker
 Manchester City,Manuel Pellegrini,2013-06-14,2016-06-30,0,permanent
 Manchester City,Pep Guardiola,2016-07-01,2026-05-24,0,permanent
-Manchester City,Enzo Maresca,2026-06-29,2026-08-19,1,incumbent
+Manchester City,Enzo Maresca,2026-06-29,2026-08-23,1,incumbent
 Manchester United,Alex Ferguson,1986-11-06,2013-06-01,0,permanent
 Manchester United,David Moyes,2013-07-01,2014-04-22,0,permanent
 Manchester United,Ryan Giggs,2014-04-22,2014-05-11,0,caretaker
@@ -275,7 +275,7 @@ Manchester United,Erik ten Hag,2022-06-01,2024-10-28,0,permanent
 Manchester United,Ruud van Nistelrooy,2024-10-28,2024-11-11,0,caretaker
 Manchester United,Ruben Amorim,2024-11-11,2026-01-05,0,permanent
 Manchester United,Darren Fletcher,2026-01-05,2026-01-13,0,caretaker
-Manchester United,Michael Carrick,2026-01-13,2026-08-19,1,incumbent
+Manchester United,Michael Carrick,2026-01-13,2026-08-23,1,incumbent
 Middlesbrough,Lennie Lawrence,1991-07-10,1994-05-19,0,permanent
 Middlesbrough,Bryan Robson,1994-05-31,2000-12-06,0,permanent
 Middlesbrough,Terry Venables,2000-12-06,2001-06-12,0,permanent
@@ -307,7 +307,7 @@ Newcastle United,Rafael Benítez,2016-03-11,2019-06-30,0,permanent
 Newcastle United,Steve Bruce,2019-07-17,2021-10-20,0,permanent
 Newcastle United,Graeme Jones,2021-10-20,2021-11-08,0,caretaker
 Newcastle United,Eddie Howe,2021-11-08,2026-07-30,0,permanent
-Newcastle United,Matthias Jaissle,2026-08-05,2026-08-19,1,incumbent
+Newcastle United,Matthias Jaissle,2026-08-05,2026-08-23,1,incumbent
 Norwich City,Mike Walker,1992-06-01,1994-01-06,0,permanent
 Norwich City,John Deehan,1994-01-12,1995-07-31,0,permanent
 Norwich City,Nigel Worthington,2000-12-04,2006-10-02,0,permanent
@@ -328,7 +328,7 @@ Nottingham Forest,Nuno Espírito Santo,2023-12-20,2025-09-09,0,permanent
 Nottingham Forest,Ange Postecoglou,2025-09-09,2025-10-18,0,permanent
 Nottingham Forest,Sean Dyche,2025-10-21,2026-02-12,0,permanent
 Nottingham Forest,Vítor Pereira,2026-02-15,2026-07-02,0,permanent
-Nottingham Forest,Oliver Glasner,2026-07-06,2026-08-19,1,incumbent
+Nottingham Forest,Oliver Glasner,2026-07-06,2026-08-23,1,incumbent
 Oldham Athletic,Joe Royle,1982-07-14,1994-11-10,0,permanent
 Portsmouth,Harry Redknapp,2002-03-25,2004-11-24,0,permanent
 Portsmouth,Velimir Zajec,2004-12-24,2005-04-07,0,permanent
@@ -407,7 +407,7 @@ Sunderland,Gus Poyet,2013-10-08,2015-03-16,0,permanent
 Sunderland,Dick Advocaat,2015-03-17,2015-10-04,0,permanent
 Sunderland,Sam Allardyce,2015-10-09,2016-07-22,0,permanent
 Sunderland,David Moyes,2016-07-23,2017-05-22,0,permanent
-Sunderland,Régis Le Bris,2024-07-01,2026-08-19,1,incumbent
+Sunderland,Régis Le Bris,2024-07-01,2026-08-23,1,incumbent
 Swansea City,Brendan Rodgers,2010-07-16,2012-06-01,0,permanent
 Swansea City,Michael Laudrup,2012-06-15,2014-02-04,0,permanent
 Swansea City,Garry Monk,2014-02-04,2015-12-09,0,permanent
@@ -449,7 +449,7 @@ Tottenham Hotspur,Ryan Mason,2023-04-24,2023-05-28,0,caretaker
 Tottenham Hotspur,Ange Postecoglou,2023-06-06,2025-06-06,0,permanent
 Tottenham Hotspur,Thomas Frank,2025-06-12,2026-02-11,0,permanent
 Tottenham Hotspur,Igor Tudor,2026-02-14,2026-03-29,0,permanent
-Tottenham Hotspur,Roberto De Zerbi,2026-03-31,2026-08-19,1,incumbent
+Tottenham Hotspur,Roberto De Zerbi,2026-03-31,2026-08-23,1,incumbent
 Watford,Graham Taylor,1996-02-21,2001-06-01,0,permanent
 Watford,Aidy Boothroyd,2005-03-29,2008-11-03,0,permanent
 Watford,Quique Sánchez Flores,2015-06-05,2016-05-15,0,permanent
@@ -498,7 +498,7 @@ West Ham United,Manuel Pellegrini,2018-05-22,2019-12-28,0,permanent
 West Ham United,David Moyes,2019-12-29,2024-05-19,0,permanent
 West Ham United,Julen Lopetegui,2024-07-01,2025-01-08,0,permanent
 West Ham United,Graham Potter,2025-01-09,2025-09-27,0,permanent
-West Ham United,Nuno Espírito Santo,2025-09-27,2026-08-19,1,incumbent
+West Ham United,Nuno Espírito Santo,2025-09-27,2026-08-23,1,incumbent
 Wigan Athletic,Paul Jewell,2001-06-12,2007-05-14,0,permanent
 Wigan Athletic,Chris Hutchings,2007-05-14,2007-11-05,0,permanent
 Wigan Athletic,Frank Barlow,2007-11-05,2007-11-26,0,caretaker

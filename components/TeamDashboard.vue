@@ -11,7 +11,7 @@
         </v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            {{ team.name }} sit {{ ordinal(tablePosition) }} in the all-time Premier League table with {{ fmt(points) }} points from {{ fmt(played) }} matches. Their biggest win is a {{ topWins[0].goals_for }}–{{ topWins[0].goals_against }} win over {{ topWins[0].opponent_name }} in {{ topWins[0].season_label }}. Every number below comes from the league's own data, covering all 34 seasons from 1992-93.
+            {{ team.name }} sit {{ ordinal(tablePosition) }} in the all-time Premier League table with {{ fmt(points) }} points from {{ fmt(played) }} matches. Their biggest win is a {{ topWins[0].goals_for }}–{{ topWins[0].goals_against }} win over {{ topWins[0].opponent_name }} in {{ topWins[0].season_label }}. Every number below comes from the league's own data, covering all 35 seasons from 1992-93.
           </p>
           <v-btn
             v-if="hasSeasonData"
@@ -19,10 +19,31 @@
             color="primary"
             variant="outlined"
             size="small"
-            :to="`/teams/${team.slug}/2025-26`"
+            :to="`/teams/${team.slug}/2025-26-goals-by-player`"
           >
             <v-icon icon="mdi-soccer" size="small" class="mr-1"></v-icon>
-            2025-26 player goals
+            2025-26 goals by player
+          </v-btn>
+          <v-btn
+            v-if="hasSeason2026Data"
+            class="mt-3 ml-2"
+            color="primary"
+            variant="outlined"
+            size="small"
+            :to="`/teams/${team.slug}/2026-27-goals-by-player`"
+          >
+            <v-icon icon="mdi-soccer" size="small" class="mr-1"></v-icon>
+            2026-27 goals by player
+          </v-btn>
+          <v-btn
+            class="mt-3 ml-2"
+            color="primary"
+            variant="outlined"
+            size="small"
+            :to="`/teams/${team.slug}/cumulative-points-per-season`"
+          >
+            <v-icon icon="mdi-chart-line" size="small" class="mr-1"></v-icon>
+            Points race by season
           </v-btn>
         </v-card-text>
       </v-card>
@@ -325,7 +346,8 @@ const props = defineProps({
 
 const team = props.team
 const colour = teamColour(team.name)
-const hasSeasonData = seasonTeamBySlug(team.slug) !== undefined
+const hasSeasonData = seasonTeamBySlug(team.slug, '2025-26') !== undefined
+const hasSeason2026Data = seasonTeamBySlug(team.slug, '2026-27') !== undefined
 
 const { mobile } = useDisplay()
 const isMobile = computed(() => mobile.value)

@@ -6,7 +6,7 @@
           <v-icon icon="mdi-stadium" class="mr-2"></v-icon>
           Average Home Attendance by Team
         </v-card-title>
-        <v-card-subtitle>1992-93 to 2025-26 · season average across all home games</v-card-subtitle>
+        <v-card-subtitle>1992-93 to 2026-27 · season average across all home games</v-card-subtitle>
         <v-card-text>
           <p class="mb-4">
             Manchester United have long been the division's biggest draw, averaging above 70,000
@@ -33,7 +33,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Average home attendances by Premier League team from 1992-93 to 2025-26.'
+      content: 'Average home attendances by Premier League team from 1992-93 to 2026-27.'
     }
   ],
   script: [
@@ -41,7 +41,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Average Home Attendance Dataset',
-        description: 'Average home attendance per Premier League team in each season from 1992-93 to 2025-26, including the empty-stadium 2020-21 season.',
+        description: 'Average home attendance per Premier League team in each season from 1992-93 to 2026-27, including the empty-stadium 2020-21 season.',
         path: '/attendances',
         csv: 'attendance.csv',
         keywords: ['attendances', 'average home crowds']

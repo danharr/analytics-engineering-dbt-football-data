@@ -165,7 +165,7 @@ export const thumbnails: Thumbnail[] = [
   {
     label: 'Most Wins',
     path: '/most-wins',
-    caption: 'Who has won the most games across 34 seasons?',
+    caption: 'Who has won the most games across 35 seasons?',
     preview: toBars(wins, d => d.team_name, d => d.total_wins, d => fmtInt(d.total_wins))
   },
   {

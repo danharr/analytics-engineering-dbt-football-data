@@ -12,7 +12,7 @@
         <v-card-text class="pt-0">
           <p class="mb-0">
             Leading at half-time is normally worth three points, so it says something that only
-            six teams in 34 seasons have managed to go three consecutive matches without
+            six teams in 35 seasons have managed to go three consecutive matches without
             converting a half-time lead into a win. Crystal Palace hold the current record,
             letting three straight half-time leads slip across January 2019. Every team that
             has ever gone at least two in a row is listed here, with the opponents who punished

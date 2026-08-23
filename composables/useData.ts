@@ -283,6 +283,7 @@ export interface SeasonScoringRow {
 
 export interface GoalMinuteRow {
   team_name: string
+  season_label: string
   minute: number
   label: string
   home_goals: number
@@ -301,6 +302,7 @@ export interface PointsLostFromWinningRow {
 }
 
 export interface TeamGoalsByPlayerRow {
+  season_label: string
   team_name: string
   player_name: string
   competition: string
@@ -612,6 +614,7 @@ export const seasonScoring = parse<SeasonScoringRow>(seasonScoringCsv, d => ({
 
 export const goalMinutes = parse<GoalMinuteRow>(goalMinutesCsv, d => ({
   team_name: d.team_name,
+  season_label: d.season_label,
   minute: toInt(d, 'minute'),
   label: d.label,
   home_goals: toInt(d, 'home_goals'),
@@ -630,6 +633,7 @@ export const pointsLostFromWinning = parse<PointsLostFromWinningRow>(pointsLostF
 }))
 
 export const teamGoalsByPlayer = parse<TeamGoalsByPlayerRow>(teamGoalsByPlayerCsv, d => ({
+  season_label: d.season_label,
   team_name: d.team_name,
   player_name: d.player_name,
   competition: d.competition,

@@ -92,7 +92,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Most Chaotic Matches Dataset',
-        description: 'The most chaotic Premier League matches ever, ranked by a chaos score of three points per goal plus two points per red card, from 1992-93 to 2025-26.',
+        description: 'The most chaotic Premier League matches ever, ranked by a chaos score of three points per goal plus two points per red card, from 1992-93 to 2026-27.',
         path: '/most-chaotic-matches',
         csv: 'most_chaotic_matches.csv',
         keywords: ['chaos score', 'high-scoring matches', 'red cards']

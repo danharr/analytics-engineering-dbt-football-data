@@ -13,7 +13,7 @@
           <p class="mb-0">
             Every team's longest run of consecutive games without scoring a goal, and their
             longest run of scoring in every game. The top five teams in each category are shown
-            below, drawn from 34 seasons of Premier League data (1992-93 to 2025-26).
+            below, drawn from 35 seasons of Premier League data (1992-93 to 2026-27).
           </p>
         </v-card-text>
       </v-card>
@@ -112,7 +112,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Premier League Scoring Runs Dataset',
-        description: 'The longest scoreless droughts and scoring streaks per team across the Premier League era (1992-93 to 2025-26), top 5 teams in each category.',
+        description: 'The longest scoreless droughts and scoring streaks per team across the Premier League era (1992-93 to 2026-27), top 5 teams in each category.',
         path: '/scoring-runs',
         csv: 'scoring_runs.csv',
         keywords: ['scoring runs', 'goal droughts', 'scoring streaks', 'Premier League']
