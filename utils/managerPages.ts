@@ -18,7 +18,17 @@ export const MANAGER_SLUGS: Record<string, string> = {
   "Martin O'Neill": 'o-neill',
   'Kevin Keegan': 'keegan',
   'Kenny Dalglish': 'dalglish',
-  "David O'Leary": 'o-leary'
+  "David O'Leary": 'o-leary',
+  'Claudio Ranieri': 'ranieri',
+  'Alan Pardew': 'pardew',
+  'Alan Curbishley': 'curbishley',
+  'Gérard Houllier': 'houllier',
+  'George Graham': 'graham',
+  'Tony Pulis': 'pulis',
+  'Sean Dyche': 'dyche',
+  'Unai Emery': 'emery',
+  'Joe Kinnear': 'kinnear',
+  'Graeme Souness': 'souness'
 }
 
 export interface ManagerPage {

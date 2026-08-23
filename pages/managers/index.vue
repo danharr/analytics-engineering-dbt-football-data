@@ -61,7 +61,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'One page per featured manager: Premier League record, biggest wins and losses and club-by-club record for 20 of the league\'s most successful managers.'
+      content: 'One page per featured manager: Premier League record, biggest wins and losses and club-by-club record for 30 of the league\'s most successful managers.'
     }
   ]
 })
