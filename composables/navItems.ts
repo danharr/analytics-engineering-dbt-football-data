@@ -12,6 +12,8 @@ export const navItems = [
   { label: 'Big Win Streaks', path: '/big-win-streaks', icon: 'mdi-format-list-numbered' },
   { label: 'Longest Gap Between Wins', path: '/longest-winless-gaps', icon: 'mdi-timer-sand' },
   { label: 'Most Chaotic Matches', path: '/most-chaotic-matches', icon: 'mdi-fire' },
+  { label: 'Fixture Red Cards', path: '/fixture-red-cards', icon: 'mdi-cards-outline' },
+  { label: 'Red Cards by Season', path: '/red-cards-by-season', icon: 'mdi-trending-up' },
   { label: 'One-Nil Wins', path: '/one-nil-wins', icon: 'mdi-numeric-1-box-outline' },
   { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks', icon: 'mdi-flag-checkered' },
   { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' },

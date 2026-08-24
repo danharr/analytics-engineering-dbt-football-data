@@ -17,7 +17,9 @@ import {
   managerTimeline,
   goalMinutes,
   pointsLostFromWinning,
-  scoringRuns
+  scoringRuns,
+  fixtureRedCards,
+  redCardsBySeason
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 
@@ -155,6 +157,20 @@ const pointsLostTotals = SEASON_TEAMS
   }))
   .filter(t => t.pointsLost > 0)
 
+const fixtureRedCardTotals = (() => {
+  const map = new Map<string, { label: string; value: number }>()
+  for (const r of fixtureRedCards) {
+    const key = `${r.home_team_name}|${r.away_team_name}`
+    if (!map.has(key)) {
+      map.set(key, {
+        label: `${r.home_team_abbr} vs ${r.away_team_abbr}`,
+        value: r.total_red_cards
+      })
+    }
+  }
+  return [...map.values()]
+})()
+
 export const thumbnails: Thumbnail[] = [
   {
     label: 'All-Time Table',
@@ -253,6 +269,28 @@ export const thumbnails: Thumbnail[] = [
       d => `${d.home_team_abbr} ${d.home_score}\u2013${d.away_score} ${d.away_team_abbr}`,
       d => d.chaos_score,
       d => fmtInt(d.chaos_score)
+    )
+  },
+  {
+    label: 'Fixture Red Cards',
+    path: '/fixture-red-cards',
+    caption: 'The rivalries with the most red cards since 1992.',
+    preview: toBars(
+      fixtureRedCardTotals,
+      d => d.label,
+      d => d.value,
+      d => fmtInt(d.value)
+    )
+  },
+  {
+    label: 'Red Cards by Season',
+    path: '/red-cards-by-season',
+    caption: 'Total red cards in every season, from 2006-07 on.',
+    preview: toBars(
+      redCardsBySeason.filter(r => r.red_cards > 0),
+      d => d.season_label,
+      d => d.red_cards,
+      d => fmtInt(d.red_cards)
     )
   },
   {

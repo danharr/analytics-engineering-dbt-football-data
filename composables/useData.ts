@@ -26,6 +26,8 @@ import goalMinutesCsv from '~/assets/data/goal_minutes.csv?raw'
 import pointsLostFromWinningCsv from '~/assets/data/points_lost_from_winning.csv?raw'
 import teamGoalsByPlayerCsv from '~/assets/data/team_goals_by_player.csv?raw'
 import scoringRunsCsv from '~/assets/data/scoring_runs.csv?raw'
+import fixtureRedCardsCsv from '~/assets/data/fixture_red_cards.csv?raw'
+import redCardsBySeasonCsv from '~/assets/data/red_cards_by_season.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -319,6 +321,25 @@ export interface ScoringRunRow {
   end_date: string
   seasons: string
   opponents: string
+}
+
+export interface FixtureRedCardsRow {
+  home_team_name: string
+  away_team_name: string
+  home_team_abbr: string
+  away_team_abbr: string
+  season_label: string
+  matches: number
+  red_cards: number
+  total_red_cards: number
+}
+
+export interface RedCardsBySeasonRow {
+  season_label: string
+  matches: number
+  home_red_cards: number
+  away_red_cards: number
+  red_cards: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -650,6 +671,25 @@ export const scoringRuns = parse<ScoringRunRow>(scoringRunsCsv, d => ({
   end_date: d.end_date,
   seasons: d.seasons,
   opponents: d.opponents
+}))
+
+export const fixtureRedCards = parse<FixtureRedCardsRow>(fixtureRedCardsCsv, d => ({
+  home_team_name: d.home_team_name,
+  away_team_name: d.away_team_name,
+  home_team_abbr: d.home_team_abbr,
+  away_team_abbr: d.away_team_abbr,
+  season_label: d.season_label,
+  matches: toInt(d, 'matches'),
+  red_cards: toInt(d, 'red_cards'),
+  total_red_cards: toInt(d, 'total_red_cards')
+}))
+
+export const redCardsBySeason = parse<RedCardsBySeasonRow>(redCardsBySeasonCsv, d => ({
+  season_label: d.season_label,
+  matches: toInt(d, 'matches'),
+  home_red_cards: toInt(d, 'home_red_cards'),
+  away_red_cards: toInt(d, 'away_red_cards'),
+  red_cards: toInt(d, 'red_cards')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'
