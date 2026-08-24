@@ -37,8 +37,17 @@
             href="https://www.linkedin.com/in/dan-harrington-7a60967/"
             target="_blank"
             rel="noopener"
+            class="mr-3"
           >
             Connect on LinkedIn
+          </v-btn>
+
+          <v-btn
+            variant="tonal"
+            prepend-icon="mdi-newspaper-variant-outline"
+            to="/blog/do-analytics-engineers-need-to-know-dbt"
+          >
+            Read my blog
           </v-btn>
         </v-card-text>
       </v-card>
