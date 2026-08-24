@@ -27,5 +27,8 @@ export const navItems = [
   { label: 'All Teams', path: '/teams', icon: 'mdi-shield-outline' },
 
   { header: 'Seasons' },
-  { label: 'All Seasons', path: '/seasons', icon: 'mdi-calendar' }
+  { label: 'All Seasons', path: '/seasons', icon: 'mdi-calendar' },
+
+  { header: 'About' },
+  { label: 'About', path: '/about', icon: 'mdi-information-outline' }
 ]
