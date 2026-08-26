@@ -28,6 +28,8 @@ import teamGoalsByPlayerCsv from '~/assets/data/team_goals_by_player.csv?raw'
 import scoringRunsCsv from '~/assets/data/scoring_runs.csv?raw'
 import fixtureRedCardsCsv from '~/assets/data/fixture_red_cards.csv?raw'
 import redCardsBySeasonCsv from '~/assets/data/red_cards_by_season.csv?raw'
+import subTimingCsv from '~/assets/data/sub_timing.csv?raw'
+import topScorersCsv from '~/assets/data/top_scorers.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -340,6 +342,19 @@ export interface RedCardsBySeasonRow {
   home_red_cards: number
   away_red_cards: number
   red_cards: number
+}
+
+export interface SubTimingRow {
+  team_name: string
+  team_short_name: string
+  minute: number
+}
+
+export interface TopScorerRow {
+  rank: number
+  player_name: string
+  team: string
+  goals: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -690,6 +705,19 @@ export const redCardsBySeason = parse<RedCardsBySeasonRow>(redCardsBySeasonCsv, 
   home_red_cards: toInt(d, 'home_red_cards'),
   away_red_cards: toInt(d, 'away_red_cards'),
   red_cards: toInt(d, 'red_cards')
+}))
+
+export const subTiming = parse<SubTimingRow>(subTimingCsv, d => ({
+  team_name: d.team_name,
+  team_short_name: d.team_short_name,
+  minute: toInt(d, 'minute')
+}))
+
+export const topScorers = parse<TopScorerRow>(topScorersCsv, d => ({
+  rank: toInt(d, 'rank'),
+  player_name: d.player_name,
+  team: d.team,
+  goals: toInt(d, 'goals')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'

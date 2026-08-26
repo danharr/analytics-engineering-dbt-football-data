@@ -272,6 +272,53 @@ function renderGantt(svg, rows) {
   })
 }
 
+function renderDots(svg, rows) {
+  const margin = { top: 8, right: 8, bottom: 14, left: 6 }
+  const labelW = 92
+  const innerW = W - margin.left - margin.right - labelW
+  const innerH = H - margin.top - margin.bottom
+  const rowH = innerH / rows.length
+  const x = d3.scaleLinear().domain([0, 90]).range([0, innerW])
+
+  const g = svg.append('g').attr('transform', `translate(${margin.left + labelW},${margin.top})`)
+
+  g.append('line')
+    .attr('x1', x(45))
+    .attr('x2', x(45))
+    .attr('y1', 0)
+    .attr('y2', innerH)
+    .attr('stroke', '#ddd')
+    .attr('stroke-dasharray', '2 2')
+
+  rows.slice(0, Math.floor(innerH / rowH)).forEach((row, i) => {
+    const y = i * rowH
+    svg.append('text')
+      .attr('x', margin.left + labelW - 6)
+      .attr('y', y + rowH / 2 + margin.top)
+      .attr('dy', '0.32em')
+      .attr('text-anchor', 'end')
+      .attr('font-size', '9px')
+      .attr('fill', '#555')
+      .text(truncate(row.label, 17))
+
+    g.selectAll('circle')
+      .data(row.minutes)
+      .join('circle')
+      .attr('cx', m => x(m))
+      .attr('cy', y + rowH / 2)
+      .attr('r', 3)
+      .attr('fill', '#1a56db')
+      .attr('opacity', 0.5)
+  })
+
+  g.append('g')
+    .attr('transform', `translate(0,${innerH})`)
+    .call(d3.axisBottom(x).tickValues([0, 45, 90]).tickSize(0))
+    .selectAll('text')
+    .attr('font-size', '8px')
+    .attr('fill', '#888')
+}
+
 function render() {
   const target = el.value
   if (!target || !props.preview) return
@@ -291,6 +338,7 @@ function render() {
   else if (p.kind === 'squares') renderSquares(svg, p.rows)
   else if (p.kind === 'gantt') renderGantt(svg, p.rows)
   else if (p.kind === 'pyramid') renderPyramid(svg, p.rows)
+  else if (p.kind === 'dots') renderDots(svg, p.rows)
 }
 
 onMounted(render)

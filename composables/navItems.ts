@@ -31,6 +31,9 @@ export const navItems = [
   { header: 'Seasons' },
   { label: 'All Seasons', path: '/seasons', icon: 'mdi-calendar' },
 
+  { header: 'Season Reviews' },
+  { label: '1992-93 Substitutions (Sample)', path: '/season-reviews/1992-93-sample', icon: 'mdi-swap-horizontal' },
+
   { header: 'About' },
   { label: 'About', path: '/about', icon: 'mdi-information-outline' }
 ]

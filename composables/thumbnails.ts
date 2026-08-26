@@ -19,7 +19,8 @@ import {
   pointsLostFromWinning,
   scoringRuns,
   fixtureRedCards,
-  redCardsBySeason
+  redCardsBySeason,
+  subTiming
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 
@@ -36,6 +37,7 @@ export type ThumbnailPreview =
   | { kind: 'squares'; rows: { label: string; cells: string[] }[] }
   | { kind: 'gantt'; rows: { label: string; bars: { start: number; end: number }[] }[] }
   | { kind: 'pyramid'; rows: { label: string; left: number; right: number }[] }
+  | { kind: 'dots'; rows: { label: string; minutes: number[] }[] }
 
 export interface Thumbnail {
   label: string
@@ -170,6 +172,18 @@ const fixtureRedCardTotals = (() => {
   }
   return [...map.values()]
 })()
+
+const subTimingDots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
+  kind: 'dots',
+  rows: [...new Set(subTiming.map(r => r.team_name))]
+    .map(name => {
+      const rows = subTiming.filter(r => r.team_name === name)
+      return {
+        label: rows[0].team_short_name,
+        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
+      }
+    })
+}
 
 export const thumbnails: Thumbnail[] = [
   {
@@ -344,5 +358,11 @@ export const thumbnails: Thumbnail[] = [
     path: '/manager-timeline',
     caption: 'Every managerial spell since 1992.',
     preview: ganttPreview
+  },
+  {
+    label: '1992-93 Substitutions',
+    path: '/season-reviews/1992-93-sample',
+    caption: 'When each club made substitutions, by minute.',
+    preview: subTimingDots
   }
 ]

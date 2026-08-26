@@ -32,6 +32,7 @@ An interactive dashboard of Premier League football history.
 - **Team Season Pages** — a `/teams/<club>/2025-26-goals-by-player` and `/teams/<club>/2026-27-goals-by-player` sub-page for each club, showing every player's goals as a horizontal bar chart from the per-minute goal feed
 - **Cumulative Points by Season** — a `/teams/<club>/cumulative-points-per-season` sub-page for every club, charting cumulative points after each matchweek as one line per season since 1992, with title-winning seasons highlighted
 - **Season Pages** — the final league table (P/W/D/L/GF/GA/GD/points) for every season at `/seasons`, 1992-93 through 2025-26, ranked by points then goal difference then goals scored, plus the season's five biggest wins and a "points race" line chart of every team's cumulative points by matchweek
+- **Season Reviews — 1992-93 Sample** — every substitution made by each club in the 1992-93 season (first 50 matches), plotted as dots on a 0-90 minute axis per team, from the per-match event feed
 
 ## Data
 

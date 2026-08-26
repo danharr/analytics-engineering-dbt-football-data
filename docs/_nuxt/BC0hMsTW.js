@@ -1,0 +1,1 @@
+import{e as m}from"./CahrDatx.js";import{t}from"./D48iIGwe.js";const r=m.map(a=>({slug:t(a.team_name),abbr:a.team_abbr,name:a.team_name})).sort((a,e)=>a.name.localeCompare(e.name));function s(a){return r.find(e=>e.slug===a)}export{s as a,r as t};
