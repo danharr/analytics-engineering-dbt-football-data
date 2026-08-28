@@ -3,9 +3,9 @@
     <v-app-bar color="primary" density="compact">
       <v-app-bar-nav-icon @click.stop="toggleNav"></v-app-bar-nav-icon>
       <v-app-bar-title>
-        <NuxtLink to="/" class="text-decoration-none">
-          <v-icon icon="mdi-trophy" class="mr-2"></v-icon>
-          <span class="text-white site-title">Football Started in 1992</span>
+        <NuxtLink to="/" class="text-decoration-none d-flex align-center">
+          <img src="/logo-square.png" alt="Football Started in 1992" class="site-logo" />
+          <span class="text-white site-title ml-2">Football Started in 1992</span>
         </NuxtLink>
       </v-app-bar-title>
       <v-spacer></v-spacer>
@@ -13,7 +13,7 @@
         variant="text"
         prepend-icon="mdi-information-outline"
         to="/about"
-        class="text-white"
+        class="text-white d-none d-sm-flex"
       >
         About
       </v-btn>

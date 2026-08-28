@@ -2,13 +2,13 @@
   <v-row>
     <v-col cols="12" md="8" offset-md="2">
       <v-row>
-        <v-col cols="12" sm="4">
+        <v-col cols="4" sm="4">
           <StatCircle :value="stats.total_matches" label="Total Matches Analysed" />
         </v-col>
-        <v-col cols="12" sm="4">
+        <v-col cols="4" sm="4">
           <StatCircle :value="stats.total_unique_teams" label="Total Unique Teams" />
         </v-col>
-        <v-col cols="12" sm="4">
+        <v-col cols="4" sm="4">
           <StatCircle :value="stats.total_goals" label="Total Goals Scored" />
         </v-col>
       </v-row>
@@ -24,7 +24,7 @@
     </v-col>
 
     <v-col cols="12" md="10" offset-md="1">
-      <v-row dense>
+      <v-row>
         <v-col v-for="t in thumbnails" :key="t.path" cols="12" sm="6" md="4" lg="3">
           <ChartThumb :entry="t" />
         </v-col>

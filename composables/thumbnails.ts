@@ -20,7 +20,8 @@ import {
   scoringRuns,
   fixtureRedCards,
   redCardsBySeason,
-  subTiming
+  subTiming,
+  subTiming2025_26
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 
@@ -178,6 +179,18 @@ const subTimingDots: { kind: 'dots'; rows: { label: string; minutes: number[] }[
   rows: [...new Set(subTiming.map(r => r.team_name))]
     .map(name => {
       const rows = subTiming.filter(r => r.team_name === name)
+      return {
+        label: rows[0].team_short_name,
+        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
+      }
+    })
+}
+
+const subTiming202526Dots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
+  kind: 'dots',
+  rows: [...new Set(subTiming2025_26.map(r => r.team_name))]
+    .map(name => {
+      const rows = subTiming2025_26.filter(r => r.team_name === name)
       return {
         label: rows[0].team_short_name,
         minutes: rows.map(r => r.minute).sort((a, b) => a - b)
@@ -360,9 +373,15 @@ export const thumbnails: Thumbnail[] = [
     preview: ganttPreview
   },
   {
-    label: '1992-93 Substitutions',
-    path: '/season-reviews/1992-93-sample',
-    caption: 'When each club made substitutions, by minute.',
+    label: '1992-93',
+    path: '/season-reviews/1992-93',
+    caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: subTimingDots
+  },
+  {
+    label: '2025-26',
+    path: '/season-reviews/2025-26',
+    caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
+    preview: subTiming202526Dots
   }
 ]

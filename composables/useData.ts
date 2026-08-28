@@ -30,6 +30,10 @@ import fixtureRedCardsCsv from '~/assets/data/fixture_red_cards.csv?raw'
 import redCardsBySeasonCsv from '~/assets/data/red_cards_by_season.csv?raw'
 import subTimingCsv from '~/assets/data/sub_timing.csv?raw'
 import topScorersCsv from '~/assets/data/top_scorers.csv?raw'
+import subTiming202526Csv from '~/assets/data/sub_timing_2025_26.csv?raw'
+import topScorers202526Csv from '~/assets/data/top_scorers_2025_26.csv?raw'
+import yellowCardsCsv from '~/assets/data/yellow_cards.csv?raw'
+import redCardsCsv from '~/assets/data/red_cards.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -345,6 +349,13 @@ export interface RedCardsBySeasonRow {
 }
 
 export interface SubTimingRow {
+  team_name: string
+  team_short_name: string
+  minute: number
+}
+
+export interface CardTimingRow {
+  season_label: string
   team_name: string
   team_short_name: string
   minute: number
@@ -718,6 +729,33 @@ export const topScorers = parse<TopScorerRow>(topScorersCsv, d => ({
   player_name: d.player_name,
   team: d.team,
   goals: toInt(d, 'goals')
+}))
+
+export const subTiming2025_26 = parse<SubTimingRow>(subTiming202526Csv, d => ({
+  team_name: d.team_name,
+  team_short_name: d.team_short_name,
+  minute: toInt(d, 'minute')
+}))
+
+export const topScorers2025_26 = parse<TopScorerRow>(topScorers202526Csv, d => ({
+  rank: toInt(d, 'rank'),
+  player_name: d.player_name,
+  team: d.team,
+  goals: toInt(d, 'goals')
+}))
+
+export const yellowCards = parse<CardTimingRow>(yellowCardsCsv, d => ({
+  season_label: d.season_label,
+  team_name: d.team_name,
+  team_short_name: d.team_short_name,
+  minute: toInt(d, 'minute')
+}))
+
+export const redCards = parse<CardTimingRow>(redCardsCsv, d => ({
+  season_label: d.season_label,
+  team_name: d.team_name,
+  team_short_name: d.team_short_name,
+  minute: toInt(d, 'minute')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'
