@@ -34,6 +34,8 @@ import subTiming202526Csv from '~/assets/data/sub_timing_2025_26.csv?raw'
 import topScorers202526Csv from '~/assets/data/top_scorers_2025_26.csv?raw'
 import subTiming199900Csv from '~/assets/data/sub_timing_1999_00.csv?raw'
 import topScorers199900Csv from '~/assets/data/top_scorers_1999_00.csv?raw'
+import partnerships199900Csv from '~/assets/data/partnerships_1999_00.csv?raw'
+import partnerships202526Csv from '~/assets/data/partnerships_2025_26.csv?raw'
 import yellowCardsCsv from '~/assets/data/yellow_cards.csv?raw'
 import redCardsCsv from '~/assets/data/red_cards.csv?raw'
 
@@ -366,6 +368,14 @@ export interface CardTimingRow {
 export interface TopScorerRow {
   rank: number
   player_name: string
+  team: string
+  goals: number
+}
+
+export interface PartnershipRow {
+  rank: number
+  player_1_name: string
+  player_2_name: string
   team: string
   goals: number
 }
@@ -755,6 +765,22 @@ export const subTiming1999_00 = parse<SubTimingRow>(subTiming199900Csv, d => ({
 export const topScorers1999_00 = parse<TopScorerRow>(topScorers199900Csv, d => ({
   rank: toInt(d, 'rank'),
   player_name: d.player_name,
+  team: d.team,
+  goals: toInt(d, 'goals')
+}))
+
+export const partnerships1999_00 = parse<PartnershipRow>(partnerships199900Csv, d => ({
+  rank: toInt(d, 'rank'),
+  player_1_name: d.player_1_name,
+  player_2_name: d.player_2_name,
+  team: d.team,
+  goals: toInt(d, 'goals')
+}))
+
+export const partnerships2025_26 = parse<PartnershipRow>(partnerships202526Csv, d => ({
+  rank: toInt(d, 'rank'),
+  player_1_name: d.player_1_name,
+  player_2_name: d.player_2_name,
   team: d.team,
   goals: toInt(d, 'goals')
 }))

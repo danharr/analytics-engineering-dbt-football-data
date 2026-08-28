@@ -81,11 +81,45 @@
         </v-card-text>
       </v-card>
     </v-col>
+
+    <v-col cols="12" md="6" offset-md="3">
+      <v-card>
+        <v-card-title>
+          <v-icon icon="mdi-account-multiple" class="mr-2"></v-icon>
+          Top 5 Partnerships
+        </v-card-title>
+        <v-card-subtitle>
+          1999-00 most productive assist-scorer pairings
+        </v-card-subtitle>
+        <v-card-text>
+          <v-table density="comfortable">
+            <thead>
+              <tr>
+                <th class="text-left">#</th>
+                <th class="text-left">Player</th>
+                <th class="text-left">Partner</th>
+                <th class="text-left">Club</th>
+                <th class="text-right">Goals</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="row in partnerships1999_00" :key="row.rank">
+                <td>{{ row.rank }}</td>
+                <td><strong>{{ row.player_1_name }}</strong></td>
+                <td><strong>{{ row.player_2_name }}</strong></td>
+                <td>{{ row.team }}</td>
+                <td class="text-right">{{ row.goals }}</td>
+              </tr>
+            </tbody>
+          </v-table>
+        </v-card-text>
+      </v-card>
+    </v-col>
   </v-row>
 </template>
 
 <script setup>
-import { subTiming1999_00, topScorers1999_00, redCards, datasetLd } from '~/composables/useData'
+import { subTiming1999_00, topScorers1999_00, partnerships1999_00, redCards, datasetLd } from '~/composables/useData'
 
 const reds = redCards.filter(r => r.season_label === '1999-00')
 
