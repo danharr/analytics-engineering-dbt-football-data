@@ -22,6 +22,7 @@ import {
   redCardsBySeason,
   subTiming,
   subTiming1999_00,
+  subTiming2024_25,
   subTiming2025_26
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
@@ -204,6 +205,18 @@ const subTiming199900Dots: { kind: 'dots'; rows: { label: string; minutes: numbe
   rows: [...new Set(subTiming1999_00.map(r => r.team_name))]
     .map(name => {
       const rows = subTiming1999_00.filter(r => r.team_name === name)
+      return {
+        label: rows[0].team_short_name,
+        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
+      }
+    })
+}
+
+const subTiming202425Dots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
+  kind: 'dots',
+  rows: [...new Set(subTiming2024_25.map(r => r.team_name))]
+    .map(name => {
+      const rows = subTiming2024_25.filter(r => r.team_name === name)
       return {
         label: rows[0].team_short_name,
         minutes: rows.map(r => r.minute).sort((a, b) => a - b)
@@ -396,6 +409,12 @@ export const thumbnails: Thumbnail[] = [
     path: '/season-reviews/1999-00',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: subTiming199900Dots
+  },
+  {
+    label: '2024-25',
+    path: '/season-reviews/2024-25',
+    caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
+    preview: subTiming202425Dots
   },
   {
     label: '2025-26',

@@ -34,6 +34,7 @@ An interactive dashboard of Premier League football history.
 - **Season Pages** — the final league table (P/W/D/L/GF/GA/GD/points) for every season at `/seasons`, 1992-93 through 2025-26, ranked by points then goal difference then goals scored, plus the season's five biggest wins and a "points race" line chart of every team's cumulative points by matchweek
 - **Season Reviews — 1992-93** — every substitution and every yellow/red card made by each club in the 1992-93 season, plotted as a 0-90 minute heat map per team, from the per-match event feed, plus the season's top 5 scorers
 - **Season Reviews — 1999-00** — every substitution and every red card made by each club in the 1999-00 season, plotted as a 0-90 minute heat map per team, from the per-match event feed, plus the season's top 5 scorers and top 5 assist-scorer partnerships
+- **Season Reviews — 2024-25** — every substitution and every yellow/red card made by each club in the 2024-25 season, plotted as a 0-90 minute heat map per team, from the per-match event feed, plus the season's top 5 scorers and top 5 assist-scorer partnerships
 - **Season Reviews — 2025-26** — every substitution and every yellow/red card made by each club in the 2025-26 season, plotted as a 0-90 minute heat map per team, from the per-match event feed, plus the season's top 5 scorers and top 5 assist-scorer partnerships
 
 ## Data
