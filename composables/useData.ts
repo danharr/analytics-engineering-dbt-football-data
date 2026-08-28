@@ -414,6 +414,35 @@ function parse<T>(csv: string, map: (d: Record<string, string>) => T): T[] {
   return csvParse(csv, map as never) as unknown as T[]
 }
 
+export function joinNames(names: string[]): string {
+  if (names.length <= 1) return names[0] ?? ''
+  return `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`
+}
+
+export function mostAndFewest(
+  rows: { team_name: string }[],
+  allTeams: string[]
+): { most: { names: string[]; n: number }; fewest: { names: string[]; n: number } } {
+  const counts = new Map<string, number>(allTeams.map(t => [t, 0]))
+  for (const r of rows) {
+    counts.set(r.team_name, (counts.get(r.team_name) || 0) + 1)
+  }
+  const entries = [...counts.entries()]
+  const max = Math.max(...entries.map(([, n]) => n))
+  const min = Math.min(...entries.map(([, n]) => n))
+  const pick = (n: number) => entries.filter(([, v]) => v === n).map(([t]) => t).sort()
+  return { most: { names: pick(max), n: max }, fewest: { names: pick(min), n: min } }
+}
+
+export function fewestSummary(fewest: { names: string[]; n: number }): string {
+  if (fewest.n === 0) {
+    if (fewest.names.length === 1) return `${fewest.names[0]} had none at all`
+    if (fewest.names.length === 2) return `${fewest.names[0]} and ${fewest.names[1]} had none at all`
+    return `${fewest.names.length} clubs had none at all`
+  }
+  return `${joinNames(fewest.names)} had the fewest (${fewest.n})`
+}
+
 export const stats: Stats = (() => {
   const rows = csvParse(statsCsv)
   const d = rows[0] as unknown as Record<string, string>

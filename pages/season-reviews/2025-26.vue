@@ -29,6 +29,7 @@
           Each row is a club · each square is one minute, shaded by how many subs were made
         </v-card-subtitle>
         <v-card-text>
+          <p class="font-weight-medium mb-3">{{ subSummary }}</p>
           <SubTimingChart :data="subTiming2025_26" />
         </v-card-text>
       </v-card>
@@ -41,6 +42,7 @@
           Each row is a club · each square is one minute, shaded by how many yellows were shown
         </v-card-subtitle>
         <v-card-text>
+          <p class="font-weight-medium mb-3">{{ yellowSummary }}</p>
           <MinuteHeatmapChart :data="yellows" color="#f9a825" item-label="yellow card" />
         </v-card-text>
       </v-card>
@@ -53,6 +55,7 @@
           Straight reds and second yellows, by the minute they were shown
         </v-card-subtitle>
         <v-card-text>
+          <p class="font-weight-medium mb-3">{{ redSummary }}</p>
           <MinuteHeatmapChart :data="reds" color="#c62828" item-label="red card" />
         </v-card-text>
       </v-card>
@@ -68,6 +71,7 @@
           2025-26 Golden Boot standings
         </v-card-subtitle>
         <v-card-text>
+          <p class="font-weight-medium mb-3">{{ scorerSummary }}</p>
           <v-table density="comfortable">
             <thead>
               <tr>
@@ -100,6 +104,7 @@
           2025-26 most productive assist-scorer pairings
         </v-card-subtitle>
         <v-card-text>
+          <p class="font-weight-medium mb-3">{{ partnershipSummary }}</p>
           <v-table density="comfortable">
             <thead>
               <tr>
@@ -127,10 +132,32 @@
 </template>
 
 <script setup>
-import { subTiming2025_26, topScorers2025_26, partnerships2025_26, yellowCards, redCards, datasetLd } from '~/composables/useData'
+import { subTiming2025_26, topScorers2025_26, partnerships2025_26, yellowCards, redCards, joinNames, mostAndFewest, fewestSummary, datasetLd } from '~/composables/useData'
 
 const yellows = yellowCards.filter(r => r.season_label === '2025-26')
 const reds = redCards.filter(r => r.season_label === '2025-26')
+
+const teams = [...new Set(subTiming2025_26.map(r => r.team_name))]
+
+const subSummary = (() => {
+  const { most } = mostAndFewest(subTiming2025_26, teams)
+  return `${joinNames(most.names)} made the most substitutions (${most.n}).`
+})()
+
+const yellowSummary = (() => {
+  const { most } = mostAndFewest(yellows, teams)
+  return `${joinNames(most.names)} picked up the most yellow cards (${most.n}).`
+})()
+
+const redSummary = (() => {
+  const { most, fewest } = mostAndFewest(reds, teams)
+  return `${joinNames(most.names)} had the most red cards (${most.n}) whilst ${fewestSummary(fewest)}.`
+})()
+
+const scorerSummary = `${topScorers2025_26[0].player_name} won the Golden Boot with ${topScorers2025_26[0].goals} goals.`
+
+const bestPair = partnerships2025_26[0]
+const partnershipSummary = `The best partnership was ${bestPair.player_1_name} and ${bestPair.player_2_name} of ${bestPair.team} (${bestPair.goals} goals).`
 
 useHead({
   title: '2025-26 Substitution Timing',
