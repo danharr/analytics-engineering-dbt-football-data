@@ -105,7 +105,7 @@
               <tr>
                 <th class="text-left">#</th>
                 <th class="text-left">Player</th>
-                <th class="text-left">Partner</th>
+                <th class="text-left">Player</th>
                 <th class="text-left">Club</th>
                 <th class="text-right">Goals</th>
               </tr>
