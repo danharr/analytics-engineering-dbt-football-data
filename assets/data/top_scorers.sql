@@ -27,7 +27,7 @@ copy (
         r.teams as team,
         r.goals
     from ranked r
-    left join "premier_league"."main"."players" p on p.player_id = r.player_id
+    left join "premier_league"."main"."dim_player" p on p.player_id = r.player_id
     where r.rank <= 5
     order by r.rank
 )

@@ -151,7 +151,7 @@ gtag('config', 'G-HRJ1G6XTG1');`
     prerender: {
       crawlLinks: false,
       routes: [
-        '/', '/about', '/blog/do-analytics-engineers-need-to-know-dbt', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/fixture-red-cards', '/red-cards-by-season', '/one-nil-wins', '/ht-lead-no-win-streaks', '/comeback-kings', '/most-comebacks', '/manager-wins', '/manager-debuts', '/manager-timeline', '/scoring-trends', '/goal-minutes', '/scoring-runs', '/season-reviews/1992-93', '/season-reviews/2025-26',
+        '/', '/about', '/blog/do-analytics-engineers-need-to-know-dbt', '/most-wins', '/data-quality', '/attendances', '/all-time-table', '/five-game-streaks', '/big-win-streaks', '/longest-winless-gaps', '/most-chaotic-matches', '/fixture-red-cards', '/red-cards-by-season', '/one-nil-wins', '/ht-lead-no-win-streaks', '/comeback-kings', '/most-comebacks', '/manager-wins', '/manager-debuts', '/manager-timeline', '/scoring-trends', '/goal-minutes', '/scoring-runs', '/season-reviews/1992-93', '/season-reviews/1999-00', '/season-reviews/2025-26',
         ...teamRoutes(),
         ...managerRoutes(),
         ...seasonRoutes(),

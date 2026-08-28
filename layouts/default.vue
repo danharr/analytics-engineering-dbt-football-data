@@ -8,7 +8,6 @@
           <span class="text-white site-title ml-2">Football Started in 1992</span>
         </NuxtLink>
       </v-app-bar-title>
-      <v-spacer></v-spacer>
       <v-btn
         variant="text"
         prepend-icon="mdi-information-outline"

@@ -33,6 +33,7 @@ export const navItems = [
 
   { header: 'Season Reviews' },
   { label: '1992-93', path: '/season-reviews/1992-93', icon: 'mdi-swap-horizontal' },
+  { label: '1999-00', path: '/season-reviews/1999-00', icon: 'mdi-swap-horizontal' },
   { label: '2025-26', path: '/season-reviews/2025-26', icon: 'mdi-swap-horizontal' },
 
   { header: 'About' },
