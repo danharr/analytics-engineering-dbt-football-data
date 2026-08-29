@@ -1,6 +1,8 @@
 -- Season-by-season scoring and discipline trends, plus an "excitement" ranking built
 -- from goals per game (high), nil-nils (few) and draw share (low). Red cards are only
--- recorded from 2006-07 onwards, so earlier seasons report 0.
+-- recorded from 2006-07 onwards, so earlier seasons report 0. In-progress seasons
+-- (fewer than 380 matches) are excluded so the current season can't top the ranking
+-- on a tiny sample.
 copy (
     with per_season as (
         select
@@ -15,6 +17,7 @@ copy (
             round(sum(home_red_cards + away_red_cards) / count(*), 2) as reds_per_game
         from "premier_league"."main"."fct_matches"
         group by season_label
+        having count(*) >= 380
     ),
     ranked as (
         select

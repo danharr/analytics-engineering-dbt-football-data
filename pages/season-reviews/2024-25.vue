@@ -4,19 +4,20 @@
       <v-card color="secondary" variant="tonal">
         <v-card-title>
           <v-icon icon="mdi-swap-horizontal" class="mr-2"></v-icon>
-          2024-25 Substitution Timing
+          2024-25 Season Summary In Charts
         </v-card-title>
         <v-card-subtitle>
-          When each club made their substitutions, minute by minute
+          Substitutions, yellow &amp; red cards, top scorers and partnerships, chart by chart
         </v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            Every substitution made by each Premier League club in the 2024-25 season,
-            shown as a heat map: one row per club, 90 one-minute squares running left to
-            right, shaded from white (no changes) to red (the most changes in that minute).
-            The half-time mark is shown as a vertical line at 45'. Generated from the
-            per-match event feed (goals, cards and substitutions) rather than the aggregate
-            match results.
+            The 2024-25 season in charts. Substitutions, yellow cards and red cards are
+            shown as heat maps: one row per club, 90 one-minute squares running left to
+            right, shaded from white (no events) to the deepest colour (the most events in
+            that minute), with the half-time mark as a vertical line at 45'. The season's
+            top five scorers and most productive assist-scorer partnerships follow.
+            Generated from the per-match event feed (goals, cards and substitutions)
+            rather than the aggregate match results.
           </p>
         </v-card-text>
       </v-card>
@@ -43,7 +44,7 @@
         </v-card-subtitle>
         <v-card-text>
           <p class="font-weight-medium mb-3">{{ yellowSummary }}</p>
-          <MinuteHeatmapChart :data="yellows" color="#f9a825" item-label="yellow card" />
+          <MinuteHeatmapChart :data="yellows" color="#fbc02d" item-label="yellow card" />
         </v-card-text>
       </v-card>
     </v-col>
@@ -160,19 +161,19 @@ const bestPair = partnerships2024_25[0]
 const partnershipSummary = `The best partnership was ${bestPair.player_1_name} and ${bestPair.player_2_name} of ${bestPair.team} (${bestPair.goals} goals).`
 
 useHead({
-  title: '2024-25 Substitution Timing',
+  title: '2024-25 Season Summary In Charts',
   meta: [
     {
       name: 'description',
-      content: 'Every substitution made by each Premier League club in the 2024-25 season, charted by the minute it was made from the per-match event feed.'
+      content: 'The 2024-25 Premier League season in charts: substitution, yellow card and red card timing heat maps plus the season\'s top five scorers and assist-scorer partnerships, generated from the per-match event feed.'
     }
   ],
   script: [
     {
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
-        name: 'Premier League 2024-25 Substitution Timing Dataset',
-        description: 'Every substitution made by each Premier League club in the 2024-25 season, by minute, from the per-match event feed.',
+        name: 'Premier League 2024-25 Season Summary Dataset',
+        description: 'The 2024-25 Premier League season in charts: substitutions, yellow and red cards by minute, plus the top five scorers and assist-scorer partnerships, from the per-match event feed.',
         path: '/season-reviews/2024-25',
         csv: 'sub_timing_2024_25.csv',
         keywords: ['substitutions', '2024-25', 'Premier League']

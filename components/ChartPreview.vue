@@ -319,6 +319,19 @@ function renderDots(svg, rows) {
     .attr('fill', '#888')
 }
 
+function renderSeason(svg, label) {
+  svg.append('text')
+    .attr('x', W / 2)
+    .attr('y', H / 2)
+    .attr('text-anchor', 'middle')
+    .attr('dominant-baseline', 'central')
+    .attr('font-family', "'Tourney', sans-serif")
+    .attr('font-size', '52px')
+    .attr('font-weight', 700)
+    .attr('fill', '#1a56db')
+    .text(label)
+}
+
 function render() {
   const target = el.value
   if (!target || !props.preview) return
@@ -339,6 +352,7 @@ function render() {
   else if (p.kind === 'gantt') renderGantt(svg, p.rows)
   else if (p.kind === 'pyramid') renderPyramid(svg, p.rows)
   else if (p.kind === 'dots') renderDots(svg, p.rows)
+  else if (p.kind === 'season') renderSeason(svg, p.label)
 }
 
 onMounted(render)

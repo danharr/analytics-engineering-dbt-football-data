@@ -5,6 +5,7 @@
 <script setup>
 import * as d3 from 'd3'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { shortSeason } from '~/utils/seasonLabel'
 
 const props = defineProps({
   data: { type: Array, required: true }
@@ -95,7 +96,7 @@ function renderChart() {
   chart.append('g')
     .attr('class', 'axis')
     .attr('transform', `translate(0,${innerH})`)
-    .call(d3.axisBottom(x).tickSizeOuter(0).tickValues(seasons.filter((_, i) => i % 2 === 0)))
+    .call(d3.axisBottom(x).tickSizeOuter(0).tickValues(seasons.filter((_, i) => i % 2 === 0)).tickFormat(shortSeason))
 
   chart.append('g')
     .attr('class', 'axis')

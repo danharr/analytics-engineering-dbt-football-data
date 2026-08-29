@@ -19,13 +19,10 @@ import {
   pointsLostFromWinning,
   scoringRuns,
   fixtureRedCards,
-  redCardsBySeason,
-  subTiming,
-  subTiming1999_00,
-  subTiming2024_25,
-  subTiming2025_26
+  redCardsBySeason
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
+import { shortSeason } from '~/utils/seasonLabel'
 
 interface BarRow {
   label: string
@@ -41,6 +38,7 @@ export type ThumbnailPreview =
   | { kind: 'gantt'; rows: { label: string; bars: { start: number; end: number }[] }[] }
   | { kind: 'pyramid'; rows: { label: string; left: number; right: number }[] }
   | { kind: 'dots'; rows: { label: string; minutes: number[] }[] }
+  | { kind: 'season'; label: string }
 
 export interface Thumbnail {
   label: string
@@ -175,54 +173,6 @@ const fixtureRedCardTotals = (() => {
   }
   return [...map.values()]
 })()
-
-const subTimingDots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
-  kind: 'dots',
-  rows: [...new Set(subTiming.map(r => r.team_name))]
-    .map(name => {
-      const rows = subTiming.filter(r => r.team_name === name)
-      return {
-        label: rows[0].team_short_name,
-        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
-      }
-    })
-}
-
-const subTiming202526Dots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
-  kind: 'dots',
-  rows: [...new Set(subTiming2025_26.map(r => r.team_name))]
-    .map(name => {
-      const rows = subTiming2025_26.filter(r => r.team_name === name)
-      return {
-        label: rows[0].team_short_name,
-        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
-      }
-    })
-}
-
-const subTiming199900Dots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
-  kind: 'dots',
-  rows: [...new Set(subTiming1999_00.map(r => r.team_name))]
-    .map(name => {
-      const rows = subTiming1999_00.filter(r => r.team_name === name)
-      return {
-        label: rows[0].team_short_name,
-        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
-      }
-    })
-}
-
-const subTiming202425Dots: { kind: 'dots'; rows: { label: string; minutes: number[] }[] } = {
-  kind: 'dots',
-  rows: [...new Set(subTiming2024_25.map(r => r.team_name))]
-    .map(name => {
-      const rows = subTiming2024_25.filter(r => r.team_name === name)
-      return {
-        label: rows[0].team_short_name,
-        minutes: rows.map(r => r.minute).sort((a, b) => a - b)
-      }
-    })
-}
 
 export const thumbnails: Thumbnail[] = [
   {
@@ -402,24 +352,24 @@ export const thumbnails: Thumbnail[] = [
     label: '1992-93',
     path: '/season-reviews/1992-93',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
-    preview: subTimingDots
+    preview: { kind: 'season', label: shortSeason('1992-93') }
   },
   {
     label: '1999-00',
     path: '/season-reviews/1999-00',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
-    preview: subTiming199900Dots
+    preview: { kind: 'season', label: shortSeason('1999-00') }
   },
   {
     label: '2024-25',
     path: '/season-reviews/2024-25',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
-    preview: subTiming202425Dots
+    preview: { kind: 'season', label: shortSeason('2024-25') }
   },
   {
     label: '2025-26',
     path: '/season-reviews/2025-26',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
-    preview: subTiming202526Dots
+    preview: { kind: 'season', label: shortSeason('2025-26') }
   }
 ]

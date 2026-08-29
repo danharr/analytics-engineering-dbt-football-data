@@ -120,7 +120,6 @@ onBeforeUnmount(() => {
   background: #e8f0fe;
   border: 1px solid #bcd2f5;
   color: #1a56db;
-  cursor: help;
   transition: transform 0.1s ease;
 }
 .bws-square:hover {

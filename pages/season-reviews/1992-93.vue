@@ -4,19 +4,19 @@
       <v-card color="secondary" variant="tonal">
         <v-card-title>
           <v-icon icon="mdi-swap-horizontal" class="mr-2"></v-icon>
-          1992-93 Substitution Timing
+          1992-93 Season Summary In Charts
         </v-card-title>
         <v-card-subtitle>
-          When each club made their substitutions, minute by minute
+          Substitutions, red cards and top scorers, chart by chart
         </v-card-subtitle>
         <v-card-text class="pt-0">
           <p class="mb-0">
-            Every substitution made by each Premier League club in the 1992-93 season,
-            shown as a heat map: one row per club, 90 one-minute squares running left to
-            right, shaded from white (no changes) to red (the most changes in that minute).
-            The half-time mark is shown as a vertical line at 45'. Generated from the
-            per-match event feed (goals, cards and substitutions) rather than the aggregate
-            match results.
+            The 1992-93 season in charts. Substitutions and red cards are shown as heat
+            maps: one row per club, 90 one-minute squares running left to right, shaded
+            from white (no events) to the deepest colour (the most events in that minute),
+            with the half-time mark as a vertical line at 45'. The season's top five
+            scorers follow. Generated from the per-match event feed (goals, cards and
+            substitutions) rather than the aggregate match results.
           </p>
         </v-card-text>
       </v-card>
@@ -107,19 +107,19 @@ const redSummary = (() => {
 const scorerSummary = `${topScorers[0].player_name} won the Golden Boot with ${topScorers[0].goals} goals.`
 
 useHead({
-  title: '1992-93 Substitution Timing',
+  title: '1992-93 Season Summary In Charts',
   meta: [
     {
       name: 'description',
-      content: 'Every substitution made by each Premier League club in the 1992-93 season, charted by the minute it was made from the per-match event feed.'
+      content: 'The 1992-93 Premier League season in charts: substitution and red card timing heat maps plus the season\'s top five scorers, generated from the per-match event feed.'
     }
   ],
   script: [
     {
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
-        name: 'Premier League 1992-93 Substitution Timing Dataset',
-        description: 'Every substitution made by each Premier League club in the 1992-93 season, by minute, from the per-match event feed.',
+        name: 'Premier League 1992-93 Season Summary Dataset',
+        description: 'The 1992-93 Premier League season in charts: substitutions and red cards by minute, plus the top five scorers, from the per-match event feed.',
         path: '/season-reviews/1992-93',
         csv: 'sub_timing.csv',
         keywords: ['substitutions', '1992-93', 'Premier League']

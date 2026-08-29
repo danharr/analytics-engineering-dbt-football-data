@@ -1,1 +1,0 @@
-import{j as e}from"./L0y8iTKc.js";import{t}from"./D48iIGwe.js";const r=e.map(a=>({slug:t(a.team_name),abbr:a.team_abbr,name:a.team_name})).sort((a,m)=>a.name.localeCompare(m.name));function s(a){return r.find(m=>m.slug===a)}export{s as a,r as t};

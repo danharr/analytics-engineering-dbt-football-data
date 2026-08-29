@@ -51,6 +51,8 @@
         <slot />
       </v-container>
     </v-main>
+
+    <CookieConsent />
   </v-app>
 </template>
 
@@ -59,6 +61,7 @@ import { ref, computed } from 'vue'
 import { useDisplay } from 'vuetify'
 import { navItems } from '~/composables/navItems'
 import { useBreadcrumbs } from '~/composables/breadcrumbs'
+import CookieConsent from '~/components/CookieConsent.vue'
 
 const crumbs = useBreadcrumbs()
 const drawer = ref(false)
