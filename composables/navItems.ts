@@ -37,6 +37,9 @@ export const navItems = [
   { label: '2024-25', path: '/season-reviews/2024-25', icon: 'mdi-swap-horizontal' },
   { label: '2025-26', path: '/season-reviews/2025-26', icon: 'mdi-swap-horizontal' },
 
+  { header: 'Players' },
+  { label: 'Erling Haaland', path: '/players/erling-haaland', icon: 'mdi-account-star' },
+
   { header: 'About' },
   { label: 'About', path: '/about', icon: 'mdi-information-outline' }
 ]

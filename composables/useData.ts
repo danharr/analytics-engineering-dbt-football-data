@@ -41,6 +41,7 @@ import topScorers202425Csv from '~/assets/data/top_scorers_2024_25.csv?raw'
 import partnerships202425Csv from '~/assets/data/partnerships_2024_25.csv?raw'
 import yellowCardsCsv from '~/assets/data/yellow_cards.csv?raw'
 import redCardsCsv from '~/assets/data/red_cards.csv?raw'
+import haalandGoalsCsv from '~/assets/data/haaland_goals.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -381,6 +382,12 @@ export interface PartnershipRow {
   player_2_name: string
   team: string
   goals: number
+}
+
+export interface HaalandGoalRow {
+  season_label: string
+  match_week: number
+  cumulative_goals: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -850,6 +857,12 @@ export const redCards = parse<CardTimingRow>(redCardsCsv, d => ({
   team_name: d.team_name,
   team_short_name: d.team_short_name,
   minute: toInt(d, 'minute')
+}))
+
+export const haalandGoals = parse<HaalandGoalRow>(haalandGoalsCsv, d => ({
+  season_label: d.season_label,
+  match_week: toInt(d, 'match_week'),
+  cumulative_goals: toInt(d, 'cumulative_goals')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'
