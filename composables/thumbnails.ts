@@ -361,6 +361,12 @@ export const thumbnails: Thumbnail[] = [
     preview: { kind: 'season', label: shortSeason('1999-00') }
   },
   {
+    label: '2023-24',
+    path: '/season-reviews/2023-24',
+    caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
+    preview: { kind: 'season', label: shortSeason('2023-24') }
+  },
+  {
     label: '2024-25',
     path: '/season-reviews/2024-25',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',

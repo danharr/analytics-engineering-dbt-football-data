@@ -41,7 +41,10 @@ import topScorers202425Csv from '~/assets/data/top_scorers_2024_25.csv?raw'
 import partnerships202425Csv from '~/assets/data/partnerships_2024_25.csv?raw'
 import yellowCardsCsv from '~/assets/data/yellow_cards.csv?raw'
 import redCardsCsv from '~/assets/data/red_cards.csv?raw'
-import haalandGoalsCsv from '~/assets/data/haaland_goals.csv?raw'
+import playerGoalsCsv from '~/assets/data/player_goals.csv?raw'
+import subTiming2023_24Csv from '~/assets/data/sub_timing_2023_24.csv?raw'
+import topScorers2023_24Csv from '~/assets/data/top_scorers_2023_24.csv?raw'
+import partnerships2023_24Csv from '~/assets/data/partnerships_2023_24.csv?raw'
 
 export interface Stats {
   total_matches: number
@@ -384,7 +387,8 @@ export interface PartnershipRow {
   goals: number
 }
 
-export interface HaalandGoalRow {
+export interface PlayerGoalRow {
+  player_name: string
   season_label: string
   match_week: number
   cumulative_goals: number
@@ -859,10 +863,32 @@ export const redCards = parse<CardTimingRow>(redCardsCsv, d => ({
   minute: toInt(d, 'minute')
 }))
 
-export const haalandGoals = parse<HaalandGoalRow>(haalandGoalsCsv, d => ({
+export const playerGoals = parse<PlayerGoalRow>(playerGoalsCsv, d => ({
+  player_name: d.player_name,
   season_label: d.season_label,
   match_week: toInt(d, 'match_week'),
   cumulative_goals: toInt(d, 'cumulative_goals')
+}))
+
+export const subTiming2023_24 = parse<SubTimingRow>(subTiming2023_24Csv, d => ({
+  team_name: d.team_name,
+  team_short_name: d.team_short_name,
+  minute: toInt(d, 'minute')
+}))
+
+export const topScorers2023_24 = parse<TopScorerRow>(topScorers2023_24Csv, d => ({
+  rank: toInt(d, 'rank'),
+  player_name: d.player_name,
+  team: d.team,
+  goals: toInt(d, 'goals')
+}))
+
+export const partnerships2023_24 = parse<PartnershipRow>(partnerships2023_24Csv, d => ({
+  rank: toInt(d, 'rank'),
+  player_1_name: d.player_1_name,
+  player_2_name: d.player_2_name,
+  team: d.team,
+  goals: toInt(d, 'goals')
 }))
 
 export const SITE_URL = 'https://footballstartedin1992.com'

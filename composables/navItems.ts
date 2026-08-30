@@ -34,11 +34,13 @@ export const navItems = [
   { header: 'Season Reviews' },
   { label: '1992-93', path: '/season-reviews/1992-93', icon: 'mdi-swap-horizontal' },
   { label: '1999-00', path: '/season-reviews/1999-00', icon: 'mdi-swap-horizontal' },
+  { label: '2023-24', path: '/season-reviews/2023-24', icon: 'mdi-swap-horizontal' },
   { label: '2024-25', path: '/season-reviews/2024-25', icon: 'mdi-swap-horizontal' },
   { label: '2025-26', path: '/season-reviews/2025-26', icon: 'mdi-swap-horizontal' },
 
   { header: 'Players' },
   { label: 'Erling Haaland', path: '/players/erling-haaland', icon: 'mdi-account-star' },
+  { label: 'Mohamed Salah', path: '/players/mohamed-salah', icon: 'mdi-account-star' },
 
   { header: 'About' },
   { label: 'About', path: '/about', icon: 'mdi-information-outline' }
