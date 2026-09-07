@@ -1,4 +1,5 @@
 team_name,team_abbr,run_length,seasons,start_date,end_date,opponents
+Bournemouth,BOU,3,2026-27,2026-08-23,2026-09-05,"Manchester City, Everton, Newcastle United"
 Crystal Palace,CRY,3,2018-19,2019-01-12,2019-01-30,"Watford, Liverpool, Southampton"
 Manchester City,MCI,3,1992-93,1993-04-09,1993-04-18,"Sheffield United, Liverpool, Aston Villa"
 Newcastle United,NEW,3,1999-00,1999-08-15,1999-08-25,"Southampton, Wimbledon, Sunderland"
@@ -10,7 +11,6 @@ Aston Villa,AVL,2,2000-01,2000-11-25,2000-12-02,"Coventry City, Newcastle United
 Birmingham City,BIR,2,2004-05,2004-11-21,2004-11-27,"Blackburn Rovers, Norwich City"
 Blackburn Rovers,BLA,2,1994-95,1995-04-15,1995-04-17,"Leeds United, Manchester City"
 Bolton Wanderers,BOL,2,2009-10,2009-12-26,2009-12-29,"Burnley, Hull City"
-Bournemouth,BOU,2,2022-23,2022-10-29,2022-11-05,"Tottenham Hotspur, Leeds United"
 Brentford,BRE,2,2024-25,2025-05-18,2025-05-25,"Fulham, Wolverhampton Wanderers"
 Brighton and Hove Albion,BHA,2,2024-25,2024-10-26,2024-11-02,"Wolverhampton Wanderers, Liverpool"
 Burnley,BUR,2,2009-10,2009-11-07,2009-11-21,"Manchester City, Aston Villa"

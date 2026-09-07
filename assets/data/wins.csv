@@ -1,12 +1,12 @@
 team_abbr,team_name,home_wins,away_wins,total_wins
-MUN,Manchester United,447,328,775
-ARS,Arsenal,424,296,720
-LIV,Liverpool,415,279,694
-CHE,Chelsea,390,292,682
-MCI,Manchester City,339,235,574
+MUN,Manchester United,448,328,776
+ARS,Arsenal,425,297,722
+LIV,Liverpool,415,280,695
+CHE,Chelsea,391,292,683
+MCI,Manchester City,340,236,576
 TOT,Tottenham Hotspur,345,216,561
 EVE,Everton,293,171,464
-NEW,Newcastle United,298,155,453
+NEW,Newcastle United,298,156,454
 AVL,Aston Villa,255,175,430
 WHU,West Ham United,242,139,381
 SOU,Southampton,181,101,282
@@ -14,8 +14,8 @@ BLA,Blackburn Rovers,169,93,262
 LEE,Leeds United,144,91,235
 LEI,Leicester City,134,90,224
 FUL,Fulham,155,65,220
-CRY,Crystal Palace,102,91,193
-SUN,Sunderland,107,60,167
+CRY,Crystal Palace,102,92,194
+SUN,Sunderland,108,60,168
 MID,Middlesbrough,110,55,165
 BOL,Bolton Wanderers,93,56,149
 WOL,Wolverhampton Wanderers,81,48,129
@@ -40,7 +40,7 @@ BRE,Brentford,40,29,69
 DER,Derby County,48,20,68
 IPS,Ipswich Town,37,25,62
 SHU,Sheffield United,40,16,56
-HUL,Hull City,30,12,42
+HUL,Hull City,30,13,43
 REA,Reading,23,9,32
 OLD,Oldham Athletic,15,7,22
 CAR,Cardiff City,11,6,17
