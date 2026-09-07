@@ -1,7 +1,7 @@
 -- Cumulative Premier League goals by matchweek for selected players, one row per
 -- (player_name, season_label, match_week). Each player's seasons are listed
--- explicitly below (they only top the scoring charts for an individual season, so
--- the set is small). Completed seasons come from the Pulselive v1 per-match event
+-- explicitly below (they only top the scoring charts for an individual season, or
+-- won the Golden Boot, so the set is small). Completed seasons come from the Pulselive v1 per-match event
 -- feed (fct_match_event), where player_id resolves to a name via dim_player and
 -- match_id aligns with fct_matches. The in-progress 2026-27 season comes from the
 -- BBC scores-fixtures feed (fct_team_goal), matched back to fct_matches by kickoff
@@ -13,13 +13,20 @@
 -- Backs the /players/* pages.
 copy (
     with players as (
-        select 'Erling Haaland' as player_name, 'E. Haaland' as bbc_name, 'Manchester City' as team, '2023-24' as season_label
+        select 'Erling Haaland' as player_name, 'E. Haaland' as bbc_name, 'Manchester City' as team, '2022-23' as season_label
+        union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2023-24'
         union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2024-25'
         union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2025-26'
         union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2026-27'
+        union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2022-23'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2023-24'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2024-25'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2025-26'
+        union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2022-23'
+        union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2023-24'
+        union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2024-25'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2022-23'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2024-25'
     ),
     schedule as (
         select
