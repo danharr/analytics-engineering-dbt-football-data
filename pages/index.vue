@@ -14,6 +14,8 @@
       </v-row>
     </v-col>
 
+    <HomeCarousel />
+
     <v-col cols="12" md="10" offset-md="1">
       <div class="section-head">
         <h2 class="text-h5 font-weight-bold mb-1">Explore the charts</h2>
@@ -142,6 +144,7 @@ import { stats, datasetLd } from '~/composables/useData'
 import { thumbnails } from '~/composables/thumbnails'
 import ChartThumb from '~/components/ChartThumb.vue'
 import StatCircle from '~/components/StatCircle.vue'
+import HomeCarousel from '~/components/HomeCarousel.vue'
 
 useHead({
   title: 'Football Started in 1992 | Premier League Stats, Records & History',
