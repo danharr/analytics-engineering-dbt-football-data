@@ -31,13 +31,15 @@
             <v-scroll-x-transition mode="out-in" appear>
               <v-sheet
                 :key="currentIndex"
-                rounded="xl"
+                color="rgba(255, 255, 255, 0.5)"
+                width="100%"
+                rounded="0"
               >
                 <v-list-item
                   :to="currentItem.path"
                   :subtitle="currentItem.subtitle"
                   :title="currentItem.title"
-                  class="pa-1 pr-6"
+                  class="px-4"
                 ></v-list-item>
               </v-sheet>
             </v-scroll-x-transition>
