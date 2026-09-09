@@ -2,6 +2,19 @@
   <div class="chart-wrap" ref="el"></div>
 </template>
 
+<script>
+// Module-scoped counter (shared across all component instances). Each heatmap
+// on a season-review page renders its own SVG, and every one of those SVGs
+// defines a linearGradient for its legend. A per-instance counter would reset
+// to zero in every <script setup>, so every legend would emit the same id
+// ("heatGrad-0") and each `url(#heatGrad-0)` fill would resolve to the FIRST
+// gradient in the document — the blue substitution legend — recolouring the
+// yellow/red card legends too.
+let gradientSeq = 0
+
+export default { name: 'MinuteHeatmapChart' }
+</script>
+
 <script setup>
 import * as d3 from 'd3'
 import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
@@ -13,8 +26,6 @@ const props = defineProps({
 })
 
 const el = ref(null)
-
-let gradientSeq = 0
 
 function renderChart() {
   const target = el.value
