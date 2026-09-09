@@ -43,7 +43,7 @@
         </v-card-subtitle>
         <v-card-text>
           <p class="font-weight-medium mb-3">{{ redSummary }}</p>
-          <MinuteHeatmapChart :data="reds" color="#c62828" item-label="red card" />
+          <MinuteHeatmapChart :data="reds" color="#e53935" item-label="red card" />
           <p class="text-caption mt-2 mb-0">
             Note: 1992-93 yellow-card minutes weren't recorded by the source (most default
             to the 89th minute), so the yellow-card heat map is omitted for this season.

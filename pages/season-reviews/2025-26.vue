@@ -44,7 +44,7 @@
         </v-card-subtitle>
         <v-card-text>
           <p class="font-weight-medium mb-3">{{ yellowSummary }}</p>
-          <MinuteHeatmapChart :data="yellows" color="#fbc02d" item-label="yellow card" />
+          <MinuteHeatmapChart :data="yellows" color="#fdd835" item-label="yellow card" />
         </v-card-text>
       </v-card>
     </v-col>
@@ -57,7 +57,7 @@
         </v-card-subtitle>
         <v-card-text>
           <p class="font-weight-medium mb-3">{{ redSummary }}</p>
-          <MinuteHeatmapChart :data="reds" color="#c62828" item-label="red card" />
+          <MinuteHeatmapChart :data="reds" color="#e53935" item-label="red card" />
         </v-card-text>
       </v-card>
     </v-col>
