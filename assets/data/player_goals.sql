@@ -18,15 +18,28 @@ copy (
         union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2024-25'
         union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2025-26'
         union all select 'Erling Haaland', 'E. Haaland', 'Manchester City', '2026-27'
+        union all select 'Harry Kane', 'Harry Kane', 'Tottenham Hotspur', '2019-20'
+        union all select 'Harry Kane', 'Harry Kane', 'Tottenham Hotspur', '2020-21'
+        union all select 'Harry Kane', 'Harry Kane', 'Tottenham Hotspur', '2021-22'
+        union all select 'Harry Kane', 'Harry Kane', 'Tottenham Hotspur', '2022-23'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2019-20'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2020-21'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2021-22'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2022-23'
+        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2024-25'
+        union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2019-20'
+        union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2020-21'
+        union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2021-22'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2022-23'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2023-24'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2024-25'
         union all select 'Mohamed Salah', 'Mohamed Salah', 'Liverpool', '2025-26'
+        union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2019-20'
+        union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2020-21'
+        union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2021-22'
         union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2022-23'
         union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2023-24'
         union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2024-25'
-        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2022-23'
-        union all select 'Jamie Vardy', 'Jamie Vardy', 'Leicester City', '2024-25'
     ),
     schedule as (
         select
@@ -52,6 +65,7 @@ copy (
         join "premier_league"."main"."dim_player" dp on dp.player_id = e.player_id
         join players p on p.player_name = dp.player_name and p.season_label = e.season_label
         where e.event_type = 'goal'
+          and e.goal_type is distinct from 'Own'
         group by p.player_name, e.season_label, e.match_id
     ),
     goals_bbc as (

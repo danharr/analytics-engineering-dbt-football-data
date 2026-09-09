@@ -13,7 +13,8 @@
           <p class="mb-0">
             Jamie Vardy is a two-time Premier League Golden Boot winner, taking the award
             in 2015-16 and 2019-20. Each line tracks his running goal total as the season
-            unfolds — every goal he scored by each matchweek, from 3 in 2022-23 through the
+            unfolds — every goal he scored by each matchweek, from the 23 that won him the
+            2019-20 Golden Boot, through 15 in 2020-21, 15 in 2021-22, 3 in 2022-23 and the
             9 of 2024-25 after Leicester City's promotion back to the top flight. The
             2023-24 season is omitted as Leicester spent it in the Championship. Generated
             from the per-match event feed rather than aggregate results.
@@ -52,7 +53,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Jamie Vardy\'s cumulative Premier League goals by matchweek across 2022-23 and 2024-25 at Leicester City.'
+      content: 'Jamie Vardy\'s cumulative Premier League goals by matchweek across 2019-20, 2020-21, 2021-22, 2022-23 and 2024-25 at Leicester City.'
     }
   ],
   script: [
@@ -60,7 +61,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Jamie Vardy Cumulative Premier League Goals Dataset',
-        description: 'Jamie Vardy\'s cumulative Premier League goals by matchweek for the 2022-23 and 2024-25 seasons, from the per-match event feed.',
+        description: 'Jamie Vardy\'s cumulative Premier League goals by matchweek for the 2019-20, 2020-21, 2021-22, 2022-23 and 2024-25 seasons, from the per-match event feed.',
         path: '/players/jamie-vardy',
         csv: 'player_goals.csv',
         keywords: ['Jamie Vardy', 'goals by matchweek', 'Golden Boot']

@@ -11,6 +11,7 @@ copy (
         where event_type = 'goal'
           and season_label = '2025-26'
           and player_id is not null
+          and goal_type is distinct from 'Own'
         group by player_id
     ),
     ranked as (

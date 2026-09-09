@@ -13,9 +13,10 @@
           <p class="mb-0">
             Son Heung-min shared the 2021-22 Golden Boot with Mohamed Salah. Each line
             tracks his running goal total as the season unfolds — every goal he scored by
-            each matchweek across his final Tottenham Hotspur seasons, from 10 in 2022-23
-            and 18 in 2023-24 through the 7 of 2024-25. Generated from the per-match event
-            feed rather than aggregate results.
+            each matchweek at Tottenham Hotspur, from 11 in 2019-20 and 17 in 2020-21
+            through the 23 that won him the 2021-22 Golden Boot, then 10 in 2022-23, 17 in
+            2023-24 and 7 in 2024-25. Generated from the per-match event feed rather than
+            aggregate results.
           </p>
         </v-card-text>
       </v-card>
@@ -51,7 +52,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Son Heung-min\'s cumulative Premier League goals by matchweek across 2022-23, 2023-24 and 2024-25 at Tottenham Hotspur.'
+      content: 'Son Heung-min\'s cumulative Premier League goals by matchweek across 2019-20 through 2024-25 at Tottenham Hotspur.'
     }
   ],
   script: [
@@ -59,7 +60,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Son Heung-min Cumulative Premier League Goals Dataset',
-        description: 'Son Heung-min\'s cumulative Premier League goals by matchweek for the 2022-23, 2023-24 and 2024-25 seasons, from the per-match event feed.',
+        description: 'Son Heung-min\'s cumulative Premier League goals by matchweek for the 2019-20 through 2024-25 seasons, from the per-match event feed.',
         path: '/players/son-heung-min',
         csv: 'player_goals.csv',
         keywords: ['Son Heung-min', 'goals by matchweek', 'Golden Boot']

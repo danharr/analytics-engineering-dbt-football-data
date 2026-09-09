@@ -13,10 +13,11 @@
           <p class="mb-0">
             Mohamed Salah has topped the Premier League scoring charts for an individual
             season. Each line tracks his running goal total as the season unfolds — every
-            goal he has scored by each matchweek, from 19 in 2022-23 and 18 in 2023-24
-            through the 29 that won him the 2024-25 Golden Boot and seven in 2025-26. Salah
-            left the Premier League after 2025-26, so there is no 2026-27 line. Generated
-            from the per-match event feed rather than aggregate results.
+            goal he has scored by each matchweek, from 19 in 2019-20, 22 in 2020-21 and the
+            23 that shared the 2021-22 Golden Boot with Son Heung-min, through 19 in 2022-23,
+            18 in 2023-24, the 29 that won him the 2024-25 Golden Boot and seven in 2025-26.
+            Salah left the Premier League after 2025-26, so there is no 2026-27 line.
+            Generated from the per-match event feed rather than aggregate results.
           </p>
         </v-card-text>
       </v-card>
@@ -52,7 +53,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Mohamed Salah\'s cumulative Premier League goals by matchweek across 2022-23, 2023-24, 2024-25 and 2025-26.'
+      content: 'Mohamed Salah\'s cumulative Premier League goals by matchweek across 2019-20 through 2025-26.'
     }
   ],
   script: [
@@ -60,7 +61,7 @@ useHead({
       type: 'application/ld+json',
       innerHTML: JSON.stringify(datasetLd({
         name: 'Mohamed Salah Cumulative Premier League Goals Dataset',
-        description: 'Mohamed Salah\'s cumulative Premier League goals by matchweek for the 2022-23, 2023-24, 2024-25 and 2025-26 seasons, from the per-match event feed.',
+        description: 'Mohamed Salah\'s cumulative Premier League goals by matchweek for the 2019-20 through 2025-26 seasons, from the per-match event feed.',
         path: '/players/mohamed-salah',
         csv: 'player_goals.csv',
         keywords: ['Mohamed Salah', 'goals by matchweek', 'Golden Boot']

@@ -34,6 +34,9 @@ export const navItems = [
   { header: 'Season Reviews' },
   { label: '1992-93', path: '/season-reviews/1992-93', icon: 'mdi-swap-horizontal' },
   { label: '1999-00', path: '/season-reviews/1999-00', icon: 'mdi-swap-horizontal' },
+  { label: '2019-20', path: '/season-reviews/2019-20', icon: 'mdi-swap-horizontal' },
+  { label: '2020-21', path: '/season-reviews/2020-21', icon: 'mdi-swap-horizontal' },
+  { label: '2021-22', path: '/season-reviews/2021-22', icon: 'mdi-swap-horizontal' },
   { label: '2022-23', path: '/season-reviews/2022-23', icon: 'mdi-swap-horizontal' },
   { label: '2023-24', path: '/season-reviews/2023-24', icon: 'mdi-swap-horizontal' },
   { label: '2024-25', path: '/season-reviews/2024-25', icon: 'mdi-swap-horizontal' },
@@ -41,6 +44,7 @@ export const navItems = [
 
   { header: 'Players' },
   { label: 'Erling Haaland', path: '/players/erling-haaland', icon: 'mdi-account-star' },
+  { label: 'Harry Kane', path: '/players/harry-kane', icon: 'mdi-account-star' },
   { label: 'Jamie Vardy', path: '/players/jamie-vardy', icon: 'mdi-account-star' },
   { label: 'Mohamed Salah', path: '/players/mohamed-salah', icon: 'mdi-account-star' },
   { label: 'Son Heung-min', path: '/players/son-heung-min', icon: 'mdi-account-star' },
