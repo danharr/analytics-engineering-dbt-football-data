@@ -1037,7 +1037,7 @@ export function datasetLd({ name, description, path, csv, keywords }: DatasetLdO
     '@type': 'Dataset',
     name,
     description,
-    url: `${SITE_URL}${path}`,
+    url: `${SITE_URL}${path.endsWith('/') ? path : `${path}/`}`,
     creator: {
       '@type': 'Organization',
       name: 'Football Started in 1992'
