@@ -11,6 +11,11 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="10" offset-md="1">
+        <v-card variant="text">
+          <v-card-text class="text-body-1">{{ manager.summary }}</v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="12" md="10" offset-md="1">
         <ManagerWinsChart :data="managerWins" :highlight="manager.name" />
       </v-col>
       <v-col cols="12" md="10" offset-md="1">
