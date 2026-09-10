@@ -138,7 +138,8 @@
 </template>
 
 <script setup>
-import { stats, datasetLd } from '~/composables/useData'
+import { stats } from '~/composables/useHomeData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { thumbnails } from '~/composables/thumbnails'
 import ChartThumb from '~/components/ChartThumb.vue'
 import StatCircle from '~/components/StatCircle.vue'

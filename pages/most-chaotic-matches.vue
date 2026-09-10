@@ -77,7 +77,8 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { mostChaoticMatches, datasetLd } from '~/composables/useData'
+import { mostChaoticMatches } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Highest-Scoring & Most Chaotic Premier League Matches',

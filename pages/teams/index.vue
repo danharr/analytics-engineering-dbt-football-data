@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import { allTime } from '~/composables/useData'
+import { allTime } from '~/composables/useAllTimeData'
 import { teamPages } from '~/composables/teamPages'
 
 const rows = teamPages

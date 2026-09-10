@@ -62,7 +62,8 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { goalMinutes, datasetLd } from '~/composables/useData'
+import { goalMinutes } from '~/composables/useGoalData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { teamColour } from '~/composables/teamColours'
 
 useHead({

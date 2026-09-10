@@ -56,7 +56,8 @@
 </template>
 
 <script setup>
-import { pointsLostFromWinning, datasetLd } from '~/composables/useData'
+import { pointsLostFromWinning } from '~/composables/useGoalData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 import { teamColour } from '~/composables/teamColours'
 

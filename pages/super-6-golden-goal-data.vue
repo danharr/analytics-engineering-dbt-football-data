@@ -37,7 +37,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import { firstGoalMinutes, joinNames, datasetLd } from '~/composables/useData'
+import { firstGoalMinutes } from '~/composables/usePlayerData'
+import { joinNames, datasetLd } from '~/composables/useChartHelpers'
 import FirstGoalMinuteChart from '~/components/FirstGoalMinuteChart.vue'
 
 const seasons = computed(() =>

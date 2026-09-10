@@ -72,7 +72,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import { fixtureRedCards, datasetLd } from '~/composables/useData'
+import { fixtureRedCards } from '~/composables/useGoalData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import FixtureRedCardsChart from '~/components/FixtureRedCardsChart.vue'
 
 useHead({

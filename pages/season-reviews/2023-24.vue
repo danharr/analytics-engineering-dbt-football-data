@@ -133,7 +133,8 @@
 </template>
 
 <script setup>
-import { subTiming2023_24, topScorers2023_24, partnerships2023_24, yellowCards, redCards, joinNames, mostAndFewest, fewestSummary, datasetLd } from '~/composables/useData'
+import { subTiming2023_24, topScorers2023_24, partnerships2023_24, yellowCards, redCards } from '~/composables/useSeasonReviewData'
+import { joinNames, mostAndFewest, fewestSummary, datasetLd } from '~/composables/useChartHelpers'
 
 const yellows = yellowCards.filter(r => r.season_label === '2023-24')
 const reds = redCards.filter(r => r.season_label === '2023-24')

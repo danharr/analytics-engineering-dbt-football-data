@@ -66,7 +66,8 @@
 </template>
 
 <script setup>
-import { mostComebacks, datasetLd } from '~/composables/useData'
+import { mostComebacks } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Most Half-Time Comebacks in a Single Premier League Season',

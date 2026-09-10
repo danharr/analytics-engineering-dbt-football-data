@@ -73,7 +73,8 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { comebackKings, datasetLd } from '~/composables/useData'
+import { comebackKings } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Most Premier League Half-Time Comeback Wins',

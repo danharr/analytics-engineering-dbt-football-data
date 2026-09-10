@@ -124,7 +124,8 @@
 </template>
 
 <script setup>
-import { subTiming1999_00, topScorers1999_00, partnerships1999_00, redCards, joinNames, mostAndFewest, fewestSummary, datasetLd } from '~/composables/useData'
+import { subTiming1999_00, topScorers1999_00, partnerships1999_00, redCards } from '~/composables/useSeasonReviewData'
+import { joinNames, mostAndFewest, fewestSummary, datasetLd } from '~/composables/useChartHelpers'
 
 const reds = redCards.filter(r => r.season_label === '1999-00')
 

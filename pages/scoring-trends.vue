@@ -91,7 +91,8 @@
 <script setup>
 import * as d3 from 'd3'
 import { computed } from 'vue'
-import { seasonScoring, datasetLd } from '~/composables/useData'
+import { seasonScoring } from '~/composables/useSeasonData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import ScoringTrendsChart from '~/components/ScoringTrendsChart.vue'
 
 useHead({

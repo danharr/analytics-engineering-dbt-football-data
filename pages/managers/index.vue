@@ -44,7 +44,7 @@
 </template>
 
 <script setup>
-import { managerWins } from '~/composables/useData'
+import { managerWins } from '~/composables/useManagerData'
 import { MANAGER_PAGES } from '~/utils/managerPages'
 
 const totalManagers = new Set(managerWins.map(r => r.manager_name)).size

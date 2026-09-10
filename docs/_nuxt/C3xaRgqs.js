@@ -1,0 +1,53 @@
+import{p as t,t as e}from"./D0kzHlpo.js";const a=`team_abbr,team_name,home_wins,away_wins,total_wins
+MUN,Manchester United,448,328,776
+ARS,Arsenal,425,297,722
+LIV,Liverpool,415,280,695
+CHE,Chelsea,391,292,683
+MCI,Manchester City,340,236,576
+TOT,Tottenham Hotspur,345,216,561
+EVE,Everton,293,171,464
+NEW,Newcastle United,298,156,454
+AVL,Aston Villa,255,175,430
+WHU,West Ham United,242,139,381
+SOU,Southampton,181,101,282
+BLA,Blackburn Rovers,169,93,262
+LEE,Leeds United,144,91,235
+LEI,Leicester City,134,90,224
+FUL,Fulham,155,65,220
+CRY,Crystal Palace,102,92,194
+SUN,Sunderland,108,60,168
+MID,Middlesbrough,110,55,165
+BOL,Bolton Wanderers,93,56,149
+WOL,Wolverhampton Wanderers,81,48,129
+WBA,West Bromwich Albion,76,41,117
+STO,Stoke City,81,35,116
+BHA,Brighton and Hove Albion,63,46,109
+BOU,Bournemouth,62,46,108
+NFO,Nottingham Forest,61,47,108
+SHW,Sheffield Wednesday,63,38,101
+COV,Coventry City,65,34,99
+NOR,Norwich City,66,33,99
+WIM,Wimbledon,62,37,99
+CHA,Charlton Athletic,58,35,93
+BUR,Burnley,56,36,92
+WIG,Wigan Athletic,48,37,85
+SWA,Swansea City,51,31,82
+QPR,Queens Park Rangers,51,30,81
+POR,Portsmouth,54,25,79
+BIR,Birmingham City,50,23,73
+WAT,Watford,45,28,73
+BRE,Brentford,40,29,69
+DER,Derby County,48,20,68
+IPS,Ipswich Town,37,25,62
+SHU,Sheffield United,40,16,56
+HUL,Hull City,30,13,43
+REA,Reading,23,9,32
+OLD,Oldham Athletic,15,7,22
+CAR,Cardiff City,11,6,17
+BRA,Bradford City,10,4,14
+HUD,Huddersfield Town,8,4,12
+BAR,Barnsley,7,3,10
+BPL,Blackpool,5,5,10
+LUT,Luton Town,4,2,6
+SWI,Swindon Town,4,1,5
+`,i=t(a,n=>({team_abbr:n.team_abbr,team_name:n.team_name,home_wins:e(n,"home_wins"),away_wins:e(n,"away_wins"),total_wins:e(n,"total_wins")}));export{i as w};

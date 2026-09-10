@@ -66,7 +66,7 @@
 <script setup>
 import * as d3 from 'd3'
 import { useRoute } from 'vue-router'
-import { seasonTable, seasonPoints, seasonBiggestWins } from '~/composables/useData'
+import { seasonTable, seasonPoints, seasonBiggestWins } from '~/composables/useSeasonData'
 import SeasonTableChart from '~/components/SeasonTableChart.vue'
 import SeasonPointsChart from '~/components/SeasonPointsChart.vue'
 

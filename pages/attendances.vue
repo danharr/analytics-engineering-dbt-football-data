@@ -26,7 +26,8 @@
 </template>
 
 <script setup>
-import { attendance, datasetLd } from '~/composables/useData'
+import { attendance } from '~/composables/useAttendanceData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Highest Average Home Attendances in Premier League History',

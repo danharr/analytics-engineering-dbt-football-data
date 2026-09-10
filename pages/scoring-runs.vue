@@ -96,7 +96,8 @@
 </template>
 
 <script setup>
-import { scoringRuns, datasetLd } from '~/composables/useData'
+import { scoringRuns } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { teamColour } from '~/composables/teamColours'
 
 useHead({

@@ -74,7 +74,8 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { htLeadNoWinStreaks, datasetLd } from '~/composables/useData'
+import { htLeadNoWinStreaks } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Premier League Teams That Failed to Win After Leading at Half-Time',

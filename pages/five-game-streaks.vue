@@ -72,7 +72,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import { fiveGameStreaks, datasetLd } from '~/composables/useData'
+import { fiveGameStreaks } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Longest Winning Streaks in Premier League History',

@@ -1,0 +1,53 @@
+import{p as t,t as e}from"./D0kzHlpo.js";const a=`team_abbr,team_name,matches_played,wins,draws,losses,points
+MUN,Manchester United,1307,776,290,241,2618
+ARS,Arsenal,1307,722,316,269,2482
+LIV,Liverpool,1307,695,322,290,2407
+CHE,Chelsea,1307,683,323,301,2372
+TOT,Tottenham Hotspur,1307,561,310,436,1993
+MCI,Manchester City,1117,576,239,302,1967
+EVE,Everton,1307,464,368,475,1760
+NEW,Newcastle United,1189,454,299,436,1661
+AVL,Aston Villa,1193,430,329,434,1619
+WHU,West Ham United,1148,381,289,478,1432
+SOU,Southampton,962,282,254,426,1100
+BLA,Blackburn Rovers,696,262,184,250,970
+LEE,Leeds United,623,235,167,221,872
+LEI,Leicester City,688,224,174,290,846
+FUL,Fulham,725,220,185,320,845
+CRY,Crystal Palace,657,194,177,286,759
+SUN,Sunderland,649,168,172,309,676
+MID,Middlesbrough,574,165,169,240,664
+BOL,Bolton Wanderers,494,149,128,217,575
+WOL,Wolverhampton Wanderers,456,129,110,217,497
+WBA,West Bromwich Albion,494,117,139,238,490
+STO,Stoke City,380,116,109,155,457
+BHA,Brighton and Hove Albion,345,109,110,126,437
+NFO,Nottingham Forest,353,108,100,145,424
+BOU,Bournemouth,345,108,89,148,413
+COV,Coventry City,357,99,112,146,409
+NOR,Norwich City,392,99,105,188,402
+SHW,Sheffield Wednesday,316,101,89,126,392
+WIM,Wimbledon,316,99,94,123,391
+BUR,Burnley,380,92,95,193,371
+CHA,Charlton Athletic,304,93,82,129,361
+WIG,Wigan Athletic,304,85,76,143,331
+SWA,Swansea City,266,82,66,118,312
+QPR,Queens Park Rangers,278,81,65,132,308
+POR,Portsmouth,266,79,65,122,302
+BIR,Birmingham City,266,73,82,111,301
+WAT,Watford,304,73,66,165,285
+DER,Derby County,266,68,70,128,274
+BRE,Brentford,193,69,51,73,258
+IPS,Ipswich Town,243,62,63,118,249
+SHU,Sheffield United,236,56,57,123,225
+HUL,Hull City,193,43,49,101,178
+REA,Reading,114,32,23,59,119
+OLD,Oldham Athletic,84,22,23,39,89
+CAR,Cardiff City,76,17,13,46,64
+BRA,Bradford City,76,14,20,42,62
+HUD,Huddersfield Town,76,12,17,47,53
+BPL,Blackpool,38,10,9,19,39
+BAR,Barnsley,38,10,5,23,35
+SWI,Swindon Town,42,5,15,22,30
+LUT,Luton Town,38,6,8,24,26
+`,s=t(a,n=>({team_abbr:n.team_abbr,team_name:n.team_name,matches_played:e(n,"matches_played"),wins:e(n,"wins"),draws:e(n,"draws"),losses:e(n,"losses"),points:e(n,"points")}));export{s as a};

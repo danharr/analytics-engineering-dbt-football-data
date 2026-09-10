@@ -73,7 +73,8 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { oneNilWins, datasetLd } from '~/composables/useData'
+import { oneNilWins } from '~/composables/useStreaksData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Premier League Clubs That Win Most Often 1-0',

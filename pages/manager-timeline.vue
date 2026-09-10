@@ -38,7 +38,8 @@
 </template>
 
 <script setup>
-import { managerTimeline, datasetLd } from '~/composables/useData'
+import { managerTimeline } from '~/composables/useManagerData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: "Every Premier League Manager's Timeline Since 1992",

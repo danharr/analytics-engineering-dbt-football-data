@@ -61,7 +61,8 @@
 </template>
 
 <script setup>
-import { quality, datasetLd } from '~/composables/useData'
+import { quality } from '~/composables/useQualityData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Premier League Data Coverage by Season',

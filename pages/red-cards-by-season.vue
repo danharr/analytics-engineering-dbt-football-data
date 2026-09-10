@@ -81,7 +81,8 @@
 <script setup>
 import * as d3 from 'd3'
 import { computed } from 'vue'
-import { redCardsBySeason, datasetLd } from '~/composables/useData'
+import { redCardsBySeason } from '~/composables/useGoalData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import RedCardsBySeasonChart from '~/components/RedCardsBySeasonChart.vue'
 
 useHead({

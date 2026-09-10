@@ -22,7 +22,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import { wins, datasetLd } from '~/composables/useData'
+import { wins } from '~/composables/useWinsData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Premier League Teams With the Most Wins',

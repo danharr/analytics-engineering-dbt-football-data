@@ -73,7 +73,8 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { seasonPoints, seasonTable, datasetLd } from '~/composables/useData'
+import { seasonPoints, seasonTable } from '~/composables/useSeasonData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { teamBySlug } from '~/composables/teamPages'
 import { teamColour } from '~/composables/teamColours'
 import TeamPointsRaceChart from '~/components/TeamPointsRaceChart.vue'

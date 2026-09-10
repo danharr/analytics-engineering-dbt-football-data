@@ -47,7 +47,8 @@
 </template>
 
 <script setup>
-import { allTime, datasetLd } from '~/composables/useData'
+import { allTime } from '~/composables/useAllTimeData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Premier League All-Time Table & Standings',

@@ -70,7 +70,8 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { pointsLostFromWinning, datasetLd } from '~/composables/useData'
+import { pointsLostFromWinning } from '~/composables/useGoalData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { seasonTeamBySlug } from '~/utils/seasonTeams'
 import { teamColour } from '~/composables/teamColours'
 

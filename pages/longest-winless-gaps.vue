@@ -75,7 +75,8 @@
 
 <script setup>
 import * as d3 from 'd3'
-import { longestWinlessGaps, formatGap, datasetLd } from '~/composables/useData'
+import { longestWinlessGaps } from '~/composables/useStreaksData'
+import { formatGap, datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Longest Time Between Wins in Premier League History',

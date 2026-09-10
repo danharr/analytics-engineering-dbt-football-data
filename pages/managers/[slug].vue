@@ -24,7 +24,7 @@
 </template>
 <script setup>
 import { useRoute } from 'vue-router'
-import { managerWins, managerMatches, managerClubRecords } from '~/composables/useData'
+import { managerWins, managerMatches, managerClubRecords } from '~/composables/useManagerData'
 import { managerBySlug } from '~/utils/managerPages'
 import ManagerWinsChart from '~/components/ManagerWinsChart.vue'
 import ManagerResultsTable from '~/components/ManagerResultsTable.vue'

@@ -42,7 +42,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import { playerGoals, datasetLd } from '~/composables/useData'
+import { playerGoals } from '~/composables/usePlayerData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import PlayerGoalRaceChart from '~/components/PlayerGoalRaceChart.vue'
 
 const sonRows = computed(() => playerGoals.filter(r => r.player_name === 'Son Heung-min'))

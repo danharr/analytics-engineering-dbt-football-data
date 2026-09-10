@@ -1,28 +1,12 @@
-import {
-  allTime,
-  wins,
-  quality,
-  attendance,
-  seasonScoring,
-  fiveGameStreaks,
-  bigWinStreaks,
-  longestWinlessGaps,
-  mostChaoticMatches,
-  oneNilWins,
-  htLeadNoWinStreaks,
-  comebackKings,
-  mostComebacks,
-  managerWins,
-  managerDebuts,
-  managerTimeline,
-  goalMinutes,
-  pointsLostFromWinning,
-  scoringRuns,
-  fixtureRedCards,
-  redCardsBySeason,
-  goldenBoots,
-  firstGoalMinutes
-} from '~/composables/useData'
+import { allTime } from '~/composables/useAllTimeData'
+import { wins } from '~/composables/useWinsData'
+import { quality } from '~/composables/useQualityData'
+import { attendance } from '~/composables/useAttendanceData'
+import { seasonScoring } from '~/composables/useSeasonData'
+import { fiveGameStreaks, bigWinStreaks, longestWinlessGaps, mostChaoticMatches, oneNilWins, htLeadNoWinStreaks, comebackKings, mostComebacks, scoringRuns } from '~/composables/useStreaksData'
+import { managerWins, managerDebuts, managerTimeline } from '~/composables/useManagerData'
+import { goalMinutes, pointsLostFromWinning, fixtureRedCards, redCardsBySeason } from '~/composables/useGoalData'
+import { goldenBoots, firstGoalMinutes } from '~/composables/usePlayerData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 import { shortSeason } from '~/utils/seasonLabel'
 

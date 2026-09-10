@@ -78,7 +78,8 @@
 </template>
 
 <script setup>
-import { managerWins, datasetLd } from '~/composables/useData'
+import { managerWins } from '~/composables/useManagerData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Premier League Managers With the Most Wins',

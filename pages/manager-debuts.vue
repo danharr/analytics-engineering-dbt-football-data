@@ -100,7 +100,8 @@
 <script setup>
 import * as d3 from 'd3'
 import { computed } from 'vue'
-import { managerDebuts, datasetLd } from '~/composables/useData'
+import { managerDebuts } from '~/composables/useManagerData'
+import { datasetLd } from '~/composables/useChartHelpers'
 
 useHead({
   title: 'Best & Worst Manager Debuts in Premier League History',

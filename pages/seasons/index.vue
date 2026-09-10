@@ -39,7 +39,7 @@
 </template>
 
 <script setup>
-import { seasonTable } from '~/composables/useData'
+import { seasonTable } from '~/composables/useSeasonData'
 
 const rows = [...new Set(seasonTable.map(r => r.season_label))]
   .sort((a, b) => parseInt(a.split('-')[0]) - parseInt(b.split('-')[0]))

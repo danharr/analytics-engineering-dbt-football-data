@@ -94,7 +94,8 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import { teamGoalsByPlayer, datasetLd } from '~/composables/useData'
+import { teamGoalsByPlayer } from '~/composables/useGoalData'
+import { datasetLd } from '~/composables/useChartHelpers'
 import { teamColour } from '~/composables/teamColours'
 import TeamGoalsByPlayerChart from '~/components/TeamGoalsByPlayerChart.vue'
 

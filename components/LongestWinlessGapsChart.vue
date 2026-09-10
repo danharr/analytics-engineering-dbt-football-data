@@ -5,7 +5,7 @@
 <script setup>
 import * as d3 from 'd3'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { formatGap } from '~/composables/useData'
+import { formatGap } from '~/composables/useChartHelpers'
 
 const props = defineProps({
   data: { type: Array, required: true }

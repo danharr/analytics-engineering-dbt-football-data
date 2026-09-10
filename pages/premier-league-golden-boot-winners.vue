@@ -111,7 +111,8 @@
 
 <script setup>
 import { computed } from 'vue'
-import { goldenBoots, joinNames, datasetLd } from '~/composables/useData'
+import { goldenBoots } from '~/composables/usePlayerData'
+import { joinNames, datasetLd } from '~/composables/useChartHelpers'
 import GoldenBootRaceChart from '~/components/GoldenBootRaceChart.vue'
 import GoldenBootCountChart from '~/components/GoldenBootCountChart.vue'
 

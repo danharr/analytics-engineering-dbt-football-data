@@ -1,4 +1,4 @@
-import { allTime } from '~/composables/useData'
+import { allTime } from '~/composables/useAllTimeData'
 import { teamSlug } from '~/utils/teamSlugs'
 
 export interface TeamPage {
