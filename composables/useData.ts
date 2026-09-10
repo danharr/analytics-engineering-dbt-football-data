@@ -43,6 +43,7 @@ import yellowCardsCsv from '~/assets/data/yellow_cards.csv?raw'
 import redCardsCsv from '~/assets/data/red_cards.csv?raw'
 import playerGoalsCsv from '~/assets/data/player_goals.csv?raw'
 import goldenBootsCsv from '~/assets/data/golden_boots.csv?raw'
+import firstGoalMinutesCsv from '~/assets/data/first_goal_minutes.csv?raw'
 import subTiming2023_24Csv from '~/assets/data/sub_timing_2023_24.csv?raw'
 import topScorers2023_24Csv from '~/assets/data/top_scorers_2023_24.csv?raw'
 import partnerships2023_24Csv from '~/assets/data/partnerships_2023_24.csv?raw'
@@ -413,6 +414,13 @@ export interface GoldenBootRow {
   team: string
   match_week: number
   cumulative_goals: number
+}
+
+export interface FirstGoalMinuteRow {
+  season_label: string
+  minute: number
+  label: string
+  matches: number
 }
 
 export function formatGap(start: string, end: string): { label: string; years: number; days: number } {
@@ -897,6 +905,13 @@ export const goldenBoots = parse<GoldenBootRow>(goldenBootsCsv, d => ({
   team: d.team,
   match_week: toInt(d, 'match_week'),
   cumulative_goals: toInt(d, 'cumulative_goals')
+}))
+
+export const firstGoalMinutes = parse<FirstGoalMinuteRow>(firstGoalMinutesCsv, d => ({
+  season_label: d.season_label,
+  minute: toInt(d, 'minute'),
+  label: d.label,
+  matches: toInt(d, 'matches')
 }))
 
 export const subTiming2023_24 = parse<SubTimingRow>(subTiming2023_24Csv, d => ({

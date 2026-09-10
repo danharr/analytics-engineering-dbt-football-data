@@ -45,6 +45,12 @@ copy (
             rank() over (partition by season_label order by goals desc) as rnk
         from totals
     ),
+    complete_seasons as (
+        select season_label
+        from "premier_league"."main"."fct_match_event"
+        group by season_label
+        having count(distinct match_id) >= 380
+    ),
     winners as (
         select
             season_label,
@@ -55,6 +61,7 @@ copy (
         from ranked
         where rnk = 1
           and player_name is not null
+          and season_label in (select season_label from complete_seasons)
     ),
     schedule as (
         select

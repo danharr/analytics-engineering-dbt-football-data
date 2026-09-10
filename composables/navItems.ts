@@ -7,6 +7,7 @@ export const navItems = [
   { label: 'Scoring Trends', path: '/scoring-trends', icon: 'mdi-chart-line' },
   { label: 'Goals by Minute', path: '/goal-minutes', icon: 'mdi-chart-timeline-variant' },
   { label: 'Golden Boot Winners', path: '/premier-league-golden-boot-winners', icon: 'mdi-shoe-cleat' },
+  { label: 'Super 6 Golden Goal Data', path: '/super-6-golden-goal-data', icon: 'mdi-timer' },
   { label: 'Scoring Runs', path: '/scoring-runs', icon: 'mdi-soccer' },
   { label: 'Points Lost From Winning Positions', path: '/points-lost-from-winning-position', icon: 'mdi-trending-down' },
   { label: 'Five-Game Streaks', path: '/five-game-streaks', icon: 'mdi-run-fast' },

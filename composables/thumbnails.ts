@@ -20,7 +20,8 @@ import {
   scoringRuns,
   fixtureRedCards,
   redCardsBySeason,
-  goldenBoots
+  goldenBoots,
+  firstGoalMinutes
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 import { shortSeason } from '~/utils/seasonLabel'
@@ -175,6 +176,16 @@ const fixtureRedCardTotals = (() => {
   return [...map.values()]
 })()
 
+const firstGoalPeaks = (() => {
+  const seasons = [...new Set(firstGoalMinutes.map(r => r.season_label))]
+  return seasons.map(s => {
+    const rows = firstGoalMinutes.filter(r => r.season_label === s)
+    const max = Math.max(...rows.map(r => r.matches))
+    const peak = rows.filter(r => r.matches === max).map(r => r.label)
+    return { season: s, peak: peak.join(', '), value: max }
+  })
+})()
+
 const goldenBootTotals = (() => {
   const map = new Map<string, number>()
   for (const r of goldenBoots) {
@@ -247,6 +258,17 @@ export const thumbnails: Thumbnail[] = [
       d => d.name,
       d => d.boots,
       d => `${d.boots}`
+    )
+  },
+  {
+    label: 'Super 6 Golden Goal Data',
+    path: '/super-6-golden-goal-data',
+    caption: 'The most common minute for the first goal, season by season.',
+    preview: toBars(
+      firstGoalPeaks,
+      d => `${d.season} · ${d.peak}'`,
+      d => d.value,
+      d => `${d.value}`
     )
   },
   {

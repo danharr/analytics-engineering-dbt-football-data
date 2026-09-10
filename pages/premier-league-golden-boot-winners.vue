@@ -98,9 +98,10 @@
             The per-match event feed currently covers
             <strong>{{ coveredSeasons.length }} seasons</strong>:
             {{ joinNames(coveredSeasons) }}. The Golden Boots above are drawn only from
-            these seasons. The remaining seasons (1993-94 to 1998-99, and 2000-01 to
-            2018-19) have not yet been scraped, so their winners are missing — the list
-            will grow as each season's event data is added.
+            these seasons (complete seasons only — the in-progress 2026-27 season is
+            excluded). The remaining seasons (1993-94 to 1998-99, and 2000-01 to 2017-18)
+            have not yet been scraped, so their winners are missing — the list will grow
+            as each season's event data is added.
           </p>
         </v-card-text>
       </v-card>
