@@ -19,7 +19,8 @@ import {
   pointsLostFromWinning,
   scoringRuns,
   fixtureRedCards,
-  redCardsBySeason
+  redCardsBySeason,
+  goldenBoots
 } from '~/composables/useData'
 import { SEASON_TEAMS } from '~/utils/seasonTeams'
 import { shortSeason } from '~/utils/seasonLabel'
@@ -174,6 +175,20 @@ const fixtureRedCardTotals = (() => {
   return [...map.values()]
 })()
 
+const goldenBootTotals = (() => {
+  const map = new Map<string, number>()
+  for (const r of goldenBoots) {
+    const key = `${r.player_name}|${r.season_label}`
+    if (!map.has(key)) map.set(key, 0)
+  }
+  const byPlayer = new Map<string, number>()
+  for (const key of map.keys()) {
+    const name = key.split('|')[0]
+    byPlayer.set(name, (byPlayer.get(name) || 0) + 1)
+  }
+  return [...byPlayer.entries()].map(([name, boots]) => ({ name, boots }))
+})()
+
 export const thumbnails: Thumbnail[] = [
   {
     label: 'All-Time Table',
@@ -222,6 +237,17 @@ export const thumbnails: Thumbnail[] = [
     path: '/goal-minutes',
     caption: 'When Arsenal and West Ham score, minute by minute.',
     preview: pyramidPreview
+  },
+  {
+    label: 'Golden Boot Winners',
+    path: '/premier-league-golden-boot-winners',
+    caption: 'Every Golden Boot winner, with cumulative goals by matchweek.',
+    preview: toBars(
+      goldenBootTotals,
+      d => d.name,
+      d => d.boots,
+      d => `${d.boots}`
+    )
   },
   {
     label: 'Points Lost From Winning Positions',

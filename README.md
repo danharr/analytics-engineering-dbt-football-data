@@ -42,6 +42,7 @@ An interactive dashboard of Premier League football history.
 - **Season Reviews — 2024-25** — every substitution and every yellow/red card made by each club in the 2024-25 season, plotted as a 0-90 minute heat map per team, from the per-match event feed, plus the season's top 5 scorers and top 5 assist-scorer partnerships
 - **Season Reviews — 2025-26** — every substitution and every yellow/red card made by each club in the 2025-26 season, plotted as a 0-90 minute heat map per team, from the per-match event feed, plus the season's top 5 scorers and top 5 assist-scorer partnerships
 - **Player Pages** — one page per selected player (**Erling Haaland** at `/players/erling-haaland`, **Harry Kane** at `/players/harry-kane`, **Mohamed Salah** at `/players/mohamed-salah`, **Son Heung-min** at `/players/son-heung-min` and **Jamie Vardy** at `/players/jamie-vardy`), charting cumulative Premier League goals by matchweek as one line per season
+- **Golden Boot Winners** — every Premier League Golden Boot winner (top scorer per season, ties shared), charting their cumulative goals by matchweek, with a winners table and how many boots each player has won, computed from the per-match event feed
 
 ## Data
 

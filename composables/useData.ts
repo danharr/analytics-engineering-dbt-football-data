@@ -42,6 +42,7 @@ import partnerships202425Csv from '~/assets/data/partnerships_2024_25.csv?raw'
 import yellowCardsCsv from '~/assets/data/yellow_cards.csv?raw'
 import redCardsCsv from '~/assets/data/red_cards.csv?raw'
 import playerGoalsCsv from '~/assets/data/player_goals.csv?raw'
+import goldenBootsCsv from '~/assets/data/golden_boots.csv?raw'
 import subTiming2023_24Csv from '~/assets/data/sub_timing_2023_24.csv?raw'
 import topScorers2023_24Csv from '~/assets/data/top_scorers_2023_24.csv?raw'
 import partnerships2023_24Csv from '~/assets/data/partnerships_2023_24.csv?raw'
@@ -402,6 +403,14 @@ export interface PartnershipRow {
 export interface PlayerGoalRow {
   player_name: string
   season_label: string
+  match_week: number
+  cumulative_goals: number
+}
+
+export interface GoldenBootRow {
+  player_name: string
+  season_label: string
+  team: string
   match_week: number
   cumulative_goals: number
 }
@@ -878,6 +887,14 @@ export const redCards = parse<CardTimingRow>(redCardsCsv, d => ({
 export const playerGoals = parse<PlayerGoalRow>(playerGoalsCsv, d => ({
   player_name: d.player_name,
   season_label: d.season_label,
+  match_week: toInt(d, 'match_week'),
+  cumulative_goals: toInt(d, 'cumulative_goals')
+}))
+
+export const goldenBoots = parse<GoldenBootRow>(goldenBootsCsv, d => ({
+  player_name: d.player_name,
+  season_label: d.season_label,
+  team: d.team,
   match_week: toInt(d, 'match_week'),
   cumulative_goals: toInt(d, 'cumulative_goals')
 }))
