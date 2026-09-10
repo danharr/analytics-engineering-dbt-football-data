@@ -348,6 +348,20 @@ export interface PlayerGoalRow {
   cumulative_goals: number
 }
 
+export interface PlayerGoalSummaryRow {
+  player_name: string
+  total_goals: number
+  penalties: number
+  first_half: number
+  second_half: number
+}
+
+export interface PlayerOpponentGoalsRow {
+  player_name: string
+  opponent_name: string
+  goals: number
+}
+
 export interface GoldenBootRow {
   player_name: string
   season_label: string
