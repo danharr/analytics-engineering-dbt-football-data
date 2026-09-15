@@ -34,7 +34,8 @@ copy (
             tg.team_abbr,
             tg.kickoff_date as last_loss_date,
             tg.opponent_abbr as last_loss_opponent,
-            cast(tg.goals_for as varchar) || '-' || cast(tg.goals_against as varchar) as last_loss_score
+            cast(tg.goals_for as varchar) || '-' || cast(tg.goals_against as varchar) as last_loss_score,
+            tg.season_label as last_loss_season
         from team_games tg
         join last_loss ll on ll.team_abbr = tg.team_abbr and ll.loss_rn = tg.rn
     ),
@@ -62,6 +63,7 @@ copy (
         lr.last_loss_date,
         lr.last_loss_opponent,
         lr.last_loss_score,
+        lr.last_loss_season,
         coalesce(ra.run_length, 0) as run_length,
         ra.results,
         ra.opponents,

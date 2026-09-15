@@ -12,8 +12,8 @@
         <v-card-text class="pt-0">
           <p class="mb-0">
             For every club in the current Premier League season, this shows their most recent
-            league defeat and every result since — a win (green) or draw (grey) for each game.
-            Runs carry over the summer and can span seasons; the blue marker on a result flags
+            league defeat and every result since - a win (green) or draw (grey) for each game.
+            Runs carry over the summer and can span seasons; the dashed line flags
             the first game of a new season.
           </p>
         </v-card-text>
@@ -22,7 +22,7 @@
 
     <v-col cols="12" md="10" offset-md="1">
       <v-card>
-        <v-card-title>Unbeaten Runs by Team</v-card-title>
+        <v-card-title>Current unbeaten Runs by Team</v-card-title>
         <v-card-subtitle>
           Last defeat on the left, then each result since, left to right · longest current run at top
         </v-card-subtitle>
@@ -36,7 +36,7 @@
       <v-card>
         <v-card-title>
           <v-icon icon="mdi-table" class="mr-2"></v-icon>
-          Unbeaten Runs by Team
+          Current unbeaten Runs by Team
         </v-card-title>
         <v-card-text>
           <v-table density="compact">

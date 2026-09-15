@@ -4,7 +4,7 @@
       <span class="lg"><span class="cell l">L</span> last defeat</span>
       <span class="lg"><span class="cell w">W</span> win</span>
       <span class="lg"><span class="cell d">D</span> draw</span>
-      <span class="lg"><span class="swatch"><span class="season-mark-static"></span></span> new season starts</span>
+      <span class="lg"><span class="swatch"><span class="season-divider-static"></span></span> new season starts</span>
     </div>
 
     <div class="scroll">
@@ -12,17 +12,19 @@
         <div v-for="row in rows" :key="row.team_abbr" class="row">
           <div class="team" :title="row.team_name">{{ row.team_name }}</div>
           <div class="strip">
-            <div
-              v-for="(cell, i) in row.cells"
-              :key="i"
-              class="cell"
-              :class="cell.kind"
-              @mousemove="showTooltip($event, cell)"
-              @mouseleave="hideTooltip"
-            >
-              <span v-if="cell.isNewSeason" class="season-mark" title="New season starts"></span>
-              {{ cell.label }}
-            </div>
+            <template v-for="(cell, i) in row.cells" :key="i">
+              <span
+                v-if="cell.isNewSeason"
+                class="season-divider"
+                title="New season starts"
+              ></span>
+              <div
+                class="cell"
+                :class="cell.kind"
+                @mousemove="showTooltip($event, cell)"
+                @mouseleave="hideTooltip"
+              >{{ cell.label }}</div>
+            </template>
             <span v-if="row.cells.length === 0" class="none">no defeat on record</span>
           </div>
           <div class="count">{{ row.run_length }} unbeaten</div>
@@ -66,6 +68,7 @@ const rows = computed(() =>
       const seasons = row.seasons ? row.seasons.split(',') : []
       const dates = row.dates ? row.dates.split(',') : []
 
+      const lossSeason = row.last_loss_season ?? ''
       const cells = []
       if (row.last_loss_date) {
         cells.push({
@@ -73,18 +76,19 @@ const rows = computed(() =>
           label: 'L',
           title: `Last defeat: ${row.last_loss_opponent ?? ''} ${row.last_loss_score ?? ''}`,
           date: fmtDate(row.last_loss_date),
-          season: null,
+          season: lossSeason,
           isNewSeason: false
         })
       }
       results.forEach((r, i) => {
+        const prevSeason = i > 0 ? seasons[i - 1] ?? '' : lossSeason
         cells.push({
           kind: r === 'W' ? 'w' : 'd',
           label: r,
           title: `${r === 'W' ? 'Beat' : 'Drew with'} ${opponents[i] ?? ''} ${scores[i] ?? ''}`,
           date: fmtDate(dates[i]),
           season: seasons[i] ?? '',
-          isNewSeason: i > 0 && seasons[i] !== seasons[i - 1]
+          isNewSeason: (seasons[i] ?? '') !== prevSeason
         })
       })
 
@@ -207,16 +211,11 @@ function hideTooltip() {
   white-space: nowrap;
 }
 
-.season-mark {
-  position: absolute;
-  left: -4px;
-  top: -3px;
+.season-divider {
   width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 6px solid #1a237e;
-  transform: rotate(45deg);
+  height: 26px;
+  border-left: 2px dashed #1a237e;
+  margin: 0 5px;
 }
 
 .swatch {
@@ -227,14 +226,11 @@ function hideTooltip() {
   justify-content: center;
 }
 
-.season-mark-static {
+.season-divider-static {
   display: inline-block;
   width: 0;
-  height: 0;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
-  border-top: 8px solid #1a237e;
-  transform: rotate(45deg);
+  height: 26px;
+  border-left: 2px dashed #1a237e;
 }
 
 .tooltip {

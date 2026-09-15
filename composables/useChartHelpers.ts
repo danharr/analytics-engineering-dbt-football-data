@@ -311,6 +311,7 @@ export interface CurrentUnbeatenRunRow {
   last_loss_date: string | null
   last_loss_opponent: string | null
   last_loss_score: string | null
+  last_loss_season: string | null
   run_length: number
   results: string | null
   opponents: string | null

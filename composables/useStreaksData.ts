@@ -118,6 +118,7 @@ export const currentUnbeatenRuns = parse<CurrentUnbeatenRunRow>(currentUnbeatenR
   last_loss_date: d.last_loss_date || null,
   last_loss_opponent: d.last_loss_opponent || null,
   last_loss_score: d.last_loss_score || null,
+  last_loss_season: d.last_loss_season || null,
   run_length: toInt(d, 'run_length'),
   results: d.results || null,
   opponents: d.opponents || null,
