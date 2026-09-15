@@ -3,7 +3,7 @@ import { wins } from '~/composables/useWinsData'
 import { quality } from '~/composables/useQualityData'
 import { attendance } from '~/composables/useAttendanceData'
 import { seasonScoring } from '~/composables/useSeasonData'
-import { fiveGameStreaks, bigWinStreaks, longestWinlessGaps, mostChaoticMatches, oneNilWins, htLeadNoWinStreaks, comebackKings, mostComebacks, scoringRuns } from '~/composables/useStreaksData'
+import { fiveGameStreaks, bigWinStreaks, longestWinlessGaps, mostChaoticMatches, oneNilWins, htLeadNoWinStreaks, comebackKings, mostComebacks, scoringRuns, currentUnbeatenRuns } from '~/composables/useStreaksData'
 import { managerWins, managerDebuts, managerTimeline } from '~/composables/useManagerData'
 import { goalMinutes, pointsLostFromWinning, fixtureRedCards, redCardsBySeason } from '~/composables/useGoalData'
 import { goldenBoots, firstGoalMinutes } from '~/composables/usePlayerData'
@@ -91,6 +91,17 @@ const squaresPreview: ThumbnailPreview = {
     .sort((a, b) => b.cells.length - a.cells.length)
     .slice(0, 4)
     .map(s => ({ label: s.team, cells: s.cells }))
+}
+
+const unbeatenPreview: ThumbnailPreview = {
+  kind: 'squares',
+  rows: [...currentUnbeatenRuns]
+    .sort((a, b) => b.run_length - a.run_length)
+    .slice(0, 4)
+    .map(r => ({
+      label: r.team_name,
+      cells: ['L', ...(r.results ? r.results.split(',') : [])]
+    }))
 }
 
 const MT_MIN = 1992
@@ -282,6 +293,12 @@ export const thumbnails: Thumbnail[] = [
     path: '/five-game-streaks',
     caption: 'The last time each team won 5+ games in a row.',
     preview: toBars(fiveGameStreaks, d => d.team_name, d => d.streak_length, d => `${d.streak_length}`)
+  },
+  {
+    label: 'Current Unbeaten Runs',
+    path: '/premier-league-current-unbeaten-runs',
+    caption: 'Every current club\u2019s last defeat and their results since.',
+    preview: unbeatenPreview
   },
   {
     label: 'Big Win Streaks',

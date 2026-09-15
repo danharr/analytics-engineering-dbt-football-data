@@ -1,9 +1,9 @@
 team_abbr,team_name,home_wins,away_wins,total_wins
 MUN,Manchester United,448,328,776
-ARS,Arsenal,425,297,722
+ARS,Arsenal,425,298,723
 LIV,Liverpool,415,280,695
 CHE,Chelsea,391,292,683
-MCI,Manchester City,340,236,576
+MCI,Manchester City,340,237,577
 TOT,Tottenham Hotspur,345,216,561
 EVE,Everton,293,171,464
 NEW,Newcastle United,298,156,454
@@ -21,9 +21,9 @@ BOL,Bolton Wanderers,93,56,149
 WOL,Wolverhampton Wanderers,81,48,129
 WBA,West Bromwich Albion,76,41,117
 STO,Stoke City,81,35,116
-BHA,Brighton and Hove Albion,63,46,109
+BHA,Brighton and Hove Albion,63,47,110
+NFO,Nottingham Forest,61,48,109
 BOU,Bournemouth,62,46,108
-NFO,Nottingham Forest,61,47,108
 SHW,Sheffield Wednesday,63,38,101
 COV,Coventry City,65,34,99
 NOR,Norwich City,66,33,99
@@ -38,7 +38,7 @@ BIR,Birmingham City,50,23,73
 WAT,Watford,45,28,73
 BRE,Brentford,40,29,69
 DER,Derby County,48,20,68
-IPS,Ipswich Town,37,25,62
+IPS,Ipswich Town,37,26,63
 SHU,Sheffield United,40,16,56
 HUL,Hull City,30,13,43
 REA,Reading,23,9,32

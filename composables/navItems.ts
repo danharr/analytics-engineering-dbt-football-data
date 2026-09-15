@@ -19,6 +19,7 @@ export const navItems = [
   { label: 'One-Nil Wins', path: '/one-nil-wins', icon: 'mdi-numeric-1-box-outline' },
   { label: 'Longest No-Win Streaks After HT Lead', path: '/ht-lead-no-win-streaks', icon: 'mdi-flag-checkered' },
   { label: 'Comeback Kings', path: '/comeback-kings', icon: 'mdi-trophy-outline' },
+  { label: 'Current Unbeaten Runs', path: '/premier-league-current-unbeaten-runs', icon: 'mdi-shield-check' },
   { label: 'Most Comebacks in a Season', path: '/most-comebacks', icon: 'mdi-trophy-variant-outline' },
   { label: 'Most Manager Wins', path: '/manager-wins', icon: 'mdi-whistle-outline' },
   { label: 'Manager Debuts', path: '/manager-debuts', icon: 'mdi-handshake' },

@@ -24,6 +24,7 @@ An interactive dashboard of Premier League football history.
 - **Longest No-Win Streaks After HT Lead** — for every team, the longest consecutive run of matches where they led at half-time but failed to win
 - **Comeback Kings** — for every team, the longest consecutive run of matches where they were losing at half-time but came back to win
 - **Most Comebacks in a Season** — the top 10 team-seasons by half-time comebacks (trailing at HT, then winning)
+- **Current Unbeaten Runs** — for every club in the current Premier League season, their last defeat and each win or draw since, drawn as a horizontal W/D strip with a marker where a new season starts
 - **Most Manager Wins** — the top managers by all-time Premier League wins, from the Wikipedia managers list joined to match results
 - **Manager Debuts** — the first league match for every manager at each club they managed, split into the top 5 biggest wins and top 5 biggest defeats
 - **Manager Timeline** — a Gantt chart of every Premier League club's managers since 1992, coloured by club with hover tooltips

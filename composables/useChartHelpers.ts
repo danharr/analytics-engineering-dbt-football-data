@@ -305,6 +305,20 @@ export interface FixtureRedCardsRow {
   total_red_cards: number
 }
 
+export interface CurrentUnbeatenRunRow {
+  team_abbr: string
+  team_name: string
+  last_loss_date: string | null
+  last_loss_opponent: string | null
+  last_loss_score: string | null
+  run_length: number
+  results: string | null
+  opponents: string | null
+  scores: string | null
+  seasons: string | null
+  dates: string | null
+}
+
 export interface RedCardsBySeasonRow {
   season_label: string
   matches: number

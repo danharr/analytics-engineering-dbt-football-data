@@ -7,11 +7,13 @@ import htLeadNoWinStreaksCsv from '~/assets/data/ht_lead_no_win_streaks.csv?raw'
 import comebackKingsCsv from '~/assets/data/comeback_kings.csv?raw'
 import mostComebacksCsv from '~/assets/data/most_comebacks.csv?raw'
 import scoringRunsCsv from '~/assets/data/scoring_runs.csv?raw'
+import currentUnbeatenRunsCsv from '~/assets/data/current_unbeaten_runs.csv?raw'
 import {
   parse, toInt, toFloat,
   type FiveGameStreakRow, type BigWinStreakGame, type LongestWinlessGapRow,
   type MostChaoticMatchRow, type OneNilWinRow, type HtLeadNoWinStreakRow,
-  type ComebackKingRow, type MostComebacksRow, type ScoringRunRow
+  type ComebackKingRow, type MostComebacksRow, type ScoringRunRow,
+  type CurrentUnbeatenRunRow
 } from '~/composables/useChartHelpers'
 
 export const fiveGameStreaks = parse<FiveGameStreakRow>(fiveGameStreaksCsv, d => ({
@@ -108,4 +110,18 @@ export const scoringRuns = parse<ScoringRunRow>(scoringRunsCsv, d => ({
   end_date: d.end_date,
   seasons: d.seasons,
   opponents: d.opponents
+}))
+
+export const currentUnbeatenRuns = parse<CurrentUnbeatenRunRow>(currentUnbeatenRunsCsv, d => ({
+  team_abbr: d.team_abbr,
+  team_name: d.team_name,
+  last_loss_date: d.last_loss_date || null,
+  last_loss_opponent: d.last_loss_opponent || null,
+  last_loss_score: d.last_loss_score || null,
+  run_length: toInt(d, 'run_length'),
+  results: d.results || null,
+  opponents: d.opponents || null,
+  scores: d.scores || null,
+  seasons: d.seasons || null,
+  dates: d.dates || null
 }))
