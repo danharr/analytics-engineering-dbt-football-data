@@ -26,6 +26,15 @@ import partnerships2020_21Csv from '~/assets/data/partnerships_2020_21.csv?raw'
 import subTiming2021_22Csv from '~/assets/data/sub_timing_2021_22.csv?raw'
 import topScorers2021_22Csv from '~/assets/data/top_scorers_2021_22.csv?raw'
 import partnerships2021_22Csv from '~/assets/data/partnerships_2021_22.csv?raw'
+import subTiming2016_17Csv from '~/assets/data/sub_timing_2016_17.csv?raw'
+import topScorers2016_17Csv from '~/assets/data/top_scorers_2016_17.csv?raw'
+import partnerships2016_17Csv from '~/assets/data/partnerships_2016_17.csv?raw'
+import subTiming2017_18Csv from '~/assets/data/sub_timing_2017_18.csv?raw'
+import topScorers2017_18Csv from '~/assets/data/top_scorers_2017_18.csv?raw'
+import partnerships2017_18Csv from '~/assets/data/partnerships_2017_18.csv?raw'
+import subTiming2018_19Csv from '~/assets/data/sub_timing_2018_19.csv?raw'
+import topScorers2018_19Csv from '~/assets/data/top_scorers_2018_19.csv?raw'
+import partnerships2018_19Csv from '~/assets/data/partnerships_2018_19.csv?raw'
 import {
   parse, toInt,
   type SubTimingRow, type CardTimingRow, type TopScorerRow, type PartnershipRow
@@ -101,3 +110,15 @@ export const partnerships2020_21 = parsePartnerships(partnerships2020_21Csv)
 export const subTiming2021_22 = parseSubTiming(subTiming2021_22Csv)
 export const topScorers2021_22 = parseTopScorers(topScorers2021_22Csv)
 export const partnerships2021_22 = parsePartnerships(partnerships2021_22Csv)
+
+export const subTiming2016_17 = parseSubTiming(subTiming2016_17Csv)
+export const topScorers2016_17 = parseTopScorers(topScorers2016_17Csv)
+export const partnerships2016_17 = parsePartnerships(partnerships2016_17Csv)
+
+export const subTiming2017_18 = parseSubTiming(subTiming2017_18Csv)
+export const topScorers2017_18 = parseTopScorers(topScorers2017_18Csv)
+export const partnerships2017_18 = parsePartnerships(partnerships2017_18Csv)
+
+export const subTiming2018_19 = parseSubTiming(subTiming2018_19Csv)
+export const topScorers2018_19 = parseTopScorers(topScorers2018_19Csv)
+export const partnerships2018_19 = parsePartnerships(partnerships2018_19Csv)

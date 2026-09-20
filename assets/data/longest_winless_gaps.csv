@@ -1,4 +1,5 @@
 team_name,team_abbr,start_date,end_date,gap_days,matches_between
+Coventry City,COV,2001-04-16,2026-09-19,9287,8
 Nottingham Forest,NFO,1999-05-16,2022-08-14,8491,1
 Ipswich Town,IPS,2002-04-24,2024-11-10,8236,12
 Leeds United,LEE,2004-04-10,2020-09-19,6006,7
@@ -36,7 +37,6 @@ Stoke City,STO,2012-04-07,2012-09-29,175,11
 Wimbledon,WIM,1999-03-03,1999-08-07,157,11
 Liverpool,LIV,2012-05-08,2012-09-29,144,6
 Portsmouth,POR,2008-04-08,2008-08-30,144,7
-Coventry City,COV,1996-04-27,1996-09-14,140,6
 Sheffield Wednesday,SHW,1999-05-16,1999-10-02,139,9
 Arsenal,ARS,2006-05-07,2006-09-17,133,3
 Wigan Athletic,WIG,2010-04-18,2010-08-28,132,5

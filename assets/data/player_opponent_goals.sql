@@ -9,6 +9,7 @@ copy (
         union all select 'Jamie Vardy'
         union all select 'Mohamed Salah'
         union all select 'Son Heung-min'
+        union all select 'Sergio Agüero'
     ),
     goals as (
         select

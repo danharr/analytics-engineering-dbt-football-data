@@ -2012,6 +2012,7 @@ Andoni Iraola,14,Liverpool,2026-08-23,2026-27,false,4,Newcastle United,2,2,0,dra
 Andoni Iraola,14,Liverpool,2026-08-29,2026-27,true,17,Nottingham Forest,2,2,0,draw,2645211
 Andoni Iraola,14,Liverpool,2026-09-04,2026-27,false,40,Ipswich Town,2,0,2,win,2645221
 Andoni Iraola,14,Liverpool,2026-09-12,2026-27,true,54,Fulham,0,0,0,draw,2645231
+Andoni Iraola,14,Liverpool,2026-09-20,2026-27,false,91,Bournemouth,1,0,1,win,2645235
 André Villas-Boas,8,Chelsea,2011-08-14,2011-12,false,110,Stoke City,0,0,0,draw,360475
 André Villas-Boas,8,Chelsea,2011-08-20,2011-12,true,35,West Bromwich Albion,2,1,1,win,360482
 André Villas-Boas,8,Chelsea,2011-08-27,2011-12,true,45,Norwich City,3,1,2,win,360491
@@ -5733,6 +5734,7 @@ Daniel Farke,2,Leeds United,2026-08-22,2026-27,false,17,Nottingham Forest,1,0,1,
 Daniel Farke,2,Leeds United,2026-08-30,2026-27,true,94,Brentford,1,1,0,draw,2645210
 Daniel Farke,2,Leeds United,2026-09-05,2026-27,false,36,Brighton and Hove Albion,1,1,0,draw,2645217
 Daniel Farke,2,Leeds United,2026-09-14,2026-27,true,4,Newcastle United,4,1,3,win,2645230
+Daniel Farke,2,Leeds United,2026-09-20,2026-27,true,31,Crystal Palace,0,0,0,draw,2645240
 Danny Wilson,37,Barnsley,1997-08-09,1997-98,true,21,West Ham United,1,2,-1,loss,14158
 Danny Wilson,37,Barnsley,1997-08-12,1997-98,false,31,Crystal Palace,1,0,1,win,14159
 Danny Wilson,37,Barnsley,1997-08-24,1997-98,true,8,Chelsea,0,6,-6,loss,14160
@@ -8057,6 +8059,7 @@ Enzo Maresca,43,Manchester City,2026-08-23,2026-27,true,91,Bournemouth,2,1,1,win
 Enzo Maresca,43,Manchester City,2026-08-28,2026-27,false,31,Crystal Palace,4,1,3,win,2645209
 Enzo Maresca,43,Manchester City,2026-09-05,2026-27,true,9,Coventry City,1,0,1,win,2645222
 Enzo Maresca,43,Manchester City,2026-09-13,2026-27,false,1,Manchester United,1,0,1,win,2645232
+Enzo Maresca,43,Manchester City,2026-09-20,2026-27,true,56,Sunderland,5,3,2,win,2645241
 Eric Black,41,Birmingham City,2007-11-24,2007-08,true,47,Portsmouth,0,2,-2,loss,128567
 Eric Black,7,Aston Villa,2016-04-02,2015-16,true,8,Chelsea,0,4,-4,loss,803472
 Eric Black,7,Aston Villa,2016-04-09,2015-16,true,91,Bournemouth,1,2,-1,loss,803483
@@ -8476,6 +8479,7 @@ Frank Lampard,9,Coventry City,2026-08-21,2026-27,false,3,Arsenal,0,3,-3,loss,264
 Frank Lampard,9,Coventry City,2026-08-29,2026-27,true,88,Hull City,0,1,-1,loss,2645208
 Frank Lampard,9,Coventry City,2026-09-05,2026-27,false,43,Manchester City,0,1,-1,loss,2645222
 Frank Lampard,9,Coventry City,2026-09-13,2026-27,true,36,Brighton and Hove Albion,0,5,-5,loss,2645228
+Frank Lampard,9,Coventry City,2026-09-19,2026-27,false,17,Nottingham Forest,1,0,1,win,2645243
 Frank de Boer,31,Crystal Palace,2017-08-12,2017-18,true,38,Huddersfield Town,0,3,-3,loss,918896
 Frank de Boer,31,Crystal Palace,2017-08-19,2017-18,false,14,Liverpool,0,1,-1,loss,918907
 Frank de Boer,31,Crystal Palace,2017-08-26,2017-18,true,80,Swansea City,0,2,-2,loss,918915
@@ -15516,6 +15520,7 @@ Marco Rose,91,Bournemouth,2026-08-23,2026-27,false,43,Manchester City,1,2,-1,los
 Marco Rose,91,Bournemouth,2026-08-29,2026-27,true,11,Everton,1,1,0,draw,2645205
 Marco Rose,91,Bournemouth,2026-09-05,2026-27,false,4,Newcastle United,2,2,0,draw,2645223
 Marco Rose,91,Bournemouth,2026-09-12,2026-27,true,94,Brentford,2,2,0,draw,2645225
+Marco Rose,91,Bournemouth,2026-09-20,2026-27,true,14,Liverpool,0,1,-1,loss,2645235
 Marco Silva,88,Hull City,2017-01-14,2016-17,true,91,Bournemouth,3,1,2,win,855374
 Marco Silva,88,Hull City,2017-01-22,2016-17,false,8,Chelsea,0,2,-2,loss,855384
 Marco Silva,88,Hull City,2017-02-01,2016-17,false,1,Manchester United,0,0,0,draw,855395
@@ -17207,6 +17212,7 @@ Michael Carrick,1,Manchester United,2026-08-22,2026-27,false,88,Hull City,0,2,-2
 Michael Carrick,1,Manchester United,2026-08-30,2026-27,true,40,Ipswich Town,5,2,3,win,2645212
 Michael Carrick,1,Manchester United,2026-09-06,2026-27,false,11,Everton,2,2,0,draw,2645218
 Michael Carrick,1,Manchester United,2026-09-13,2026-27,true,43,Manchester City,0,1,-1,loss,2645232
+Michael Carrick,1,Manchester United,2026-09-20,2026-27,false,54,Fulham,1,1,0,draw,2645239
 Michael Laudrup,80,Swansea City,2012-08-18,2012-13,false,52,Queens Park Rangers,5,0,5,win,442004
 Michael Laudrup,80,Swansea City,2012-08-25,2012-13,true,21,West Ham United,3,0,3,win,442017
 Michael Laudrup,80,Swansea City,2012-09-01,2012-13,true,56,Sunderland,2,2,0,draw,442024
@@ -18530,6 +18536,7 @@ Oliver Glasner,17,Nottingham Forest,2026-08-22,2026-27,true,2,Leeds United,0,1,-
 Oliver Glasner,17,Nottingham Forest,2026-08-29,2026-27,false,14,Liverpool,2,2,0,draw,2645211
 Oliver Glasner,17,Nottingham Forest,2026-09-05,2026-27,true,6,Tottenham Hotspur,0,0,0,draw,2645224
 Oliver Glasner,17,Nottingham Forest,2026-09-12,2026-27,false,7,Aston Villa,2,1,1,win,2645226
+Oliver Glasner,17,Nottingham Forest,2026-09-19,2026-27,true,9,Coventry City,0,1,-1,loss,2645243
 Ossie Ardiles,6,Tottenham Hotspur,1993-08-14,1993-94,false,4,Newcastle United,1,0,1,win,17187
 Ossie Ardiles,6,Tottenham Hotspur,1993-08-16,1993-94,true,3,Arsenal,0,1,-1,loss,13363
 Ossie Ardiles,6,Tottenham Hotspur,1993-08-21,1993-94,true,43,Manchester City,1,0,1,win,16801
@@ -20027,6 +20034,7 @@ Pierre Sage,31,Crystal Palace,2026-08-22,2026-27,false,11,Everton,0,2,-2,loss,26
 Pierre Sage,31,Crystal Palace,2026-08-28,2026-27,true,43,Manchester City,1,4,-3,loss,2645209
 Pierre Sage,31,Crystal Palace,2026-09-05,2026-27,false,54,Fulham,3,2,1,win,2645219
 Pierre Sage,31,Crystal Palace,2026-09-12,2026-27,true,40,Ipswich Town,2,3,-1,loss,2645229
+Pierre Sage,31,Crystal Palace,2026-09-20,2026-27,false,2,Leeds United,0,0,0,draw,2645240
 Quique Sánchez Flores,57,Watford,2015-08-08,2015-16,false,11,Everton,2,2,0,draw,803170
 Quique Sánchez Flores,57,Watford,2015-08-15,2015-16,true,35,West Bromwich Albion,0,0,0,draw,803181
 Quique Sánchez Flores,57,Watford,2015-08-23,2015-16,true,20,Southampton,0,0,0,draw,803188
@@ -22616,6 +22624,7 @@ Régis Le Bris,56,Sunderland,2026-08-22,2026-27,false,40,Ipswich Town,1,2,-1,los
 Régis Le Bris,56,Sunderland,2026-08-30,2026-27,true,54,Fulham,1,0,1,win,2645213
 Régis Le Bris,56,Sunderland,2026-09-05,2026-27,false,94,Brentford,1,1,0,draw,2645216
 Régis Le Bris,56,Sunderland,2026-09-12,2026-27,true,3,Arsenal,0,2,-2,loss,2645233
+Régis Le Bris,56,Sunderland,2026-09-20,2026-27,false,43,Manchester City,3,5,-2,loss,2645241
 Rémi Garde,7,Aston Villa,2015-11-02,2015-16,false,6,Tottenham Hotspur,1,3,-2,loss,803263
 Rémi Garde,7,Aston Villa,2015-11-08,2015-16,true,43,Manchester City,0,0,0,draw,803275
 Rémi Garde,7,Aston Villa,2015-11-21,2015-16,false,11,Everton,0,4,-4,loss,803283
@@ -26410,3 +26419,4 @@ Xisco Muñoz,57,Watford,2021-10-02,2021-22,false,2,Leeds United,0,1,-1,loss,2210
 Álvaro Arbeloa,54,Fulham,2026-08-30,2026-27,false,56,Sunderland,0,1,-1,loss,2645213
 Álvaro Arbeloa,54,Fulham,2026-09-05,2026-27,true,31,Crystal Palace,2,3,-1,loss,2645219
 Álvaro Arbeloa,54,Fulham,2026-09-12,2026-27,false,14,Liverpool,0,0,0,draw,2645231
+Álvaro Arbeloa,54,Fulham,2026-09-20,2026-27,true,1,Manchester United,1,1,0,draw,2645239

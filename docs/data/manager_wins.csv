@@ -61,31 +61,31 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 60,Erik ten Hag,44,85,14,27,51.8,146,123,112
 61,Glenn Roeder,44,126,30,52,34.9,162,151,176
 61,Trevor Francis,44,126,42,40,34.9,174,180,162
-63,Arne Slot,42,76,18,16,55.3,144,149,94
-64,André Villas-Boas,42,81,19,20,51.9,145,128,99
-65,Andoni Iraola,42,118,41,35,35.6,167,176,171
+63,Andoni Iraola,43,119,41,35,36.1,170,177,171
+64,Arne Slot,42,76,18,16,55.3,144,149,94
+65,André Villas-Boas,42,81,19,20,51.9,145,128,99
 66,Steve Coppell,42,146,37,67,28.8,163,164,221
 67,Chris Hughton,42,170,50,78,24.7,176,169,264
 68,Ruud Gullit,41,104,26,37,39.4,149,164,148
 69,Walter Smith,41,143,42,60,28.7,165,173,190
 70,David Pleat,40,124,33,51,32.3,153,162,194
 71,Louis van Gaal,39,76,19,18,51.3,136,111,72
-72,Paul Lambert,39,155,44,72,25.2,161,162,251
-73,Frank Clark,38,97,31,28,39.2,145,136,126
-74,Frank Lampard,38,108,21,49,35.2,135,145,163
+72,Frank Lampard,39,109,21,49,35.8,138,146,163
+73,Paul Lambert,39,155,44,72,25.2,161,162,251
+74,Frank Clark,38,97,31,28,39.2,145,136,126
 75,Dave Jones,38,136,31,67,27.9,145,151,233
 76,Mike Walker,37,96,25,34,38.5,136,126,143
 77,Thomas Tuchel,35,63,17,11,55.6,122,109,55
 78,Avram Grant,34,93,26,33,36.6,128,123,131
 79,Dean Smith,34,122,24,64,27.9,126,139,207
 80,Paul Jewell,34,138,28,76,24.6,130,135,235
-81,Fabian Hürzeler,33,81,25,23,40.7,124,134,110
-82,George Burley,33,98,17,48,33.7,116,114,159
-83,Stuart Pearce,33,104,26,45,31.7,125,101,122
-84,Owen Coyle,33,116,24,59,28.4,123,136,204
-85,Alex McLeish,33,138,52,53,23.9,151,145,198
-86,Enzo Maresca,32,61,15,14,52.5,111,104,66
-87,Oliver Glasner,32,94,32,30,34.0,128,126,121
+81,Enzo Maresca,33,62,15,14,53.2,114,109,69
+82,Fabian Hürzeler,33,81,25,23,40.7,124,134,110
+83,George Burley,33,98,17,48,33.7,116,114,159
+84,Stuart Pearce,33,104,26,45,31.7,125,101,122
+85,Owen Coyle,33,116,24,59,28.4,123,136,204
+86,Alex McLeish,33,138,52,53,23.9,151,145,198
+87,Oliver Glasner,32,95,32,31,33.7,128,126,122
 88,Ange Postecoglou,31,81,12,38,38.3,105,139,136
 89,Claude Puel,31,94,23,40,33.0,116,117,132
 90,Slaven Bilić,31,100,30,39,31.0,123,133,164
@@ -114,7 +114,7 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 113,Tim Sherwood,19,45,5,21,42.2,62,68,70
 114,Roberto Di Matteo,19,48,11,18,39.6,68,73,75
 115,Colin Todd,19,69,16,34,27.5,73,70,114
-116,Daniel Farke,19,91,24,48,20.9,81,87,160
+116,Daniel Farke,19,92,25,48,20.7,82,87,160
 117,Ray Harford,18,48,11,19,37.5,65,67,61
 118,Phil Neal,18,59,18,23,30.5,72,57,79
 119,Nigel Pearson,18,60,13,29,30.0,67,72,89
@@ -130,13 +130,13 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 129,Bobby Gould,16,53,19,18,30.2,67,65,68
 130,Ossie Ardiles,16,54,14,24,29.6,62,75,83
 131,Sven-Göran Eriksson,15,38,10,13,39.5,55,45,53
-132,Régis Le Bris,15,42,13,14,35.7,58,45,53
-133,Julen Lopetegui,15,43,9,19,34.9,54,47,73
+132,Julen Lopetegui,15,43,9,19,34.9,54,47,73
+132,Régis Le Bris,15,43,13,15,34.9,58,48,58
 134,Peter Taylor,15,46,8,23,32.6,53,44,68
 135,Ruben Amorim,15,47,13,19,31.9,58,66,72
 136,Roy Keane,15,53,9,29,28.3,54,49,83
-137,Michael Carrick,14,23,5,4,60.9,47,44,28
-138,Phil Thompson,14,24,7,3,58.3,49,41,18
+137,Michael Carrick,14,24,6,4,58.3,48,45,29
+137,Phil Thompson,14,24,7,3,58.3,49,41,18
 139,Luiz Felipe Scolari,14,25,7,4,56.0,49,44,15
 140,Vítor Pereira,14,44,10,20,31.8,52,60,64
 141,Gus Poyet,14,60,21,25,23.3,63,59,87
@@ -236,9 +236,9 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 235,Mike Stowell,1,3,0,2,33.3,3,3,4
 236,Cristian Stellini,1,4,1,2,25.0,4,6,11
 236,Duncan Ferguson,1,4,2,1,25.0,5,4,3
-236,Pierre Sage,1,4,0,3,25.0,3,6,11
-239,Freddie Ljungberg,1,5,2,2,20.0,5,6,8
-239,Keith Downing,1,5,3,1,20.0,6,6,6
+238,Freddie Ljungberg,1,5,2,2,20.0,5,6,8
+238,Keith Downing,1,5,3,1,20.0,6,6,6
+238,Pierre Sage,1,5,1,3,20.0,4,6,11
 241,Calum McFarlane,1,6,2,3,16.7,5,7,10
 241,Ray Lewington,1,6,3,2,16.7,6,9,15
 243,Alan Curtis,1,7,2,4,14.3,5,5,11
@@ -262,11 +262,11 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 261,Eric Black,0,8,1,7,0.0,1,5,20
 262,Keith Millen,0,7,3,4,0.0,3,2,9
 263,Igor Tudor,0,5,1,4,0.0,1,4,13
+263,Marco Rose,0,5,3,2,0.0,3,6,8
 263,Neil Adams,0,5,1,4,0.0,1,2,10
-265,Frank de Boer,0,4,0,4,0.0,0,0,7
-265,Hayden Mullins,0,4,1,3,0.0,1,2,9
-265,Marco Rose,0,4,3,1,0.0,3,6,7
-265,Álvaro Arbeloa,0,4,1,3,0.0,1,4,7
+263,Álvaro Arbeloa,0,5,2,3,0.0,2,5,8
+267,Frank de Boer,0,4,0,4,0.0,0,0,7
+267,Hayden Mullins,0,4,1,3,0.0,1,2,9
 269,Graeme Jones,0,3,2,1,0.0,2,2,5
 269,John Wark,0,3,2,1,0.0,2,4,7
 269,Kevin Keen,0,3,0,3,0.0,0,4,9

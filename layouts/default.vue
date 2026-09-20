@@ -1,10 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar color="primary" density="compact">
+    <v-app-bar color="primary" density="compact" height="96">
       <v-app-bar-nav-icon @click.stop="toggleNav"></v-app-bar-nav-icon>
       <v-app-bar-title>
         <NuxtLink to="/" class="text-decoration-none d-flex align-center">
-          <img src="/logo-square.png" alt="Football Started in 1992" class="site-logo" />
           <span class="text-white site-title ml-2">Football Started in 1992</span>
         </NuxtLink>
       </v-app-bar-title>
@@ -24,6 +23,7 @@
       :temporary="isMobile"
       :rail="rail && !isMobile"
       :expand-on-hover="rail && !isMobile"
+      color="#e3f2fd"
     >
       <v-list>
         <template v-for="item in navItems" :key="item.header || item.path">

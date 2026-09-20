@@ -1,3 +1,14 @@
+.v-main {
+  background:
+    radial-gradient(circle at 85% 8%, rgba(147, 197, 253, 0.45) 0, transparent 38rem),
+    radial-gradient(circle at 8% 92%, rgba(191, 219, 254, 0.5) 0, transparent 34rem),
+    linear-gradient(135deg, #ffffff 0%, #eff6ff 38%, #dbeafe 72%, #bfdbfe 100%);
+  background-attachment: fixed;
+}
+.v-card--variant-tonal .v-card-subtitle,
+.v-card--variant-tonal .v-card-text {
+  color: #000;
+}
 .chart-wrap { position: relative; }
 .chart-wrap svg {
   display: block;
@@ -8,10 +19,13 @@
   font-family: 'Tourney', sans-serif;
   font-weight: 600;
   letter-spacing: 0.01em;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  white-space: normal;
 }
 @media (max-width: 599.98px) {
   .site-title {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     letter-spacing: 0;
   }
 }
