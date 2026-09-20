@@ -639,6 +639,9 @@ season_label,team_name,player_name,competition,goals
 2026-27,Arsenal,K. Havertz,Community Shield,1
 2026-27,Arsenal,M. Ødegaard,Community Shield,1
 2026-27,Arsenal,R. Calafiori,Community Shield,1
+2026-27,Arsenal,M. Dowman,League Cup,2
+2026-27,Arsenal,Mikel Merino,League Cup,1
+2026-27,Arsenal,N. Madueke,League Cup,1
 2026-27,Arsenal,E. Nwaneri,Other,1
 2026-27,Arsenal,V. Gyökeres,Other,1
 2026-27,Arsenal,B. Saka,Premier League,3
@@ -649,8 +652,15 @@ season_label,team_name,player_name,competition,goals
 2026-27,Aston Villa,J. McGinn,Champions League,1
 2026-27,Aston Villa,N. Jackson,Champions League,1
 2026-27,Aston Villa,João Gomes,Club Friendlies,1
+2026-27,Aston Villa,T. Abraham,League Cup,2
+2026-27,Aston Villa,R. Barkley,League Cup,1
 2026-27,Aston Villa,B. Madjo,Other,1
 2026-27,Aston Villa,Alysson,Premier League,1
+2026-27,Aston Villa,E. Buendía,Premier League,1
+2026-27,Aston Villa,J. Manzambi,Premier League,1
+2026-27,Aston Villa,N. Jackson,Premier League,1
+2026-27,Bournemouth,J. Kluivert,Europa League,1
+2026-27,Bournemouth,Rayan,Europa League,1
 2026-27,Bournemouth,R. Christie,League Cup,3
 2026-27,Bournemouth,Rayan,League Cup,1
 2026-27,Bournemouth,M. Tavernier,Premier League,3
@@ -662,13 +672,17 @@ season_label,team_name,player_name,competition,goals
 2026-27,Brentford,D. Ouattara,Club Friendlies,1
 2026-27,Brentford,K. Lewis-Potter,Club Friendlies,1
 2026-27,Brentford,M. Sangaré,Club Friendlies,1
+2026-27,Brentford,C. Wilson,League Cup,2
 2026-27,Brentford,N. Collins,League Cup,2
 2026-27,Brentford,A. Hickey,League Cup,1
-2026-27,Brentford,C. Wilson,League Cup,1
+2026-27,Brentford,Fábio Carvalho,League Cup,1
 2026-27,Brentford,Igor Thiago,League Cup,1
 2026-27,Brentford,M. Damsgaard,League Cup,1
 2026-27,Brentford,K. Schade,Premier League,3
 2026-27,Brentford,V. Janelt,Premier League,2
+2026-27,Brentford,Fábio Carvalho,Premier League,1
+2026-27,Brentford,Igor Thiago,Premier League,1
+2026-27,Brentford,J. Anthony,Premier League,1
 2026-27,Brentford,K. Lewis-Potter,Premier League,1
 2026-27,Brentford,M. Kayode,Premier League,1
 2026-27,Brighton & Hove Albion,Y. Ayari,Club Friendlies,2
@@ -677,11 +691,15 @@ season_label,team_name,player_name,competition,goals
 2026-27,Brighton & Hove Albion,M. De Cuyper,Conference League,1
 2026-27,Brighton & Hove Albion,M. Wieffer,Conference League,1
 2026-27,Brighton & Hove Albion,O. Boscagli,Conference League,1
+2026-27,Brighton & Hove Albion,C. Kostoulas,League Cup,1
+2026-27,Brighton & Hove Albion,M. De Cuyper,League Cup,1
+2026-27,Brighton & Hove Albion,P. Groß,League Cup,1
+2026-27,Brighton & Hove Albion,P. Groß,Premier League,3
+2026-27,Brighton & Hove Albion,C. Kostoulas,Premier League,2
 2026-27,Brighton & Hove Albion,J. Hinshelwood,Premier League,2
 2026-27,Brighton & Hove Albion,M. Yalcouyé,Premier League,2
 2026-27,Brighton & Hove Albion,Own Goal,Premier League,2
-2026-27,Brighton & Hove Albion,P. Groß,Premier League,2
-2026-27,Brighton & Hove Albion,C. Kostoulas,Premier League,1
+2026-27,Brighton & Hove Albion,Chema Andrés,Premier League,1
 2026-27,Brighton & Hove Albion,L. Dunk,Premier League,1
 2026-27,Brighton & Hove Albion,L. Vušković,Premier League,1
 2026-27,Brighton & Hove Albion,M. De Cuyper,Premier League,1
@@ -702,10 +720,15 @@ season_label,team_name,player_name,competition,goals
 2026-27,Chelsea,C. Palmer,Premier League,2
 2026-27,Chelsea,Pedro Neto,Premier League,1
 2026-27,Chelsea,R. Lavia,Premier League,1
+2026-27,Coventry City,V. Torp,League Cup,2
 2026-27,Coventry City,E. Mason-Clark,League Cup,1
 2026-27,Coventry City,J. Rudoni,League Cup,1
 2026-27,Coventry City,T. Awoniyi,League Cup,1
-2026-27,Coventry City,V. Torp,League Cup,1
+2026-27,Coventry City,J. Dasilva,Premier League,1
+2026-27,Crystal Palace,C. Richards,Europa League,1
+2026-27,Crystal Palace,E. Nketiah,Europa League,1
+2026-27,Crystal Palace,J. Strand Larsen,Europa League,1
+2026-27,Crystal Palace,Yéremy Pino,Europa League,1
 2026-27,Crystal Palace,J. Strand Larsen,League Cup,2
 2026-27,Crystal Palace,D. Kamada,League Cup,1
 2026-27,Crystal Palace,T. Mitchell,Premier League,2
@@ -715,23 +738,29 @@ season_label,team_name,player_name,competition,goals
 2026-27,Crystal Palace,Own Goal,Premier League,1
 2026-27,Everton,T. Barry,League Cup,3
 2026-27,Everton,B. Johnson,League Cup,1
+2026-27,Everton,C. Alcaraz,League Cup,1
+2026-27,Everton,T. Barry,Premier League,2
 2026-27,Everton,A. Maitland-Niles,Premier League,1
 2026-27,Everton,J. Tarkowski,Premier League,1
 2026-27,Everton,K. Dewsbury-Hall,Premier League,1
-2026-27,Everton,T. Barry,Premier League,1
 2026-27,Everton,T. George,Premier League,1
+2026-27,Fulham,Rodrigo Muniz,League Cup,2
+2026-27,Fulham,César Palacios,League Cup,1
 2026-27,Fulham,E. Smith Rowe,League Cup,1
 2026-27,Fulham,Gonzalo García,League Cup,1
-2026-27,Fulham,Rodrigo Muniz,League Cup,1
+2026-27,Fulham,O. Bobb,League Cup,1
 2026-27,Fulham,J. King,Premier League,2
 2026-27,Fulham,César Palacios,Premier League,1
 2026-27,Fulham,Gonzalo García,Premier League,1
 2026-27,Hull City,K. Dowell,League Cup,1
 2026-27,Hull City,M. Belloumi,Premier League,2
 2026-27,Hull City,L. Millar,Premier League,1
+2026-27,Hull City,M. Cho,Premier League,1
 2026-27,Hull City,N. Mendy,Premier League,1
 2026-27,Hull City,S. Ajayi,Premier League,1
 2026-27,Ipswich Town,M. Núñez,League Cup,2
+2026-27,Ipswich Town,A. Mehmeti,League Cup,1
+2026-27,Ipswich Town,C. Akpom,League Cup,1
 2026-27,Ipswich Town,S. Egeli,League Cup,1
 2026-27,Ipswich Town,Emersonn,Premier League,2
 2026-27,Ipswich Town,L. Davis,Premier League,2
@@ -747,9 +776,11 @@ season_label,team_name,player_name,competition,goals
 2026-27,Leeds United,D. James,League Cup,1
 2026-27,Leeds United,J. Justin,League Cup,1
 2026-27,Leeds United,T. Muharemović,League Cup,1
+2026-27,Leeds United,D. Calvert-Lewin,Premier League,3
 2026-27,Leeds United,A. Stach,Premier League,1
-2026-27,Leeds United,D. Calvert-Lewin,Premier League,1
 2026-27,Leeds United,J. Bogle,Premier League,1
+2026-27,Leeds United,N. Okafor,Premier League,1
+2026-27,Leeds United,Own Goal,Premier League,1
 2026-27,Liverpool,A. Mac Allister,Champions League,1
 2026-27,Liverpool,D. Szoboszlai,Champions League,1
 2026-27,Liverpool,F. Wirtz,Club Friendlies,2
@@ -757,6 +788,9 @@ season_label,team_name,player_name,competition,goals
 2026-27,Liverpool,C. Gakpo,Club Friendlies,1
 2026-27,Liverpool,J. Jacquet,Club Friendlies,1
 2026-27,Liverpool,L. Chambers,Club Friendlies,1
+2026-27,Liverpool,A. Mac Allister,League Cup,1
+2026-27,Liverpool,C. Gakpo,League Cup,1
+2026-27,Liverpool,D. Szoboszlai,League Cup,1
 2026-27,Liverpool,A. Isak,Premier League,3
 2026-27,Liverpool,C. Gakpo,Premier League,1
 2026-27,Liverpool,D. Szoboszlai,Premier League,1
@@ -765,6 +799,10 @@ season_label,team_name,player_name,competition,goals
 2026-27,Manchester City,Omar Marmoush,Club Friendlies,2
 2026-27,Manchester City,D. Mubama,Club Friendlies,1
 2026-27,Manchester City,R. Aït-Nouri,Club Friendlies,1
+2026-27,Manchester City,F. Samba,League Cup,2
+2026-27,Manchester City,Allan,League Cup,1
+2026-27,Manchester City,R. Cherki,League Cup,1
+2026-27,Manchester City,R. McAidoo,League Cup,1
 2026-27,Manchester City,D. Mubama,Other,1
 2026-27,Manchester City,R. Aït-Nouri,Other,1
 2026-27,Manchester City,T. Reijnders,Other,1
@@ -780,6 +818,8 @@ season_label,team_name,player_name,competition,goals
 2026-27,Manchester United,H. Maguire,Club Friendlies,1
 2026-27,Manchester United,J. Zirkzee,Club Friendlies,1
 2026-27,Manchester United,P. Dorgu,Club Friendlies,1
+2026-27,Manchester United,M. Mount,League Cup,1
+2026-27,Manchester United,S. Lacey,League Cup,1
 2026-27,Manchester United,Bruno Fernandes,Premier League,3
 2026-27,Manchester United,B. Mbeumo,Premier League,2
 2026-27,Manchester United,B. Šeško,Premier League,1
@@ -788,14 +828,17 @@ season_label,team_name,player_name,competition,goals
 2026-27,Newcastle United,B. Touré,League Cup,1
 2026-27,Newcastle United,J. Willock,League Cup,1
 2026-27,Newcastle United,A. Elanga,Premier League,2
+2026-27,Newcastle United,J. Willock,Premier League,2
+2026-27,Newcastle United,B. Touré,Premier League,1
 2026-27,Newcastle United,H. Barnes,Premier League,1
 2026-27,Newcastle United,J. Ramsey,Premier League,1
-2026-27,Newcastle United,J. Willock,Premier League,1
+2026-27,Newcastle United,L. Hall,Premier League,1
 2026-27,Newcastle United,Y. Wissa,Premier League,1
 2026-27,Nottingham Forest,D. Ndoye,Premier League,1
 2026-27,Nottingham Forest,Igor Jesus,Premier League,1
 2026-27,Nottingham Forest,L. Delap,Premier League,1
 2026-27,Nottingham Forest,M. Gibbs-White,Premier League,1
+2026-27,Sunderland,E. Le Fée,Europa League,1
 2026-27,Sunderland,C. Talbi,League Cup,1
 2026-27,Sunderland,E. Le Fée,Premier League,1
 2026-27,Sunderland,N. Angulo,Premier League,1
@@ -806,9 +849,12 @@ season_label,team_name,player_name,competition,goals
 2026-27,Tottenham Hotspur,L. Williams-Barnett,Club Friendlies,1
 2026-27,Tottenham Hotspur,Richarlison,Club Friendlies,1
 2026-27,Tottenham Hotspur,B. Davies,League Cup,1
+2026-27,Tottenham Hotspur,C. Gallagher,League Cup,1
 2026-27,Tottenham Hotspur,D. Solanke,League Cup,1
 2026-27,Tottenham Hotspur,K. Danso,League Cup,1
 2026-27,Tottenham Hotspur,M. Moore,League Cup,1
 2026-27,Tottenham Hotspur,Sávio,League Cup,1
 2026-27,Tottenham Hotspur,Richarlison,Other,1
 2026-27,Tottenham Hotspur,S. Tonali,Other,1
+2026-27,Tottenham Hotspur,C. Gallagher,Premier League,1
+2026-27,Tottenham Hotspur,J. van Hecke,Premier League,1

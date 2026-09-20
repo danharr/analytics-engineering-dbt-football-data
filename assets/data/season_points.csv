@@ -26335,14 +26335,17 @@ season_label,team_abbr,team_name,matchweek,points
 2026-27,ARS,Arsenal,2,6
 2026-27,ARS,Arsenal,3,9
 2026-27,ARS,Arsenal,4,12
+2026-27,ARS,Arsenal,5,12
 2026-27,AVL,Aston Villa,1,0
 2026-27,AVL,Aston Villa,2,0
 2026-27,AVL,Aston Villa,3,1
 2026-27,AVL,Aston Villa,4,1
+2026-27,AVL,Aston Villa,5,4
 2026-27,BHA,Brighton and Hove Albion,1,3
 2026-27,BHA,Brighton and Hove Albion,2,3
 2026-27,BHA,Brighton and Hove Albion,3,4
 2026-27,BHA,Brighton and Hove Albion,4,7
+2026-27,BHA,Brighton and Hove Albion,5,10
 2026-27,BOU,Bournemouth,1,0
 2026-27,BOU,Bournemouth,2,1
 2026-27,BOU,Bournemouth,3,2
@@ -26351,10 +26354,12 @@ season_label,team_abbr,team_name,matchweek,points
 2026-27,BRE,Brentford,2,4
 2026-27,BRE,Brentford,3,5
 2026-27,BRE,Brentford,4,6
+2026-27,BRE,Brentford,5,9
 2026-27,CHE,Chelsea,1,3
 2026-27,CHE,Chelsea,2,6
 2026-27,CHE,Chelsea,3,6
 2026-27,CHE,Chelsea,4,7
+2026-27,CHE,Chelsea,5,7
 2026-27,COV,Coventry City,1,0
 2026-27,COV,Coventry City,2,0
 2026-27,COV,Coventry City,3,0
@@ -26367,6 +26372,7 @@ season_label,team_abbr,team_name,matchweek,points
 2026-27,EVE,Everton,2,4
 2026-27,EVE,Everton,3,5
 2026-27,EVE,Everton,4,6
+2026-27,EVE,Everton,5,9
 2026-27,FUL,Fulham,1,0
 2026-27,FUL,Fulham,2,0
 2026-27,FUL,Fulham,3,0
@@ -26375,13 +26381,16 @@ season_label,team_abbr,team_name,matchweek,points
 2026-27,HUL,Hull City,2,6
 2026-27,HUL,Hull City,3,7
 2026-27,HUL,Hull City,4,8
+2026-27,HUL,Hull City,5,8
 2026-27,IPS,Ipswich Town,1,3
 2026-27,IPS,Ipswich Town,2,3
 2026-27,IPS,Ipswich Town,3,3
 2026-27,IPS,Ipswich Town,4,6
+2026-27,IPS,Ipswich Town,5,6
 2026-27,LEE,Leeds United,1,3
 2026-27,LEE,Leeds United,2,4
 2026-27,LEE,Leeds United,3,5
+2026-27,LEE,Leeds United,4,8
 2026-27,LIV,Liverpool,1,1
 2026-27,LIV,Liverpool,2,2
 2026-27,LIV,Liverpool,3,5
@@ -26397,6 +26406,8 @@ season_label,team_abbr,team_name,matchweek,points
 2026-27,NEW,Newcastle United,1,1
 2026-27,NEW,Newcastle United,2,4
 2026-27,NEW,Newcastle United,3,5
+2026-27,NEW,Newcastle United,4,5
+2026-27,NEW,Newcastle United,5,8
 2026-27,NFO,Nottingham Forest,1,0
 2026-27,NFO,Nottingham Forest,2,1
 2026-27,NFO,Nottingham Forest,3,2
@@ -26409,3 +26420,4 @@ season_label,team_abbr,team_name,matchweek,points
 2026-27,TOT,Tottenham Hotspur,2,0
 2026-27,TOT,Tottenham Hotspur,3,1
 2026-27,TOT,Tottenham Hotspur,4,2
+2026-27,TOT,Tottenham Hotspur,5,2

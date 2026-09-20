@@ -1,7 +1,7 @@
 rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 1,Alex Ferguson,528,810,168,114,65.2,1752,1627,703
 2,Arsène Wenger,476,828,199,153,57.5,1627,1561,807
-3,David Moyes,291,758,202,265,38.4,1075,1021,986
+3,David Moyes,292,759,202,265,38.5,1078,1022,986
 4,Pep Guardiola,269,380,58,53,70.8,865,904,328
 5,Harry Redknapp,236,642,167,239,36.8,875,819,849
 6,José Mourinho,217,363,84,62,59.8,735,625,305
@@ -9,7 +9,7 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 8,Sam Allardyce,178,541,146,217,32.9,680,636,759
 9,Rafael Benítez,173,359,86,100,48.2,605,543,350
 10,Mark Hughes,157,465,127,181,33.8,598,568,640
-11,Mikel Arteta,153,252,48,51,60.7,507,475,242
+11,Mikel Arteta,153,253,48,52,60.5,507,475,245
 12,Mauricio Pochettino,150,294,70,74,51.0,520,522,335
 13,Eddie Howe,140,369,81,148,37.9,501,547,565
 14,Brendan Rodgers,139,312,71,102,44.6,488,529,410
@@ -24,9 +24,9 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 23,Alan Curbishley,108,328,85,135,32.9,409,381,472
 24,Gérard Houllier,106,234,61,67,45.3,379,370,256
 25,George Graham,102,288,92,94,35.4,398,341,300
-26,Tony Pulis,99,324,94,131,30.6,391,321,416
-27,Sean Dyche,99,351,95,157,28.2,392,343,492
-28,Unai Emery,98,194,43,53,50.5,337,322,264
+26,Unai Emery,99,195,43,53,50.8,340,325,266
+27,Tony Pulis,99,324,94,131,30.6,391,321,416
+28,Sean Dyche,99,351,95,157,28.2,392,343,492
 29,Joe Kinnear,97,302,92,113,32.1,383,369,436
 30,Graeme Souness,94,280,78,108,33.6,360,376,380
 31,Manuel Pellegrini,90,171,32,49,52.6,302,329,203
@@ -79,22 +79,22 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 78,Avram Grant,34,93,26,33,36.6,128,123,131
 79,Dean Smith,34,122,24,64,27.9,126,139,207
 80,Paul Jewell,34,138,28,76,24.6,130,135,235
-81,George Burley,33,98,17,48,33.7,116,114,159
-82,Stuart Pearce,33,104,26,45,31.7,125,101,122
-83,Owen Coyle,33,116,24,59,28.4,123,136,204
-84,Alex McLeish,33,138,52,53,23.9,151,145,198
-85,Enzo Maresca,32,61,15,14,52.5,111,104,66
-86,Fabian Hürzeler,32,80,25,23,40.0,121,131,110
+81,Fabian Hürzeler,33,81,25,23,40.7,124,134,110
+82,George Burley,33,98,17,48,33.7,116,114,159
+83,Stuart Pearce,33,104,26,45,31.7,125,101,122
+84,Owen Coyle,33,116,24,59,28.4,123,136,204
+85,Alex McLeish,33,138,52,53,23.9,151,145,198
+86,Enzo Maresca,32,61,15,14,52.5,111,104,66
 87,Oliver Glasner,32,94,32,30,34.0,128,126,121
 88,Ange Postecoglou,31,81,12,38,38.3,105,139,136
 89,Claude Puel,31,94,23,40,33.0,116,117,132
 90,Slaven Bilić,31,100,30,39,31.0,123,133,164
 91,Howard Kendall,30,97,24,43,30.9,114,113,134
 92,Gary Megson,30,134,37,67,22.4,127,134,211
-93,Roberto De Zerbi,29,81,23,29,35.8,110,124,122
+93,Roberto De Zerbi,29,82,23,30,35.4,110,126,125
 94,Gareth Southgate,29,114,33,52,25.4,120,115,159
 95,Danny Wilson,28,105,18,59,26.7,102,105,180
-96,Gary O'Neil,27,92,16,49,29.3,97,116,170
+96,Gary O'Neil,27,93,16,50,29.0,97,116,171
 97,Alan Ball,27,97,33,37,27.8,114,119,151
 98,Neil Warnock,27,112,23,62,24.1,104,103,184
 99,Dave Bassett,27,131,43,61,20.6,124,133,196
@@ -114,23 +114,23 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 113,Tim Sherwood,19,45,5,21,42.2,62,68,70
 114,Roberto Di Matteo,19,48,11,18,39.6,68,73,75
 115,Colin Todd,19,69,16,34,27.5,73,70,114
-116,Ray Harford,18,48,11,19,37.5,65,67,61
-117,Phil Neal,18,59,18,23,30.5,72,57,79
-118,Nigel Pearson,18,60,13,29,30.0,67,72,89
-119,Ian Branfoot,18,66,14,34,27.3,68,77,97
-120,Daniel Farke,18,90,24,48,20.0,78,83,159
+116,Daniel Farke,19,91,24,48,20.9,81,87,160
+117,Ray Harford,18,48,11,19,37.5,65,67,61
+118,Phil Neal,18,59,18,23,30.5,72,57,79
+119,Nigel Pearson,18,60,13,29,30.0,67,72,89
+120,Ian Branfoot,18,66,14,34,27.3,68,77,97
 121,Bruce Rioch,17,38,12,9,44.7,63,49,32
 122,Terry Venables,17,52,14,21,32.7,65,62,59
 123,Steve Clarke,17,54,13,24,31.5,64,71,83
 124,Michael Laudrup,17,62,19,26,27.4,70,76,86
 125,Patrick Vieira,17,65,24,24,26.2,75,71,80
 126,Doug Livermore,16,42,11,15,38.1,59,60,66
-127,Bruno Lage,16,46,9,21,34.8,57,41,52
-128,Bobby Gould,16,53,19,18,30.2,67,65,68
-129,Ossie Ardiles,16,54,14,24,29.6,62,75,83
-130,Sven-Göran Eriksson,15,38,10,13,39.5,55,45,53
-131,Keith Andrews,15,42,14,13,35.7,59,62,56
-131,Régis Le Bris,15,42,13,14,35.7,58,45,53
+127,Keith Andrews,16,43,14,13,37.2,62,65,56
+128,Bruno Lage,16,46,9,21,34.8,57,41,52
+129,Bobby Gould,16,53,19,18,30.2,67,65,68
+130,Ossie Ardiles,16,54,14,24,29.6,62,75,83
+131,Sven-Göran Eriksson,15,38,10,13,39.5,55,45,53
+132,Régis Le Bris,15,42,13,14,35.7,58,45,53
 133,Julen Lopetegui,15,43,9,19,34.9,54,47,73
 134,Peter Taylor,15,46,8,23,32.6,53,44,68
 135,Ruben Amorim,15,47,13,19,31.9,58,66,72
@@ -217,23 +217,23 @@ rank,manager_name,wins,games,draws,losses,win_pct,points,goals_for,goals_against
 215,Mark McGhee,3,24,7,14,12.5,16,26,47
 217,Trevor Brooking,2,3,1,0,66.7,7,4,2
 218,Ryan Giggs,2,4,1,1,50.0,7,8,3
-218,Sergej Jakirović,2,4,2,0,50.0,8,5,2
-218,Xabi Alonso,2,4,1,1,50.0,7,10,9
-221,Gary McAllister,2,5,2,1,40.0,8,6,5
-222,Tomas Brolin,2,7,0,5,28.6,6,8,16
-222,Xisco Muñoz,2,7,1,4,28.6,7,7,10
-224,Bob Bradley,2,11,2,7,18.2,8,15,29
-225,Paolo Di Canio,2,12,3,7,16.7,9,11,22
-226,Velimir Zajec,2,13,2,9,15.4,8,10,24
-227,Rubén Sellés,2,16,4,10,12.5,10,18,33
-227,Tony Adams,2,16,5,9,12.5,11,16,28
-229,Rémi Garde,2,21,6,13,9.5,12,13,41
-230,Roy McFarland,2,22,4,16,9.1,10,21,44
-231,Jim Barron,1,1,0,0,100.0,3,4,3
-232,Aaron Danks,1,2,0,1,50.0,3,4,4
-232,Michael Appleton,1,2,1,0,50.0,4,5,4
-234,Matthias Jaissle,1,3,2,0,33.3,5,6,4
-234,Mike Stowell,1,3,0,2,33.3,3,3,4
+219,Gary McAllister,2,5,2,1,40.0,8,6,5
+219,Matthias Jaissle,2,5,2,1,40.0,8,9,9
+219,Sergej Jakirović,2,5,2,1,40.0,8,6,4
+219,Xabi Alonso,2,5,1,2,40.0,7,10,12
+223,Tomas Brolin,2,7,0,5,28.6,6,8,16
+223,Xisco Muñoz,2,7,1,4,28.6,7,7,10
+225,Bob Bradley,2,11,2,7,18.2,8,15,29
+226,Paolo Di Canio,2,12,3,7,16.7,9,11,22
+227,Velimir Zajec,2,13,2,9,15.4,8,10,24
+228,Rubén Sellés,2,16,4,10,12.5,10,18,33
+228,Tony Adams,2,16,5,9,12.5,11,16,28
+230,Rémi Garde,2,21,6,13,9.5,12,13,41
+231,Roy McFarland,2,22,4,16,9.1,10,21,44
+232,Jim Barron,1,1,0,0,100.0,3,4,3
+233,Aaron Danks,1,2,0,1,50.0,3,4,4
+233,Michael Appleton,1,2,1,0,50.0,4,5,4
+235,Mike Stowell,1,3,0,2,33.3,3,3,4
 236,Cristian Stellini,1,4,1,2,25.0,4,6,11
 236,Duncan Ferguson,1,4,2,1,25.0,5,4,3
 236,Pierre Sage,1,4,0,3,25.0,3,6,11

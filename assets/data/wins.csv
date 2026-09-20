@@ -5,13 +5,13 @@ LIV,Liverpool,415,280,695
 CHE,Chelsea,391,292,683
 MCI,Manchester City,340,237,577
 TOT,Tottenham Hotspur,345,216,561
-EVE,Everton,293,171,464
-NEW,Newcastle United,298,156,454
-AVL,Aston Villa,255,175,430
+EVE,Everton,294,171,465
+NEW,Newcastle United,299,156,455
+AVL,Aston Villa,255,176,431
 WHU,West Ham United,242,139,381
 SOU,Southampton,181,101,282
 BLA,Blackburn Rovers,169,93,262
-LEE,Leeds United,144,91,235
+LEE,Leeds United,145,91,236
 LEI,Leicester City,134,90,224
 FUL,Fulham,155,65,220
 CRY,Crystal Palace,102,92,194
@@ -21,7 +21,7 @@ BOL,Bolton Wanderers,93,56,149
 WOL,Wolverhampton Wanderers,81,48,129
 WBA,West Bromwich Albion,76,41,117
 STO,Stoke City,81,35,116
-BHA,Brighton and Hove Albion,63,47,110
+BHA,Brighton and Hove Albion,64,47,111
 NFO,Nottingham Forest,61,48,109
 BOU,Bournemouth,62,46,108
 SHW,Sheffield Wednesday,63,38,101
@@ -36,7 +36,7 @@ QPR,Queens Park Rangers,51,30,81
 POR,Portsmouth,54,25,79
 BIR,Birmingham City,50,23,73
 WAT,Watford,45,28,73
-BRE,Brentford,40,29,69
+BRE,Brentford,41,29,70
 DER,Derby County,48,20,68
 IPS,Ipswich Town,37,26,63
 SHU,Sheffield United,40,16,56
