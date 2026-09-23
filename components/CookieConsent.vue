@@ -20,30 +20,25 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+import { useConsent } from '~/composables/useConsent'
 
-const CONSENT_KEY = 'pl-cookie-consent'
+const { status, grant, deny, trackPageView } = useConsent()
+const route = useRoute()
 const show = ref(false)
 
-function updateConsent(status) {
-  const gtag = window.gtag
-  if (typeof gtag === 'function') {
-    gtag('consent', 'update', { analytics_storage: status, ad_storage: status })
-  }
-}
-
 function accept() {
-  localStorage.setItem(CONSENT_KEY, 'granted')
-  updateConsent('granted')
+  grant()
+  trackPageView(route.fullPath)
   show.value = false
 }
 
 function decline() {
-  localStorage.setItem(CONSENT_KEY, 'denied')
+  deny()
   show.value = false
 }
 
 onMounted(() => {
-  if (typeof localStorage === 'undefined') return
-  if (!localStorage.getItem(CONSENT_KEY)) show.value = true
+  if (status.value === null) show.value = true
 })
 </script>

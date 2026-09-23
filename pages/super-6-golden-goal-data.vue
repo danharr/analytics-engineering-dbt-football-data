@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" md="10" offset-md="1">
       <v-card color="secondary" variant="tonal">
-        <v-card-title>
+        <v-card-title tag="h1">
           <v-icon icon="mdi-timer" class="mr-2"></v-icon>
           Super 6 Golden Goal Data
         </v-card-title>

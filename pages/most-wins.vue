@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" md="10" offset-md="1">
       <v-card>
-        <v-card-title>Total Wins by Team</v-card-title>
+        <v-card-title tag="h1">Total Wins by Team</v-card-title>
         <v-card-subtitle>All 35 seasons · most wins at top</v-card-subtitle>
         <v-card-text>
           <p class="mb-4">

@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" md="10" offset-md="1">
       <v-card>
-        <v-card-title>
+        <v-card-title tag="h1">
           <v-icon icon="mdi-stadium" class="mr-2"></v-icon>
           Average Home Attendance by Team
         </v-card-title>

@@ -1,5 +1,11 @@
 <template>
   <v-row>
+    <v-col cols="12" md="10" offset-md="1">
+      <h1 class="text-h4 font-weight-bold mt-2 mb-1">Premier League Stats, Records &amp; History</h1>
+      <p class="text-body-1 text-grey-darken-1 mb-2">
+        Every season since 1992-93, charted from match-level data.
+      </p>
+    </v-col>
     <v-col cols="12" md="8" offset-md="2">
       <v-row>
         <v-col cols="4" sm="4">

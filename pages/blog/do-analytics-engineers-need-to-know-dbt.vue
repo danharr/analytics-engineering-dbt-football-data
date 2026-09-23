@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" md="8" offset-md="2">
       <v-card color="secondary" variant="tonal">
-        <v-card-title>
+        <v-card-title tag="h1">
           <v-icon icon="mdi-newspaper-variant-outline" class="mr-2"></v-icon>
           Do Analytics Engineers need to know dbt?
         </v-card-title>

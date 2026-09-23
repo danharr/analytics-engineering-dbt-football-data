@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" md="10" offset-md="1">
         <v-card color="secondary" variant="tonal">
-          <v-card-title>
+          <v-card-title tag="h1">
             <v-icon icon="mdi-shield-outline" class="mr-2"></v-icon>
             All Premier League Teams
           </v-card-title>

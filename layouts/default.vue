@@ -69,6 +69,16 @@ const rail = ref(false)
 const { mobile } = useDisplay()
 const isMobile = computed(() => mobile.value)
 
+const route = useRoute()
+useHead(() => {
+  const path = route.path === '/' ? '/' : `${route.path}/`
+  return {
+    link: [
+      { rel: 'canonical', href: `https://footballstartedin1992.com${path}` }
+    ]
+  }
+})
+
 function toggleNav() {
   if (isMobile.value) {
     drawer.value = !drawer.value

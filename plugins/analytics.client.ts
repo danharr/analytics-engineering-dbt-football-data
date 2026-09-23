@@ -1,18 +1,12 @@
-export default defineNuxtPlugin((nuxtApp) => {
-  const router = useRouter()
+import { useConsent } from '~/composables/useConsent'
 
-  let first = true
+export default defineNuxtPlugin(() => {
+  const router = useRouter()
+  const { restore, trackPageView } = useConsent()
+
   router.afterEach((to) => {
-    if (first) {
-      first = false
-      return
-    }
-    const gtag = window.gtag
-    if (typeof gtag === 'function') {
-      gtag('event', 'page_view', {
-        page_path: to.fullPath,
-        page_location: window.location.href
-      })
-    }
+    trackPageView(to.fullPath)
   })
+
+  restore()
 })

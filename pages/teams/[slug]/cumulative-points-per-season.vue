@@ -2,7 +2,7 @@
   <v-row>
     <v-col cols="12" md="10" offset-md="1">
       <v-card color="secondary" variant="tonal">
-        <v-card-title>
+        <v-card-title tag="h1">
           <v-icon icon="mdi-shield" :color="colour" class="mr-2"></v-icon>
           {{ team.name }} · Points Race by Season
         </v-card-title>

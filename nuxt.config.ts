@@ -103,11 +103,10 @@ export default defineNuxtConfig({
           innerHTML: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('consent', 'default', {
-  'analytics_storage': 'denied',
-  'ad_storage': 'denied'
+  'analytics_storage': 'denied'
 });
 gtag('js', new Date());
-gtag('config', 'G-HRJ1G6XTG1');`
+gtag('config', 'G-HRJ1G6XTG1', { 'send_page_view': false });`
         }
       ]
     }
