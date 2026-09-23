@@ -52,6 +52,14 @@ body,
   font-family: Arial, Helvetica, sans-serif !important;
 }
 
+/* Card titles and subtitles should wrap rather than crop on narrow screens */
+.v-card-title,
+.v-card-subtitle {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
 /* Side menu links: smaller text */
 .v-navigation-drawer .v-list-item-title {
   font-size: 0.85rem;
