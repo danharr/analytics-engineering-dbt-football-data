@@ -20,6 +20,18 @@
       </v-row>
     </v-col>
 
+    <v-col v-if="latestMatch" cols="12" md="8" offset-md="2">
+      <v-card color="secondary" variant="tonal" class="latest-match">
+        <v-card-text class="text-center">
+          <div class="latest-match-title text-body-2 text-grey-darken-1">Latest match</div>
+          <div class="latest-match-score text-h5 font-weight-bold">
+            {{ latestMatch.home_team_name }} {{ latestMatch.home_score }}-{{ latestMatch.away_score }} {{ latestMatch.away_team_name }}
+          </div>
+          <div class="latest-match-date text-body-2 text-grey-darken-1">{{ fmtDate(latestMatch.kickoff_date) }}</div>
+        </v-card-text>
+      </v-card>
+    </v-col>
+
     <v-col cols="12" md="10" offset-md="1">
       <div class="section-head">
         <h2 class="text-h5 font-weight-bold mb-1">Explore the charts</h2>
@@ -144,7 +156,7 @@
 </template>
 
 <script setup>
-import { stats } from '~/composables/useHomeData'
+import { stats, latestMatch } from '~/composables/useHomeData'
 import { datasetLd } from '~/composables/useChartHelpers'
 import { thumbnails } from '~/composables/thumbnails'
 import ChartThumb from '~/components/ChartThumb.vue'
@@ -185,4 +197,10 @@ const seasonEntries = [
 const teamEntries = [
   { label: 'All Teams', path: '/teams' }
 ]
+
+const fmtDate = s => {
+  const [y, m, d] = s.split('-')
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  return `${Number(d)} ${months[Number(m) - 1]} ${y}`
+}
 </script>

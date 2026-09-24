@@ -16,8 +16,8 @@
   height: auto;
 }
 .site-title {
-  font-family: 'Tourney', sans-serif;
-  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
   letter-spacing: 0.01em;
   font-size: 2.5rem;
   line-height: 1.1;
@@ -29,14 +29,7 @@
     letter-spacing: 0;
   }
 }
-.site-logo {
-  height: 40px;
-  width: auto;
-  border-radius: 8px;
-  display: block;
-}
-
-/* Global site font: Arial. The Tourney site title (.site-title) and the
+/* Global site font: Arial.
    monospace directory listing (.dir-listing) are deliberately excluded. */
 html,
 body,

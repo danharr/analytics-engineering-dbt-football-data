@@ -325,7 +325,7 @@ function renderSeason(svg, label) {
     .attr('y', H / 2)
     .attr('text-anchor', 'middle')
     .attr('dominant-baseline', 'central')
-    .attr('font-family', "'Tourney', sans-serif")
+    .attr('font-family', 'Arial, Helvetica, sans-serif')
     .attr('font-size', '52px')
     .attr('font-weight', 700)
     .attr('fill', '#1a56db')
