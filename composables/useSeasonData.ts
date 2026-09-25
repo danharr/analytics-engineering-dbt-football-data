@@ -2,9 +2,10 @@ import seasonTableCsv from '~/assets/data/season_table.csv?raw'
 import seasonPointsCsv from '~/assets/data/season_points.csv?raw'
 import seasonBiggestWinsCsv from '~/assets/data/season_biggest_wins.csv?raw'
 import seasonScoringCsv from '~/assets/data/season_scoring.csv?raw'
+import manCityVoidedCsv from '~/assets/data/man_city_voided.csv?raw'
 import {
   parse, toInt, toFloat,
-  type SeasonTableRow, type SeasonPointRow, type SeasonBiggestWinRow, type SeasonScoringRow
+  type SeasonTableRow, type SeasonPointRow, type SeasonBiggestWinRow, type SeasonScoringRow, type ManCityVoidedRow
 } from '~/composables/useChartHelpers'
 
 export const seasonTable = parse<SeasonTableRow>(seasonTableCsv, d => ({
@@ -60,4 +61,23 @@ export const seasonScoring = parse<SeasonScoringRow>(seasonScoringCsv, d => ({
   draw_rank: toInt(d, 'draw_rank'),
   excitement_score: toInt(d, 'excitement_score'),
   excitement_rank: toInt(d, 'excitement_rank')
+}))
+
+export const manCityVoided = parse<ManCityVoidedRow>(manCityVoidedCsv, d => ({
+  season_label: d.season_label,
+  position: toInt(d, 'position'),
+  team_abbr: d.team_abbr,
+  team_name: d.team_name,
+  played: toInt(d, 'played'),
+  won: toInt(d, 'won'),
+  drawn: toInt(d, 'drawn'),
+  lost: toInt(d, 'lost'),
+  goals_for: toInt(d, 'goals_for'),
+  goals_against: toInt(d, 'goals_against'),
+  goal_diff: toInt(d, 'goal_diff'),
+  points: toInt(d, 'points'),
+  original_points: toInt(d, 'original_points'),
+  points_change: toInt(d, 'points_change'),
+  original_position: toInt(d, 'original_position'),
+  position_change: toInt(d, 'position_change')
 }))

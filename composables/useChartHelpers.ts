@@ -214,6 +214,25 @@ export interface SeasonTableRow {
   points: number
 }
 
+export interface ManCityVoidedRow {
+  season_label: string
+  position: number
+  team_abbr: string
+  team_name: string
+  played: number
+  won: number
+  drawn: number
+  lost: number
+  goals_for: number
+  goals_against: number
+  goal_diff: number
+  points: number
+  original_points: number
+  points_change: number
+  original_position: number
+  position_change: number
+}
+
 export interface SeasonPointRow {
   season_label: string
   team_abbr: string

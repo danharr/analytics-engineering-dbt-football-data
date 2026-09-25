@@ -28,6 +28,7 @@ An interactive dashboard of Premier League football history.
 - **Most Manager Wins** — the top managers by all-time Premier League wins, from the Wikipedia managers list joined to match results
 - **Manager Debuts** — the first league match for every manager at each club they managed, split into the top 5 biggest wins and top 5 biggest defeats
 - **Manager Timeline** — a Gantt chart of every Premier League club's managers since 1992, coloured by club with hover tooltips
+- **Table If Man City Lost Every Game** — the 2025-26 final table re-scored as if Manchester City lost every game 3-0, with each team's points and position change versus the real season
 - **Individual Manager Pages** — profile pages at `/managers` for the top 30 managers by all-time Premier League wins (Wenger, Ferguson, Moyes, Guardiola, Redknapp, Mourinho, Klopp and more) showing their total wins (compared to all managers), biggest wins/losses, and club-by-club records
 - **Team Pages** — one page per club at `/teams` (all 51 teams) with their top-5 biggest wins/defeats, most red cards, biggest home attendances, every season they've played in, the all-time table with their row highlighted, and their manager history
 - **Team Season Pages** — a `/teams/<club>/2025-26-goals-by-player` and `/teams/<club>/2026-27-goals-by-player` sub-page for each club, showing every player's goals as a horizontal bar chart from the per-minute goal feed

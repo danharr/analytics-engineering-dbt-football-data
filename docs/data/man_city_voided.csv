@@ -1,0 +1,21 @@
+season_label,position,team_abbr,team_name,played,won,drawn,lost,goals_for,goals_against,goal_diff,points,original_points,points_change,original_position,position_change
+2025-26,1,ARS,Arsenal,38,28,6,4,75,24,51,90,85,5,1,0
+2025-26,2,MUN,Manchester United,38,21,11,6,73,47,26,74,71,3,3,1
+2025-26,3,LIV,Liverpool,38,19,9,10,68,48,20,66,60,6,5,2
+2025-26,4,AVL,Aston Villa,38,19,8,11,59,48,11,65,65,0,4,0
+2025-26,5,BOU,Bournemouth,38,15,17,6,62,50,12,62,57,5,6,1
+2025-26,6,BRE,Brentford,38,16,11,11,61,48,13,59,53,6,9,3
+2025-26,7,SUN,Sunderland,38,16,11,11,48,45,3,59,54,5,7,0
+2025-26,8,FUL,Fulham,38,17,7,14,49,43,6,58,52,6,11,3
+2025-26,9,CHE,Chelsea,38,16,9,13,63,48,15,57,52,5,10,1
+2025-26,10,BHA,Brighton and Hove Albion,38,15,10,13,55,44,11,55,53,2,8,-2
+2025-26,11,EVE,Everton,38,15,9,14,50,45,5,54,49,5,13,2
+2025-26,12,LEE,Leeds United,38,13,14,11,53,52,1,53,47,6,14,2
+2025-26,13,NEW,Newcastle United,38,15,7,16,56,52,4,52,49,3,12,-1
+2025-26,14,CRY,Crystal Palace,38,13,12,13,47,45,2,51,45,6,15,1
+2025-26,15,NFO,Nottingham Forest,38,13,10,15,51,47,4,49,44,5,16,1
+2025-26,16,WHU,West Ham United,38,12,8,18,51,61,-10,44,39,5,18,2
+2025-26,17,TOT,Tottenham Hotspur,38,11,10,17,50,55,-5,43,41,2,17,0
+2025-26,18,BUR,Burnley,38,6,10,22,43,69,-26,28,22,6,19,1
+2025-26,19,WOL,Wolverhampton Wanderers,38,5,11,22,33,62,-29,26,20,6,20,1
+2025-26,20,MCI,Manchester City,38,0,0,38,0,114,-114,0,78,-78,2,-18

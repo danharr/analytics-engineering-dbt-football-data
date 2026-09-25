@@ -2,7 +2,7 @@ import { allTime } from '~/composables/useAllTimeData'
 import { wins } from '~/composables/useWinsData'
 import { quality } from '~/composables/useQualityData'
 import { attendance } from '~/composables/useAttendanceData'
-import { seasonScoring } from '~/composables/useSeasonData'
+import { seasonScoring, manCityVoided } from '~/composables/useSeasonData'
 import { fiveGameStreaks, bigWinStreaks, longestWinlessGaps, mostChaoticMatches, oneNilWins, htLeadNoWinStreaks, comebackKings, mostComebacks, scoringRuns, currentUnbeatenRuns } from '~/composables/useStreaksData'
 import { managerWins, managerDebuts, managerTimeline } from '~/composables/useManagerData'
 import { goalMinutes, pointsLostFromWinning, fixtureRedCards, redCardsBySeason } from '~/composables/useGoalData'
@@ -396,6 +396,17 @@ export const thumbnails: Thumbnail[] = [
     path: '/manager-timeline',
     caption: 'Every managerial spell since 1992.',
     preview: ganttPreview
+  },
+  {
+    label: 'Table If Man City Lost Every Game',
+    path: '/premier-league-table-if-man-city-games-voided',
+    caption: 'The 2025-26 table if Manchester City lost every game 3-0.',
+    preview: toBars(
+      manCityVoided.filter(r => r.points_change > 0),
+      d => d.team_name,
+      d => d.points_change,
+      d => `+${d.points_change}`
+    )
   },
   {
     label: '1992-93',

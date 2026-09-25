@@ -24,6 +24,7 @@ export const navItems = [
   { label: 'Most Manager Wins', path: '/manager-wins', icon: 'mdi-whistle-outline' },
   { label: 'Manager Debuts', path: '/manager-debuts', icon: 'mdi-handshake' },
   { label: 'Manager Timeline', path: '/manager-timeline', icon: 'mdi-chart-gantt' },
+  { label: 'Table If Man City Lost Every Game', path: '/premier-league-table-if-man-city-games-voided', icon: 'mdi-flask-outline' },
 
   { header: 'Managers' },
   { label: 'All Managers', path: '/managers', icon: 'mdi-account-tie-outline' },
