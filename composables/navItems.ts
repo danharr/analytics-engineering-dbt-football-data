@@ -37,6 +37,10 @@ export const navItems = [
 
   { header: 'Season Reviews' },
   { label: '1992-93', path: '/season-reviews/1992-93', icon: 'mdi-swap-horizontal' },
+  { label: '1993-94', path: '/season-reviews/1993-94', icon: 'mdi-swap-horizontal' },
+  { label: '1994-95', path: '/season-reviews/1994-95', icon: 'mdi-swap-horizontal' },
+  { label: '1995-96', path: '/season-reviews/1995-96', icon: 'mdi-swap-horizontal' },
+  { label: '1996-97', path: '/season-reviews/1996-97', icon: 'mdi-swap-horizontal' },
   { label: '1999-00', path: '/season-reviews/1999-00', icon: 'mdi-swap-horizontal' },
   { label: '2016-17', path: '/season-reviews/2016-17', icon: 'mdi-swap-horizontal' },
   { label: '2017-18', path: '/season-reviews/2017-18', icon: 'mdi-swap-horizontal' },
@@ -56,6 +60,8 @@ export const navItems = [
   { label: 'Sergio Agüero', path: '/players/sergio-aguero', icon: 'mdi-account-star' },
   { label: 'Mohamed Salah', path: '/players/mohamed-salah', icon: 'mdi-account-star' },
   { label: 'Son Heung-min', path: '/players/son-heung-min', icon: 'mdi-account-star' },
+  { label: 'Ian Wright', path: '/players/ian-wright', icon: 'mdi-account-star' },
+  { label: 'Alan Shearer', path: '/players/alan-shearer', icon: 'mdi-account-star' },
 
   { header: 'About' },
   { label: 'About', path: '/about', icon: 'mdi-information-outline' }

@@ -45,6 +45,17 @@ copy (
         union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2022-23'
         union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2023-24'
         union all select 'Son Heung-min', 'Son Heung-min', 'Tottenham Hotspur', '2024-25'
+        union all select 'Ian Wright', 'Ian Wright', 'Arsenal', '1992-93'
+        union all select 'Ian Wright', 'Ian Wright', 'Arsenal', '1993-94'
+        union all select 'Ian Wright', 'Ian Wright', 'Arsenal', '1994-95'
+        union all select 'Ian Wright', 'Ian Wright', 'Arsenal', '1995-96'
+        union all select 'Ian Wright', 'Ian Wright', 'Arsenal', '1996-97'
+        union all select 'Alan Shearer', 'Alan Shearer', 'Blackburn Rovers', '1992-93'
+        union all select 'Alan Shearer', 'Alan Shearer', 'Blackburn Rovers', '1993-94'
+        union all select 'Alan Shearer', 'Alan Shearer', 'Blackburn Rovers', '1994-95'
+        union all select 'Alan Shearer', 'Alan Shearer', 'Blackburn Rovers', '1995-96'
+        union all select 'Alan Shearer', 'Alan Shearer', 'Newcastle United', '1996-97'
+        union all select 'Alan Shearer', 'Alan Shearer', 'Newcastle United', '1999-00'
     ),
     schedule as (
         select

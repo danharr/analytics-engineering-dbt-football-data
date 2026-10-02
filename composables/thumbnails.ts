@@ -415,6 +415,30 @@ export const thumbnails: Thumbnail[] = [
     preview: { kind: 'season', label: shortSeason('1992-93') }
   },
   {
+    label: '1993-94',
+    path: '/season-reviews/1993-94',
+    caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
+    preview: { kind: 'season', label: shortSeason('1993-94') }
+  },
+  {
+    label: '1994-95',
+    path: '/season-reviews/1994-95',
+    caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
+    preview: { kind: 'season', label: shortSeason('1994-95') }
+  },
+  {
+    label: '1995-96',
+    path: '/season-reviews/1995-96',
+    caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
+    preview: { kind: 'season', label: shortSeason('1995-96') }
+  },
+  {
+    label: '1996-97',
+    path: '/season-reviews/1996-97',
+    caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
+    preview: { kind: 'season', label: shortSeason('1996-97') }
+  },
+  {
     label: '1999-00',
     path: '/season-reviews/1999-00',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',

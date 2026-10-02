@@ -5,6 +5,18 @@ import topScorers202526Csv from '~/assets/data/top_scorers_2025_26.csv?raw'
 import subTiming199900Csv from '~/assets/data/sub_timing_1999_00.csv?raw'
 import topScorers199900Csv from '~/assets/data/top_scorers_1999_00.csv?raw'
 import partnerships199900Csv from '~/assets/data/partnerships_1999_00.csv?raw'
+import subTiming199394Csv from '~/assets/data/sub_timing_1993_94.csv?raw'
+import topScorers199394Csv from '~/assets/data/top_scorers_1993_94.csv?raw'
+import partnerships199394Csv from '~/assets/data/partnerships_1993_94.csv?raw'
+import subTiming199495Csv from '~/assets/data/sub_timing_1994_95.csv?raw'
+import topScorers199495Csv from '~/assets/data/top_scorers_1994_95.csv?raw'
+import partnerships199495Csv from '~/assets/data/partnerships_1994_95.csv?raw'
+import subTiming199596Csv from '~/assets/data/sub_timing_1995_96.csv?raw'
+import topScorers199596Csv from '~/assets/data/top_scorers_1995_96.csv?raw'
+import partnerships199596Csv from '~/assets/data/partnerships_1995_96.csv?raw'
+import subTiming199697Csv from '~/assets/data/sub_timing_1996_97.csv?raw'
+import topScorers199697Csv from '~/assets/data/top_scorers_1996_97.csv?raw'
+import partnerships199697Csv from '~/assets/data/partnerships_1996_97.csv?raw'
 import partnerships202526Csv from '~/assets/data/partnerships_2025_26.csv?raw'
 import subTiming202425Csv from '~/assets/data/sub_timing_2024_25.csv?raw'
 import topScorers202425Csv from '~/assets/data/top_scorers_2024_25.csv?raw'
@@ -70,6 +82,22 @@ export const topScorers2025_26 = parseTopScorers(topScorers202526Csv)
 export const subTiming1999_00 = parseSubTiming(subTiming199900Csv)
 export const topScorers1999_00 = parseTopScorers(topScorers199900Csv)
 export const partnerships1999_00 = parsePartnerships(partnerships199900Csv)
+
+export const subTiming1993_94 = parseSubTiming(subTiming199394Csv)
+export const topScorers1993_94 = parseTopScorers(topScorers199394Csv)
+export const partnerships1993_94 = parsePartnerships(partnerships199394Csv)
+
+export const subTiming1994_95 = parseSubTiming(subTiming199495Csv)
+export const topScorers1994_95 = parseTopScorers(topScorers199495Csv)
+export const partnerships1994_95 = parsePartnerships(partnerships199495Csv)
+
+export const subTiming1995_96 = parseSubTiming(subTiming199596Csv)
+export const topScorers1995_96 = parseTopScorers(topScorers199596Csv)
+export const partnerships1995_96 = parsePartnerships(partnerships199596Csv)
+
+export const subTiming1996_97 = parseSubTiming(subTiming199697Csv)
+export const topScorers1996_97 = parseTopScorers(topScorers199697Csv)
+export const partnerships1996_97 = parsePartnerships(partnerships199697Csv)
 
 export const partnerships2025_26 = parsePartnerships(partnerships202526Csv)
 
