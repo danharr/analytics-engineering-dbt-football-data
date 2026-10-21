@@ -1,0 +1,37 @@
+import"./Bw4jz61w.js";import{m as E}from"./DBeXZoyG.js";import{l as I}from"./BAi9PCvQ.js";import{b as D}from"./BP8fmk0i.js";import{y as Q,z as R,o as _,n as L,A as O,u as W,c as J,w as a,V as U,a as e,b as v,d as k,e as w,f as N,g,h as X,t as m,v as C,i as S,j as n,F as Y,r as G}from"./BiZ071Qn.js";import{s as V}from"./COR6sKHN.js";import{a as K,b as Z}from"./CrThiacV.js";import{p as tt,a as et,t as j,d as at}from"./D0kzHlpo.js";import{V as st}from"./CIZPEpQ1.js";import"./5voVPcsN.js";import"./yaaAvkcE.js";const nt={__name:"QualityChart",props:{data:{type:Array,required:!0}},setup(o){const y=o,s=O(null);function p(){const l=s.value;if(!l||!y.data.length)return;l.innerHTML="";const u=y.data,z=l.clientWidth||800,i={top:30,right:24,bottom:90,left:50},x=z-i.left-i.right,h=340,d=V(l).append("svg").attr("width",z).attr("height",h+i.top+i.bottom).append("g").attr("transform",`translate(${i.left},${i.top})`),F=E(u,t=>Math.max(t.team_count,t.avg_matches_per_team)),c=I().domain([0,F*1.15]).nice().range([h,0]),b=D().domain(u.map(t=>t.season_label)).range([0,x]).padding(.3),$=D().domain(["teams","avg"]).range([0,b.bandwidth()]).padding(.1);d.append("line").attr("x1",0).attr("x2",x).attr("y1",c(38)).attr("y2",c(38)).attr("stroke","#e11d48").attr("stroke-width",1).attr("stroke-dasharray","5 4"),d.append("text").attr("x",x).attr("y",c(38)-6).attr("text-anchor","end").attr("font-size","11px").attr("fill","#e11d48").text("38 · typical 20-team season");const A=d.selectAll("g.season").data(u).join("g").attr("class","season").attr("transform",t=>`translate(${b(t.season_label)},0)`),H=t=>[{key:"teams",value:t.team_count,label:`${t.team_count} teams`},{key:"avg",value:t.avg_matches_per_team,label:`${t.avg_matches_per_team} matches per team`}];A.selectAll("rect").data(H).join("rect").attr("x",t=>$(t.key)).attr("width",$.bandwidth()).attr("y",t=>c(t.value)).attr("height",t=>h-c(t.value)).attr("rx",3).attr("fill",t=>t.key==="teams"?"#4f46e5":"#10b981"),d.append("g").attr("transform",`translate(0,${h})`).call(K(b).tickSizeOuter(0)).selectAll("text").attr("transform","rotate(-45)").attr("text-anchor","end").attr("dx","-0.6em").attr("dy","0.3em"),d.append("g").call(Z(c).ticks(6));const f=d.append("g").attr("transform","translate(0,-6)");f.append("rect").attr("x",0).attr("width",12).attr("height",12).attr("rx",2).attr("fill","#4f46e5"),f.append("text").attr("x",16).attr("y",10).attr("font-size","11px").text("Teams"),f.append("rect").attr("x",80).attr("width",12).attr("height",12).attr("rx",2).attr("fill","#10b981"),f.append("text").attr("x",96).attr("y",10).attr("font-size","11px").text("Avg matches / team");const M=V(l).append("div").style("position","absolute").style("opacity",0).style("pointer-events","none").style("background","rgba(0,0,0,0.88)").style("color","#fff").style("padding","8px 12px").style("border-radius","6px").style("font-size","12px").style("z-index",10);A.selectAll("rect").on("mousemove",function(t,P){const q=V(this.parentNode).datum(),B=l.getBoundingClientRect();M.style("opacity",1).html(`<strong>${q.season_label}</strong><br>${P.label}<br>${q.matches_played} matches played`).style("left",t.clientX-B.left+12+"px").style("top",t.clientY-B.top-10+"px")}).on("mouseleave",()=>M.style("opacity",0))}const r=()=>p();return Q(()=>{p(),window.addEventListener("resize",r)}),R(()=>{window.removeEventListener("resize",r)}),(l,u)=>(_(),L("div",{class:"chart-wrap",ref_key:"el",ref:s},null,512))}},rt=`season_label,team_count,matches_played,avg_matches_per_team
+1992-93,22,462,42.0
+1993-94,22,462,42.0
+1994-95,22,462,42.0
+1995-96,20,380,38.0
+1996-97,20,380,38.0
+1997-98,20,380,38.0
+1998-99,20,380,38.0
+1999-00,20,380,38.0
+2000-01,20,380,38.0
+2001-02,20,380,38.0
+2002-03,20,380,38.0
+2003-04,20,380,38.0
+2004-05,20,380,38.0
+2005-06,20,380,38.0
+2006-07,20,380,38.0
+2007-08,20,380,38.0
+2008-09,20,380,38.0
+2009-10,20,380,38.0
+2010-11,20,380,38.0
+2011-12,20,380,38.0
+2012-13,20,380,38.0
+2013-14,20,380,38.0
+2014-15,20,380,38.0
+2015-16,20,380,38.0
+2016-17,20,380,38.0
+2017-18,20,380,38.0
+2018-19,20,380,38.0
+2019-20,20,380,38.0
+2020-21,20,380,38.0
+2021-22,20,380,38.0
+2022-23,20,380,38.0
+2023-24,20,380,38.0
+2024-25,20,380,38.0
+2025-26,20,380,38.0
+2026-27,20,50,5.0
+`,T=tt(rt,o=>({season_label:o.season_label,team_count:j(o,"team_count"),matches_played:j(o,"matches_played"),avg_matches_per_team:et(o,"avg_matches_per_team")})),ot={class:"text-right"},lt={class:"text-right"},it={class:"text-right"},vt={__name:"data-quality",setup(o){return W({title:"Premier League Data Coverage by Season",meta:[{name:"description",content:"Season-by-season team counts and matches per team for the Premier League dataset, showing coverage across every season."}],script:[{type:"application/ld+json",innerHTML:JSON.stringify(at({name:"Premier League Season Coverage Dataset",description:"Season-by-season data coverage for the Premier League dataset: number of teams and matches per team in each season from 1992-93 to 2026-27.",path:"/data-quality",csv:"season_quality.csv",keywords:["data quality","season coverage"]}))}]}),(y,s)=>{const p=nt;return _(),J(U,null,{default:a(()=>[e(v,{cols:"12",md:"10","offset-md":"1"},{default:a(()=>[e(k,{color:"secondary",variant:"tonal"},{default:a(()=>[e(w,{tag:"h1"},{default:a(()=>[e(N,{icon:"mdi-shield-check",class:"mr-2"}),s[0]||(s[0]=g(" Data Quality ",-1))]),_:1}),e(X,null,{default:a(()=>[g(m(C(T).length)+" seasons processed in the database",1)]),_:1}),e(S,{class:"pt-0"},{default:a(()=>[...s[1]||(s[1]=[n("p",{class:"mb-0"}," This page is about the dataset behind every other chart on the site. All 35 seasons are accounted for here, from the 22-team opening campaign in 1992-93 through to the 20-team format that has been standard since 1995-96. In total the database holds 13,167 matches across 51 teams, and this page verifies that each season is complete before the rest of the site is built from it. ",-1)])]),_:1})]),_:1})]),_:1}),e(v,{cols:"12",md:"10","offset-md":"1"},{default:a(()=>[e(k,null,{default:a(()=>[e(w,null,{default:a(()=>[...s[2]||(s[2]=[g("Seasons · Teams · Matches per Team",-1)])]),_:1}),e(S,null,{default:a(()=>[e(p,{data:C(T)},null,8,["data"])]),_:1})]),_:1})]),_:1}),e(v,{cols:"12",md:"10","offset-md":"1"},{default:a(()=>[e(k,null,{default:a(()=>[e(w,null,{default:a(()=>[e(N,{icon:"mdi-table",class:"mr-2"}),s[3]||(s[3]=g(" Season Summary ",-1))]),_:1}),e(S,null,{default:a(()=>[e(st,{density:"compact"},{default:a(()=>[s[4]||(s[4]=n("thead",null,[n("tr",null,[n("th",{class:"text-left"},"Season"),n("th",{class:"text-right"},"Matches"),n("th",{class:"text-right"},"Avg Matches/Team"),n("th",{class:"text-right"},"Teams")])],-1)),n("tbody",null,[(_(!0),L(Y,null,G(C(T),r=>(_(),L("tr",{key:r.season_label},[n("td",null,m(r.season_label),1),n("td",ot,m(r.matches_played),1),n("td",lt,m(r.avg_matches_per_team.toFixed(1)),1),n("td",it,m(r.team_count),1)]))),128))])]),_:1})]),_:1})]),_:1})]),_:1})]),_:1})}}};export{vt as default};
