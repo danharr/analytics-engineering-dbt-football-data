@@ -8,43 +8,43 @@
       "rows": [
         {
           "label": "Manchester United",
-          "value": 2619,
-          "display": "2,619"
+          "value": 2622,
+          "display": "2,622"
         },
         {
           "label": "Arsenal",
-          "value": 2485,
-          "display": "2,485"
+          "value": 2500,
+          "display": "2,500"
         },
         {
           "label": "Liverpool",
-          "value": 2411,
-          "display": "2,411"
+          "value": 2420,
+          "display": "2,420"
         },
         {
           "label": "Chelsea",
-          "value": 2373,
-          "display": "2,373"
+          "value": 2382,
+          "display": "2,382"
         },
         {
           "label": "Tottenham Hotspur",
-          "value": 1994,
-          "display": "1,994"
+          "value": 2004,
+          "display": "2,004"
         },
         {
           "label": "Manchester City",
-          "value": 1973,
-          "display": "1,973"
+          "value": 1979,
+          "display": "1,979"
         },
         {
           "label": "Everton",
-          "value": 1764,
-          "display": "1,764"
+          "value": 1771,
+          "display": "1,771"
         },
         {
           "label": "Newcastle United",
-          "value": 1664,
-          "display": "1,664"
+          "value": 1668,
+          "display": "1,668"
         }
       ]
     }
@@ -63,38 +63,38 @@
         },
         {
           "label": "Arsenal",
-          "value": 723,
-          "display": "723"
+          "value": 728,
+          "display": "728"
         },
         {
           "label": "Liverpool",
-          "value": 696,
-          "display": "696"
+          "value": 699,
+          "display": "699"
         },
         {
           "label": "Chelsea",
-          "value": 683,
-          "display": "683"
+          "value": 686,
+          "display": "686"
         },
         {
           "label": "Manchester City",
-          "value": 578,
-          "display": "578"
+          "value": 580,
+          "display": "580"
         },
         {
           "label": "Tottenham Hotspur",
-          "value": 561,
-          "display": "561"
+          "value": 564,
+          "display": "564"
         },
         {
           "label": "Everton",
-          "value": 465,
-          "display": "465"
+          "value": 467,
+          "display": "467"
         },
         {
           "label": "Newcastle United",
-          "value": 455,
-          "display": "455"
+          "value": 456,
+          "display": "456"
         }
       ]
     }
@@ -279,7 +279,7 @@
         {
           "label": "2026-27",
           "a": 20,
-          "b": 5
+          "b": 10
         }
       ]
     }
@@ -327,7 +327,7 @@
             73534,
             73747,
             73975,
-            74155
+            74146
           ]
         },
         {
@@ -366,7 +366,7 @@
             61459,
             61127,
             61006,
-            60807
+            60777
           ]
         },
         {
@@ -444,7 +444,7 @@
             53399,
             52575,
             52730,
-            60705
+            60742
           ]
         },
         {
@@ -483,7 +483,7 @@
             55809,
             60330,
             60389,
-            60288
+            60345
           ]
         },
         {
@@ -522,7 +522,7 @@
             60236,
             60251,
             60217,
-            60169
+            60229
           ]
         }
       ],
@@ -623,27 +623,27 @@
       "rows": [
         {
           "label": "90",
-          "left": 72,
-          "right": 55
+          "left": 78,
+          "right": 59
         },
         {
           "label": "89",
           "left": 4,
-          "right": 6
+          "right": 7
         },
         {
           "label": "88",
-          "left": 8,
+          "left": 9,
           "right": 9
         },
         {
           "label": "87",
           "left": 1,
-          "right": 6
+          "right": 7
         },
         {
           "label": "86",
-          "left": 6,
+          "left": 7,
           "right": 4
         },
         {
@@ -653,12 +653,12 @@
         },
         {
           "label": "84",
-          "left": 10,
+          "left": 11,
           "right": 8
         },
         {
           "label": "83",
-          "left": 6,
+          "left": 7,
           "right": 9
         },
         {
@@ -668,32 +668,32 @@
         },
         {
           "label": "81",
-          "left": 9,
+          "left": 11,
           "right": 3
         },
         {
           "label": "80",
           "left": 3,
-          "right": 5
+          "right": 8
         },
         {
           "label": "79",
-          "left": 7,
-          "right": 5
+          "left": 8,
+          "right": 6
         },
         {
           "label": "78",
           "left": 7,
-          "right": 9
+          "right": 10
         },
         {
           "label": "77",
-          "left": 8,
-          "right": 5
+          "left": 9,
+          "right": 6
         },
         {
           "label": "76",
-          "left": 11,
+          "left": 12,
           "right": 3
         },
         {
@@ -703,43 +703,43 @@
         },
         {
           "label": "74",
-          "left": 3,
-          "right": 6
+          "left": 4,
+          "right": 7
         },
         {
           "label": "73",
-          "left": 10,
+          "left": 14,
           "right": 2
         },
         {
           "label": "72",
-          "left": 4,
+          "left": 5,
           "right": 3
         },
         {
           "label": "71",
           "left": 7,
-          "right": 5
+          "right": 6
         },
         {
           "label": "70",
-          "left": 7,
-          "right": 4
+          "left": 9,
+          "right": 6
         },
         {
           "label": "69",
-          "left": 8,
+          "left": 9,
           "right": 5
         },
         {
           "label": "68",
-          "left": 8,
-          "right": 7
+          "left": 10,
+          "right": 9
         },
         {
           "label": "67",
-          "left": 9,
-          "right": 5
+          "left": 10,
+          "right": 6
         },
         {
           "label": "66",
@@ -749,42 +749,42 @@
         {
           "label": "65",
           "left": 8,
-          "right": 4
+          "right": 5
         },
         {
           "label": "64",
-          "left": 4,
-          "right": 8
+          "left": 5,
+          "right": 9
         },
         {
           "label": "63",
           "left": 5,
-          "right": 6
+          "right": 7
         },
         {
           "label": "62",
-          "left": 5,
-          "right": 3
+          "left": 6,
+          "right": 4
         },
         {
           "label": "61",
-          "left": 9,
+          "left": 10,
           "right": 13
         },
         {
           "label": "60",
-          "left": 10,
+          "left": 11,
           "right": 6
         },
         {
           "label": "59",
-          "left": 2,
+          "left": 3,
           "right": 5
         },
         {
           "label": "58",
-          "left": 7,
-          "right": 8
+          "left": 9,
+          "right": 9
         },
         {
           "label": "57",
@@ -793,122 +793,122 @@
         },
         {
           "label": "56",
-          "left": 9,
+          "left": 10,
           "right": 8
         },
         {
           "label": "55",
           "left": 4,
-          "right": 7
+          "right": 10
         },
         {
           "label": "54",
           "left": 8,
-          "right": 10
+          "right": 11
         },
         {
           "label": "53",
           "left": 4,
-          "right": 2
+          "right": 4
         },
         {
           "label": "52",
-          "left": 5,
-          "right": 6
+          "left": 6,
+          "right": 9
         },
         {
           "label": "51",
-          "left": 5,
-          "right": 5
+          "left": 6,
+          "right": 6
         },
         {
           "label": "50",
-          "left": 7,
+          "left": 8,
           "right": 7
         },
         {
           "label": "49",
-          "left": 7,
-          "right": 5
+          "left": 8,
+          "right": 7
         },
         {
           "label": "48",
-          "left": 4,
-          "right": 7
+          "left": 7,
+          "right": 8
         },
         {
           "label": "47",
           "left": 4,
-          "right": 6
+          "right": 7
         },
         {
           "label": "46",
-          "left": 6,
-          "right": 5
+          "left": 7,
+          "right": 7
         },
         {
           "label": "45",
-          "left": 27,
+          "left": 28,
           "right": 29
         },
         {
           "label": "44",
-          "left": 1,
+          "left": 3,
           "right": 6
         },
         {
           "label": "43",
           "left": 9,
-          "right": 6
+          "right": 7
         },
         {
           "label": "42",
-          "left": 11,
+          "left": 12,
           "right": 3
         },
         {
           "label": "41",
-          "left": 7,
+          "left": 9,
           "right": 3
         },
         {
           "label": "40",
           "left": 9,
-          "right": 3
+          "right": 4
         },
         {
           "label": "39",
-          "left": 6,
+          "left": 7,
           "right": 2
         },
         {
           "label": "38",
           "left": 9,
-          "right": 6
+          "right": 7
         },
         {
           "label": "37",
-          "left": 9,
+          "left": 10,
           "right": 10
         },
         {
           "label": "36",
-          "left": 8,
-          "right": 2
+          "left": 9,
+          "right": 3
         },
         {
           "label": "35",
           "left": 6,
-          "right": 12
+          "right": 13
         },
         {
           "label": "34",
-          "left": 10,
+          "left": 11,
           "right": 11
         },
         {
           "label": "33",
-          "left": 6,
+          "left": 7,
           "right": 4
         },
         {
@@ -918,12 +918,12 @@
         },
         {
           "label": "31",
-          "left": 8,
+          "left": 9,
           "right": 5
         },
         {
           "label": "30",
-          "left": 7,
+          "left": 8,
           "right": 4
         },
         {
@@ -948,12 +948,12 @@
         },
         {
           "label": "25",
-          "left": 7,
+          "left": 8,
           "right": 5
         },
         {
           "label": "24",
-          "left": 10,
+          "left": 11,
           "right": 1
         },
         {
@@ -964,12 +964,12 @@
         {
           "label": "22",
           "left": 2,
-          "right": 3
+          "right": 4
         },
         {
           "label": "21",
-          "left": 5,
-          "right": 1
+          "left": 6,
+          "right": 2
         },
         {
           "label": "20",
@@ -978,53 +978,53 @@
         },
         {
           "label": "19",
-          "left": 3,
+          "left": 4,
           "right": 4
         },
         {
           "label": "18",
-          "left": 10,
+          "left": 11,
           "right": 3
         },
         {
           "label": "17",
-          "left": 5,
+          "left": 7,
           "right": 5
         },
         {
           "label": "16",
-          "left": 2,
-          "right": 1
+          "left": 3,
+          "right": 2
         },
         {
           "label": "15",
-          "left": 8,
+          "left": 9,
           "right": 6
         },
         {
           "label": "14",
-          "left": 9,
+          "left": 10,
           "right": 2
         },
         {
           "label": "13",
           "left": 3,
-          "right": 5
+          "right": 6
         },
         {
           "label": "12",
-          "left": 4,
+          "left": 5,
           "right": 2
         },
         {
           "label": "11",
           "left": 5,
-          "right": 3
+          "right": 4
         },
         {
           "label": "10",
-          "left": 6,
-          "right": 0
+          "left": 7,
+          "right": 1
         },
         {
           "label": "9",
@@ -1038,38 +1038,38 @@
         },
         {
           "label": "7",
-          "left": 4,
+          "left": 6,
           "right": 5
         },
         {
           "label": "6",
-          "left": 6,
+          "left": 9,
           "right": 5
         },
         {
           "label": "5",
-          "left": 9,
-          "right": 6
+          "left": 10,
+          "right": 7
         },
         {
           "label": "4",
-          "left": 6,
-          "right": 3
+          "left": 7,
+          "right": 4
         },
         {
           "label": "3",
-          "left": 4,
-          "right": 1
+          "left": 5,
+          "right": 2
         },
         {
           "label": "2",
-          "left": 3,
+          "left": 4,
           "right": 5
         },
         {
           "label": "1",
           "left": 4,
-          "right": 2
+          "right": 3
         }
       ]
     }
@@ -1277,6 +1277,11 @@
           "display": "8"
         },
         {
+          "label": "Manchester City",
+          "value": 7,
+          "display": "7"
+        },
+        {
           "label": "Everton",
           "value": 7,
           "display": "7"
@@ -1300,11 +1305,6 @@
           "label": "Wolverhampton Wanderers",
           "value": 6,
           "display": "6"
-        },
-        {
-          "label": "Nottingham Forest",
-          "value": 6,
-          "display": "6"
         }
       ]
     }
@@ -1317,49 +1317,45 @@
       "kind": "squares",
       "rows": [
         {
-          "label": "Brentford",
+          "label": "Aston Villa",
           "cells": [
             "L",
-            "D",
-            "D",
             "W",
             "D",
+            "W",
+            "W",
             "D",
-            "D",
+            "D"
+          ]
+        },
+        {
+          "label": "Arsenal",
+          "cells": [
+            "L",
+            "W",
+            "W",
+            "W",
+            "W",
             "W"
           ]
         },
         {
-          "label": "Liverpool",
+          "label": "Bournemouth",
           "cells": [
             "L",
-            "D",
-            "D",
-            "D",
             "W",
-            "D",
+            "W",
+            "W",
             "W"
           ]
         },
         {
-          "label": "Everton",
+          "label": "Fulham",
           "cells": [
             "L",
             "W",
-            "D",
-            "D",
-            "D",
-            "W"
-          ]
-        },
-        {
-          "label": "Leeds United",
-          "cells": [
-            "L",
             "W",
             "D",
-            "D",
-            "W",
             "D"
           ]
         }
@@ -1680,8 +1676,8 @@
         },
         {
           "label": "Sunderland",
-          "value": 33.3,
-          "display": "33.3%"
+          "value": 33.7,
+          "display": "33.7%"
         },
         {
           "label": "Stoke City",
@@ -1865,8 +1861,8 @@
         },
         {
           "label": "David Moyes",
-          "value": 292,
-          "display": "292"
+          "value": 294,
+          "display": "294"
         },
         {
           "label": "Pep Guardiola",
