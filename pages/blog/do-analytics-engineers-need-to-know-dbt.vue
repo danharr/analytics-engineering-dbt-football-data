@@ -53,7 +53,7 @@
             dbt is increasingly useful in the age of AI. This site is built with dbt and Duck DB.
             The data is cleaned and shaped into fact and dimension tables using dbt before each page
             in this site writes SQL against the data to build the insight for ecah page, such as
-            <NuxtLink to="/goal-minutes">this chart showing what minute teams score goals in</NuxtLink>.
+            <NuxtLink to="/goal-minutes/">this chart showing what minute teams score goals in</NuxtLink>.
           </p>
         </v-card-text>
       </v-card>

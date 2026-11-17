@@ -19,7 +19,7 @@
             color="primary"
             variant="outlined"
             size="small"
-            :to="`/teams/${team.slug}/2025-26-goals-by-player`"
+            :to="`/teams/${team.slug}/2025-26-goals-by-player/`"
           >
             <v-icon icon="mdi-soccer" size="small" class="mr-1"></v-icon>
             2025-26 goals by player
@@ -30,7 +30,7 @@
             color="primary"
             variant="outlined"
             size="small"
-            :to="`/teams/${team.slug}/2026-27-goals-by-player`"
+            :to="`/teams/${team.slug}/2026-27-goals-by-player/`"
           >
             <v-icon icon="mdi-soccer" size="small" class="mr-1"></v-icon>
             2026-27 goals by player
@@ -40,7 +40,7 @@
             color="primary"
             variant="outlined"
             size="small"
-            :to="`/teams/${team.slug}/cumulative-points-per-season`"
+            :to="`/teams/${team.slug}/cumulative-points-per-season/`"
           >
             <v-icon icon="mdi-chart-line" size="small" class="mr-1"></v-icon>
             Points race by season
@@ -67,7 +67,7 @@
             <tbody>
               <tr v-for="row in teamSeasons" :key="row.label">
                 <td>
-                  <NuxtLink :to="`/seasons/${row.label}`">{{ row.label }} Season</NuxtLink>
+                  <NuxtLink :to="`/seasons/${row.label}/`">{{ row.label }} Season</NuxtLink>
                 </td>
                 <td class="text-right">{{ row.position ? ordinal(row.position) : '—' }}</td>
               </tr>
@@ -279,7 +279,7 @@
                 <strong>
                   <NuxtLink
                     v-if="managerSlug(spell.manager_name)"
-                    :to="`/managers/${managerSlug(spell.manager_name)}`"
+                    :to="`/managers/${managerSlug(spell.manager_name)}/`"
                   >{{ spell.manager_name }}</NuxtLink>
                   <span v-else>{{ spell.manager_name }}</span>
                 </strong>
@@ -315,7 +315,7 @@
                 <td>
                   <NuxtLink
                     v-if="managerSlug(m.manager_name)"
-                    :to="`/managers/${managerSlug(m.manager_name)}`"
+                    :to="`/managers/${managerSlug(m.manager_name)}/`"
                   >{{ m.manager_name }}</NuxtLink>
                   <span v-else>{{ m.manager_name }}</span>
                 </td>

@@ -10,7 +10,7 @@
       <v-btn
         variant="text"
         prepend-icon="mdi-information-outline"
-        to="/about"
+        to="/about/"
         class="text-white d-none d-sm-flex"
       >
         About

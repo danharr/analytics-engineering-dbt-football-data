@@ -45,7 +45,7 @@
           <v-btn
             variant="tonal"
             prepend-icon="mdi-newspaper-variant-outline"
-            to="/blog/do-analytics-engineers-need-to-know-dbt"
+            to="/blog/do-analytics-engineers-need-to-know-dbt/"
           >
             Read my blog
           </v-btn>

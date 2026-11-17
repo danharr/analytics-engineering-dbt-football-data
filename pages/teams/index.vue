@@ -25,7 +25,7 @@
               <tbody>
                 <tr v-for="row in rows" :key="row.abbr">
                   <td>
-                    <NuxtLink :to="`/teams/${row.slug}`">{{ row.name }}</NuxtLink>
+                    <NuxtLink :to="`/teams/${row.slug}/`">{{ row.name }}</NuxtLink>
                   </td>
                   <td class="text-right">{{ row.played }}</td>
                   <td class="text-right">{{ row.wins }}</td>

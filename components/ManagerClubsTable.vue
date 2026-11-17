@@ -20,7 +20,7 @@
         <tbody>
           <tr v-for="row in clubRecords" :key="row.team_id">
             <td>
-              <NuxtLink :to="`/teams/${teamSlug(row.team_name)}`">{{ row.team_name }}</NuxtLink>
+              <NuxtLink :to="`/teams/${teamSlug(row.team_name)}/`">{{ row.team_name }}</NuxtLink>
             </td>
             <td class="text-right">{{ row.games }}</td>
             <td class="text-right">{{ row.wins }}</td>

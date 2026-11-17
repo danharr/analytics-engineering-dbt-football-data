@@ -39,7 +39,7 @@
               <tr v-for="(t, i) in rows" :key="t.slug">
                 <td>{{ i + 1 }}</td>
                 <td>
-                  <NuxtLink :to="`/points-lost-from-winning-position/${t.slug}`">
+                  <NuxtLink :to="`/points-lost-from-winning-position/${t.slug}/`">
                     <v-icon icon="mdi-shield" :color="teamColour(t.name)" size="small" class="mr-2"></v-icon>
                     <strong>{{ t.name }}</strong>
                   </NuxtLink>

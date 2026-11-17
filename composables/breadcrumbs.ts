@@ -38,9 +38,9 @@ export function useBreadcrumbs() {
       const team = teamBySlug(slug)
       const crumbs = [
         { label: 'Home', to: '/' },
-        { label: 'Teams', to: '/teams' },
+        { label: 'Teams', to: '/teams/' },
         parts.length >= 3
-          ? { label: team?.name ?? slug, to: `/teams/${slug}` }
+          ? { label: team?.name ?? slug, to: `/teams/${slug}/` }
           : { label: team?.name ?? slug }
       ]
       if (parts.length >= 3) {
@@ -53,7 +53,7 @@ export function useBreadcrumbs() {
       const manager = managerBySlug(slug)
       return [
         { label: 'Home', to: '/' },
-        { label: 'Managers', to: '/managers' },
+        { label: 'Managers', to: '/managers/' },
         { label: manager?.name ?? slug }
       ]
     }
@@ -61,7 +61,7 @@ export function useBreadcrumbs() {
     if (group === 'seasons') {
       return [
         { label: 'Home', to: '/' },
-        { label: 'Seasons', to: '/seasons' },
+        { label: 'Seasons', to: '/seasons/' },
         { label: slug }
       ]
     }

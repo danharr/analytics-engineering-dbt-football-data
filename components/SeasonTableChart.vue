@@ -29,7 +29,7 @@
           >
             <td><strong>{{ row.position }}</strong></td>
             <td>
-              <NuxtLink :to="`/teams/${teamSlug(row.team_name)}`">{{ row.team_name }}</NuxtLink>
+              <NuxtLink :to="`/teams/${teamSlug(row.team_name)}/`">{{ row.team_name }}</NuxtLink>
             </td>
             <td class="text-right">{{ row.played }}</td>
             <td class="text-right">{{ row.won }}</td>
