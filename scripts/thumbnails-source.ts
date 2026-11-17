@@ -176,19 +176,19 @@ const goldenBootTotals = (() => {
 export const thumbnails: Thumbnail[] = [
   {
     label: 'All-Time Table',
-    path: '/all-time-table',
+    path: '/all-time-table/',
     caption: 'Every club ranked by points since 1992-93.',
     preview: toBars(allTime, d => d.team_name, d => d.points, d => fmtInt(d.points))
   },
   {
     label: 'Most Wins',
-    path: '/most-wins',
+    path: '/most-wins/',
     caption: 'Who has won the most games across 35 seasons?',
     preview: toBars(wins, d => d.team_name, d => d.total_wins, d => fmtInt(d.total_wins))
   },
   {
     label: 'Data Quality',
-    path: '/data-quality',
+    path: '/data-quality/',
     caption: 'How complete is the match data, season by season?',
     preview: {
       kind: 'groupedBars',
@@ -201,13 +201,13 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Attendances',
-    path: '/attendances',
+    path: '/attendances/',
     caption: 'Average home crowds, season by season.',
     preview: linesPreview
   },
   {
     label: 'Scoring Trends',
-    path: '/scoring-trends',
+    path: '/scoring-trends/',
     caption: 'Goals, nil-nils and draws — the most exciting season.',
     preview: toBars(
       seasonScoring,
@@ -218,13 +218,13 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Goals by Minute',
-    path: '/goal-minutes',
+    path: '/goal-minutes/',
     caption: 'When Arsenal and West Ham score, minute by minute.',
     preview: pyramidPreview
   },
   {
     label: 'Golden Boot Winners',
-    path: '/premier-league-golden-boot-winners',
+    path: '/premier-league-golden-boot-winners/',
     caption: 'Every Golden Boot winner, with cumulative goals by matchweek.',
     preview: toBars(
       goldenBootTotals,
@@ -235,7 +235,7 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Super 6 Golden Goal Data',
-    path: '/super-6-golden-goal-data',
+    path: '/super-6-golden-goal-data/',
     caption: 'The most common minute for the first goal, season by season.',
     preview: toBars(
       firstGoalPeaks,
@@ -246,7 +246,7 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Points Lost From Winning Positions',
-    path: '/points-lost-from-winning-position',
+    path: '/points-lost-from-winning-position/',
     caption: 'The points every club threw away after leading in 2025-26.',
     preview: toBars(
       pointsLostTotals,
@@ -257,7 +257,7 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Scoring Runs',
-    path: '/scoring-runs',
+    path: '/scoring-runs/',
     caption: 'The longest scoreless droughts and scoring streaks.',
     preview: toBars(
       scoringRuns.filter(r => r.category === 'scoring'),
@@ -268,31 +268,31 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Five-Game Streaks',
-    path: '/five-game-streaks',
+    path: '/five-game-streaks/',
     caption: 'The last time each team won 5+ games in a row.',
     preview: toBars(fiveGameStreaks, d => d.team_name, d => d.streak_length, d => `${d.streak_length}`)
   },
   {
     label: 'Current Unbeaten Runs',
-    path: '/premier-league-current-unbeaten-runs',
+    path: '/premier-league-current-unbeaten-runs/',
     caption: 'Every current club\u2019s last defeat and their results since.',
     preview: unbeatenPreview
   },
   {
     label: 'Big Win Streaks',
-    path: '/big-win-streaks',
+    path: '/big-win-streaks/',
     caption: 'The longest in-season winning runs (11+ wins).',
     preview: squaresPreview
   },
   {
     label: 'Longest Gap Between Wins',
-    path: '/longest-winless-gaps',
+    path: '/longest-winless-gaps/',
     caption: 'The longest wait between wins, in days.',
     preview: toBars(longestWinlessGaps, d => d.team_name, d => d.gap_days, d => fmtInt(d.gap_days))
   },
   {
     label: 'Most Chaotic Matches',
-    path: '/most-chaotic-matches',
+    path: '/most-chaotic-matches/',
     caption: 'Goals plus red cards: every match\u2019s chaos score.',
     preview: toBars(
       mostChaoticMatches,
@@ -303,7 +303,7 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Fixture Red Cards',
-    path: '/fixture-red-cards',
+    path: '/fixture-red-cards/',
     caption: 'The rivalries with the most red cards since 1992.',
     preview: toBars(
       fixtureRedCardTotals,
@@ -314,7 +314,7 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Red Cards by Season',
-    path: '/red-cards-by-season',
+    path: '/red-cards-by-season/',
     caption: 'Total red cards in every season, from 2006-07 on.',
     preview: toBars(
       redCardsBySeason.filter(r => r.red_cards > 0),
@@ -325,25 +325,25 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'One-Nil Wins',
-    path: '/one-nil-wins',
+    path: '/one-nil-wins/',
     caption: 'Whose wins most often finish 1-0?',
     preview: toBars(oneNilWins, d => d.team_name, d => d.pct_one_nil, d => `${d.pct_one_nil}%`)
   },
   {
     label: 'Longest No-Win Streaks After HT Lead',
-    path: '/ht-lead-no-win-streaks',
+    path: '/ht-lead-no-win-streaks/',
     caption: 'Led at half-time, but still failed to win.',
     preview: toBars(htLeadNoWinStreaks, d => d.team_name, d => d.run_length, d => `${d.run_length}`)
   },
   {
     label: 'Comeback Kings',
-    path: '/comeback-kings',
+    path: '/comeback-kings/',
     caption: 'The longest runs of half-time comebacks.',
     preview: toBars(comebackKings, d => d.team_name, d => d.run_length, d => `${d.run_length}`)
   },
   {
     label: 'Most Comebacks in a Season',
-    path: '/most-comebacks',
+    path: '/most-comebacks/',
     caption: 'The most half-time comebacks in one season.',
     preview: toBars(
       mostComebacks,
@@ -354,13 +354,13 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Most Manager Wins',
-    path: '/manager-wins',
+    path: '/manager-wins/',
     caption: 'Top managers by Premier League wins.',
     preview: toBars(managerWins, d => d.manager_name, d => d.wins, d => fmtInt(d.wins))
   },
   {
     label: 'Manager Debuts',
-    path: '/manager-debuts',
+    path: '/manager-debuts/',
     caption: 'The best and worst first matches in charge.',
     preview: toBars(
       managerDebuts.filter(d => d.list === 'win'),
@@ -371,13 +371,13 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: 'Manager Timeline',
-    path: '/manager-timeline',
+    path: '/manager-timeline/',
     caption: 'Every managerial spell since 1992.',
     preview: ganttPreview
   },
   {
     label: 'Table If Man City Lost Every Game',
-    path: '/premier-league-table-if-man-city-games-voided',
+    path: '/premier-league-table-if-man-city-games-voided/',
     caption: 'The 2025-26 table if Manchester City lost every game 3-0.',
     preview: toBars(
       manCityVoided.filter(r => r.points_change > 0),
@@ -388,97 +388,97 @@ export const thumbnails: Thumbnail[] = [
   },
   {
     label: '1992-93',
-    path: '/season-reviews/1992-93',
+    path: '/season-reviews/1992-93/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('1992-93') }
   },
   {
     label: '1993-94',
-    path: '/season-reviews/1993-94',
+    path: '/season-reviews/1993-94/',
     caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
     preview: { kind: 'season', label: shortSeason('1993-94') }
   },
   {
     label: '1994-95',
-    path: '/season-reviews/1994-95',
+    path: '/season-reviews/1994-95/',
     caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
     preview: { kind: 'season', label: shortSeason('1994-95') }
   },
   {
     label: '1995-96',
-    path: '/season-reviews/1995-96',
+    path: '/season-reviews/1995-96/',
     caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
     preview: { kind: 'season', label: shortSeason('1995-96') }
   },
   {
     label: '1996-97',
-    path: '/season-reviews/1996-97',
+    path: '/season-reviews/1996-97/',
     caption: 'Substitution and red card timing, plus the season\u2019s top scorers and partnerships.',
     preview: { kind: 'season', label: shortSeason('1996-97') }
   },
   {
     label: '1999-00',
-    path: '/season-reviews/1999-00',
+    path: '/season-reviews/1999-00/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('1999-00') }
   },
   {
     label: '2016-17',
-    path: '/season-reviews/2016-17',
+    path: '/season-reviews/2016-17/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2016-17') }
   },
   {
     label: '2017-18',
-    path: '/season-reviews/2017-18',
+    path: '/season-reviews/2017-18/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2017-18') }
   },
   {
     label: '2018-19',
-    path: '/season-reviews/2018-19',
+    path: '/season-reviews/2018-19/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2018-19') }
   },
   {
     label: '2019-20',
-    path: '/season-reviews/2019-20',
+    path: '/season-reviews/2019-20/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2019-20') }
   },
   {
     label: '2020-21',
-    path: '/season-reviews/2020-21',
+    path: '/season-reviews/2020-21/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2020-21') }
   },
   {
     label: '2021-22',
-    path: '/season-reviews/2021-22',
+    path: '/season-reviews/2021-22/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2021-22') }
   },
   {
     label: '2022-23',
-    path: '/season-reviews/2022-23',
+    path: '/season-reviews/2022-23/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2022-23') }
   },
   {
     label: '2023-24',
-    path: '/season-reviews/2023-24',
+    path: '/season-reviews/2023-24/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2023-24') }
   },
   {
     label: '2024-25',
-    path: '/season-reviews/2024-25',
+    path: '/season-reviews/2024-25/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2024-25') }
   },
   {
     label: '2025-26',
-    path: '/season-reviews/2025-26',
+    path: '/season-reviews/2025-26/',
     caption: 'Substitution and card timing, plus the season\u2019s top scorers.',
     preview: { kind: 'season', label: shortSeason('2025-26') }
   }

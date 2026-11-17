@@ -187,15 +187,15 @@ useHead({
 const otherEntries = thumbnails.map(t => ({ label: t.label, path: t.path }))
 
 const managerEntries = [
-  { label: 'All Managers', path: '/managers' }
+  { label: 'All Managers', path: '/managers/' }
 ]
 
 const seasonEntries = [
-  { label: 'All Seasons', path: '/seasons' }
+  { label: 'All Seasons', path: '/seasons/' }
 ]
 
 const teamEntries = [
-  { label: 'All Teams', path: '/teams' }
+  { label: 'All Teams', path: '/teams/' }
 ]
 
 const fmtDate = s => {
